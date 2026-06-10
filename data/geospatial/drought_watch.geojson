@@ -1,0 +1,1661 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.727,
+          17.6132
+        ]
+      },
+      "properties": {
+        "psgc": "023101000",
+        "municipality": "City of Tuguegarao",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4511,
+          18.4437
+        ]
+      },
+      "properties": {
+        "psgc": "023102000",
+        "municipality": "Abulug",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6558,
+          17.9014
+        ]
+      },
+      "properties": {
+        "psgc": "023103000",
+        "municipality": "Alcala",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.556,
+          18.195
+        ]
+      },
+      "properties": {
+        "psgc": "023104000",
+        "municipality": "Allacapan",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.717,
+          17.833
+        ]
+      },
+      "properties": {
+        "psgc": "023105000",
+        "municipality": "Amulung",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6406,
+          18.3567
+        ]
+      },
+      "properties": {
+        "psgc": "023106000",
+        "municipality": "Aparri",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.564,
+          17.683
+        ]
+      },
+      "properties": {
+        "psgc": "023107000",
+        "municipality": "Baggao",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.526,
+          18.408
+        ]
+      },
+      "properties": {
+        "psgc": "023108000",
+        "municipality": "Ballesteros",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.802,
+          18.286
+        ]
+      },
+      "properties": {
+        "psgc": "023109000",
+        "municipality": "Buguey",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45,
+          19.2667
+        ]
+      },
+      "properties": {
+        "psgc": "023110000",
+        "municipality": "Calayan",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.723,
+          18.261
+        ]
+      },
+      "properties": {
+        "psgc": "023111000",
+        "municipality": "Camalaniugan",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0799,
+          18.6023
+        ]
+      },
+      "properties": {
+        "psgc": "023112000",
+        "municipality": "Claveria",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.685,
+          17.558
+        ]
+      },
+      "properties": {
+        "psgc": "023113000",
+        "municipality": "Enrile",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.642,
+          18.057
+        ]
+      },
+      "properties": {
+        "psgc": "023114000",
+        "municipality": "Gattaran",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.001,
+          18.263
+        ]
+      },
+      "properties": {
+        "psgc": "023115000",
+        "municipality": "Gonzaga",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.741,
+          17.756
+        ]
+      },
+      "properties": {
+        "psgc": "023116000",
+        "municipality": "Iguig",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.668,
+          18.199
+        ]
+      },
+      "properties": {
+        "psgc": "023117000",
+        "municipality": "Lal-lo",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.595,
+          18.07
+        ]
+      },
+      "properties": {
+        "psgc": "023118000",
+        "municipality": "Lasam",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.338,
+          18.012
+        ]
+      },
+      "properties": {
+        "psgc": "023119000",
+        "municipality": "Pamplona",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.784,
+          17.635
+        ]
+      },
+      "properties": {
+        "psgc": "023120000",
+        "municipality": "PeÃ±ablanca",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.468,
+          17.899
+        ]
+      },
+      "properties": {
+        "psgc": "023121000",
+        "municipality": "Piat",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.475,
+          18.231
+        ]
+      },
+      "properties": {
+        "psgc": "023122000",
+        "municipality": "Rizal",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.227,
+          18.554
+        ]
+      },
+      "properties": {
+        "psgc": "023123000",
+        "municipality": "Sanchez-Mira",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.149,
+          18.469
+        ]
+      },
+      "properties": {
+        "psgc": "023124000",
+        "municipality": "Santa Ana",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.425,
+          18.528
+        ]
+      },
+      "properties": {
+        "psgc": "023125000",
+        "municipality": "Santa Praxedes",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.62,
+          18.43
+        ]
+      },
+      "properties": {
+        "psgc": "023126000",
+        "municipality": "Santa Teresita",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.838,
+          18.158
+        ]
+      },
+      "properties": {
+        "psgc": "023127000",
+        "municipality": "Santo NiÃ±o",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.69,
+          17.658
+        ]
+      },
+      "properties": {
+        "psgc": "023128000",
+        "municipality": "Solana",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.443,
+          17.987
+        ]
+      },
+      "properties": {
+        "psgc": "023129000",
+        "municipality": "Tuao",
+        "province": "Cagayan",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8693,
+          17.1486
+        ]
+      },
+      "properties": {
+        "psgc": "031401000",
+        "municipality": "City of Ilagan",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.695,
+          16.783
+        ]
+      },
+      "properties": {
+        "psgc": "031402000",
+        "municipality": "Alicia",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.735,
+          16.822
+        ]
+      },
+      "properties": {
+        "psgc": "031403000",
+        "municipality": "Angadanan",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.538,
+          16.982
+        ]
+      },
+      "properties": {
+        "psgc": "031404000",
+        "municipality": "Aurora",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.029,
+          17.078
+        ]
+      },
+      "properties": {
+        "psgc": "031405000",
+        "municipality": "Benito Soliven",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2,
+          17.38
+        ]
+      },
+      "properties": {
+        "psgc": "031406000",
+        "municipality": "Burgos",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.782,
+          17.435
+        ]
+      },
+      "properties": {
+        "psgc": "031407000",
+        "municipality": "Cabagan",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.801,
+          16.867
+        ]
+      },
+      "properties": {
+        "psgc": "031408000",
+        "municipality": "Cabatuan",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.775,
+          16.93
+        ]
+      },
+      "properties": {
+        "psgc": "031409000",
+        "municipality": "Cauayan City",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.44,
+          16.683
+        ]
+      },
+      "properties": {
+        "psgc": "031410000",
+        "municipality": "Cordon",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.062,
+          17.256
+        ]
+      },
+      "properties": {
+        "psgc": "031411000",
+        "municipality": "Delfin Albano",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.258,
+          16.523
+        ]
+      },
+      "properties": {
+        "psgc": "031412000",
+        "municipality": "Dinapigue",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.42,
+          17.19
+        ]
+      },
+      "properties": {
+        "psgc": "031413000",
+        "municipality": "Divilacan",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.673,
+          16.707
+        ]
+      },
+      "properties": {
+        "psgc": "031414000",
+        "municipality": "Echague",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.838,
+          17.046
+        ]
+      },
+      "properties": {
+        "psgc": "031415000",
+        "municipality": "Gamu",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.706,
+          16.503
+        ]
+      },
+      "properties": {
+        "psgc": "031416000",
+        "municipality": "Jones",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.146,
+          17.307
+        ]
+      },
+      "properties": {
+        "psgc": "031417000",
+        "municipality": "Luna",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.411,
+          17.449
+        ]
+      },
+      "properties": {
+        "psgc": "031418000",
+        "municipality": "Maconacon",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.67,
+          17.2
+        ]
+      },
+      "properties": {
+        "psgc": "031419000",
+        "municipality": "Mallig",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.904,
+          17.134
+        ]
+      },
+      "properties": {
+        "psgc": "031420000",
+        "municipality": "Naguilian",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.41,
+          17.07
+        ]
+      },
+      "properties": {
+        "psgc": "031421000",
+        "municipality": "Palanan",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.506,
+          16.628
+        ]
+      },
+      "properties": {
+        "psgc": "031422000",
+        "municipality": "Quezon",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.65,
+          17.24
+        ]
+      },
+      "properties": {
+        "psgc": "031423000",
+        "municipality": "Quirino",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.545,
+          16.778
+        ]
+      },
+      "properties": {
+        "psgc": "031424000",
+        "municipality": "Ramon",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.759,
+          17.044
+        ]
+      },
+      "properties": {
+        "psgc": "031425000",
+        "municipality": "Reina Mercedes",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6,
+          16.969
+        ]
+      },
+      "properties": {
+        "psgc": "031426000",
+        "municipality": "Roxas",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.449,
+          16.83
+        ]
+      },
+      "properties": {
+        "psgc": "031427000",
+        "municipality": "San Agustin",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.531,
+          17.006
+        ]
+      },
+      "properties": {
+        "psgc": "031428000",
+        "municipality": "San Guillermo",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.972,
+          17.3
+        ]
+      },
+      "properties": {
+        "psgc": "031429000",
+        "municipality": "San Isidro",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.616,
+          16.573
+        ]
+      },
+      "properties": {
+        "psgc": "031430000",
+        "municipality": "San Manuel",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.02,
+          16.981
+        ]
+      },
+      "properties": {
+        "psgc": "031431000",
+        "municipality": "San Mariano",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.86,
+          17.249
+        ]
+      },
+      "properties": {
+        "psgc": "031432000",
+        "municipality": "San Mateo",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.648,
+          16.811
+        ]
+      },
+      "properties": {
+        "psgc": "031433000",
+        "municipality": "San Pablo",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.075,
+          17.364
+        ]
+      },
+      "properties": {
+        "psgc": "031434000",
+        "municipality": "Santa Maria",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5503,
+          16.6875
+        ]
+      },
+      "properties": {
+        "psgc": "031435000",
+        "municipality": "Santiago City",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.803,
+          17.544
+        ]
+      },
+      "properties": {
+        "psgc": "031436000",
+        "municipality": "Santo Tomas",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8,
+          17.267
+        ]
+      },
+      "properties": {
+        "psgc": "031437000",
+        "municipality": "Tumauini",
+        "province": "Isabela",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1497,
+          16.4832
+        ]
+      },
+      "properties": {
+        "psgc": "035601000",
+        "municipality": "Bayombong",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.019,
+          16.298
+        ]
+      },
+      "properties": {
+        "psgc": "035602000",
+        "municipality": "Ambaguio",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.045,
+          16.298
+        ]
+      },
+      "properties": {
+        "psgc": "035603000",
+        "municipality": "Aritao",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.251,
+          16.61
+        ]
+      },
+      "properties": {
+        "psgc": "035604000",
+        "municipality": "Bagabag",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.12,
+          16.388
+        ]
+      },
+      "properties": {
+        "psgc": "035605000",
+        "municipality": "Bambang",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.41,
+          16.55
+        ]
+      },
+      "properties": {
+        "psgc": "035606000",
+        "municipality": "Diadi",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.101,
+          16.305
+        ]
+      },
+      "properties": {
+        "psgc": "035607000",
+        "municipality": "Dupax del Norte",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.135,
+          16.269
+        ]
+      },
+      "properties": {
+        "psgc": "035608000",
+        "municipality": "Dupax del Sur",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.32,
+          16.305
+        ]
+      },
+      "properties": {
+        "psgc": "035609000",
+        "municipality": "Kasibu",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9,
+          16.349
+        ]
+      },
+      "properties": {
+        "psgc": "035610000",
+        "municipality": "Kayapa",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.37,
+          16.633
+        ]
+      },
+      "properties": {
+        "psgc": "035611000",
+        "municipality": "Quezon",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.943,
+          16.172
+        ]
+      },
+      "properties": {
+        "psgc": "035612000",
+        "municipality": "Santa Fe",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.189,
+          16.523
+        ]
+      },
+      "properties": {
+        "psgc": "035613000",
+        "municipality": "Solano",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.12,
+          16.59
+        ]
+      },
+      "properties": {
+        "psgc": "035614000",
+        "municipality": "Villaverde",
+        "province": "Nueva Vizcaya",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5088,
+          16.5113
+        ]
+      },
+      "properties": {
+        "psgc": "067001000",
+        "municipality": "Cabarroguis",
+        "province": "Quirino",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.582,
+          16.489
+        ]
+      },
+      "properties": {
+        "psgc": "067002000",
+        "municipality": "Aglipay",
+        "province": "Quirino",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.501,
+          16.595
+        ]
+      },
+      "properties": {
+        "psgc": "067003000",
+        "municipality": "Diffun",
+        "province": "Quirino",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.693,
+          16.35
+        ]
+      },
+      "properties": {
+        "psgc": "067004000",
+        "municipality": "Maddela",
+        "province": "Quirino",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.77,
+          16.245
+        ]
+      },
+      "properties": {
+        "psgc": "067005000",
+        "municipality": "Nagtipunan",
+        "province": "Quirino",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.557,
+          16.554
+        ]
+      },
+      "properties": {
+        "psgc": "067006000",
+        "municipality": "Saguday",
+        "province": "Quirino",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.9701,
+          20.4487
+        ]
+      },
+      "properties": {
+        "psgc": "020100000",
+        "municipality": "Basco",
+        "province": "Batanes",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.843,
+          20.788
+        ]
+      },
+      "properties": {
+        "psgc": "020101000",
+        "municipality": "Itbayat",
+        "province": "Batanes",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.933,
+          20.37
+        ]
+      },
+      "properties": {
+        "psgc": "020102000",
+        "municipality": "Ivana",
+        "province": "Batanes",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.968,
+          20.42
+        ]
+      },
+      "properties": {
+        "psgc": "020103000",
+        "municipality": "Mahatao",
+        "province": "Batanes",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.865,
+          20.315
+        ]
+      },
+      "properties": {
+        "psgc": "020104000",
+        "municipality": "Sabtang",
+        "province": "Batanes",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.934,
+          20.356
+        ]
+      },
+      "properties": {
+        "psgc": "020105000",
+        "municipality": "Uyugan",
+        "province": "Batanes",
+        "cdd": 0,
+        "drought_class": "none",
+        "color": "#E8F5E9"
+      }
+    }
+  ]
+}

@@ -44,11 +44,13 @@ cfg = load_config()
 # ═══════════════════════════════════════════════════════════════════════════════
 
 PAGASA_URLS = {
-    "farm_weather": "https://www.pagasa.dost.gov.ph/climate/farm-weather-forecast",
-    "ten_day": "https://www.pagasa.dost.gov.ph/climate/ten-day-regional-agro-weather",
-    "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina",
+    "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
+    "ten_day": "https://www.pagasa.dost.gov.ph/ten-day-regional-agri-weather",
+    "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
+    "enso_advisories": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/advisories",
     "climate_monitor": "https://www.pagasa.dost.gov.ph/climate/climate-monitoring",
-    "typhoon": "https://www.pagasa.dost.gov.ph/weather/weather-bulletin",
+    "typhoon": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
+    "typhoon_agriculture": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
 }
 
 REGION2_IDENTIFIERS = [

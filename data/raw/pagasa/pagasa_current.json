@@ -1,0 +1,16 @@
+{
+  "as_of": "2026-06-10",
+  "enso": {
+    "enso_phase": "neutral",
+    "enso_strength": null,
+    "advisory_text": "ENSO status unavailable. Monitor PAGASA advisories.",
+    "source": "pagasa_cached",
+    "as_of": "2026-06-10",
+    "cache_note": "Live fetch failed; using cached value"
+  },
+  "farm_weather": {},
+  "scrape_status": {
+    "enso": "failed",
+    "farm_weather": "failed"
+  }
+}

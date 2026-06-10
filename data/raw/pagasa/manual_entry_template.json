@@ -1,0 +1,62 @@
+{
+  "_instructions": "Fill this template based on the latest PAGASA advisories for Region 2. Save as 'manual_entry_YYYY-MM-DD.json' and run the ingestor.",
+  "entry_date": "2026-06-10",
+  "entered_by": "",
+  "source_document": "",
+  "source_url": "",
+  "enso": {
+    "phase": "",
+    "strength": "",
+    "advisory_text": ""
+  },
+  "seasonal_outlook": {
+    "forecast_period": "",
+    "rainfall_outlook": "",
+    "temperature_outlook": "",
+    "narrative": ""
+  },
+  "ten_day_forecast": {
+    "period_start": "",
+    "period_end": "",
+    "review_status": "draft",
+    "cagayan": {
+      "outlook": "",
+      "rainfall_range_mm": "",
+      "agri_advisory": ""
+    },
+    "isabela": {
+      "outlook": "",
+      "rainfall_range_mm": "",
+      "agri_advisory": ""
+    },
+    "nueva_vizcaya": {
+      "outlook": "",
+      "rainfall_range_mm": "",
+      "agri_advisory": ""
+    },
+    "quirino": {
+      "outlook": "",
+      "rainfall_range_mm": "",
+      "agri_advisory": ""
+    },
+    "batanes": {
+      "outlook": "",
+      "rainfall_range_mm": "",
+      "agri_advisory": ""
+    }
+  },
+  "typhoon": {
+    "active": false,
+    "name": "",
+    "bulletin_number": "",
+    "issued_at": "",
+    "source_url": "",
+    "signal_levels": {
+      "Batanes": 0,
+      "Cagayan": 0,
+      "Isabela": 0,
+      "Nueva Vizcaya": 0,
+      "Quirino": 0
+    }
+  }
+}
