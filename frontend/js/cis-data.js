@@ -13,6 +13,7 @@ const CISData = (() => {
   const PATHS = {
     indicators:    '../data/processed/indicators/indicators_latest.json',
     advisories:    '../data/advisories/daily/advisories_latest.json',
+    regionalBulletin:'../data/advisories/daily/regional_bulletin_latest.txt',
     pipelineStatus:'../data/pipeline_status.json',
     pagasaData:    '../data/raw/pagasa/pagasa_current.json',
     geojson: {
@@ -34,6 +35,7 @@ const CISData = (() => {
   let _indicators = null;
   let _advisories = null;
   let _pagasaData = null;
+  let _pipelineStatus = null;
   let _municipalities = null; // Loaded from municipalities.json
 
   // ── Public API ─────────────────────────────────────────────────────────────
@@ -60,6 +62,7 @@ const CISData = (() => {
       _indicators = indicators;
       _advisories = advisories;
       _pagasaData = pagasaData;
+      _pipelineStatus = status;
 
       return { indicators, advisories, status, pagasaData };
     } catch (err) {
@@ -79,6 +82,10 @@ const CISData = (() => {
     const data = await fetchJSON(path);
     _cache[layerName] = data;
     return data;
+  }
+
+  async function getRegionalBulletin() {
+    return fetchText(PATHS.regionalBulletin);
   }
 
   /**
@@ -204,7 +211,14 @@ const CISData = (() => {
    * Get pipeline status / data freshness.
    */
   function getPipelineStatus() {
-    return _indicators?.meta || null;
+    return {
+      ...(_pipelineStatus || {}),
+      ...(_indicators?.meta || {}),
+      pipeline_last_run: _pipelineStatus?.last_run || null,
+      pipeline_data_as_of: _pipelineStatus?.data_as_of || null,
+      pipeline_steps: _pipelineStatus?.steps || null,
+      pipeline_status: _pipelineStatus?.status || null,
+    };
   }
 
   function getPAGASAData() {
@@ -296,6 +310,12 @@ const CISData = (() => {
     return resp.json();
   }
 
+  async function fetchText(url) {
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status} for ${url}`);
+    return resp.text();
+  }
+
   /**
    * Demo/fallback data when running without a backend (dev mode).
    * Generates synthetic records for all 92 municipalities.
@@ -365,7 +385,7 @@ const CISData = (() => {
 
   // ── Public surface ─────────────────────────────────────────────────────────
   return {
-    loadAll, getGeoJSON, getMunicipalRows, getAdvisoryForMunicipality,
+    loadAll, getGeoJSON, getRegionalBulletin, getMunicipalRows, getAdvisoryForMunicipality,
     getActiveAdvisories, getIndicatorByPSGC, getSummaryStats,
     getPriorityMunicipalities, getProvinceSummary, getPipelineStatus,
     getPAGASAData, setProvince,

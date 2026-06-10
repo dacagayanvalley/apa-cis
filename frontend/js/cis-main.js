@@ -64,6 +64,18 @@ function switchLayer(layerName) {
 function filterMunicipalityList(value) {
   CISMunicipal.filterMunicipalityList(value);
 }
+function filterAdvisories() {
+  CISAdvisory.filterAdvisories();
+}
+function generateRegionalBulletin() {
+  CISAdvisory.generateRegionalBulletin();
+}
+function copySMS() {
+  CISAdvisory.copySMS();
+}
+function copyFacebook() {
+  CISAdvisory.copyFacebook();
+}
 
 // ── Top-bar: data freshness indicator ──────────────────────────────────────
 function _updateFreshness(meta) {
@@ -79,6 +91,9 @@ function _updateFreshness(meta) {
 
   const isDemo = meta._demo;
   const asOf   = meta.as_of_date;
+  const generatedAt = meta.generated_at ? _formatDateTime(meta.generated_at) : null;
+  const lastRun = meta.pipeline_last_run || null;
+  const fallbackAsOf = meta.pipeline_data_as_of || null;
 
   if (isDemo) {
     dot.className   = 'freshness-dot stale';
@@ -92,15 +107,31 @@ function _updateFreshness(meta) {
     );
     if (days <= 1) {
       dot.className   = 'freshness-dot';           // green pulse
-      label.textContent = `Data: ${asOf} (up to date)`;
+      label.textContent = `Data: ${asOf}; fetched ${generatedAt || lastRun || 'today'}`;
     } else if (days <= 7) {
       dot.className   = 'freshness-dot stale';
-      label.textContent = `Data: ${asOf} (${days} days ago)`;
+      label.textContent = `Data: ${asOf} (${days} days ago); fetched ${generatedAt || lastRun || 'unknown'}`;
     } else {
       dot.className   = 'freshness-dot error';
       label.textContent = `Data: ${asOf} (${days} days old — pipeline may have failed)`;
     }
+    if (fallbackAsOf && fallbackAsOf !== asOf) {
+      label.title = `Pipeline fallback data as of ${fallbackAsOf}. Generated ${generatedAt || 'unknown'}.`;
+    }
   }
+}
+
+function _formatDateTime(value) {
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) return value;
+  return parsed.toLocaleString('en-PH', {
+    timeZone: 'Asia/Manila',
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  });
 }
 
 // ── Top-bar: ENSO badge ─────────────────────────────────────────────────────

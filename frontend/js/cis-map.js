@@ -351,13 +351,30 @@ const CISMap = (() => {
 
   function _updateDataInfo(layerName) {
     const asofEl = document.getElementById('map-asof-label');
+    const sourceEl = document.getElementById('map-source-label');
     const meta = CISData.getPipelineStatus();
+    if (sourceEl) {
+      sourceEl.textContent = _sourceLabelForLayer(layerName);
+    }
     if (asofEl && meta) {
       asofEl.textContent = meta.as_of_date || '—';
     }
   }
 
   // ── Fly to a municipality ──────────────────────────────────────────────────
+  function _sourceLabelForLayer(layerName) {
+    if (layerName === 'rainfall_24h') {
+      const rows = CISData.getMunicipalRows('all');
+      const apaCount = rows.filter(r => r.observations?.rainfall_source === 'apa_cis').length;
+      const chirpsCount = rows.filter(r => r.observations?.rainfall_source === 'chirps').length;
+      const nasaCount = Math.max(0, rows.length - apaCount - chirpsCount);
+      return `APA CIS ${apaCount}; CHIRPS ${chirpsCount}; NASA ${nasaCount}`;
+    }
+    if (layerName === 'advisory_status') return 'APA-CIS advisory engine';
+    if (layerName === 'rainfall_anomaly') return 'Observed rainfall vs 1991-2020 baseline';
+    return 'APA CIS / CHIRPS / NASA-derived indicators';
+  }
+
   function flyTo(lat, lon, zoom = 12) {
     if (_map) _map.flyTo([lat, lon], zoom, { duration: 1.2 });
   }

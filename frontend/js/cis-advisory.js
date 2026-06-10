@@ -245,11 +245,18 @@ const CISAdvisory = (() => {
   }
 
   // ── Bulletin generator ────────────────────────────────────────────────────
-  function generateRegionalBulletin() {
+  async function generateRegionalBulletin() {
     const output = document.getElementById('bulletin-output');
     if (!output) return;
 
-    // Try to get the pre-generated bulletin from advisory data
+    try {
+      output.value = await CISData.getRegionalBulletin();
+      return;
+    } catch (err) {
+      console.warn('Could not load generated regional bulletin; using browser fallback:', err);
+    }
+
+    // Fallback: assemble a simple bulletin from loaded advisory data.
     const advData = CISData.getActiveAdvisories('all', 'all');
     if (!advData.length) {
       output.value = 'No active advisories found. Run the pipeline first.';

@@ -228,21 +228,12 @@ const CISMunicipal = (() => {
     const anom = indicators.rainfall_anomaly || {};
     const fmt = CISData.fmt;
 
-    const activeAdvisories = adv ? `
-      <div style="margin-bottom:16px">
-        ${(adv.advisories || []).map(rule => `
-          <div style="border-left:3px solid ${rule.severity==='danger'?'#B71C1C':rule.severity==='warning'?'#E65100':'#F57F17'};
-                      padding:6px 10px;margin-bottom:6px;background:#FAFAFA;border-radius:0 3px 3px 0;font-size:12px">
-            ${fmt.severityPill(rule.severity)} &nbsp; <strong>${rule.rule_name}</strong>
-          </div>
-        `).join('')}
-      </div>
-    ` : '';
+    const activeAdvisories = _renderConsolidatedAdvisories(adv, fmt);
 
     content.innerHTML = `
       <div style="margin-bottom:16px">
         <h2 style="font-size:20px;font-weight:800;color:#1B5E20;margin-bottom:2px">${ind.municipality}</h2>
-        <div style="font-size:12px;color:#546E7A">${ind.province} · As of ${ind.as_of_date || '—'} · Source: NASA POWER</div>
+        <div style="font-size:12px;color:#546E7A">${ind.province} · As of ${ind.as_of_date || '—'} · Source: ${_sourceSummary(obs)}</div>
       </div>
 
       ${activeAdvisories}
@@ -313,6 +304,59 @@ const CISMunicipal = (() => {
         <div class="mc-body">${_renderAdaptations(indicators, ind)}</div>
       </div>
     `;
+  }
+
+  function _renderConsolidatedAdvisories(adv, fmt) {
+    if (!adv || !adv.advisories || !adv.advisories.length) {
+      return `
+        <div class="mprofile-card" style="margin-bottom:16px">
+          <div class="mc-header">Consolidated Advisory</div>
+          <div class="mc-body">
+            <div style="font-size:12px;color:#546E7A">No active municipal advisory is triggered by the current climate thresholds.</div>
+          </div>
+        </div>
+      `;
+    }
+
+    const primary = adv.advisories[0];
+    const actions = adv.advisories
+      .map(rule => rule.texts?.lgu || rule.texts?.bulletin || rule.rule_name)
+      .filter(Boolean)
+      .slice(0, 3);
+
+    return `
+      <div class="mprofile-card" style="margin-bottom:16px">
+        <div class="mc-header">Consolidated Advisory</div>
+        <div class="mc-body">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+            ${fmt.severityPill(primary.severity)}
+            <strong>${primary.rule_name}</strong>
+          </div>
+          <div style="font-size:12px;color:#37474F;line-height:1.6;margin-bottom:8px">
+            ${_escapeInline(primary.texts?.bulletin || primary.texts?.lgu || '')}
+          </div>
+          <div style="font-size:11px;font-weight:800;color:#1B5E20;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px">
+            Priority Actions
+          </div>
+          ${actions.map(action => `
+            <div style="font-size:12px;color:#546E7A;border-top:1px solid #F0F4F8;padding:6px 0">
+              ${_escapeInline(action)}
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  function _sourceSummary(obs) {
+    const source = obs.rainfall_source || 'nasa_power';
+    if (source === 'apa_cis') return `APA CIS (${obs.apa_cis_record_date || 'current'})`;
+    if (source === 'chirps') return `CHIRPS (${obs.chirps_record_date || 'latest'})`;
+    return 'NASA POWER fallback';
+  }
+
+  function _escapeInline(str) {
+    return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
 
   function _renderOpsCompact(ops) {
