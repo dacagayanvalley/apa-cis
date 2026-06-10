@@ -58,6 +58,9 @@ function filterTable(value) {
 function sortTable(value) {
   CISDashboard.sortTable(value);
 }
+function switchLayer(layerName) {
+  CISMap.switchLayer(layerName);
+}
 function filterMunicipalityList(value) {
   CISMunicipal.filterMunicipalityList(value);
 }
@@ -105,7 +108,12 @@ function _updateENSOBadge() {
   // Best-effort: ENSO status from PAGASA or fallback
   const badge = document.getElementById('enso-badge');
   if (!badge) return;
-  // Will be populated after PAGASA data loads; neutral shown by default
+  const pagasa = CISData.getPAGASAData();
+  const enso = pagasa?.enso?.phase || pagasa?.enso?.enso_phase || 'unknown';
+  badge.classList.remove('el-nino', 'la-nina');
+  if (enso === 'el_nino') badge.classList.add('el-nino');
+  if (enso === 'la_nina') badge.classList.add('la-nina');
+  badge.textContent = `ENSO: ${enso.replace('_', ' ').toUpperCase()}`;
 }
 
 // ── Application bootstrap ───────────────────────────────────────────────────
@@ -114,10 +122,11 @@ async function initCIS() {
 
   try {
     // Load all data
-    const { indicators, advisories, status } = await CISData.loadAll();
+    const { indicators, advisories, status, pagasaData } = await CISData.loadAll();
 
     // Update freshness in topbar
     _updateFreshness(indicators?.meta);
+    _updateENSOBadge();
 
     // Render dashboard (default active module)
     CISDashboard.renderAll('all');

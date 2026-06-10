@@ -22,6 +22,7 @@ const CISData = (() => {
       field_workability:'../data/geospatial/field_workability.geojson',
       rainfall_anomaly: '../data/geospatial/rainfall_anomaly.geojson',
       crop_risk:        '../data/geospatial/crop_risk.geojson',
+      drying_risk:      '../data/geospatial/drying_risk.geojson',
       municipal_risk:   '../data/geospatial/municipal_risk.geojson',
       advisory_status:  '../data/geospatial/advisory_status.geojson',
     }
@@ -32,6 +33,7 @@ const CISData = (() => {
   let _currentProvince = 'all';
   let _indicators = null;
   let _advisories = null;
+  let _pagasaData = null;
   let _municipalities = null; // Loaded from municipalities.json
 
   // ── Public API ─────────────────────────────────────────────────────────────
@@ -42,18 +44,26 @@ const CISData = (() => {
    */
   async function loadAll() {
     try {
-      const [indicators, advisories, status] = await Promise.all([
+      const [indicatorsResult, advisoriesResult, statusResult, pagasaResult] = await Promise.allSettled([
         fetchJSON(PATHS.indicators),
         fetchJSON(PATHS.advisories),
         fetchJSON(PATHS.pipelineStatus),
+        fetchJSON(PATHS.pagasaData),
       ]);
+
+      if (indicatorsResult.status !== 'fulfilled') throw indicatorsResult.reason;
+      const indicators = indicatorsResult.value;
+      const advisories = advisoriesResult.status === 'fulfilled' ? advisoriesResult.value : null;
+      const status = statusResult.status === 'fulfilled' ? statusResult.value : null;
+      const pagasaData = pagasaResult.status === 'fulfilled' ? pagasaResult.value : null;
 
       _indicators = indicators;
       _advisories = advisories;
+      _pagasaData = pagasaData;
 
-      return { indicators, advisories, status };
+      return { indicators, advisories, status, pagasaData };
     } catch (err) {
-      console.error('CISData.loadAll failed:', err);
+      console.warn('CISData.loadAll using demo fallback:', err);
       // Return demo/sample data so the UI doesn't stay blank during dev
       return { indicators: _getDemoIndicators(), advisories: null, status: null };
     }
@@ -195,6 +205,10 @@ const CISData = (() => {
    */
   function getPipelineStatus() {
     return _indicators?.meta || null;
+  }
+
+  function getPAGASAData() {
+    return _pagasaData;
   }
 
   /**
@@ -354,7 +368,7 @@ const CISData = (() => {
     loadAll, getGeoJSON, getMunicipalRows, getAdvisoryForMunicipality,
     getActiveAdvisories, getIndicatorByPSGC, getSummaryStats,
     getPriorityMunicipalities, getProvinceSummary, getPipelineStatus,
-    setProvince,
+    getPAGASAData, setProvince,
     fmt: { formatRainfall, formatTemp, formatPercent,
            severityPill, droughtPill, heatPill, workabilityPill, riskScoreBadge }
   };

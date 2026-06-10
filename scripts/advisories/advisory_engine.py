@@ -60,6 +60,16 @@ def _get_ind(indicators: Dict, key: str, default=None):
     return indicators.get("indicators", {}).get(key, default)
 
 
+def _get_obs(indicators: Dict, key: str, default=None):
+    """Safe nested accessor for observations dict."""
+    return indicators.get("observations", {}).get(key, default)
+
+
+def _get_hazard(indicators: Dict, key: str, default=None):
+    """Safe nested accessor for official hazard context."""
+    return indicators.get("official_hazards", {}).get(key, default)
+
+
 def _normalise_municipality(mun: Dict) -> Dict:
     """Return a municipality record with both config and advisory key names."""
     if not mun:
@@ -69,6 +79,127 @@ def _normalise_municipality(mun: Dict) -> Dict:
 
 
 ADVISORY_RULES = [
+
+    {
+        "rule_id": "PAGASA_TCWS_ACTIVE",
+        "name": "PAGASA Tropical Cyclone Wind Signal Active",
+        "trigger_fn": lambda ind, mun: (
+            bool(_get_hazard(ind, "typhoon_active"))
+            and int(_get_hazard(ind, "tcws_signal", 0) or 0) > 0
+        ),
+        "severity": "danger",
+        "affected_crops": ["all"],
+        "affected_stages": ["all"],
+        "bulletin_text": lambda ind, mun: (
+            f"OFFICIAL PAGASA TROPICAL CYCLONE ADVISORY - {mun['municipality']}, {mun['province']}: "
+            f"TCWS Signal No. {_get_hazard(ind, 'tcws_signal', 0)} is active "
+            f"for the province due to {_get_hazard(ind, 'typhoon_name', 'an active tropical cyclone')}. "
+            "Suspend field operations, secure machinery and harvested produce, avoid exposed coastal/upland areas, "
+            "and coordinate with MDRRMC/MAO for pre-disaster agriculture actions."
+        ),
+        "sms_text": lambda ind, mun: (
+            f"PAGASA TCWS {_get_hazard(ind, 'tcws_signal', 0)}: Suspend farm work in {mun['municipality']}. "
+            "Secure crops/equipment. Coordinate with MAO/MDRRMC."
+        ),
+        "lgu_text": lambda ind, mun: (
+            f"PAGASA TCWS ADVISORY - {mun['municipality']}\n"
+            f"Signal No. {_get_hazard(ind, 'tcws_signal', 0)} is active for {mun['province']}.\n"
+            "Actions: suspend field operations, secure harvest and inputs, pre-position assessment teams, "
+            "and prepare crop damage documentation."
+        ),
+        "fb_text": lambda ind, mun: (
+            f"PAGASA TCWS ALERT - {mun['municipality']}, {mun['province']}\n\n"
+            "Suspend farm operations and secure harvested crops, machinery, and livestock areas. "
+            "Coordinate with your MAO and MDRRMC for assistance."
+        ),
+        "responsible_office": "PAGASA + DA RFO 02 + LGU MDRRMC + MAO",
+    },
+
+    {
+        "rule_id": "POSTHARVEST_DRYING_RISK",
+        "name": "Postharvest Drying Risk",
+        "trigger_fn": lambda ind, mun: (
+            _get_ind(ind, "postharvest_drying_risk", {}).get("drying_class")
+            in ("high_risk", "unsuitable")
+        ),
+        "severity": "warning",
+        "affected_crops": ["rice_irrigated", "rice_rainfed", "corn_yellow", "corn_white"],
+        "affected_stages": ["harvesting", "postharvest"],
+        "bulletin_text": lambda ind, mun: (
+            f"POSTHARVEST DRYING RISK - {mun['municipality']}: "
+            f"Drying class is {_get_ind(ind, 'postharvest_drying_risk', {}).get('drying_class', 'unknown')}. "
+            "Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, "
+            "covered temporary storage, and rapid hauling to postharvest facilities."
+        ),
+        "sms_text": lambda ind, mun: (
+            f"DA WARNING: Drying risk in {mun['municipality']}. Use mechanical dryer/covered storage; avoid wet grain spoilage."
+        ),
+        "lgu_text": lambda ind, mun: (
+            f"POSTHARVEST ADVISORY - {mun['municipality']}\n"
+            "Coordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn."
+        ),
+        "fb_text": lambda ind, mun: (
+            f"POSTHARVEST ADVISORY - {mun['municipality']}: High drying risk. "
+            "Use mechanical dryers or covered storage to protect palay/mais quality."
+        ),
+        "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
+    },
+
+    {
+        "rule_id": "IRRIGATION_HIGH_DEMAND",
+        "name": "High Irrigation Demand",
+        "trigger_fn": lambda ind, mun: (
+            _get_ind(ind, "irrigation_demand", {}).get("priority") in ("high", "critical")
+        ),
+        "severity": "warning",
+        "affected_crops": ["rice_irrigated", "rice_rainfed", "corn_yellow", "hvcc"],
+        "affected_stages": ["vegetative", "reproductive", "flowering", "tasseling"],
+        "bulletin_text": lambda ind, mun: (
+            f"IRRIGATION PRIORITY - {mun['municipality']}: "
+            f"Estimated irrigation demand is {_get_ind(ind, 'irrigation_demand', {}).get('demand_mm', 'N/A')} mm/day "
+            f"with {_get_ind(ind, 'irrigation_demand', {}).get('priority', 'unknown')} priority. "
+            "Prioritize supplemental irrigation for rainfed and reproductive-stage crops."
+        ),
+        "sms_text": lambda ind, mun: (
+            f"DA ADVISORY: Irrigation priority in {mun['municipality']}. Prioritize reproductive-stage rice/corn and rainfed fields."
+        ),
+        "lgu_text": lambda ind, mun: (
+            f"IRRIGATION ADVISORY - {mun['municipality']}\n"
+            "Coordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support."
+        ),
+        "fb_text": lambda ind, mun: (
+            f"IRRIGATION ADVISORY - {mun['municipality']}: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+        ),
+        "responsible_office": "MAO + NIA + Irrigators Associations",
+    },
+
+    {
+        "rule_id": "WET_SPELL_DISEASE_WATCH",
+        "name": "Wet Spell Disease Watch",
+        "trigger_fn": lambda ind, mun: (
+            (_get_ind(ind, "cwd", 0) or 0) >= 3
+            and (_get_obs(ind, "humidity_pct", 0) or 0) >= 80
+        ),
+        "severity": "advisory",
+        "affected_crops": ["rice_irrigated", "rice_rainfed", "corn_yellow", "hvcc"],
+        "affected_stages": ["vegetative", "reproductive"],
+        "bulletin_text": lambda ind, mun: (
+            f"WET SPELL DISEASE WATCH - {mun['municipality']}: "
+            f"{_get_ind(ind, 'cwd', 0)} consecutive wet days and high humidity may favor fungal/bacterial diseases. "
+            "Increase field scouting for rice blast/sheath blight and corn fungal diseases. Spray only when rain and wind conditions are safe."
+        ),
+        "sms_text": lambda ind, mun: (
+            f"DA WATCH: Wet/humid days in {mun['municipality']}. Scout crops for disease; spray only in clear, low-wind weather."
+        ),
+        "lgu_text": lambda ind, mun: (
+            f"DISEASE WATCH - {mun['municipality']}\n"
+            "Ask AEWs to intensify field scouting and report pest/disease symptoms by barangay."
+        ),
+        "fb_text": lambda ind, mun: (
+            f"DISEASE WATCH - {mun['municipality']}: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying."
+        ),
+        "responsible_office": "MAO + Crop Protection Center + AEWs",
+    },
 
     # ── TYPHOON / HEAVY RAIN ─────────────────────────────────────────────────
     {

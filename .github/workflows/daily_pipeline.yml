@@ -35,6 +35,11 @@ on:
         type: boolean
         required: false
         default: false
+      skip_chirps:
+        description: 'Skip CHIRPS rainfall fetch'
+        type: boolean
+        required: false
+        default: false
 
   # Also run on push to main for testing
   push:
@@ -91,6 +96,10 @@ jobs:
             CMD="$CMD --skip-fetch"
           fi
 
+          if [ "${{ github.event.inputs.skip_chirps }}" = "true" ]; then
+            CMD="$CMD --skip-chirps"
+          fi
+
           echo "Running: $CMD"
           $CMD
 
@@ -124,6 +133,7 @@ jobs:
           git add data/processed/
           git add data/geospatial/
           git add data/advisories/
+          git add data/raw/pagasa/pagasa_current.json || true
           git add data/pipeline_status.json
           git add logs/etl_runs.jsonl || true
 

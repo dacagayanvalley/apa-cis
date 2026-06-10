@@ -86,11 +86,28 @@ def load_latest_all_municipalities() -> Dict[str, Dict]:
     return {rec["psgc"]: rec for rec in data.get("data", [])}
 
 
+def load_latest_chirps_rainfall() -> Dict[str, Dict]:
+    """Load latest CHIRPS municipal rainfall records, keyed by PSGC."""
+    latest_path = (
+        PROJECT_ROOT / cfg["paths"]["processed_daily"] / "chirps_rainfall_latest.json"
+    )
+    data = load_json(latest_path)
+    if not data:
+        return {}
+    return {rec["psgc"]: rec for rec in data.get("data", [])}
+
+
 def load_climatology() -> Dict[str, Dict]:
     """Load flattened climatology: {psgc: {month_str: {normals}}}"""
     clim_path = PROJECT_ROOT / "config" / "climatology_flat.json"
     data = load_json(clim_path)
     return data or {}
+
+
+def load_pagasa_current() -> Dict:
+    """Load latest reviewed/semi-automated PAGASA product bundle."""
+    pagasa_path = PROJECT_ROOT / cfg["paths"]["raw_pagasa"] / "pagasa_current.json"
+    return load_json(pagasa_path) or {}
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -338,6 +355,8 @@ def compute_field_workability(
     rain_24h: Optional[float],
     rain_48h: Optional[float],
     cdd: int,
+    wind_ms: Optional[float] = None,
+    humidity_pct: Optional[float] = None,
 ) -> Dict:
     """
     Field workability index for scheduling agriculture operations.
@@ -377,14 +396,22 @@ def compute_field_workability(
     def safe(condition: bool) -> str:
         return "safe" if condition else "defer"
 
+    spraying_safe = rain_24h < 5 and rain_48h < 15
+    if wind_ms is not None:
+        spraying_safe = spraying_safe and wind_ms < 5
+
+    drying_safe = rain_24h < 5
+    if humidity_pct is not None:
+        drying_safe = drying_safe and humidity_pct < 85
+
     ops = {
         "land_preparation": safe(rain_24h < 20 and cdd < 21),
         "transplanting": safe(rain_24h < 25 and cdd < 14),
         "fertilizer_application": safe(rain_24h < 10 and rain_48h < 25),
-        "spraying": safe(rain_24h < 5 and rain_48h < 15),
+        "spraying": safe(spraying_safe),
         "irrigation": safe(cdd >= 5 or rain_24h < 3),
         "harvesting": safe(rain_24h < 10 and rain_48h < 20),
-        "drying": safe(rain_24h < 5),
+        "drying": safe(drying_safe),
         "pest_monitoring": safe(rain_24h < 30),
     }
 
@@ -396,6 +423,52 @@ def compute_field_workability(
         "rain_48h_mm": rain_48h,
         "cdd": cdd,
         "operations": ops,
+        "wind_speed_ms": wind_ms,
+        "humidity_pct": humidity_pct,
+    }
+
+
+def compute_postharvest_drying_risk(
+    rainfall_mm: Optional[float],
+    humidity_pct: Optional[float],
+    wind_ms: Optional[float],
+    solar_mj: Optional[float],
+) -> Dict:
+    """Assess grain drying suitability from rain, humidity, wind, and solar."""
+    rainfall_mm = rainfall_mm or 0.0
+    humidity_pct = humidity_pct if humidity_pct is not None else 80.0
+    wind_ms = wind_ms if wind_ms is not None else 1.0
+    solar_mj = solar_mj if solar_mj is not None else 10.0
+
+    score = 0
+    reasons = []
+    if rainfall_mm >= 5:
+        score += 3
+        reasons.append("rainfall >= 5 mm")
+    if humidity_pct >= 85:
+        score += 2
+        reasons.append("humidity >= 85%")
+    if solar_mj < 12:
+        score += 1
+        reasons.append("low solar radiation")
+    if wind_ms < 1:
+        score += 1
+        reasons.append("low wind")
+
+    if score >= 5:
+        cls = "unsuitable"
+    elif score >= 3:
+        cls = "high_risk"
+    elif score >= 1:
+        cls = "caution"
+    else:
+        cls = "suitable"
+
+    return {
+        "drying_class": cls,
+        "risk_score": min(score, 6),
+        "reasons": reasons,
+        "recommend_mechanical_drying": cls in ("high_risk", "unsuitable"),
     }
 
 
@@ -628,6 +701,8 @@ def compute_all_indicators() -> Dict:
     """
     municipalities = load_municipalities()
     climatology = load_climatology()
+    chirps_rainfall = load_latest_chirps_rainfall()
+    pagasa_current = load_pagasa_current()
     ref_date = today_pht()
     current_month = str(ref_date.month)
 
@@ -644,7 +719,10 @@ def compute_all_indicators() -> Dict:
             continue
 
         latest = records[-1]  # Most recent day
-        rain_24h = latest.get("rainfall_mm")
+        chirps_rec = chirps_rainfall.get(psgc) if cfg["chirps"].get("use_for_rainfall_if_available", True) else None
+        chirps_rain = chirps_rec.get("rainfall_mm") if chirps_rec else None
+        rain_24h = chirps_rain if chirps_rain is not None else latest.get("rainfall_mm")
+        rainfall_source = "chirps" if chirps_rain is not None else latest.get("source", "nasa_power")
         rain_48h = compute_accumulated_rainfall(records, days=2)
         rain_7d = compute_accumulated_rainfall(records, days=7)
         rain_30d = compute_accumulated_rainfall(records, days=30)
@@ -682,7 +760,8 @@ def compute_all_indicators() -> Dict:
         )
 
         # Field workability
-        workability = compute_field_workability(rain_24h, rain_48h, cdd)
+        workability = compute_field_workability(rain_24h, rain_48h, cdd, wind, humidity)
+        drying_risk = compute_postharvest_drying_risk(rain_24h, humidity, wind, solar)
 
         # Crop-stage risk (default: current dominant crop by season)
         month = ref_date.month
@@ -712,6 +791,9 @@ def compute_all_indicators() -> Dict:
             "as_of_date": latest.get("date"),
             "observations": {
                 "rainfall_24h_mm": rain_24h,
+                "rainfall_source": rainfall_source,
+                "nasa_power_rainfall_24h_mm": latest.get("rainfall_mm"),
+                "chirps_rainfall_24h_mm": chirps_rain,
                 "rainfall_48h_mm": rain_48h,
                 "rainfall_7d_mm": rain_7d,
                 "rainfall_30d_mm": rain_30d,
@@ -731,12 +813,45 @@ def compute_all_indicators() -> Dict:
                 "eto_mm": eto,
                 "irrigation_demand": irr_demand,
                 "field_workability": workability,
+                "postharvest_drying_risk": drying_risk,
                 "crop_stage_risk": crop_risk,
                 "municipal_risk_score": municipal_risk_score,
+            },
+            "official_hazards": _official_hazards_for_municipality(mun, pagasa_current),
+            "data_sources": {
+                "weather": latest.get("source", "nasa_power"),
+                "rainfall_used": rainfall_source,
+                "rainfall_fallback": None if rainfall_source == "chirps" else "CHIRPS unavailable; using NASA POWER",
             },
         }
 
     return results
+
+
+def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict) -> Dict:
+    """Attach province-level PAGASA context to a municipal indicator record."""
+    province = mun.get("province")
+    province_key = (province or "").lower().replace(" ", "_")
+    typhoon = pagasa_data.get("typhoon", {}) if isinstance(pagasa_data, dict) else {}
+    ten_day = pagasa_data.get("ten_day_forecast", {}) if isinstance(pagasa_data, dict) else {}
+    seasonal = pagasa_data.get("seasonal_outlook", {}) if isinstance(pagasa_data, dict) else {}
+
+    signal_levels = typhoon.get("signal_levels", {}) if isinstance(typhoon, dict) else {}
+    ten_day_province = ten_day.get(province_key, {}) if isinstance(ten_day, dict) else {}
+
+    return {
+        "pagasa_source_date": pagasa_data.get("entry_date") or pagasa_data.get("as_of"),
+        "typhoon_active": bool(typhoon.get("active")),
+        "typhoon_name": typhoon.get("name"),
+        "tcws_signal": signal_levels.get(province, 0),
+        "ten_day_outlook": ten_day_province.get("outlook"),
+        "ten_day_rainfall_range_mm": ten_day_province.get("rainfall_range_mm"),
+        "ten_day_agri_advisory": ten_day_province.get("agri_advisory"),
+        "seasonal_rainfall_outlook": seasonal.get("rainfall_outlook"),
+        "enso_phase": (pagasa_data.get("enso", {}) or {}).get("phase")
+            or (pagasa_data.get("enso", {}) or {}).get("enso_phase"),
+        "review_status": ten_day.get("review_status") or pagasa_data.get("data_source") or "unreviewed",
+    }
 
 
 def save_indicator_outputs(results: Dict) -> None:
@@ -789,6 +904,7 @@ def _save_geojson_layers(results: Dict) -> None:
         "field_workability": [],
         "rainfall_anomaly": [],
         "crop_risk": [],
+        "drying_risk": [],
         "municipal_risk": [],
     }
 
@@ -845,6 +961,16 @@ def _save_geojson_layers(results: Dict) -> None:
             "crop": cr.get("crop"),
         }))
 
+        # Postharvest drying risk
+        dr = ind.get("postharvest_drying_risk", {})
+        layers["drying_risk"].append(make_feature(r, {
+            "drying_class": dr.get("drying_class"),
+            "risk_score": dr.get("risk_score"),
+            "recommend_mechanical_drying": dr.get("recommend_mechanical_drying"),
+            "reasons": dr.get("reasons", []),
+            "color": _drying_color(dr.get("drying_class", "unknown")),
+        }))
+
         # Municipal risk composite
         layers["municipal_risk"].append(make_feature(r, {
             "risk_score": ind.get("municipal_risk_score"),
@@ -888,6 +1014,16 @@ def _risk_score_color(score: float) -> str:
     if score >= 30: return "#FF9800"
     if score >= 15: return "#FFC107"
     return "#4CAF50"
+
+
+def _drying_color(cls: str) -> str:
+    return {
+        "suitable": "#4CAF50",
+        "caution": "#FFC107",
+        "high_risk": "#FF5722",
+        "unsuitable": "#B71C1C",
+        "unknown": "#BDBDBD",
+    }.get(cls, "#BDBDBD")
 
 
 # ═══════════════════════════════════════════════════════════════════════════════

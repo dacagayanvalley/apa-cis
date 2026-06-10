@@ -36,6 +36,32 @@ const CISDashboard = (() => {
     document.getElementById('sc-workability-sub').textContent = 'safe for field operations today';
   }
 
+  function renderSourcePanel() {
+    const rainfallEl = document.getElementById('source-rainfall');
+    const pagasaEl = document.getElementById('source-pagasa');
+    const rows = CISData.getMunicipalRows('all');
+    const pagasa = CISData.getPAGASAData();
+
+    if (rainfallEl && rows.length) {
+      const chirpsCount = rows.filter(r => r.observations?.rainfall_source === 'chirps').length;
+      const nasaCount = rows.filter(r => r.observations?.rainfall_source !== 'chirps').length;
+      rainfallEl.textContent = chirpsCount
+        ? `CHIRPS used in ${chirpsCount} municipalities; NASA fallback in ${nasaCount}`
+        : 'NASA POWER rainfall active; CHIRPS fallback not yet sampled';
+    }
+
+    if (pagasaEl) {
+      if (!pagasa) {
+        pagasaEl.textContent = 'No current PAGASA product loaded';
+      } else {
+        const enso = pagasa.enso?.phase || pagasa.enso?.enso_phase || 'unknown ENSO';
+        const date = pagasa.entry_date || pagasa.as_of || 'undated';
+        const typhoon = pagasa.typhoon?.active ? `; TC active: ${pagasa.typhoon.name || 'yes'}` : '';
+        pagasaEl.textContent = `${enso} as of ${date}${typhoon}`;
+      }
+    }
+  }
+
   function _setCard(valueId, value, extraClass = '') {
     const el = document.getElementById(valueId);
     if (!el) return;
@@ -179,11 +205,12 @@ const CISDashboard = (() => {
 
   // ── Render all dashboard components ───────────────────────────────────────
   function renderAll(province = 'all') {
+    renderSourcePanel();
     renderStatCards(province);
     renderAlertStrip(province);
     renderTable(province);
   }
 
   return { renderAll, renderStatCards, renderAlertStrip, renderTable,
-           filterTable, sortTable, handleProvinceFilter, openMunicipalProfile };
+           renderSourcePanel, filterTable, sortTable, handleProvinceFilter, openMunicipalProfile };
 })();

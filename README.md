@@ -7,6 +7,24 @@ Municipal-level agricultural climate information service for Batanes, Cagayan, I
 
 ---
 
+## MVP Implementation Update
+
+This repository now includes the minimum viable municipal agriculture CIS stack:
+
+- NASA POWER automated daily weather fetch for all Cagayan Valley municipalities.
+- CHIRPS automated rainfall raster download with optional municipal centroid sampling when `rasterio` is installed.
+- Semi-automated PAGASA official product workflow with a stable `data/raw/pagasa/pagasa_current.json` output.
+- Source-aware indicators that prefer CHIRPS rainfall when available and keep NASA POWER as fallback.
+- Added postharvest drying risk, official PAGASA typhoon signal context, irrigation priority, and wet-spell disease watch rules.
+- Added `data/geospatial/drying_risk.geojson` for the Leaflet map.
+- Added Supabase/PostGIS schema and OpenAPI starter files under `api/`.
+
+Operational runbook: `docs/mvp_operations_guide.md`
+
+Architecture and gap assessment: `docs/cis_upgrade_assessment.md`
+
+---
+
 ## What It Does
 
 | Capability | Detail |

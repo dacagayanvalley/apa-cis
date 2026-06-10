@@ -149,6 +149,16 @@ paths:
       responses:
         "200":
           description: Heat stress levels and recommended work-hour restrictions
+  /operations/drying-risk:
+    get:
+      summary: Harvest and postharvest drying suitability
+      tags: [Operations]
+      parameters:
+        - $ref: "#/components/parameters/Psgc"
+        - $ref: "#/components/parameters/Province"
+      responses:
+        "200":
+          description: Drying risk class, trigger reasons, and mechanical drying recommendation
   /maps/rainfall-anomaly.geojson:
     get:
       summary: Rainfall anomaly map layer
@@ -159,6 +169,13 @@ paths:
   /maps/drought-watch.geojson:
     get:
       summary: Drought watch map layer
+      tags: [Maps]
+      responses:
+        "200":
+          description: GeoJSON layer
+  /maps/drying-risk.geojson:
+    get:
+      summary: Postharvest drying risk map layer
       tags: [Maps]
       responses:
         "200":

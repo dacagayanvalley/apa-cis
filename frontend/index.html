@@ -67,6 +67,21 @@
     </div>
   </div>
 
+  <div class="source-panel" id="source-panel">
+    <div class="source-card">
+      <span class="source-label">Rainfall Source</span>
+      <strong id="source-rainfall">NASA POWER / CHIRPS fallback</strong>
+    </div>
+    <div class="source-card">
+      <span class="source-label">Official PAGASA Context</span>
+      <strong id="source-pagasa">Loading...</strong>
+    </div>
+    <div class="source-card">
+      <span class="source-label">Operational Focus</span>
+      <strong>Municipal agriculture advisories</strong>
+    </div>
+  </div>
+
   <!-- Summary stat cards -->
   <div class="stat-grid" id="stat-grid">
     <div class="stat-card" id="sc-rainfall">
@@ -184,6 +199,10 @@
         <label class="layer-item" id="li-crop_risk">
           <input type="radio" name="map-layer" value="crop_risk" onchange="switchLayer('crop_risk')">
           <span class="layer-dot" style="background:#FF9800"></span> Crop Stage Risk
+        </label>
+        <label class="layer-item" id="li-drying_risk">
+          <input type="radio" name="map-layer" value="drying_risk" onchange="switchLayer('drying_risk')">
+          <span class="layer-dot" style="background:#E65100"></span> Postharvest Drying Risk
         </label>
         <label class="layer-item" id="li-municipal_risk">
           <input type="radio" name="map-layer" value="municipal_risk" onchange="switchLayer('municipal_risk')">

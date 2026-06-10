@@ -29,8 +29,12 @@ nasa_power:
   lag_days: 5
 
 chirps:
-  base_url: "https://iridl.ldeo.columbia.edu/SOURCES/.UCSB/.CHIRPS"
+  base_url: "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/tifs/p05"
   resolution: "0p05"               # 0.05-degree (~5km)
+  request_delay_seconds: 1.0
+  retry_attempts: 3
+  timeout_seconds: 90
+  use_for_rainfall_if_available: true
   # Alternative: NASA POWER monthly for climatology (simpler, same result)
   climatology_source: "nasa_power" # 'chirps' or 'nasa_power'
   baseline_start: 1991

@@ -75,6 +75,15 @@ const CISMap = (() => {
         { color:'#B71C1C', label:'Critical (4–5)' },
       ]
     },
+    drying_risk: {
+      title: 'Postharvest Drying Risk',
+      items: [
+        { color:'#4CAF50', label:'Suitable' },
+        { color:'#FFC107', label:'Caution' },
+        { color:'#FF5722', label:'High Risk' },
+        { color:'#B71C1C', label:'Unsuitable' },
+      ]
+    },
     municipal_risk: {
       title: 'Municipal Risk Score',
       items: [
@@ -114,6 +123,7 @@ const CISMap = (() => {
     field_workability:(props) => props.color || '#4CAF50',
     rainfall_anomaly: (props) => props.color || '#A5D6A7',
     crop_risk:        (props) => props.color || '#4CAF50',
+    drying_risk:      (props) => props.color || '#4CAF50',
     municipal_risk:   (props) => props.color || '#4CAF50',
     advisory_status:  (props) => props.color || '#4CAF50',
   };
@@ -164,6 +174,14 @@ const CISMap = (() => {
       Crop: <b>${(props.crop || '').replace('_',' ')}</b><br>
       Risk Score: <b style="color:${props.color}">${props.risk_score ?? '—'}/5</b><br>
       Class: <b>${(props.risk_class || '').toUpperCase()}</b>
+    `,
+    drying_risk: (props) => `
+      <b>${props.municipality}</b><br>
+      <span style="color:#546E7A">${props.province}</span><br>
+      <hr style="margin:4px 0">
+      Drying Status: <b style="color:${props.color}">${(props.drying_class || 'unknown').replace('_',' ').toUpperCase()}</b><br>
+      Risk Score: <b>${props.risk_score ?? '—'}</b><br>
+      ${props.recommend_mechanical_drying ? '<small>Mechanical drying recommended.</small>' : '<small>Open drying may proceed with monitoring.</small>'}
     `,
     municipal_risk: (props) => `
       <b>${props.municipality}</b><br>

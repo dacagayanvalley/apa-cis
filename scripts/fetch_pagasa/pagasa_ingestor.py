@@ -499,6 +499,7 @@ def create_manual_entry_template() -> Dict:
         "ten_day_forecast": {
             "period_start": "",  # YYYY-MM-DD
             "period_end": "",
+            "review_status": "draft",  # draft | reviewed | approved
             "cagayan": {"outlook": "", "rainfall_range_mm": "", "agri_advisory": ""},
             "isabela": {"outlook": "", "rainfall_range_mm": "", "agri_advisory": ""},
             "nueva_vizcaya": {"outlook": "", "rainfall_range_mm": "", "agri_advisory": ""},
@@ -508,6 +509,9 @@ def create_manual_entry_template() -> Dict:
         "typhoon": {
             "active": False,
             "name": "",
+            "bulletin_number": "",
+            "issued_at": "",
+            "source_url": "",
             "signal_levels": {
                 "Batanes": 0,
                 "Cagayan": 0,
@@ -547,7 +551,9 @@ def ingest_manual_entry(entry_path: Path) -> Optional[Dict]:
         PROJECT_ROOT / cfg["paths"]["raw_pagasa"]
         / f"pagasa_data_{entry.get('entry_date', today_pht().isoformat())}.json"
     )
+    latest_path = PROJECT_ROOT / cfg["paths"]["raw_pagasa"] / "pagasa_current.json"
     save_json(entry, output_path)
+    save_json(entry, latest_path)
     logger.info(f"Manual entry ingested → {output_path}")
 
     log_etl_event(
@@ -633,7 +639,9 @@ def run() -> None:
         PROJECT_ROOT / cfg["paths"]["raw_pagasa"]
         / f"pagasa_current_{today_pht().isoformat()}.json"
     )
+    latest_path = PROJECT_ROOT / cfg["paths"]["raw_pagasa"] / "pagasa_current.json"
     save_json(pagasa_data, output_path)
+    save_json(pagasa_data, latest_path)
 
     logger.info("=== PAGASA ingestor complete ===")
 

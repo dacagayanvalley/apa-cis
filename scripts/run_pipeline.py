@@ -63,6 +63,7 @@ def run_step(name: str, fn, *args, **kwargs):
 def run_daily_pipeline(
     target_date: date = None,
     skip_fetch: bool = False,
+    skip_chirps: bool = False,
     skip_pagasa: bool = False,
 ) -> dict:
     """
@@ -103,6 +104,21 @@ def run_daily_pipeline(
     else:
         logger.info("--- STEP: NASA POWER Daily Fetch --- [SKIPPED]")
         report["steps"]["nasa_power"] = "skipped"
+
+    # CHIRPS rainfall fetch is additive. If centroid sampling is unavailable,
+    # the script logs a warning and the indicator engine keeps NASA rainfall.
+    if not skip_fetch and not skip_chirps:
+        try:
+            from scripts.fetch_chirps.fetch_daily import run as chirps_run
+            chirps_date = target_date or (today_pht() - timedelta(days=2))
+            success, _ = run_step("CHIRPS Daily Rainfall Fetch", chirps_run, chirps_date)
+            report["steps"]["chirps"] = "success" if success else "warning"
+        except Exception as exc:
+            logger.error(f"CHIRPS step error: {exc}")
+            report["steps"]["chirps"] = "warning"
+    else:
+        logger.info("--- STEP: CHIRPS Daily Rainfall Fetch --- [SKIPPED]")
+        report["steps"]["chirps"] = "skipped"
 
     # ── Step 2: PAGASA ingestor ───────────────────────────────────────────
     if not skip_pagasa:
@@ -189,6 +205,8 @@ if __name__ == "__main__":
                         help="Skip NASA POWER fetch (indicators only)")
     parser.add_argument("--skip-pagasa", action="store_true",
                         help="Skip PAGASA ingestor")
+    parser.add_argument("--skip-chirps", action="store_true",
+                        help="Skip CHIRPS rainfall fetch")
 
     args = parser.parse_args()
 
@@ -196,6 +214,7 @@ if __name__ == "__main__":
     result = run_daily_pipeline(
         target_date=target,
         skip_fetch=args.skip_fetch,
+        skip_chirps=args.skip_chirps,
         skip_pagasa=args.skip_pagasa,
     )
 
