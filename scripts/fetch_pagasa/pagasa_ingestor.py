@@ -196,6 +196,10 @@ def fetch_live_pagasa_data() -> Dict:
     """
     output = {
         "as_of": today_pht().isoformat(),
+        "source_urls": {
+            "enso": PAGASA_URLS["enso"],
+            "farm_weather": PAGASA_URLS["farm_weather"],
+        },
         "enso": {},
         "farm_weather": {},
         "scrape_status": {},

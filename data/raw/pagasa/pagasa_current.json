@@ -1,5 +1,9 @@
 {
   "as_of": "2026-06-10",
+  "source_urls": {
+    "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
+    "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather"
+  },
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": null,
