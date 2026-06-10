@@ -70,15 +70,17 @@ def scrape_pagasa_page(url: str, page_name: str) -> Optional[str]:
         logger.warning(f"Could not fetch {page_name} from {url}")
         return None
 
+    html_text = resp.content.decode("utf-8", errors="replace")
+
     # Save raw HTML for audit trail
     raw_dir = PROJECT_ROOT / cfg["paths"]["raw_pagasa"] / today_pht().strftime("%Y/%m")
     raw_dir.mkdir(parents=True, exist_ok=True)
     raw_file = raw_dir / f"{page_name}_{today_pht().isoformat()}.html"
     with open(raw_file, "w", encoding="utf-8") as f:
-        f.write(resp.text)
+        f.write(html_text)
     logger.info(f"Saved raw HTML → {raw_file}")
 
-    return resp.text
+    return html_text
 
 
 def extract_region2_text(html_text: str) -> List[str]:
