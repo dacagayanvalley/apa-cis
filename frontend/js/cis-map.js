@@ -352,9 +352,17 @@ const CISMap = (() => {
   function _updateDataInfo(layerName) {
     const asofEl = document.getElementById('map-asof-label');
     const sourceEl = document.getElementById('map-source-label');
+    const validEl = document.getElementById('map-valid-label');
+    const qaEl = document.getElementById('map-qa-label');
     const meta = CISData.getPipelineStatus();
     if (sourceEl) {
       sourceEl.textContent = _sourceLabelForLayer(layerName);
+    }
+    if (validEl) {
+      validEl.textContent = _validUntil(meta?.as_of_date);
+    }
+    if (qaEl) {
+      qaEl.textContent = _qaLabelForLayer(layerName);
     }
     if (asofEl && meta) {
       asofEl.textContent = meta.as_of_date || '—';
@@ -373,6 +381,33 @@ const CISMap = (() => {
     if (layerName === 'advisory_status') return 'APA-CIS advisory engine';
     if (layerName === 'rainfall_anomaly') return 'Observed rainfall vs 1991-2020 baseline';
     return 'APA CIS / CHIRPS / NASA-derived indicators';
+  }
+
+  function _validUntil(asOfDate) {
+    if (!asOfDate) return 'Next pipeline update';
+    const parsed = new Date(`${asOfDate}T00:00:00+08:00`);
+    if (Number.isNaN(parsed.getTime())) return 'Next pipeline update';
+    parsed.setDate(parsed.getDate() + 1);
+    return parsed.toISOString().slice(0, 10) + ' or until superseded';
+  }
+
+  function _qaLabelForLayer(layerName) {
+    const rows = CISData.getMunicipalRows('all');
+    if (!rows.length) return 'No municipal records loaded.';
+    if (layerName === 'rainfall_24h') {
+      const fallbackCount = rows.filter(r => r.observations?.rainfall_source === 'nasa_power').length;
+      return fallbackCount
+        ? `${fallbackCount} municipalities use NASA fallback; verify for high-impact decisions.`
+        : 'Same-day rainfall source available for all loaded municipalities.';
+    }
+    if (layerName === 'advisory_status') {
+      const lowConfidence = CISData.getActiveAdvisories('all', 'all')
+        .filter(a => a.decision_support?.confidence === 'low').length;
+      return lowConfidence
+        ? `${lowConfidence} active advisories flagged low confidence.`
+        : 'Advisory confidence flags available.';
+    }
+    return 'Derived layer; inspect municipal profile for source flags.';
   }
 
   function flyTo(lat, lon, zoom = 12) {

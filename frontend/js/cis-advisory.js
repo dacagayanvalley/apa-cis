@@ -272,7 +272,7 @@ const CISAdvisory = (() => {
     let bulletin = `DA RFO 02 REGIONAL AGRICULTURAL ADVISORY\n`;
     bulletin += `Date: ${today}\n`;
     bulletin += `Coverage: Cagayan Valley (Region 02)\n`;
-    bulletin += `Issued by: DA RFO 02 — RAED / AMIA-CRAO\n`;
+    bulletin += `Issued by: DA-RFO2 APA\n`;
     bulletin += `${'='.repeat(58)}\n\n`;
     bulletin += `SITUATION OVERVIEW:\n`;
     bulletin += `  Active advisories: ${advData.length} municipalities\n`;
@@ -305,8 +305,8 @@ const CISAdvisory = (() => {
     bulletin += `  • Pre-position emergency seeds and postharvest equipment\n`;
     bulletin += `\n`;
     bulletin += `For full advisory details, visit the APA-CIS portal.\n`;
-    bulletin += `Hotline: (078) 844-1228 / (078) 396-0558\n`;
-    bulletin += `\nEnd of Advisory — ${today}\n`;
+    bulletin += `For assistance: 0916-708-9707; DA RFO2 APA Facebook page; arfo2apa@gmail.com\n`;
+    bulletin += `\nEnd of Advisory - ${today}\n`;
 
     output.value = bulletin;
   }

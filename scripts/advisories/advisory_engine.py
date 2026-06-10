@@ -15,7 +15,7 @@ DA RFO 02 — APA-CIS Climate Information Service, Cagayan Valley
 """
 
 import sys
-from datetime import date
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -34,6 +34,11 @@ from scripts.utils import (
 
 logger = setup_logger(__name__, "advisory_engine.log")
 cfg = load_config()
+
+ISSUER = "DA-RFO2 APA"
+ASSISTANCE_CONTACT = "0916-708-9707"
+ASSISTANCE_FACEBOOK = "DA RFO2 APA Facebook page"
+ASSISTANCE_EMAIL = "arfo2apa@gmail.com"
 
 
 def load_cra_measures() -> Dict:
@@ -657,6 +662,173 @@ def evaluate_municipality(
     return triggered
 
 
+def _parse_date(value) -> Optional[date]:
+    if not value:
+        return None
+    if isinstance(value, date):
+        return value
+    text = str(value).replace("Z", "+00:00")
+    try:
+        return datetime.fromisoformat(text).date()
+    except ValueError:
+        try:
+            return date.fromisoformat(str(value)[:10])
+        except ValueError:
+            return None
+
+
+def _days_old(value, ref_date: date) -> Optional[int]:
+    parsed = _parse_date(value)
+    if not parsed:
+        return None
+    return max(0, (ref_date - parsed).days)
+
+
+def _source_label(source: str) -> str:
+    labels = {
+        "apa_cis": "APA CIS",
+        "chirps": "CHIRPS",
+        "nasa_power": "NASA POWER",
+    }
+    return labels.get(source or "", source or "unknown")
+
+
+def _source_age(indicators: Dict, ref_date: date) -> Dict:
+    obs = indicators.get("observations", {})
+    hazards = indicators.get("official_hazards", {})
+    rainfall_source = obs.get("rainfall_source") or indicators.get("data_sources", {}).get("rainfall_used")
+    if rainfall_source == "apa_cis":
+        source_date = obs.get("apa_cis_record_date") or indicators.get("as_of_date")
+    elif rainfall_source == "chirps":
+        source_date = obs.get("chirps_record_date") or indicators.get("as_of_date")
+    else:
+        source_date = indicators.get("as_of_date")
+
+    return {
+        "weather_source": _source_label(indicators.get("data_sources", {}).get("weather")),
+        "rainfall_source": _source_label(rainfall_source),
+        "rainfall_source_date": source_date,
+        "rainfall_age_days": _days_old(source_date, ref_date),
+        "pagasa_source_date": hazards.get("pagasa_source_date"),
+        "pagasa_age_days": _days_old(hazards.get("pagasa_source_date"), ref_date),
+        "acap_source_date": hazards.get("acap_ten_day_source_date"),
+        "acap_age_days": _days_old(hazards.get("acap_ten_day_source_date"), ref_date),
+    }
+
+
+def _source_qa_flags(indicators: Dict, ref_date: date) -> List[str]:
+    flags = []
+    obs = indicators.get("observations", {})
+    hazards = indicators.get("official_hazards", {})
+    source_age = _source_age(indicators, ref_date)
+
+    rainfall_source = (obs.get("rainfall_source") or "").lower()
+    if rainfall_source == "nasa_power":
+        flags.append("Rainfall is NASA POWER fallback; treat as lower-confidence local observation.")
+    if source_age["rainfall_age_days"] is None:
+        flags.append("Rainfall source date unavailable.")
+    elif source_age["rainfall_age_days"] > 1 and rainfall_source in ("apa_cis", "chirps"):
+        flags.append(f"Rainfall source is {source_age['rainfall_age_days']} days old.")
+    if not hazards.get("acap_ten_day_available"):
+        flags.append("ACAP 10-day forecast not available for this province.")
+    if hazards.get("review_status") in (None, "unreviewed", "default_fallback"):
+        flags.append("PAGASA context needs staff review before official dissemination.")
+    if obs.get("rainfall_24h_mm") is None:
+        flags.append("24-hour rainfall missing.")
+    if obs.get("tmax_c") is None:
+        flags.append("Maximum temperature missing.")
+    return flags or ["Sources passed automated freshness and completeness checks."]
+
+
+def _confidence_from_flags(flags: List[str], indicators: Dict) -> str:
+    source = (indicators.get("observations", {}).get("rainfall_source") or "").lower()
+    blocker_flags = [flag for flag in flags if "missing" in flag.lower() or "unavailable" in flag.lower()]
+    review_flags = [flag for flag in flags if "review" in flag.lower() or "fallback" in flag.lower()]
+    if source == "apa_cis" and not blocker_flags and not review_flags:
+        return "high"
+    if blocker_flags or source == "nasa_power":
+        return "low"
+    return "medium"
+
+
+def _valid_until(ref_date: date) -> str:
+    return (ref_date + timedelta(days=1)).isoformat()
+
+
+def _decision_support_for_municipality(
+    indicators: Dict,
+    adv_data: Dict,
+    ref_date: date,
+) -> Dict:
+    advisories = adv_data.get("advisories", [])
+    primary = advisories[0] if advisories else {}
+    crop_risk = indicators.get("indicators", {}).get("crop_stage_risk", {})
+    official = indicators.get("official_hazards", {})
+    flags = _source_qa_flags(indicators, ref_date)
+    source_age = _source_age(indicators, ref_date)
+
+    return {
+        "hazard": primary.get("rule_name", "No active advisory"),
+        "severity": adv_data.get("highest_severity", "none"),
+        "confidence": _confidence_from_flags(flags, indicators),
+        "source_age": source_age,
+        "source_qa_flags": flags,
+        "official_pagasa_warning": {
+            "typhoon_active": bool(official.get("typhoon_active")),
+            "typhoon_name": official.get("typhoon_name"),
+            "tcws_signal": official.get("tcws_signal", 0),
+            "pagasa_source_date": official.get("pagasa_source_date"),
+            "review_status": official.get("review_status"),
+        },
+        "affected_crop_stage": {
+            "crop": crop_risk.get("crop") or (primary.get("affected_crops") or ["all"])[0],
+            "stage": crop_risk.get("crop_stage") or (primary.get("affected_stages") or ["all"])[0],
+            "risk_class": crop_risk.get("risk_class"),
+            "risk_score": crop_risk.get("risk_score"),
+        },
+        "immediate_farmer_action": primary.get("texts", {}).get("sms")
+            or primary.get("texts", {}).get("bulletin")
+            or "Continue monitoring and follow MAO/DA advisories.",
+        "lgu_da_action": primary.get("texts", {}).get("lgu")
+            or "MAO/DA field staff should verify local conditions and prepare advisory dissemination.",
+        "public_advisory": primary.get("texts", {}).get("facebook")
+            or "Monitor official DA-RFO2 APA and PAGASA updates.",
+        "sms_ready": primary.get("texts", {}).get("sms", ""),
+        "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
+        "valid_until": _valid_until(ref_date),
+    }
+
+
+def _summarise_sources(data: Dict, ref_date: date) -> Dict:
+    source_counts = {}
+    confidence_counts = {"high": 0, "medium": 0, "low": 0}
+    pagasa_dates = set()
+    acap_dates = set()
+    qa_flags = {}
+
+    for indicators in data.values():
+      obs = indicators.get("observations", {})
+      source = obs.get("rainfall_source") or "unknown"
+      source_counts[source] = source_counts.get(source, 0) + 1
+      flags = _source_qa_flags(indicators, ref_date)
+      confidence_counts[_confidence_from_flags(flags, indicators)] += 1
+      for flag in flags:
+          qa_flags[flag] = qa_flags.get(flag, 0) + 1
+      hazards = indicators.get("official_hazards", {})
+      if hazards.get("pagasa_source_date"):
+          pagasa_dates.add(str(hazards.get("pagasa_source_date"))[:10])
+      if hazards.get("acap_ten_day_source_date"):
+          acap_dates.add(str(hazards.get("acap_ten_day_source_date"))[:10])
+
+    return {
+        "rainfall_source_counts": source_counts,
+        "confidence_counts": confidence_counts,
+        "pagasa_source_dates": sorted(pagasa_dates),
+        "acap_source_dates": sorted(acap_dates),
+        "top_qa_flags": sorted(qa_flags.items(), key=lambda item: item[1], reverse=True)[:5],
+    }
+
+
 def generate_all_advisories(indicators_data: Dict) -> Dict:
     """
     Generate advisories for all municipalities.
@@ -686,6 +858,7 @@ def generate_all_advisories(indicators_data: Dict) -> Dict:
 
     data = indicators_data.get("data", {})
     report["meta"]["total_municipalities"] = len(data)
+    report["source_summary"] = _summarise_sources(data, ref_date)
 
     for psgc, indicators in data.items():
         mun = _normalise_municipality(municipalities.get(psgc, {}))
@@ -701,6 +874,11 @@ def generate_all_advisories(indicators_data: Dict) -> Dict:
                 "highest_severity": advisories[0]["severity"],
                 "advisories": advisories,
             }
+            report["advisories"][psgc]["decision_support"] = _decision_support_for_municipality(
+                indicators,
+                report["advisories"][psgc],
+                ref_date,
+            )
             report["meta"]["municipalities_with_advisories"] += 1
             if advisories[0]["severity"] == "danger":
                 report["meta"]["danger_count"] += 1
@@ -731,10 +909,13 @@ def generate_all_advisories(indicators_data: Dict) -> Dict:
             "municipality": adv_data["municipality"],
             "province": adv_data["province"],
             "severity": adv_data["highest_severity"],
+            "confidence": adv_data.get("decision_support", {}).get("confidence", "unknown"),
             "advisory_count": adv_data["advisory_count"],
             "risk_score": ind.get("indicators", {}).get("municipal_risk_score", 0),
             "primary_advisory": adv_data["advisories"][0]["rule_name"]
                 if adv_data["advisories"] else "",
+            "farmer_action": adv_data.get("decision_support", {}).get("immediate_farmer_action", ""),
+            "lgu_da_action": adv_data.get("decision_support", {}).get("lgu_da_action", ""),
         })
 
     severity_order = {"danger": 0, "warning": 1, "advisory": 2, "info": 3}
@@ -753,19 +934,46 @@ def generate_regional_bulletin(report: Dict) -> str:
     danger = report["meta"]["danger_count"]
     warning = report["meta"]["warning_count"]
     total_adv = report["meta"]["municipalities_with_advisories"]
+    source_summary = report.get("source_summary", {})
+    source_counts = source_summary.get("rainfall_source_counts", {})
+    confidence_counts = source_summary.get("confidence_counts", {})
+    pagasa_dates = ", ".join(source_summary.get("pagasa_source_dates", [])) or "not available"
+    acap_dates = ", ".join(source_summary.get("acap_source_dates", [])) or "not available"
 
     lines = [
         f"DA RFO 02 REGIONAL AGRICULTURAL ADVISORY",
         f"Date: {today}",
+        f"Valid until: {(date.fromisoformat(today) + timedelta(days=1)).isoformat()}, unless superseded by newer PAGASA/DA-RFO2 APA updates",
         f"Coverage: Cagayan Valley (Region 02)",
-        f"Issued by: DA RFO 02 — Regional Agricultural Extension Division (RAED)",
+        f"Issued by: {ISSUER}",
         "=" * 60,
         f"\nSITUATION OVERVIEW:",
         f"  Active advisories: {total_adv} municipalities",
         f"  Danger alerts: {danger}",
         f"  Warnings: {warning}",
+        f"  Confidence: high {confidence_counts.get('high', 0)}, medium {confidence_counts.get('medium', 0)}, low {confidence_counts.get('low', 0)}",
         "",
     ]
+
+    lines.extend([
+        "SOURCE TIMESTAMPS AND QA:",
+        f"  APA CIS rainfall municipalities: {source_counts.get('apa_cis', 0)}",
+        f"  CHIRPS rainfall municipalities: {source_counts.get('chirps', 0)}",
+        f"  NASA POWER fallback municipalities: {source_counts.get('nasa_power', 0)}",
+        f"  PAGASA source date(s): {pagasa_dates}",
+        f"  ACAP 10-day source date(s): {acap_dates}",
+    ])
+    for flag, count in source_summary.get("top_qa_flags", []):
+        lines.append(f"  QA flag ({count} municipalities): {flag}")
+    lines.append("")
+
+    lines.extend([
+        "PAGASA / ACAP / CIS SUMMARY:",
+        "  PAGASA warnings are integrated where TCWS, ENSO, seasonal outlook, or farm-weather context is available.",
+        "  ACAP 10-day provincial forecast and crop-calendar references are used as planning context.",
+        "  APA CIS is prioritized for same-day municipal rainfall, maximum temperature, and wind when available.",
+        "",
+    ])
 
     # Provincial summaries
     lines.append("PROVINCIAL STATUS:")
@@ -782,14 +990,29 @@ def generate_regional_bulletin(report: Dict) -> str:
         for i, mun in enumerate(report["priority_municipalities"][:10], 1):
             lines.append(
                 f"  {i}. {mun['municipality']}, {mun['province']} "
-                f"[{mun['severity'].upper()}] — {mun['primary_advisory']}"
+                f"[{mun['severity'].upper()}, confidence: {mun.get('confidence', 'unknown')}] - {mun['primary_advisory']}"
             )
 
     lines.extend([
         "",
+        "ACTION TIERS:",
+        "  Farmers: Follow the municipal advisory SMS/action text; adjust field work, irrigation, spraying, harvest, and drying based on local MAO guidance.",
+        "  LGUs / MAOs: Verify barangay-level field conditions, disseminate SMS advisories, and report affected farmers/hectares to DA-RFO2 APA.",
+        "  DA Operations: Prioritize validation teams, irrigation coordination, postharvest support, seeds, crop protection, and PCIC coordination in danger/warning municipalities.",
+        "  Public: Monitor DA RFO2 APA and PAGASA updates; avoid sharing unofficial advisories without source date and valid-until information.",
+    ])
+
+    if report["priority_municipalities"]:
+        lines.append("\nSMS-READY PRIORITY ADVISORIES:")
+        for mun in report["priority_municipalities"][:5]:
+            sms = (mun.get("farmer_action") or "").replace("\n", " ")
+            lines.append(f"  {mun['municipality']}: {sms[:160]}")
+
+    lines.extend([
+        "",
         "For full advisory details, visit the APA-CIS portal.",
-        "For assistance, contact DA RFO 02 at (078) 844-1228 / (078) 396-0558.",
-        f"\nEnd of Advisory — {today}",
+        f"For assistance, contact {ISSUER}: {ASSISTANCE_CONTACT}; {ASSISTANCE_FACEBOOK}; {ASSISTANCE_EMAIL}.",
+        f"\nEnd of Advisory - {today}",
     ])
 
     return "\n".join(lines)

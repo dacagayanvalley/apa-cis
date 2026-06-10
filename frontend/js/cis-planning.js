@@ -319,33 +319,54 @@ const CISMunicipal = (() => {
     }
 
     const primary = adv.advisories[0];
-    const actions = adv.advisories
-      .map(rule => rule.texts?.lgu || rule.texts?.bulletin || rule.rule_name)
-      .filter(Boolean)
-      .slice(0, 3);
+    const decision = adv.decision_support || {};
+    const cropStage = decision.affected_crop_stage || {};
+    const sourceAge = decision.source_age || {};
+    const qaFlags = decision.source_qa_flags || [];
 
     return `
       <div class="mprofile-card" style="margin-bottom:16px">
-        <div class="mc-header">Consolidated Advisory</div>
+        <div class="mc-header">Decision Advisory</div>
         <div class="mc-body">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-            ${fmt.severityPill(primary.severity)}
-            <strong>${primary.rule_name}</strong>
+            ${fmt.severityPill(decision.severity || primary.severity)}
+            <strong>${_escapeInline(decision.hazard || primary.rule_name)}</strong>
           </div>
-          <div style="font-size:12px;color:#37474F;line-height:1.6;margin-bottom:8px">
-            ${_escapeInline(primary.texts?.bulletin || primary.texts?.lgu || '')}
+          <div class="decision-grid">
+            ${_decisionItem('Hazard', decision.hazard || primary.rule_name)}
+            ${_decisionItem('Confidence / Source Age', `${_titleCase(decision.confidence || 'unknown')} confidence; rainfall ${sourceAge.rainfall_age_days ?? 'N/A'} day(s) old from ${sourceAge.rainfall_source || 'unknown'}`)}
+            ${_decisionItem('Affected Crop Stage', `${_labelize(cropStage.crop || 'all')} / ${_labelize(cropStage.stage || 'all')} (${cropStage.risk_class || 'risk not classified'})`)}
+            ${_decisionItem('Immediate Farmer Action', decision.immediate_farmer_action || primary.texts?.sms || '')}
+            ${_decisionItem('LGU / DA Action', decision.lgu_da_action || primary.texts?.lgu || '')}
+            ${_decisionItem('When to Re-check', `${decision.when_to_recheck || 'Re-check after the next pipeline run.'} Valid until ${decision.valid_until || 'next update'}.`)}
           </div>
-          <div style="font-size:11px;font-weight:800;color:#1B5E20;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px">
-            Priority Actions
+          <div class="decision-sms">
+            <strong>SMS-ready:</strong> ${_escapeInline(decision.sms_ready || primary.texts?.sms || '')}
           </div>
-          ${actions.map(action => `
-            <div style="font-size:12px;color:#546E7A;border-top:1px solid #F0F4F8;padding:6px 0">
-              ${_escapeInline(action)}
-            </div>
-          `).join('')}
+          <div class="decision-qa">
+            <strong>Source QA:</strong>
+            ${qaFlags.map(flag => `<span>${_escapeInline(flag)}</span>`).join('')}
+          </div>
         </div>
       </div>
     `;
+  }
+
+  function _decisionItem(label, value) {
+    return `
+      <div class="decision-item">
+        <span>${label}</span>
+        <strong>${_escapeInline(value || 'N/A')}</strong>
+      </div>
+    `;
+  }
+
+  function _titleCase(value) {
+    return String(value || '').replace(/\b\w/g, char => char.toUpperCase());
+  }
+
+  function _labelize(value) {
+    return String(value || '').replace(/_/g, ' ');
   }
 
   function _sourceSummary(obs) {
