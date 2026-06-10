@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-06-10T13:38:17.346569",
+    "generated_at": "2026-06-10T13:52:56.969119",
     "advisory_date": "2026-06-10",
     "total_municipalities": 92,
     "municipalities_with_advisories": 90,
@@ -1936,7 +1936,7 @@
       ]
     },
     "023120000": {
-      "municipality": "Peñablanca",
+      "municipality": "PeÃ±ablanca",
       "province": "Cagayan",
       "advisory_count": 5,
       "highest_severity": "danger",
@@ -1953,10 +1953,10 @@
           ],
           "responsible_office": "DA RFO 02 + MDRRMC + MAO",
           "texts": {
-            "bulletin": "DANGER — Extreme rainfall recorded in Peñablanca, Cagayan (130.4 mm/24h). Suspend ALL field operations. Avoid crossing rivers and flood-prone areas. Secure harvested produce in elevated dry storage. Activate DRRM protocols. Coordinate with MDRRMC, SWDO, and MAO for rapid damage assessment. Pre-position emergency seed buffer and postharvest equipment.",
-            "sms": "DA ALERT: Extreme rain in Peñablanca. Suspend all farm work. Secure produce. Contact MAO for assistance.",
-            "lgu": "AGRICULTURAL EMERGENCY ADVISORY — Peñablanca\nExtreme rainfall (130.4 mm/24h) requires immediate action:\n1. Advise farmers to suspend all field operations immediately.\n2. Coordinate with MDRRMC for damage assessment teams.\n3. Pre-position tarpaulins and drying facilities.\n4. Activate emergency seed replacement protocols.\n5. Document affected crop areas for PCIC crop insurance filing.",
-            "facebook": "⛈️ DA RFO 02 WEATHER ALERT — Peñablanca, Cagayan\n\nExtreme rainfall of 130 mm has been recorded in your area.\n\n⚠️ SUSPEND all farm operations\n🌾 Secure harvested crops from rain\n🚫 Avoid rivers and flood areas\n📞 Contact your Municipal Agriculturist for assistance\n\n#DARFOCagayanValley #AgriculturalAdvisory #TayoNaHanda"
+            "bulletin": "DANGER — Extreme rainfall recorded in PeÃ±ablanca, Cagayan (130.4 mm/24h). Suspend ALL field operations. Avoid crossing rivers and flood-prone areas. Secure harvested produce in elevated dry storage. Activate DRRM protocols. Coordinate with MDRRMC, SWDO, and MAO for rapid damage assessment. Pre-position emergency seed buffer and postharvest equipment.",
+            "sms": "DA ALERT: Extreme rain in PeÃ±ablanca. Suspend all farm work. Secure produce. Contact MAO for assistance.",
+            "lgu": "AGRICULTURAL EMERGENCY ADVISORY — PeÃ±ablanca\nExtreme rainfall (130.4 mm/24h) requires immediate action:\n1. Advise farmers to suspend all field operations immediately.\n2. Coordinate with MDRRMC for damage assessment teams.\n3. Pre-position tarpaulins and drying facilities.\n4. Activate emergency seed replacement protocols.\n5. Document affected crop areas for PCIC crop insurance filing.",
+            "facebook": "⛈️ DA RFO 02 WEATHER ALERT — PeÃ±ablanca, Cagayan\n\nExtreme rainfall of 130 mm has been recorded in your area.\n\n⚠️ SUSPEND all farm operations\n🌾 Secure harvested crops from rain\n🚫 Avoid rivers and flood areas\n📞 Contact your Municipal Agriculturist for assistance\n\n#DARFOCagayanValley #AgriculturalAdvisory #TayoNaHanda"
           }
         },
         {
@@ -1975,10 +1975,10 @@
           ],
           "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Peñablanca: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
-            "sms": "DA WARNING: Drying risk in Peñablanca. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-            "lgu": "POSTHARVEST ADVISORY - Peñablanca\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-            "facebook": "POSTHARVEST ADVISORY - Peñablanca: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+            "bulletin": "POSTHARVEST DRYING RISK - PeÃ±ablanca: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "sms": "DA WARNING: Drying risk in PeÃ±ablanca. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+            "lgu": "POSTHARVEST ADVISORY - PeÃ±ablanca\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+            "facebook": "POSTHARVEST ADVISORY - PeÃ±ablanca: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
           }
         },
         {
@@ -1996,10 +1996,10 @@
           ],
           "responsible_office": "MAO + DA Mechanization Unit",
           "texts": {
-            "bulletin": "Harvest disruption risk in Peñablanca due to rainfall of 130.4 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
-            "sms": "DA ADVISORY: Rain risk for harvest in Peñablanca. Defer harvest, use mechanical dryer if available. Call MAO for help.",
-            "lgu": "HARVEST ADVISORY — Peñablanca\nRainfall of 130.4 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
-            "facebook": "🌧️ HARVEST ADVISORY — Peñablanca\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
+            "bulletin": "Harvest disruption risk in PeÃ±ablanca due to rainfall of 130.4 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
+            "sms": "DA ADVISORY: Rain risk for harvest in PeÃ±ablanca. Defer harvest, use mechanical dryer if available. Call MAO for help.",
+            "lgu": "HARVEST ADVISORY — PeÃ±ablanca\nRainfall of 130.4 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
+            "facebook": "🌧️ HARVEST ADVISORY — PeÃ±ablanca\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
           }
         },
         {
@@ -2017,10 +2017,10 @@
           ],
           "responsible_office": "MAO + Municipal AEW",
           "texts": {
-            "bulletin": "FERTILIZER APPLICATION ADVISORY — Peñablanca: Current rainfall conditions increase risk of nutrient loss through leaching and runoff. DEFER basal and top-dress fertilizer application until 2–3 dry days are observed. Consider split-application strategy when conditions improve. For critical growth stages, consult AEW/MAO before proceeding.",
+            "bulletin": "FERTILIZER APPLICATION ADVISORY — PeÃ±ablanca: Current rainfall conditions increase risk of nutrient loss through leaching and runoff. DEFER basal and top-dress fertilizer application until 2–3 dry days are observed. Consider split-application strategy when conditions improve. For critical growth stages, consult AEW/MAO before proceeding.",
             "sms": "DA ADVISORY: Do not apply fertilizer today due to rain risk. Wait 2-3 dry days. Less waste, better yield.",
-            "lgu": "AGRI-OPERATIONS ADVISORY — Peñablanca\nAdvise farmers to postpone fertilizer application. Rain will reduce fertilizer efficacy and increase runoff to waterways.",
-            "facebook": "🌱 FERTILIZER REMINDER — Peñablanca:\nHindi magandang maglagay ng pataba ngayon dahil may ulan. Maghintay ng 2–3 araw na tuyo para mas epektibo ang pataba. #PatubaAdvice #DARFOCagayanValley"
+            "lgu": "AGRI-OPERATIONS ADVISORY — PeÃ±ablanca\nAdvise farmers to postpone fertilizer application. Rain will reduce fertilizer efficacy and increase runoff to waterways.",
+            "facebook": "🌱 FERTILIZER REMINDER — PeÃ±ablanca:\nHindi magandang maglagay ng pataba ngayon dahil may ulan. Maghintay ng 2–3 araw na tuyo para mas epektibo ang pataba. #PatubaAdvice #DARFOCagayanValley"
           }
         },
         {
@@ -2036,10 +2036,10 @@
           ],
           "responsible_office": "MAO + PLGU Agricultural Division",
           "texts": {
-            "bulletin": "SPRAYING ADVISORY — Peñablanca: Do not apply pesticides or foliar fertilizers in rainy conditions. Rain within 4–6 hours of application will wash off chemicals, reducing efficacy and increasing environmental contamination risk. Reschedule spraying to early morning hours on clear days.",
+            "bulletin": "SPRAYING ADVISORY — PeÃ±ablanca: Do not apply pesticides or foliar fertilizers in rainy conditions. Rain within 4–6 hours of application will wash off chemicals, reducing efficacy and increasing environmental contamination risk. Reschedule spraying to early morning hours on clear days.",
             "sms": "DA ADVISORY: Do not spray pesticides when raining. Reschedule to clear morning. Saves money, protects water.",
-            "lgu": "SPRAYING ADVISORY — Peñablanca: Rainfall expected. Advise farmers to defer all pesticide and foliar spraying.",
-            "facebook": "🚫 SPRAYING ADVISORY — Peñablanca: Huwag mag-spray ng pesticide habang may ulan. Mag-schedule sa maliwanag na umaga. #PestControl #DARFOCagayanValley"
+            "lgu": "SPRAYING ADVISORY — PeÃ±ablanca: Rainfall expected. Advise farmers to defer all pesticide and foliar spraying.",
+            "facebook": "🚫 SPRAYING ADVISORY — PeÃ±ablanca: Huwag mag-spray ng pesticide habang may ulan. Mag-schedule sa maliwanag na umaga. #PestControl #DARFOCagayanValley"
           }
         }
       ]
@@ -2627,7 +2627,7 @@
       ]
     },
     "023127000": {
-      "municipality": "Santo Niño",
+      "municipality": "Santo NiÃ±o",
       "province": "Cagayan",
       "advisory_count": 5,
       "highest_severity": "danger",
@@ -2644,10 +2644,10 @@
           ],
           "responsible_office": "DA RFO 02 + MDRRMC + MAO",
           "texts": {
-            "bulletin": "DANGER — Extreme rainfall recorded in Santo Niño, Cagayan (142.1 mm/24h). Suspend ALL field operations. Avoid crossing rivers and flood-prone areas. Secure harvested produce in elevated dry storage. Activate DRRM protocols. Coordinate with MDRRMC, SWDO, and MAO for rapid damage assessment. Pre-position emergency seed buffer and postharvest equipment.",
-            "sms": "DA ALERT: Extreme rain in Santo Niño. Suspend all farm work. Secure produce. Contact MAO for assistance.",
-            "lgu": "AGRICULTURAL EMERGENCY ADVISORY — Santo Niño\nExtreme rainfall (142.1 mm/24h) requires immediate action:\n1. Advise farmers to suspend all field operations immediately.\n2. Coordinate with MDRRMC for damage assessment teams.\n3. Pre-position tarpaulins and drying facilities.\n4. Activate emergency seed replacement protocols.\n5. Document affected crop areas for PCIC crop insurance filing.",
-            "facebook": "⛈️ DA RFO 02 WEATHER ALERT — Santo Niño, Cagayan\n\nExtreme rainfall of 142 mm has been recorded in your area.\n\n⚠️ SUSPEND all farm operations\n🌾 Secure harvested crops from rain\n🚫 Avoid rivers and flood areas\n📞 Contact your Municipal Agriculturist for assistance\n\n#DARFOCagayanValley #AgriculturalAdvisory #TayoNaHanda"
+            "bulletin": "DANGER — Extreme rainfall recorded in Santo NiÃ±o, Cagayan (142.1 mm/24h). Suspend ALL field operations. Avoid crossing rivers and flood-prone areas. Secure harvested produce in elevated dry storage. Activate DRRM protocols. Coordinate with MDRRMC, SWDO, and MAO for rapid damage assessment. Pre-position emergency seed buffer and postharvest equipment.",
+            "sms": "DA ALERT: Extreme rain in Santo NiÃ±o. Suspend all farm work. Secure produce. Contact MAO for assistance.",
+            "lgu": "AGRICULTURAL EMERGENCY ADVISORY — Santo NiÃ±o\nExtreme rainfall (142.1 mm/24h) requires immediate action:\n1. Advise farmers to suspend all field operations immediately.\n2. Coordinate with MDRRMC for damage assessment teams.\n3. Pre-position tarpaulins and drying facilities.\n4. Activate emergency seed replacement protocols.\n5. Document affected crop areas for PCIC crop insurance filing.",
+            "facebook": "⛈️ DA RFO 02 WEATHER ALERT — Santo NiÃ±o, Cagayan\n\nExtreme rainfall of 142 mm has been recorded in your area.\n\n⚠️ SUSPEND all farm operations\n🌾 Secure harvested crops from rain\n🚫 Avoid rivers and flood areas\n📞 Contact your Municipal Agriculturist for assistance\n\n#DARFOCagayanValley #AgriculturalAdvisory #TayoNaHanda"
           }
         },
         {
@@ -2666,10 +2666,10 @@
           ],
           "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Santo Niño: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
-            "sms": "DA WARNING: Drying risk in Santo Niño. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-            "lgu": "POSTHARVEST ADVISORY - Santo Niño\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-            "facebook": "POSTHARVEST ADVISORY - Santo Niño: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+            "bulletin": "POSTHARVEST DRYING RISK - Santo NiÃ±o: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "sms": "DA WARNING: Drying risk in Santo NiÃ±o. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+            "lgu": "POSTHARVEST ADVISORY - Santo NiÃ±o\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+            "facebook": "POSTHARVEST ADVISORY - Santo NiÃ±o: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
           }
         },
         {
@@ -2687,10 +2687,10 @@
           ],
           "responsible_office": "MAO + DA Mechanization Unit",
           "texts": {
-            "bulletin": "Harvest disruption risk in Santo Niño due to rainfall of 142.1 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
-            "sms": "DA ADVISORY: Rain risk for harvest in Santo Niño. Defer harvest, use mechanical dryer if available. Call MAO for help.",
-            "lgu": "HARVEST ADVISORY — Santo Niño\nRainfall of 142.1 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
-            "facebook": "🌧️ HARVEST ADVISORY — Santo Niño\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
+            "bulletin": "Harvest disruption risk in Santo NiÃ±o due to rainfall of 142.1 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
+            "sms": "DA ADVISORY: Rain risk for harvest in Santo NiÃ±o. Defer harvest, use mechanical dryer if available. Call MAO for help.",
+            "lgu": "HARVEST ADVISORY — Santo NiÃ±o\nRainfall of 142.1 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
+            "facebook": "🌧️ HARVEST ADVISORY — Santo NiÃ±o\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
           }
         },
         {
@@ -2708,10 +2708,10 @@
           ],
           "responsible_office": "MAO + Municipal AEW",
           "texts": {
-            "bulletin": "FERTILIZER APPLICATION ADVISORY — Santo Niño: Current rainfall conditions increase risk of nutrient loss through leaching and runoff. DEFER basal and top-dress fertilizer application until 2–3 dry days are observed. Consider split-application strategy when conditions improve. For critical growth stages, consult AEW/MAO before proceeding.",
+            "bulletin": "FERTILIZER APPLICATION ADVISORY — Santo NiÃ±o: Current rainfall conditions increase risk of nutrient loss through leaching and runoff. DEFER basal and top-dress fertilizer application until 2–3 dry days are observed. Consider split-application strategy when conditions improve. For critical growth stages, consult AEW/MAO before proceeding.",
             "sms": "DA ADVISORY: Do not apply fertilizer today due to rain risk. Wait 2-3 dry days. Less waste, better yield.",
-            "lgu": "AGRI-OPERATIONS ADVISORY — Santo Niño\nAdvise farmers to postpone fertilizer application. Rain will reduce fertilizer efficacy and increase runoff to waterways.",
-            "facebook": "🌱 FERTILIZER REMINDER — Santo Niño:\nHindi magandang maglagay ng pataba ngayon dahil may ulan. Maghintay ng 2–3 araw na tuyo para mas epektibo ang pataba. #PatubaAdvice #DARFOCagayanValley"
+            "lgu": "AGRI-OPERATIONS ADVISORY — Santo NiÃ±o\nAdvise farmers to postpone fertilizer application. Rain will reduce fertilizer efficacy and increase runoff to waterways.",
+            "facebook": "🌱 FERTILIZER REMINDER — Santo NiÃ±o:\nHindi magandang maglagay ng pataba ngayon dahil may ulan. Maghintay ng 2–3 araw na tuyo para mas epektibo ang pataba. #PatubaAdvice #DARFOCagayanValley"
           }
         },
         {
@@ -2727,10 +2727,10 @@
           ],
           "responsible_office": "MAO + PLGU Agricultural Division",
           "texts": {
-            "bulletin": "SPRAYING ADVISORY — Santo Niño: Do not apply pesticides or foliar fertilizers in rainy conditions. Rain within 4–6 hours of application will wash off chemicals, reducing efficacy and increasing environmental contamination risk. Reschedule spraying to early morning hours on clear days.",
+            "bulletin": "SPRAYING ADVISORY — Santo NiÃ±o: Do not apply pesticides or foliar fertilizers in rainy conditions. Rain within 4–6 hours of application will wash off chemicals, reducing efficacy and increasing environmental contamination risk. Reschedule spraying to early morning hours on clear days.",
             "sms": "DA ADVISORY: Do not spray pesticides when raining. Reschedule to clear morning. Saves money, protects water.",
-            "lgu": "SPRAYING ADVISORY — Santo Niño: Rainfall expected. Advise farmers to defer all pesticide and foliar spraying.",
-            "facebook": "🚫 SPRAYING ADVISORY — Santo Niño: Huwag mag-spray ng pesticide habang may ulan. Mag-schedule sa maliwanag na umaga. #PestControl #DARFOCagayanValley"
+            "lgu": "SPRAYING ADVISORY — Santo NiÃ±o: Rainfall expected. Advise farmers to defer all pesticide and foliar spraying.",
+            "facebook": "🚫 SPRAYING ADVISORY — Santo NiÃ±o: Huwag mag-spray ng pesticide habang may ulan. Mag-schedule sa maliwanag na umaga. #PestControl #DARFOCagayanValley"
           }
         }
       ]
@@ -8500,7 +8500,7 @@
     },
     {
       "psgc": "023120000",
-      "municipality": "Peñablanca",
+      "municipality": "PeÃ±ablanca",
       "province": "Cagayan",
       "severity": "danger",
       "advisory_count": 5,
@@ -8509,7 +8509,7 @@
     },
     {
       "psgc": "023127000",
-      "municipality": "Santo Niño",
+      "municipality": "Santo NiÃ±o",
       "province": "Cagayan",
       "severity": "danger",
       "advisory_count": 5,

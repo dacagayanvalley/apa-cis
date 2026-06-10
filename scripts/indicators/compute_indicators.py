@@ -720,7 +720,8 @@ def compute_all_indicators() -> Dict:
 
         latest = records[-1]  # Most recent day
         chirps_rec = chirps_rainfall.get(psgc) if cfg["chirps"].get("use_for_rainfall_if_available", True) else None
-        chirps_rain = chirps_rec.get("rainfall_mm") if chirps_rec else None
+        chirps_is_current = chirps_rec and chirps_rec.get("date") == latest.get("date")
+        chirps_rain = chirps_rec.get("rainfall_mm") if chirps_is_current else None
         rain_24h = chirps_rain if chirps_rain is not None else latest.get("rainfall_mm")
         rainfall_source = "chirps" if chirps_rain is not None else latest.get("source", "nasa_power")
         rain_48h = compute_accumulated_rainfall(records, days=2)
@@ -794,6 +795,7 @@ def compute_all_indicators() -> Dict:
                 "rainfall_source": rainfall_source,
                 "nasa_power_rainfall_24h_mm": latest.get("rainfall_mm"),
                 "chirps_rainfall_24h_mm": chirps_rain,
+                "chirps_record_date": chirps_rec.get("date") if chirps_rec else None,
                 "rainfall_48h_mm": rain_48h,
                 "rainfall_7d_mm": rain_7d,
                 "rainfall_30d_mm": rain_30d,
@@ -821,7 +823,7 @@ def compute_all_indicators() -> Dict:
             "data_sources": {
                 "weather": latest.get("source", "nasa_power"),
                 "rainfall_used": rainfall_source,
-                "rainfall_fallback": None if rainfall_source == "chirps" else "CHIRPS unavailable; using NASA POWER",
+                "rainfall_fallback": None if rainfall_source == "chirps" else "CHIRPS unavailable or stale; using NASA POWER",
             },
         }
 

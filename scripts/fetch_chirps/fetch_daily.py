@@ -9,6 +9,7 @@ continues using NASA POWER rainfall as fallback.
 """
 
 import gzip
+import re
 import shutil
 import sys
 import time
@@ -43,6 +44,35 @@ def chirps_daily_url(target_date: date) -> str:
     year = target_date.year
     ymd = target_date.strftime("%Y.%m.%d")
     return f"{BASE_URL}/{year}/chirps-v2.0.{ymd}.tif.gz"
+
+
+def discover_latest_available_date(target_date: date) -> date:
+    """Find the latest CHIRPS daily raster available on or before target_date."""
+    index_url = f"{BASE_URL}/{target_date.year}/"
+    resp = retry_get(index_url, retries=1, delay=1.0, timeout=TIMEOUT, logger=logger)
+    if resp is None:
+        logger.warning("Could not read CHIRPS directory index; trying requested date.")
+        return target_date
+
+    pattern = re.compile(r"chirps-v2\.0\.(\d{4})\.(\d{2})\.(\d{2})\.tif\.gz")
+    available = []
+    for year, month, day in pattern.findall(resp.text):
+        d = date(int(year), int(month), int(day))
+        if d <= target_date:
+            available.append(d)
+
+    if not available:
+        logger.warning("No CHIRPS daily rasters found on or before %s", target_date)
+        return target_date
+
+    latest_available = max(available)
+    if latest_available != target_date:
+        logger.warning(
+            "CHIRPS raster for %s is not published yet; using latest available %s",
+            target_date,
+            latest_available,
+        )
+    return latest_available
 
 
 def download_chirps_tif(target_date: date) -> Optional[Path]:
@@ -153,13 +183,15 @@ def run(target_date: Optional[date] = None) -> None:
     """Fetch and process CHIRPS rainfall for one day."""
     if target_date is None:
         target_date = today_pht() - timedelta(days=2)
+    requested_date = target_date
+    target_date = discover_latest_available_date(target_date)
 
     logger.info(f"=== CHIRPS Daily Rainfall Fetch: {target_date} ===")
     tif_path = download_chirps_tif(target_date)
     if tif_path is None:
         log_etl_event(
             source="chirps_daily",
-            run_date=target_date.isoformat(),
+            run_date=requested_date.isoformat(),
             records_fetched=0,
             records_valid=0,
             status="failed",
@@ -173,7 +205,7 @@ def run(target_date: Optional[date] = None) -> None:
     status = "success" if records else "warning"
     log_etl_event(
         source="chirps_daily",
-        run_date=target_date.isoformat(),
+        run_date=requested_date.isoformat(),
         records_fetched=len(load_municipalities()),
         records_valid=len(records),
         status=status,
