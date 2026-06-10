@@ -71,10 +71,10 @@
         "psgc": "023104000",
         "municipality": "Allacapan",
         "province": "Cagayan",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -109,10 +109,10 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -128,10 +128,10 @@
         "psgc": "023107000",
         "municipality": "Baggao",
         "province": "Cagayan",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -166,10 +166,10 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -204,10 +204,10 @@
         "psgc": "023111000",
         "municipality": "Camalaniugan",
         "province": "Cagayan",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -224,7 +224,7 @@
         "municipality": "Claveria",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -281,7 +281,7 @@
         "municipality": "Gonzaga",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -357,7 +357,7 @@
         "municipality": "Pamplona",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -375,10 +375,10 @@
         "psgc": "023120000",
         "municipality": "Peñablanca",
         "province": "Cagayan",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -433,7 +433,7 @@
         "municipality": "Sanchez-Mira",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -794,7 +794,7 @@
         "municipality": "Divilacan",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 3,
+        "advisory_count": 2,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -888,10 +888,10 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "High Heat Stress — Restrict Fieldwork",
-        "color": "#FF5722"
+        "severity": "advisory",
+        "advisory_count": 2,
+        "primary_advisory": "Defer Fertilizer Application — Rain Risk",
+        "color": "#FF9800"
       }
     },
     {
@@ -1059,10 +1059,10 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1173,10 +1173,10 @@
         "psgc": "031433000",
         "municipality": "San Pablo",
         "province": "Isabela",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1269,7 +1269,7 @@
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1288,7 +1288,7 @@
         "municipality": "Ambaguio",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1325,10 +1325,10 @@
         "psgc": "035604000",
         "municipality": "Bagabag",
         "province": "Nueva Vizcaya",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1458,10 +1458,10 @@
         "psgc": "035611000",
         "municipality": "Quezon",
         "province": "Nueva Vizcaya",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 4,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1649,7 +1649,7 @@
         "municipality": "Basco",
         "province": "Batanes",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1668,7 +1668,7 @@
         "municipality": "Itbayat",
         "province": "Batanes",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1687,7 +1687,7 @@
         "municipality": "Ivana",
         "province": "Batanes",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1706,7 +1706,7 @@
         "municipality": "Mahatao",
         "province": "Batanes",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1725,7 +1725,7 @@
         "municipality": "Sabtang",
         "province": "Batanes",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1744,7 +1744,7 @@
         "municipality": "Uyugan",
         "province": "Batanes",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 3,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }

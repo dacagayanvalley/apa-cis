@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-06-10T22:23:56.427800",
+    "generated_at": "2026-06-10T22:33:44.738015",
     "advisory_date": "2026-06-11",
     "total_municipalities": 92,
     "municipalities_with_advisories": 92,
-    "danger_count": 59,
-    "warning_count": 32
+    "danger_count": 49,
+    "warning_count": 41
   },
   "advisories": {
     "023101000": {
@@ -126,8 +126,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -147,7 +147,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "high",
-          "risk_score": 3.65,
+          "risk_score": 3.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -187,7 +187,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Abulug: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Abulug: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Abulug. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Abulug\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Abulug: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -277,8 +277,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -362,7 +362,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Alcala: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Alcala: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Alcala. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Alcala\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Alcala: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -428,8 +428,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -465,32 +465,8 @@
       "municipality": "Allacapan",
       "province": "Cagayan",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — Allacapan: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in Allacapan. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — Allacapan\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — Allacapan\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -513,10 +489,34 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Allacapan: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Allacapan: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Allacapan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Allacapan\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Allacapan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — Allacapan: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in Allacapan. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — Allacapan\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — Allacapan: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -573,14 +573,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -600,14 +600,14 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 4.65,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in Allacapan. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — Allacapan\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — Allacapan\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in Allacapan. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in Allacapan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - Allacapan\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - Allacapan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in Allacapan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -664,7 +664,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Amulung: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Amulung: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Amulung. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Amulung\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Amulung: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -730,8 +730,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -767,32 +767,8 @@
       "municipality": "Aparri",
       "province": "Cagayan",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — Aparri: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in Aparri. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — Aparri\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — Aparri\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -819,6 +795,30 @@
             "sms": "DA WARNING: Drying risk in Aparri. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Aparri\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Aparri: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — Aparri: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in Aparri. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — Aparri\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — Aparri: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -875,14 +875,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -902,14 +902,14 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "high",
-          "risk_score": 3.65,
+          "risk_score": 3.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in Aparri. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — Aparri\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — Aparri\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in Aparri. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in Aparri. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - Aparri\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - Aparri: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in Aparri. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -918,32 +918,8 @@
       "municipality": "Baggao",
       "province": "Cagayan",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — Baggao: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in Baggao. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — Baggao\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — Baggao\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -966,10 +942,34 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Baggao: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Baggao: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Baggao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Baggao\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Baggao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — Baggao: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in Baggao. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — Baggao\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — Baggao: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -1026,14 +1026,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -1053,14 +1053,14 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "high",
-          "risk_score": 3.65,
+          "risk_score": 3.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in Baggao. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — Baggao\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — Baggao\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in Baggao. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in Baggao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - Baggao\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - Baggao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in Baggao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -1093,7 +1093,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Ballesteros: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Ballesteros: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Ballesteros. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Ballesteros\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Ballesteros: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -1183,8 +1183,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -1220,32 +1220,8 @@
       "municipality": "Buguey",
       "province": "Cagayan",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — Buguey: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in Buguey. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — Buguey\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — Buguey\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -1268,10 +1244,34 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Buguey: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Buguey: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Buguey. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Buguey\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Buguey: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — Buguey: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in Buguey. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — Buguey\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — Buguey: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -1328,14 +1328,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -1355,14 +1355,14 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "high",
-          "risk_score": 3.65,
+          "risk_score": 3.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in Buguey. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — Buguey\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — Buguey\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in Buguey. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in Buguey. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - Buguey\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - Buguey: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in Buguey. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -1461,8 +1461,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -1498,32 +1498,8 @@
       "municipality": "Camalaniugan",
       "province": "Cagayan",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — Camalaniugan: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in Camalaniugan. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — Camalaniugan\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — Camalaniugan\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -1550,6 +1526,30 @@
             "sms": "DA WARNING: Drying risk in Camalaniugan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Camalaniugan\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Camalaniugan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — Camalaniugan: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in Camalaniugan. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — Camalaniugan\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — Camalaniugan: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -1606,14 +1606,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -1633,14 +1633,14 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "high",
-          "risk_score": 3.65,
+          "risk_score": 3.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in Camalaniugan. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — Camalaniugan\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — Camalaniugan\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in Camalaniugan. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in Camalaniugan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - Camalaniugan\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - Camalaniugan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in Camalaniugan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -1648,7 +1648,7 @@
     "023112000": {
       "municipality": "Claveria",
       "province": "Cagayan",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -1677,30 +1677,6 @@
             "sms": "DA WARNING: Drying risk in Claveria. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Claveria\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Claveria: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "HEAT_HIGH",
-          "rule_name": "High Heat Stress — Restrict Fieldwork",
-          "severity": "warning",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "MAO + RHU",
-          "adaptation_measures": [
-            "Avoid strenuous field operations during peak heat hours.",
-            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
-            "Use heat-tolerant varieties in future planting where locally suitable."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "HIGH HEAT STRESS — Claveria: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
-            "sms": "DA ADVISORY: High heat in Claveria. Avoid farm work 10AM-2PM. Stay hydrated.",
-            "lgu": "HEAT STRESS ADVISORY — Claveria\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-            "facebook": "☀️ HEAT ADVISORY — Claveria: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -1763,8 +1739,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -1914,8 +1890,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -1934,8 +1910,8 @@
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "critical",
-          "risk_score": 4.1,
+          "risk_class": "high",
+          "risk_score": 3.65,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -1999,7 +1975,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Gattaran: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Gattaran: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Gattaran. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Gattaran\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Gattaran: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -2065,8 +2041,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -2101,7 +2077,7 @@
     "023115000": {
       "municipality": "Gonzaga",
       "province": "Cagayan",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -2126,34 +2102,10 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Gonzaga: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Gonzaga: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Gonzaga. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Gonzaga\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Gonzaga: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "HEAT_HIGH",
-          "rule_name": "High Heat Stress — Restrict Fieldwork",
-          "severity": "warning",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "MAO + RHU",
-          "adaptation_measures": [
-            "Avoid strenuous field operations during peak heat hours.",
-            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
-            "Use heat-tolerant varieties in future planting where locally suitable."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "HIGH HEAT STRESS — Gonzaga: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
-            "sms": "DA ADVISORY: High heat in Gonzaga. Avoid farm work 10AM-2PM. Stay hydrated.",
-            "lgu": "HEAT STRESS ADVISORY — Gonzaga\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-            "facebook": "☀️ HEAT ADVISORY — Gonzaga: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -2216,8 +2168,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -2301,7 +2253,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Iguig: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Iguig: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Iguig. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Iguig\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Iguig: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -2367,8 +2319,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -2388,7 +2340,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 4.65,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -2452,7 +2404,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Lal-lo: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Lal-lo: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Lal-lo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Lal-lo\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Lal-lo: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -2518,8 +2470,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -2539,7 +2491,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 4.65,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -2603,7 +2555,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Lasam: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Lasam: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Lasam. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Lasam\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Lasam: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -2669,8 +2621,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -2690,7 +2642,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 4.65,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -2705,7 +2657,7 @@
     "023119000": {
       "municipality": "Pamplona",
       "province": "Cagayan",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -2734,30 +2686,6 @@
             "sms": "DA WARNING: Drying risk in Pamplona. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Pamplona\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Pamplona: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "HEAT_HIGH",
-          "rule_name": "High Heat Stress — Restrict Fieldwork",
-          "severity": "warning",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "MAO + RHU",
-          "adaptation_measures": [
-            "Avoid strenuous field operations during peak heat hours.",
-            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
-            "Use heat-tolerant varieties in future planting where locally suitable."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "HIGH HEAT STRESS — Pamplona: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
-            "sms": "DA ADVISORY: High heat in Pamplona. Avoid farm work 10AM-2PM. Stay hydrated.",
-            "lgu": "HEAT STRESS ADVISORY — Pamplona\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-            "facebook": "☀️ HEAT ADVISORY — Pamplona: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -2820,8 +2748,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -2857,32 +2785,8 @@
       "municipality": "Peñablanca",
       "province": "Cagayan",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — Peñablanca: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in Peñablanca. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — Peñablanca\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — Peñablanca\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -2909,6 +2813,30 @@
             "sms": "DA WARNING: Drying risk in Peñablanca. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Peñablanca\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Peñablanca: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — Peñablanca: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in Peñablanca. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — Peñablanca\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — Peñablanca: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -2965,14 +2893,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -2996,10 +2924,10 @@
           "acap_crop_calendar_available": true,
           "crop_calendar_decision_point": "ACAP crop calendar available; use local rice/corn crop stage as a primary advisory decision point."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in Peñablanca. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — Peñablanca\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — Peñablanca\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in Peñablanca. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in Peñablanca. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - Peñablanca\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - Peñablanca: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in Peñablanca. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -3056,7 +2984,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Piat: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Piat: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Piat. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Piat\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Piat: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -3122,8 +3050,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -3207,7 +3135,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Rizal: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Rizal: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Rizal. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Rizal\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Rizal: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -3273,8 +3201,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -3294,7 +3222,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 4.65,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -3309,7 +3237,7 @@
     "023123000": {
       "municipality": "Sanchez-Mira",
       "province": "Cagayan",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -3338,30 +3266,6 @@
             "sms": "DA WARNING: Drying risk in Sanchez-Mira. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Sanchez-Mira\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Sanchez-Mira: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "HEAT_HIGH",
-          "rule_name": "High Heat Stress — Restrict Fieldwork",
-          "severity": "warning",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "MAO + RHU",
-          "adaptation_measures": [
-            "Avoid strenuous field operations during peak heat hours.",
-            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
-            "Use heat-tolerant varieties in future planting where locally suitable."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "HIGH HEAT STRESS — Sanchez-Mira: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
-            "sms": "DA ADVISORY: High heat in Sanchez-Mira. Avoid farm work 10AM-2PM. Stay hydrated.",
-            "lgu": "HEAT STRESS ADVISORY — Sanchez-Mira\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-            "facebook": "☀️ HEAT ADVISORY — Sanchez-Mira: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -3424,8 +3328,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -3551,8 +3455,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -3678,8 +3582,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -3739,7 +3643,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Santa Teresita: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Santa Teresita: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Santa Teresita. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Santa Teresita\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Santa Teresita: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -3829,8 +3733,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -3914,7 +3818,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Santo Niño: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Santo Niño: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Santo Niño. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Santo Niño\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Santo Niño: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -3980,8 +3884,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -4065,7 +3969,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Solana: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Solana: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Solana. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Solana\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Solana: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -4131,8 +4035,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -4216,7 +4120,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Tuao: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Tuao: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Tuao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Tuao\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Tuao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -4282,8 +4186,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.009Z",
@@ -4303,7 +4207,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 4.65,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -4433,8 +4337,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -4454,7 +4358,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": true,
           "crop_calendar_decision_point": "ACAP crop calendar available; use local rice/corn crop stage as a primary advisory decision point."
         },
@@ -4584,8 +4488,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -4605,7 +4509,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -4735,8 +4639,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -4756,7 +4660,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -4886,8 +4790,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -4907,7 +4811,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 5.0,
+          "risk_score": 4.65,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -5037,8 +4941,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -5058,7 +4962,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -5160,8 +5064,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -5180,8 +5084,8 @@
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "low",
-          "risk_score": 1.1,
+          "risk_class": "minimal",
+          "risk_score": 0.65,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -5311,8 +5215,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -5331,8 +5235,8 @@
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "critical",
-          "risk_score": 4.1,
+          "risk_class": "high",
+          "risk_score": 3.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -5462,8 +5366,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -5483,7 +5387,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -5613,8 +5517,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -5634,7 +5538,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": true,
           "crop_calendar_decision_point": "ACAP crop calendar available; use local rice/corn crop stage as a primary advisory decision point."
         },
@@ -5764,8 +5668,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -5915,8 +5819,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -5935,8 +5839,8 @@
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "critical",
-          "risk_score": 4.1,
+          "risk_class": "high",
+          "risk_score": 3.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -6042,8 +5946,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -6078,7 +5982,7 @@
     "031413000": {
       "municipality": "Divilacan",
       "province": "Isabela",
-      "advisory_count": 3,
+      "advisory_count": 2,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -6107,30 +6011,6 @@
             "sms": "DA WARNING: Drying risk in Divilacan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Divilacan\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Divilacan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "HEAT_HIGH",
-          "rule_name": "High Heat Stress — Restrict Fieldwork",
-          "severity": "warning",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "MAO + RHU",
-          "adaptation_measures": [
-            "Avoid strenuous field operations during peak heat hours.",
-            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
-            "Use heat-tolerant varieties in future planting where locally suitable."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "HIGH HEAT STRESS — Divilacan: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
-            "sms": "DA ADVISORY: High heat in Divilacan. Avoid farm work 10AM-2PM. Stay hydrated.",
-            "lgu": "HEAT STRESS ADVISORY — Divilacan\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-            "facebook": "☀️ HEAT ADVISORY — Divilacan: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -6166,8 +6046,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -6317,8 +6197,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -6338,7 +6218,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -6468,8 +6348,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -6489,7 +6369,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -6619,8 +6499,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -6770,8 +6650,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -6790,8 +6670,8 @@
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "critical",
-          "risk_score": 4.1,
+          "risk_class": "high",
+          "risk_score": 3.65,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -6806,33 +6686,9 @@
     "031418000": {
       "municipality": "Maconacon",
       "province": "Isabela",
-      "advisory_count": 3,
-      "highest_severity": "warning",
+      "advisory_count": 2,
+      "highest_severity": "advisory",
       "advisories": [
-        {
-          "rule_id": "HEAT_HIGH",
-          "rule_name": "High Heat Stress — Restrict Fieldwork",
-          "severity": "warning",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "MAO + RHU",
-          "adaptation_measures": [
-            "Avoid strenuous field operations during peak heat hours.",
-            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
-            "Use heat-tolerant varieties in future planting where locally suitable."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "HIGH HEAT STRESS — Maconacon: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
-            "sms": "DA ADVISORY: High heat in Maconacon. Avoid farm work 10AM-2PM. Stay hydrated.",
-            "lgu": "HEAT STRESS ADVISORY — Maconacon\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-            "facebook": "☀️ HEAT ADVISORY — Maconacon: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
-          }
-        },
         {
           "rule_id": "FERTILIZER_DEFER",
           "rule_name": "Defer Fertilizer Application — Rain Risk",
@@ -6887,14 +6743,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "High Heat Stress — Restrict Fieldwork",
-        "severity": "warning",
+        "hazard": "Defer Fertilizer Application — Rain Risk",
+        "severity": "advisory",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -6914,14 +6770,14 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "minimal",
-          "risk_score": 0.65,
+          "risk_score": 0.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA ADVISORY: High heat in Maconacon. Avoid farm work 10AM-2PM. Stay hydrated.",
-        "lgu_da_action": "HEAT STRESS ADVISORY — Maconacon\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-        "public_advisory": "☀️ HEAT ADVISORY — Maconacon: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress",
-        "sms_ready": "DA ADVISORY: High heat in Maconacon. Avoid farm work 10AM-2PM. Stay hydrated.",
+        "immediate_farmer_action": "DA ADVISORY: Do not apply fertilizer today due to rain risk. Wait 2-3 dry days. Less waste, better yield.",
+        "lgu_da_action": "AGRI-OPERATIONS ADVISORY — Maconacon\nAdvise farmers to postpone fertilizer application. Rain will reduce fertilizer efficacy and increase runoff to waterways.",
+        "public_advisory": "🌱 FERTILIZER REMINDER — Maconacon:\nHindi magandang maglagay ng pataba ngayon dahil may ulan. Maghintay ng 2–3 araw na tuyo para mas epektibo ang pataba. #PatubaAdvice #DARFOCagayanValley",
+        "sms_ready": "DA ADVISORY: Do not apply fertilizer today due to rain risk. Wait 2-3 dry days. Less waste, better yield.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -7044,8 +6900,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -7065,7 +6921,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -7195,8 +7051,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -7216,7 +7072,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -7295,8 +7151,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -7446,8 +7302,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -7467,7 +7323,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 5.0,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -7597,8 +7453,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -7618,7 +7474,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -7748,8 +7604,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -7769,7 +7625,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 5.0,
+          "risk_score": 4.65,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -7899,8 +7755,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -7920,7 +7776,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -8050,8 +7906,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -8071,7 +7927,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -8087,32 +7943,8 @@
       "municipality": "San Agustin",
       "province": "Isabela",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — San Agustin: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in San Agustin. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — San Agustin\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — San Agustin\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -8139,6 +7971,30 @@
             "sms": "DA WARNING: Drying risk in San Agustin. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - San Agustin\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - San Agustin: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — San Agustin: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in San Agustin. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — San Agustin\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — San Agustin: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -8195,14 +8051,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -8226,10 +8082,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in San Agustin. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — San Agustin\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — San Agustin\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in San Agustin. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in San Agustin. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - San Agustin\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - San Agustin: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in San Agustin. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -8352,8 +8208,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -8373,7 +8229,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 4.65,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -8503,8 +8359,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -8523,8 +8379,8 @@
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "critical",
-          "risk_score": 4.1,
+          "risk_class": "high",
+          "risk_score": 3.65,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -8654,8 +8510,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -8675,7 +8531,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -8805,8 +8661,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -8825,8 +8681,8 @@
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "moderate",
-          "risk_score": 2.15,
+          "risk_class": "low",
+          "risk_score": 1.7,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -8956,8 +8812,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -8977,7 +8833,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "moderate",
-          "risk_score": 2.6,
+          "risk_score": 2.15,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -8993,32 +8849,8 @@
       "municipality": "San Pablo",
       "province": "Isabela",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — San Pablo: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in San Pablo. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — San Pablo\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — San Pablo\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -9045,6 +8877,30 @@
             "sms": "DA WARNING: Drying risk in San Pablo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - San Pablo\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - San Pablo: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — San Pablo: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in San Pablo. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — San Pablo\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — San Pablo: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -9101,14 +8957,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -9132,10 +8988,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in San Pablo. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — San Pablo\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — San Pablo\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in San Pablo. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in San Pablo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - San Pablo\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - San Pablo: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in San Pablo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -9258,8 +9114,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -9278,8 +9134,8 @@
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "critical",
-          "risk_score": 4.1,
+          "risk_class": "high",
+          "risk_score": 3.65,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -9409,8 +9265,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -9430,7 +9286,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 5.0,
+          "risk_score": 4.65,
           "acap_crop_calendar_available": true,
           "crop_calendar_decision_point": "ACAP crop calendar available; use local rice/corn crop stage as a primary advisory decision point."
         },
@@ -9560,8 +9416,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -9580,8 +9436,8 @@
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "critical",
-          "risk_score": 4.1,
+          "risk_class": "high",
+          "risk_score": 3.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -9711,8 +9567,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.407Z",
@@ -9732,7 +9588,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "high",
-          "risk_score": 3.65,
+          "risk_score": 3.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -9747,7 +9603,7 @@
     "035601000": {
       "municipality": "Bayombong",
       "province": "Nueva Vizcaya",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -9776,30 +9632,6 @@
             "sms": "DA WARNING: Drying risk in Bayombong. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Bayombong\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Bayombong: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "HEAT_HIGH",
-          "rule_name": "High Heat Stress — Restrict Fieldwork",
-          "severity": "warning",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "MAO + RHU",
-          "adaptation_measures": [
-            "Avoid strenuous field operations during peak heat hours.",
-            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
-            "Use heat-tolerant varieties in future planting where locally suitable."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "HIGH HEAT STRESS — Bayombong: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
-            "sms": "DA ADVISORY: High heat in Bayombong. Avoid farm work 10AM-2PM. Stay hydrated.",
-            "lgu": "HEAT STRESS ADVISORY — Bayombong\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-            "facebook": "☀️ HEAT ADVISORY — Bayombong: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -9862,8 +9694,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -9898,7 +9730,7 @@
     "035602000": {
       "municipality": "Ambaguio",
       "province": "Nueva Vizcaya",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -9927,30 +9759,6 @@
             "sms": "DA WARNING: Drying risk in Ambaguio. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Ambaguio\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Ambaguio: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "HEAT_HIGH",
-          "rule_name": "High Heat Stress — Restrict Fieldwork",
-          "severity": "warning",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "MAO + RHU",
-          "adaptation_measures": [
-            "Avoid strenuous field operations during peak heat hours.",
-            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
-            "Use heat-tolerant varieties in future planting where locally suitable."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "HIGH HEAT STRESS — Ambaguio: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
-            "sms": "DA ADVISORY: High heat in Ambaguio. Avoid farm work 10AM-2PM. Stay hydrated.",
-            "lgu": "HEAT STRESS ADVISORY — Ambaguio\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-            "facebook": "☀️ HEAT ADVISORY — Ambaguio: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -10013,8 +9821,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -10140,8 +9948,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -10177,32 +9985,8 @@
       "municipality": "Bagabag",
       "province": "Nueva Vizcaya",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — Bagabag: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in Bagabag. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — Bagabag\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — Bagabag\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -10229,6 +10013,30 @@
             "sms": "DA WARNING: Drying risk in Bagabag. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Bagabag\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Bagabag: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — Bagabag: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in Bagabag. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — Bagabag\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — Bagabag: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -10285,14 +10093,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -10316,10 +10124,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in Bagabag. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — Bagabag\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — Bagabag\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in Bagabag. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in Bagabag. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - Bagabag\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - Bagabag: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in Bagabag. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -10418,8 +10226,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -10569,8 +10377,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -10590,7 +10398,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 4.65,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -10696,8 +10504,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -10823,8 +10631,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -10974,8 +10782,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -11101,8 +10909,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -11138,32 +10946,8 @@
       "municipality": "Quezon",
       "province": "Nueva Vizcaya",
       "advisory_count": 4,
-      "highest_severity": "danger",
+      "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "HEAT_DANGER",
-          "rule_name": "Dangerous Heat — WBGT Critical",
-          "severity": "danger",
-          "affected_crops": [
-            "all"
-          ],
-          "affected_stages": [
-            "all"
-          ],
-          "responsible_office": "DA RFO 02 + BAI + DOH-CHD 02 + RHU",
-          "adaptation_measures": [
-            "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
-            "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
-            "Provide shade, ventilation, and water for livestock and poultry."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "DANGEROUS HEAT STRESS — Quezon: WBGT index in danger zone. SUSPEND all field work from 9:00 AM to 4:00 PM. Ensure field workers rest in shade and drink water every 15 minutes. Monitor livestock — ensure shade, ventilation, and clean water for poultry/swine. Coordinate with RHU/BHS on heat-related illness protocols. Apply irrigation to vegetable crops early morning or late afternoon only.",
-            "sms": "DA HEAT ALERT: Dangerous heat in Quezon. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-            "lgu": "HEAT STRESS EMERGENCY — Quezon\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-            "facebook": "🌡️ HEAT DANGER ALERT — Quezon\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley"
-          }
-        },
         {
           "rule_id": "POSTHARVEST_DRYING_RISK",
           "rule_name": "Postharvest Drying Risk",
@@ -11190,6 +10974,30 @@
             "sms": "DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Quezon\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Quezon: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "HEAT_HIGH",
+          "rule_name": "High Heat Stress — Restrict Fieldwork",
+          "severity": "warning",
+          "affected_crops": [
+            "all"
+          ],
+          "affected_stages": [
+            "all"
+          ],
+          "responsible_office": "MAO + RHU",
+          "adaptation_measures": [
+            "Avoid strenuous field operations during peak heat hours.",
+            "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+            "Use heat-tolerant varieties in future planting where locally suitable."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "HIGH HEAT STRESS — Quezon: Avoid prolonged field work from 10:00 AM to 2:00 PM. Ensure adequate hydration for farm workers. Monitor heat-sensitive crops (vegetables, high-value crops). Reschedule spraying and transplanting to early morning hours. Check livestock ventilation and water supply.",
+            "sms": "DA ADVISORY: High heat in Quezon. Avoid farm work 10AM-2PM. Stay hydrated.",
+            "lgu": "HEAT STRESS ADVISORY — Quezon\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+            "facebook": "☀️ HEAT ADVISORY — Quezon: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress"
           }
         },
         {
@@ -11246,14 +11054,14 @@
         }
       ],
       "decision_support": {
-        "hazard": "Dangerous Heat — WBGT Critical",
-        "severity": "danger",
+        "hazard": "Postharvest Drying Risk",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -11277,10 +11085,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA HEAT ALERT: Dangerous heat in Quezon. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-        "lgu_da_action": "HEAT STRESS EMERGENCY — Quezon\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites.",
-        "public_advisory": "🌡️ HEAT DANGER ALERT — Quezon\n\nMapanganib na init ngayon!\n⛔ Huwag magtrabaho sa bukid mula 9AM–4PM\n💧 Uminom ng maraming tubig\n🐔 Bantayan ang mga hayop\n\n#HeatStress #DARFOCagayanValley",
-        "sms_ready": "DA HEAT ALERT: Dangerous heat in Quezon. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+        "immediate_farmer_action": "DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "lgu_da_action": "POSTHARVEST ADVISORY - Quezon\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
+        "public_advisory": "POSTHARVEST ADVISORY - Quezon: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
+        "sms_ready": "DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-12"
       }
@@ -11379,8 +11187,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -11530,8 +11338,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -11681,8 +11489,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.512Z",
@@ -11832,8 +11640,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.517Z",
@@ -11853,7 +11661,7 @@
           "crop": "rice_rainfed",
           "stage": "vegetative",
           "risk_class": "critical",
-          "risk_score": 4.65,
+          "risk_score": 4.2,
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
@@ -11983,8 +11791,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.517Z",
@@ -12134,8 +11942,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.517Z",
@@ -12285,8 +12093,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.517Z",
@@ -12384,8 +12192,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.517Z",
@@ -12535,8 +12343,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:54.517Z",
@@ -12571,7 +12379,7 @@
     "020100000": {
       "municipality": "Basco",
       "province": "Batanes",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -12600,33 +12408,6 @@
             "sms": "DA WARNING: Drying risk in Basco. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Basco\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Basco: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "RAIN_HARVEST_RISK",
-          "rule_name": "Harvest Disruption Risk — Rainfall > 20mm",
-          "severity": "warning",
-          "affected_crops": [
-            "rice_irrigated",
-            "rice_rainfed",
-            "corn_yellow"
-          ],
-          "affected_stages": [
-            "harvesting",
-            "ripening"
-          ],
-          "responsible_office": "MAO + DA Mechanization Unit",
-          "adaptation_measures": [
-            "Defer harvest and open-field drying until rainfall risk lowers, unless crop maturity requires emergency harvest.",
-            "Use covered transport and drying facilities for wet grain.",
-            "Coordinate shared dryers, tarpaulins, and storage space through MAO and farmer groups."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "Harvest disruption risk in Basco due to rainfall of 30.0 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
-            "sms": "DA ADVISORY: Rain risk for harvest in Basco. Defer harvest, use mechanical dryer if available. Call MAO for help.",
-            "lgu": "HARVEST ADVISORY — Basco\nRainfall of 30.0 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
-            "facebook": "🌧️ HARVEST ADVISORY — Basco\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
           }
         },
         {
@@ -12689,8 +12470,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:53.911Z",
@@ -12725,7 +12506,7 @@
     "020101000": {
       "municipality": "Itbayat",
       "province": "Batanes",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -12754,33 +12535,6 @@
             "sms": "DA WARNING: Drying risk in Itbayat. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Itbayat\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Itbayat: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "RAIN_HARVEST_RISK",
-          "rule_name": "Harvest Disruption Risk — Rainfall > 20mm",
-          "severity": "warning",
-          "affected_crops": [
-            "rice_irrigated",
-            "rice_rainfed",
-            "corn_yellow"
-          ],
-          "affected_stages": [
-            "harvesting",
-            "ripening"
-          ],
-          "responsible_office": "MAO + DA Mechanization Unit",
-          "adaptation_measures": [
-            "Defer harvest and open-field drying until rainfall risk lowers, unless crop maturity requires emergency harvest.",
-            "Use covered transport and drying facilities for wet grain.",
-            "Coordinate shared dryers, tarpaulins, and storage space through MAO and farmer groups."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "Harvest disruption risk in Itbayat due to rainfall of 20.0 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
-            "sms": "DA ADVISORY: Rain risk for harvest in Itbayat. Defer harvest, use mechanical dryer if available. Call MAO for help.",
-            "lgu": "HARVEST ADVISORY — Itbayat\nRainfall of 20.0 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
-            "facebook": "🌧️ HARVEST ADVISORY — Itbayat\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
           }
         },
         {
@@ -12843,8 +12597,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:53.911Z",
@@ -12879,7 +12633,7 @@
     "020102000": {
       "municipality": "Ivana",
       "province": "Batanes",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -12908,33 +12662,6 @@
             "sms": "DA WARNING: Drying risk in Ivana. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Ivana\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Ivana: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "RAIN_HARVEST_RISK",
-          "rule_name": "Harvest Disruption Risk — Rainfall > 20mm",
-          "severity": "warning",
-          "affected_crops": [
-            "rice_irrigated",
-            "rice_rainfed",
-            "corn_yellow"
-          ],
-          "affected_stages": [
-            "harvesting",
-            "ripening"
-          ],
-          "responsible_office": "MAO + DA Mechanization Unit",
-          "adaptation_measures": [
-            "Defer harvest and open-field drying until rainfall risk lowers, unless crop maturity requires emergency harvest.",
-            "Use covered transport and drying facilities for wet grain.",
-            "Coordinate shared dryers, tarpaulins, and storage space through MAO and farmer groups."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "Harvest disruption risk in Ivana due to rainfall of 38.0 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
-            "sms": "DA ADVISORY: Rain risk for harvest in Ivana. Defer harvest, use mechanical dryer if available. Call MAO for help.",
-            "lgu": "HARVEST ADVISORY — Ivana\nRainfall of 38.0 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
-            "facebook": "🌧️ HARVEST ADVISORY — Ivana\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
           }
         },
         {
@@ -12997,8 +12724,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:53.911Z",
@@ -13033,7 +12760,7 @@
     "020103000": {
       "municipality": "Mahatao",
       "province": "Batanes",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -13062,33 +12789,6 @@
             "sms": "DA WARNING: Drying risk in Mahatao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Mahatao\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Mahatao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "RAIN_HARVEST_RISK",
-          "rule_name": "Harvest Disruption Risk — Rainfall > 20mm",
-          "severity": "warning",
-          "affected_crops": [
-            "rice_irrigated",
-            "rice_rainfed",
-            "corn_yellow"
-          ],
-          "affected_stages": [
-            "harvesting",
-            "ripening"
-          ],
-          "responsible_office": "MAO + DA Mechanization Unit",
-          "adaptation_measures": [
-            "Defer harvest and open-field drying until rainfall risk lowers, unless crop maturity requires emergency harvest.",
-            "Use covered transport and drying facilities for wet grain.",
-            "Coordinate shared dryers, tarpaulins, and storage space through MAO and farmer groups."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "Harvest disruption risk in Mahatao due to rainfall of 34.6 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
-            "sms": "DA ADVISORY: Rain risk for harvest in Mahatao. Defer harvest, use mechanical dryer if available. Call MAO for help.",
-            "lgu": "HARVEST ADVISORY — Mahatao\nRainfall of 34.6 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
-            "facebook": "🌧️ HARVEST ADVISORY — Mahatao\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
           }
         },
         {
@@ -13151,8 +12851,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:53.911Z",
@@ -13187,7 +12887,7 @@
     "020104000": {
       "municipality": "Sabtang",
       "province": "Batanes",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -13216,33 +12916,6 @@
             "sms": "DA WARNING: Drying risk in Sabtang. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Sabtang\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Sabtang: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "RAIN_HARVEST_RISK",
-          "rule_name": "Harvest Disruption Risk — Rainfall > 20mm",
-          "severity": "warning",
-          "affected_crops": [
-            "rice_irrigated",
-            "rice_rainfed",
-            "corn_yellow"
-          ],
-          "affected_stages": [
-            "harvesting",
-            "ripening"
-          ],
-          "responsible_office": "MAO + DA Mechanization Unit",
-          "adaptation_measures": [
-            "Defer harvest and open-field drying until rainfall risk lowers, unless crop maturity requires emergency harvest.",
-            "Use covered transport and drying facilities for wet grain.",
-            "Coordinate shared dryers, tarpaulins, and storage space through MAO and farmer groups."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "Harvest disruption risk in Sabtang due to rainfall of 47.1 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
-            "sms": "DA ADVISORY: Rain risk for harvest in Sabtang. Defer harvest, use mechanical dryer if available. Call MAO for help.",
-            "lgu": "HARVEST ADVISORY — Sabtang\nRainfall of 47.1 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
-            "facebook": "🌧️ HARVEST ADVISORY — Sabtang\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
           }
         },
         {
@@ -13305,8 +12978,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:53.911Z",
@@ -13341,7 +13014,7 @@
     "020105000": {
       "municipality": "Uyugan",
       "province": "Batanes",
-      "advisory_count": 4,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -13370,33 +13043,6 @@
             "sms": "DA WARNING: Drying risk in Uyugan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Uyugan\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Uyugan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
-        {
-          "rule_id": "RAIN_HARVEST_RISK",
-          "rule_name": "Harvest Disruption Risk — Rainfall > 20mm",
-          "severity": "warning",
-          "affected_crops": [
-            "rice_irrigated",
-            "rice_rainfed",
-            "corn_yellow"
-          ],
-          "affected_stages": [
-            "harvesting",
-            "ripening"
-          ],
-          "responsible_office": "MAO + DA Mechanization Unit",
-          "adaptation_measures": [
-            "Defer harvest and open-field drying until rainfall risk lowers, unless crop maturity requires emergency harvest.",
-            "Use covered transport and drying facilities for wet grain.",
-            "Coordinate shared dryers, tarpaulins, and storage space through MAO and farmer groups."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "Harvest disruption risk in Uyugan due to rainfall of 36.5 mm/24h. Farmers in ripening or harvesting stages should: (1) Defer combine harvester deployment to avoid bogging; (2) Protect cut stalks from further wetting; (3) Prioritize mechanical drying over sun-drying for collected grain. Postharvest drying risk is ELEVATED. Coordinate with DA mechanization service providers for mobile dryer access.",
-            "sms": "DA ADVISORY: Rain risk for harvest in Uyugan. Defer harvest, use mechanical dryer if available. Call MAO for help.",
-            "lgu": "HARVEST ADVISORY — Uyugan\nRainfall of 36.5 mm may disrupt ongoing harvest operations.\nRecommended actions:\n1. Advise farmers to assess field conditions before deploying machinery.\n2. Coordinate with RCEF mechanization pool for mobile dryer deployment.\n3. Issue tarpaulin assistance where needed.\n4. Document areas where harvest was deferred for scheduling follow-up.",
-            "facebook": "🌧️ HARVEST ADVISORY — Uyugan\n\nRain is affecting harvest conditions. Delay harvesting if fields are wet. Use mechanical dryers to prevent grain spoilage.\n\n📞 Contact your Municipal Agriculturist for drying support.\n#Palay #Mais #Harvest #DARFOCagayanValley"
           }
         },
         {
@@ -13459,8 +13105,8 @@
         "source_age": {
           "weather_source": "APA CIS",
           "rainfall_source": "APA CIS",
-          "rainfall_source_date": "2026-06-10",
-          "rainfall_age_days": 1,
+          "rainfall_source_date": "2026-06-11",
+          "rainfall_age_days": 0,
           "pagasa_source_date": "2026-06-11",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-06-09T01:18:53.911Z",
@@ -13503,20 +13149,20 @@
     "Cagayan": {
       "municipalities_with_advisories": 29,
       "highest_severity": "danger",
-      "danger_count": 19,
-      "warning_count": 10
+      "danger_count": 13,
+      "warning_count": 16
     },
     "Isabela": {
       "municipalities_with_advisories": 37,
       "highest_severity": "danger",
-      "danger_count": 33,
-      "warning_count": 4
+      "danger_count": 31,
+      "warning_count": 5
     },
     "Nueva Vizcaya": {
       "municipalities_with_advisories": 14,
       "highest_severity": "warning",
-      "danger_count": 3,
-      "warning_count": 11
+      "danger_count": 1,
+      "warning_count": 13
     },
     "Quirino": {
       "municipalities_with_advisories": 6,
@@ -13526,30 +13172,6 @@
     }
   },
   "priority_municipalities": [
-    {
-      "psgc": "023104000",
-      "municipality": "Allacapan",
-      "province": "Cagayan",
-      "severity": "danger",
-      "confidence": "medium",
-      "advisory_count": 4,
-      "risk_score": 50.0,
-      "primary_advisory": "Dangerous Heat — WBGT Critical",
-      "farmer_action": "DA HEAT ALERT: Dangerous heat in Allacapan. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-      "lgu_da_action": "HEAT STRESS EMERGENCY — Allacapan\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
-    },
-    {
-      "psgc": "023107000",
-      "municipality": "Baggao",
-      "province": "Cagayan",
-      "severity": "danger",
-      "confidence": "medium",
-      "advisory_count": 4,
-      "risk_score": 50.0,
-      "primary_advisory": "Dangerous Heat — WBGT Critical",
-      "farmer_action": "DA HEAT ALERT: Dangerous heat in Baggao. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-      "lgu_da_action": "HEAT STRESS EMERGENCY — Baggao\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
-    },
     {
       "psgc": "023118000",
       "municipality": "Lasam",
@@ -13623,18 +13245,6 @@
       "lgu_da_action": "HEAT STRESS EMERGENCY — Quezon\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
     },
     {
-      "psgc": "031427000",
-      "municipality": "San Agustin",
-      "province": "Isabela",
-      "severity": "danger",
-      "confidence": "medium",
-      "advisory_count": 4,
-      "risk_score": 50.0,
-      "primary_advisory": "Dangerous Heat — WBGT Critical",
-      "farmer_action": "DA HEAT ALERT: Dangerous heat in San Agustin. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-      "lgu_da_action": "HEAT STRESS EMERGENCY — San Agustin\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
-    },
-    {
       "psgc": "031428000",
       "municipality": "San Guillermo",
       "province": "Isabela",
@@ -13683,42 +13293,6 @@
       "lgu_da_action": "HEAT STRESS EMERGENCY — Amulung\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
     },
     {
-      "psgc": "023106000",
-      "municipality": "Aparri",
-      "province": "Cagayan",
-      "severity": "danger",
-      "confidence": "medium",
-      "advisory_count": 4,
-      "risk_score": 43.0,
-      "primary_advisory": "Dangerous Heat — WBGT Critical",
-      "farmer_action": "DA HEAT ALERT: Dangerous heat in Aparri. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-      "lgu_da_action": "HEAT STRESS EMERGENCY — Aparri\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
-    },
-    {
-      "psgc": "023109000",
-      "municipality": "Buguey",
-      "province": "Cagayan",
-      "severity": "danger",
-      "confidence": "medium",
-      "advisory_count": 4,
-      "risk_score": 43.0,
-      "primary_advisory": "Dangerous Heat — WBGT Critical",
-      "farmer_action": "DA HEAT ALERT: Dangerous heat in Buguey. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-      "lgu_da_action": "HEAT STRESS EMERGENCY — Buguey\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
-    },
-    {
-      "psgc": "023111000",
-      "municipality": "Camalaniugan",
-      "province": "Cagayan",
-      "severity": "danger",
-      "confidence": "medium",
-      "advisory_count": 4,
-      "risk_score": 43.0,
-      "primary_advisory": "Dangerous Heat — WBGT Critical",
-      "farmer_action": "DA HEAT ALERT: Dangerous heat in Camalaniugan. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-      "lgu_da_action": "HEAT STRESS EMERGENCY — Camalaniugan\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
-    },
-    {
       "psgc": "023113000",
       "municipality": "Enrile",
       "province": "Cagayan",
@@ -13755,16 +13329,88 @@
       "lgu_da_action": "HEAT STRESS EMERGENCY — Lal-lo\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
     },
     {
-      "psgc": "023120000",
-      "municipality": "Peñablanca",
+      "psgc": "023127000",
+      "municipality": "Santo Niño",
       "province": "Cagayan",
       "severity": "danger",
       "confidence": "medium",
       "advisory_count": 4,
       "risk_score": 43.0,
       "primary_advisory": "Dangerous Heat — WBGT Critical",
-      "farmer_action": "DA HEAT ALERT: Dangerous heat in Peñablanca. NO farm work 9AM-4PM. Drink water. Protect livestock.",
-      "lgu_da_action": "HEAT STRESS EMERGENCY — Peñablanca\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
+      "farmer_action": "DA HEAT ALERT: Dangerous heat in Santo Niño. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+      "lgu_da_action": "HEAT STRESS EMERGENCY — Santo Niño\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
+    },
+    {
+      "psgc": "031410000",
+      "municipality": "Cordon",
+      "province": "Isabela",
+      "severity": "danger",
+      "confidence": "medium",
+      "advisory_count": 4,
+      "risk_score": 43.0,
+      "primary_advisory": "Dangerous Heat — WBGT Critical",
+      "farmer_action": "DA HEAT ALERT: Dangerous heat in Cordon. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+      "lgu_da_action": "HEAT STRESS EMERGENCY — Cordon\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
+    },
+    {
+      "psgc": "031411000",
+      "municipality": "Delfin Albano",
+      "province": "Isabela",
+      "severity": "danger",
+      "confidence": "medium",
+      "advisory_count": 4,
+      "risk_score": 43.0,
+      "primary_advisory": "Dangerous Heat — WBGT Critical",
+      "farmer_action": "DA HEAT ALERT: Dangerous heat in Delfin Albano. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+      "lgu_da_action": "HEAT STRESS EMERGENCY — Delfin Albano\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
+    },
+    {
+      "psgc": "031417000",
+      "municipality": "Luna",
+      "province": "Isabela",
+      "severity": "danger",
+      "confidence": "medium",
+      "advisory_count": 4,
+      "risk_score": 43.0,
+      "primary_advisory": "Dangerous Heat — WBGT Critical",
+      "farmer_action": "DA HEAT ALERT: Dangerous heat in Luna. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+      "lgu_da_action": "HEAT STRESS EMERGENCY — Luna\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
+    },
+    {
+      "psgc": "031424000",
+      "municipality": "Ramon",
+      "province": "Isabela",
+      "severity": "danger",
+      "confidence": "medium",
+      "advisory_count": 4,
+      "risk_score": 43.0,
+      "primary_advisory": "Dangerous Heat — WBGT Critical",
+      "farmer_action": "DA HEAT ALERT: Dangerous heat in Ramon. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+      "lgu_da_action": "HEAT STRESS EMERGENCY — Ramon\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
+    },
+    {
+      "psgc": "031429000",
+      "municipality": "San Isidro",
+      "province": "Isabela",
+      "severity": "danger",
+      "confidence": "medium",
+      "advisory_count": 4,
+      "risk_score": 43.0,
+      "primary_advisory": "Dangerous Heat — WBGT Critical",
+      "farmer_action": "DA HEAT ALERT: Dangerous heat in San Isidro. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+      "lgu_da_action": "HEAT STRESS EMERGENCY — San Isidro\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
+    },
+    {
+      "psgc": "031430000",
+      "municipality": "San Manuel",
+      "province": "Isabela",
+      "severity": "danger",
+      "confidence": "medium",
+      "advisory_count": 4,
+      "risk_score": 43.0,
+      "primary_advisory": "Dangerous Heat — WBGT Critical",
+      "farmer_action": "DA HEAT ALERT: Dangerous heat in San Manuel. NO farm work 9AM-4PM. Drink water. Protect livestock.",
+      "lgu_da_action": "HEAT STRESS EMERGENCY — San Manuel\nWBGT index in dangerous range.\n1. Issue public health advisory with RHU.\n2. Restrict field labor 9AM–4PM.\n3. Coordinate BAI for livestock heat stress monitoring.\n4. Ensure water availability at farm sites."
     }
   ],
   "source_summary": {
