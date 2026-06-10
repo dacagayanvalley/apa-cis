@@ -1,0 +1,207 @@
+openapi: 3.0.3
+info:
+  title: APA-CIS Climate Information Service API
+  version: 0.1.0
+  description: >
+    Proposed API surface for APA-CIS. In Phase 1 these endpoints can be
+    implemented as static JSON files. In Phase 2 they can map to Supabase
+    views or FastAPI handlers backed by PostgreSQL/PostGIS.
+servers:
+  - url: https://dacagayanvalley.github.io/apa-cis
+    description: Static GitHub Pages deployment
+  - url: https://{project}.supabase.co/rest/v1
+    description: Supabase PostgREST deployment
+    variables:
+      project:
+        default: your-project-ref
+paths:
+  /data/processed/daily/weather_latest.json:
+    get:
+      summary: Current municipal weather observations
+      tags: [Weather]
+      responses:
+        "200":
+          description: Latest weather observations by municipality
+  /data/processed/indicators/indicators_latest.json:
+    get:
+      summary: Current climate and agriculture indicators
+      tags: [Indicators]
+      responses:
+        "200":
+          description: Latest indicator bundle by PSGC
+  /data/advisories/daily/advisories_latest.json:
+    get:
+      summary: Active agriculture advisories
+      tags: [Advisories]
+      responses:
+        "200":
+          description: Rule-based advisories by municipality
+  /climate/current:
+    get:
+      summary: Current weather by municipality
+      tags: [Weather]
+      parameters:
+        - $ref: "#/components/parameters/Psgc"
+        - $ref: "#/components/parameters/Province"
+      responses:
+        "200":
+          description: Current weather records
+  /climate/forecast:
+    get:
+      summary: 3-10 day climate outlook by municipality
+      tags: [Forecasts]
+      parameters:
+        - $ref: "#/components/parameters/Psgc"
+        - name: lead_days
+          in: query
+          schema:
+            type: integer
+            default: 10
+            minimum: 1
+            maximum: 10
+      responses:
+        "200":
+          description: Forecast records and valid periods
+  /climate/anomalies:
+    get:
+      summary: Rainfall anomaly and percent-of-normal records
+      tags: [Indicators]
+      parameters:
+        - $ref: "#/components/parameters/Psgc"
+        - name: period
+          in: query
+          schema:
+            type: string
+            enum: [7d, 30d, monthly, seasonal]
+            default: 30d
+      responses:
+        "200":
+          description: Rainfall anomaly records
+  /advisories/agri:
+    get:
+      summary: Active agri-operation advisories
+      tags: [Advisories]
+      parameters:
+        - $ref: "#/components/parameters/Psgc"
+        - $ref: "#/components/parameters/Province"
+        - name: severity
+          in: query
+          schema:
+            type: string
+            enum: [info, advisory, warning, danger]
+        - name: operation
+          in: query
+          schema:
+            type: string
+            enum: [planting, irrigation, fertilizer, spraying, harvest, drying, fieldwork]
+      responses:
+        "200":
+          description: Advisories with rule IDs, trigger values, and text formats
+  /risks/crop-stage:
+    get:
+      summary: Crop-stage drought, flood, heat, and disease risk
+      tags: [Risks]
+      parameters:
+        - $ref: "#/components/parameters/Psgc"
+        - name: crop
+          in: query
+          schema:
+            type: string
+            enum: [rice_irrigated, rice_rainfed, corn_yellow, corn_white, hvcc]
+        - name: stage
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Crop-stage risk records
+  /risks/drought-watch:
+    get:
+      summary: Dry spell and drought watch
+      tags: [Risks]
+      parameters:
+        - $ref: "#/components/parameters/Psgc"
+        - $ref: "#/components/parameters/Province"
+      responses:
+        "200":
+          description: CDD, drought class, anomaly, and affected exposure
+  /operations/field-workability:
+    get:
+      summary: Field operation suitability
+      tags: [Operations]
+      parameters:
+        - $ref: "#/components/parameters/Psgc"
+        - name: operation
+          in: query
+          schema:
+            type: string
+            enum: [land_preparation, transplanting, fertilizer_application, spraying, irrigation, harvesting, drying]
+      responses:
+        "200":
+          description: Operation-specific suitability classes
+  /operations/heat-stress:
+    get:
+      summary: Heat stress guidance for field workers, livestock, and crops
+      tags: [Operations]
+      parameters:
+        - $ref: "#/components/parameters/Psgc"
+        - $ref: "#/components/parameters/Province"
+      responses:
+        "200":
+          description: Heat stress levels and recommended work-hour restrictions
+  /maps/rainfall-anomaly.geojson:
+    get:
+      summary: Rainfall anomaly map layer
+      tags: [Maps]
+      responses:
+        "200":
+          description: GeoJSON layer
+  /maps/drought-watch.geojson:
+    get:
+      summary: Drought watch map layer
+      tags: [Maps]
+      responses:
+        "200":
+          description: GeoJSON layer
+components:
+  parameters:
+    Psgc:
+      name: psgc
+      in: query
+      schema:
+        type: string
+      description: Municipality PSGC code
+    Province:
+      name: province
+      in: query
+      schema:
+        type: string
+        enum: [Batanes, Cagayan, Isabela, Nueva Vizcaya, Quirino]
+  schemas:
+    Advisory:
+      type: object
+      required: [psgc, rule_id, severity, trigger_values]
+      properties:
+        psgc:
+          type: string
+        municipality:
+          type: string
+        province:
+          type: string
+        rule_id:
+          type: string
+        severity:
+          type: string
+          enum: [info, advisory, warning, danger]
+        operation:
+          type: string
+        trigger_values:
+          type: object
+        bulletin_text:
+          type: string
+        sms_text:
+          type: string
+        lgu_text:
+          type: string
+        facebook_text:
+          type: string
