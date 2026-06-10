@@ -38,7 +38,7 @@ cfg = load_config()
 ISSUER = "DA-RFO2 APA"
 ASSISTANCE_CONTACT = "0916-708-9707"
 ASSISTANCE_FACEBOOK = "DA RFO2 APA Facebook page"
-ASSISTANCE_EMAIL = "arfo2apa@gmail.com"
+ASSISTANCE_EMAIL = "darfo2apa@gmail.com"
 
 
 def load_cra_measures() -> Dict:
@@ -785,6 +785,8 @@ def _decision_support_for_municipality(
             "stage": crop_risk.get("crop_stage") or (primary.get("affected_stages") or ["all"])[0],
             "risk_class": crop_risk.get("risk_class"),
             "risk_score": crop_risk.get("risk_score"),
+            "acap_crop_calendar_available": official.get("acap_crop_calendar_available", False),
+            "crop_calendar_decision_point": official.get("crop_calendar_decision_point"),
         },
         "immediate_farmer_action": primary.get("texts", {}).get("sms")
             or primary.get("texts", {}).get("bulletin")

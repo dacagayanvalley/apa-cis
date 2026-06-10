@@ -266,6 +266,39 @@ body {
   padding-bottom: 4px;
 }
 .table-controls { display: flex; gap: 8px; }
+.dashboard-main-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.65fr);
+  gap: 14px;
+  align-items: stretch;
+}
+.municipal-list-pane,
+.apa-live-pane {
+  min-width: 0;
+}
+.apa-live-pane {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0 12px 12px;
+  display: flex;
+  flex-direction: column;
+}
+.cis-open-link {
+  color: var(--da-green);
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.cis-open-link:hover { text-decoration: underline; }
+.apa-cis-frame {
+  width: 100%;
+  min-height: 640px;
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+}
 .search-input {
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -323,6 +356,7 @@ body {
   border-right: 1px solid #F0F4F8;
   vertical-align: middle;
 }
+.muted-cell { color: var(--text-dim); font-size: 11px; }
 .data-table tr:hover td { background: #F8FBF8; }
 .loading-row { text-align: center; color: var(--text-dim); font-style: italic; padding: 24px !important; }
 
@@ -767,6 +801,8 @@ body {
 @media (max-width: 1100px) {
   .stat-grid { grid-template-columns: repeat(3, 1fr); }
   .source-panel { grid-template-columns: 1fr; }
+  .dashboard-main-split { grid-template-columns: 1fr; }
+  .apa-cis-frame { min-height: 520px; }
   .planning-cards { grid-template-columns: repeat(2, 1fr); }
   .intervention-matrix { grid-template-columns: repeat(2, 1fr); }
 }

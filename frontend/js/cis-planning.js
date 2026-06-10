@@ -336,6 +336,7 @@ const CISMunicipal = (() => {
             ${_decisionItem('Hazard', decision.hazard || primary.rule_name)}
             ${_decisionItem('Confidence / Source Age', `${_titleCase(decision.confidence || 'unknown')} confidence; rainfall ${sourceAge.rainfall_age_days ?? 'N/A'} day(s) old from ${sourceAge.rainfall_source || 'unknown'}`)}
             ${_decisionItem('Affected Crop Stage', `${_labelize(cropStage.crop || 'all')} / ${_labelize(cropStage.stage || 'all')} (${cropStage.risk_class || 'risk not classified'})`)}
+            ${_decisionItem('ACAP Crop Calendar', cropStage.crop_calendar_decision_point || 'No ACAP crop-calendar decision point loaded.')}
             ${_decisionItem('Immediate Farmer Action', decision.immediate_farmer_action || primary.texts?.sms || '')}
             ${_decisionItem('LGU / DA Action', decision.lgu_da_action || primary.texts?.lgu || '')}
             ${_decisionItem('When to Re-check', `${decision.when_to_recheck || 'Re-check after the next pipeline run.'} Valid until ${decision.valid_until || 'next update'}.`)}

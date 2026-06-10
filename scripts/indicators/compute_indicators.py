@@ -819,6 +819,7 @@ def compute_all_indicators() -> Dict:
         }
         municipal_risk_score = compute_municipal_risk_score(indicator_bundle, mun)
 
+        official_hazards = _official_hazards_for_municipality(mun, pagasa_current, acap_current)
         results[psgc] = {
             "psgc": psgc,
             "municipality": mun["name"],
@@ -859,7 +860,8 @@ def compute_all_indicators() -> Dict:
                 "crop_stage_risk": crop_risk,
                 "municipal_risk_score": municipal_risk_score,
             },
-            "official_hazards": _official_hazards_for_municipality(mun, pagasa_current, acap_current),
+            "official_hazards": official_hazards,
+            "forecast_10_day": _acap_municipality_ten_day(mun, acap_current),
             "data_sources": {
                 "weather": weather_source,
                 "rainfall_used": rainfall_source,
@@ -895,6 +897,60 @@ def _acap_has_calendar(mun: Dict, acap_data: Dict) -> bool:
     return False
 
 
+def _acap_municipality_ten_day(mun: Dict, acap_data: Dict) -> Dict:
+    """Return a compact ACAP 10-day municipal forecast summary."""
+    province_doc = _acap_province_ten_day(mun.get("province"), acap_data)
+    municipalities = province_doc.get("municipalities", {}) if isinstance(province_doc, dict) else {}
+    target = _norm_name(mun.get("name") or mun.get("municipality", ""))
+    records = []
+
+    for name, items in municipalities.items():
+        if _norm_name(name) == target:
+            records = items or []
+            break
+
+    if not records:
+        return {
+            "available": False,
+            "source": "ACAP Cagayan Valley",
+            "source_date": province_doc.get("date_created") or province_doc.get("_update_time"),
+        }
+
+    rain_classes = [str(item.get("rainfall", "")).strip() for item in records if item.get("rainfall")]
+    covers = [str(item.get("cover", "")).strip() for item in records if item.get("cover")]
+    tmax_values = [item.get("tmax") for item in records if isinstance(item.get("tmax"), (int, float))]
+    tmin_values = [item.get("tmin") for item in records if isinstance(item.get("tmin"), (int, float))]
+    humidity_values = [item.get("humidity") for item in records if isinstance(item.get("humidity"), (int, float))]
+    wind_values = [item.get("wspeed") for item in records if isinstance(item.get("wspeed"), (int, float))]
+
+    def most_common(values: List[str]) -> Optional[str]:
+        if not values:
+            return None
+        return max(set(values), key=values.count)
+
+    return {
+        "available": True,
+        "source": "ACAP Cagayan Valley",
+        "source_date": province_doc.get("date_created") or province_doc.get("_update_time"),
+        "date_forecast": records[0].get("date_forecast"),
+        "date_range": records[0].get("date_range"),
+        "rainfall_class": most_common(rain_classes),
+        "weather_cover": most_common(covers),
+        "tmax_range_c": [
+            round(min(tmax_values), 1),
+            round(max(tmax_values), 1),
+        ] if tmax_values else None,
+        "tmin_range_c": [
+            round(min(tmin_values), 1),
+            round(max(tmin_values), 1),
+        ] if tmin_values else None,
+        "avg_humidity_pct": round(sum(humidity_values) / len(humidity_values), 1) if humidity_values else None,
+        "avg_wind_speed_ms": round(sum(wind_values) / len(wind_values), 1) if wind_values else None,
+        "days": len(records),
+        "daily": records[:10],
+    }
+
+
 def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict, acap_data: Dict = None) -> Dict:
     """Attach province-level PAGASA context to a municipal indicator record."""
     acap_data = acap_data or {}
@@ -908,6 +964,7 @@ def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict, acap_data: 
     ten_day_province = ten_day.get(province_key, {}) if isinstance(ten_day, dict) else {}
     acap_ten_day = _acap_province_ten_day(province, acap_data)
 
+    has_crop_calendar = _acap_has_calendar(mun, acap_data)
     return {
         "pagasa_source_date": pagasa_data.get("entry_date") or pagasa_data.get("as_of"),
         "typhoon_active": bool(typhoon.get("active")),
@@ -919,7 +976,12 @@ def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict, acap_data: 
         "acap_ten_day_available": bool(acap_ten_day),
         "acap_ten_day_source_date": acap_ten_day.get("date_created") or acap_ten_day.get("_update_time"),
         "acap_ten_day_municipality_count": len(acap_ten_day.get("municipalities", {}) or {}),
-        "acap_crop_calendar_available": _acap_has_calendar(mun, acap_data),
+        "acap_crop_calendar_available": has_crop_calendar,
+        "crop_calendar_decision_point": (
+            "ACAP crop calendar available; use local rice/corn crop stage as a primary advisory decision point."
+            if has_crop_calendar else
+            "No ACAP crop calendar for this municipality; using seasonal default crop stage."
+        ),
         "seasonal_rainfall_outlook": seasonal.get("rainfall_outlook"),
         "enso_phase": (pagasa_data.get("enso", {}) or {}).get("phase")
             or (pagasa_data.get("enso", {}) or {}).get("enso_phase"),

@@ -125,6 +125,8 @@
   <!-- Priority alert strip -->
   <div id="alert-strip" class="alert-strip hidden"></div>
 
+  <div class="dashboard-main-split">
+    <section class="municipal-list-pane">
   <!-- Municipal table -->
   <div class="section-header">
     <span class="section-title">Municipal Climate Indicators</span>
@@ -146,6 +148,10 @@
           <th class="sortable" data-sort-key="municipality" onclick="sortTable('municipality')">Municipality <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="province" onclick="sortTable('province')">Province <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="rainfall" onclick="sortTable('rainfall')">Rainfall 24h (mm) <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="forecast_rain" onclick="sortTable('forecast_rain')">10-Day Rain <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="forecast_weather" onclick="sortTable('forecast_weather')">10-Day Weather <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="forecast_tmax" onclick="sortTable('forecast_tmax')">10-Day Tmax <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="crop_calendar" onclick="sortTable('crop_calendar')">Crop Calendar <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="tmax" onclick="sortTable('tmax')">Temp Max (°C) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="humidity" onclick="sortTable('humidity')">Humidity (%) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="cdd" onclick="sortTable('cdd')">CDD (days) <span class="sort-indicator"></span></th>
@@ -157,9 +163,19 @@
         </tr>
       </thead>
       <tbody id="mun-tbody">
-        <tr><td colspan="11" class="loading-row">Loading climate data...</td></tr>
+        <tr><td colspan="15" class="loading-row">Loading climate data...</td></tr>
       </tbody>
     </table>
+  </div>
+    </section>
+
+    <aside class="apa-live-pane">
+      <div class="section-header">
+        <span class="section-title">APA CIS Live Panel</span>
+        <a class="cis-open-link" href="https://cis.apa.da.gov.ph/cis" target="_blank" rel="noopener">Open APA CIS</a>
+      </div>
+      <iframe class="apa-cis-frame" src="https://cis.apa.da.gov.ph/cis" title="APA CIS live application" loading="lazy"></iframe>
+    </aside>
   </div>
 </div>
 
