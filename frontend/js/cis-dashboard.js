@@ -11,7 +11,8 @@
 const CISDashboard = (() => {
 
   let _currentProvince = 'all';
-  let _sortKey = 'risk_desc';
+  let _sortKey = 'risk';
+  let _sortDir = 'desc';
   let _searchTerm = '';
   let _allRows = [];
 
@@ -43,11 +44,14 @@ const CISDashboard = (() => {
     const pagasa = CISData.getPAGASAData();
 
     if (rainfallEl && rows.length) {
+      const cisCount = rows.filter(r => r.observations?.rainfall_source === 'apa_cis').length;
       const chirpsCount = rows.filter(r => r.observations?.rainfall_source === 'chirps').length;
-      const nasaCount = rows.filter(r => r.observations?.rainfall_source !== 'chirps').length;
-      rainfallEl.textContent = chirpsCount
-        ? `CHIRPS used in ${chirpsCount} municipalities; NASA fallback in ${nasaCount}`
-        : 'NASA POWER rainfall active; CHIRPS fallback not yet sampled';
+      const nasaCount = rows.length - cisCount - chirpsCount;
+      rainfallEl.textContent = cisCount
+        ? `APA CIS used in ${cisCount}; CHIRPS in ${chirpsCount}; NASA fallback in ${nasaCount}`
+        : (chirpsCount
+          ? `CHIRPS used in ${chirpsCount} municipalities; NASA fallback in ${nasaCount}`
+          : 'NASA POWER rainfall active; APA CIS/CHIRPS fallback not yet sampled');
     }
 
     if (pagasaEl) {
@@ -112,7 +116,25 @@ const CISDashboard = (() => {
   }
 
   function sortTable(key) {
-    _sortKey = key;
+    const legacy = {
+      risk_desc: ['risk', 'desc'],
+      drought_desc: ['drought', 'asc'],
+      rain_desc: ['rainfall', 'desc'],
+      alpha: ['municipality', 'asc'],
+    };
+
+    if (legacy[key]) {
+      [_sortKey, _sortDir] = legacy[key];
+      _applyFiltersAndRender();
+      return;
+    }
+
+    if (_sortKey === key) {
+      _sortDir = _sortDir === 'asc' ? 'desc' : 'asc';
+    } else {
+      _sortKey = key;
+      _sortDir = ['municipality', 'province'].includes(key) ? 'asc' : 'desc';
+    }
     _applyFiltersAndRender();
   }
 
@@ -128,28 +150,59 @@ const CISDashboard = (() => {
     }
 
     // Sort
-    rows = _sortRows(rows, _sortKey);
+    rows = _sortRows(rows, _sortKey, _sortDir);
 
     _renderTableRows(rows);
+    _renderSortIndicators();
   }
 
-  function _sortRows(rows, key) {
-    switch (key) {
-      case 'risk_desc':
-        return rows.sort((a, b) =>
-          (b.indicators?.municipal_risk_score || 0) - (a.indicators?.municipal_risk_score || 0));
-      case 'drought_desc':
-        const dOrder = { critical:0, warning:1, watch:2, none:3 };
-        return rows.sort((a, b) =>
-          (dOrder[a.indicators?.drought_class] ?? 4) - (dOrder[b.indicators?.drought_class] ?? 4));
-      case 'rain_desc':
-        return rows.sort((a, b) =>
-          (b.observations?.rainfall_24h_mm || 0) - (a.observations?.rainfall_24h_mm || 0));
-      case 'alpha':
-        return rows.sort((a, b) => a.municipality.localeCompare(b.municipality));
-      default:
-        return rows;
-    }
+  function _sortRows(rows, key, dir) {
+    const dOrder = { critical:0, warning:1, watch:2, none:3 };
+    const heatOrder = { danger:0, high:1, moderate:2, low:3 };
+    const workOrder = { not_workable:0, high_risk:1, drought_caution:2, caution:3, workable:4 };
+    const sevOrder = { danger:0, warning:1, advisory:2, info:3, none:4 };
+
+    const valueFor = (r) => {
+      const obs = r.observations || {};
+      const ind = r.indicators || {};
+      const adv = CISData.getAdvisoryForMunicipality(r.psgc);
+      switch (key) {
+        case 'municipality': return r.municipality || '';
+        case 'province': return r.province || '';
+        case 'rainfall': return obs.rainfall_24h_mm ?? -Infinity;
+        case 'tmax': return obs.tmax_c ?? -Infinity;
+        case 'humidity': return obs.humidity_pct ?? -Infinity;
+        case 'cdd': return ind.cdd ?? -Infinity;
+        case 'drought': return dOrder[ind.drought_class] ?? 9;
+        case 'heat': return heatOrder[ind.heat_stress?.heat_class] ?? 9;
+        case 'fieldwork': return workOrder[ind.field_workability?.overall_class] ?? 9;
+        case 'risk': return ind.municipal_risk_score ?? -Infinity;
+        case 'advisory': return sevOrder[adv?.highest_severity || 'none'] ?? 9;
+        default: return '';
+      }
+    };
+
+    return rows.sort((a, b) => {
+      const av = valueFor(a);
+      const bv = valueFor(b);
+      let cmp = 0;
+      if (typeof av === 'string' || typeof bv === 'string') {
+        cmp = String(av).localeCompare(String(bv));
+      } else {
+        cmp = (av || 0) - (bv || 0);
+      }
+      return dir === 'asc' ? cmp : -cmp;
+    });
+  }
+
+  function _renderSortIndicators() {
+    document.querySelectorAll('#mun-table th.sortable').forEach(th => {
+      const active = th.dataset.sortKey === _sortKey;
+      th.classList.toggle('sorted', active);
+      th.setAttribute('aria-sort', active ? (_sortDir === 'asc' ? 'ascending' : 'descending') : 'none');
+      const indicator = th.querySelector('.sort-indicator');
+      if (indicator) indicator.textContent = active ? (_sortDir === 'asc' ? '▲' : '▼') : '↕';
+    });
   }
 
   function _renderTableRows(rows) {

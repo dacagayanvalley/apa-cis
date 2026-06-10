@@ -3,12 +3,13 @@ scripts/run_pipeline.py
 Master pipeline orchestrator for APA-CIS daily data update.
 
 Execution order:
-  1. Fetch NASA POWER daily data (all municipalities)
-  2. Ingest PAGASA data (PDF inbox + live scrape)
-  3. Compute climate indicators (CDD, anomaly, heat stress, ETo, etc.)
-  4. Generate agricultural advisories (rule-based engine)
-  5. Export GeoJSON map layers
-  6. Log all results
+  1. Fetch APA CIS and ACAP public regional data
+  2. Fetch NASA POWER daily fallback data (all municipalities)
+  3. Ingest PAGASA data (PDF inbox + live scrape)
+  4. Compute climate indicators (CDD, anomaly, heat stress, ETo, etc.)
+  5. Generate agricultural advisories (rule-based engine)
+  6. Export GeoJSON map layers
+  7. Log all results
 
 Run this script via GitHub Actions or cron daily at 6 AM PHT.
 
@@ -65,6 +66,8 @@ def run_daily_pipeline(
     skip_fetch: bool = False,
     skip_chirps: bool = False,
     skip_pagasa: bool = False,
+    skip_apa_cis: bool = False,
+    skip_acap: bool = False,
 ) -> dict:
     """
     Execute the full daily pipeline.
@@ -91,6 +94,32 @@ def run_daily_pipeline(
     logger.info("=" * 60)
 
     # ── Step 1: NASA POWER fetch ──────────────────────────────────────────
+    # Regional public apps are preferred by the indicator engine when records
+    # match local municipalities; failures leave the fallback stack live.
+    if not skip_fetch and not skip_apa_cis and cfg.get("apa_cis", {}).get("enabled", True):
+        try:
+            from scripts.fetch_apa_cis.cis_scraper import run as apa_cis_run
+            success, _ = run_step("APA CIS Public Weather Scrape", apa_cis_run, target_date)
+            report["steps"]["apa_cis"] = "success" if success else "warning"
+        except Exception as exc:
+            logger.error(f"APA CIS step error: {exc}")
+            report["steps"]["apa_cis"] = "warning"
+    else:
+        logger.info("--- STEP: APA CIS Public Weather Scrape --- [SKIPPED]")
+        report["steps"]["apa_cis"] = "skipped"
+
+    if not skip_fetch and not skip_acap and cfg.get("acap", {}).get("enabled", True):
+        try:
+            from scripts.fetch_acap.acap_scraper import run as acap_run
+            success, _ = run_step("ACAP Crop Calendar and 10-Day Scrape", acap_run)
+            report["steps"]["acap"] = "success" if success else "warning"
+        except Exception as exc:
+            logger.error(f"ACAP step error: {exc}")
+            report["steps"]["acap"] = "warning"
+    else:
+        logger.info("--- STEP: ACAP Crop Calendar and 10-Day Scrape --- [SKIPPED]")
+        report["steps"]["acap"] = "skipped"
+
     if not skip_fetch:
         try:
             from scripts.fetch_nasa_power.fetch_daily import run as nasa_run
@@ -207,6 +236,10 @@ if __name__ == "__main__":
                         help="Skip PAGASA ingestor")
     parser.add_argument("--skip-chirps", action="store_true",
                         help="Skip CHIRPS rainfall fetch")
+    parser.add_argument("--skip-apa-cis", action="store_true",
+                        help="Skip APA CIS public weather scrape")
+    parser.add_argument("--skip-acap", action="store_true",
+                        help="Skip ACAP crop calendar and 10-day scrape")
 
     args = parser.parse_args()
 
@@ -216,6 +249,8 @@ if __name__ == "__main__":
         skip_fetch=args.skip_fetch,
         skip_chirps=args.skip_chirps,
         skip_pagasa=args.skip_pagasa,
+        skip_apa_cis=args.skip_apa_cis,
+        skip_acap=args.skip_acap,
     )
 
     sys.exit(0 if result["overall_status"] == "success" else 1)

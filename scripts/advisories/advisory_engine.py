@@ -36,6 +36,22 @@ logger = setup_logger(__name__, "advisory_engine.log")
 cfg = load_config()
 
 
+def load_cra_measures() -> Dict:
+    """Load CRA adaptation measure matrix for advisory enrichment."""
+    path = PROJECT_ROOT / cfg["paths"].get("reference", "data/reference") / "cra_adaptation_measures.json"
+    return load_json(path) or {"rules": {}, "default": []}
+
+
+CRA_MEASURES = load_cra_measures()
+
+
+def _cra_measures_for_rule(rule_id: str) -> List[str]:
+    measures = CRA_MEASURES.get("rules", {}).get(rule_id)
+    if measures:
+        return measures
+    return CRA_MEASURES.get("default", [])
+
+
 # ═══════════════════════════════════════════════════════════════════════════════
 # 1. ADVISORY RULE DEFINITIONS
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -623,6 +639,8 @@ def evaluate_municipality(
                     "affected_crops": rule["affected_crops"],
                     "affected_stages": rule["affected_stages"],
                     "responsible_office": rule["responsible_office"],
+                    "adaptation_measures": _cra_measures_for_rule(rule["rule_id"]),
+                    "adaptation_source": CRA_MEASURES.get("meta", {}).get("source", "CRA Compendium"),
                     "texts": {
                         "bulletin": rule["bulletin_text"](indicators, mun),
                         "sms": rule["sms_text"](indicators, mun),

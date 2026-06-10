@@ -302,6 +302,21 @@ body {
   position: sticky; top: 0;
   border-right: 1px solid rgba(255,255,255,0.1);
 }
+.data-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.data-table th.sortable:hover,
+.data-table th.sortable.sorted {
+  background: #1D5E35;
+}
+.sort-indicator {
+  display: inline-block;
+  min-width: 10px;
+  margin-left: 4px;
+  color: rgba(255,255,255,0.8);
+  font-size: 9px;
+}
 .data-table td {
   padding: 8px 10px;
   border-bottom: 1px solid var(--border);
@@ -328,6 +343,31 @@ body {
 .pill-safe { background: #E8F5E9; color: #2E7D32; }
 .pill-none { background: #F5F5F5; color: #9E9E9E; }
 .pill-unknown { background: #E3F2FD; color: #1565C0; }
+
+.adaptation-box {
+  margin: 8px 12px 12px;
+  padding: 9px 10px;
+  border: 1px solid #DDE2EA;
+  background: #F8FBF8;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.adaptation-title {
+  font-weight: 800;
+  color: var(--da-green);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 5px;
+}
+.adaptation-box ul {
+  margin: 0 0 5px 16px;
+  padding: 0;
+}
+.adaptation-box li { margin: 3px 0; }
+.adaptation-source {
+  color: var(--text-dim);
+  font-size: 10px;
+}
 
 /* ── MAP MODULE ───────────────────────────────────────────── */
 .map-container {

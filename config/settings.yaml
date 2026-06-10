@@ -50,6 +50,26 @@ pagasa:
   # PAGASA has no public machine API; semi-auto workflow used
   mode: "semi_automated"
 
+apa_cis:
+  base_url: "https://cis.apa.da.gov.ph"
+  app_url: "https://cis.apa.da.gov.ph/cis"
+  region_code: "0200000000"
+  enabled: true
+  daily_types:
+    rain: "rainfall_mm"
+    temp: "tmax_c"
+    wind: "wind_speed_ms"
+  timeout_seconds: 45
+  retry_attempts: 3
+  request_delay_seconds: 0.5
+
+acap:
+  base_url: "https://acap-cagayanvalley.github.io"
+  firestore_project_id: "acap-cagayanvalley-prod"
+  region_document: "cagayan_valley"
+  enabled: true
+  timeout_seconds: 45
+
 # ── CLIMATE INDICATOR THRESHOLDS ──────────────────────────
 thresholds:
   rainfall:
@@ -172,6 +192,9 @@ paths:
   raw_nasa: "data/raw/nasa_power"
   raw_chirps: "data/raw/chirps"
   raw_pagasa: "data/raw/pagasa"
+  raw_apa_cis: "data/raw/apa_cis"
+  raw_acap: "data/raw/acap"
+  reference: "data/reference"
   processed_daily: "data/processed/daily"
   processed_monthly: "data/processed/monthly"
   indicators: "data/processed/indicators"

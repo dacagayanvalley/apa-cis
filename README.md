@@ -13,8 +13,11 @@ This repository now includes the minimum viable municipal agriculture CIS stack:
 
 - NASA POWER automated daily weather fetch for all Cagayan Valley municipalities.
 - CHIRPS automated rainfall raster download with optional municipal centroid sampling when `rasterio` is installed.
+- APA CIS public app scrape for same-day municipal rainfall, maximum temperature, and wind. These values now take priority over NASA/CHIRPS when available.
+- ACAP Cagayan Valley scrape for 10-day province forecasts, AMIA village metadata, and crop-calendar municipality references.
 - Semi-automated PAGASA official product workflow with a stable `data/raw/pagasa/pagasa_current.json` output.
-- Source-aware indicators that prefer CHIRPS rainfall when available and keep NASA POWER as fallback.
+- Source-aware indicators with priority order: APA CIS > CHIRPS rainfall > NASA POWER fallback.
+- CRA Compendium adaptation-measure matrix attached to every triggered advisory.
 - Added postharvest drying risk, official PAGASA typhoon signal context, irrigation priority, and wet-spell disease watch rules.
 - Added `data/geospatial/drying_risk.geojson` for the Leaflet map.
 - Added Supabase/PostGIS schema and OpenAPI starter files under `api/`.
@@ -35,6 +38,7 @@ Architecture and gap assessment: `docs/cis_upgrade_assessment.md`
 | **Map Layers** | 8 GeoJSON layers rendered in Leaflet: rainfall, drought watch, heat, workability, anomaly, crop risk, municipal risk, advisory status |
 | **Planning Dashboard** | Priority municipality ranking for DA intervention, province summaries, intervention type matrix |
 | **PAGASA Integration** | Semi-automated workflow: PDF inbox processor + public page scraping + manual entry template |
+| **Regional App Integration** | APA CIS same-day weather scrape plus ACAP 10-day/crop-calendar context |
 
 ---
 
@@ -67,6 +71,11 @@ python scripts/run_pipeline.py --date 2026-06-01
 
 # Skip fetch (indicators + advisories only, uses existing daily data)
 python scripts/run_pipeline.py --skip-fetch
+
+# Refresh regional public app sources, then recompute indicators/advisories
+python scripts/fetch_apa_cis/cis_scraper.py
+python scripts/fetch_acap/acap_scraper.py
+python scripts/run_pipeline.py --skip-fetch --skip-pagasa
 ```
 
 ### 4. View the dashboard
@@ -85,15 +94,20 @@ cd frontend && python -m http.server 8080
 The pipeline runs automatically every day at **6:00 AM Philippine Standard Time** via `.github/workflows/daily_pipeline.yml`.
 
 **Pipeline steps:**
-1. `scripts/fetch_nasa_power/fetch_daily.py` — Fetches NASA POWER data for all 92 municipalities
-2. `scripts/fetch_pagasa/pagasa_ingestor.py` — Processes PAGASA PDF inbox and scrapes public pages
-3. `scripts/indicators/compute_indicators.py` — Computes all climate indicators
-4. `scripts/advisories/advisory_engine.py` — Evaluates 10 advisory rules, generates outputs
-5. Commits updated JSON/GeoJSON files to `main` branch → triggers GitHub Pages rebuild
+1. `scripts/fetch_apa_cis/cis_scraper.py` - Scrapes same-day APA CIS Region 2 municipal weather layers
+2. `scripts/fetch_acap/acap_scraper.py` - Scrapes ACAP 10-day forecast, AMIA villages, and crop-calendar metadata
+3. `scripts/fetch_nasa_power/fetch_daily.py` - Fetches NASA POWER fallback data for all 92 municipalities
+4. `scripts/fetch_chirps/fetch_daily.py` - Downloads/samples CHIRPS rainfall where available
+5. `scripts/fetch_pagasa/pagasa_ingestor.py` - Processes PAGASA PDF inbox and scrapes public pages
+6. `scripts/indicators/compute_indicators.py` - Computes all climate indicators
+7. `scripts/advisories/advisory_engine.py` - Evaluates advisory rules and attaches CRA adaptation measures
+8. Commits updated JSON/GeoJSON files to `main` branch, which triggers GitHub Pages rebuild
 
 **Data output files updated daily:**
 ```
 data/processed/daily/weather_latest.json     ← Latest weather observations
+data/raw/apa_cis/apa_cis_current.json       ← Latest APA CIS public weather scrape
+data/raw/acap/acap_current.json             ← Latest ACAP 10-day/crop-calendar scrape
 data/processed/indicators/indicators_latest.json  ← All indicators (92 muns)
 data/advisories/daily/advisories_latest.json ← Advisory report
 data/geospatial/*.geojson                    ← 8 Leaflet map layers
@@ -104,12 +118,23 @@ data/pipeline_status.json                   ← Pipeline run status
 
 ## Data Sources
 
-### NASA POWER (Primary — Automated)
+### APA CIS Public App (Priority Same-Day Source)
+- **URL:** https://cis.apa.da.gov.ph/cis
+- **Use:** Same-day municipal rainfall, maximum temperature, and wind layers for Region 2
+- **Priority:** First source used for current operations when a municipality match is available
+
+### ACAP Cagayan Valley (PAGASA 10-Day / Crop Calendar Context)
+- **URL:** https://acap-cagayanvalley.github.io/
+- **Use:** Province-level 10-day forecast records, AMIA village metadata, and crop-calendar municipality references
+- **Priority:** Used as official/regional context for municipal advisory generation
+
+### NASA POWER (Fallback — Automated)
 - **URL:** https://power.larc.nasa.gov/api/temporal/daily/point
 - **Community:** AG (Agroclimatology)
 - **Lag:** ~5 days behind real-time
 - **Parameters:** Rainfall, Tmax, Tmin, Tmean, RH, Wind speed/direction, Solar radiation, Soil wetness
 - **Coverage:** Global; centroid-based point values for each municipality
+- **Priority:** Used when APA CIS or CHIRPS records are unavailable/stale
 
 ### CHIRPS / NASA POWER Monthly (Climatology Baseline)
 - Used to build the 1991–2020 monthly normals for rainfall anomaly calculation

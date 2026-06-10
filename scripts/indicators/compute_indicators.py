@@ -20,7 +20,9 @@ DA RFO 02 — APA-CIS Climate Information Service
 """
 
 import math
+import re
 import sys
+import unicodedata
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -108,6 +110,30 @@ def load_pagasa_current() -> Dict:
     """Load latest reviewed/semi-automated PAGASA product bundle."""
     pagasa_path = PROJECT_ROOT / cfg["paths"]["raw_pagasa"] / "pagasa_current.json"
     return load_json(pagasa_path) or {}
+
+
+def load_latest_apa_cis() -> Dict[str, Dict]:
+    """Load latest APA CIS weather records, keyed by local PSGC."""
+    path = PROJECT_ROOT / cfg["paths"].get("raw_apa_cis", "data/raw/apa_cis") / "apa_cis_current.json"
+    data = load_json(path) or {}
+    return {rec["psgc"]: rec for rec in data.get("data", []) if rec.get("psgc")}
+
+
+def load_acap_current() -> Dict:
+    """Load latest ACAP crop-calendar and 10-day weather snapshot."""
+    path = PROJECT_ROOT / cfg["paths"].get("raw_acap", "data/raw/acap") / "acap_current.json"
+    return load_json(path) or {}
+
+
+def _norm_name(value: str) -> str:
+    value = (value or "").replace("Ã±", "ñ").replace("Ã‘", "Ñ")
+    text = unicodedata.normalize("NFKD", value or "")
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    text = text.lower()
+    text = re.sub(r"\bcity of\b", " ", text)
+    text = re.sub(r"\bcity\b", " ", text)
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -703,6 +729,8 @@ def compute_all_indicators() -> Dict:
     climatology = load_climatology()
     chirps_rainfall = load_latest_chirps_rainfall()
     pagasa_current = load_pagasa_current()
+    apa_cis_current = load_latest_apa_cis()
+    acap_current = load_acap_current()
     ref_date = today_pht()
     current_month = str(ref_date.month)
 
@@ -719,20 +747,28 @@ def compute_all_indicators() -> Dict:
             continue
 
         latest = records[-1]  # Most recent day
+        cis_rec = apa_cis_current.get(psgc)
         chirps_rec = chirps_rainfall.get(psgc) if cfg["chirps"].get("use_for_rainfall_if_available", True) else None
         chirps_is_current = chirps_rec and chirps_rec.get("date") == latest.get("date")
         chirps_rain = chirps_rec.get("rainfall_mm") if chirps_is_current else None
-        rain_24h = chirps_rain if chirps_rain is not None else latest.get("rainfall_mm")
-        rainfall_source = "chirps" if chirps_rain is not None else latest.get("source", "nasa_power")
+        cis_rain = cis_rec.get("rainfall_mm") if cis_rec else None
+        rain_24h = cis_rain if cis_rain is not None else (chirps_rain if chirps_rain is not None else latest.get("rainfall_mm"))
+        if cis_rain is not None:
+            rainfall_source = "apa_cis"
+        elif chirps_rain is not None:
+            rainfall_source = "chirps"
+        else:
+            rainfall_source = latest.get("source", "nasa_power")
         rain_48h = compute_accumulated_rainfall(records, days=2)
         rain_7d = compute_accumulated_rainfall(records, days=7)
         rain_30d = compute_accumulated_rainfall(records, days=30)
-        tmax = latest.get("tmax_c")
+        tmax = cis_rec.get("tmax_c") if cis_rec and cis_rec.get("tmax_c") is not None else latest.get("tmax_c")
         tmin = latest.get("tmin_c")
         tmean = latest.get("tmean_c")
         humidity = latest.get("humidity_pct")
-        wind = latest.get("wind_speed_ms")
+        wind = cis_rec.get("wind_speed_ms") if cis_rec and cis_rec.get("wind_speed_ms") is not None else latest.get("wind_speed_ms")
         solar = latest.get("solar_mj")
+        weather_source = "apa_cis" if cis_rec else latest.get("source", "nasa_power")
 
         # Consecutive days
         cdd, drought_class = compute_cdd(records)
@@ -789,10 +825,14 @@ def compute_all_indicators() -> Dict:
             "province": mun["province"],
             "lat": mun["lat"],
             "lon": mun["lon"],
-            "as_of_date": latest.get("date"),
+            "as_of_date": cis_rec.get("date") if cis_rec else latest.get("date"),
             "observations": {
                 "rainfall_24h_mm": rain_24h,
                 "rainfall_source": rainfall_source,
+                "apa_cis_rainfall_24h_mm": cis_rain,
+                "apa_cis_tmax_c": cis_rec.get("tmax_c") if cis_rec else None,
+                "apa_cis_wind_speed_ms": cis_rec.get("wind_speed_ms") if cis_rec else None,
+                "apa_cis_record_date": cis_rec.get("date") if cis_rec else None,
                 "nasa_power_rainfall_24h_mm": latest.get("rainfall_mm"),
                 "chirps_rainfall_24h_mm": chirps_rain,
                 "chirps_record_date": chirps_rec.get("date") if chirps_rec else None,
@@ -819,19 +859,45 @@ def compute_all_indicators() -> Dict:
                 "crop_stage_risk": crop_risk,
                 "municipal_risk_score": municipal_risk_score,
             },
-            "official_hazards": _official_hazards_for_municipality(mun, pagasa_current),
+            "official_hazards": _official_hazards_for_municipality(mun, pagasa_current, acap_current),
             "data_sources": {
-                "weather": latest.get("source", "nasa_power"),
+                "weather": weather_source,
                 "rainfall_used": rainfall_source,
-                "rainfall_fallback": None if rainfall_source == "chirps" else "CHIRPS unavailable or stale; using NASA POWER",
+                "rainfall_fallback": _rainfall_fallback_note(rainfall_source),
+                "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER",
             },
         }
 
     return results
 
 
-def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict) -> Dict:
+def _rainfall_fallback_note(source: str) -> Optional[str]:
+    if source == "apa_cis":
+        return None
+    if source == "chirps":
+        return "APA CIS rainfall unavailable for this municipality; using CHIRPS."
+    return "APA CIS/CHIRPS rainfall unavailable or stale; using NASA POWER."
+
+
+def _acap_province_ten_day(province: str, acap_data: Dict) -> Dict:
+    for item in acap_data.get("ten_day_forecast", []) if isinstance(acap_data, dict) else []:
+        if (item.get("name") or "").lower() == (province or "").lower():
+            return item
+    return {}
+
+
+def _acap_has_calendar(mun: Dict, acap_data: Dict) -> bool:
+    target = ((mun.get("province") or "").lower(), _norm_name(mun.get("name") or mun.get("municipality", "")))
+    for item in acap_data.get("crop_calendar_municipalities", []) if isinstance(acap_data, dict) else []:
+        key = ((item.get("province") or "").lower(), _norm_name(item.get("municipality", "")))
+        if key == target:
+            return True
+    return False
+
+
+def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict, acap_data: Dict = None) -> Dict:
     """Attach province-level PAGASA context to a municipal indicator record."""
+    acap_data = acap_data or {}
     province = mun.get("province")
     province_key = (province or "").lower().replace(" ", "_")
     typhoon = pagasa_data.get("typhoon", {}) if isinstance(pagasa_data, dict) else {}
@@ -840,6 +906,7 @@ def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict) -> Dict:
 
     signal_levels = typhoon.get("signal_levels", {}) if isinstance(typhoon, dict) else {}
     ten_day_province = ten_day.get(province_key, {}) if isinstance(ten_day, dict) else {}
+    acap_ten_day = _acap_province_ten_day(province, acap_data)
 
     return {
         "pagasa_source_date": pagasa_data.get("entry_date") or pagasa_data.get("as_of"),
@@ -849,6 +916,10 @@ def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict) -> Dict:
         "ten_day_outlook": ten_day_province.get("outlook"),
         "ten_day_rainfall_range_mm": ten_day_province.get("rainfall_range_mm"),
         "ten_day_agri_advisory": ten_day_province.get("agri_advisory"),
+        "acap_ten_day_available": bool(acap_ten_day),
+        "acap_ten_day_source_date": acap_ten_day.get("date_created") or acap_ten_day.get("_update_time"),
+        "acap_ten_day_municipality_count": len(acap_ten_day.get("municipalities", {}) or {}),
+        "acap_crop_calendar_available": _acap_has_calendar(mun, acap_data),
         "seasonal_rainfall_outlook": seasonal.get("rainfall_outlook"),
         "enso_phase": (pagasa_data.get("enso", {}) or {}).get("phase")
             or (pagasa_data.get("enso", {}) or {}).get("enso_phase"),

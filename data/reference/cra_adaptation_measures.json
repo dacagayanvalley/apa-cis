@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "source": "CRA Compendium.pdf",
+    "local_reference_path": "C:/Users/Jeff Factora/Downloads/AMIA2024/CRA Compendium/CRA Compendium.pdf",
+    "use_note": "Operational summary of climate-resilient agriculture measures for advisory generation. Validate and refine entries against the official compendium during technical review."
+  },
+  "default": [
+    "Coordinate field validation with MAO/AEWs before public release.",
+    "Prioritize advisories for vulnerable rainfed and smallholder production areas.",
+    "Document farm impacts for DA and PCIC support where losses are observed."
+  ],
+  "rules": {
+    "PAGASA_TCWS_ACTIVE": [
+      "Secure harvested produce, seed stocks, fertilizer, machinery, and livestock shelters before strong winds arrive.",
+      "Conduct early harvest for mature rice, corn, and HVCC where safe.",
+      "Prepare drainage outlets and post-event damage assessment forms with MAO and MDRRMC."
+    ],
+    "POSTHARVEST_DRYING_RISK": [
+      "Use mechanical dryers, covered drying floors, tarpaulins, and ventilated temporary storage.",
+      "Prioritize hauling of wet palay/corn to postharvest facilities to avoid quality losses.",
+      "Monitor grain moisture before storage and milling."
+    ],
+    "IRRIGATION_HIGH_DEMAND": [
+      "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+      "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+      "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+    ],
+    "WET_SPELL_DISEASE_WATCH": [
+      "Improve drainage and avoid prolonged waterlogging in low-lying fields.",
+      "Increase pest and disease scouting for fungal and bacterial disease triggers.",
+      "Use resistant varieties and integrated pest management; spray only during safe weather windows."
+    ],
+    "RAIN_EXTREME_24H": [
+      "Clear canals, drainage lines, spillways, and field outlets before additional rainfall.",
+      "Move inputs and harvested crops to elevated, dry storage.",
+      "Monitor flood-prone barangays and prepare seed buffer support for replanting."
+    ],
+    "RAIN_HARVEST_RISK": [
+      "Defer harvest and open-field drying until rainfall risk lowers, unless crop maturity requires emergency harvest.",
+      "Use covered transport and drying facilities for wet grain.",
+      "Coordinate shared dryers, tarpaulins, and storage space through MAO and farmer groups."
+    ],
+    "DROUGHT_CRITICAL": [
+      "Prioritize water rationing, supplemental irrigation, and emergency pumps for reproductive-stage crops.",
+      "Shift vulnerable rainfed areas to short-duration or drought-tolerant varieties where replanting is needed.",
+      "Activate damage validation, PCIC coordination, seed buffer planning, and water-harvesting support."
+    ],
+    "DROUGHT_WARNING": [
+      "Promote moisture conservation through mulching, shallow cultivation, and weed control.",
+      "Adjust planting windows and avoid new rainfed planting without reliable rainfall outlook.",
+      "Inspect communal irrigation, small water impounding, and pump availability."
+    ],
+    "DROUGHT_WATCH": [
+      "Monitor soil moisture proxies and crop wilting signs in rainfed barangays.",
+      "Advise farmers to conserve water and prepare supplemental irrigation options.",
+      "Use climate-resilient varieties and staggered planting where feasible."
+    ],
+    "HEAT_DANGER": [
+      "Shift farm labor to early morning or late afternoon and provide water/rest breaks.",
+      "Increase irrigation or moisture conservation for heat-sensitive crop stages.",
+      "Provide shade, ventilation, and water for livestock and poultry."
+    ],
+    "HEAT_HIGH": [
+      "Avoid strenuous field operations during peak heat hours.",
+      "Monitor flowering/tasseling crops for heat stress and maintain soil moisture.",
+      "Use heat-tolerant varieties in future planting where locally suitable."
+    ],
+    "FERTILIZER_DEFER": [
+      "Defer fertilizer application before heavy rain to prevent nutrient loss and runoff.",
+      "Apply split fertilizer doses when field conditions improve.",
+      "Keep fertilizer stocks dry and elevated."
+    ],
+    "SPRAYING_DEFER": [
+      "Defer pesticide or foliar spraying during rain, strong wind, or very high humidity.",
+      "Resume only during calm, dry windows and follow label safety intervals.",
+      "Strengthen pest scouting and non-chemical IPM while spraying is delayed."
+    ],
+    "BELOW_NORMAL_RAINFALL": [
+      "Review crop calendar and planting decisions against seasonal rainfall outlook.",
+      "Prioritize drought-tolerant seed, water harvesting, and supplemental irrigation investments.",
+      "Rank rainfed municipalities for seed buffer, crop insurance, and livelihood diversification support."
+    ]
+  }
+}

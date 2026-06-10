@@ -143,17 +143,17 @@
     <table class="data-table" id="mun-table">
       <thead>
         <tr>
-          <th>Municipality</th>
-          <th>Province</th>
-          <th>Rainfall 24h (mm)</th>
-          <th>Temp Max (°C)</th>
-          <th>Humidity (%)</th>
-          <th>CDD (days)</th>
-          <th>Drought Status</th>
-          <th>Heat Stress</th>
-          <th>Field Work</th>
-          <th>Risk Score</th>
-          <th>Advisory</th>
+          <th class="sortable" data-sort-key="municipality" onclick="sortTable('municipality')">Municipality <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="province" onclick="sortTable('province')">Province <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="rainfall" onclick="sortTable('rainfall')">Rainfall 24h (mm) <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="tmax" onclick="sortTable('tmax')">Temp Max (°C) <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="humidity" onclick="sortTable('humidity')">Humidity (%) <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="cdd" onclick="sortTable('cdd')">CDD (days) <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="drought" onclick="sortTable('drought')">Drought Status <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="heat" onclick="sortTable('heat')">Heat Stress <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="fieldwork" onclick="sortTable('fieldwork')">Field Work <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="risk" onclick="sortTable('risk')">Risk Score <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="advisory" onclick="sortTable('advisory')">Advisory <span class="sort-indicator"></span></th>
         </tr>
       </thead>
       <tbody id="mun-tbody">

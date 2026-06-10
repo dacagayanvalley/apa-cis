@@ -39,7 +39,7 @@ def load_config() -> Dict:
     global _config_cache
     if _config_cache is None:
         config_path = PROJECT_ROOT / "config" / "settings.yaml"
-        with open(config_path, "r") as f:
+        with open(config_path, "r", encoding="utf-8") as f:
             _config_cache = yaml.safe_load(f)
     return _config_cache
 
@@ -47,7 +47,7 @@ def load_config() -> Dict:
 def load_municipalities() -> List[Dict]:
     """Load municipalities.json."""
     mun_path = PROJECT_ROOT / "config" / "municipalities.json"
-    with open(mun_path, "r") as f:
+    with open(mun_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 

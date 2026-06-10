@@ -113,6 +113,16 @@ const CISAdvisory = (() => {
       const activeTab = _selectedTab[ruleId] || 'bulletin';
       const texts = rule.texts || {};
       const sevColors = { danger:'#FFEBEE', warning:'#FFF3E0', advisory:'#FFFDE7', info:'#E3F2FD' };
+      const measures = (rule.adaptation_measures || []).slice(0, 5);
+      const measuresHTML = measures.length ? `
+        <div class="adaptation-box">
+          <div class="adaptation-title">Recommended Adaptation Measures</div>
+          <ul>
+            ${measures.map(m => `<li>${_escapeHtml(m)}</li>`).join('')}
+          </ul>
+          <div class="adaptation-source">Source: ${_escapeHtml(rule.adaptation_source || 'CRA Compendium')}</div>
+        </div>
+      ` : '';
 
       return `
         <div class="adv-rule-card">
@@ -137,6 +147,7 @@ const CISAdvisory = (() => {
           <div class="adv-tab-content" id="tab-content-${ruleId}">
             ${_escapeHtml(texts[activeTab] || 'No text available.')}
           </div>
+          ${measuresHTML}
         </div>
       `;
     }).join('');
