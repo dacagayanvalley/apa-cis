@@ -1,25 +1,26 @@
-# ── Large raw API data (regenerate anytime) ──────────────
+# Large raw API data (regenerate anytime)
 data/raw/nasa_power/
 data/raw/chirps/
 
-# ── PAGASA materials (copyright + sensitive) ─────────────
+# PAGASA materials (copyright + sensitive)
 data/raw/pagasa/*.pdf
 data/raw/pagasa/*.PDF
 
-# ── Climatology baseline (large, regenerate with script) ──
+# Climatology baseline (large, regenerate with script)
 config/climatology_1991_2020.json
 config/climatology_checkpoint.json
 
-# ── Pipeline logs (noisy, not useful in repo) ─────────────
+# Pipeline logs
 logs/
 
-# ── Python cache ──────────────────────────────────────────
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
+pytest-cache-files-*/
 
-# ── OS/editor files ───────────────────────────────────────
+# OS/editor files
 .DS_Store
 Thumbs.db
 .vscode/
