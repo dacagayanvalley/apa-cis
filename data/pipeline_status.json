@@ -1,11 +1,11 @@
 {
   "last_run": "2026-06-10",
   "status": "success",
-  "elapsed_seconds": 296.7,
+  "elapsed_seconds": 217.9,
   "steps": {
     "nasa_power": "success",
-    "chirps": "skipped",
-    "pagasa": "skipped",
+    "chirps": "success",
+    "pagasa": "success",
     "indicators": "success",
     "advisories": "success"
   },
