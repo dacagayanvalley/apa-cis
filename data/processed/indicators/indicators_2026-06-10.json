@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-06-10T13:30:36.045956",
+    "generated_at": "2026-06-10T13:38:17.287670",
     "as_of_date": "2026-06-10",
     "municipality_count": 92
   },
@@ -99,7 +99,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -202,7 +202,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -305,7 +305,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -409,7 +409,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -512,7 +512,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -615,7 +615,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -718,7 +718,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -821,7 +821,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -924,7 +924,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1027,7 +1027,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1130,7 +1130,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1233,7 +1233,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1336,7 +1336,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1439,7 +1439,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1542,7 +1542,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1645,7 +1645,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1748,7 +1748,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1851,7 +1851,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1955,7 +1955,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -1966,7 +1966,7 @@
     },
     "023120000": {
       "psgc": "023120000",
-      "municipality": "PeÃ±ablanca",
+      "municipality": "Peñablanca",
       "province": "Cagayan",
       "lat": 17.635,
       "lon": 121.784,
@@ -2058,7 +2058,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -2162,7 +2162,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -2266,7 +2266,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -2369,7 +2369,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -2472,7 +2472,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -2575,7 +2575,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -2678,7 +2678,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -2689,7 +2689,7 @@
     },
     "023127000": {
       "psgc": "023127000",
-      "municipality": "Santo NiÃ±o",
+      "municipality": "Santo Niño",
       "province": "Cagayan",
       "lat": 18.158,
       "lon": 121.838,
@@ -2781,7 +2781,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -2884,7 +2884,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -2988,7 +2988,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -3091,7 +3091,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -3195,7 +3195,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -3299,7 +3299,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -3404,7 +3404,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -3507,7 +3507,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -3610,7 +3610,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -3713,7 +3713,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -3817,7 +3817,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -3921,7 +3921,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4025,7 +4025,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4128,7 +4128,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4230,7 +4230,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4333,7 +4333,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4437,7 +4437,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4540,7 +4540,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4644,7 +4644,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4747,7 +4747,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4850,7 +4850,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -4953,7 +4953,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5056,7 +5056,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5159,7 +5159,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5263,7 +5263,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5366,7 +5366,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5471,7 +5471,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5574,7 +5574,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5678,7 +5678,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5783,7 +5783,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5887,7 +5887,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -5990,7 +5990,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -6094,7 +6094,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -6198,7 +6198,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -6301,7 +6301,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -6405,7 +6405,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -6508,7 +6508,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -6612,7 +6612,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -6715,7 +6715,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -6818,7 +6818,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -6922,7 +6922,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7026,7 +7026,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7130,7 +7130,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7234,7 +7234,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7338,7 +7338,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7442,7 +7442,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7546,7 +7546,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7650,7 +7650,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7754,7 +7754,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7857,7 +7857,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -7961,7 +7961,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8064,7 +8064,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8168,7 +8168,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8272,7 +8272,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8376,7 +8376,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8480,7 +8480,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8584,7 +8584,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8688,7 +8688,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8790,7 +8790,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8894,7 +8894,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -8997,7 +8997,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -9101,7 +9101,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -9204,7 +9204,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -9307,7 +9307,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -9410,7 +9410,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
@@ -9513,7 +9513,7 @@
         "ten_day_rainfall_range_mm": null,
         "ten_day_agri_advisory": null,
         "seasonal_rainfall_outlook": null,
-        "enso_phase": "neutral",
+        "enso_phase": "el_nino",
         "review_status": "unreviewed"
       },
       "data_sources": {
