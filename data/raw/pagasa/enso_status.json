@@ -1,8 +1,7 @@
 {
-  "enso_phase": "neutral",
+  "enso_phase": "el_nino",
   "enso_strength": null,
-  "advisory_text": "ENSO status unavailable. Monitor PAGASA advisories.",
-  "source": "pagasa_cached",
-  "as_of": "2026-06-10",
-  "cache_note": "Live fetch failed; using cached value"
+  "advisory_text": "10 June 2026 : Recent atmospheric and oceanic indicators show that El Niño conditions are present in the tropical Pacific. In May 2026, the observed relative sea surface temperature anomaly (rSSTA) reached the +0.5°C threshold. Additionally, most climate models suggest there is over an 80% probability that this will develop into a full-blown El Niño event, which is likely to persist until early 2027. (updated 09 June 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+  "source": "pagasa_enso_page",
+  "as_of": "2026-06-10"
 }
