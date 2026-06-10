@@ -1,0 +1,31 @@
+# APA-CIS Python Dependencies
+# DA RFO 02 — Climate Information Service, Cagayan Valley
+# Install: pip install -r requirements.txt
+
+# ── Core ────────────────────────────────────────────────────────
+requests>=2.31.0
+PyYAML>=6.0.1
+
+# ── Data processing ─────────────────────────────────────────────
+numpy>=1.26.0
+pandas>=2.1.0
+
+# ── Geospatial ──────────────────────────────────────────────────
+# Note: shapely and fiona are large deps; geojson is lightweight
+geojson>=3.1.0
+
+# ── PDF processing (optional — for PAGASA PDF inbox) ────────────
+# Uncomment one:
+# PyMuPDF>=1.23.0        # Faster, recommended
+# pdfplumber>=0.10.0     # Alternative
+
+# ── HTML parsing (for PAGASA scraping) ──────────────────────────
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# ── Testing ─────────────────────────────────────────────────────
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# ── Development ─────────────────────────────────────────────────
+# jupyter>=1.0.0          # For analysis notebooks

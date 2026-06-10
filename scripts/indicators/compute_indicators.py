@@ -1,0 +1,916 @@
+"""
+scripts/indicators/compute_indicators.py
+Core climate indicator engine for APA-CIS.
+
+Computes all agricultural climate indicators from NASA POWER daily data
+and the 1991-2020 climatology baseline.
+
+Indicators computed:
+  - Consecutive Dry Days (CDD) and drought watch class
+  - Consecutive Wet Days (CWD)
+  - Rainfall anomaly and percent of normal
+  - Heat stress index (WBGT approximation)
+  - Reference evapotranspiration (FAO-56 Penman-Monteith, simplified)
+  - Irrigation demand proxy (ETo - rainfall)
+  - Field workability index
+  - Crop-stage risk score
+  - Municipal climate risk composite score
+
+DA RFO 02 — APA-CIS Climate Information Service
+"""
+
+import math
+import sys
+from datetime import date, timedelta
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+from scripts.utils import (
+    PROJECT_ROOT,
+    load_config,
+    load_json,
+    load_municipalities,
+    log_etl_event,
+    save_json,
+    setup_logger,
+    today_pht,
+)
+
+logger = setup_logger(__name__, "compute_indicators.log")
+cfg = load_config()
+thresholds = cfg["thresholds"]
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 1. DATA LOADING HELPERS
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def load_recent_daily(psgc: str, n_days: int = 30) -> List[Dict]:
+    """
+    Load last n_days of daily records for a single municipality.
+    Reads from data/processed/daily/ archive.
+    """
+    records = []
+    base = PROJECT_ROOT / cfg["paths"]["processed_daily"]
+    ref_date = today_pht()
+
+    for i in range(n_days):
+        d = ref_date - timedelta(days=i)
+        year_str = d.strftime("%Y")
+        month_str = d.strftime("%m")
+        path = base / year_str / month_str / f"weather_{d.isoformat()}.json"
+
+        data = load_json(path)
+        if data and "data" in data:
+            for rec in data["data"]:
+                if rec.get("psgc") == psgc:
+                    records.append(rec)
+                    break  # Found our municipality
+
+    return sorted(records, key=lambda x: x["date"])
+
+
+def load_latest_all_municipalities() -> Dict[str, Dict]:
+    """
+    Load the most recent daily record for every municipality.
+    Returns dict keyed by PSGC.
+    """
+    latest_path = (
+        PROJECT_ROOT / cfg["paths"]["processed_daily"] / "weather_latest.json"
+    )
+    data = load_json(latest_path)
+    if not data:
+        return {}
+    return {rec["psgc"]: rec for rec in data.get("data", [])}
+
+
+def load_climatology() -> Dict[str, Dict]:
+    """Load flattened climatology: {psgc: {month_str: {normals}}}"""
+    clim_path = PROJECT_ROOT / "config" / "climatology_flat.json"
+    data = load_json(clim_path)
+    return data or {}
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 2. INDIVIDUAL INDICATOR FUNCTIONS
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def compute_cdd(records: List[Dict]) -> Tuple[int, str]:
+    """
+    Consecutive Dry Days (current streak) and drought watch class.
+
+    A dry day is defined as rainfall < 1.0 mm (WMO standard).
+
+    Args:
+        records: List of daily records, oldest first
+
+    Returns:
+        (current_cdd, drought_class)
+        drought_class: "none" | "watch" | "warning" | "critical"
+    """
+    dry_threshold = thresholds["rainfall"]["dry_day_mm"]
+    watch_days = thresholds["dry_spell"]["watch_days"]
+    warning_days = thresholds["dry_spell"]["warning_days"]
+    critical_days = thresholds["dry_spell"]["critical_days"]
+
+    cdd = 0
+    # Walk backwards from most recent
+    for rec in reversed(records):
+        rain = rec.get("rainfall_mm")
+        if rain is None:
+            continue  # Skip missing values
+        if rain < dry_threshold:
+            cdd += 1
+        else:
+            break  # Streak ends
+
+    if cdd >= critical_days:
+        drought_class = "critical"
+    elif cdd >= warning_days:
+        drought_class = "warning"
+    elif cdd >= watch_days:
+        drought_class = "watch"
+    else:
+        drought_class = "none"
+
+    return cdd, drought_class
+
+
+def compute_cwd(records: List[Dict]) -> int:
+    """
+    Consecutive Wet Days (current streak, >= 1 mm/day).
+    """
+    wet_threshold = thresholds["rainfall"]["dry_day_mm"]
+    cwd = 0
+    for rec in reversed(records):
+        rain = rec.get("rainfall_mm")
+        if rain is None:
+            continue
+        if rain >= wet_threshold:
+            cwd += 1
+        else:
+            break
+    return cwd
+
+
+def compute_accumulated_rainfall(
+    records: List[Dict],
+    days: int = 7
+) -> Optional[float]:
+    """Sum rainfall over the last `days` days."""
+    recent = records[-days:] if len(records) >= days else records
+    vals = [r["rainfall_mm"] for r in recent if r.get("rainfall_mm") is not None]
+    if not vals:
+        return None
+    return round(sum(vals), 2)
+
+
+def compute_rainfall_anomaly(
+    observed_mm: float,
+    normal_mm: float,
+) -> Dict:
+    """
+    Compute rainfall anomaly, percent of normal, and classification.
+
+    Args:
+        observed_mm: Observed monthly (or period) rainfall in mm
+        normal_mm: 1991-2020 normal for the same period
+
+    Returns:
+        dict with anomaly_mm, pct_of_normal, anomaly_class
+    """
+    t = thresholds["rainfall_anomaly"]
+
+    if not normal_mm or normal_mm <= 0:
+        return {"anomaly_mm": None, "pct_of_normal": None, "anomaly_class": "unknown"}
+
+    anomaly_mm = round(observed_mm - normal_mm, 2)
+    pct = round((observed_mm / normal_mm) * 100, 1)
+
+    if pct < t["far_below_pct"]:
+        cls = "far_below"
+    elif pct < t["below_pct"]:
+        cls = "below"
+    elif pct <= t["near_normal_max_pct"]:
+        cls = "near_normal"
+    elif pct <= t["far_above_pct"]:
+        cls = "above"
+    else:
+        cls = "far_above"
+
+    return {
+        "anomaly_mm": anomaly_mm,
+        "pct_of_normal": pct,
+        "anomaly_class": cls,
+    }
+
+
+def compute_heat_stress(tmax_c: float, humidity_pct: float) -> Dict:
+    """
+    Heat stress classification using a simplified WBGT (Wet Bulb Globe
+    Temperature) approximation.
+
+    Reference: Liljegren et al. (2008) simplified outdoor WBGT
+
+    Args:
+        tmax_c: Daily maximum temperature (°C)
+        humidity_pct: Relative humidity (%)
+
+    Returns:
+        dict with wbgt_approx, heat_class, heat_label, color
+    """
+    t = thresholds["heat_stress"]
+
+    # Simplified outdoor WBGT approximation
+    # Based on Bernard & Barrow (1989) and ISO 7243 simplified formula
+    # WBGT_outdoor ≈ 0.7 * Tw + 0.2 * Tg + 0.1 * Tdb
+    # Simplified to 2-factor using Tmax and RH:
+    # Tw (wet bulb) approximated via Stull (2011):
+    #   Tw = Tmax * atan(0.151977 * (RH+8.313659)^0.5) + atan(Tmax+RH)
+    #        - atan(RH-1.676331) + 0.00391838*(RH^1.5)*atan(0.023101*RH) - 4.686035
+    rh = humidity_pct
+    tw = (
+        tmax_c * math.atan(0.151977 * (rh + 8.313659) ** 0.5)
+        + math.atan(tmax_c + rh)
+        - math.atan(rh - 1.676331)
+        + 0.00391838 * (rh ** 1.5) * math.atan(0.023101 * rh)
+        - 4.686035
+    )
+    # Globe temp approximation: Tg ≈ Tmax + 2 (outdoor sunny conditions)
+    tg = tmax_c + 2.0
+    # WBGT outdoor (simplified 3-component, no solar input)
+    wbgt = 0.7 * tw + 0.2 * tg + 0.1 * tmax_c
+    wbgt = round(wbgt, 1)
+
+    if wbgt < t["low_wbgt"]:
+        cls, label, color = "low", "Low Heat Stress", "#4CAF50"
+    elif wbgt < t["moderate_wbgt"]:
+        cls, label, color = "moderate", "Moderate Heat Stress", "#FF9800"
+    elif wbgt < t["high_wbgt"]:
+        cls, label, color = "high", "High Heat Stress", "#FF5722"
+    else:
+        cls, label, color = "danger", "Dangerous Heat", "#B71C1C"
+
+    return {
+        "wbgt_approx": wbgt,
+        "heat_class": cls,
+        "heat_label": label,
+        "heat_color": color,
+        "advisory_restrict_fieldwork": cls in ("high", "danger"),
+        "advisory_livestock_risk": cls in ("high", "danger"),
+    }
+
+
+def compute_eto(
+    tmax_c: float,
+    tmin_c: float,
+    humidity_pct: float,
+    wind_ms: float,
+    solar_mj: float,
+    altitude_m: float = 50.0,
+) -> Optional[float]:
+    """
+    FAO-56 Penman-Monteith Reference Evapotranspiration (simplified).
+
+    Returns ETo in mm/day, or None if inputs are invalid.
+
+    Reference: Allen et al. (1998) FAO Irrigation and Drainage Paper No. 56
+    """
+    try:
+        tmean = (tmax_c + tmin_c) / 2.0
+
+        # Slope of saturation vapor pressure curve (kPa/°C)
+        delta = (
+            4098
+            * (0.6108 * math.exp(17.27 * tmean / (tmean + 237.3)))
+            / (tmean + 237.3) ** 2
+        )
+
+        # Atmospheric pressure (kPa)
+        pressure = 101.3 * ((293.0 - 0.0065 * altitude_m) / 293.0) ** 5.26
+
+        # Psychrometric constant (kPa/°C)
+        gamma = 0.000665 * pressure
+
+        # Saturation vapor pressure (kPa)
+        e_sat_max = 0.6108 * math.exp(17.27 * tmax_c / (tmax_c + 237.3))
+        e_sat_min = 0.6108 * math.exp(17.27 * tmin_c / (tmin_c + 237.3))
+        e_sat = (e_sat_max + e_sat_min) / 2.0
+
+        # Actual vapor pressure
+        e_act = e_sat * (humidity_pct / 100.0)
+
+        # Net radiation approximation
+        # Rns (shortwave): 0.77 albedo factor for reference crop
+        Rns = (1 - 0.23) * solar_mj
+
+        # Rnl (longwave, simplified)
+        sigma = 4.903e-9  # MJ/(m²·day·K⁴)
+        Rnl = (
+            sigma
+            * ((tmax_c + 273.16) ** 4 + (tmin_c + 273.16) ** 4)
+            / 2.0
+            * (0.34 - 0.14 * math.sqrt(e_act))
+            * (1.35 * (solar_mj / (0.75 * solar_mj + 0.001)) - 0.35)
+        )
+        Rn = Rns - Rnl
+
+        # Soil heat flux (G) = 0 for daily
+        G = 0.0
+
+        # ETo (mm/day)
+        numerator = (
+            0.408 * delta * (Rn - G)
+            + gamma * (900.0 / (tmean + 273.0)) * wind_ms * (e_sat - e_act)
+        )
+        denominator = delta + gamma * (1.0 + 0.34 * wind_ms)
+
+        eto = numerator / denominator
+        return round(max(0.0, eto), 2)
+
+    except (ZeroDivisionError, ValueError, TypeError):
+        return None
+
+
+def compute_field_workability(
+    rain_24h: Optional[float],
+    rain_48h: Optional[float],
+    cdd: int,
+) -> Dict:
+    """
+    Field workability index for scheduling agriculture operations.
+
+    Returns status for: land prep, transplanting, fertilizer, spraying,
+    irrigation, harvesting.
+    """
+    t = thresholds["field_workability"]
+    dry_alert_cdd = t["dry_alert_cdd"]
+
+    rain_24h = rain_24h or 0.0
+    rain_48h = rain_48h or 0.0
+
+    # Overall workability
+    if rain_24h >= t["not_workable_24h"] or rain_48h >= 80:
+        overall = "not_workable"
+        overall_label = "Not Workable — Heavy rain, waterlogged fields"
+        color = "#B71C1C"
+    elif rain_24h >= t["high_risk_24h"]:
+        overall = "high_risk"
+        overall_label = "High Risk — Defer heavy operations"
+        color = "#FF5722"
+    elif rain_24h >= t["caution_24h"]:
+        overall = "caution"
+        overall_label = "Caution — Light work only"
+        color = "#FF9800"
+    elif cdd >= dry_alert_cdd:
+        overall = "drought_caution"
+        overall_label = "Drought Caution — Irrigate first before field operations"
+        color = "#FFC107"
+    else:
+        overall = "workable"
+        overall_label = "Workable — Safe for field operations"
+        color = "#4CAF50"
+
+    # Operation-specific assessments
+    def safe(condition: bool) -> str:
+        return "safe" if condition else "defer"
+
+    ops = {
+        "land_preparation": safe(rain_24h < 20 and cdd < 21),
+        "transplanting": safe(rain_24h < 25 and cdd < 14),
+        "fertilizer_application": safe(rain_24h < 10 and rain_48h < 25),
+        "spraying": safe(rain_24h < 5 and rain_48h < 15),
+        "irrigation": safe(cdd >= 5 or rain_24h < 3),
+        "harvesting": safe(rain_24h < 10 and rain_48h < 20),
+        "drying": safe(rain_24h < 5),
+        "pest_monitoring": safe(rain_24h < 30),
+    }
+
+    return {
+        "overall_class": overall,
+        "overall_label": overall_label,
+        "color": color,
+        "rain_24h_mm": rain_24h,
+        "rain_48h_mm": rain_48h,
+        "cdd": cdd,
+        "operations": ops,
+    }
+
+
+def compute_irrigation_demand(
+    eto_mm: Optional[float],
+    rainfall_mm: Optional[float],
+    irrigation_status: str = "rainfed",
+) -> Dict:
+    """
+    Irrigation demand proxy = ETo - Rainfall (when positive).
+
+    Args:
+        eto_mm: Reference ETo (mm/day)
+        rainfall_mm: Daily rainfall (mm)
+        irrigation_status: 'irrigated' | 'partial' | 'rainfed'
+
+    Returns:
+        demand_mm, demand_class, priority
+    """
+    if eto_mm is None or rainfall_mm is None:
+        return {"demand_mm": None, "demand_class": "unknown", "priority": "low"}
+
+    demand = max(0.0, eto_mm - rainfall_mm)
+    demand = round(demand, 2)
+
+    if demand <= 0:
+        cls = "none"
+    elif demand < 2:
+        cls = "low"
+    elif demand < 5:
+        cls = "moderate"
+    elif demand < 8:
+        cls = "high"
+    else:
+        cls = "critical"
+
+    # Priority higher for rainfed areas
+    priority_map = {
+        "rainfed": {"none": "low", "low": "medium", "moderate": "high",
+                    "high": "critical", "critical": "critical"},
+        "partial": {"none": "low", "low": "low", "moderate": "medium",
+                    "high": "high", "critical": "high"},
+        "irrigated": {"none": "low", "low": "low", "moderate": "low",
+                     "high": "medium", "critical": "high"},
+    }
+
+    priority = priority_map.get(irrigation_status, priority_map["rainfed"]).get(cls, "low")
+
+    return {
+        "demand_mm": demand,
+        "demand_class": cls,
+        "priority": priority,
+    }
+
+
+def compute_crop_stage_risk(
+    cdd: int,
+    cwd: int,
+    rainfall_7d: Optional[float],
+    tmax_c: Optional[float],
+    humidity_pct: Optional[float],
+    crop: str = "rice_rainfed",
+    crop_stage: str = "vegetative",
+    irrigation_status: str = "rainfed",
+) -> Dict:
+    """
+    Crop-stage climate risk score (0–5 scale).
+
+    Risk sources:
+    - Drought risk (CDD relative to crop water requirement)
+    - Flood/excess water risk (7-day rainfall, CWD)
+    - Heat stress during sensitive stages
+    - Humidity-driven disease risk
+
+    Returns:
+        risk_score (0–5), risk_class, risk_components
+    """
+    drought_score = 0.0
+    flood_score = 0.0
+    heat_score = 0.0
+    disease_score = 0.0
+
+    # ── Drought risk by crop stage ────────────────────────────────────────
+    drought_thresholds = {
+        "rice_irrigated": {"vegetative": 7, "reproductive": 5, "ripening": 10},
+        "rice_rainfed": {"vegetative": 5, "reproductive": 4, "ripening": 8},
+        "corn_yellow": {"vegetative": 7, "tasseling": 4, "grain_fill": 5},
+        "corn_white": {"vegetative": 7, "tasseling": 4, "grain_fill": 5},
+        "hvcc": {"vegetative": 5, "flowering": 4, "maturation": 7},
+    }
+
+    sensitive_stage = drought_thresholds.get(crop, {}).get(crop_stage, 7)
+
+    if irrigation_status == "rainfed":
+        if cdd >= sensitive_stage * 2:
+            drought_score = 5.0
+        elif cdd >= sensitive_stage * 1.5:
+            drought_score = 4.0
+        elif cdd >= sensitive_stage:
+            drought_score = 3.0
+        elif cdd >= sensitive_stage * 0.5:
+            drought_score = 1.5
+    else:
+        # Irrigated areas: lower drought risk
+        drought_score = min(drought_score * 0.3, 2.0)
+
+    # ── Flood risk by crop stage ──────────────────────────────────────────
+    if rainfall_7d is not None:
+        flood_thresholds = {
+            "land_prep": 150,       # Very tolerant
+            "seedbed": 80,
+            "transplanting": 60,
+            "vegetative": 100,
+            "reproductive": 60,     # Very sensitive
+            "ripening": 40,
+            "harvesting": 30,       # Critical — harvest loss
+        }
+        flood_limit = flood_thresholds.get(crop_stage, 80)
+
+        if rainfall_7d >= flood_limit * 2:
+            flood_score = 5.0
+        elif rainfall_7d >= flood_limit * 1.5:
+            flood_score = 4.0
+        elif rainfall_7d >= flood_limit:
+            flood_score = 3.0
+        elif rainfall_7d >= flood_limit * 0.5:
+            flood_score = 1.5
+
+    # ── Heat stress by crop stage ─────────────────────────────────────────
+    if tmax_c is not None:
+        heat_sensitive_stages = {"reproductive", "tasseling", "grain_fill", "flowering"}
+        threshold = 35.0 if crop_stage in heat_sensitive_stages else 38.0
+
+        if tmax_c >= threshold + 3:
+            heat_score = 4.0
+        elif tmax_c >= threshold:
+            heat_score = 3.0
+        elif tmax_c >= threshold - 2:
+            heat_score = 1.5
+
+    # ── Disease risk (high humidity) ──────────────────────────────────────
+    if humidity_pct is not None:
+        if humidity_pct >= 90 and cwd >= 5:
+            disease_score = 3.0
+        elif humidity_pct >= 80 and cwd >= 3:
+            disease_score = 2.0
+        elif humidity_pct >= 75:
+            disease_score = 1.0
+
+    # ── Composite score ───────────────────────────────────────────────────
+    composite = round(
+        max(drought_score, flood_score)  # Dominant hazard
+        + 0.3 * heat_score
+        + 0.2 * disease_score,
+        2
+    )
+    composite = min(composite, 5.0)
+
+    if composite >= 4:
+        risk_class = "critical"
+        risk_color = "#B71C1C"
+    elif composite >= 3:
+        risk_class = "high"
+        risk_color = "#FF5722"
+    elif composite >= 2:
+        risk_class = "moderate"
+        risk_color = "#FF9800"
+    elif composite >= 1:
+        risk_class = "low"
+        risk_color = "#FFC107"
+    else:
+        risk_class = "minimal"
+        risk_color = "#4CAF50"
+
+    return {
+        "risk_score": composite,
+        "risk_class": risk_class,
+        "risk_color": risk_color,
+        "components": {
+            "drought": round(drought_score, 2),
+            "flood": round(flood_score, 2),
+            "heat": round(heat_score, 2),
+            "disease": round(disease_score, 2),
+        },
+        "crop": crop,
+        "crop_stage": crop_stage,
+    }
+
+
+def compute_municipal_risk_score(indicators: Dict, mun: Dict) -> float:
+    """
+    Composite municipal climate risk ranking score (0–100).
+    Used for DA intervention prioritization.
+    """
+    score = 0.0
+
+    # Drought component (0-40 points)
+    cdd = indicators.get("cdd", 0)
+    drought_map = {"none": 0, "watch": 15, "warning": 30, "critical": 40}
+    score += drought_map.get(indicators.get("drought_class", "none"), 0)
+
+    # Flood component (0-25 points)
+    rain_7d = indicators.get("rainfall_7d_mm") or 0
+    if rain_7d >= 200:
+        score += 25
+    elif rain_7d >= 100:
+        score += 15
+    elif rain_7d >= 50:
+        score += 8
+
+    # Heat stress component (0-20 points)
+    heat_map = {"low": 0, "moderate": 5, "high": 15, "danger": 20}
+    score += heat_map.get(indicators.get("heat_class", "low"), 0)
+
+    # Irrigation vulnerability (0-15 points)
+    irr_map = {"rainfed": 15, "partial": 8, "irrigated": 2}
+    score += irr_map.get(mun.get("irrigation_status", "rainfed"), 8)
+
+    return round(min(score, 100), 1)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 3. MAIN COMPUTATION PIPELINE
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def compute_all_indicators() -> Dict:
+    """
+    Compute all indicators for all municipalities.
+    Reads from the daily archive and outputs to data/processed/indicators/.
+    """
+    municipalities = load_municipalities()
+    climatology = load_climatology()
+    ref_date = today_pht()
+    current_month = str(ref_date.month)
+
+    results = {}
+    logger.info(f"Computing indicators for {len(municipalities)} municipalities...")
+
+    for mun in municipalities:
+        psgc = mun["psgc"]
+
+        # Load 30 days of daily records for this municipality
+        records = load_recent_daily(psgc, n_days=30)
+        if not records:
+            logger.warning(f"No records for {mun['name']} ({psgc})")
+            continue
+
+        latest = records[-1]  # Most recent day
+        rain_24h = latest.get("rainfall_mm")
+        rain_48h = compute_accumulated_rainfall(records, days=2)
+        rain_7d = compute_accumulated_rainfall(records, days=7)
+        rain_30d = compute_accumulated_rainfall(records, days=30)
+        tmax = latest.get("tmax_c")
+        tmin = latest.get("tmin_c")
+        tmean = latest.get("tmean_c")
+        humidity = latest.get("humidity_pct")
+        wind = latest.get("wind_speed_ms")
+        solar = latest.get("solar_mj")
+
+        # Consecutive days
+        cdd, drought_class = compute_cdd(records)
+        cwd = compute_cwd(records)
+
+        # Monthly anomaly vs climatology
+        clim = climatology.get(psgc, {}).get(current_month, {})
+        normal_monthly = clim.get("rainfall_mm")
+        anomaly = compute_rainfall_anomaly(rain_30d or 0, normal_monthly) if normal_monthly else {}
+
+        # Heat stress
+        heat = compute_heat_stress(tmax, humidity) if (tmax and humidity) else {}
+
+        # ETo
+        eto = None
+        if all(v is not None for v in [tmax, tmin, humidity, wind, solar]):
+            eto = compute_eto(
+                tmax_c=tmax, tmin_c=tmin, humidity_pct=humidity,
+                wind_ms=wind, solar_mj=solar,
+                altitude_m=mun.get("elevation_m", 50),
+            )
+
+        # Irrigation demand
+        irr_demand = compute_irrigation_demand(
+            eto, rain_24h, mun.get("irrigation_status", "rainfed")
+        )
+
+        # Field workability
+        workability = compute_field_workability(rain_24h, rain_48h, cdd)
+
+        # Crop-stage risk (default: current dominant crop by season)
+        month = ref_date.month
+        default_crop = "rice_rainfed" if month in [6, 7, 8, 9, 10] else "corn_yellow"
+        default_stage = "vegetative"
+
+        crop_risk = compute_crop_stage_risk(
+            cdd=cdd, cwd=cwd, rainfall_7d=rain_7d,
+            tmax_c=tmax, humidity_pct=humidity,
+            crop=default_crop, crop_stage=default_stage,
+            irrigation_status=mun.get("irrigation_status", "rainfed"),
+        )
+
+        # Municipal composite risk score
+        indicator_bundle = {
+            "cdd": cdd, "drought_class": drought_class,
+            "rainfall_7d_mm": rain_7d, "heat_class": heat.get("heat_class", "low"),
+        }
+        municipal_risk_score = compute_municipal_risk_score(indicator_bundle, mun)
+
+        results[psgc] = {
+            "psgc": psgc,
+            "municipality": mun["name"],
+            "province": mun["province"],
+            "lat": mun["lat"],
+            "lon": mun["lon"],
+            "as_of_date": latest.get("date"),
+            "observations": {
+                "rainfall_24h_mm": rain_24h,
+                "rainfall_48h_mm": rain_48h,
+                "rainfall_7d_mm": rain_7d,
+                "rainfall_30d_mm": rain_30d,
+                "tmax_c": tmax,
+                "tmin_c": tmin,
+                "tmean_c": tmean,
+                "humidity_pct": humidity,
+                "wind_speed_ms": wind,
+                "solar_mj": solar,
+            },
+            "indicators": {
+                "cdd": cdd,
+                "cwd": cwd,
+                "drought_class": drought_class,
+                "rainfall_anomaly": anomaly,
+                "heat_stress": heat,
+                "eto_mm": eto,
+                "irrigation_demand": irr_demand,
+                "field_workability": workability,
+                "crop_stage_risk": crop_risk,
+                "municipal_risk_score": municipal_risk_score,
+            },
+        }
+
+    return results
+
+
+def save_indicator_outputs(results: Dict) -> None:
+    """Save indicators in multiple formats for frontend consumption."""
+    ref_date = today_pht()
+    ind_path = PROJECT_ROOT / cfg["paths"]["indicators"]
+
+    # Full indicators JSON (all municipalities)
+    full_path = ind_path / f"indicators_{ref_date.isoformat()}.json"
+    latest_path = ind_path / "indicators_latest.json"
+    output = {
+        "meta": {
+            "generated_at": __import__("datetime").datetime.utcnow().isoformat(),
+            "as_of_date": ref_date.isoformat(),
+            "municipality_count": len(results),
+        },
+        "data": results,
+    }
+    save_json(output, full_path)
+    save_json(output, latest_path)
+    logger.info(f"Saved full indicators → {latest_path}")
+
+    # GeoJSON for map layers
+    _save_geojson_layers(results)
+
+
+def _save_geojson_layers(results: Dict) -> None:
+    """Export indicator data as GeoJSON for Leaflet map layers."""
+    geo_path = PROJECT_ROOT / cfg["paths"]["geospatial"]
+
+    def make_feature(r: Dict, props: Dict) -> Dict:
+        return {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [r["lon"], r["lat"]],
+            },
+            "properties": {
+                "psgc": r["psgc"],
+                "municipality": r["municipality"],
+                "province": r["province"],
+                **props,
+            },
+        }
+
+    layers = {
+        "rainfall_24h": [],
+        "drought_watch": [],
+        "heat_stress": [],
+        "field_workability": [],
+        "rainfall_anomaly": [],
+        "crop_risk": [],
+        "municipal_risk": [],
+    }
+
+    for psgc, r in results.items():
+        obs = r.get("observations", {})
+        ind = r.get("indicators", {})
+
+        # Rainfall 24h
+        layers["rainfall_24h"].append(make_feature(r, {
+            "rainfall_mm": obs.get("rainfall_24h_mm"),
+            "class": _rain_class(obs.get("rainfall_24h_mm")),
+        }))
+
+        # Drought watch
+        layers["drought_watch"].append(make_feature(r, {
+            "cdd": ind.get("cdd"),
+            "drought_class": ind.get("drought_class"),
+            "color": _drought_color(ind.get("drought_class", "none")),
+        }))
+
+        # Heat stress
+        hs = ind.get("heat_stress", {})
+        layers["heat_stress"].append(make_feature(r, {
+            "heat_class": hs.get("heat_class"),
+            "wbgt": hs.get("wbgt_approx"),
+            "color": hs.get("heat_color", "#4CAF50"),
+            "tmax_c": obs.get("tmax_c"),
+        }))
+
+        # Field workability
+        fw = ind.get("field_workability", {})
+        layers["field_workability"].append(make_feature(r, {
+            "workability_class": fw.get("overall_class"),
+            "workability_label": fw.get("overall_label"),
+            "color": fw.get("color", "#4CAF50"),
+            "operations": fw.get("operations", {}),
+        }))
+
+        # Rainfall anomaly
+        anom = ind.get("rainfall_anomaly", {})
+        layers["rainfall_anomaly"].append(make_feature(r, {
+            "anomaly_mm": anom.get("anomaly_mm"),
+            "pct_of_normal": anom.get("pct_of_normal"),
+            "anomaly_class": anom.get("anomaly_class"),
+            "color": _anomaly_color(anom.get("anomaly_class", "unknown")),
+        }))
+
+        # Crop risk
+        cr = ind.get("crop_stage_risk", {})
+        layers["crop_risk"].append(make_feature(r, {
+            "risk_score": cr.get("risk_score"),
+            "risk_class": cr.get("risk_class"),
+            "color": cr.get("risk_color", "#4CAF50"),
+            "crop": cr.get("crop"),
+        }))
+
+        # Municipal risk composite
+        layers["municipal_risk"].append(make_feature(r, {
+            "risk_score": ind.get("municipal_risk_score"),
+            "color": _risk_score_color(ind.get("municipal_risk_score", 0)),
+        }))
+
+    for layer_name, features in layers.items():
+        geojson = {"type": "FeatureCollection", "features": features}
+        out_path = geo_path / f"{layer_name}.geojson"
+        save_json(geojson, out_path)
+        logger.info(f"Saved GeoJSON layer → {out_path}")
+
+
+# ── Color helpers for map layers ──────────────────────────────────────────────
+def _rain_class(mm: Optional[float]) -> str:
+    if mm is None: return "no_data"
+    if mm < 1: return "dry"
+    if mm < 10: return "light"
+    if mm < 25: return "moderate"
+    if mm < 50: return "heavy"
+    if mm < 100: return "very_heavy"
+    return "extreme"
+
+
+def _drought_color(cls: str) -> str:
+    return {"none": "#E8F5E9", "watch": "#FFF9C4",
+            "warning": "#FFCC80", "critical": "#B71C1C"}.get(cls, "#E0E0E0")
+
+
+def _anomaly_color(cls: str) -> str:
+    return {
+        "far_below": "#B71C1C", "below": "#FF7043",
+        "near_normal": "#A5D6A7", "above": "#1E88E5",
+        "far_above": "#0D47A1", "unknown": "#BDBDBD",
+    }.get(cls, "#BDBDBD")
+
+
+def _risk_score_color(score: float) -> str:
+    if score >= 70: return "#B71C1C"
+    if score >= 50: return "#FF5722"
+    if score >= 30: return "#FF9800"
+    if score >= 15: return "#FFC107"
+    return "#4CAF50"
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 4. ENTRY POINT
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def run() -> None:
+    logger.info("=== APA-CIS Indicator Engine ===")
+    results = compute_all_indicators()
+    if not results:
+        logger.error("No indicator results computed.")
+        return
+    save_indicator_outputs(results)
+    log_etl_event(
+        source="indicator_engine",
+        run_date=today_pht().isoformat(),
+        records_fetched=len(load_municipalities()),
+        records_valid=len(results),
+        status="success",
+        message=f"Computed {len(results)} municipal indicator sets",
+    )
+    logger.info(f"=== Done — {len(results)} municipalities processed ===")
+
+
+if __name__ == "__main__":
+    run()

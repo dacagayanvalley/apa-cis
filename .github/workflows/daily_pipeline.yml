@@ -1,0 +1,186 @@
+# .github/workflows/daily_pipeline.yml
+# ============================================================
+# APA-CIS Daily Automated Data Pipeline
+# DA RFO 02 — Climate Information Service, Cagayan Valley
+#
+# Schedule: Runs daily at 6:00 AM Philippine Standard Time
+#           = 10:00 PM UTC (previous day)
+#
+# Data flow:
+#   1. Fetch NASA POWER daily agroclimatic data
+#   2. Ingest PAGASA data (PDF inbox + scrape)
+#   3. Compute climate indicators
+#   4. Generate agricultural advisories
+#   5. Export GeoJSON map layers
+#   6. Commit updated data files to repository
+#   7. Trigger GitHub Pages rebuild
+# ============================================================
+
+name: APA-CIS Daily Data Pipeline
+
+on:
+  schedule:
+    # 10 PM UTC = 6 AM PHT (Philippine Standard Time, UTC+8)
+    - cron: '0 22 * * *'
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Override data date (YYYY-MM-DD, optional)'
+        required: false
+        default: ''
+      skip_fetch:
+        description: 'Skip NASA POWER fetch (use existing data)'
+        type: boolean
+        required: false
+        default: false
+
+  # Also run on push to main for testing
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/**'
+      - 'config/**'
+      - '.github/workflows/daily_pipeline.yml'
+
+jobs:
+  run-pipeline:
+    name: Daily Climate Data Update
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    permissions:
+      contents: write    # Needed to push updated data files
+
+    steps:
+      # ── Checkout repository ──────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      # ── Set up Python ────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # ── Install dependencies ─────────────────────────────────────────────
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # ── Run the full pipeline ────────────────────────────────────────────
+      - name: Run APA-CIS Daily Pipeline
+        id: pipeline
+        run: |
+          # Build the command
+          CMD="python scripts/run_pipeline.py"
+
+          # Add optional date override
+          if [ -n "${{ github.event.inputs.target_date }}" ]; then
+            CMD="$CMD --date ${{ github.event.inputs.target_date }}"
+          fi
+
+          # Add skip-fetch flag if requested
+          if [ "${{ github.event.inputs.skip_fetch }}" = "true" ]; then
+            CMD="$CMD --skip-fetch"
+          fi
+
+          echo "Running: $CMD"
+          $CMD
+
+          # Capture exit status
+          EXIT_CODE=$?
+          echo "pipeline_exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
+          exit $EXIT_CODE
+
+      # ── Check for data changes ───────────────────────────────────────────
+      - name: Check for updated data files
+        id: check_changes
+        run: |
+          # Check if any data files were updated
+          if git diff --quiet data/ && git diff --quiet logs/; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No data changes detected."
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Data files updated:"
+            git diff --name-only data/ logs/ | head -20
+          fi
+
+      # ── Commit and push updated data ─────────────────────────────────────
+      - name: Commit and push updated data files
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "APA-CIS Pipeline Bot"
+          git config user.email "cis-bot@da-rfo2.ph"
+
+          # Stage data files, logs, and metadata
+          git add data/processed/
+          git add data/geospatial/
+          git add data/advisories/
+          git add data/pipeline_status.json
+          git add logs/etl_runs.jsonl || true
+
+          # Commit with informative message
+          COMMIT_DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
+          COMMIT_MSG="🌾 Auto: Daily climate data update — ${COMMIT_DATE}"
+
+          git diff --staged --quiet || git commit -m "${COMMIT_MSG}"
+          git push origin main
+
+          echo "Data committed and pushed successfully."
+
+      # ── Generate pipeline status badge ───────────────────────────────────
+      - name: Update pipeline status
+        if: always()
+        run: |
+          EXIT_CODE="${{ steps.pipeline.outputs.pipeline_exit_code }}"
+          if [ "$EXIT_CODE" = "0" ]; then
+            STATUS="passing"
+            COLOR="brightgreen"
+          else
+            STATUS="failed"
+            COLOR="red"
+          fi
+          echo "Pipeline status: $STATUS"
+
+      # ── Report on failure ─────────────────────────────────────────────────
+      - name: Report failure
+        if: failure()
+        run: |
+          echo "Pipeline failed. Check logs at:"
+          echo "  logs/pipeline.log"
+          echo "  logs/fetch_nasa_power.log"
+          echo "  logs/etl_runs.jsonl"
+          # In production, add: send email/SMS notification to CIS staff
+          exit 1
+
+  # ── Weekly summary (every Monday) ──────────────────────────────────────────
+  weekly-summary:
+    name: Weekly Climate Summary
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    needs: run-pipeline
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Generate weekly summary
+        run: |
+          DAY_OF_WEEK=$(date +%u)  # 1=Monday ... 7=Sunday
+          if [ "$DAY_OF_WEEK" = "1" ]; then
+            python scripts/advisories/weekly_summary.py
+          else
+            echo "Not Monday — skipping weekly summary."
+          fi

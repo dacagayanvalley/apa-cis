@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APA-CIS — Climate Information Service | DA RFO 02 Cagayan Valley</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <!-- Chart.js for sparklines -->
+  <link rel="stylesheet" href="css/cis.css"/>
+</head>
+<body>
+
+<!-- ── TOP BAR ─────────────────────────────────────────────── -->
+<header class="topbar">
+  <div class="topbar-left">
+    <div class="da-seal">🌾</div>
+    <div class="topbar-text">
+      <span class="topbar-title">APA-CIS</span>
+      <span class="topbar-sub">Climate Information Service · DA RFO 02 Cagayan Valley</span>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <div class="data-freshness" id="data-freshness">
+      <span class="freshness-dot" id="freshness-dot"></span>
+      <span id="freshness-label">Loading data...</span>
+    </div>
+    <div class="enso-badge" id="enso-badge">ENSO: —</div>
+  </div>
+</header>
+
+<!-- ── MODULE TABS ─────────────────────────────────────────── -->
+<nav class="module-nav">
+  <button class="mnav-btn active" data-module="dashboard" onclick="switchModule('dashboard', this)">
+    <span class="mnav-icon">📊</span> Climate Dashboard
+  </button>
+  <button class="mnav-btn" data-module="map" onclick="switchModule('map', this)">
+    <span class="mnav-icon">🗺</span> Map Layers
+  </button>
+  <button class="mnav-btn" data-module="advisory" onclick="switchModule('advisory', this)">
+    <span class="mnav-icon">📋</span> Agri-Operations Advisory
+  </button>
+  <button class="mnav-btn" data-module="municipal" onclick="switchModule('municipal', this)">
+    <span class="mnav-icon">🏘</span> Municipal Profile
+  </button>
+  <button class="mnav-btn" data-module="planning" onclick="switchModule('planning', this)">
+    <span class="mnav-icon">🎯</span> Planning Dashboard
+  </button>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- MODULE: CLIMATE DASHBOARD                                  -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div id="module-dashboard" class="module active">
+
+  <!-- Province filter bar -->
+  <div class="filter-bar">
+    <span class="filter-label">Province:</span>
+    <div class="province-tabs">
+      <button class="ptab active" data-province="all" onclick="filterProvince('all', this)">All Region 2</button>
+      <button class="ptab" data-province="Batanes" onclick="filterProvince('Batanes', this)">Batanes</button>
+      <button class="ptab" data-province="Cagayan" onclick="filterProvince('Cagayan', this)">Cagayan</button>
+      <button class="ptab" data-province="Isabela" onclick="filterProvince('Isabela', this)">Isabela</button>
+      <button class="ptab" data-province="Nueva Vizcaya" onclick="filterProvince('Nueva Vizcaya', this)">Nueva Vizcaya</button>
+      <button class="ptab" data-province="Quirino" onclick="filterProvince('Quirino', this)">Quirino</button>
+    </div>
+  </div>
+
+  <!-- Summary stat cards -->
+  <div class="stat-grid" id="stat-grid">
+    <div class="stat-card" id="sc-rainfall">
+      <div class="sc-icon">🌧</div>
+      <div class="sc-value" id="sc-rainfall-val">—</div>
+      <div class="sc-label">Avg Rainfall Today (mm)</div>
+      <div class="sc-sub" id="sc-rainfall-sub"></div>
+    </div>
+    <div class="stat-card" id="sc-temp">
+      <div class="sc-icon">🌡</div>
+      <div class="sc-value" id="sc-temp-val">—</div>
+      <div class="sc-label">Max Temperature (°C)</div>
+      <div class="sc-sub" id="sc-temp-sub"></div>
+    </div>
+    <div class="stat-card" id="sc-drought">
+      <div class="sc-icon">🏜</div>
+      <div class="sc-value" id="sc-drought-val">—</div>
+      <div class="sc-label">Municipalities in Dry Spell</div>
+      <div class="sc-sub" id="sc-drought-sub"></div>
+    </div>
+    <div class="stat-card" id="sc-advisory">
+      <div class="sc-icon">⚠️</div>
+      <div class="sc-value" id="sc-advisory-val">—</div>
+      <div class="sc-label">Active Advisories</div>
+      <div class="sc-sub" id="sc-advisory-sub"></div>
+    </div>
+    <div class="stat-card" id="sc-heat">
+      <div class="sc-icon">☀️</div>
+      <div class="sc-value" id="sc-heat-val">—</div>
+      <div class="sc-label">Heat Stress Risk Areas</div>
+      <div class="sc-sub" id="sc-heat-sub"></div>
+    </div>
+    <div class="stat-card" id="sc-workability">
+      <div class="sc-icon">🚜</div>
+      <div class="sc-value" id="sc-workability-val">—</div>
+      <div class="sc-label">Municipalities — Safe for Field Work</div>
+      <div class="sc-sub" id="sc-workability-sub"></div>
+    </div>
+  </div>
+
+  <!-- Priority alert strip -->
+  <div id="alert-strip" class="alert-strip hidden"></div>
+
+  <!-- Municipal table -->
+  <div class="section-header">
+    <span class="section-title">Municipal Climate Indicators</span>
+    <div class="table-controls">
+      <input type="text" id="mun-search" placeholder="Search municipality..." oninput="filterTable(this.value)" class="search-input"/>
+      <select id="sort-select" onchange="sortTable(this.value)" class="sort-select">
+        <option value="risk_desc">Sort: Highest Risk First</option>
+        <option value="drought_desc">Sort: Driest First</option>
+        <option value="rain_desc">Sort: Most Rain First</option>
+        <option value="alpha">Sort: A–Z</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data-table" id="mun-table">
+      <thead>
+        <tr>
+          <th>Municipality</th>
+          <th>Province</th>
+          <th>Rainfall 24h (mm)</th>
+          <th>Temp Max (°C)</th>
+          <th>Humidity (%)</th>
+          <th>CDD (days)</th>
+          <th>Drought Status</th>
+          <th>Heat Stress</th>
+          <th>Field Work</th>
+          <th>Risk Score</th>
+          <th>Advisory</th>
+        </tr>
+      </thead>
+      <tbody id="mun-tbody">
+        <tr><td colspan="11" class="loading-row">Loading climate data...</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- MODULE: MAP LAYERS                                         -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div id="module-map" class="module">
+  <div class="map-container">
+    <!-- Layer selector sidebar -->
+    <div class="layer-sidebar">
+      <div class="ls-title">Map Layers</div>
+      <div class="layer-group">
+        <div class="lg-label">Weather</div>
+        <label class="layer-item active-layer" id="li-rainfall_24h">
+          <input type="radio" name="map-layer" value="rainfall_24h" checked onchange="switchLayer('rainfall_24h')">
+          <span class="layer-dot" style="background:#1E88E5"></span> Rainfall 24h
+        </label>
+        <label class="layer-item" id="li-drought_watch">
+          <input type="radio" name="map-layer" value="drought_watch" onchange="switchLayer('drought_watch')">
+          <span class="layer-dot" style="background:#FF7043"></span> Drought Watch (CDD)
+        </label>
+        <label class="layer-item" id="li-rainfall_anomaly">
+          <input type="radio" name="map-layer" value="rainfall_anomaly" onchange="switchLayer('rainfall_anomaly')">
+          <span class="layer-dot" style="background:#7B1FA2"></span> Rainfall Anomaly
+        </label>
+      </div>
+      <div class="layer-group">
+        <div class="lg-label">Risk</div>
+        <label class="layer-item" id="li-heat_stress">
+          <input type="radio" name="map-layer" value="heat_stress" onchange="switchLayer('heat_stress')">
+          <span class="layer-dot" style="background:#FF5722"></span> Heat Stress
+        </label>
+        <label class="layer-item" id="li-field_workability">
+          <input type="radio" name="map-layer" value="field_workability" onchange="switchLayer('field_workability')">
+          <span class="layer-dot" style="background:#4CAF50"></span> Field Workability
+        </label>
+        <label class="layer-item" id="li-crop_risk">
+          <input type="radio" name="map-layer" value="crop_risk" onchange="switchLayer('crop_risk')">
+          <span class="layer-dot" style="background:#FF9800"></span> Crop Stage Risk
+        </label>
+        <label class="layer-item" id="li-municipal_risk">
+          <input type="radio" name="map-layer" value="municipal_risk" onchange="switchLayer('municipal_risk')">
+          <span class="layer-dot" style="background:#B71C1C"></span> Municipal Risk Score
+        </label>
+      </div>
+      <div class="layer-group">
+        <div class="lg-label">Advisories</div>
+        <label class="layer-item" id="li-advisory_status">
+          <input type="radio" name="map-layer" value="advisory_status" onchange="switchLayer('advisory_status')">
+          <span class="layer-dot" style="background:#B71C1C"></span> Advisory Status
+        </label>
+      </div>
+
+      <!-- Legend -->
+      <div class="map-legend" id="map-legend"></div>
+
+      <!-- Data info -->
+      <div class="data-info" id="map-data-info">
+        <div class="di-label">Data Source</div>
+        <div class="di-value" id="map-source-label">NASA POWER (AG Community)</div>
+        <div class="di-label">As of</div>
+        <div class="di-value" id="map-asof-label">—</div>
+      </div>
+    </div>
+
+    <!-- Leaflet map -->
+    <div id="leaflet-map"></div>
+
+    <!-- Municipality hover popup overlay -->
+    <div class="map-tooltip" id="map-tooltip" style="display:none"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- MODULE: AGRI-OPERATIONS ADVISORY                          -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div id="module-advisory" class="module">
+  <div class="advisory-layout">
+
+    <!-- Left: active advisories list -->
+    <div class="adv-list-panel">
+      <div class="panel-header">Active Agricultural Advisories</div>
+      <div class="adv-filters">
+        <select id="adv-severity-filter" onchange="filterAdvisories()" class="adv-filter-sel">
+          <option value="all">All Severity Levels</option>
+          <option value="danger">🔴 Danger Only</option>
+          <option value="warning">🟠 Warning+</option>
+          <option value="advisory">🟡 Advisory+</option>
+        </select>
+        <select id="adv-province-filter" onchange="filterAdvisories()" class="adv-filter-sel">
+          <option value="all">All Provinces</option>
+          <option value="Batanes">Batanes</option>
+          <option value="Cagayan">Cagayan</option>
+          <option value="Isabela">Isabela</option>
+          <option value="Nueva Vizcaya">Nueva Vizcaya</option>
+          <option value="Quirino">Quirino</option>
+        </select>
+      </div>
+      <div id="adv-list" class="adv-list">
+        <div class="loading-msg">Loading advisories...</div>
+      </div>
+    </div>
+
+    <!-- Right: advisory detail panel -->
+    <div class="adv-detail-panel">
+      <div class="panel-header" id="adv-detail-header">Select a municipality to view full advisory</div>
+      <div id="adv-detail-content">
+        <div class="adv-empty-state">
+          <div style="font-size:48px;margin-bottom:16px;">📋</div>
+          <p>Click any municipality from the list to view the full advisory text, operations guidance, and recommended DA actions.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Operations quick-reference table -->
+  <div class="ops-quick-ref" id="ops-quick-ref">
+    <div class="section-header"><span class="section-title">Field Operations Recommendation — Selected Municipality</span></div>
+    <div id="ops-table-wrap">
+      <div class="ops-empty">Select a municipality above to see field operations guidance.</div>
+    </div>
+  </div>
+
+  <!-- Bulletin generator -->
+  <div class="bulletin-panel">
+    <div class="section-header">
+      <span class="section-title">Regional Bulletin Generator</span>
+    </div>
+    <div class="bulletin-controls">
+      <button class="btn-primary" onclick="generateRegionalBulletin()">Generate Regional Bulletin</button>
+      <button class="btn-secondary" onclick="copySMS()">Copy SMS Advisory</button>
+      <button class="btn-secondary" onclick="copyFacebook()">Copy Facebook Post</button>
+    </div>
+    <textarea id="bulletin-output" class="bulletin-output" readonly
+              placeholder="Click Generate Regional Bulletin to create DA RFO 02 advisory text..."></textarea>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- MODULE: MUNICIPAL PROFILE                                 -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div id="module-municipal" class="module">
+  <div class="mprofile-layout">
+    <div class="mprofile-selector">
+      <div class="panel-header">Select Municipality</div>
+      <input type="text" id="mp-search" placeholder="Search..." oninput="filterMunicipalityList(this.value)" class="search-input" style="margin:10px;width:calc(100% - 20px)"/>
+      <div id="mp-list" class="mp-list">
+        <div class="loading-msg">Loading municipalities...</div>
+      </div>
+    </div>
+    <div class="mprofile-content" id="mprofile-content">
+      <div class="adv-empty-state">
+        <div style="font-size:48px;margin-bottom:16px;">🏘</div>
+        <p>Select a municipality from the left panel to view its full climate profile, crop calendar risk, and recommended adaptation measures.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- MODULE: PLANNING DASHBOARD                                 -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div id="module-planning" class="module">
+  <div class="planning-header">
+    <h2 class="planning-title">DA RFO 02 — Planning & Intervention Dashboard</h2>
+    <p class="planning-sub">Priority municipalities for climate-adaptive agriculture investments · Updated daily</p>
+  </div>
+
+  <!-- Summary cards for planners -->
+  <div class="planning-cards" id="planning-cards">
+    <div class="pcard">
+      <div class="pcard-num" id="pc-danger">—</div>
+      <div class="pcard-label">Municipalities in Danger / Critical</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-num" id="pc-warning">—</div>
+      <div class="pcard-label">Municipalities with Warnings</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-num" id="pc-drought">—</div>
+      <div class="pcard-label">Municipalities in Dry Spell Watch+</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-num" id="pc-heat">—</div>
+      <div class="pcard-label">Municipalities — High Heat Risk</div>
+    </div>
+  </div>
+
+  <!-- Priority list -->
+  <div class="section-header">
+    <span class="section-title">Priority Municipalities for DA Intervention</span>
+  </div>
+  <div id="priority-list" class="priority-list">
+    <div class="loading-msg">Loading priority analysis...</div>
+  </div>
+
+  <!-- Intervention matrix -->
+  <div class="section-header" style="margin-top:24px;">
+    <span class="section-title">Recommended Intervention Types by Risk Profile</span>
+  </div>
+  <div class="intervention-matrix" id="intervention-matrix"></div>
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/cis-data.js"></script>
+<script src="js/cis-map.js"></script>
+<script src="js/cis-dashboard.js"></script>
+<script src="js/cis-advisory.js"></script>
+<script src="js/cis-planning.js"></script>
+<script src="js/cis-main.js"></script>
+</body>
+</html>

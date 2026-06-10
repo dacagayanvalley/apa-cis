@@ -1,0 +1,183 @@
+# ============================================================
+# APA-CIS Configuration
+# DA RFO 02 — Climate Information Service
+# Cagayan Valley (Region 2)
+# ============================================================
+
+system:
+  name: "APA-CIS"
+  version: "1.0.0"
+  region: "Region 02 — Cagayan Valley"
+  timezone: "Asia/Manila"
+  provinces:
+    - "Batanes"
+    - "Cagayan"
+    - "Isabela"
+    - "Nueva Vizcaya"
+    - "Quirino"
+
+# ── DATA SOURCES ──────────────────────────────────────────
+nasa_power:
+  base_url: "https://power.larc.nasa.gov/api/temporal"
+  community: "AG"
+  daily_parameters: "PRECTOTCORR,T2M_MAX,T2M_MIN,T2M,RH2M,WS2M,ALLSKY_SFC_SW_DWN,GWETROOT,WD2M"
+  monthly_parameters: "PRECTOTCORR,T2M_MAX,T2M_MIN,T2M,RH2M"
+  request_delay_seconds: 1.5       # Respect API rate limits
+  retry_attempts: 3
+  timeout_seconds: 45
+  # NASA POWER lag: data available ~3-5 days after actual date
+  lag_days: 5
+
+chirps:
+  base_url: "https://iridl.ldeo.columbia.edu/SOURCES/.UCSB/.CHIRPS"
+  resolution: "0p05"               # 0.05-degree (~5km)
+  # Alternative: NASA POWER monthly for climatology (simpler, same result)
+  climatology_source: "nasa_power" # 'chirps' or 'nasa_power'
+  baseline_start: 1991
+  baseline_end: 2020
+
+pagasa:
+  farm_weather_url: "https://www.pagasa.dost.gov.ph/climate/farm-weather-forecast"
+  ten_day_url: "https://www.pagasa.dost.gov.ph/climate/ten-day-regional-agro-weather"
+  monthly_outlook_url: "https://www.pagasa.dost.gov.ph/climate/climate-monitoring"
+  enso_url: "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina"
+  # Semi-automated: download PDF manually, place in data/raw/pagasa/
+  pdf_inbox: "data/raw/pagasa/"
+  # PAGASA has no public machine API; semi-auto workflow used
+  mode: "semi_automated"
+
+# ── CLIMATE INDICATOR THRESHOLDS ──────────────────────────
+thresholds:
+  rainfall:
+    dry_day_mm: 1.0                # < 1mm = dry day
+    light_rain_mm: 10.0
+    moderate_rain_mm: 25.0
+    heavy_rain_mm: 50.0
+    very_heavy_rain_mm: 100.0
+    extreme_rain_mm: 150.0
+
+  dry_spell:
+    watch_days: 10                 # 10 consecutive dry days = watch
+    warning_days: 14               # 14 = warning
+    critical_days: 21              # 21 = critical/drought alert
+
+  rainfall_anomaly:
+    far_below_pct: 60              # < 60% of normal
+    below_pct: 80                  # 60–80% = below normal
+    near_normal_min_pct: 80        # 80–120% = near normal
+    near_normal_max_pct: 120
+    above_pct: 120                 # > 120% = above normal
+    far_above_pct: 150             # > 150% = far above normal
+
+  heat_stress:
+    # Wet Bulb Globe Temperature (WBGT) approximation
+    low_wbgt: 28.0                 # < 28 = low
+    moderate_wbgt: 32.0            # 28–32 = moderate
+    high_wbgt: 35.0                # 32–35 = high
+    danger_wbgt: 38.0              # > 35 = danger
+    # Simple Tmax-based fallback
+    heat_watch_tmax: 33.0
+    heat_warning_tmax: 36.0
+
+  field_workability:
+    # Combined rules
+    not_workable_24h: 50.0         # > 50mm in 24h = not workable
+    high_risk_24h: 20.0
+    caution_24h: 10.0
+    dry_alert_cdd: 14              # CDD >= 14 = drought caution
+
+  humidity:
+    high_risk_pct: 80              # > 80% = disease risk trigger
+    critical_pct: 90
+
+  temperature:
+    cold_stress_tmin: 18.0         # < 18°C = cold stress
+    optimal_min: 23.0
+    optimal_max: 32.0
+    heat_watch_tmax: 33.0
+    heat_warning_tmax: 36.0
+
+# ── ADVISORY SEVERITY LEVELS ──────────────────────────────
+advisory_severity:
+  info:
+    label: "Information"
+    color: "#2196F3"
+  advisory:
+    label: "Advisory"
+    color: "#FF9800"
+  warning:
+    label: "Warning"
+    color: "#F44336"
+  danger:
+    label: "Danger"
+    color: "#B71C1C"
+
+# ── CROP CALENDAR CONFIG ──────────────────────────────────
+crops:
+  rice_irrigated:
+    display_name: "Rice (Lowland Irrigated)"
+    planting_months_dry: [11, 12, 1, 2]   # Dry season (DS)
+    planting_months_wet: [6, 7, 8]         # Wet season (WS)
+    growing_days: 105
+    stages:
+      land_prep: {start_day: 0, end_day: 14}
+      seedbed: {start_day: 0, end_day: 21}
+      transplanting: {start_day: 15, end_day: 21}
+      vegetative: {start_day: 22, end_day: 55}
+      reproductive: {start_day: 56, end_day: 80}
+      ripening: {start_day: 81, end_day: 105}
+      harvesting: {start_day: 100, end_day: 110}
+
+  rice_rainfed:
+    display_name: "Rice (Rainfed)"
+    planting_months_wet: [6, 7, 8]
+    growing_days: 110
+    stages:
+      land_prep: {start_day: 0, end_day: 14}
+      transplanting: {start_day: 15, end_day: 25}
+      vegetative: {start_day: 26, end_day: 60}
+      reproductive: {start_day: 61, end_day: 85}
+      ripening: {start_day: 86, end_day: 110}
+      harvesting: {start_day: 105, end_day: 115}
+
+  corn_yellow:
+    display_name: "Corn (Yellow Maize)"
+    planting_months: [3, 4, 5, 10, 11]
+    growing_days: 90
+    stages:
+      land_prep: {start_day: 0, end_day: 10}
+      planting: {start_day: 0, end_day: 7}
+      vegetative: {start_day: 8, end_day: 40}
+      tasseling: {start_day: 41, end_day: 55}
+      grain_fill: {start_day: 56, end_day: 75}
+      maturation: {start_day: 76, end_day: 90}
+      harvesting: {start_day: 85, end_day: 95}
+
+  corn_white:
+    display_name: "Corn (White/Glutinous)"
+    planting_months: [3, 4, 5, 10, 11]
+    growing_days: 75
+
+  hvcc:
+    display_name: "High-Value Commercial Crops"
+    notes: "Tomato, pepper, eggplant, cabbage, beans"
+    planting_months: [10, 11, 12, 1, 2]
+
+# ── OUTPUT PATHS ──────────────────────────────────────────
+paths:
+  raw_nasa: "data/raw/nasa_power"
+  raw_chirps: "data/raw/chirps"
+  raw_pagasa: "data/raw/pagasa"
+  processed_daily: "data/processed/daily"
+  processed_monthly: "data/processed/monthly"
+  indicators: "data/processed/indicators"
+  geospatial: "data/geospatial"
+  advisories_daily: "data/advisories/daily"
+  advisories_weekly: "data/advisories/weekly"
+  logs: "logs"
+
+# ── SCHEDULER (GitHub Actions cron reference) ─────────────
+schedule:
+  daily_fetch: "0 22 * * *"        # 6 AM PHT = 10 PM UTC
+  weekly_summary: "0 22 * * 0"     # Sunday 6 AM PHT
+  monthly_climatology: "0 22 1 * *" # 1st of month 6 AM PHT
