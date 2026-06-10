@@ -60,6 +60,14 @@ def _get_ind(indicators: Dict, key: str, default=None):
     return indicators.get("indicators", {}).get(key, default)
 
 
+def _normalise_municipality(mun: Dict) -> Dict:
+    """Return a municipality record with both config and advisory key names."""
+    if not mun:
+        return {}
+    name = mun.get("municipality") or mun.get("name")
+    return {**mun, "municipality": name, "name": mun.get("name") or name}
+
+
 ADVISORY_RULES = [
 
     # ── TYPHOON / HEAVY RAIN ─────────────────────────────────────────────────
@@ -531,7 +539,7 @@ def generate_all_advisories(indicators_data: Dict) -> Dict:
     report["meta"]["total_municipalities"] = len(data)
 
     for psgc, indicators in data.items():
-        mun = municipalities.get(psgc, {})
+        mun = _normalise_municipality(municipalities.get(psgc, {}))
         if not mun:
             continue
 
