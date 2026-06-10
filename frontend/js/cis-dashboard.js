@@ -173,7 +173,6 @@ const CISDashboard = (() => {
         case 'forecast_rain': return _forecastRainOrder(r.forecast_10_day?.rainfall_class);
         case 'forecast_weather': return r.forecast_10_day?.weather_cover || '';
         case 'forecast_tmax': return r.forecast_10_day?.tmax_range_c?.[1] ?? -Infinity;
-        case 'crop_calendar': return r.official_hazards?.acap_crop_calendar_available ? 1 : 0;
         case 'tmax': return obs.tmax_c ?? -Infinity;
         case 'humidity': return obs.humidity_pct ?? -Infinity;
         case 'cdd': return ind.cdd ?? -Infinity;
@@ -214,7 +213,7 @@ const CISDashboard = (() => {
     if (!tbody) return;
 
     if (!rows.length) {
-      tbody.innerHTML = '<tr><td colspan="15" class="loading-row">No municipalities match your search.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="14" class="loading-row">No municipalities match your search.</td></tr>';
       return;
     }
 
@@ -226,7 +225,6 @@ const CISDashboard = (() => {
       const hs  = ind.heat_stress || {};
       const fw  = ind.field_workability || {};
       const forecast = r.forecast_10_day || {};
-      const hazards = r.official_hazards || {};
       const adv = CISData.getAdvisoryForMunicipality(r.psgc);
       const severity = adv?.highest_severity || 'none';
 
@@ -238,7 +236,6 @@ const CISDashboard = (() => {
           <td>${_forecastRainPill(forecast.rainfall_class, forecast.available)}</td>
           <td>${_forecastText(forecast.weather_cover, forecast.date_range)}</td>
           <td>${_forecastTmax(forecast.tmax_range_c)}</td>
-          <td>${hazards.acap_crop_calendar_available ? '<span class="pill pill-safe">ACAP</span>' : '<span class="pill pill-none">Default</span>'}</td>
           <td>${fmt.formatTemp(obs.tmax_c)}</td>
           <td>${fmt.formatPercent(obs.humidity_pct)}</td>
           <td>${ind.cdd ?? '—'}</td>

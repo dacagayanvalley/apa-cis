@@ -267,14 +267,21 @@ body {
 }
 .table-controls { display: flex; gap: 8px; }
 .dashboard-main-split {
+  --dashboard-panel-height: clamp(520px, 68vh, 820px);
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.65fr);
   gap: 14px;
-  align-items: stretch;
+  align-items: start;
 }
 .municipal-list-pane,
 .apa-live-pane {
   min-width: 0;
+}
+.municipal-list-pane .table-wrap {
+  max-height: var(--dashboard-panel-height);
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
 }
 .apa-live-pane {
   background: var(--surface);
@@ -283,6 +290,7 @@ body {
   padding: 0 12px 12px;
   display: flex;
   flex-direction: column;
+  height: calc(var(--dashboard-panel-height) + 39px);
 }
 .cis-open-link {
   color: var(--da-green);
@@ -293,7 +301,7 @@ body {
 .cis-open-link:hover { text-decoration: underline; }
 .apa-cis-frame {
   width: 100%;
-  min-height: 640px;
+  min-height: 0;
   flex: 1;
   border: 1px solid var(--border);
   border-radius: 4px;

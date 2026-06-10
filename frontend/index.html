@@ -150,11 +150,10 @@
           <th class="sortable" data-sort-key="rainfall" onclick="sortTable('rainfall')">Rainfall 24h (mm) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="forecast_rain" onclick="sortTable('forecast_rain')">10-Day Rain <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="forecast_weather" onclick="sortTable('forecast_weather')">10-Day Weather <span class="sort-indicator"></span></th>
-          <th class="sortable" data-sort-key="forecast_tmax" onclick="sortTable('forecast_tmax')">10-Day Tmax <span class="sort-indicator"></span></th>
-          <th class="sortable" data-sort-key="crop_calendar" onclick="sortTable('crop_calendar')">Crop Calendar <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="forecast_tmax" onclick="sortTable('forecast_tmax')">Forecast Temp (°C) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="tmax" onclick="sortTable('tmax')">Temp Max (°C) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="humidity" onclick="sortTable('humidity')">Humidity (%) <span class="sort-indicator"></span></th>
-          <th class="sortable" data-sort-key="cdd" onclick="sortTable('cdd')">CDD (days) <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="cdd" onclick="sortTable('cdd')">Dry Spell Days (Consecutive) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="drought" onclick="sortTable('drought')">Drought Status <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="heat" onclick="sortTable('heat')">Heat Stress <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="fieldwork" onclick="sortTable('fieldwork')">Field Work <span class="sort-indicator"></span></th>
@@ -163,7 +162,7 @@
         </tr>
       </thead>
       <tbody id="mun-tbody">
-        <tr><td colspan="15" class="loading-row">Loading climate data...</td></tr>
+        <tr><td colspan="14" class="loading-row">Loading climate data...</td></tr>
       </tbody>
     </table>
   </div>
