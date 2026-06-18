@@ -115,6 +115,198 @@ def _calendar_anchor_for_rule(indicators: Dict, rule: Dict) -> Dict:
     }
 
 
+OPERATION_ADVISORY_SPECS = {
+    "land_preparation": {
+        "name": "Defer Land Preparation",
+        "description": "plowing, harrowing, puddling, bed preparation",
+        "affected_stages": ["land_prep", "seedbed"],
+        "responsible_office": "MAO + AEWs + machinery operators",
+        "action": "defer heavy land preparation; resume when fields are trafficable and not waterlogged or powder-dry",
+    },
+    "transplanting": {
+        "name": "Defer Transplanting / Crop Establishment",
+        "description": "rice transplanting, direct seeding, crop establishment",
+        "affected_stages": ["seedbed", "transplanting", "vegetative"],
+        "responsible_office": "MAO + AEWs + seedling nursery coordinators",
+        "action": "hold transplanting or seeding until soil moisture and field access are stable",
+    },
+    "fertilizer_application": {
+        "name": "Defer Fertilizer Application",
+        "description": "basal, side-dress, and top-dress fertilizer",
+        "affected_stages": ["vegetative", "reproductive", "tasseling", "grain_fill"],
+        "responsible_office": "MAO + AEWs",
+        "action": "delay fertilizer application to avoid runoff, leaching, volatilization, or poor uptake",
+    },
+    "spraying": {
+        "name": "Defer Pesticide / Foliar Spraying",
+        "description": "pesticide, fungicide, herbicide, and foliar application",
+        "affected_stages": ["vegetative", "reproductive", "tasseling", "grain_fill"],
+        "responsible_office": "MAO + Crop Protection Center + AEWs",
+        "action": "reschedule spraying for a clear, low-wind window to avoid wash-off and drift",
+    },
+    "irrigation": {
+        "name": "Defer Irrigation",
+        "description": "supplemental irrigation and pump operation",
+        "affected_stages": ["all"],
+        "responsible_office": "MAO + NIA + Irrigators Associations",
+        "action": "pause irrigation to avoid over-saturation; prioritize drainage and canal checks first",
+    },
+    "harvesting": {
+        "name": "Defer Harvesting",
+        "description": "manual harvest, combine harvest, hauling from field",
+        "affected_stages": ["ripening", "maturation", "harvesting", "postharvest"],
+        "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
+        "action": "defer harvest or machine entry until fields can carry workers and equipment safely",
+    },
+    "drying": {
+        "name": "Defer Open-Air Grain Drying",
+        "description": "sun-drying of palay or corn grain",
+        "affected_stages": ["ripening", "maturation", "harvesting", "postharvest"],
+        "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
+        "action": "avoid open sun-drying; use covered temporary storage or mechanical drying where available",
+    },
+    "pest_monitoring": {
+        "name": "Defer Field Pest Monitoring",
+        "description": "field scouting and IPM inspection",
+        "affected_stages": ["vegetative", "reproductive", "tasseling", "grain_fill"],
+        "responsible_office": "MAO + Crop Protection Center + AEWs",
+        "action": "delay field entry if unsafe, then prioritize scouting as soon as rainfall and access improve",
+    },
+}
+
+
+def _operation_defer_reasons(operation: str, indicators: Dict) -> List[str]:
+    obs = indicators.get("observations", {})
+    fw = indicators.get("indicators", {}).get("field_workability", {})
+    rain_24h = fw.get("rain_24h_mm", obs.get("rainfall_24h_mm") or 0) or 0
+    rain_48h = fw.get("rain_48h_mm", obs.get("rainfall_48h_mm") or 0) or 0
+    cdd = fw.get("cdd", indicators.get("indicators", {}).get("cdd") or 0) or 0
+    wind = fw.get("wind_speed_ms", obs.get("wind_speed_ms"))
+    humidity = fw.get("humidity_pct", obs.get("humidity_pct"))
+    reasons = []
+
+    if operation in ("land_preparation", "transplanting", "harvesting", "pest_monitoring"):
+        if rain_24h >= 20 or rain_48h >= 80:
+            reasons.append("fields may be waterlogged or unsafe for workers and machinery")
+        elif rain_24h >= 10 or rain_48h >= 20:
+            reasons.append("recent rainfall can cause soil compaction, rutting, or poor crop establishment")
+    if operation in ("fertilizer_application", "spraying", "harvesting", "drying"):
+        if rain_24h >= 10 or rain_48h >= 25:
+            reasons.append("rainfall increases runoff, wash-off, grain wetting, or harvest loss risk")
+    if operation == "spraying":
+        if wind is not None and wind >= 5:
+            reasons.append("wind speed is high enough to increase spray drift risk")
+        if humidity is not None and humidity >= 85:
+            reasons.append("high humidity and wet canopy can reduce spray effectiveness")
+    if operation == "drying":
+        if humidity is not None and humidity >= 85:
+            reasons.append("high humidity slows drying and increases mold or grain-quality risk")
+        if rain_24h >= 5:
+            reasons.append("recent rain makes open-air drying unreliable")
+    if operation in ("land_preparation", "transplanting") and cdd >= 14:
+        reasons.append("extended dry spell can reduce seedling survival and field preparation quality")
+    if operation == "irrigation":
+        reasons.append("recent rainfall is enough that irrigation can be paused to prevent over-saturation")
+
+    return reasons or ["field-workability thresholds classify this operation as defer for current local conditions"]
+
+
+def _operation_calendar_anchor(indicators: Dict, spec: Dict) -> Dict:
+    rule_like = {
+        "affected_crops": ["rice_irrigated", "rice_rainfed", "corn_yellow", "corn_white"],
+        "affected_stages": spec.get("affected_stages", ["all"]),
+    }
+    anchor = _calendar_anchor_for_rule(indicators, rule_like)
+    if anchor.get("anchored"):
+        return anchor
+
+    context = indicators.get("indicators", {}).get("crop_calendar_context", {}) or {}
+    current_stages = context.get("current_stages", []) or []
+    return {
+        **anchor,
+        "anchored": bool(current_stages),
+        "matched_current_stages": current_stages,
+        "note": (
+            "Operation advisory is tied to the municipality's current ACAP rice/corn stage(s); "
+            "the operation may be preparatory or postharvest relative to the active stage."
+            if current_stages else anchor.get("note")
+        ),
+    }
+
+
+def _operation_severity(operation: str, indicators: Dict) -> str:
+    fw = indicators.get("indicators", {}).get("field_workability", {})
+    overall = fw.get("overall_class")
+    high_impact = {"land_preparation", "transplanting", "harvesting", "drying", "irrigation"}
+    if overall == "not_workable" or operation in high_impact:
+        return "warning"
+    return "advisory"
+
+
+def _generate_operation_defer_advisories(indicators: Dict, mun: Dict) -> List[Dict]:
+    fw = indicators.get("indicators", {}).get("field_workability", {})
+    operations = fw.get("operations") or {}
+    if not operations:
+        return []
+
+    generated = []
+    for operation, status in operations.items():
+        if status != "defer":
+            continue
+        spec = OPERATION_ADVISORY_SPECS.get(operation)
+        if not spec:
+            continue
+        reasons = _operation_defer_reasons(operation, indicators)
+        anchor = _operation_calendar_anchor(indicators, spec)
+        stage_text = "; ".join(
+            f"{stage.get('crop_label')} season {stage.get('season')} - {stage.get('calendar_stage_label')}"
+            for stage in anchor.get("matched_current_stages", [])
+        ) or "no active rice/corn stage"
+        severity = _operation_severity(operation, indicators)
+        rule_name = f"Operations Advisory - {spec['name']}"
+        reason_text = "; ".join(reasons)
+
+        generated.append({
+            "rule_id": f"OPERATIONS_DEFER_{operation.upper()}",
+            "rule_name": rule_name,
+            "severity": severity,
+            "category": "operations_advisory",
+            "operation": operation,
+            "operation_status": "defer",
+            "affected_crops": ["rice_irrigated", "rice_rainfed", "corn_yellow", "corn_white"],
+            "affected_stages": spec.get("affected_stages", ["all"]),
+            "calendar_anchor": anchor,
+            "responsible_office": spec["responsible_office"],
+            "adaptation_measures": _cra_measures_for_rule("default"),
+            "adaptation_source": CRA_MEASURES.get("meta", {}).get("source", "CRA Compendium"),
+            "texts": {
+                "bulletin": (
+                    f"{rule_name.upper()} - {mun['municipality']}: {spec['description']} should be deferred. "
+                    f"Basis: {reason_text}. ACAP calendar anchor: {anchor.get('period') or 'current period'} - {stage_text}. "
+                    f"Recommended action: {spec['action']}."
+                ),
+                "sms": (
+                    f"DA OPS: Defer {spec['name'].replace('Defer ', '').lower()} in {mun['municipality']}. "
+                    f"{reasons[0].capitalize()}. Check MAO guidance."
+                ),
+                "lgu": (
+                    f"{rule_name.upper()} - {mun['municipality']}\n"
+                    f"Operation: {spec['description']}\n"
+                    f"Why defer: {reason_text}.\n"
+                    f"ACAP calendar: {anchor.get('period') or 'current period'} - {stage_text}.\n"
+                    f"LGU/MAO action: {spec['action']}; inform affected barangays and reschedule support services."
+                ),
+                "facebook": (
+                    f"{rule_name} - {mun['municipality']}: Please defer {spec['description']} for now. "
+                    f"Reason: {reasons[0]}. Current crop calendar basis: {stage_text}. "
+                    "Coordinate with your Municipal Agriculturist for the next safe field window."
+                ),
+            },
+        })
+
+    return generated
+
+
 # ═══════════════════════════════════════════════════════════════════════════════
 # 1. ADVISORY RULE DEFINITIONS
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -716,6 +908,8 @@ def evaluate_municipality(
                 triggered.append(advisory)
         except Exception as exc:
             logger.warning(f"Rule {rule['rule_id']} error for {mun.get('municipality')}: {exc}")
+
+    triggered.extend(_generate_operation_defer_advisories(indicators, mun))
 
     # Sort by severity (most critical first)
     triggered.sort(key=lambda a: severity_order.get(a["severity"], 99))
