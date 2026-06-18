@@ -125,6 +125,12 @@ def load_acap_current() -> Dict:
     return load_json(path) or {}
 
 
+def load_acap_cropping_calendars() -> Dict:
+    """Load normalized ACAP rice/corn cropping calendars for advisory anchoring."""
+    path = PROJECT_ROOT / cfg["paths"].get("reference", "data/reference") / "acap_cropping_calendars.json"
+    return load_json(path) or {}
+
+
 def _norm_name(value: str) -> str:
     value = (value or "").replace("Ã±", "ñ").replace("Ã‘", "Ñ")
     text = unicodedata.normalize("NFKD", value or "")
@@ -134,6 +140,167 @@ def _norm_name(value: str) -> str:
     text = re.sub(r"\bcity\b", " ", text)
     text = re.sub(r"[^a-z0-9]+", " ", text)
     return re.sub(r"\s+", " ", text).strip()
+
+
+def _calendar_key_part(value: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", _norm_name(value))
+
+
+def _current_calendar_period(ref_date: date) -> str:
+    suffix = "15" if ref_date.day <= 15 else "30"
+    return f"{ref_date.month:02d}_{suffix}_CAL"
+
+
+def _calendar_stage_code(raw_stage: Optional[str]) -> Optional[str]:
+    if not raw_stage:
+        return None
+    return re.sub(r"_\d+$", "", str(raw_stage))
+
+
+def _risk_stage_from_calendar(raw_stage: Optional[str], crop_key: str) -> Optional[str]:
+    stage = _calendar_stage_code(raw_stage)
+    if not stage:
+        return None
+    if crop_key == "rice":
+        return {
+            "prep": "land_prep",
+            "seed": "seedbed",
+            "plant": "transplanting",
+            "veg": "vegetative",
+            "vegat": "vegetative",
+            "vegpi": "reproductive",
+            "repro": "reproductive",
+            "mat": "ripening",
+        }.get(stage, stage)
+    if crop_key == "corn":
+        return {
+            "prep": "land_prep",
+            "seed": "seedbed",
+            "plant": "vegetative",
+            "vegleaf": "vegetative",
+            "vegtass": "tasseling",
+            "repro": "grain_fill",
+            "mat": "maturation",
+        }.get(stage, stage)
+    return stage
+
+
+def _risk_crop_from_calendar(crop_key: str, irrigation_status: str) -> str:
+    if crop_key == "rice":
+        return "rice_irrigated" if irrigation_status == "irrigated" else "rice_rainfed"
+    if crop_key == "corn":
+        return "corn_yellow"
+    return crop_key
+
+
+def _stage_label(stage: Optional[str]) -> str:
+    labels = {
+        "prep": "Preparation",
+        "seed": "Seedling",
+        "plant": "Planting / Newly planted",
+        "veg": "Vegetative",
+        "vegat": "Vegetative / Active tillering",
+        "vegpi": "Reproductive / Panicle initiation",
+        "vegleaf": "Vegetative / Leaf development",
+        "vegtass": "Vegetative / Tasseling",
+        "repro": "Reproductive",
+        "mat": "Maturing",
+    }
+    return labels.get(stage or "", (stage or "No active stage").replace("_", " ").title())
+
+
+def _calendar_entry_for_municipality(mun: Dict, calendars: Dict) -> Optional[Dict]:
+    municipal_key = (
+        f"{_calendar_key_part(mun.get('province'))}|"
+        f"{_calendar_key_part(mun.get('name') or mun.get('municipality'))}"
+    )
+    return (calendars.get("municipalities") or {}).get(municipal_key)
+
+
+def _calendar_context_for_municipality(mun: Dict, calendars: Dict, ref_date: date) -> Dict:
+    """Return current rice/corn stages from the ACAP municipal crop calendar."""
+    entry = _calendar_entry_for_municipality(mun, calendars)
+    period_key = _current_calendar_period(ref_date)
+    period_meta = next(
+        (period for period in calendars.get("periods", []) if period.get("key") == period_key),
+        {"key": period_key, "label": period_key},
+    )
+    context = {
+        "available": bool(entry),
+        "source": "ACAP rice/corn cropping calendar workbooks",
+        "period_key": period_key,
+        "period_label": period_meta.get("label", period_key),
+        "municipality": entry.get("municipality") if entry else mun.get("name") or mun.get("municipality"),
+        "province": entry.get("province") if entry else mun.get("province"),
+        "current_stages": [],
+    }
+    if not entry:
+        context["note"] = "No municipal ACAP rice/corn crop-calendar row loaded; seasonal default used."
+        return context
+
+    irrigation_status = mun.get("irrigation_status", "rainfed")
+    for crop_key, seasons in (entry.get("crops") or {}).items():
+        for season in seasons:
+            raw_stage = (season.get("periods") or {}).get(period_key)
+            calendar_stage = _calendar_stage_code(raw_stage)
+            if not calendar_stage:
+                continue
+            risk_crop = _risk_crop_from_calendar(crop_key, irrigation_status)
+            risk_stage = _risk_stage_from_calendar(raw_stage, crop_key)
+            context["current_stages"].append({
+                "crop": crop_key,
+                "crop_label": crop_key.title(),
+                "season": season.get("season"),
+                "calendar_stage": calendar_stage,
+                "calendar_stage_label": _stage_label(calendar_stage),
+                "risk_crop": risk_crop,
+                "risk_stage": risk_stage,
+                "raw_stage": raw_stage,
+            })
+
+    if context["current_stages"]:
+        context["note"] = "Current rice/corn stages are anchored to the municipal ACAP crop calendar."
+    else:
+        context["note"] = "Municipal ACAP calendar found, but no rice/corn stage is active in the current half-month period."
+    return context
+
+
+def _crop_stage_risk_from_calendar(
+    calendar_context: Dict,
+    cdd: int,
+    cwd: int,
+    rainfall_7d: Optional[float],
+    tmax_c: Optional[float],
+    humidity_pct: Optional[float],
+    irrigation_status: str,
+) -> Dict:
+    candidates = []
+    for stage in calendar_context.get("current_stages", []):
+        risk = compute_crop_stage_risk(
+            cdd=cdd, cwd=cwd, rainfall_7d=rainfall_7d,
+            tmax_c=tmax_c, humidity_pct=humidity_pct,
+            crop=stage["risk_crop"], crop_stage=stage["risk_stage"],
+            irrigation_status=irrigation_status,
+        )
+        risk.update({
+            "calendar_crop": stage["crop"],
+            "calendar_crop_label": stage["crop_label"],
+            "calendar_stage": stage["calendar_stage"],
+            "calendar_stage_label": stage["calendar_stage_label"],
+            "calendar_season": stage["season"],
+            "calendar_period": calendar_context.get("period_label"),
+        })
+        candidates.append(risk)
+
+    if not candidates:
+        return {}
+
+    primary = dict(max(candidates, key=lambda item: item.get("risk_score", 0)))
+    primary["calendar_anchored"] = True
+    primary["calendar_context_note"] = calendar_context.get("note")
+    primary["candidate_count"] = len(candidates)
+    primary["all_current_calendar_risks"] = [dict(candidate) for candidate in candidates]
+    return primary
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -731,6 +898,7 @@ def compute_all_indicators() -> Dict:
     pagasa_current = load_pagasa_current()
     apa_cis_current = load_latest_apa_cis()
     acap_current = load_acap_current()
+    acap_cropping_calendars = load_acap_cropping_calendars()
     ref_date = today_pht()
     current_month = str(ref_date.month)
 
@@ -800,17 +968,30 @@ def compute_all_indicators() -> Dict:
         workability = compute_field_workability(rain_24h, rain_48h, cdd, wind, humidity)
         drying_risk = compute_postharvest_drying_risk(rain_24h, humidity, wind, solar)
 
-        # Crop-stage risk (default: current dominant crop by season)
+        # Crop-stage risk anchored to ACAP municipal rice/corn calendars when available.
         month = ref_date.month
         default_crop = "rice_rainfed" if month in [6, 7, 8, 9, 10] else "corn_yellow"
         default_stage = "vegetative"
-
-        crop_risk = compute_crop_stage_risk(
+        calendar_context = _calendar_context_for_municipality(
+            mun, acap_cropping_calendars, ref_date
+        )
+        crop_risk = _crop_stage_risk_from_calendar(
+            calendar_context=calendar_context,
             cdd=cdd, cwd=cwd, rainfall_7d=rain_7d,
             tmax_c=tmax, humidity_pct=humidity,
-            crop=default_crop, crop_stage=default_stage,
             irrigation_status=mun.get("irrigation_status", "rainfed"),
         )
+        if not crop_risk:
+            crop_risk = compute_crop_stage_risk(
+                cdd=cdd, cwd=cwd, rainfall_7d=rain_7d,
+                tmax_c=tmax, humidity_pct=humidity,
+                crop=default_crop, crop_stage=default_stage,
+                irrigation_status=mun.get("irrigation_status", "rainfed"),
+            )
+            crop_risk.update({
+                "calendar_anchored": False,
+                "calendar_context_note": calendar_context.get("note"),
+            })
 
         # Municipal composite risk score
         indicator_bundle = {
@@ -819,7 +1000,9 @@ def compute_all_indicators() -> Dict:
         }
         municipal_risk_score = compute_municipal_risk_score(indicator_bundle, mun)
 
-        official_hazards = _official_hazards_for_municipality(mun, pagasa_current, acap_current)
+        official_hazards = _official_hazards_for_municipality(
+            mun, pagasa_current, acap_current, calendar_context
+        )
         results[psgc] = {
             "psgc": psgc,
             "municipality": mun["name"],
@@ -858,6 +1041,7 @@ def compute_all_indicators() -> Dict:
                 "field_workability": workability,
                 "postharvest_drying_risk": drying_risk,
                 "crop_stage_risk": crop_risk,
+                "crop_calendar_context": calendar_context,
                 "municipal_risk_score": municipal_risk_score,
             },
             "official_hazards": official_hazards,
@@ -951,9 +1135,15 @@ def _acap_municipality_ten_day(mun: Dict, acap_data: Dict) -> Dict:
     }
 
 
-def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict, acap_data: Dict = None) -> Dict:
+def _official_hazards_for_municipality(
+    mun: Dict,
+    pagasa_data: Dict,
+    acap_data: Dict = None,
+    calendar_context: Dict = None,
+) -> Dict:
     """Attach province-level PAGASA context to a municipal indicator record."""
     acap_data = acap_data or {}
+    calendar_context = calendar_context or {}
     province = mun.get("province")
     province_key = (province or "").lower().replace(" ", "_")
     typhoon = pagasa_data.get("typhoon", {}) if isinstance(pagasa_data, dict) else {}
@@ -964,7 +1154,8 @@ def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict, acap_data: 
     ten_day_province = ten_day.get(province_key, {}) if isinstance(ten_day, dict) else {}
     acap_ten_day = _acap_province_ten_day(province, acap_data)
 
-    has_crop_calendar = _acap_has_calendar(mun, acap_data)
+    has_crop_calendar = bool(calendar_context.get("available")) or _acap_has_calendar(mun, acap_data)
+    current_stages = calendar_context.get("current_stages", [])
     return {
         "pagasa_source_date": pagasa_data.get("entry_date") or pagasa_data.get("as_of"),
         "typhoon_active": bool(typhoon.get("active")),
@@ -977,10 +1168,19 @@ def _official_hazards_for_municipality(mun: Dict, pagasa_data: Dict, acap_data: 
         "acap_ten_day_source_date": acap_ten_day.get("date_created") or acap_ten_day.get("_update_time"),
         "acap_ten_day_municipality_count": len(acap_ten_day.get("municipalities", {}) or {}),
         "acap_crop_calendar_available": has_crop_calendar,
+        "acap_crop_calendar_period": calendar_context.get("period_label"),
+        "acap_crop_calendar_current_stages": current_stages,
         "crop_calendar_decision_point": (
-            "ACAP crop calendar available; use local rice/corn crop stage as a primary advisory decision point."
-            if has_crop_calendar else
-            "No ACAP crop calendar for this municipality; using seasonal default crop stage."
+            f"ACAP municipal rice/corn calendar active for {calendar_context.get('period_label')}: "
+            + "; ".join(
+                f"{stage.get('crop_label')} season {stage.get('season')} - {stage.get('calendar_stage_label')}"
+                for stage in current_stages
+            )
+            if current_stages else (
+                "ACAP crop calendar available, but no rice/corn stage is active for the current half-month period."
+                if has_crop_calendar else
+                "No ACAP crop calendar for this municipality; using seasonal default crop stage."
+            )
         ),
         "seasonal_rainfall_outlook": seasonal.get("rainfall_outlook"),
         "enso_phase": (pagasa_data.get("enso", {}) or {}).get("phase")

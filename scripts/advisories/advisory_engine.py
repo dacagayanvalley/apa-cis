@@ -57,6 +57,64 @@ def _cra_measures_for_rule(rule_id: str) -> List[str]:
     return CRA_MEASURES.get("default", [])
 
 
+def _calendar_crop_family(crop: str) -> str:
+    crop = (crop or "").lower()
+    if crop.startswith("rice"):
+        return "rice"
+    if crop.startswith("corn"):
+        return "corn"
+    return crop
+
+
+def _calendar_stage_matches(rule_stage: str, calendar_stage: Dict) -> bool:
+    rule_stage = (rule_stage or "").lower()
+    if rule_stage == "all":
+        return True
+    risk_stage = (calendar_stage.get("risk_stage") or "").lower()
+    raw_stage = (calendar_stage.get("calendar_stage") or "").lower()
+    if rule_stage in (risk_stage, raw_stage):
+        return True
+    if rule_stage == "reproductive" and risk_stage in ("reproductive", "tasseling", "grain_fill", "flowering"):
+        return True
+    if rule_stage == "vegetative" and risk_stage in ("vegetative", "transplanting", "seedbed"):
+        return True
+    if rule_stage in ("harvesting", "postharvest") and risk_stage in ("ripening", "maturation"):
+        return True
+    return False
+
+
+def _calendar_anchor_for_rule(indicators: Dict, rule: Dict) -> Dict:
+    context = indicators.get("indicators", {}).get("crop_calendar_context", {}) or {}
+    current_stages = context.get("current_stages", []) or []
+    affected_crops = rule.get("affected_crops") or ["all"]
+    affected_stages = rule.get("affected_stages") or ["all"]
+    affected_families = {_calendar_crop_family(crop) for crop in affected_crops}
+    matches = []
+
+    for stage in current_stages:
+        crop_match = "all" in affected_families or stage.get("crop") in affected_families
+        stage_match = any(_calendar_stage_matches(rule_stage, stage) for rule_stage in affected_stages)
+        if crop_match and stage_match:
+            matches.append(stage)
+
+    if not matches and ("all" in affected_families or "all" in affected_stages):
+        matches = current_stages
+
+    return {
+        "anchored": bool(matches),
+        "source": context.get("source"),
+        "period": context.get("period_label"),
+        "municipality": context.get("municipality"),
+        "province": context.get("province"),
+        "matched_current_stages": matches,
+        "note": (
+            "Advisory is anchored to matching current ACAP rice/corn calendar stage(s)."
+            if matches else
+            context.get("note") or "No matching current ACAP rice/corn stage for this advisory rule."
+        ),
+    }
+
+
 # ═══════════════════════════════════════════════════════════════════════════════
 # 1. ADVISORY RULE DEFINITIONS
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -637,12 +695,14 @@ def evaluate_municipality(
     for rule in ADVISORY_RULES:
         try:
             if rule["trigger_fn"](indicators, mun):
+                calendar_anchor = _calendar_anchor_for_rule(indicators, rule)
                 advisory = {
                     "rule_id": rule["rule_id"],
                     "rule_name": rule["name"],
                     "severity": rule["severity"],
                     "affected_crops": rule["affected_crops"],
                     "affected_stages": rule["affected_stages"],
+                    "calendar_anchor": calendar_anchor,
                     "responsible_office": rule["responsible_office"],
                     "adaptation_measures": _cra_measures_for_rule(rule["rule_id"]),
                     "adaptation_source": CRA_MEASURES.get("meta", {}).get("source", "CRA Compendium"),
@@ -763,6 +823,13 @@ def _decision_support_for_municipality(
     advisories = adv_data.get("advisories", [])
     primary = advisories[0] if advisories else {}
     crop_risk = indicators.get("indicators", {}).get("crop_stage_risk", {})
+    calendar_context = indicators.get("indicators", {}).get("crop_calendar_context", {})
+    calendar_anchor = primary.get("calendar_anchor") or {
+        "anchored": False,
+        "period": calendar_context.get("period_label"),
+        "matched_current_stages": calendar_context.get("current_stages", []),
+        "note": calendar_context.get("note"),
+    }
     official = indicators.get("official_hazards", {})
     flags = _source_qa_flags(indicators, ref_date)
     source_age = _source_age(indicators, ref_date)
@@ -785,6 +852,14 @@ def _decision_support_for_municipality(
             "stage": crop_risk.get("crop_stage") or (primary.get("affected_stages") or ["all"])[0],
             "risk_class": crop_risk.get("risk_class"),
             "risk_score": crop_risk.get("risk_score"),
+            "calendar_anchored": crop_risk.get("calendar_anchored", False),
+            "calendar_crop": crop_risk.get("calendar_crop"),
+            "calendar_stage": crop_risk.get("calendar_stage"),
+            "calendar_stage_label": crop_risk.get("calendar_stage_label"),
+            "calendar_season": crop_risk.get("calendar_season"),
+            "calendar_period": crop_risk.get("calendar_period") or calendar_context.get("period_label"),
+            "calendar_anchor": calendar_anchor,
+            "current_rice_corn_stages": calendar_context.get("current_stages", []),
             "acap_crop_calendar_available": official.get("acap_crop_calendar_available", False),
             "crop_calendar_decision_point": official.get("crop_calendar_decision_point"),
         },

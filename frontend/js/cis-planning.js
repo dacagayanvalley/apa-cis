@@ -317,6 +317,7 @@ const CISMunicipal = (() => {
     const primary = adv.advisories[0];
     const decision = adv.decision_support || {};
     const cropStage = decision.affected_crop_stage || {};
+    const calendarAnchor = cropStage.calendar_anchor || {};
     const sourceAge = decision.source_age || {};
     const qaFlags = decision.source_qa_flags || [];
 
@@ -332,6 +333,7 @@ const CISMunicipal = (() => {
             ${_decisionItem('Hazard', decision.hazard || primary.rule_name)}
             ${_decisionItem('Confidence / Source Age', `${_titleCase(decision.confidence || 'unknown')} confidence; rainfall ${sourceAge.rainfall_age_days ?? 'N/A'} day(s) old from ${sourceAge.rainfall_source || 'unknown'}`)}
             ${_decisionItem('Affected Crop Stage', `${_labelize(cropStage.crop || 'all')} / ${_labelize(cropStage.stage || 'all')} (${cropStage.risk_class || 'risk not classified'})`)}
+            ${_decisionItem('Calendar Anchor', _calendarAnchorSummary(calendarAnchor, cropStage))}
             ${_decisionItem('ACAP Crop Calendar', cropStage.crop_calendar_decision_point || 'No ACAP crop-calendar decision point loaded.')}
             ${_decisionItem('Immediate Farmer Action', decision.immediate_farmer_action || primary.texts?.sms || '')}
             ${_decisionItem('LGU / DA Action', decision.lgu_da_action || primary.texts?.lgu || '')}
@@ -371,6 +373,16 @@ const CISMunicipal = (() => {
     if (source === 'apa_cis') return `Adapting Philippine Agriculture to Climate Change Climate Information Service (APA-CIS) (${obs.apa_cis_record_date || 'current'})`;
     if (source === 'chirps') return `Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) (${obs.chirps_record_date || 'latest'})`;
     return 'National Aeronautics and Space Administration POWER (NASA POWER) fallback';
+  }
+
+  function _calendarAnchorSummary(anchor, cropStage) {
+    const stages = anchor?.matched_current_stages || cropStage.current_rice_corn_stages || [];
+    if (!stages.length) return anchor?.note || cropStage.crop_calendar_decision_point || 'No active ACAP rice/corn stage matched this advisory.';
+    const period = anchor?.period || cropStage.calendar_period || 'current period';
+    const labels = stages.map(stage =>
+      `${stage.crop_label || _titleCase(stage.crop)} S${stage.season || '-'}: ${stage.calendar_stage_label || _labelize(stage.calendar_stage)}`
+    );
+    return `${period} - ${labels.join('; ')}`;
   }
 
   function _escapeInline(str) {
