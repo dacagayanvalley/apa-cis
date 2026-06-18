@@ -48,10 +48,10 @@ const CISDashboard = (() => {
       const chirpsCount = rows.filter(r => r.observations?.rainfall_source === 'chirps').length;
       const nasaCount = rows.length - cisCount - chirpsCount;
       rainfallEl.textContent = cisCount
-        ? `APA CIS used in ${cisCount}; CHIRPS in ${chirpsCount}; NASA fallback in ${nasaCount}`
+        ? `Adapting Philippine Agriculture to Climate Change Climate Information Service (APA-CIS) used in ${cisCount}; Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) in ${chirpsCount}; National Aeronautics and Space Administration POWER (NASA POWER) fallback in ${nasaCount}`
         : (chirpsCount
-          ? `CHIRPS used in ${chirpsCount} municipalities; NASA fallback in ${nasaCount}`
-          : 'NASA POWER rainfall active; APA CIS/CHIRPS fallback not yet sampled');
+          ? `Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) used in ${chirpsCount} municipalities; National Aeronautics and Space Administration POWER (NASA POWER) fallback in ${nasaCount}`
+          : 'National Aeronautics and Space Administration POWER (NASA POWER) rainfall active; Adapting Philippine Agriculture to Climate Change Climate Information Service (APA-CIS) / Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) fallback not yet sampled');
     }
 
     if (pagasaEl) {

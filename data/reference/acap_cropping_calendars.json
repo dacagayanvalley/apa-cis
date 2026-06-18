@@ -1,0 +1,6266 @@
+{
+  "meta": {
+    "source_files": {
+      "rice": "C:\\Users\\Jeff Factora\\Downloads\\2026\\APA\\ACAP_rice_cropping_calendar.xlsx",
+      "corn": "C:\\Users\\Jeff Factora\\Downloads\\2026\\APA\\ACAP_corn_cropping_calendar.xlsx"
+    },
+    "period_count": 24
+  },
+  "periods": [
+    {
+      "key": "01_15_CAL",
+      "label": "Jan 1-15",
+      "month": "Jan"
+    },
+    {
+      "key": "01_30_CAL",
+      "label": "Jan 16-31",
+      "month": "Jan"
+    },
+    {
+      "key": "02_15_CAL",
+      "label": "Feb 1-15",
+      "month": "Feb"
+    },
+    {
+      "key": "02_30_CAL",
+      "label": "Feb 16-29",
+      "month": "Feb"
+    },
+    {
+      "key": "03_15_CAL",
+      "label": "Mar 1-15",
+      "month": "Mar"
+    },
+    {
+      "key": "03_30_CAL",
+      "label": "Mar 16-31",
+      "month": "Mar"
+    },
+    {
+      "key": "04_15_CAL",
+      "label": "Apr 1-15",
+      "month": "Apr"
+    },
+    {
+      "key": "04_30_CAL",
+      "label": "Apr 16-30",
+      "month": "Apr"
+    },
+    {
+      "key": "05_15_CAL",
+      "label": "May 1-15",
+      "month": "May"
+    },
+    {
+      "key": "05_30_CAL",
+      "label": "May 16-31",
+      "month": "May"
+    },
+    {
+      "key": "06_15_CAL",
+      "label": "Jun 1-15",
+      "month": "Jun"
+    },
+    {
+      "key": "06_30_CAL",
+      "label": "Jun 16-30",
+      "month": "Jun"
+    },
+    {
+      "key": "07_15_CAL",
+      "label": "Jul 1-15",
+      "month": "Jul"
+    },
+    {
+      "key": "07_30_CAL",
+      "label": "Jul 16-31",
+      "month": "Jul"
+    },
+    {
+      "key": "08_15_CAL",
+      "label": "Aug 1-15",
+      "month": "Aug"
+    },
+    {
+      "key": "08_30_CAL",
+      "label": "Aug 16-31",
+      "month": "Aug"
+    },
+    {
+      "key": "09_15_CAL",
+      "label": "Sep 1-15",
+      "month": "Sep"
+    },
+    {
+      "key": "09_30_CAL",
+      "label": "Sep 16-30",
+      "month": "Sep"
+    },
+    {
+      "key": "10_15_CAL",
+      "label": "Oct 1-15",
+      "month": "Oct"
+    },
+    {
+      "key": "10_30_CAL",
+      "label": "Oct 16-31",
+      "month": "Oct"
+    },
+    {
+      "key": "11_15_CAL",
+      "label": "Nov 1-15",
+      "month": "Nov"
+    },
+    {
+      "key": "11_30_CAL",
+      "label": "Nov 16-30",
+      "month": "Nov"
+    },
+    {
+      "key": "12_15_CAL",
+      "label": "Dec 1-15",
+      "month": "Dec"
+    },
+    {
+      "key": "12_30_CAL",
+      "label": "Dec 16-31",
+      "month": "Dec"
+    }
+  ],
+  "stage_labels": {
+    "prep": "Preparation",
+    "seed": "Seedling",
+    "plant": "Planting / Newly planted",
+    "veg": "Vegetative",
+    "vegat": "Vegetative / Active tillering",
+    "vegpi": "Reproductive / Panicle initiation",
+    "vegleaf": "Vegetative / Leaf development",
+    "vegtass": "Vegetative / Tasseling",
+    "repro": "Reproductive",
+    "mat": "Maturing"
+  },
+  "municipalities": {
+    "cagayan|abulug": {
+      "province": "Cagayan",
+      "municipality": "Abulug",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|alcala": {
+      "province": "Cagayan",
+      "municipality": "Alcala",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|allacapan": {
+      "province": "Cagayan",
+      "municipality": "Allacapan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|amulung": {
+      "province": "Cagayan",
+      "municipality": "Amulung",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_30_CAL": "prep_1",
+              "02_15_CAL": "seed_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "vegat_1",
+              "03_30_CAL": "vegpi_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|aparri": {
+      "province": "Cagayan",
+      "municipality": "Aparri",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|baggao": {
+      "province": "Cagayan",
+      "municipality": "Baggao",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|ballesteros": {
+      "province": "Cagayan",
+      "municipality": "Ballesteros",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|buguey": {
+      "province": "Cagayan",
+      "municipality": "Buguey",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|calayan": {
+      "province": "Cagayan",
+      "municipality": "Calayan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|camalaniugan": {
+      "province": "Cagayan",
+      "municipality": "Camalaniugan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|claveria": {
+      "province": "Cagayan",
+      "municipality": "Claveria",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|enrile": {
+      "province": "Cagayan",
+      "municipality": "Enrile",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_30_CAL": "prep_1",
+              "02_15_CAL": "seed_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "vegat_1",
+              "03_30_CAL": "vegpi_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|gattaran": {
+      "province": "Cagayan",
+      "municipality": "Gattaran",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "vegat_1",
+              "12_30_CAL": "vegpi_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_15_CAL": "prep_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "plant_2",
+              "07_30_CAL": "vegat_2",
+              "08_15_CAL": "vegpi_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|gonzaga": {
+      "province": "Cagayan",
+      "municipality": "Gonzaga",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|iguig": {
+      "province": "Cagayan",
+      "municipality": "Iguig",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_15_CAL": "prep_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "plant_2",
+              "08_30_CAL": "vegat_2",
+              "09_15_CAL": "vegpi_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|lallo": {
+      "province": "Cagayan",
+      "municipality": "Lal-Lo",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|lasam": {
+      "province": "Cagayan",
+      "municipality": "Lasam",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|pamplona": {
+      "province": "Cagayan",
+      "municipality": "Pamplona",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|penablanca": {
+      "province": "Cagayan",
+      "municipality": "Peñablanca",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|piat": {
+      "province": "Cagayan",
+      "municipality": "Piat",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_30_CAL": "prep_1",
+              "02_15_CAL": "seed_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "vegat_1",
+              "03_30_CAL": "vegpi_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|rizal": {
+      "province": "Cagayan",
+      "municipality": "Rizal",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_15_CAL": "prep_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "plant_2",
+              "08_30_CAL": "vegat_2",
+              "09_15_CAL": "vegpi_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|sanchezmira": {
+      "province": "Cagayan",
+      "municipality": "Sanchez-Mira",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_15_CAL": "prep_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "plant_2",
+              "08_30_CAL": "vegat_2",
+              "09_15_CAL": "vegpi_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|santaana": {
+      "province": "Cagayan",
+      "municipality": "Santa Ana",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|santapraxedes": {
+      "province": "Cagayan",
+      "municipality": "Santa Praxedes",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|santateresita": {
+      "province": "Cagayan",
+      "municipality": "Santa Teresita",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|santonino": {
+      "province": "Cagayan",
+      "municipality": "Santo Niño",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_30_CAL": "prep_1",
+              "02_15_CAL": "seed_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "vegat_1",
+              "03_30_CAL": "vegpi_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|solana": {
+      "province": "Cagayan",
+      "municipality": "Solana",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|tuao": {
+      "province": "Cagayan",
+      "municipality": "Tuao",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_30_CAL": "prep_1",
+              "02_15_CAL": "seed_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "vegat_1",
+              "03_30_CAL": "vegpi_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan|tuguegarao": {
+      "province": "Cagayan",
+      "municipality": "Tuguegarao City",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_30_CAL": "prep_1",
+              "02_15_CAL": "seed_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "vegat_1",
+              "03_30_CAL": "vegpi_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|alicia": {
+      "province": "Isabela",
+      "municipality": "Alicia",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|angadanan": {
+      "province": "Isabela",
+      "municipality": "Angadanan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "seed_2",
+              "06_15_CAL": "vegleaf_2",
+              "06_30_CAL": "vegleaf_2",
+              "07_15_CAL": "vegtass_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "mat_2",
+              "09_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|aurora": {
+      "province": "Isabela",
+      "municipality": "Aurora",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|benitosoliven": {
+      "province": "Isabela",
+      "municipality": "Benito Soliven",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|burgos": {
+      "province": "Isabela",
+      "municipality": "Burgos",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|cabagan": {
+      "province": "Isabela",
+      "municipality": "Cabagan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "08_15_CAL": "prep_2",
+              "08_30_CAL": "seed_2",
+              "09_15_CAL": "plant_2",
+              "09_30_CAL": "vegat_2",
+              "10_15_CAL": "vegpi_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "repro_2",
+              "11_30_CAL": "mat_2",
+              "12_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|cabatuan": {
+      "province": "Isabela",
+      "municipality": "Cabatuan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "seed_2",
+              "06_15_CAL": "vegleaf_2",
+              "06_30_CAL": "vegleaf_2",
+              "07_15_CAL": "vegtass_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "mat_2",
+              "09_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|cauayan": {
+      "province": "Isabela",
+      "municipality": "Cauayan City",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "vegat_1",
+              "12_30_CAL": "vegpi_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|cordon": {
+      "province": "Isabela",
+      "municipality": "Cordon",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|delfinalbano": {
+      "province": "Isabela",
+      "municipality": "Delfin Albano",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|dinapigue": {
+      "province": "Isabela",
+      "municipality": "Dinapigue",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "plant_2",
+              "06_15_CAL": "vegat_2",
+              "06_30_CAL": "vegpi_2",
+              "07_15_CAL": "repro_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "mat_2",
+              "08_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|divilacan": {
+      "province": "Isabela",
+      "municipality": "Divilacan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|echague": {
+      "province": "Isabela",
+      "municipality": "Echague",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|gamu": {
+      "province": "Isabela",
+      "municipality": "Gamu",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "vegat_1",
+              "12_30_CAL": "vegpi_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "plant_2",
+              "06_15_CAL": "vegat_2",
+              "06_30_CAL": "vegpi_2",
+              "07_15_CAL": "repro_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "mat_2",
+              "08_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|ilagan": {
+      "province": "Isabela",
+      "municipality": "Ilagan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|jones": {
+      "province": "Isabela",
+      "municipality": "Jones",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|luna": {
+      "province": "Isabela",
+      "municipality": "Luna",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|maconacon": {
+      "province": "Isabela",
+      "municipality": "Maconacon",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|mallig": {
+      "province": "Isabela",
+      "municipality": "Mallig",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|naguilian": {
+      "province": "Isabela",
+      "municipality": "Naguilian",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "vegat_1",
+              "12_30_CAL": "vegpi_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|palanan": {
+      "province": "Isabela",
+      "municipality": "Palanan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "02_15_CAL": "prep_1",
+              "02_30_CAL": "seed_1",
+              "03_15_CAL": "plant_1",
+              "03_30_CAL": "vegat_1",
+              "04_15_CAL": "vegpi_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "repro_1",
+              "05_30_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_15_CAL": "prep_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "plant_2",
+              "07_30_CAL": "vegat_2",
+              "08_15_CAL": "vegpi_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|quezon": {
+      "province": "Isabela",
+      "municipality": "Quezon",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|quirino": {
+      "province": "Isabela",
+      "municipality": "Quirino",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "seed_2",
+              "06_15_CAL": "vegleaf_2",
+              "06_30_CAL": "vegleaf_2",
+              "07_15_CAL": "vegtass_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "mat_2",
+              "09_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|ramon": {
+      "province": "Isabela",
+      "municipality": "Ramon",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|reinamercedes": {
+      "province": "Isabela",
+      "municipality": "Reina Mercedes",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_15_CAL": "prep_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "plant_2",
+              "08_30_CAL": "vegat_2",
+              "09_15_CAL": "vegpi_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|roxas": {
+      "province": "Isabela",
+      "municipality": "Roxas",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|sanagustin": {
+      "province": "Isabela",
+      "municipality": "San Agustin",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|sanguillermo": {
+      "province": "Isabela",
+      "municipality": "San Guillermo",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|sanisidro": {
+      "province": "Isabela",
+      "municipality": "San Isidro",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|sanmanuel": {
+      "province": "Isabela",
+      "municipality": "San Manuel",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|sanmariano": {
+      "province": "Isabela",
+      "municipality": "San Mariano",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_15_CAL": "prep_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "plant_2",
+              "08_30_CAL": "vegat_2",
+              "09_15_CAL": "vegpi_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|sanmateo": {
+      "province": "Isabela",
+      "municipality": "San Mateo",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "vegat_1",
+              "12_30_CAL": "vegpi_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|sanpablo": {
+      "province": "Isabela",
+      "municipality": "San Pablo",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|santamaria": {
+      "province": "Isabela",
+      "municipality": "Santa Maria",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "vegat_1",
+              "12_30_CAL": "vegpi_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|santiago": {
+      "province": "Isabela",
+      "municipality": "Santiago City",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|santotomas": {
+      "province": "Isabela",
+      "municipality": "Santo Tomas",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_15_CAL": "prep_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "plant_2",
+              "08_30_CAL": "vegat_2",
+              "09_15_CAL": "vegpi_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela|tumauini": {
+      "province": "Isabela",
+      "municipality": "Tumauini",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|alfonsocastaneda": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Alfonso Castaneda",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_15_CAL": "prep_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "plant_2",
+              "08_30_CAL": "vegat_2",
+              "09_15_CAL": "vegpi_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|ambaguio": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Ambaguio",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_30_CAL": "prep_1",
+              "02_15_CAL": "seed_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "vegat_1",
+              "03_30_CAL": "vegpi_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|aritao": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Aritao",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|bagabag": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Bagabag",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "mat_1",
+              "09_30_CAL": "prep_1",
+              "10_15_CAL": "seed_1",
+              "10_30_CAL": "plant_1",
+              "11_15_CAL": "vegat_1",
+              "11_30_CAL": "vegpi_1",
+              "12_15_CAL": "repro_1",
+              "12_30_CAL": "repro_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "03_30_CAL": "prep_2",
+              "04_15_CAL": "seed_2",
+              "04_30_CAL": "plant_2",
+              "05_15_CAL": "vegat_2",
+              "05_30_CAL": "vegpi_2",
+              "06_15_CAL": "repro_2",
+              "06_30_CAL": "repro_2",
+              "07_15_CAL": "mat_2",
+              "07_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|bambang": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Bambang",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|bayombong": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Bayombong",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "plant_2",
+              "06_15_CAL": "vegat_2",
+              "06_30_CAL": "vegpi_2",
+              "07_15_CAL": "repro_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "mat_2",
+              "08_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|diadi": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Diadi",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|dupaxdelnorte": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Dupax Del Norte",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|dupaxdelsur": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Dupax Del Sur",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|kasibu": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Kasibu",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_30_CAL": "prep_1",
+              "02_15_CAL": "seed_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "vegat_1",
+              "03_30_CAL": "vegpi_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|kayapa": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Kayapa",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "02_30_CAL": "prep_1",
+              "03_15_CAL": "seed_1",
+              "03_30_CAL": "plant_1",
+              "04_15_CAL": "vegat_1",
+              "04_30_CAL": "vegpi_1",
+              "05_15_CAL": "repro_1",
+              "05_30_CAL": "repro_1",
+              "06_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|quezon": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Quezon",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|santafe": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Santa Fe",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_30_CAL": "prep_1",
+              "02_15_CAL": "seed_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "vegat_1",
+              "03_30_CAL": "vegpi_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|solano": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Solano",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "plant_2",
+              "06_15_CAL": "vegat_2",
+              "06_30_CAL": "vegpi_2",
+              "07_15_CAL": "repro_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "mat_2",
+              "08_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "09_30_CAL": "prep_1",
+              "10_15_CAL": "seed_1",
+              "10_30_CAL": "seed_1",
+              "11_15_CAL": "vegleaf_1",
+              "11_30_CAL": "vegleaf_1",
+              "12_15_CAL": "vegtass_1",
+              "12_30_CAL": "vegtass_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "seed_2",
+              "06_15_CAL": "vegleaf_2",
+              "06_30_CAL": "vegleaf_2",
+              "07_15_CAL": "vegtass_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "mat_2",
+              "09_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya|villaverde": {
+      "province": "Nueva Vizcaya",
+      "municipality": "Villaverde",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "vegat_1",
+              "12_30_CAL": "vegpi_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "03_30_CAL": "prep_2",
+              "04_15_CAL": "seed_2",
+              "04_30_CAL": "plant_2",
+              "05_15_CAL": "vegat_2",
+              "05_30_CAL": "vegpi_2",
+              "06_15_CAL": "repro_2",
+              "06_30_CAL": "repro_2",
+              "07_15_CAL": "mat_2",
+              "07_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "seed_2",
+              "06_15_CAL": "vegleaf_2",
+              "06_30_CAL": "vegleaf_2",
+              "07_15_CAL": "vegtass_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "mat_2",
+              "09_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "quirino|aglipay": {
+      "province": "Quirino",
+      "municipality": "Aglipay",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "vegat_2",
+              "09_30_CAL": "vegpi_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "quirino|cabarroguis": {
+      "province": "Quirino",
+      "municipality": "Cabarroguis",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "vegat_2",
+              "08_30_CAL": "vegpi_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "quirino|diffun": {
+      "province": "Quirino",
+      "municipality": "Diffun",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "quirino|maddela": {
+      "province": "Quirino",
+      "municipality": "Maddela",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "vegat_1",
+              "02_30_CAL": "vegpi_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "quirino|nagtipunan": {
+      "province": "Quirino",
+      "municipality": "Nagtipunan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "vegat_1",
+              "12_30_CAL": "vegpi_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "03_30_CAL": "prep_2",
+              "04_15_CAL": "seed_2",
+              "04_30_CAL": "plant_2",
+              "05_15_CAL": "vegat_2",
+              "05_30_CAL": "vegpi_2",
+              "06_15_CAL": "repro_2",
+              "06_30_CAL": "repro_2",
+              "07_15_CAL": "mat_2",
+              "07_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "quirino|saguday": {
+      "province": "Quirino",
+      "municipality": "Saguday",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegat_1",
+              "01_30_CAL": "vegpi_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "vegat_2",
+              "07_30_CAL": "vegpi_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "mat_2",
+              "09_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "batanes|basco": {
+      "province": "Batanes",
+      "municipality": "Basco",
+      "crops": {
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "batanes|ivana": {
+      "province": "Batanes",
+      "municipality": "Ivana",
+      "crops": {
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          }
+        ]
+      }
+    },
+    "batanes|mahatao": {
+      "province": "Batanes",
+      "municipality": "Mahatao",
+      "crops": {
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          }
+        ]
+      }
+    },
+    "batanes|uyugan": {
+      "province": "Batanes",
+      "municipality": "Uyugan",
+      "crops": {
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "province_reference": {
+    "batanes": {
+      "province": "Batanes",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "plant_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "plant_1",
+              "02_30_CAL": "plant_1",
+              "03_15_CAL": "veg_1",
+              "03_30_CAL": "veg_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "05_30_CAL": "mat_1",
+              "12_15_CAL": "prep_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "plant_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "veg_2",
+              "08_30_CAL": "veg_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2",
+              "11_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "cagayan": {
+      "province": "Cagayan",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "plant_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "veg_1",
+              "02_30_CAL": "veg_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "04_30_CAL": "mat_1",
+              "11_15_CAL": "prep_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "plant_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_15_CAL": "prep_2",
+              "05_30_CAL": "seed_2",
+              "06_15_CAL": "plant_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "plant_2",
+              "07_30_CAL": "veg_2",
+              "08_15_CAL": "veg_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "isabela": {
+      "province": "Isabela",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "plant_1",
+              "01_30_CAL": "plant_1",
+              "02_15_CAL": "veg_1",
+              "02_30_CAL": "veg_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "04_30_CAL": "mat_1",
+              "11_15_CAL": "prep_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_15_CAL": "prep_2",
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "plant_2",
+              "07_15_CAL": "plant_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "veg_2",
+              "08_30_CAL": "veg_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "mat_2",
+              "10_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegleaf_1",
+              "01_30_CAL": "vegleaf_1",
+              "02_15_CAL": "vegtass_1",
+              "02_30_CAL": "vegtass_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "repro_1",
+              "04_15_CAL": "mat_1",
+              "11_30_CAL": "prep_1",
+              "12_15_CAL": "seed_1",
+              "12_30_CAL": "seed_1"
+            }
+          },
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "seed_2",
+              "06_15_CAL": "vegleaf_2",
+              "06_30_CAL": "vegleaf_2",
+              "07_15_CAL": "vegtass_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "mat_2",
+              "09_15_CAL": "mat_2"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "nuevavizcaya": {
+      "province": "Nueva Vizcaya",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "plant_1",
+              "01_30_CAL": "veg_1",
+              "02_15_CAL": "veg_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "mat_1",
+              "04_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "plant_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "07_30_CAL": "prep_2",
+              "08_15_CAL": "seed_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "plant_2",
+              "09_30_CAL": "plant_2",
+              "10_15_CAL": "veg_2",
+              "10_30_CAL": "veg_2",
+              "11_15_CAL": "repro_2",
+              "11_30_CAL": "repro_2",
+              "12_15_CAL": "mat_2",
+              "12_30_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "repro_1",
+              "01_30_CAL": "repro_1",
+              "02_15_CAL": "mat_1",
+              "09_30_CAL": "prep_1",
+              "10_15_CAL": "seed_1",
+              "10_30_CAL": "seed_1",
+              "11_15_CAL": "vegleaf_1",
+              "11_30_CAL": "vegleaf_1",
+              "12_15_CAL": "vegtass_1",
+              "12_30_CAL": "vegtass_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "04_30_CAL": "prep_2",
+              "05_15_CAL": "seed_2",
+              "05_30_CAL": "seed_2",
+              "06_15_CAL": "vegleaf_2",
+              "06_30_CAL": "vegleaf_2",
+              "07_15_CAL": "vegtass_2",
+              "07_30_CAL": "repro_2",
+              "08_15_CAL": "repro_2",
+              "08_30_CAL": "mat_2",
+              "09_15_CAL": "mat_2"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "seed_2",
+              "08_15_CAL": "vegleaf_2",
+              "08_30_CAL": "vegleaf_2",
+              "09_15_CAL": "vegtass_2",
+              "09_30_CAL": "repro_2",
+              "10_15_CAL": "repro_2",
+              "10_30_CAL": "mat_2",
+              "11_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    },
+    "quirino": {
+      "province": "Quirino",
+      "crops": {
+        "rice": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "plant_1",
+              "01_30_CAL": "veg_1",
+              "02_15_CAL": "veg_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "repro_1",
+              "03_30_CAL": "mat_1",
+              "04_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "plant_1",
+              "12_15_CAL": "plant_1",
+              "12_30_CAL": "plant_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "06_30_CAL": "prep_2",
+              "07_15_CAL": "seed_2",
+              "07_30_CAL": "plant_2",
+              "08_15_CAL": "plant_2",
+              "08_30_CAL": "plant_2",
+              "09_15_CAL": "plant_2",
+              "09_30_CAL": "veg_2",
+              "10_15_CAL": "veg_2",
+              "10_30_CAL": "repro_2",
+              "11_15_CAL": "repro_2",
+              "11_30_CAL": "mat_2",
+              "12_15_CAL": "mat_2"
+            }
+          }
+        ],
+        "corn": [
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "seed_1",
+              "01_30_CAL": "seed_1",
+              "02_15_CAL": "vegleaf_1",
+              "02_30_CAL": "vegleaf_1",
+              "03_15_CAL": "vegtass_1",
+              "03_30_CAL": "vegtass_1",
+              "04_15_CAL": "repro_1",
+              "04_30_CAL": "repro_1",
+              "05_15_CAL": "mat_1",
+              "12_30_CAL": "prep_1"
+            }
+          },
+          {
+            "season": 1,
+            "periods": {
+              "01_15_CAL": "vegtass_1",
+              "01_30_CAL": "vegtass_1",
+              "02_15_CAL": "repro_1",
+              "02_30_CAL": "repro_1",
+              "03_15_CAL": "mat_1",
+              "10_30_CAL": "prep_1",
+              "11_15_CAL": "seed_1",
+              "11_30_CAL": "seed_1",
+              "12_15_CAL": "vegleaf_1",
+              "12_30_CAL": "vegleaf_1"
+            }
+          },
+          {
+            "season": 2,
+            "periods": {
+              "05_30_CAL": "prep_2",
+              "06_15_CAL": "seed_2",
+              "06_30_CAL": "seed_2",
+              "07_15_CAL": "vegleaf_2",
+              "07_30_CAL": "vegleaf_2",
+              "08_15_CAL": "vegtass_2",
+              "08_30_CAL": "repro_2",
+              "09_15_CAL": "repro_2",
+              "09_30_CAL": "mat_2",
+              "10_15_CAL": "mat_2"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

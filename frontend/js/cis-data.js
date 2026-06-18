@@ -16,6 +16,8 @@ const CISData = (() => {
     regionalBulletin:'../data/advisories/daily/regional_bulletin_latest.txt',
     pipelineStatus:'../data/pipeline_status.json',
     pagasaData:    '../data/raw/pagasa/pagasa_current.json',
+    acapData:      '../data/raw/acap/acap_current.json',
+    acapCropCalendars:'../data/reference/acap_cropping_calendars.json',
     geojson: {
       rainfall_24h:     '../data/geospatial/rainfall_24h.geojson',
       drought_watch:    '../data/geospatial/drought_watch.geojson',
@@ -35,6 +37,8 @@ const CISData = (() => {
   let _indicators = null;
   let _advisories = null;
   let _pagasaData = null;
+  let _acapData = null;
+  let _acapCropCalendars = null;
   let _pipelineStatus = null;
   let _municipalities = null; // Loaded from municipalities.json
 
@@ -46,11 +50,13 @@ const CISData = (() => {
    */
   async function loadAll() {
     try {
-      const [indicatorsResult, advisoriesResult, statusResult, pagasaResult] = await Promise.allSettled([
+      const [indicatorsResult, advisoriesResult, statusResult, pagasaResult, acapResult, acapCalendarResult] = await Promise.allSettled([
         fetchJSON(PATHS.indicators),
         fetchJSON(PATHS.advisories),
         fetchJSON(PATHS.pipelineStatus),
         fetchJSON(PATHS.pagasaData),
+        fetchJSON(PATHS.acapData),
+        fetchJSON(PATHS.acapCropCalendars),
       ]);
 
       if (indicatorsResult.status !== 'fulfilled') throw indicatorsResult.reason;
@@ -58,13 +64,17 @@ const CISData = (() => {
       const advisories = advisoriesResult.status === 'fulfilled' ? advisoriesResult.value : null;
       const status = statusResult.status === 'fulfilled' ? statusResult.value : null;
       const pagasaData = pagasaResult.status === 'fulfilled' ? pagasaResult.value : null;
+      const acapData = acapResult.status === 'fulfilled' ? acapResult.value : null;
+      const acapCropCalendars = acapCalendarResult.status === 'fulfilled' ? acapCalendarResult.value : null;
 
       _indicators = indicators;
       _advisories = advisories;
       _pagasaData = pagasaData;
+      _acapData = acapData;
+      _acapCropCalendars = acapCropCalendars;
       _pipelineStatus = status;
 
-      return { indicators, advisories, status, pagasaData };
+      return { indicators, advisories, status, pagasaData, acapData, acapCropCalendars };
     } catch (err) {
       console.warn('CISData.loadAll using demo fallback:', err);
       // Return demo/sample data so the UI doesn't stay blank during dev
@@ -223,6 +233,14 @@ const CISData = (() => {
 
   function getPAGASAData() {
     return _pagasaData;
+  }
+
+  function getACAPData() {
+    return _acapData;
+  }
+
+  function getACAPCropCalendars() {
+    return _acapCropCalendars;
   }
 
   /**
@@ -388,7 +406,7 @@ const CISData = (() => {
     loadAll, getGeoJSON, getRegionalBulletin, getMunicipalRows, getAdvisoryForMunicipality,
     getActiveAdvisories, getIndicatorByPSGC, getSummaryStats,
     getPriorityMunicipalities, getProvinceSummary, getPipelineStatus,
-    getPAGASAData, setProvince,
+    getPAGASAData, getACAPData, getACAPCropCalendars, setProvince,
     fmt: { formatRainfall, formatTemp, formatPercent,
            severityPill, droughtPill, heatPill, workabilityPill, riskScoreBadge }
   };

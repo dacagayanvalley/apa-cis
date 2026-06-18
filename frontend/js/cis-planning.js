@@ -292,11 +292,7 @@ const CISMunicipal = (() => {
 
       </div>
 
-      <!-- Crop Calendar -->
-      <div class="mprofile-card" style="margin-top:14px">
-        <div class="mc-header">📅 Cagayan Valley Crop Calendar Reference</div>
-        <div class="mc-body">${_renderCropCalendar()}</div>
-      </div>
+      ${_renderCropCalendarComparison(ind)}
 
       <!-- Recommended Adaptations -->
       <div class="mprofile-card" style="margin-top:14px">
@@ -372,9 +368,9 @@ const CISMunicipal = (() => {
 
   function _sourceSummary(obs) {
     const source = obs.rainfall_source || 'nasa_power';
-    if (source === 'apa_cis') return `APA CIS (${obs.apa_cis_record_date || 'current'})`;
-    if (source === 'chirps') return `CHIRPS (${obs.chirps_record_date || 'latest'})`;
-    return 'NASA POWER fallback';
+    if (source === 'apa_cis') return `Adapting Philippine Agriculture to Climate Change Climate Information Service (APA-CIS) (${obs.apa_cis_record_date || 'current'})`;
+    if (source === 'chirps') return `Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) (${obs.chirps_record_date || 'latest'})`;
+    return 'National Aeronautics and Space Administration POWER (NASA POWER) fallback';
   }
 
   function _escapeInline(str) {
@@ -395,6 +391,173 @@ const CISMunicipal = (() => {
         <span class="${status === 'safe' ? 'ops-safe' : 'ops-defer'}">${status === 'safe' ? '✅ Safe' : '⛔ Defer'}</span>
       </div>
     `).join('');
+  }
+
+  function _renderCropCalendarComparison(ind) {
+    const calendars = _getACAPCalendars(ind);
+    return `
+      <div class="crop-calendar-compare" style="margin-top:14px">
+        <div class="mprofile-card">
+          <div class="mc-header">Cagayan Valley Crop Calendar Reference</div>
+          <div class="mc-body">
+            ${_renderACAPCalendarSet(calendars.reference)}
+            <div class="calendar-note">${_escapeInline(calendars.referenceNote)}</div>
+          </div>
+        </div>
+        <div class="mprofile-card">
+          <div class="mc-header">Municipal Cropping Calendar - ${_escapeInline(ind.municipality)}</div>
+          <div class="mc-body">
+            ${calendars.municipal ? _renderACAPCalendarSet(calendars.municipal) : _renderNoACAPCalendar()}
+            <div class="calendar-note">${_escapeInline(calendars.municipalNote)}</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function _getACAPCalendars(ind) {
+    const data = CISData.getACAPCropCalendars?.();
+    if (!data) {
+      return {
+        reference: null,
+        municipal: null,
+        referenceNote: 'ACAP crop-calendar reference data is not loaded.',
+        municipalNote: 'ACAP municipal crop-calendar data is not loaded.'
+      };
+    }
+
+    const provinceKey = _municipalityKey(ind.province);
+    const municipalKey = `${provinceKey}|${_municipalityKey(ind.municipality)}`;
+    const reference = data.province_reference?.[provinceKey] || null;
+    const municipal = data.municipalities?.[municipalKey] || null;
+    const sourceCount = Object.keys(data.municipalities || {}).length;
+
+    return {
+      reference,
+      municipal,
+      referenceNote: reference
+        ? `ACAP provincial reference for ${reference.province}; rice and corn seasons are shown by half-month period.`
+        : `No ACAP provincial reference calendar loaded for ${ind.province}.`,
+      municipalNote: municipal
+        ? `ACAP municipal crop calendar for ${municipal.municipality}, ${municipal.province}; ${sourceCount} municipalities loaded from the rice and corn workbooks.`
+        : `No ACAP municipal rice/corn crop calendar row loaded for ${ind.municipality}, ${ind.province}; ${sourceCount} municipalities are available in the workbook extract.`
+    };
+  }
+
+  function _municipalityKey(value) {
+    return String(value || '')
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/^city of\s+/, '')
+      .replace(/\s+city$/, '')
+      .replace(/[^a-z0-9]/g, '');
+  }
+
+  function _renderNoACAPCalendar() {
+    return `
+      <div class="calendar-empty">
+        <strong>Municipal ACAP crop calendar not available for this selection.</strong>
+        <span>The regional rice and corn reference remains visible beside this panel for planning comparison.</span>
+      </div>
+    `;
+  }
+
+  function _renderACAPCalendarSet(calendar) {
+    if (!calendar) return _renderNoACAPCalendar();
+    const data = CISData.getACAPCropCalendars?.();
+    const periods = data?.periods || [];
+    const stages = data?.stage_labels || {};
+    const cropOrder = [
+      ['rice', 'Rice'],
+      ['corn', 'Corn'],
+    ];
+
+    return `
+      <div class="acap-calendar">
+        ${_renderACAPPeriodHeader(periods)}
+        ${cropOrder.map(([cropKey, cropLabel]) =>
+          _renderACAPCropRows(cropLabel, calendar.crops?.[cropKey] || [], periods, stages)
+        ).join('')}
+        ${_renderACAPStageLegend(stages)}
+      </div>
+    `;
+  }
+
+  function _renderACAPPeriodHeader(periods) {
+    return `
+      <div class="acap-cal-row acap-cal-head">
+        <div class="acap-cal-label"></div>
+        <div class="acap-cal-slots">
+          ${periods.map(period => `
+            <div class="acap-cal-month" title="${_escapeInline(period.label)}">
+              ${period.key.includes('_15_') ? _escapeInline(period.month) : ''}
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  function _renderACAPCropRows(cropLabel, entries, periods, stages) {
+    if (!entries.length) {
+      return `
+        <div class="acap-cal-row">
+          <div class="acap-cal-label">${cropLabel}</div>
+          <div class="acap-cal-empty-row">No ${cropLabel.toLowerCase()} season row</div>
+        </div>
+      `;
+    }
+
+    return entries.map(entry => `
+      <div class="acap-cal-row">
+        <div class="acap-cal-label">${cropLabel} S${entry.season || '-'}</div>
+        <div class="acap-cal-slots">
+          ${periods.map(period => {
+            const rawStage = entry.periods?.[period.key] || '';
+            const stage = _stageCode(rawStage);
+            const label = stage ? (stages[stage] || _titleCase(stage)) : '';
+            return `
+              <div class="acap-cal-slot stage-${stage || 'none'}"
+                   title="${_escapeInline(period.label)}${label ? ': ' + _escapeInline(label) : ''}">
+                ${stage ? _stageInitial(stage) : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function _renderACAPStageLegend(stages) {
+    const legendItems = ['prep', 'seed', 'plant', 'veg', 'vegat', 'vegpi', 'vegleaf', 'vegtass', 'repro', 'mat'];
+    return `
+      <div class="acap-cal-legend">
+        ${legendItems.map(stage => `
+          <span><i class="stage-${stage}"></i>${_escapeInline(stages[stage] || _titleCase(stage))}</span>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  function _stageCode(rawStage) {
+    return String(rawStage || '').replace(/_\d+$/, '');
+  }
+
+  function _stageInitial(stage) {
+    const map = {
+      prep: 'P',
+      seed: 'S',
+      plant: 'N',
+      veg: 'V',
+      vegat: 'V',
+      vegpi: 'PI',
+      vegleaf: 'V',
+      vegtass: 'T',
+      repro: 'R',
+      mat: 'M',
+    };
+    return map[stage] || stage.slice(0, 1).toUpperCase();
   }
 
   function _renderCropCalendar() {
