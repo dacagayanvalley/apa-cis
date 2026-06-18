@@ -6,9 +6,15 @@ Issued by: DA-RFO2 APA
 ============================================================
 
 SITUATION OVERVIEW:
+<<<<<<< HEAD
   Active advisories: 90 municipalities
   Danger alerts: 53
   Warnings: 36
+=======
+  Active advisories: 92 municipalities
+  Danger alerts: 6
+  Warnings: 81
+>>>>>>> 280426b95c2a92d98e37aa98efa1b9fc908f9898
   Confidence: high 0, medium 92, low 0
 
 SOURCE TIMESTAMPS AND QA:
@@ -27,12 +33,18 @@ PAGASA / ACAP / CIS SUMMARY:
 
 PROVINCIAL STATUS:
   Batanes: 6 municipalities with advisories (highest: WARNING)
+<<<<<<< HEAD
   Cagayan: 29 municipalities with advisories (highest: DANGER)
   Isabela: 35 municipalities with advisories (highest: DANGER)
+=======
+  Cagayan: 29 municipalities with advisories (highest: WARNING)
+  Isabela: 37 municipalities with advisories (highest: WARNING)
+>>>>>>> 280426b95c2a92d98e37aa98efa1b9fc908f9898
   Nueva Vizcaya: 14 municipalities with advisories (highest: WARNING)
   Quirino: 6 municipalities with advisories (highest: DANGER)
 
 PRIORITY MUNICIPALITIES FOR IMMEDIATE ACTION:
+<<<<<<< HEAD
   1. Allacapan, Cagayan [DANGER, confidence: medium] - Dangerous Heat — WBGT Critical
   2. Piat, Cagayan [DANGER, confidence: medium] - Dangerous Heat — WBGT Critical
   3. Rizal, Cagayan [DANGER, confidence: medium] - Dangerous Heat — WBGT Critical
@@ -43,6 +55,18 @@ PRIORITY MUNICIPALITIES FOR IMMEDIATE ACTION:
   8. Ramon, Isabela [DANGER, confidence: medium] - Dangerous Heat — WBGT Critical
   9. Baggao, Cagayan [DANGER, confidence: medium] - Dangerous Heat — WBGT Critical
   10. Lasam, Cagayan [DANGER, confidence: medium] - Dangerous Heat — WBGT Critical
+=======
+  1. Ramon, Isabela [DANGER, confidence: medium] - Dangerous Heat â€” WBGT Critical
+  2. Saguday, Quirino [DANGER, confidence: medium] - Dangerous Heat â€” WBGT Critical
+  3. Diffun, Quirino [DANGER, confidence: medium] - Dangerous Heat â€” WBGT Critical
+  4. Santiago City, Isabela [DANGER, confidence: medium] - Dangerous Heat â€” WBGT Critical
+  5. Jones, Isabela [DANGER, confidence: medium] - Dangerous Heat â€” WBGT Critical
+  6. Echague, Isabela [DANGER, confidence: medium] - Dangerous Heat â€” WBGT Critical
+  7. Allacapan, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  8. Pamplona, Cagayan [WARNING, confidence: medium] - High Irrigation Demand
+  9. Piat, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  10. Rizal, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+>>>>>>> 280426b95c2a92d98e37aa98efa1b9fc908f9898
 
 ACTION TIERS:
   Farmers: Follow the municipal advisory SMS/action text; adjust field work, irrigation, spraying, harvest, and drying based on local MAO guidance.
