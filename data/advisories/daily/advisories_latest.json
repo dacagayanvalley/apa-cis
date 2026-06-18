@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-06-17T23:48:53.241307",
+    "generated_at": "2026-06-18T01:16:48.994803",
     "advisory_date": "2026-06-18",
     "total_municipalities": 92,
-    "municipalities_with_advisories": 88,
+    "municipalities_with_advisories": 92,
     "danger_count": 6,
-    "warning_count": 67
+    "warning_count": 81
   },
   "advisories": {
     "023101000": {
@@ -36,7 +36,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - City of Tuguegarao: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - City of Tuguegarao: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in City of Tuguegarao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - City of Tuguegarao\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - City of Tuguegarao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -361,7 +361,7 @@
     "023104000": {
       "municipality": "Allacapan",
       "province": "Cagayan",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -390,6 +390,36 @@
             "sms": "DA WARNING: Drying risk in Allacapan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Allacapan\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Allacapan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Allacapan: Estimated irrigation demand is 3.75 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Allacapan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Allacapan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Allacapan: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -738,9 +768,39 @@
     "023107000": {
       "municipality": "Baggao",
       "province": "Cagayan",
-      "advisory_count": 3,
+      "advisory_count": 4,
       "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Baggao: Estimated irrigation demand is 3.2 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Baggao. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Baggao\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Baggao: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "HEAT_HIGH",
           "rule_name": "High Heat Stress — Restrict Fieldwork",
@@ -820,7 +880,7 @@
         }
       ],
       "decision_support": {
-        "hazard": "High Heat Stress — Restrict Fieldwork",
+        "hazard": "High Irrigation Demand",
         "severity": "warning",
         "confidence": "medium",
         "source_age": {
@@ -851,10 +911,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA ADVISORY: High heat in Baggao. Avoid farm work 10AM-2PM. Stay hydrated.",
-        "lgu_da_action": "HEAT STRESS ADVISORY — Baggao\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-        "public_advisory": "☀️ HEAT ADVISORY — Baggao: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress",
-        "sms_ready": "DA ADVISORY: High heat in Baggao. Avoid farm work 10AM-2PM. Stay hydrated.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Baggao. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Baggao\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Baggao: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Baggao. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -1060,9 +1120,39 @@
     "023110000": {
       "municipality": "Calayan",
       "province": "Cagayan",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Calayan: Estimated irrigation demand is 2.76 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Calayan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Calayan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Calayan: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -1093,8 +1183,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -1124,10 +1214,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Calayan. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Calayan\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Calayan: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Calayan. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Calayan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Calayan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Calayan: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Calayan. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -1234,9 +1324,39 @@
     "023112000": {
       "municipality": "Claveria",
       "province": "Cagayan",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Claveria: Estimated irrigation demand is 2.19 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Claveria. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Claveria\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Claveria: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -1267,8 +1387,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -1298,10 +1418,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Claveria. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Claveria\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Claveria: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Claveria. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Claveria. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Claveria\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Claveria: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Claveria. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -1833,9 +1953,39 @@
     "023118000": {
       "municipality": "Lasam",
       "province": "Cagayan",
-      "advisory_count": 2,
+      "advisory_count": 3,
       "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Lasam: Estimated irrigation demand is 4.49 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Lasam. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Lasam\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Lasam: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "HEAT_HIGH",
           "rule_name": "High Heat Stress — Restrict Fieldwork",
@@ -1890,7 +2040,7 @@
         }
       ],
       "decision_support": {
-        "hazard": "High Heat Stress — Restrict Fieldwork",
+        "hazard": "High Irrigation Demand",
         "severity": "warning",
         "confidence": "medium",
         "source_age": {
@@ -1921,10 +2071,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA ADVISORY: High heat in Lasam. Avoid farm work 10AM-2PM. Stay hydrated.",
-        "lgu_da_action": "HEAT STRESS ADVISORY — Lasam\nHigh heat conditions: schedule farm work early morning or late afternoon.",
-        "public_advisory": "☀️ HEAT ADVISORY — Lasam: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress",
-        "sms_ready": "DA ADVISORY: High heat in Lasam. Avoid farm work 10AM-2PM. Stay hydrated.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Lasam. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Lasam\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Lasam: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Lasam. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -1936,31 +2086,33 @@
       "highest_severity": "warning",
       "advisories": [
         {
-          "rule_id": "POSTHARVEST_DRYING_RISK",
-          "rule_name": "Postharvest Drying Risk",
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
           "severity": "warning",
           "affected_crops": [
             "rice_irrigated",
             "rice_rainfed",
             "corn_yellow",
-            "corn_white"
+            "hvcc"
           ],
           "affected_stages": [
-            "harvesting",
-            "postharvest"
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
           ],
-          "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
+          "responsible_office": "MAO + NIA + Irrigators Associations",
           "adaptation_measures": [
-            "Use mechanical dryers, covered drying floors, tarpaulins, and ventilated temporary storage.",
-            "Prioritize hauling of wet palay/corn to postharvest facilities to avoid quality losses.",
-            "Monitor grain moisture before storage and milling."
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Pamplona: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
-            "sms": "DA WARNING: Drying risk in Pamplona. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-            "lgu": "POSTHARVEST ADVISORY - Pamplona\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-            "facebook": "POSTHARVEST ADVISORY - Pamplona: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+            "bulletin": "IRRIGATION PRIORITY - Pamplona: Estimated irrigation demand is 2.58 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Pamplona. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Pamplona\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Pamplona: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -2069,7 +2221,7 @@
         }
       ],
       "decision_support": {
-        "hazard": "Postharvest Drying Risk",
+        "hazard": "High Irrigation Demand",
         "severity": "warning",
         "confidence": "medium",
         "source_age": {
@@ -2100,10 +2252,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WARNING: Drying risk in Pamplona. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-        "lgu_da_action": "POSTHARVEST ADVISORY - Pamplona\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-        "public_advisory": "POSTHARVEST ADVISORY - Pamplona: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
-        "sms_ready": "DA WARNING: Drying risk in Pamplona. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Pamplona. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Pamplona\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Pamplona: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Pamplona. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -2211,7 +2363,7 @@
     "023121000": {
       "municipality": "Piat",
       "province": "Cagayan",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -2240,6 +2392,36 @@
             "sms": "DA WARNING: Drying risk in Piat. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Piat\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Piat: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Piat: Estimated irrigation demand is 2.81 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Piat. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Piat\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Piat: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -2390,7 +2572,7 @@
     "023122000": {
       "municipality": "Rizal",
       "province": "Cagayan",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -2419,6 +2601,36 @@
             "sms": "DA WARNING: Drying risk in Rizal. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Rizal\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Rizal: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Rizal: Estimated irrigation demand is 3.77 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Rizal. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Rizal\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Rizal: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -2569,9 +2781,39 @@
     "023123000": {
       "municipality": "Sanchez-Mira",
       "province": "Cagayan",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Sanchez-Mira: Estimated irrigation demand is 2.99 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Sanchez-Mira. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Sanchez-Mira\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Sanchez-Mira: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -2602,8 +2844,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -2633,10 +2875,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Sanchez-Mira. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Sanchez-Mira\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Sanchez-Mira: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Sanchez-Mira. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Sanchez-Mira. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Sanchez-Mira\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Sanchez-Mira: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Sanchez-Mira. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -2644,9 +2886,39 @@
     "023124000": {
       "municipality": "Santa Ana",
       "province": "Cagayan",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Santa Ana: Estimated irrigation demand is 5.14 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Santa Ana. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Santa Ana\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Santa Ana: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -2677,8 +2949,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -2708,10 +2980,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Santa Ana. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Santa Ana\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Santa Ana: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Santa Ana. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Santa Ana. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Santa Ana\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Santa Ana: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Santa Ana. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -4611,7 +4883,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Delfin Albano: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Delfin Albano: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Delfin Albano. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Delfin Albano\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Delfin Albano: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -4731,6 +5003,160 @@
         "lgu_da_action": "POSTHARVEST ADVISORY - Delfin Albano\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
         "public_advisory": "POSTHARVEST ADVISORY - Delfin Albano: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Delfin Albano. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
+        "valid_until": "2026-06-19"
+      }
+    },
+    "031412000": {
+      "municipality": "Dinapigue",
+      "province": "Isabela",
+      "advisory_count": 1,
+      "highest_severity": "warning",
+      "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Dinapigue: Estimated irrigation demand is 4.46 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Dinapigue. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Dinapigue\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Dinapigue: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        }
+      ],
+      "decision_support": {
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
+        "confidence": "medium",
+        "source_age": {
+          "weather_source": "APA CIS",
+          "rainfall_source": "APA CIS",
+          "rainfall_source_date": "2026-06-18",
+          "rainfall_age_days": 0,
+          "pagasa_source_date": "2026-06-18",
+          "pagasa_age_days": 0,
+          "acap_source_date": "2026-06-13T05:18:05.471Z",
+          "acap_age_days": 5
+        },
+        "source_qa_flags": [
+          "PAGASA context needs staff review before official dissemination."
+        ],
+        "official_pagasa_warning": {
+          "typhoon_active": false,
+          "typhoon_name": null,
+          "tcws_signal": 0,
+          "pagasa_source_date": "2026-06-18",
+          "review_status": "unreviewed"
+        },
+        "affected_crop_stage": {
+          "crop": "rice_rainfed",
+          "stage": "vegetative",
+          "risk_class": "minimal",
+          "risk_score": 0.2,
+          "acap_crop_calendar_available": false,
+          "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
+        },
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Dinapigue. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Dinapigue\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Dinapigue: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Dinapigue. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
+        "valid_until": "2026-06-19"
+      }
+    },
+    "031413000": {
+      "municipality": "Divilacan",
+      "province": "Isabela",
+      "advisory_count": 1,
+      "highest_severity": "warning",
+      "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Divilacan: Estimated irrigation demand is 4.71 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Divilacan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Divilacan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Divilacan: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        }
+      ],
+      "decision_support": {
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
+        "confidence": "medium",
+        "source_age": {
+          "weather_source": "APA CIS",
+          "rainfall_source": "APA CIS",
+          "rainfall_source_date": "2026-06-18",
+          "rainfall_age_days": 0,
+          "pagasa_source_date": "2026-06-18",
+          "pagasa_age_days": 0,
+          "acap_source_date": "2026-06-13T05:18:05.471Z",
+          "acap_age_days": 5
+        },
+        "source_qa_flags": [
+          "PAGASA context needs staff review before official dissemination."
+        ],
+        "official_pagasa_warning": {
+          "typhoon_active": false,
+          "typhoon_name": null,
+          "tcws_signal": 0,
+          "pagasa_source_date": "2026-06-18",
+          "review_status": "unreviewed"
+        },
+        "affected_crop_stage": {
+          "crop": "rice_rainfed",
+          "stage": "vegetative",
+          "risk_class": "minimal",
+          "risk_score": 0.2,
+          "acap_crop_calendar_available": false,
+          "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
+        },
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Divilacan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Divilacan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Divilacan: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Divilacan. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -5240,6 +5666,83 @@
         "valid_until": "2026-06-19"
       }
     },
+    "031418000": {
+      "municipality": "Maconacon",
+      "province": "Isabela",
+      "advisory_count": 1,
+      "highest_severity": "warning",
+      "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Maconacon: Estimated irrigation demand is 3.94 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Maconacon. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Maconacon\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Maconacon: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        }
+      ],
+      "decision_support": {
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
+        "confidence": "medium",
+        "source_age": {
+          "weather_source": "APA CIS",
+          "rainfall_source": "APA CIS",
+          "rainfall_source_date": "2026-06-18",
+          "rainfall_age_days": 0,
+          "pagasa_source_date": "2026-06-18",
+          "pagasa_age_days": 0,
+          "acap_source_date": "2026-06-13T05:18:05.471Z",
+          "acap_age_days": 5
+        },
+        "source_qa_flags": [
+          "PAGASA context needs staff review before official dissemination."
+        ],
+        "official_pagasa_warning": {
+          "typhoon_active": false,
+          "typhoon_name": null,
+          "tcws_signal": 0,
+          "pagasa_source_date": "2026-06-18",
+          "review_status": "unreviewed"
+        },
+        "affected_crop_stage": {
+          "crop": "rice_rainfed",
+          "stage": "vegetative",
+          "risk_class": "minimal",
+          "risk_score": 0.2,
+          "acap_crop_calendar_available": false,
+          "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
+        },
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Maconacon. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Maconacon\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Maconacon: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Maconacon. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
+        "valid_until": "2026-06-19"
+      }
+    },
     "031419000": {
       "municipality": "Mallig",
       "province": "Isabela",
@@ -5490,6 +5993,83 @@
         "lgu_da_action": "POSTHARVEST ADVISORY - Naguilian\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
         "public_advisory": "POSTHARVEST ADVISORY - Naguilian: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Naguilian. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
+        "valid_until": "2026-06-19"
+      }
+    },
+    "031421000": {
+      "municipality": "Palanan",
+      "province": "Isabela",
+      "advisory_count": 1,
+      "highest_severity": "warning",
+      "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Palanan: Estimated irrigation demand is 4.87 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Palanan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Palanan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Palanan: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        }
+      ],
+      "decision_support": {
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
+        "confidence": "medium",
+        "source_age": {
+          "weather_source": "APA CIS",
+          "rainfall_source": "APA CIS",
+          "rainfall_source_date": "2026-06-18",
+          "rainfall_age_days": 0,
+          "pagasa_source_date": "2026-06-18",
+          "pagasa_age_days": 0,
+          "acap_source_date": "2026-06-13T05:18:05.471Z",
+          "acap_age_days": 5
+        },
+        "source_qa_flags": [
+          "PAGASA context needs staff review before official dissemination."
+        ],
+        "official_pagasa_warning": {
+          "typhoon_active": false,
+          "typhoon_name": null,
+          "tcws_signal": 0,
+          "pagasa_source_date": "2026-06-18",
+          "review_status": "unreviewed"
+        },
+        "affected_crop_stage": {
+          "crop": "rice_rainfed",
+          "stage": "vegetative",
+          "risk_class": "minimal",
+          "risk_score": 0.2,
+          "acap_crop_calendar_available": false,
+          "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
+        },
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Palanan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Palanan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Palanan: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Palanan. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -6236,7 +6816,7 @@
     "031427000": {
       "municipality": "San Agustin",
       "province": "Isabela",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -6265,6 +6845,36 @@
             "sms": "DA WARNING: Drying risk in San Agustin. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - San Agustin\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - San Agustin: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - San Agustin: Estimated irrigation demand is 3.43 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in San Agustin. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - San Agustin\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - San Agustin: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -6415,7 +7025,7 @@
     "031428000": {
       "municipality": "San Guillermo",
       "province": "Isabela",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -6444,6 +7054,36 @@
             "sms": "DA WARNING: Drying risk in San Guillermo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - San Guillermo\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - San Guillermo: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - San Guillermo: Estimated irrigation demand is 3.54 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in San Guillermo. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - San Guillermo\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - San Guillermo: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -6718,37 +7358,9 @@
     "031430000": {
       "municipality": "San Manuel",
       "province": "Isabela",
-      "advisory_count": 3,
+      "advisory_count": 2,
       "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "POSTHARVEST_DRYING_RISK",
-          "rule_name": "Postharvest Drying Risk",
-          "severity": "warning",
-          "affected_crops": [
-            "rice_irrigated",
-            "rice_rainfed",
-            "corn_yellow",
-            "corn_white"
-          ],
-          "affected_stages": [
-            "harvesting",
-            "postharvest"
-          ],
-          "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
-          "adaptation_measures": [
-            "Use mechanical dryers, covered drying floors, tarpaulins, and ventilated temporary storage.",
-            "Prioritize hauling of wet palay/corn to postharvest facilities to avoid quality losses.",
-            "Monitor grain moisture before storage and milling."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - San Manuel: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
-            "sms": "DA WARNING: Drying risk in San Manuel. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-            "lgu": "POSTHARVEST ADVISORY - San Manuel\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-            "facebook": "POSTHARVEST ADVISORY - San Manuel: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
         {
           "rule_id": "HEAT_HIGH",
           "rule_name": "High Heat Stress — Restrict Fieldwork",
@@ -6803,7 +7415,7 @@
         }
       ],
       "decision_support": {
-        "hazard": "Postharvest Drying Risk",
+        "hazard": "High Heat Stress — Restrict Fieldwork",
         "severity": "warning",
         "confidence": "medium",
         "source_age": {
@@ -6834,10 +7446,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WARNING: Drying risk in San Manuel. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-        "lgu_da_action": "POSTHARVEST ADVISORY - San Manuel\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-        "public_advisory": "POSTHARVEST ADVISORY - San Manuel: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
-        "sms_ready": "DA WARNING: Drying risk in San Manuel. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "immediate_farmer_action": "DA ADVISORY: High heat in San Manuel. Avoid farm work 10AM-2PM. Stay hydrated.",
+        "lgu_da_action": "HEAT STRESS ADVISORY — San Manuel\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+        "public_advisory": "☀️ HEAT ADVISORY — San Manuel: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress",
+        "sms_ready": "DA ADVISORY: High heat in San Manuel. Avoid farm work 10AM-2PM. Stay hydrated.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -7227,7 +7839,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Santa Maria: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Santa Maria: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Santa Maria. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Santa Maria\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Santa Maria: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -7558,7 +8170,7 @@
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Santo Tomas: Drying class is unsuitable. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
+            "bulletin": "POSTHARVEST DRYING RISK - Santo Tomas: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
             "sms": "DA WARNING: Drying risk in Santo Tomas. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Santo Tomas\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Santo Tomas: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
@@ -7964,7 +8576,7 @@
     "035602000": {
       "municipality": "Ambaguio",
       "province": "Nueva Vizcaya",
-      "advisory_count": 4,
+      "advisory_count": 5,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -7993,6 +8605,36 @@
             "sms": "DA WARNING: Drying risk in Ambaguio. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Ambaguio\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Ambaguio: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Ambaguio: Estimated irrigation demand is 2.61 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Ambaguio. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Ambaguio\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Ambaguio: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -8787,37 +9429,9 @@
     "035607000": {
       "municipality": "Dupax del Norte",
       "province": "Nueva Vizcaya",
-      "advisory_count": 4,
-      "highest_severity": "warning",
+      "advisory_count": 3,
+      "highest_severity": "advisory",
       "advisories": [
-        {
-          "rule_id": "POSTHARVEST_DRYING_RISK",
-          "rule_name": "Postharvest Drying Risk",
-          "severity": "warning",
-          "affected_crops": [
-            "rice_irrigated",
-            "rice_rainfed",
-            "corn_yellow",
-            "corn_white"
-          ],
-          "affected_stages": [
-            "harvesting",
-            "postharvest"
-          ],
-          "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
-          "adaptation_measures": [
-            "Use mechanical dryers, covered drying floors, tarpaulins, and ventilated temporary storage.",
-            "Prioritize hauling of wet palay/corn to postharvest facilities to avoid quality losses.",
-            "Monitor grain moisture before storage and milling."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Dupax del Norte: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
-            "sms": "DA WARNING: Drying risk in Dupax del Norte. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-            "lgu": "POSTHARVEST ADVISORY - Dupax del Norte\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-            "facebook": "POSTHARVEST ADVISORY - Dupax del Norte: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -8900,8 +9514,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Postharvest Drying Risk",
-        "severity": "warning",
+        "hazard": "Wet Spell Disease Watch",
+        "severity": "advisory",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -8931,10 +9545,10 @@
           "acap_crop_calendar_available": true,
           "crop_calendar_decision_point": "ACAP crop calendar available; use local rice/corn crop stage as a primary advisory decision point."
         },
-        "immediate_farmer_action": "DA WARNING: Drying risk in Dupax del Norte. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-        "lgu_da_action": "POSTHARVEST ADVISORY - Dupax del Norte\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-        "public_advisory": "POSTHARVEST ADVISORY - Dupax del Norte: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
-        "sms_ready": "DA WARNING: Drying risk in Dupax del Norte. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "immediate_farmer_action": "DA WATCH: Wet/humid days in Dupax del Norte. Scout crops for disease; spray only in clear, low-wind weather.",
+        "lgu_da_action": "DISEASE WATCH - Dupax del Norte\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
+        "public_advisory": "DISEASE WATCH - Dupax del Norte: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
+        "sms_ready": "DA WATCH: Wet/humid days in Dupax del Norte. Scout crops for disease; spray only in clear, low-wind weather.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -8942,7 +9556,7 @@
     "035608000": {
       "municipality": "Dupax del Sur",
       "province": "Nueva Vizcaya",
-      "advisory_count": 4,
+      "advisory_count": 5,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -8971,6 +9585,36 @@
             "sms": "DA WARNING: Drying risk in Dupax del Sur. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Dupax del Sur\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Dupax del Sur: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Dupax del Sur: Estimated irrigation demand is 3.0 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Dupax del Sur. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Dupax del Sur\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Dupax del Sur: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -9101,31 +9745,33 @@
       "highest_severity": "warning",
       "advisories": [
         {
-          "rule_id": "POSTHARVEST_DRYING_RISK",
-          "rule_name": "Postharvest Drying Risk",
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
           "severity": "warning",
           "affected_crops": [
             "rice_irrigated",
             "rice_rainfed",
             "corn_yellow",
-            "corn_white"
+            "hvcc"
           ],
           "affected_stages": [
-            "harvesting",
-            "postharvest"
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
           ],
-          "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
+          "responsible_office": "MAO + NIA + Irrigators Associations",
           "adaptation_measures": [
-            "Use mechanical dryers, covered drying floors, tarpaulins, and ventilated temporary storage.",
-            "Prioritize hauling of wet palay/corn to postharvest facilities to avoid quality losses.",
-            "Monitor grain moisture before storage and milling."
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Kasibu: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
-            "sms": "DA WARNING: Drying risk in Kasibu. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-            "lgu": "POSTHARVEST ADVISORY - Kasibu\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-            "facebook": "POSTHARVEST ADVISORY - Kasibu: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+            "bulletin": "IRRIGATION PRIORITY - Kasibu: Estimated irrigation demand is 3.44 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Kasibu. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Kasibu\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Kasibu: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -9234,7 +9880,7 @@
         }
       ],
       "decision_support": {
-        "hazard": "Postharvest Drying Risk",
+        "hazard": "High Irrigation Demand",
         "severity": "warning",
         "confidence": "medium",
         "source_age": {
@@ -9265,10 +9911,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WARNING: Drying risk in Kasibu. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-        "lgu_da_action": "POSTHARVEST ADVISORY - Kasibu\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-        "public_advisory": "POSTHARVEST ADVISORY - Kasibu: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
-        "sms_ready": "DA WARNING: Drying risk in Kasibu. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Kasibu. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Kasibu\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Kasibu: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Kasibu. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -9379,37 +10025,9 @@
     "035611000": {
       "municipality": "Quezon",
       "province": "Nueva Vizcaya",
-      "advisory_count": 5,
+      "advisory_count": 4,
       "highest_severity": "warning",
       "advisories": [
-        {
-          "rule_id": "POSTHARVEST_DRYING_RISK",
-          "rule_name": "Postharvest Drying Risk",
-          "severity": "warning",
-          "affected_crops": [
-            "rice_irrigated",
-            "rice_rainfed",
-            "corn_yellow",
-            "corn_white"
-          ],
-          "affected_stages": [
-            "harvesting",
-            "postharvest"
-          ],
-          "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
-          "adaptation_measures": [
-            "Use mechanical dryers, covered drying floors, tarpaulins, and ventilated temporary storage.",
-            "Prioritize hauling of wet palay/corn to postharvest facilities to avoid quality losses.",
-            "Monitor grain moisture before storage and milling."
-          ],
-          "adaptation_source": "CRA Compendium.pdf",
-          "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Quezon: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
-            "sms": "DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-            "lgu": "POSTHARVEST ADVISORY - Quezon\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-            "facebook": "POSTHARVEST ADVISORY - Quezon: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
-          }
-        },
         {
           "rule_id": "HEAT_HIGH",
           "rule_name": "High Heat Stress — Restrict Fieldwork",
@@ -9516,7 +10134,7 @@
         }
       ],
       "decision_support": {
-        "hazard": "Postharvest Drying Risk",
+        "hazard": "High Heat Stress — Restrict Fieldwork",
         "severity": "warning",
         "confidence": "medium",
         "source_age": {
@@ -9547,10 +10165,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-        "lgu_da_action": "POSTHARVEST ADVISORY - Quezon\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-        "public_advisory": "POSTHARVEST ADVISORY - Quezon: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
-        "sms_ready": "DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "immediate_farmer_action": "DA ADVISORY: High heat in Quezon. Avoid farm work 10AM-2PM. Stay hydrated.",
+        "lgu_da_action": "HEAT STRESS ADVISORY — Quezon\nHigh heat conditions: schedule farm work early morning or late afternoon.",
+        "public_advisory": "☀️ HEAT ADVISORY — Quezon: High heat conditions. Avoid fieldwork 10AM–2PM. #DARFOCagayanValley #HeatStress",
+        "sms_ready": "DA ADVISORY: High heat in Quezon. Avoid farm work 10AM-2PM. Stay hydrated.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -10174,7 +10792,7 @@
     "067002000": {
       "municipality": "Aglipay",
       "province": "Quirino",
-      "advisory_count": 3,
+      "advisory_count": 4,
       "highest_severity": "warning",
       "advisories": [
         {
@@ -10203,6 +10821,36 @@
             "sms": "DA WARNING: Drying risk in Aglipay. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Aglipay\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Aglipay: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Aglipay: Estimated irrigation demand is 3.85 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Aglipay. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Aglipay\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Aglipay: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -10484,31 +11132,33 @@
       "highest_severity": "warning",
       "advisories": [
         {
-          "rule_id": "POSTHARVEST_DRYING_RISK",
-          "rule_name": "Postharvest Drying Risk",
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
           "severity": "warning",
           "affected_crops": [
             "rice_irrigated",
             "rice_rainfed",
             "corn_yellow",
-            "corn_white"
+            "hvcc"
           ],
           "affected_stages": [
-            "harvesting",
-            "postharvest"
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
           ],
-          "responsible_office": "MAO + DA Mechanization/Postharvest Unit",
+          "responsible_office": "MAO + NIA + Irrigators Associations",
           "adaptation_measures": [
-            "Use mechanical dryers, covered drying floors, tarpaulins, and ventilated temporary storage.",
-            "Prioritize hauling of wet palay/corn to postharvest facilities to avoid quality losses.",
-            "Monitor grain moisture before storage and milling."
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
           ],
           "adaptation_source": "CRA Compendium.pdf",
           "texts": {
-            "bulletin": "POSTHARVEST DRYING RISK - Maddela: Drying class is high_risk. Avoid open sun-drying if rain/high humidity persists. Prioritize mechanical dryers, tarpaulins, covered temporary storage, and rapid hauling to postharvest facilities.",
-            "sms": "DA WARNING: Drying risk in Maddela. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-            "lgu": "POSTHARVEST ADVISORY - Maddela\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-            "facebook": "POSTHARVEST ADVISORY - Maddela: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+            "bulletin": "IRRIGATION PRIORITY - Maddela: Estimated irrigation demand is 3.69 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Maddela. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Maddela\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Maddela: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -10565,7 +11215,7 @@
         }
       ],
       "decision_support": {
-        "hazard": "Postharvest Drying Risk",
+        "hazard": "High Irrigation Demand",
         "severity": "warning",
         "confidence": "medium",
         "source_age": {
@@ -10596,10 +11246,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WARNING: Drying risk in Maddela. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-        "lgu_da_action": "POSTHARVEST ADVISORY - Maddela\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
-        "public_advisory": "POSTHARVEST ADVISORY - Maddela: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
-        "sms_ready": "DA WARNING: Drying risk in Maddela. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Maddela. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Maddela\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Maddela: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Maddela. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -10607,9 +11257,39 @@
     "067005000": {
       "municipality": "Nagtipunan",
       "province": "Quirino",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Nagtipunan: Estimated irrigation demand is 3.92 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Nagtipunan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Nagtipunan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Nagtipunan: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -10640,8 +11320,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -10671,10 +11351,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Nagtipunan. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Nagtipunan\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Nagtipunan: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Nagtipunan. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Nagtipunan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Nagtipunan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Nagtipunan: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Nagtipunan. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -10682,7 +11362,7 @@
     "067006000": {
       "municipality": "Saguday",
       "province": "Quirino",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "highest_severity": "danger",
       "advisories": [
         {
@@ -10735,6 +11415,36 @@
             "sms": "DA WARNING: Drying risk in Saguday. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
             "lgu": "POSTHARVEST ADVISORY - Saguday\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn.",
             "facebook": "POSTHARVEST ADVISORY - Saguday: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality."
+          }
+        },
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Saguday: Estimated irrigation demand is 3.57 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Saguday. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Saguday\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Saguday: Prioritize water for stressed rice/corn crops, especially rainfed areas."
           }
         },
         {
@@ -10861,9 +11571,39 @@
     "020100000": {
       "municipality": "Basco",
       "province": "Batanes",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Basco: Estimated irrigation demand is 2.83 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Basco. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Basco\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Basco: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -10894,8 +11634,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -10925,10 +11665,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Basco. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Basco\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Basco: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Basco. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Basco. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Basco\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Basco: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Basco. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -10936,9 +11676,39 @@
     "020101000": {
       "municipality": "Itbayat",
       "province": "Batanes",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Itbayat: Estimated irrigation demand is 2.7 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Itbayat. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Itbayat\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Itbayat: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -10969,8 +11739,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -11000,10 +11770,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Itbayat. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Itbayat\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Itbayat: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Itbayat. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Itbayat. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Itbayat\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Itbayat: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Itbayat. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -11011,9 +11781,39 @@
     "020102000": {
       "municipality": "Ivana",
       "province": "Batanes",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Ivana: Estimated irrigation demand is 2.72 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Ivana. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Ivana\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Ivana: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -11044,8 +11844,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -11075,10 +11875,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Ivana. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Ivana\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Ivana: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Ivana. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Ivana. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Ivana\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Ivana: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Ivana. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -11086,9 +11886,39 @@
     "020103000": {
       "municipality": "Mahatao",
       "province": "Batanes",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Mahatao: Estimated irrigation demand is 2.75 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Mahatao. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Mahatao\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Mahatao: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -11119,8 +11949,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -11150,10 +11980,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Mahatao. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Mahatao\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Mahatao: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Mahatao. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Mahatao. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Mahatao\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Mahatao: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Mahatao. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -11161,9 +11991,39 @@
     "020104000": {
       "municipality": "Sabtang",
       "province": "Batanes",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Sabtang: Estimated irrigation demand is 2.91 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Sabtang. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Sabtang\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Sabtang: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -11194,8 +12054,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -11225,10 +12085,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Sabtang. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Sabtang\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Sabtang: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Sabtang. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Sabtang. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Sabtang\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Sabtang: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Sabtang. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -11236,9 +12096,39 @@
     "020105000": {
       "municipality": "Uyugan",
       "province": "Batanes",
-      "advisory_count": 1,
-      "highest_severity": "advisory",
+      "advisory_count": 2,
+      "highest_severity": "warning",
       "advisories": [
+        {
+          "rule_id": "IRRIGATION_HIGH_DEMAND",
+          "rule_name": "High Irrigation Demand",
+          "severity": "warning",
+          "affected_crops": [
+            "rice_irrigated",
+            "rice_rainfed",
+            "corn_yellow",
+            "hvcc"
+          ],
+          "affected_stages": [
+            "vegetative",
+            "reproductive",
+            "flowering",
+            "tasseling"
+          ],
+          "responsible_office": "MAO + NIA + Irrigators Associations",
+          "adaptation_measures": [
+            "Schedule supplemental irrigation for reproductive-stage rice/corn and high-value crops first.",
+            "Apply alternate wetting and drying in irrigated rice fields where appropriate.",
+            "Mobilize small farm reservoirs, pumps, and water-harvesting facilities for rainfed areas."
+          ],
+          "adaptation_source": "CRA Compendium.pdf",
+          "texts": {
+            "bulletin": "IRRIGATION PRIORITY - Uyugan: Estimated irrigation demand is 2.73 mm/day with high priority. Prioritize supplemental irrigation for rainfed and reproductive-stage crops.",
+            "sms": "DA ADVISORY: Irrigation priority in Uyugan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+            "lgu": "IRRIGATION ADVISORY - Uyugan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+            "facebook": "IRRIGATION ADVISORY - Uyugan: Prioritize water for stressed rice/corn crops, especially rainfed areas."
+          }
+        },
         {
           "rule_id": "WET_SPELL_DISEASE_WATCH",
           "rule_name": "Wet Spell Disease Watch",
@@ -11269,8 +12159,8 @@
         }
       ],
       "decision_support": {
-        "hazard": "Wet Spell Disease Watch",
-        "severity": "advisory",
+        "hazard": "High Irrigation Demand",
+        "severity": "warning",
         "confidence": "medium",
         "source_age": {
           "weather_source": "APA CIS",
@@ -11300,10 +12190,10 @@
           "acap_crop_calendar_available": false,
           "crop_calendar_decision_point": "No ACAP crop calendar for this municipality; using seasonal default crop stage."
         },
-        "immediate_farmer_action": "DA WATCH: Wet/humid days in Uyugan. Scout crops for disease; spray only in clear, low-wind weather.",
-        "lgu_da_action": "DISEASE WATCH - Uyugan\nAsk AEWs to intensify field scouting and report pest/disease symptoms by barangay.",
-        "public_advisory": "DISEASE WATCH - Uyugan: Wet and humid conditions. Inspect rice/corn fields and consult AEW before spraying.",
-        "sms_ready": "DA WATCH: Wet/humid days in Uyugan. Scout crops for disease; spray only in clear, low-wind weather.",
+        "immediate_farmer_action": "DA ADVISORY: Irrigation priority in Uyugan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+        "lgu_da_action": "IRRIGATION ADVISORY - Uyugan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support.",
+        "public_advisory": "IRRIGATION ADVISORY - Uyugan: Prioritize water for stressed rice/corn crops, especially rainfed areas.",
+        "sms_ready": "DA ADVISORY: Irrigation priority in Uyugan. Prioritize reproductive-stage rice/corn and rainfed fields.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
         "valid_until": "2026-06-19"
       }
@@ -11312,33 +12202,33 @@
   "summary_by_province": {
     "Batanes": {
       "municipalities_with_advisories": 6,
-      "highest_severity": "advisory",
+      "highest_severity": "warning",
       "danger_count": 0,
-      "warning_count": 0
+      "warning_count": 6
     },
     "Cagayan": {
       "municipalities_with_advisories": 29,
       "highest_severity": "warning",
       "danger_count": 0,
-      "warning_count": 21
+      "warning_count": 25
     },
     "Isabela": {
-      "municipalities_with_advisories": 33,
+      "municipalities_with_advisories": 37,
       "highest_severity": "warning",
       "danger_count": 4,
-      "warning_count": 29
+      "warning_count": 33
     },
     "Nueva Vizcaya": {
       "municipalities_with_advisories": 14,
       "highest_severity": "warning",
       "danger_count": 0,
-      "warning_count": 14
+      "warning_count": 13
     },
     "Quirino": {
       "municipalities_with_advisories": 6,
       "highest_severity": "warning",
       "danger_count": 2,
-      "warning_count": 3
+      "warning_count": 4
     }
   },
   "priority_municipalities": [
@@ -11360,7 +12250,7 @@
       "province": "Quirino",
       "severity": "danger",
       "confidence": "medium",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "risk_score": 43.0,
       "primary_advisory": "Dangerous Heat — WBGT Critical",
       "farmer_action": "DA HEAT ALERT: Dangerous heat in Saguday. NO farm work 9AM-4PM. Drink water. Protect livestock.",
@@ -11420,7 +12310,7 @@
       "province": "Cagayan",
       "severity": "warning",
       "confidence": "medium",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "risk_score": 55.0,
       "primary_advisory": "Postharvest Drying Risk",
       "farmer_action": "DA WARNING: Drying risk in Allacapan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
@@ -11434,9 +12324,9 @@
       "confidence": "medium",
       "advisory_count": 5,
       "risk_score": 55.0,
-      "primary_advisory": "Postharvest Drying Risk",
-      "farmer_action": "DA WARNING: Drying risk in Pamplona. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-      "lgu_da_action": "POSTHARVEST ADVISORY - Pamplona\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn."
+      "primary_advisory": "High Irrigation Demand",
+      "farmer_action": "DA ADVISORY: Irrigation priority in Pamplona. Prioritize reproductive-stage rice/corn and rainfed fields.",
+      "lgu_da_action": "IRRIGATION ADVISORY - Pamplona\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support."
     },
     {
       "psgc": "023121000",
@@ -11444,7 +12334,7 @@
       "province": "Cagayan",
       "severity": "warning",
       "confidence": "medium",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "risk_score": 55.0,
       "primary_advisory": "Postharvest Drying Risk",
       "farmer_action": "DA WARNING: Drying risk in Piat. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
@@ -11456,7 +12346,7 @@
       "province": "Cagayan",
       "severity": "warning",
       "confidence": "medium",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "risk_score": 55.0,
       "primary_advisory": "Postharvest Drying Risk",
       "farmer_action": "DA WARNING: Drying risk in Rizal. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
@@ -11492,7 +12382,7 @@
       "province": "Isabela",
       "severity": "warning",
       "confidence": "medium",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "risk_score": 55.0,
       "primary_advisory": "Postharvest Drying Risk",
       "farmer_action": "DA WARNING: Drying risk in San Agustin. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
@@ -11504,7 +12394,7 @@
       "province": "Isabela",
       "severity": "warning",
       "confidence": "medium",
-      "advisory_count": 5,
+      "advisory_count": 6,
       "risk_score": 55.0,
       "primary_advisory": "Postharvest Drying Risk",
       "farmer_action": "DA WARNING: Drying risk in San Guillermo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
@@ -11535,52 +12425,52 @@
       "lgu_da_action": "HEAT STRESS ADVISORY — Ballesteros\nHigh heat conditions: schedule farm work early morning or late afternoon."
     },
     {
+      "psgc": "023110000",
+      "municipality": "Calayan",
+      "province": "Cagayan",
+      "severity": "warning",
+      "confidence": "medium",
+      "advisory_count": 2,
+      "risk_score": 45.0,
+      "primary_advisory": "High Irrigation Demand",
+      "farmer_action": "DA ADVISORY: Irrigation priority in Calayan. Prioritize reproductive-stage rice/corn and rainfed fields.",
+      "lgu_da_action": "IRRIGATION ADVISORY - Calayan\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support."
+    },
+    {
+      "psgc": "023112000",
+      "municipality": "Claveria",
+      "province": "Cagayan",
+      "severity": "warning",
+      "confidence": "medium",
+      "advisory_count": 2,
+      "risk_score": 45.0,
+      "primary_advisory": "High Irrigation Demand",
+      "farmer_action": "DA ADVISORY: Irrigation priority in Claveria. Prioritize reproductive-stage rice/corn and rainfed fields.",
+      "lgu_da_action": "IRRIGATION ADVISORY - Claveria\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support."
+    },
+    {
+      "psgc": "023123000",
+      "municipality": "Sanchez-Mira",
+      "province": "Cagayan",
+      "severity": "warning",
+      "confidence": "medium",
+      "advisory_count": 2,
+      "risk_score": 45.0,
+      "primary_advisory": "High Irrigation Demand",
+      "farmer_action": "DA ADVISORY: Irrigation priority in Sanchez-Mira. Prioritize reproductive-stage rice/corn and rainfed fields.",
+      "lgu_da_action": "IRRIGATION ADVISORY - Sanchez-Mira\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support."
+    },
+    {
       "psgc": "023107000",
       "municipality": "Baggao",
       "province": "Cagayan",
       "severity": "warning",
       "confidence": "medium",
-      "advisory_count": 3,
+      "advisory_count": 4,
       "risk_score": 38.0,
-      "primary_advisory": "High Heat Stress — Restrict Fieldwork",
-      "farmer_action": "DA ADVISORY: High heat in Baggao. Avoid farm work 10AM-2PM. Stay hydrated.",
-      "lgu_da_action": "HEAT STRESS ADVISORY — Baggao\nHigh heat conditions: schedule farm work early morning or late afternoon."
-    },
-    {
-      "psgc": "023118000",
-      "municipality": "Lasam",
-      "province": "Cagayan",
-      "severity": "warning",
-      "confidence": "medium",
-      "advisory_count": 2,
-      "risk_score": 38.0,
-      "primary_advisory": "High Heat Stress — Restrict Fieldwork",
-      "farmer_action": "DA ADVISORY: High heat in Lasam. Avoid farm work 10AM-2PM. Stay hydrated.",
-      "lgu_da_action": "HEAT STRESS ADVISORY — Lasam\nHigh heat conditions: schedule farm work early morning or late afternoon."
-    },
-    {
-      "psgc": "031422000",
-      "municipality": "Quezon",
-      "province": "Isabela",
-      "severity": "warning",
-      "confidence": "medium",
-      "advisory_count": 5,
-      "risk_score": 38.0,
-      "primary_advisory": "Postharvest Drying Risk",
-      "farmer_action": "DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-      "lgu_da_action": "POSTHARVEST ADVISORY - Quezon\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn."
-    },
-    {
-      "psgc": "035609000",
-      "municipality": "Kasibu",
-      "province": "Nueva Vizcaya",
-      "severity": "warning",
-      "confidence": "medium",
-      "advisory_count": 5,
-      "risk_score": 38.0,
-      "primary_advisory": "Postharvest Drying Risk",
-      "farmer_action": "DA WARNING: Drying risk in Kasibu. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
-      "lgu_da_action": "POSTHARVEST ADVISORY - Kasibu\nCoordinate mobile dryers, tarpaulins, and storage support for farmers harvesting rice/corn."
+      "primary_advisory": "High Irrigation Demand",
+      "farmer_action": "DA ADVISORY: Irrigation priority in Baggao. Prioritize reproductive-stage rice/corn and rainfed fields.",
+      "lgu_da_action": "IRRIGATION ADVISORY - Baggao\nCoordinate water scheduling with NIA/irrigators associations and identify rainfed barangays needing support."
     }
   ],
   "source_summary": {
