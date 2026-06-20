@@ -52,7 +52,7 @@
         "psgc": "023103000",
         "municipality": "Alcala",
         "province": "Cagayan",
-        "risk_score": 4.85,
+        "risk_score": 5.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -71,9 +71,9 @@
         "psgc": "023104000",
         "municipality": "Allacapan",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "rice_rainfed"
       }
     },
@@ -90,7 +90,7 @@
         "psgc": "023105000",
         "municipality": "Amulung",
         "province": "Cagayan",
-        "risk_score": 4.4,
+        "risk_score": 5.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -109,9 +109,9 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "risk_score": 3.2,
-        "risk_class": "high",
-        "color": "#FF5722",
+        "risk_score": 4.4,
+        "risk_class": "critical",
+        "color": "#B71C1C",
         "crop": "corn_yellow"
       }
     },
@@ -166,9 +166,9 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "risk_score": 3.2,
-        "risk_class": "high",
-        "color": "#FF5722",
+        "risk_score": 4.4,
+        "risk_class": "critical",
+        "color": "#B71C1C",
         "crop": "corn_yellow"
       }
     },
@@ -204,7 +204,7 @@
         "psgc": "023111000",
         "municipality": "Camalaniugan",
         "province": "Cagayan",
-        "risk_score": 1.7,
+        "risk_score": 1.9,
         "risk_class": "low",
         "color": "#FFC107",
         "crop": "rice_rainfed"
@@ -242,7 +242,7 @@
         "psgc": "023113000",
         "municipality": "Enrile",
         "province": "Cagayan",
-        "risk_score": 4.4,
+        "risk_score": 4.85,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -261,7 +261,7 @@
         "psgc": "023114000",
         "municipality": "Gattaran",
         "province": "Cagayan",
-        "risk_score": 4.85,
+        "risk_score": 5.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "rice_rainfed"
@@ -280,9 +280,9 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "risk_score": 3.2,
-        "risk_class": "high",
-        "color": "#FF5722",
+        "risk_score": 4.4,
+        "risk_class": "critical",
+        "color": "#B71C1C",
         "crop": "corn_yellow"
       }
     },
@@ -299,7 +299,7 @@
         "psgc": "023116000",
         "municipality": "Iguig",
         "province": "Cagayan",
-        "risk_score": 4.4,
+        "risk_score": 5.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -318,7 +318,7 @@
         "psgc": "023117000",
         "municipality": "Lal-lo",
         "province": "Cagayan",
-        "risk_score": 4.4,
+        "risk_score": 5.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -337,7 +337,7 @@
         "psgc": "023118000",
         "municipality": "Lasam",
         "province": "Cagayan",
-        "risk_score": 4.85,
+        "risk_score": 5.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -356,9 +356,9 @@
         "psgc": "023119000",
         "municipality": "Pamplona",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "corn_yellow"
       }
     },
@@ -394,9 +394,9 @@
         "psgc": "023121000",
         "municipality": "Piat",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "corn_yellow"
       }
     },
@@ -451,9 +451,9 @@
         "psgc": "023124000",
         "municipality": "Santa Ana",
         "province": "Cagayan",
-        "risk_score": 3.2,
-        "risk_class": "high",
-        "color": "#FF5722",
+        "risk_score": 4.4,
+        "risk_class": "critical",
+        "color": "#B71C1C",
         "crop": "corn_yellow"
       }
     },
@@ -470,9 +470,9 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "rice_rainfed"
       }
     },
@@ -489,9 +489,9 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "risk_score": 3.2,
-        "risk_class": "high",
-        "color": "#FF5722",
+        "risk_score": 5.0,
+        "risk_class": "critical",
+        "color": "#B71C1C",
         "crop": "rice_rainfed"
       }
     },
@@ -508,7 +508,7 @@
         "psgc": "023127000",
         "municipality": "Santo Niño",
         "province": "Cagayan",
-        "risk_score": 4.85,
+        "risk_score": 5.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -527,7 +527,7 @@
         "psgc": "023128000",
         "municipality": "Solana",
         "province": "Cagayan",
-        "risk_score": 4.4,
+        "risk_score": 4.85,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -546,9 +546,9 @@
         "psgc": "023129000",
         "municipality": "Tuao",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "corn_yellow"
       }
     },
@@ -565,9 +565,9 @@
         "psgc": "031401000",
         "municipality": "City of Ilagan",
         "province": "Isabela",
-        "risk_score": 2.35,
-        "risk_class": "moderate",
-        "color": "#FF9800",
+        "risk_score": 1.9,
+        "risk_class": "low",
+        "color": "#FFC107",
         "crop": "corn_yellow"
       }
     },
@@ -603,9 +603,9 @@
         "psgc": "031403000",
         "municipality": "Angadanan",
         "province": "Isabela",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 2.35,
+        "risk_class": "moderate",
+        "color": "#FF9800",
         "crop": "corn_yellow"
       }
     },
@@ -679,7 +679,7 @@
         "psgc": "031407000",
         "municipality": "Cabagan",
         "province": "Isabela",
-        "risk_score": 4.4,
+        "risk_score": 4.85,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -698,9 +698,9 @@
         "psgc": "031408000",
         "municipality": "Cabatuan",
         "province": "Isabela",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 2.35,
+        "risk_class": "moderate",
+        "color": "#FF9800",
         "crop": "corn_yellow"
       }
     },
@@ -717,7 +717,7 @@
         "psgc": "031409000",
         "municipality": "Cauayan City",
         "province": "Isabela",
-        "risk_score": 3.4,
+        "risk_score": 3.85,
         "risk_class": "high",
         "color": "#FF5722",
         "crop": "rice_irrigated"
@@ -774,7 +774,7 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "risk_score": 0.2,
+        "risk_score": 0.0,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -793,7 +793,7 @@
         "psgc": "031413000",
         "municipality": "Divilacan",
         "province": "Isabela",
-        "risk_score": 0.4,
+        "risk_score": 0.0,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -869,7 +869,7 @@
         "psgc": "031417000",
         "municipality": "Luna",
         "province": "Isabela",
-        "risk_score": 4.4,
+        "risk_score": 4.85,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -926,7 +926,7 @@
         "psgc": "031420000",
         "municipality": "Naguilian",
         "province": "Isabela",
-        "risk_score": 3.85,
+        "risk_score": 3.4,
         "risk_class": "high",
         "color": "#FF5722",
         "crop": "rice_rainfed"
@@ -945,7 +945,7 @@
         "psgc": "031421000",
         "municipality": "Palanan",
         "province": "Isabela",
-        "risk_score": 0.4,
+        "risk_score": 0.0,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -1610,7 +1610,7 @@
         "psgc": "067005000",
         "municipality": "Nagtipunan",
         "province": "Quirino",
-        "risk_score": 1.7,
+        "risk_score": 1.5,
         "risk_class": "low",
         "color": "#FFC107",
         "crop": "rice_rainfed"
