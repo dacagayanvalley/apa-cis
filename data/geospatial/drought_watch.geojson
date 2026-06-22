@@ -176,7 +176,7 @@
         "psgc": "023110000",
         "municipality": "Calayan",
         "province": "Cagayan",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -626,7 +626,7 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -734,7 +734,7 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -842,7 +842,7 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1526,7 +1526,7 @@
         "psgc": "067005000",
         "municipality": "Nagtipunan",
         "province": "Quirino",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1562,7 +1562,7 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1580,7 +1580,7 @@
         "psgc": "020101000",
         "municipality": "Itbayat",
         "province": "Batanes",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1598,7 +1598,7 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1616,7 +1616,7 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1634,7 +1634,7 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1652,7 +1652,7 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
