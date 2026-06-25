@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-25",
+  "as_of": "2026-06-26",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather"
@@ -7,24 +7,24 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": null,
-    "advisory_text": "25 June 2026 : Recent atmospheric and oceanic indicators show that El Niño conditions are present in the tropical Pacific. In May 2026, the observed relative sea surface temperature anomaly (rSSTA) reached the +0.5°C threshold. Additionally, most climate models suggest there is over an 80% probability that this will develop into a full-blown El Niño event, which is likely to persist until early 2027. (updated 09 June 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "26 June 2026 : Recent atmospheric and oceanic indicators show that El Niño conditions are present in the tropical Pacific. In May 2026, the observed relative sea surface temperature anomaly (rSSTA) reached the +0.5°C threshold. Additionally, most climate models suggest there is over an 80% probability that this will develop into a full-blown El Niño event, which is likely to persist until early 2027. (updated 09 June 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-06-25"
+    "as_of": "2026-06-26"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-06-25",
+    "as_of": "2026-06-26",
     "region2_forecast": [
-      "25 June 2026",
-      "Issued at: 7:00 AM Thursday, June 25, 2026",
-      "Valid until: 7:00 AM Friday, June 26, 2026",
-      "At 3:00 AM today, the Severe Tropical Storm \"FRANCISCO\" {MEKKHALA} was estimated based on all available data at 400 km Northeast of Itbayat, Batanes (23.0°N, 124.9°E) with maximum sustained winds of 100 km/h near the center and gustiness of up to 125 km/h. It is moving North Northeastward at 15 km/h. Southwest Monsoon affecting Luzon and Visayas.",
+      "26 June 2026",
+      "Issued at: 7:00 AM Friday, June 26, 2026",
+      "Valid until: 7:00 AM Saturday, June 27, 2026",
+      "At 3:00 PM today, the center of Severe Tropical Storm \"FRANCISCO\" {MEKKHALA} was estimated based on all available data at 620 km Northeast of Itbayat, Batanes (24.8°N, 126.0°E) with maximum sustained winds of 95 km/h near the center and gustiness of up to 115 km/h. It is moving North Northeastward at 15 km/h.  Meanwhile, the center of Tropical Storm \"GARDO\" {HIGOS} was estimated based on all available data at 1,420 km East of Extreme Northern Luzon (19.4°N, 135.0°E) with maximum sustained winds of 85 km/h near the center and gustiness of up to 105 km/h. It is moving Northwestward at 45 km/h. Southwest Monsoon affecting Luzon and Visayas.",
       "Batanes and Babuyan Islands",
       "Metro Manila, Ilocos Region, Cordillera Administrative Region, CALABARZON, Western Visayas, the rest of Cagayan Valley, the rest of Central Luzon, and the rest of MIMAROPA",
-      "Cordillera Administrative Region and the rest of Cagayan Valley",
-      "El Niño is expected to develop by mid-2026, increasing the possibility of below-normal rainfall, dry spells, and drought. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts"
+      "Ilocos Region, Cordillera Administrative Region, and the rest of Cagayan Valley",
+      "El Niño is expected to develop by mid-2026, increasing the possibility of below-normal rainfall, dry spells, and drought. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts."
     ],
-    "raw_text_extracted": "25 June 2026\nIssued at: 7:00 AM Thursday, June 25, 2026\nValid until: 7:00 AM Friday, June 26, 2026\nAt 3:00 AM today, the Severe Tropical Storm \"FRANCISCO\" {MEKKHALA} was estimated based on all available data at 400 km Northeast of Itbayat, Batanes (23.0°N, 124.9°E) with maximum sustained winds of 100 km/h near the center and gustiness of up to 125 km/h. It is moving North Northeastward at 15 km/h. Southwest Monsoon affecting Luzon and Visayas.\nBatanes and Babuyan Islands\nMetro Manila, Ilocos Region, Cordillera Administrative Region, CALABARZON, Western Visayas, the rest of Cagayan Valley, the rest of Central Luzon, and the rest of MIMAROPA\nCordillera Administrative Region and the rest of Cagayan Valley\nEl Niño is expected to develop by mid-2026, increasing the possibility of below-normal rainfall, dry spells, and drought. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts",
+    "raw_text_extracted": "26 June 2026\nIssued at: 7:00 AM Friday, June 26, 2026\nValid until: 7:00 AM Saturday, June 27, 2026\nAt 3:00 PM today, the center of Severe Tropical Storm \"FRANCISCO\" {MEKKHALA} was estimated based on all available data at 620 km Northeast of Itbayat, Batanes (24.8°N, 126.0°E) with maximum sustained winds of 95 km/h near the center and gustiness of up to 115 km/h. It is moving North Northeastward at 15 km/h.  Meanwhile, the center of Tropical Storm \"GARDO\" {HIGOS} was estimated based on all available data at 1,420 km East of Extreme Northern Luzon (19.4°N, 135.0°E) with maximum sustained winds of 85 km/h near the center and gustiness of up to 105 km/h. It is moving Northwestward at 45 km/h. Southwest Monsoon affecting Luzon and Visayas.\nBatanes and Babuyan Islands\nMetro Manila, Ilocos Region, Cordillera Administrative Region, CALABARZON, Western Visayas, the rest of Cagayan Valley, the rest of Central Luzon, and the rest of MIMAROPA\nIlocos Region, Cordillera Administrative Region, and the rest of Cagayan Valley\nEl Niño is expected to develop by mid-2026, increasing the possibility of below-normal rainfall, dry spells, and drought. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts.",
     "parse_method": "static_html",
     "needs_review": true
   },
