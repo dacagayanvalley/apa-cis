@@ -229,6 +229,7 @@ const CISMunicipal = (() => {
     const fmt = CISData.fmt;
 
     const activeAdvisories = _renderConsolidatedAdvisories(adv, fmt);
+    const rainfall7d = obs.rainfall_7d_mm ?? indicators.rainfall_7d_mm;
 
     content.innerHTML = `
       <div style="margin-bottom:16px">
@@ -245,7 +246,7 @@ const CISMunicipal = (() => {
           <div class="mc-header">📡 Current Observations</div>
           <div class="mc-body">
             <div class="mc-row"><span class="mc-key">Rainfall (24h)</span><span class="mc-val">${fmt.formatRainfall(obs.rainfall_24h_mm)}</span></div>
-            <div class="mc-row"><span class="mc-key">Rainfall (7-day)</span><span class="mc-val">${fmt.formatRainfall(indicators.rainfall_7d_mm)}</span></div>
+            <div class="mc-row"><span class="mc-key">Rainfall (7-day)</span><span class="mc-val">${fmt.formatRainfall(rainfall7d)}</span></div>
             <div class="mc-row"><span class="mc-key">T-max</span><span class="mc-val">${fmt.formatTemp(obs.tmax_c)}</span></div>
             <div class="mc-row"><span class="mc-key">T-min</span><span class="mc-val">${fmt.formatTemp(obs.tmin_c)}</span></div>
             <div class="mc-row"><span class="mc-key">T-mean</span><span class="mc-val">${fmt.formatTemp(obs.tmean_c)}</span></div>
@@ -292,6 +293,8 @@ const CISMunicipal = (() => {
 
       </div>
 
+      ${_renderObservationExplainer(ind, obs, indicators, fw)}
+
       ${_renderCropCalendarComparison(ind)}
 
       <!-- Recommended Adaptations -->
@@ -302,6 +305,140 @@ const CISMunicipal = (() => {
     `;
   }
 
+  function _renderObservationExplainer(ind, obs, indicators, fw) {
+    const rainfall7d = obs.rainfall_7d_mm ?? indicators.rainfall_7d_mm;
+    const items = [
+      _explainRain24(obs.rainfall_24h_mm),
+      _explainRain7(rainfall7d),
+      _explainTmax(obs.tmax_c),
+      _explainTmin(obs.tmin_c),
+      _explainTmean(obs.tmean_c),
+      _explainHumidity(obs.humidity_pct),
+      _explainWind(obs.wind_speed_ms),
+    ];
+    const priority = _buildFarmerScenario(ind, obs, indicators, fw, rainfall7d);
+
+    return `
+      <div class="mprofile-card observation-explainer-card">
+        <div class="mc-header">Farmer-Friendly Reading of Today's Numbers</div>
+        <div class="mc-body">
+          <div class="farmer-scenario">
+            <span>Plain scenario for ${_escapeInline(ind.municipality)} farmers</span>
+            <strong>${_escapeInline(priority)}</strong>
+          </div>
+          <div class="obs-explainer-grid">
+            ${items.map(item => `
+              <div class="obs-explainer-item ${item.level}">
+                <div class="obs-explainer-top">
+                  <span>${_escapeInline(item.label)}</span>
+                  <strong>${_escapeInline(item.value)}</strong>
+                </div>
+                <p>${_escapeInline(item.meaning)}</p>
+                <small>${_escapeInline(item.operation)}</small>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function _buildFarmerScenario(ind, obs, indicators, fw, rainfall7d) {
+    const rain24 = _num(obs.rainfall_24h_mm);
+    const rain7 = _num(rainfall7d);
+    const tmax = _num(obs.tmax_c);
+    const humidity = _num(obs.humidity_pct);
+    const wind = _num(obs.wind_speed_ms);
+    const drought = indicators.drought_class;
+    const work = fw?.overall_class;
+
+    if (rain24 >= 50 || work === 'not_workable') {
+      return 'Fields are likely too wet for heavy field work. Prioritize drainage checks, postpone land preparation and spraying, and protect harvested grains from moisture.';
+    }
+    if (['warning', 'critical'].includes(drought) || (rain7 !== null && rain7 < 10 && rain24 !== null && rain24 < 5)) {
+      return 'The farm has been short of rain. Check soil moisture, schedule supplemental irrigation where available, and avoid fertilizer application unless water is assured.';
+    }
+    if (tmax >= 36) {
+      return 'Heat is the main concern today. Move labor-intensive work to early morning or late afternoon, provide water and rest, and monitor livestock shade.';
+    }
+    if (humidity >= 85 && rain24 >= 10) {
+      return 'Warm, wet, and humid conditions can favor fungal diseases and slow grain drying. Scout rice and corn fields, improve airflow, and avoid storing damp produce.';
+    }
+    if (wind >= 4) {
+      return 'Wind may affect spraying quality. Spray only during calmer periods and use proper nozzle settings to reduce drift.';
+    }
+    return 'Conditions look generally manageable. Continue routine field monitoring, keep drainage and irrigation ready, and follow the operation status shown above.';
+  }
+
+  function _explainRain24(value) {
+    const mm = _num(value);
+    if (mm === null) return _obsItem('Rainfall (24h)', 'No data', 'No recent rainfall reading is available.', 'Use field observation before deciding on irrigation or field entry.', 'neutral');
+    if (mm >= 50) return _obsItem('Rainfall (24h)', `${mm.toFixed(1)} mm`, 'Very heavy rain in the last day; low areas may be waterlogged.', 'Delay plowing, transplanting, fertilizer, and spraying; check drainage first.', 'alert');
+    if (mm >= 25) return _obsItem('Rainfall (24h)', `${mm.toFixed(1)} mm`, 'Heavy rain; soil is likely wet and machinery may compact the field.', 'Postpone heavy equipment and wait for field firmness.', 'caution');
+    if (mm >= 10) return _obsItem('Rainfall (24h)', `${mm.toFixed(1)} mm`, 'Useful rain; crops likely received moisture today.', 'Irrigation can usually be reduced, but avoid spraying while leaves are wet.', 'good');
+    if (mm >= 1) return _obsItem('Rainfall (24h)', `${mm.toFixed(1)} mm`, 'Light rain; it may wet leaves but may not refill soil moisture deeply.', 'Check soil before skipping irrigation.', 'neutral');
+    return _obsItem('Rainfall (24h)', `${mm.toFixed(1)} mm`, 'Almost no rain today.', 'For sensitive crops, check soil moisture and irrigation need.', 'caution');
+  }
+
+  function _explainRain7(value) {
+    const mm = _num(value);
+    if (mm === null) return _obsItem('Rainfall (7-day)', 'No data', 'No weekly rainfall reading is available.', 'Use the 24-hour rain and field moisture checks.', 'neutral');
+    if (mm >= 100) return _obsItem('Rainfall (7-day)', `${mm.toFixed(1)} mm`, 'The past week has been very wet; water may have accumulated in paddies and low fields.', 'Watch for waterlogging, drainage problems, and disease pressure.', 'alert');
+    if (mm >= 40) return _obsItem('Rainfall (7-day)', `${mm.toFixed(1)} mm`, 'The week supplied good moisture for many crops.', 'Reduce unnecessary irrigation and time fertilizer after water stabilizes.', 'good');
+    if (mm >= 10) return _obsItem('Rainfall (7-day)', `${mm.toFixed(1)} mm`, 'Rain has been limited but not completely absent.', 'Monitor shallow-rooted crops and newly planted areas.', 'neutral');
+    return _obsItem('Rainfall (7-day)', `${mm.toFixed(1)} mm`, 'The week has been dry.', 'Prioritize irrigation, mulching, and drought monitoring.', 'caution');
+  }
+
+  function _explainTmax(value) {
+    const c = _num(value);
+    if (c === null) return _obsItem('T-max', 'No data', 'No daytime heat reading is available.', 'Use local heat observation for worker scheduling.', 'neutral');
+    if (c >= 36) return _obsItem('T-max', `${c.toFixed(1)} C`, 'Very hot daytime conditions.', 'Avoid strenuous work from late morning to mid-afternoon; protect workers and livestock.', 'alert');
+    if (c >= 33) return _obsItem('T-max', `${c.toFixed(1)} C`, 'Hot conditions can stress crops and workers.', 'Schedule heavy tasks early and keep irrigation checks active.', 'caution');
+    return _obsItem('T-max', `${c.toFixed(1)} C`, 'Daytime heat is within a more manageable range.', 'Normal field work may proceed if rain, wind, and soil conditions allow.', 'good');
+  }
+
+  function _explainTmin(value) {
+    const c = _num(value);
+    if (c === null) return _obsItem('T-min', 'No data', 'No night temperature reading is available.', 'Use local field signs for pest and disease monitoring.', 'neutral');
+    if (c >= 26) return _obsItem('T-min', `${c.toFixed(1)} C`, 'Warm nights give crops and animals less time to cool down.', 'Monitor heat stress, flowering crops, and livestock comfort.', 'caution');
+    if (c <= 20) return _obsItem('T-min', `${c.toFixed(1)} C`, 'Cooler nights may slow some crop growth but reduce heat stress.', 'Watch seedlings in upland or cooler areas.', 'neutral');
+    return _obsItem('T-min', `${c.toFixed(1)} C`, 'Night temperature is generally comfortable for many crops.', 'No special night-temperature action is needed.', 'good');
+  }
+
+  function _explainTmean(value) {
+    const c = _num(value);
+    if (c === null) return _obsItem('T-mean', 'No data', 'No average temperature reading is available.', 'Use T-max and T-min to judge heat stress.', 'neutral');
+    if (c >= 30) return _obsItem('T-mean', `${c.toFixed(1)} C`, 'The whole day is running hot, not just the afternoon.', 'Expect higher water use by crops and faster soil drying.', 'caution');
+    if (c >= 24) return _obsItem('T-mean', `${c.toFixed(1)} C`, 'Average temperature is within a common tropical crop range.', 'Keep normal crop monitoring routines.', 'good');
+    return _obsItem('T-mean', `${c.toFixed(1)} C`, 'Average temperature is relatively cool.', 'Growth may be slower in cool upland spots.', 'neutral');
+  }
+
+  function _explainHumidity(value) {
+    const pct = _num(value);
+    if (pct === null) return _obsItem('Humidity', 'No data', 'No humidity reading is available.', 'Use leaf wetness and drying condition in the field.', 'neutral');
+    if (pct >= 85) return _obsItem('Humidity', `${pct.toFixed(0)}%`, 'Air is very moist; leaves and grains dry slowly.', 'Scout for fungal diseases and allow more drying time for harvest.', 'caution');
+    if (pct < 50) return _obsItem('Humidity', `${pct.toFixed(0)}%`, 'Air is dry; soil and leaves lose water faster.', 'Check irrigation need and avoid spraying during hot dry hours.', 'caution');
+    return _obsItem('Humidity', `${pct.toFixed(0)}%`, 'Humidity is moderate for field work.', 'Normal operations may proceed if rain and wind are favorable.', 'good');
+  }
+
+  function _explainWind(value) {
+    const ms = _num(value);
+    if (ms === null) return _obsItem('Wind speed', 'No data', 'No wind reading is available.', 'Check actual field wind before spraying.', 'neutral');
+    if (ms >= 8) return _obsItem('Wind speed', `${ms.toFixed(1)} m/s`, 'Strong wind can damage spray coverage and move chemicals off-target.', 'Avoid spraying; secure light materials and monitor exposed crops.', 'alert');
+    if (ms >= 4) return _obsItem('Wind speed', `${ms.toFixed(1)} m/s`, 'Breezy conditions can cause spray drift.', 'Spray only in calmer hours and use drift-reducing practices.', 'caution');
+    if (ms < 1) return _obsItem('Wind speed', `${ms.toFixed(1)} m/s`, 'Very calm air may slow drying and ventilation.', 'Good for drift control, but watch drying and disease risk if humidity is high.', 'neutral');
+    return _obsItem('Wind speed', `${ms.toFixed(1)} m/s`, 'Wind is light enough for most operations.', 'Spraying and field work are more manageable if rain is not present.', 'good');
+  }
+
+  function _obsItem(label, value, meaning, operation, level) {
+    return { label, value, meaning, operation, level };
+  }
+
+  function _num(value) {
+    if (value === null || value === undefined || value === '') return null;
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : null;
+  }
   function _renderConsolidatedAdvisories(adv, fmt) {
     if (!adv || !adv.advisories || !adv.advisories.length) {
       return `
