@@ -1,21 +1,21 @@
 DA RFO 02 REGIONAL AGRICULTURAL ADVISORY
-Date: 2026-07-01
-Valid until: 2026-07-02, unless superseded by newer PAGASA/DA-RFO2 APA updates
+Date: 2026-06-28
+Valid until: 2026-06-29, unless superseded by newer PAGASA/DA-RFO2 APA updates
 Coverage: Cagayan Valley (Region 02)
 Issued by: DA-RFO2 APA
 ============================================================
 
 SITUATION OVERVIEW:
-  Active advisories: 82 municipalities
+  Active advisories: 65 municipalities
   Danger alerts: 0
-  Warnings: 70
+  Warnings: 45
   Confidence: high 0, medium 0, low 92
 
 SOURCE TIMESTAMPS AND QA:
   APA CIS rainfall municipalities: 0
   CHIRPS rainfall municipalities: 0
   NASA POWER fallback municipalities: 92
-  PAGASA source date(s): 2026-07-01
+  PAGASA source date(s): 2026-06-28
   ACAP 10-day source date(s): 2026-06-23
   QA flag (92 municipalities): Rainfall is NASA POWER fallback; treat as lower-confidence local observation.
   QA flag (92 municipalities): PAGASA context needs staff review before official dissemination.
@@ -26,15 +26,14 @@ PAGASA / ACAP / CIS SUMMARY:
   APA CIS is prioritized for same-day municipal rainfall, maximum temperature, and wind when available.
 
 PROVINCIAL STATUS:
-  Batanes: 6 municipalities with advisories (highest: WARNING)
-  Cagayan: 29 municipalities with advisories (highest: ADVISORY)
-  Isabela: 30 municipalities with advisories (highest: WARNING)
-  Nueva Vizcaya: 14 municipalities with advisories (highest: WARNING)
-  Quirino: 3 municipalities with advisories (highest: WARNING)
+  Cagayan: 28 municipalities with advisories (highest: WARNING)
+  Isabela: 17 municipalities with advisories (highest: WARNING)
+  Nueva Vizcaya: 14 municipalities with advisories (highest: ADVISORY)
+  Quirino: 6 municipalities with advisories (highest: ADVISORY)
 
 PRIORITY MUNICIPALITIES FOR IMMEDIATE ACTION:
   1. Allacapan, Cagayan [WARNING, confidence: low] - Postharvest Drying Risk
-  2. Calayan, Cagayan [WARNING, confidence: low] - Operations Advisory - Defer Irrigation
+  2. Baggao, Cagayan [WARNING, confidence: low] - Operations Advisory - Defer Irrigation
   3. Claveria, Cagayan [WARNING, confidence: low] - Operations Advisory - Defer Irrigation
   4. Lasam, Cagayan [WARNING, confidence: low] - Operations Advisory - Defer Irrigation
   5. Pamplona, Cagayan [WARNING, confidence: low] - Postharvest Drying Risk
@@ -52,7 +51,7 @@ ACTION TIERS:
 
 SMS-READY PRIORITY ADVISORIES:
   Allacapan: DA WARNING: Drying risk in Allacapan. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Calayan: DA OPS: Defer irrigation in Calayan. Recent rainfall is enough that irrigation can be paused to prevent over-saturation. Check MAO guidance.
+  Baggao: DA OPS: Defer irrigation in Baggao. Recent rainfall is enough that irrigation can be paused to prevent over-saturation. Check MAO guidance.
   Claveria: DA OPS: Defer irrigation in Claveria. Recent rainfall is enough that irrigation can be paused to prevent over-saturation. Check MAO guidance.
   Lasam: DA OPS: Defer irrigation in Lasam. Recent rainfall is enough that irrigation can be paused to prevent over-saturation. Check MAO guidance.
   Pamplona: DA WARNING: Drying risk in Pamplona. Use mechanical dryer/covered storage; avoid wet grain spoilage.
@@ -60,4 +59,4 @@ SMS-READY PRIORITY ADVISORIES:
 For full advisory details, visit the APA-CIS portal.
 For assistance, contact DA-RFO2 APA: 0916-708-9707; DA RFO2 APA Facebook page; darfo2apa@gmail.com.
 
-End of Advisory - 2026-07-01
+End of Advisory - 2026-06-28
