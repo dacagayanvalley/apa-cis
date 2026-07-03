@@ -34,7 +34,7 @@
         "municipality": "Abulug",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 8,
+        "advisory_count": 7,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -72,7 +72,7 @@
         "municipality": "Allacapan",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -109,10 +109,10 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -148,7 +148,7 @@
         "municipality": "Ballesteros",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 8,
+        "advisory_count": 7,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -166,10 +166,10 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -204,10 +204,10 @@
         "psgc": "023111000",
         "municipality": "Camalaniugan",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -224,7 +224,7 @@
         "municipality": "Claveria",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 8,
+        "advisory_count": 7,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -280,10 +280,10 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -357,7 +357,7 @@
         "municipality": "Pamplona",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -395,7 +395,7 @@
         "municipality": "Piat",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -414,7 +414,7 @@
         "municipality": "Rizal",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -433,7 +433,7 @@
         "municipality": "Sanchez-Mira",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 8,
+        "advisory_count": 7,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -451,10 +451,10 @@
         "psgc": "023124000",
         "municipality": "Santa Ana",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -471,7 +471,7 @@
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 8,
+        "advisory_count": 7,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -489,10 +489,10 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -547,7 +547,7 @@
         "municipality": "Tuao",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -623,7 +623,7 @@
         "municipality": "Aurora",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -660,10 +660,10 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -737,7 +737,7 @@
         "municipality": "Cordon",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -774,10 +774,10 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 4,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -794,8 +794,8 @@
         "municipality": "Divilacan",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 4,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -888,10 +888,10 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -946,8 +946,8 @@
         "municipality": "Palanan",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 4,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -965,7 +965,7 @@
         "municipality": "Quezon",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1003,7 +1003,7 @@
         "municipality": "Ramon",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1060,7 +1060,7 @@
         "municipality": "San Agustin",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1079,7 +1079,7 @@
         "municipality": "San Guillermo",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1212,7 +1212,7 @@
         "municipality": "Santiago City",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1269,7 +1269,7 @@
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1288,7 +1288,7 @@
         "municipality": "Ambaguio",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1307,7 +1307,7 @@
         "municipality": "Aritao",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1326,7 +1326,7 @@
         "municipality": "Bagabag",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1345,7 +1345,7 @@
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1364,7 +1364,7 @@
         "municipality": "Diadi",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1383,7 +1383,7 @@
         "municipality": "Dupax del Norte",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1402,7 +1402,7 @@
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1421,7 +1421,7 @@
         "municipality": "Kasibu",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1440,7 +1440,7 @@
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1459,7 +1459,7 @@
         "municipality": "Quezon",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1478,7 +1478,7 @@
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 11,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1497,7 +1497,7 @@
         "municipality": "Solano",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1516,7 +1516,7 @@
         "municipality": "Villaverde",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1535,7 +1535,7 @@
         "municipality": "Cabarroguis",
         "province": "Quirino",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1573,7 +1573,7 @@
         "municipality": "Diffun",
         "province": "Quirino",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1611,8 +1611,8 @@
         "municipality": "Nagtipunan",
         "province": "Quirino",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 4,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -1630,7 +1630,7 @@
         "municipality": "Saguday",
         "province": "Quirino",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 9,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1650,7 +1650,7 @@
         "province": "Batanes",
         "severity": "advisory",
         "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
+        "primary_advisory": "Operations Advisory - Defer Pesticide / Foliar Spraying",
         "color": "#FF9800"
       }
     },
@@ -1668,7 +1668,7 @@
         "municipality": "Itbayat",
         "province": "Batanes",
         "severity": "advisory",
-        "advisory_count": 1,
+        "advisory_count": 2,
         "primary_advisory": "Wet Spell Disease Watch",
         "color": "#FF9800"
       }
@@ -1688,7 +1688,7 @@
         "province": "Batanes",
         "severity": "advisory",
         "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
+        "primary_advisory": "Operations Advisory - Defer Pesticide / Foliar Spraying",
         "color": "#FF9800"
       }
     },
@@ -1707,7 +1707,7 @@
         "province": "Batanes",
         "severity": "advisory",
         "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
+        "primary_advisory": "Operations Advisory - Defer Pesticide / Foliar Spraying",
         "color": "#FF9800"
       }
     },
@@ -1726,7 +1726,7 @@
         "province": "Batanes",
         "severity": "advisory",
         "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
+        "primary_advisory": "Operations Advisory - Defer Pesticide / Foliar Spraying",
         "color": "#FF9800"
       }
     },
@@ -1745,7 +1745,7 @@
         "province": "Batanes",
         "severity": "advisory",
         "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
+        "primary_advisory": "Operations Advisory - Defer Pesticide / Foliar Spraying",
         "color": "#FF9800"
       }
     }
