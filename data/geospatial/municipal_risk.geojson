@@ -558,7 +558,7 @@
         "psgc": "031404000",
         "municipality": "Aurora",
         "province": "Isabela",
-        "risk_score": 30.0,
+        "risk_score": 35.0,
         "color": "#FF9800"
       }
     },
@@ -592,7 +592,7 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "risk_score": 13.0,
+        "risk_score": 8.0,
         "color": "#4CAF50"
       }
     },
@@ -796,7 +796,7 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "risk_score": 20.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -898,7 +898,7 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -949,7 +949,7 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "risk_score": 30.0,
+        "risk_score": 35.0,
         "color": "#FF9800"
       }
     },
@@ -966,7 +966,7 @@
         "psgc": "031428000",
         "municipality": "San Guillermo",
         "province": "Isabela",
-        "risk_score": 30.0,
+        "risk_score": 35.0,
         "color": "#FF9800"
       }
     },
@@ -1289,8 +1289,8 @@
         "psgc": "035610000",
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
-        "risk_score": 35.0,
-        "color": "#FF9800"
+        "risk_score": 28.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -1323,8 +1323,8 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 28.0,
+        "color": "#FFC107"
       }
     },
     {

@@ -33,9 +33,9 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.4,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_rainfed"
       }
     },
@@ -52,9 +52,9 @@
         "psgc": "023103000",
         "municipality": "Alcala",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.4,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_rainfed"
       }
     },
@@ -109,7 +109,7 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "risk_score": 0.4,
+        "risk_score": 0.2,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -147,9 +147,9 @@
         "psgc": "023108000",
         "municipality": "Ballesteros",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.4,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_rainfed"
       }
     },
@@ -166,7 +166,7 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "risk_score": 0.4,
+        "risk_score": 0.2,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -204,7 +204,7 @@
         "psgc": "023111000",
         "municipality": "Camalaniugan",
         "province": "Cagayan",
-        "risk_score": 0.4,
+        "risk_score": 0.2,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -280,7 +280,7 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "risk_score": 0.4,
+        "risk_score": 0.2,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -318,9 +318,9 @@
         "psgc": "023117000",
         "municipality": "Lal-lo",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.4,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_rainfed"
       }
     },
@@ -337,9 +337,9 @@
         "psgc": "023118000",
         "municipality": "Lasam",
         "province": "Cagayan",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.4,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_rainfed"
       }
     },
@@ -451,7 +451,7 @@
         "psgc": "023124000",
         "municipality": "Santa Ana",
         "province": "Cagayan",
-        "risk_score": 0.4,
+        "risk_score": 0.2,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -489,7 +489,7 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "risk_score": 0.4,
+        "risk_score": 0.2,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -660,7 +660,7 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "risk_score": 0.4,
+        "risk_score": 0.2,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -793,7 +793,7 @@
         "psgc": "031413000",
         "municipality": "Divilacan",
         "province": "Isabela",
-        "risk_score": 1.9,
+        "risk_score": 1.7,
         "risk_class": "low",
         "color": "#FFC107",
         "crop": "rice_rainfed"
@@ -888,7 +888,7 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "risk_score": 0.4,
+        "risk_score": 0.2,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -945,7 +945,7 @@
         "psgc": "031421000",
         "municipality": "Palanan",
         "province": "Isabela",
-        "risk_score": 1.9,
+        "risk_score": 1.7,
         "risk_class": "low",
         "color": "#FFC107",
         "crop": "rice_rainfed"
@@ -1268,7 +1268,7 @@
         "psgc": "035601000",
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
-        "risk_score": 5.0,
+        "risk_score": 4.4,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "rice_irrigated"
@@ -1287,9 +1287,9 @@
         "psgc": "035602000",
         "municipality": "Ambaguio",
         "province": "Nueva Vizcaya",
-        "risk_score": 4.4,
-        "risk_class": "critical",
-        "color": "#B71C1C",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "rice_rainfed"
       }
     },
@@ -1306,9 +1306,9 @@
         "psgc": "035603000",
         "municipality": "Aritao",
         "province": "Nueva Vizcaya",
-        "risk_score": 4.4,
-        "risk_class": "critical",
-        "color": "#B71C1C",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "rice_rainfed"
       }
     },
@@ -1382,10 +1382,10 @@
         "psgc": "035607000",
         "municipality": "Dupax del Norte",
         "province": "Nueva Vizcaya",
-        "risk_score": 4.4,
-        "risk_class": "critical",
-        "color": "#B71C1C",
-        "crop": "corn_yellow"
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
+        "crop": "rice_rainfed"
       }
     },
     {
@@ -1401,9 +1401,9 @@
         "psgc": "035608000",
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
-        "risk_score": 4.4,
-        "risk_class": "critical",
-        "color": "#B71C1C",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "rice_rainfed"
       }
     },
@@ -1420,9 +1420,9 @@
         "psgc": "035609000",
         "municipality": "Kasibu",
         "province": "Nueva Vizcaya",
-        "risk_score": 4.4,
-        "risk_class": "critical",
-        "color": "#B71C1C",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "corn_yellow"
       }
     },
@@ -1439,9 +1439,9 @@
         "psgc": "035610000",
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
-        "risk_score": 5.0,
-        "risk_class": "critical",
-        "color": "#B71C1C",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "corn_yellow"
       }
     },
@@ -1458,9 +1458,9 @@
         "psgc": "035611000",
         "municipality": "Quezon",
         "province": "Nueva Vizcaya",
-        "risk_score": 4.4,
-        "risk_class": "critical",
-        "color": "#B71C1C",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "rice_rainfed"
       }
     },
@@ -1477,9 +1477,9 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "risk_score": 3.4,
-        "risk_class": "high",
-        "color": "#FF5722",
+        "risk_score": 1.9,
+        "risk_class": "low",
+        "color": "#FFC107",
         "crop": "rice_rainfed"
       }
     },
@@ -1496,7 +1496,7 @@
         "psgc": "035613000",
         "municipality": "Solano",
         "province": "Nueva Vizcaya",
-        "risk_score": 5.0,
+        "risk_score": 4.4,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "rice_irrigated"
@@ -1534,9 +1534,9 @@
         "psgc": "067001000",
         "municipality": "Cabarroguis",
         "province": "Quirino",
-        "risk_score": 4.4,
-        "risk_class": "critical",
-        "color": "#B71C1C",
+        "risk_score": 3.4,
+        "risk_class": "high",
+        "color": "#FF5722",
         "crop": "rice_rainfed"
       }
     },
