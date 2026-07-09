@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-09",
+  "as_of": "2026-07-10",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather"
@@ -7,24 +7,28 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "9 July 2026 : El Niño conditions are present in the tropical Pacific. Climate models suggest El Niño will likely intensify over the next few seasons and persist until early next year. A strong El Niño is likely to emerge by the Aug-Sep-Oct season (69%), and a very strong El Niño is favored during the Oct-Nov-Dec and Nov-Dec-Jan seasons (>62%).(updated 24 June 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "10 July 2026 : El Niño conditions are present in the tropical Pacific. Climate models suggest El Niño will likely intensify over the next few seasons and persist until early next year. A strong El Niño is likely to emerge by the Aug-Sep-Oct season (69%), and a very strong El Niño is favored during the Oct-Nov-Dec and Nov-Dec-Jan seasons (>62%).(updated 24 June 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-07-09"
+    "as_of": "2026-07-10"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-07-09",
+    "as_of": "2026-07-10",
     "region2_forecast": [
-      "9 July 2026",
-      "Issued at: 7:00 AM Thursday, July 09, 2026",
-      "Valid until: 7:00 AM Friday, July 10, 2026",
-      "Cagayan Valley, Cordillera Administrative Region, Ilocos Norte, Aurora, and Catanduanes",
-      "Cagayan Valley, Aurora, and Catanduanes",
+      "10 July 2026",
+      "Issued at: 7:00 AM Friday, July 10, 2026",
+      "Valid until: 7:00 AM Saturday, July 11, 2026",
+      "At 3:00 AM today, the center of Typhoon \"INDAY\" {BAVI} was estimated based on all available data at 640 km East of Basco, Batanes (20.1°N, 128.1°E) with maximum sustained winds of 150 km/h near the center and gustiness of up to 185 km/h. It is moving Northwestward at 20 km/h. Southwest Monsoon affecting Palawan, Visayas, and Mindanao.",
+      "Cordillera Administrative Region, Ilocos Norte, Cagayan, and Isabela",
+      "Bicol Region, the rest of Ilocos Region, the rest of Cagayan Valley, the rest of Central Luzon, and Quezon",
+      "Rest of Ilocos Region, the rest of Cagayan Valley, and the rest of Central Luzon",
       "(Updated as of 24 June 2026)",
       "El Niño is expected to develop by mid-2026, increasing the possibility of below-normal rainfall, dry spells, and drought. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts.",
-      "(Batanes, the northern and eastern coasts of Cagayan {Buguey, Santa Teresita, Gonzaga, Santa Ana, Gattaran, Lal-Lo, Baggao, Peñablanca} including Babuyan Islands, Isabela, the northern coast of Aurora {Dilasag, Casiguran}, Pollilo Islands {the northern coast of Panukulan, Burdeos, the eastern coast of Patnanungan, and the northern and eastern coasts of Jomalig}, the eastern coast of Camarines Norte {Jose Panganiban, Capalonga, Paracale, Vinzons, Talisay, Daet, Mercedes}, and the northern and eastern coasts of Catanduanes {Pandan, Viga, Bagamanoc, Panganiban, Gigmoto}) and"
+      "(Batanes and Babuyan Islands),",
+      "(the northern and eastern coasts of mainland Cagayan {Gonzaga, Santa Ana, Santa Teresita, Aparri, Buguey, Lal-Lo, Gattaran, Baggao, Peñablanca} and Isabela), and",
+      "288.1 mm (Baguio City, 2002)"
     ],
-    "raw_text_extracted": "9 July 2026\nIssued at: 7:00 AM Thursday, July 09, 2026\nValid until: 7:00 AM Friday, July 10, 2026\nCagayan Valley, Cordillera Administrative Region, Ilocos Norte, Aurora, and Catanduanes\nCagayan Valley, Aurora, and Catanduanes\n(Updated as of 24 June 2026)\nEl Niño is expected to develop by mid-2026, increasing the possibility of below-normal rainfall, dry spells, and drought. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts.\n(Batanes, the northern and eastern coasts of Cagayan {Buguey, Santa Teresita, Gonzaga, Santa Ana, Gattaran, Lal-Lo, Baggao, Peñablanca} including Babuyan Islands, Isabela, the northern coast of Aurora {Dilasag, Casiguran}, Pollilo Islands {the northern coast of Panukulan, Burdeos, the eastern coast of Patnanungan, and the northern and eastern coasts of Jomalig}, the eastern coast of Camarines Norte {Jose Panganiban, Capalonga, Paracale, Vinzons, Talisay, Daet, Mercedes}, and the northern and eastern coasts of Catanduanes {Pandan, Viga, Bagamanoc, Panganiban, Gigmoto}) and",
+    "raw_text_extracted": "10 July 2026\nIssued at: 7:00 AM Friday, July 10, 2026\nValid until: 7:00 AM Saturday, July 11, 2026\nAt 3:00 AM today, the center of Typhoon \"INDAY\" {BAVI} was estimated based on all available data at 640 km East of Basco, Batanes (20.1°N, 128.1°E) with maximum sustained winds of 150 km/h near the center and gustiness of up to 185 km/h. It is moving Northwestward at 20 km/h. Southwest Monsoon affecting Palawan, Visayas, and Mindanao.\nCordillera Administrative Region, Ilocos Norte, Cagayan, and Isabela\nBicol Region, the rest of Ilocos Region, the rest of Cagayan Valley, the rest of Central Luzon, and Quezon\nRest of Ilocos Region, the rest of Cagayan Valley, and the rest of Central Luzon\n(Updated as of 24 June 2026)\nEl Niño is expected to develop by mid-2026, increasing the possibility of below-normal rainfall, dry spells, and drought. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts.\n(Batanes and Babuyan Islands),\n(the northern and eastern coasts of mainland Cagayan {Gonzaga, Santa Ana, Santa Teresita, Aparri, Buguey, Lal-Lo, Gattaran, Baggao, Peñablanca} and Isabela), and\n288.1 mm (Baguio City, 2002)",
     "parse_method": "static_html",
     "needs_review": true
   },

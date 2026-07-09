@@ -14,10 +14,10 @@
         "psgc": "023101000",
         "municipality": "City of Tuguegarao",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "danger",
+        "wbgt": 35.0,
+        "color": "#B71C1C",
+        "tmax_c": 36.48
       }
     },
     {
@@ -33,10 +33,10 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.7,
-        "color": "#FF9800",
-        "tmax_c": 30.89
+        "heat_class": "high",
+        "wbgt": 32.6,
+        "color": "#FF5722",
+        "tmax_c": 34.07
       }
     },
     {
@@ -52,10 +52,10 @@
         "psgc": "023103000",
         "municipality": "Alcala",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.2,
-        "color": "#FF9800",
-        "tmax_c": 31.55
+        "heat_class": "high",
+        "wbgt": 34.3,
+        "color": "#FF5722",
+        "tmax_c": 35.93
       }
     },
     {
@@ -71,10 +71,10 @@
         "psgc": "023104000",
         "municipality": "Allacapan",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.6,
-        "color": "#FF9800",
-        "tmax_c": 30.42
+        "heat_class": "high",
+        "wbgt": 34.1,
+        "color": "#FF5722",
+        "tmax_c": 35.17
       }
     },
     {
@@ -90,10 +90,10 @@
         "psgc": "023105000",
         "municipality": "Amulung",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.2,
-        "color": "#FF9800",
-        "tmax_c": 31.55
+        "heat_class": "high",
+        "wbgt": 34.9,
+        "color": "#FF5722",
+        "tmax_c": 36.5
       }
     },
     {
@@ -109,10 +109,10 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.0,
-        "color": "#FF9800",
-        "tmax_c": 30.69
+        "heat_class": "high",
+        "wbgt": 32.9,
+        "color": "#FF5722",
+        "tmax_c": 34.82
       }
     },
     {
@@ -128,10 +128,10 @@
         "psgc": "023107000",
         "municipality": "Baggao",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "high",
+        "wbgt": 33.5,
+        "color": "#FF5722",
+        "tmax_c": 34.92
       }
     },
     {
@@ -147,10 +147,10 @@
         "psgc": "023108000",
         "municipality": "Ballesteros",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.7,
-        "color": "#FF9800",
-        "tmax_c": 30.89
+        "heat_class": "high",
+        "wbgt": 33.2,
+        "color": "#FF5722",
+        "tmax_c": 34.66
       }
     },
     {
@@ -166,10 +166,10 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.0,
-        "color": "#FF9800",
-        "tmax_c": 30.69
+        "heat_class": "high",
+        "wbgt": 32.4,
+        "color": "#FF5722",
+        "tmax_c": 34.23
       }
     },
     {
@@ -186,9 +186,9 @@
         "municipality": "Calayan",
         "province": "Cagayan",
         "heat_class": "moderate",
-        "wbgt": 28.3,
+        "wbgt": 28.0,
         "color": "#FF9800",
-        "tmax_c": 29.65
+        "tmax_c": 29.55
       }
     },
     {
@@ -204,10 +204,10 @@
         "psgc": "023111000",
         "municipality": "Camalaniugan",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.0,
-        "color": "#FF9800",
-        "tmax_c": 30.69
+        "heat_class": "high",
+        "wbgt": 33.1,
+        "color": "#FF5722",
+        "tmax_c": 34.96
       }
     },
     {
@@ -224,9 +224,9 @@
         "municipality": "Claveria",
         "province": "Cagayan",
         "heat_class": "moderate",
-        "wbgt": 29.7,
+        "wbgt": 30.3,
         "color": "#FF9800",
-        "tmax_c": 30.89
+        "tmax_c": 31.67
       }
     },
     {
@@ -242,10 +242,10 @@
         "psgc": "023113000",
         "municipality": "Enrile",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "danger",
+        "wbgt": 36.7,
+        "color": "#B71C1C",
+        "tmax_c": 38.24
       }
     },
     {
@@ -261,10 +261,10 @@
         "psgc": "023114000",
         "municipality": "Gattaran",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.2,
-        "color": "#FF9800",
-        "tmax_c": 31.55
+        "heat_class": "high",
+        "wbgt": 34.4,
+        "color": "#FF5722",
+        "tmax_c": 36.03
       }
     },
     {
@@ -281,9 +281,9 @@
         "municipality": "Gonzaga",
         "province": "Cagayan",
         "heat_class": "moderate",
-        "wbgt": 29.0,
+        "wbgt": 30.6,
         "color": "#FF9800",
-        "tmax_c": 30.69
+        "tmax_c": 32.36
       }
     },
     {
@@ -299,10 +299,10 @@
         "psgc": "023116000",
         "municipality": "Iguig",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.2,
-        "color": "#FF9800",
-        "tmax_c": 31.55
+        "heat_class": "high",
+        "wbgt": 33.3,
+        "color": "#FF5722",
+        "tmax_c": 34.88
       }
     },
     {
@@ -318,10 +318,10 @@
         "psgc": "023117000",
         "municipality": "Lal-lo",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.2,
-        "color": "#FF9800",
-        "tmax_c": 31.55
+        "heat_class": "high",
+        "wbgt": 34.2,
+        "color": "#FF5722",
+        "tmax_c": 35.74
       }
     },
     {
@@ -337,10 +337,10 @@
         "psgc": "023118000",
         "municipality": "Lasam",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.2,
-        "color": "#FF9800",
-        "tmax_c": 31.55
+        "heat_class": "high",
+        "wbgt": 34.3,
+        "color": "#FF5722",
+        "tmax_c": 35.86
       }
     },
     {
@@ -356,10 +356,10 @@
         "psgc": "023119000",
         "municipality": "Pamplona",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.6,
-        "color": "#FF9800",
-        "tmax_c": 30.42
+        "heat_class": "high",
+        "wbgt": 32.0,
+        "color": "#FF5722",
+        "tmax_c": 33.04
       }
     },
     {
@@ -375,10 +375,10 @@
         "psgc": "023120000",
         "municipality": "Peñablanca",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "high",
+        "wbgt": 32.5,
+        "color": "#FF5722",
+        "tmax_c": 33.97
       }
     },
     {
@@ -394,10 +394,10 @@
         "psgc": "023121000",
         "municipality": "Piat",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.6,
-        "color": "#FF9800",
-        "tmax_c": 30.42
+        "heat_class": "danger",
+        "wbgt": 35.4,
+        "color": "#B71C1C",
+        "tmax_c": 36.48
       }
     },
     {
@@ -413,10 +413,10 @@
         "psgc": "023122000",
         "municipality": "Rizal",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.6,
-        "color": "#FF9800",
-        "tmax_c": 30.42
+        "heat_class": "high",
+        "wbgt": 34.4,
+        "color": "#FF5722",
+        "tmax_c": 35.49
       }
     },
     {
@@ -433,9 +433,9 @@
         "municipality": "Sanchez-Mira",
         "province": "Cagayan",
         "heat_class": "moderate",
-        "wbgt": 29.7,
+        "wbgt": 30.2,
         "color": "#FF9800",
-        "tmax_c": 30.89
+        "tmax_c": 31.58
       }
     },
     {
@@ -454,7 +454,7 @@
         "heat_class": "moderate",
         "wbgt": 29.0,
         "color": "#FF9800",
-        "tmax_c": 30.69
+        "tmax_c": 30.78
       }
     },
     {
@@ -471,9 +471,9 @@
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
         "heat_class": "moderate",
-        "wbgt": 29.7,
+        "wbgt": 28.2,
         "color": "#FF9800",
-        "tmax_c": 30.89
+        "tmax_c": 29.48
       }
     },
     {
@@ -490,9 +490,9 @@
         "municipality": "Santa Teresita",
         "province": "Cagayan",
         "heat_class": "moderate",
-        "wbgt": 29.0,
+        "wbgt": 31.7,
         "color": "#FF9800",
-        "tmax_c": 30.69
+        "tmax_c": 33.56
       }
     },
     {
@@ -508,10 +508,10 @@
         "psgc": "023127000",
         "municipality": "Santo Niño",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.2,
-        "color": "#FF9800",
-        "tmax_c": 31.55
+        "heat_class": "high",
+        "wbgt": 34.4,
+        "color": "#FF5722",
+        "tmax_c": 35.96
       }
     },
     {
@@ -527,10 +527,10 @@
         "psgc": "023128000",
         "municipality": "Solana",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "danger",
+        "wbgt": 36.4,
+        "color": "#B71C1C",
+        "tmax_c": 37.91
       }
     },
     {
@@ -546,10 +546,10 @@
         "psgc": "023129000",
         "municipality": "Tuao",
         "province": "Cagayan",
-        "heat_class": "moderate",
-        "wbgt": 29.6,
-        "color": "#FF9800",
-        "tmax_c": 30.42
+        "heat_class": "danger",
+        "wbgt": 36.0,
+        "color": "#B71C1C",
+        "tmax_c": 37.12
       }
     },
     {
@@ -565,10 +565,10 @@
         "psgc": "031401000",
         "municipality": "City of Ilagan",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "danger",
+        "wbgt": 35.3,
+        "color": "#B71C1C",
+        "tmax_c": 36.95
       }
     },
     {
@@ -584,10 +584,10 @@
         "psgc": "031402000",
         "municipality": "Alicia",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 34.7,
+        "color": "#FF5722",
+        "tmax_c": 36.34
       }
     },
     {
@@ -603,10 +603,10 @@
         "psgc": "031403000",
         "municipality": "Angadanan",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 33.9,
+        "color": "#FF5722",
+        "tmax_c": 35.56
       }
     },
     {
@@ -622,10 +622,10 @@
         "psgc": "031404000",
         "municipality": "Aurora",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 28.1,
-        "color": "#FF9800",
-        "tmax_c": 29.03
+        "heat_class": "danger",
+        "wbgt": 35.1,
+        "color": "#B71C1C",
+        "tmax_c": 36.31
       }
     },
     {
@@ -641,10 +641,10 @@
         "psgc": "031405000",
         "municipality": "Benito Soliven",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 34.3,
+        "color": "#FF5722",
+        "tmax_c": 35.92
       }
     },
     {
@@ -660,10 +660,10 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "heat_class": "low",
-        "wbgt": 27.9,
-        "color": "#4CAF50",
-        "tmax_c": 29.65
+        "heat_class": "high",
+        "wbgt": 34.4,
+        "color": "#FF5722",
+        "tmax_c": 36.54
       }
     },
     {
@@ -679,10 +679,10 @@
         "psgc": "031407000",
         "municipality": "Cabagan",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "danger",
+        "wbgt": 35.5,
+        "color": "#B71C1C",
+        "tmax_c": 37.04
       }
     },
     {
@@ -698,10 +698,10 @@
         "psgc": "031408000",
         "municipality": "Cabatuan",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 34.6,
+        "color": "#FF5722",
+        "tmax_c": 36.23
       }
     },
     {
@@ -717,10 +717,10 @@
         "psgc": "031409000",
         "municipality": "Cauayan City",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 34.6,
+        "color": "#FF5722",
+        "tmax_c": 36.25
       }
     },
     {
@@ -736,10 +736,10 @@
         "psgc": "031410000",
         "municipality": "Cordon",
         "province": "Isabela",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "high",
+        "wbgt": 34.2,
+        "color": "#FF5722",
+        "tmax_c": 35.4
       }
     },
     {
@@ -755,10 +755,10 @@
         "psgc": "031411000",
         "municipality": "Delfin Albano",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "high",
+        "wbgt": 34.6,
+        "color": "#FF5722",
+        "tmax_c": 36.04
       }
     },
     {
@@ -775,9 +775,9 @@
         "municipality": "Dinapigue",
         "province": "Isabela",
         "heat_class": "moderate",
-        "wbgt": 28.0,
+        "wbgt": 30.6,
         "color": "#FF9800",
-        "tmax_c": 29.82
+        "tmax_c": 32.57
       }
     },
     {
@@ -794,9 +794,9 @@
         "municipality": "Divilacan",
         "province": "Isabela",
         "heat_class": "moderate",
-        "wbgt": 28.5,
+        "wbgt": 31.3,
         "color": "#FF9800",
-        "tmax_c": 30.3
+        "tmax_c": 33.38
       }
     },
     {
@@ -812,10 +812,10 @@
         "psgc": "031414000",
         "municipality": "Echague",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 29.8,
-        "color": "#FF9800",
-        "tmax_c": 31.2
+        "heat_class": "high",
+        "wbgt": 34.3,
+        "color": "#FF5722",
+        "tmax_c": 35.9
       }
     },
     {
@@ -831,10 +831,10 @@
         "psgc": "031415000",
         "municipality": "Gamu",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "danger",
+        "wbgt": 35.3,
+        "color": "#B71C1C",
+        "tmax_c": 36.92
       }
     },
     {
@@ -850,10 +850,10 @@
         "psgc": "031416000",
         "municipality": "Jones",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 29.8,
-        "color": "#FF9800",
-        "tmax_c": 31.2
+        "heat_class": "high",
+        "wbgt": 33.2,
+        "color": "#FF5722",
+        "tmax_c": 34.82
       }
     },
     {
@@ -869,10 +869,10 @@
         "psgc": "031417000",
         "municipality": "Luna",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "high",
+        "wbgt": 34.8,
+        "color": "#FF5722",
+        "tmax_c": 36.24
       }
     },
     {
@@ -888,10 +888,10 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "heat_class": "low",
-        "wbgt": 27.9,
-        "color": "#4CAF50",
-        "tmax_c": 29.65
+        "heat_class": "moderate",
+        "wbgt": 31.0,
+        "color": "#FF9800",
+        "tmax_c": 33.06
       }
     },
     {
@@ -907,10 +907,10 @@
         "psgc": "031419000",
         "municipality": "Mallig",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 34.5,
+        "color": "#FF5722",
+        "tmax_c": 36.11
       }
     },
     {
@@ -926,10 +926,10 @@
         "psgc": "031420000",
         "municipality": "Naguilian",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "danger",
+        "wbgt": 35.1,
+        "color": "#B71C1C",
+        "tmax_c": 36.77
       }
     },
     {
@@ -946,9 +946,9 @@
         "municipality": "Palanan",
         "province": "Isabela",
         "heat_class": "moderate",
-        "wbgt": 28.5,
+        "wbgt": 31.5,
         "color": "#FF9800",
-        "tmax_c": 30.3
+        "tmax_c": 33.51
       }
     },
     {
@@ -964,10 +964,10 @@
         "psgc": "031422000",
         "municipality": "Quezon",
         "province": "Isabela",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "danger",
+        "wbgt": 35.7,
+        "color": "#B71C1C",
+        "tmax_c": 36.91
       }
     },
     {
@@ -983,10 +983,10 @@
         "psgc": "031423000",
         "municipality": "Quirino",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 34.4,
+        "color": "#FF5722",
+        "tmax_c": 36.06
       }
     },
     {
@@ -1002,10 +1002,10 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 28.1,
-        "color": "#FF9800",
-        "tmax_c": 29.03
+        "heat_class": "high",
+        "wbgt": 34.8,
+        "color": "#FF5722",
+        "tmax_c": 36.0
       }
     },
     {
@@ -1021,10 +1021,10 @@
         "psgc": "031425000",
         "municipality": "Reina Mercedes",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 34.7,
+        "color": "#FF5722",
+        "tmax_c": 36.38
       }
     },
     {
@@ -1040,10 +1040,10 @@
         "psgc": "031426000",
         "municipality": "Roxas",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 34.5,
+        "color": "#FF5722",
+        "tmax_c": 36.1
       }
     },
     {
@@ -1059,10 +1059,10 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 28.1,
-        "color": "#FF9800",
-        "tmax_c": 29.03
+        "heat_class": "high",
+        "wbgt": 32.1,
+        "color": "#FF5722",
+        "tmax_c": 33.23
       }
     },
     {
@@ -1078,10 +1078,10 @@
         "psgc": "031428000",
         "municipality": "San Guillermo",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 28.1,
-        "color": "#FF9800",
-        "tmax_c": 29.03
+        "heat_class": "high",
+        "wbgt": 32.7,
+        "color": "#FF5722",
+        "tmax_c": 33.94
       }
     },
     {
@@ -1097,10 +1097,10 @@
         "psgc": "031429000",
         "municipality": "San Isidro",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "high",
+        "wbgt": 34.6,
+        "color": "#FF5722",
+        "tmax_c": 36.05
       }
     },
     {
@@ -1116,10 +1116,10 @@
         "psgc": "031430000",
         "municipality": "San Manuel",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 29.8,
-        "color": "#FF9800",
-        "tmax_c": 31.2
+        "heat_class": "high",
+        "wbgt": 34.5,
+        "color": "#FF5722",
+        "tmax_c": 36.09
       }
     },
     {
@@ -1135,10 +1135,10 @@
         "psgc": "031431000",
         "municipality": "San Mariano",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 33.3,
+        "color": "#FF5722",
+        "tmax_c": 34.96
       }
     },
     {
@@ -1154,10 +1154,10 @@
         "psgc": "031432000",
         "municipality": "San Mateo",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 34.5,
+        "color": "#FF5722",
+        "tmax_c": 36.17
       }
     },
     {
@@ -1173,10 +1173,10 @@
         "psgc": "031433000",
         "municipality": "San Pablo",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.9,
-        "color": "#FF9800",
-        "tmax_c": 32.4
+        "heat_class": "high",
+        "wbgt": 32.9,
+        "color": "#FF5722",
+        "tmax_c": 34.49
       }
     },
     {
@@ -1192,10 +1192,10 @@
         "psgc": "031434000",
         "municipality": "Santa Maria",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "danger",
+        "wbgt": 36.2,
+        "color": "#B71C1C",
+        "tmax_c": 37.69
       }
     },
     {
@@ -1211,10 +1211,10 @@
         "psgc": "031435000",
         "municipality": "Santiago City",
         "province": "Isabela",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "high",
+        "wbgt": 34.3,
+        "color": "#FF5722",
+        "tmax_c": 35.55
       }
     },
     {
@@ -1230,10 +1230,10 @@
         "psgc": "031436000",
         "municipality": "Santo Tomas",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "high",
+        "wbgt": 34.7,
+        "color": "#FF5722",
+        "tmax_c": 36.21
       }
     },
     {
@@ -1249,10 +1249,10 @@
         "psgc": "031437000",
         "municipality": "Tumauini",
         "province": "Isabela",
-        "heat_class": "moderate",
-        "wbgt": 30.4,
-        "color": "#FF9800",
-        "tmax_c": 31.59
+        "heat_class": "high",
+        "wbgt": 33.7,
+        "color": "#FF5722",
+        "tmax_c": 35.12
       }
     },
     {
@@ -1268,10 +1268,10 @@
         "psgc": "035601000",
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "moderate",
+        "wbgt": 29.8,
+        "color": "#FF9800",
+        "tmax_c": 30.92
       }
     },
     {
@@ -1287,10 +1287,10 @@
         "psgc": "035602000",
         "municipality": "Ambaguio",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "moderate",
+        "wbgt": 28.7,
+        "color": "#FF9800",
+        "tmax_c": 29.8
       }
     },
     {
@@ -1307,9 +1307,9 @@
         "municipality": "Aritao",
         "province": "Nueva Vizcaya",
         "heat_class": "low",
-        "wbgt": 27.5,
+        "wbgt": 26.6,
         "color": "#4CAF50",
-        "tmax_c": 28.35
+        "tmax_c": 27.63
       }
     },
     {
@@ -1325,10 +1325,10 @@
         "psgc": "035604000",
         "municipality": "Bagabag",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "moderate",
+        "wbgt": 31.8,
+        "color": "#FF9800",
+        "tmax_c": 32.93
       }
     },
     {
@@ -1344,10 +1344,10 @@
         "psgc": "035605000",
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "moderate",
+        "wbgt": 28.8,
+        "color": "#FF9800",
+        "tmax_c": 29.92
       }
     },
     {
@@ -1363,10 +1363,10 @@
         "psgc": "035606000",
         "municipality": "Diadi",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "high",
+        "wbgt": 33.2,
+        "color": "#FF5722",
+        "tmax_c": 34.34
       }
     },
     {
@@ -1382,10 +1382,10 @@
         "psgc": "035607000",
         "municipality": "Dupax del Norte",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "moderate",
+        "wbgt": 28.2,
+        "color": "#FF9800",
+        "tmax_c": 29.26
       }
     },
     {
@@ -1402,9 +1402,9 @@
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
         "heat_class": "low",
-        "wbgt": 27.5,
+        "wbgt": 27.3,
         "color": "#4CAF50",
-        "tmax_c": 28.35
+        "tmax_c": 28.36
       }
     },
     {
@@ -1420,10 +1420,10 @@
         "psgc": "035609000",
         "municipality": "Kasibu",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "moderate",
+        "wbgt": 30.5,
+        "color": "#FF9800",
+        "tmax_c": 31.64
       }
     },
     {
@@ -1439,10 +1439,10 @@
         "psgc": "035610000",
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
-        "heat_class": "moderate",
-        "wbgt": 28.9,
-        "color": "#FF9800",
-        "tmax_c": 29.99
+        "heat_class": "low",
+        "wbgt": 26.9,
+        "color": "#4CAF50",
+        "tmax_c": 27.48
       }
     },
     {
@@ -1458,10 +1458,10 @@
         "psgc": "035611000",
         "municipality": "Quezon",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "moderate",
+        "wbgt": 31.5,
+        "color": "#FF9800",
+        "tmax_c": 32.65
       }
     },
     {
@@ -1477,10 +1477,10 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "heat_class": "moderate",
-        "wbgt": 28.2,
-        "color": "#FF9800",
-        "tmax_c": 29.23
+        "heat_class": "low",
+        "wbgt": 26.1,
+        "color": "#4CAF50",
+        "tmax_c": 27.04
       }
     },
     {
@@ -1496,10 +1496,10 @@
         "psgc": "035613000",
         "municipality": "Solano",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "moderate",
+        "wbgt": 30.6,
+        "color": "#FF9800",
+        "tmax_c": 31.77
       }
     },
     {
@@ -1515,10 +1515,10 @@
         "psgc": "035614000",
         "municipality": "Villaverde",
         "province": "Nueva Vizcaya",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "moderate",
+        "wbgt": 30.7,
+        "color": "#FF9800",
+        "tmax_c": 31.87
       }
     },
     {
@@ -1534,10 +1534,10 @@
         "psgc": "067001000",
         "municipality": "Cabarroguis",
         "province": "Quirino",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "high",
+        "wbgt": 32.6,
+        "color": "#FF5722",
+        "tmax_c": 33.82
       }
     },
     {
@@ -1553,10 +1553,10 @@
         "psgc": "067002000",
         "municipality": "Aglipay",
         "province": "Quirino",
-        "heat_class": "moderate",
-        "wbgt": 29.8,
-        "color": "#FF9800",
-        "tmax_c": 31.2
+        "heat_class": "high",
+        "wbgt": 32.9,
+        "color": "#FF5722",
+        "tmax_c": 34.44
       }
     },
     {
@@ -1572,10 +1572,10 @@
         "psgc": "067003000",
         "municipality": "Diffun",
         "province": "Quirino",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "high",
+        "wbgt": 33.4,
+        "color": "#FF5722",
+        "tmax_c": 34.63
       }
     },
     {
@@ -1592,9 +1592,9 @@
         "municipality": "Maddela",
         "province": "Quirino",
         "heat_class": "moderate",
-        "wbgt": 29.8,
+        "wbgt": 31.2,
         "color": "#FF9800",
-        "tmax_c": 31.2
+        "tmax_c": 32.78
       }
     },
     {
@@ -1611,9 +1611,9 @@
         "municipality": "Nagtipunan",
         "province": "Quirino",
         "heat_class": "moderate",
-        "wbgt": 28.5,
+        "wbgt": 30.5,
         "color": "#FF9800",
-        "tmax_c": 30.29
+        "tmax_c": 32.41
       }
     },
     {
@@ -1629,10 +1629,10 @@
         "psgc": "067006000",
         "municipality": "Saguday",
         "province": "Quirino",
-        "heat_class": "low",
-        "wbgt": 27.5,
-        "color": "#4CAF50",
-        "tmax_c": 28.35
+        "heat_class": "high",
+        "wbgt": 33.4,
+        "color": "#FF5722",
+        "tmax_c": 34.59
       }
     },
     {
@@ -1649,9 +1649,9 @@
         "municipality": "Basco",
         "province": "Batanes",
         "heat_class": "low",
-        "wbgt": 27.8,
+        "wbgt": 27.2,
         "color": "#4CAF50",
-        "tmax_c": 29.22
+        "tmax_c": 28.74
       }
     },
     {
@@ -1670,7 +1670,7 @@
         "heat_class": "low",
         "wbgt": 27.6,
         "color": "#4CAF50",
-        "tmax_c": 29.01
+        "tmax_c": 29.11
       }
     },
     {
@@ -1687,9 +1687,9 @@
         "municipality": "Ivana",
         "province": "Batanes",
         "heat_class": "low",
-        "wbgt": 27.8,
+        "wbgt": 27.3,
         "color": "#4CAF50",
-        "tmax_c": 29.22
+        "tmax_c": 28.86
       }
     },
     {
@@ -1706,9 +1706,9 @@
         "municipality": "Mahatao",
         "province": "Batanes",
         "heat_class": "low",
-        "wbgt": 27.8,
+        "wbgt": 27.3,
         "color": "#4CAF50",
-        "tmax_c": 29.22
+        "tmax_c": 28.79
       }
     },
     {
@@ -1725,9 +1725,9 @@
         "municipality": "Sabtang",
         "province": "Batanes",
         "heat_class": "low",
-        "wbgt": 27.8,
+        "wbgt": 27.5,
         "color": "#4CAF50",
-        "tmax_c": 29.22
+        "tmax_c": 29.03
       }
     },
     {
@@ -1744,9 +1744,9 @@
         "municipality": "Uyugan",
         "province": "Batanes",
         "heat_class": "low",
-        "wbgt": 27.8,
+        "wbgt": 27.3,
         "color": "#4CAF50",
-        "tmax_c": 29.22
+        "tmax_c": 28.83
       }
     }
   ]
