@@ -1515,13 +1515,14 @@
         "psgc": "035603000",
         "municipality": "Aritao",
         "province": "Nueva Vizcaya",
-        "drying_class": "caution",
-        "risk_score": 1,
-        "recommend_mechanical_drying": false,
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
         "reasons": [
+          "rainfall >= 5 mm",
           "low solar radiation"
         ],
-        "color": "#FFC107"
+        "color": "#FF5722"
       }
     },
     {
@@ -1625,13 +1626,14 @@
         "psgc": "035608000",
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
-        "drying_class": "caution",
-        "risk_score": 1,
-        "recommend_mechanical_drying": false,
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
         "reasons": [
+          "rainfall >= 5 mm",
           "low solar radiation"
         ],
-        "color": "#FFC107"
+        "color": "#FF5722"
       }
     },
     {
@@ -1670,10 +1672,10 @@
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
         "drying_class": "high_risk",
-        "risk_score": 3,
+        "risk_score": 4,
         "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%",
+          "rainfall >= 5 mm",
           "low solar radiation"
         ],
         "color": "#FF5722"
@@ -1714,15 +1716,14 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 6,
+        "drying_class": "high_risk",
+        "risk_score": 4,
         "recommend_mechanical_drying": true,
         "reasons": [
           "rainfall >= 5 mm",
-          "humidity >= 85%",
           "low solar radiation"
         ],
-        "color": "#B71C1C"
+        "color": "#FF5722"
       }
     },
     {
@@ -1914,14 +1915,13 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "drying_class": "high_risk",
-        "risk_score": 4,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 1,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "low solar radiation"
         ],
-        "color": "#FF5722"
+        "color": "#FFC107"
       }
     },
     {
@@ -1937,14 +1937,13 @@
         "psgc": "020101000",
         "municipality": "Itbayat",
         "province": "Batanes",
-        "drying_class": "high_risk",
-        "risk_score": 4,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 1,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "low solar radiation"
         ],
-        "color": "#FF5722"
+        "color": "#FFC107"
       }
     },
     {
@@ -1960,14 +1959,13 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "drying_class": "high_risk",
-        "risk_score": 4,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 1,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "low solar radiation"
         ],
-        "color": "#FF5722"
+        "color": "#FFC107"
       }
     },
     {
@@ -1983,14 +1981,13 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "drying_class": "high_risk",
-        "risk_score": 4,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 1,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "low solar radiation"
         ],
-        "color": "#FF5722"
+        "color": "#FFC107"
       }
     },
     {
@@ -2006,14 +2003,13 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "drying_class": "high_risk",
-        "risk_score": 4,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 1,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "low solar radiation"
         ],
-        "color": "#FF5722"
+        "color": "#FFC107"
       }
     },
     {
@@ -2029,14 +2025,13 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "drying_class": "high_risk",
-        "risk_score": 4,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 1,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "low solar radiation"
         ],
-        "color": "#FF5722"
+        "color": "#FFC107"
       }
     }
   ]
