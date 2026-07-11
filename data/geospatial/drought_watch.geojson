@@ -104,7 +104,7 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -158,7 +158,7 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -176,7 +176,7 @@
         "psgc": "023110000",
         "municipality": "Calayan",
         "province": "Cagayan",
-        "cdd": 3,
+        "cdd": 4,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -194,7 +194,7 @@
         "psgc": "023111000",
         "municipality": "Camalaniugan",
         "province": "Cagayan",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -266,7 +266,7 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -428,7 +428,7 @@
         "psgc": "023124000",
         "municipality": "Santa Ana",
         "province": "Cagayan",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -464,7 +464,7 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "cdd": 1,
+        "cdd": 2,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1562,7 +1562,7 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1580,7 +1580,7 @@
         "psgc": "020101000",
         "municipality": "Itbayat",
         "province": "Batanes",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1598,7 +1598,7 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1616,7 +1616,7 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1634,7 +1634,7 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1652,7 +1652,7 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
