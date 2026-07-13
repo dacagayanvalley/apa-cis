@@ -185,9 +185,9 @@
         "psgc": "023110000",
         "municipality": "Calayan",
         "province": "Cagayan",
-        "risk_score": 1.7,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.2,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_rainfed"
       }
     },
@@ -831,9 +831,9 @@
         "psgc": "031415000",
         "municipality": "Gamu",
         "province": "Isabela",
-        "risk_score": 1.7,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.2,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_rainfed"
       }
     },
@@ -1268,9 +1268,9 @@
         "psgc": "035601000",
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.4,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_irrigated"
       }
     },
@@ -1477,7 +1477,7 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "risk_score": 0.4,
+        "risk_score": 0.2,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -1496,9 +1496,9 @@
         "psgc": "035613000",
         "municipality": "Solano",
         "province": "Nueva Vizcaya",
-        "risk_score": 1.9,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.4,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_irrigated"
       }
     },
