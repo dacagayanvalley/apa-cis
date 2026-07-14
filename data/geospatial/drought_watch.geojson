@@ -14,7 +14,7 @@
         "psgc": "023101000",
         "municipality": "City of Tuguegarao",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -50,7 +50,7 @@
         "psgc": "023103000",
         "municipality": "Alcala",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -86,7 +86,7 @@
         "psgc": "023105000",
         "municipality": "Amulung",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -122,7 +122,7 @@
         "psgc": "023107000",
         "municipality": "Baggao",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -230,7 +230,7 @@
         "psgc": "023113000",
         "municipality": "Enrile",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -248,7 +248,7 @@
         "psgc": "023114000",
         "municipality": "Gattaran",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -284,7 +284,7 @@
         "psgc": "023116000",
         "municipality": "Iguig",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -302,7 +302,7 @@
         "psgc": "023117000",
         "municipality": "Lal-lo",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -320,7 +320,7 @@
         "psgc": "023118000",
         "municipality": "Lasam",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -356,7 +356,7 @@
         "psgc": "023120000",
         "municipality": "Peñablanca",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -482,7 +482,7 @@
         "psgc": "023127000",
         "municipality": "Santo Niño",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -500,7 +500,7 @@
         "psgc": "023128000",
         "municipality": "Solana",
         "province": "Cagayan",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -644,7 +644,7 @@
         "psgc": "031407000",
         "municipality": "Cabagan",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -716,7 +716,7 @@
         "psgc": "031411000",
         "municipality": "Delfin Albano",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -824,7 +824,7 @@
         "psgc": "031417000",
         "municipality": "Luna",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1040,7 +1040,7 @@
         "psgc": "031429000",
         "municipality": "San Isidro",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1130,7 +1130,7 @@
         "psgc": "031434000",
         "municipality": "Santa Maria",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1166,7 +1166,7 @@
         "psgc": "031436000",
         "municipality": "Santo Tomas",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1184,7 +1184,7 @@
         "psgc": "031437000",
         "municipality": "Tumauini",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1400,7 +1400,7 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "cdd": 1,
+        "cdd": 0,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
