@@ -14,7 +14,7 @@
         "psgc": "023101000",
         "municipality": "City of Tuguegarao",
         "province": "Cagayan",
-        "rainfall_mm": 1.55,
+        "rainfall_mm": 2.17,
         "class": "light"
       }
     },
@@ -31,7 +31,7 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "rainfall_mm": 3.75,
+        "rainfall_mm": 4.67,
         "class": "light"
       }
     },
@@ -48,7 +48,7 @@
         "psgc": "023103000",
         "municipality": "Alcala",
         "province": "Cagayan",
-        "rainfall_mm": 1.32,
+        "rainfall_mm": 2.55,
         "class": "light"
       }
     },
@@ -65,7 +65,7 @@
         "psgc": "023104000",
         "municipality": "Allacapan",
         "province": "Cagayan",
-        "rainfall_mm": 2.35,
+        "rainfall_mm": 2.39,
         "class": "light"
       }
     },
@@ -82,7 +82,7 @@
         "psgc": "023105000",
         "municipality": "Amulung",
         "province": "Cagayan",
-        "rainfall_mm": 1.19,
+        "rainfall_mm": 2.92,
         "class": "light"
       }
     },
@@ -99,7 +99,7 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "rainfall_mm": 6.17,
+        "rainfall_mm": 5.56,
         "class": "light"
       }
     },
@@ -116,7 +116,7 @@
         "psgc": "023107000",
         "municipality": "Baggao",
         "province": "Cagayan",
-        "rainfall_mm": 1.44,
+        "rainfall_mm": 2.81,
         "class": "light"
       }
     },
@@ -133,7 +133,7 @@
         "psgc": "023108000",
         "municipality": "Ballesteros",
         "province": "Cagayan",
-        "rainfall_mm": 3.06,
+        "rainfall_mm": 3.91,
         "class": "light"
       }
     },
@@ -150,7 +150,7 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "rainfall_mm": 2.42,
+        "rainfall_mm": 3.33,
         "class": "light"
       }
     },
@@ -167,7 +167,7 @@
         "psgc": "023110000",
         "municipality": "Calayan",
         "province": "Cagayan",
-        "rainfall_mm": 10.82,
+        "rainfall_mm": 15.0,
         "class": "moderate"
       }
     },
@@ -184,7 +184,7 @@
         "psgc": "023111000",
         "municipality": "Camalaniugan",
         "province": "Cagayan",
-        "rainfall_mm": 2.13,
+        "rainfall_mm": 2.62,
         "class": "light"
       }
     },
@@ -201,8 +201,8 @@
         "psgc": "023112000",
         "municipality": "Claveria",
         "province": "Cagayan",
-        "rainfall_mm": 20.2,
-        "class": "moderate"
+        "rainfall_mm": 5.48,
+        "class": "light"
       }
     },
     {
@@ -218,7 +218,7 @@
         "psgc": "023113000",
         "municipality": "Enrile",
         "province": "Cagayan",
-        "rainfall_mm": 1.93,
+        "rainfall_mm": 1.83,
         "class": "light"
       }
     },
@@ -235,7 +235,7 @@
         "psgc": "023114000",
         "municipality": "Gattaran",
         "province": "Cagayan",
-        "rainfall_mm": 1.9,
+        "rainfall_mm": 2.83,
         "class": "light"
       }
     },
@@ -252,7 +252,7 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "rainfall_mm": 3.23,
+        "rainfall_mm": 5.48,
         "class": "light"
       }
     },
@@ -269,7 +269,7 @@
         "psgc": "023116000",
         "municipality": "Iguig",
         "province": "Cagayan",
-        "rainfall_mm": 1.18,
+        "rainfall_mm": 2.87,
         "class": "light"
       }
     },
@@ -286,7 +286,7 @@
         "psgc": "023117000",
         "municipality": "Lal-lo",
         "province": "Cagayan",
-        "rainfall_mm": 2.22,
+        "rainfall_mm": 3.13,
         "class": "light"
       }
     },
@@ -303,7 +303,7 @@
         "psgc": "023118000",
         "municipality": "Lasam",
         "province": "Cagayan",
-        "rainfall_mm": 2.2,
+        "rainfall_mm": 1.78,
         "class": "light"
       }
     },
@@ -320,7 +320,7 @@
         "psgc": "023119000",
         "municipality": "Pamplona",
         "province": "Cagayan",
-        "rainfall_mm": 7.24,
+        "rainfall_mm": 6.12,
         "class": "light"
       }
     },
@@ -337,8 +337,8 @@
         "psgc": "023120000",
         "municipality": "Peñablanca",
         "province": "Cagayan",
-        "rainfall_mm": 0.9,
-        "class": "dry"
+        "rainfall_mm": 2.14,
+        "class": "light"
       }
     },
     {
@@ -354,7 +354,7 @@
         "psgc": "023121000",
         "municipality": "Piat",
         "province": "Cagayan",
-        "rainfall_mm": 2.04,
+        "rainfall_mm": 2.92,
         "class": "light"
       }
     },
@@ -371,7 +371,7 @@
         "psgc": "023122000",
         "municipality": "Rizal",
         "province": "Cagayan",
-        "rainfall_mm": 3.38,
+        "rainfall_mm": 2.86,
         "class": "light"
       }
     },
@@ -388,8 +388,8 @@
         "psgc": "023123000",
         "municipality": "Sanchez-Mira",
         "province": "Cagayan",
-        "rainfall_mm": 13.49,
-        "class": "moderate"
+        "rainfall_mm": 5.64,
+        "class": "light"
       }
     },
     {
@@ -405,7 +405,7 @@
         "psgc": "023124000",
         "municipality": "Santa Ana",
         "province": "Cagayan",
-        "rainfall_mm": 3.35,
+        "rainfall_mm": 6.07,
         "class": "light"
       }
     },
@@ -422,8 +422,8 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "rainfall_mm": 26.18,
-        "class": "heavy"
+        "rainfall_mm": 7.72,
+        "class": "light"
       }
     },
     {
@@ -439,7 +439,7 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "rainfall_mm": 2.66,
+        "rainfall_mm": 3.95,
         "class": "light"
       }
     },
@@ -456,7 +456,7 @@
         "psgc": "023127000",
         "municipality": "Santo Niño",
         "province": "Cagayan",
-        "rainfall_mm": 1.99,
+        "rainfall_mm": 2.4,
         "class": "light"
       }
     },
@@ -473,7 +473,7 @@
         "psgc": "023128000",
         "municipality": "Solana",
         "province": "Cagayan",
-        "rainfall_mm": 1.67,
+        "rainfall_mm": 2.4,
         "class": "light"
       }
     },
@@ -490,7 +490,7 @@
         "psgc": "023129000",
         "municipality": "Tuao",
         "province": "Cagayan",
-        "rainfall_mm": 2.17,
+        "rainfall_mm": 2.69,
         "class": "light"
       }
     },
@@ -507,8 +507,8 @@
         "psgc": "031401000",
         "municipality": "City of Ilagan",
         "province": "Isabela",
-        "rainfall_mm": 0.43,
-        "class": "dry"
+        "rainfall_mm": 1.09,
+        "class": "light"
       }
     },
     {
@@ -524,7 +524,7 @@
         "psgc": "031402000",
         "municipality": "Alicia",
         "province": "Isabela",
-        "rainfall_mm": 0.67,
+        "rainfall_mm": 0.08,
         "class": "dry"
       }
     },
@@ -541,7 +541,7 @@
         "psgc": "031403000",
         "municipality": "Angadanan",
         "province": "Isabela",
-        "rainfall_mm": 0.35,
+        "rainfall_mm": 0.08,
         "class": "dry"
       }
     },
@@ -558,7 +558,7 @@
         "psgc": "031404000",
         "municipality": "Aurora",
         "province": "Isabela",
-        "rainfall_mm": 0.42,
+        "rainfall_mm": 0.19,
         "class": "dry"
       }
     },
@@ -575,7 +575,7 @@
         "psgc": "031405000",
         "municipality": "Benito Soliven",
         "province": "Isabela",
-        "rainfall_mm": 0.14,
+        "rainfall_mm": 0.45,
         "class": "dry"
       }
     },
@@ -592,7 +592,7 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "rainfall_mm": 0.31,
+        "rainfall_mm": 0.32,
         "class": "dry"
       }
     },
@@ -609,7 +609,7 @@
         "psgc": "031407000",
         "municipality": "Cabagan",
         "province": "Isabela",
-        "rainfall_mm": 1.17,
+        "rainfall_mm": 1.33,
         "class": "light"
       }
     },
@@ -626,7 +626,7 @@
         "psgc": "031408000",
         "municipality": "Cabatuan",
         "province": "Isabela",
-        "rainfall_mm": 0.48,
+        "rainfall_mm": 0.11,
         "class": "dry"
       }
     },
@@ -643,7 +643,7 @@
         "psgc": "031409000",
         "municipality": "Cauayan City",
         "province": "Isabela",
-        "rainfall_mm": 0.26,
+        "rainfall_mm": 0.22,
         "class": "dry"
       }
     },
@@ -660,8 +660,8 @@
         "psgc": "031410000",
         "municipality": "Cordon",
         "province": "Isabela",
-        "rainfall_mm": 1.93,
-        "class": "light"
+        "rainfall_mm": 0.29,
+        "class": "dry"
       }
     },
     {
@@ -677,8 +677,8 @@
         "psgc": "031411000",
         "municipality": "Delfin Albano",
         "province": "Isabela",
-        "rainfall_mm": 1.26,
-        "class": "light"
+        "rainfall_mm": 0.88,
+        "class": "dry"
       }
     },
     {
@@ -694,7 +694,7 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "rainfall_mm": 0.48,
+        "rainfall_mm": 0.08,
         "class": "dry"
       }
     },
@@ -711,7 +711,7 @@
         "psgc": "031413000",
         "municipality": "Divilacan",
         "province": "Isabela",
-        "rainfall_mm": 0.29,
+        "rainfall_mm": 0.44,
         "class": "dry"
       }
     },
@@ -728,7 +728,7 @@
         "psgc": "031414000",
         "municipality": "Echague",
         "province": "Isabela",
-        "rainfall_mm": 0.64,
+        "rainfall_mm": 0.06,
         "class": "dry"
       }
     },
@@ -745,7 +745,7 @@
         "psgc": "031415000",
         "municipality": "Gamu",
         "province": "Isabela",
-        "rainfall_mm": 0.33,
+        "rainfall_mm": 0.65,
         "class": "dry"
       }
     },
@@ -762,7 +762,7 @@
         "psgc": "031416000",
         "municipality": "Jones",
         "province": "Isabela",
-        "rainfall_mm": 0.72,
+        "rainfall_mm": 0.08,
         "class": "dry"
       }
     },
@@ -779,7 +779,7 @@
         "psgc": "031417000",
         "municipality": "Luna",
         "province": "Isabela",
-        "rainfall_mm": 0.34,
+        "rainfall_mm": 0.23,
         "class": "dry"
       }
     },
@@ -796,7 +796,7 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "rainfall_mm": 0.31,
+        "rainfall_mm": 0.9,
         "class": "dry"
       }
     },
@@ -813,8 +813,8 @@
         "psgc": "031419000",
         "municipality": "Mallig",
         "province": "Isabela",
-        "rainfall_mm": 1.04,
-        "class": "light"
+        "rainfall_mm": 0.71,
+        "class": "dry"
       }
     },
     {
@@ -830,7 +830,7 @@
         "psgc": "031420000",
         "municipality": "Naguilian",
         "province": "Isabela",
-        "rainfall_mm": 0.17,
+        "rainfall_mm": 0.63,
         "class": "dry"
       }
     },
@@ -864,7 +864,7 @@
         "psgc": "031422000",
         "municipality": "Quezon",
         "province": "Isabela",
-        "rainfall_mm": 1.48,
+        "rainfall_mm": 1.03,
         "class": "light"
       }
     },
@@ -881,7 +881,7 @@
         "psgc": "031423000",
         "municipality": "Quirino",
         "province": "Isabela",
-        "rainfall_mm": 0.74,
+        "rainfall_mm": 0.6,
         "class": "dry"
       }
     },
@@ -898,8 +898,8 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "rainfall_mm": 1.17,
-        "class": "light"
+        "rainfall_mm": 0.17,
+        "class": "dry"
       }
     },
     {
@@ -915,7 +915,7 @@
         "psgc": "031425000",
         "municipality": "Reina Mercedes",
         "province": "Isabela",
-        "rainfall_mm": 0.25,
+        "rainfall_mm": 0.41,
         "class": "dry"
       }
     },
@@ -932,7 +932,7 @@
         "psgc": "031426000",
         "municipality": "Roxas",
         "province": "Isabela",
-        "rainfall_mm": 0.63,
+        "rainfall_mm": 0.47,
         "class": "dry"
       }
     },
@@ -949,8 +949,8 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "rainfall_mm": 1.49,
-        "class": "light"
+        "rainfall_mm": 0.16,
+        "class": "dry"
       }
     },
     {
@@ -966,7 +966,7 @@
         "psgc": "031428000",
         "municipality": "San Guillermo",
         "province": "Isabela",
-        "rainfall_mm": 0.29,
+        "rainfall_mm": 0.05,
         "class": "dry"
       }
     },
@@ -983,7 +983,7 @@
         "psgc": "031429000",
         "municipality": "San Isidro",
         "province": "Isabela",
-        "rainfall_mm": 0.9,
+        "rainfall_mm": 0.08,
         "class": "dry"
       }
     },
@@ -1000,7 +1000,7 @@
         "psgc": "031430000",
         "municipality": "San Manuel",
         "province": "Isabela",
-        "rainfall_mm": 0.39,
+        "rainfall_mm": 0.25,
         "class": "dry"
       }
     },
@@ -1017,7 +1017,7 @@
         "psgc": "031431000",
         "municipality": "San Mariano",
         "province": "Isabela",
-        "rainfall_mm": 0.2,
+        "rainfall_mm": 0.5,
         "class": "dry"
       }
     },
@@ -1034,7 +1034,7 @@
         "psgc": "031432000",
         "municipality": "San Mateo",
         "province": "Isabela",
-        "rainfall_mm": 0.76,
+        "rainfall_mm": 0.19,
         "class": "dry"
       }
     },
@@ -1051,8 +1051,8 @@
         "psgc": "031433000",
         "municipality": "San Pablo",
         "province": "Isabela",
-        "rainfall_mm": 0.95,
-        "class": "dry"
+        "rainfall_mm": 1.52,
+        "class": "light"
       }
     },
     {
@@ -1068,7 +1068,7 @@
         "psgc": "031434000",
         "municipality": "Santa Maria",
         "province": "Isabela",
-        "rainfall_mm": 1.77,
+        "rainfall_mm": 1.51,
         "class": "light"
       }
     },
@@ -1085,8 +1085,8 @@
         "psgc": "031435000",
         "municipality": "Santiago City",
         "province": "Isabela",
-        "rainfall_mm": 1.4,
-        "class": "light"
+        "rainfall_mm": 0.14,
+        "class": "dry"
       }
     },
     {
@@ -1102,7 +1102,7 @@
         "psgc": "031436000",
         "municipality": "Santo Tomas",
         "province": "Isabela",
-        "rainfall_mm": 1.53,
+        "rainfall_mm": 1.2,
         "class": "light"
       }
     },
@@ -1119,7 +1119,7 @@
         "psgc": "031437000",
         "municipality": "Tumauini",
         "province": "Isabela",
-        "rainfall_mm": 1.04,
+        "rainfall_mm": 1.22,
         "class": "light"
       }
     },
@@ -1136,8 +1136,8 @@
         "psgc": "035601000",
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 12.05,
-        "class": "moderate"
+        "rainfall_mm": 6.15,
+        "class": "light"
       }
     },
     {
@@ -1153,7 +1153,7 @@
         "psgc": "035602000",
         "municipality": "Ambaguio",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 13.47,
+        "rainfall_mm": 10.63,
         "class": "moderate"
       }
     },
@@ -1170,8 +1170,8 @@
         "psgc": "035603000",
         "municipality": "Aritao",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 32.41,
-        "class": "heavy"
+        "rainfall_mm": 19.36,
+        "class": "moderate"
       }
     },
     {
@@ -1187,7 +1187,7 @@
         "psgc": "035604000",
         "municipality": "Bagabag",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 4.78,
+        "rainfall_mm": 1.63,
         "class": "light"
       }
     },
@@ -1204,8 +1204,8 @@
         "psgc": "035605000",
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 20.29,
-        "class": "moderate"
+        "rainfall_mm": 9.83,
+        "class": "light"
       }
     },
     {
@@ -1221,8 +1221,8 @@
         "psgc": "035606000",
         "municipality": "Diadi",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 3.25,
-        "class": "light"
+        "rainfall_mm": 0.75,
+        "class": "dry"
       }
     },
     {
@@ -1238,7 +1238,7 @@
         "psgc": "035607000",
         "municipality": "Dupax del Norte",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 21.97,
+        "rainfall_mm": 16.52,
         "class": "moderate"
       }
     },
@@ -1255,7 +1255,7 @@
         "psgc": "035608000",
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 30.87,
+        "rainfall_mm": 28.39,
         "class": "heavy"
       }
     },
@@ -1272,8 +1272,8 @@
         "psgc": "035609000",
         "municipality": "Kasibu",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 10.76,
-        "class": "moderate"
+        "rainfall_mm": 5.55,
+        "class": "light"
       }
     },
     {
@@ -1289,8 +1289,8 @@
         "psgc": "035610000",
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 27.86,
-        "class": "heavy"
+        "rainfall_mm": 15.73,
+        "class": "moderate"
       }
     },
     {
@@ -1306,7 +1306,7 @@
         "psgc": "035611000",
         "municipality": "Quezon",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 7.6,
+        "rainfall_mm": 2.96,
         "class": "light"
       }
     },
@@ -1323,8 +1323,8 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 36.07,
-        "class": "heavy"
+        "rainfall_mm": 24.14,
+        "class": "moderate"
       }
     },
     {
@@ -1340,7 +1340,7 @@
         "psgc": "035613000",
         "municipality": "Solano",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 7.39,
+        "rainfall_mm": 3.36,
         "class": "light"
       }
     },
@@ -1357,7 +1357,7 @@
         "psgc": "035614000",
         "municipality": "Villaverde",
         "province": "Nueva Vizcaya",
-        "rainfall_mm": 6.01,
+        "rainfall_mm": 3.1,
         "class": "light"
       }
     },
@@ -1374,7 +1374,7 @@
         "psgc": "067001000",
         "municipality": "Cabarroguis",
         "province": "Quirino",
-        "rainfall_mm": 4.08,
+        "rainfall_mm": 1.17,
         "class": "light"
       }
     },
@@ -1391,7 +1391,7 @@
         "psgc": "067002000",
         "municipality": "Aglipay",
         "province": "Quirino",
-        "rainfall_mm": 3.56,
+        "rainfall_mm": 1.11,
         "class": "light"
       }
     },
@@ -1408,8 +1408,8 @@
         "psgc": "067003000",
         "municipality": "Diffun",
         "province": "Quirino",
-        "rainfall_mm": 3.29,
-        "class": "light"
+        "rainfall_mm": 0.58,
+        "class": "dry"
       }
     },
     {
@@ -1425,8 +1425,8 @@
         "psgc": "067004000",
         "municipality": "Maddela",
         "province": "Quirino",
-        "rainfall_mm": 2.62,
-        "class": "light"
+        "rainfall_mm": 0.38,
+        "class": "dry"
       }
     },
     {
@@ -1442,7 +1442,7 @@
         "psgc": "067005000",
         "municipality": "Nagtipunan",
         "province": "Quirino",
-        "rainfall_mm": 8.27,
+        "rainfall_mm": 5.83,
         "class": "light"
       }
     },
@@ -1459,8 +1459,8 @@
         "psgc": "067006000",
         "municipality": "Saguday",
         "province": "Quirino",
-        "rainfall_mm": 1.82,
-        "class": "light"
+        "rainfall_mm": 0.21,
+        "class": "dry"
       }
     },
     {
@@ -1476,8 +1476,8 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "rainfall_mm": 21.74,
-        "class": "moderate"
+        "rainfall_mm": 6.88,
+        "class": "light"
       }
     },
     {
@@ -1493,8 +1493,8 @@
         "psgc": "020101000",
         "municipality": "Itbayat",
         "province": "Batanes",
-        "rainfall_mm": 17.36,
-        "class": "moderate"
+        "rainfall_mm": 9.32,
+        "class": "light"
       }
     },
     {
@@ -1510,8 +1510,8 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "rainfall_mm": 20.37,
-        "class": "moderate"
+        "rainfall_mm": 7.9,
+        "class": "light"
       }
     },
     {
@@ -1527,8 +1527,8 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "rainfall_mm": 20.87,
-        "class": "moderate"
+        "rainfall_mm": 7.47,
+        "class": "light"
       }
     },
     {
@@ -1544,8 +1544,8 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "rainfall_mm": 19.71,
-        "class": "moderate"
+        "rainfall_mm": 9.35,
+        "class": "light"
       }
     },
     {
@@ -1561,8 +1561,8 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "rainfall_mm": 20.69,
-        "class": "moderate"
+        "rainfall_mm": 7.65,
+        "class": "light"
       }
     }
   ]
