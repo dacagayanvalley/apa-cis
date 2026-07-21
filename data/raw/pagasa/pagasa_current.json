@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-21",
+  "as_of": "2026-07-22",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather"
@@ -7,22 +7,22 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "21 July 2026 Climate models suggest El Niño will further intensify, becoming very strong by the October-November-December 2026 season. (updated 06 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "22 July 2026 Climate models suggest El Niño will further intensify, becoming very strong by the October-November-December 2026 season. (updated 06 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-07-21"
+    "as_of": "2026-07-22"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-07-21",
+    "as_of": "2026-07-22",
     "region2_forecast": [
-      "21 July 2026",
-      "Issued at: 7:00 AM Tuesday, July 21, 2026",
-      "Valid until: 7:00 AM Wednesday, July 22, 2026",
-      "Metro Manila, Ilocos Region, Cordillera Administrative Region, MIMAROPA, Batanes, Babuyan Islands, Zambales, Bataan, Cavite, Batangas, and the rest of Mindanao",
-      "Metro Manila, Ilocos Region, Cordillera Administrative Region, Batanes, Babuyan Islands, Zambales, and Bataan –",
+      "22 July 2026",
+      "Issued at: 7:00 AM Wednesday, July 22, 2026",
+      "Valid until: 7:00 AM Thursday, July 23, 2026",
+      "Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City",
+      "(Updated as of 06 July 2026)",
       "A weak to moderate El Niño continues to persist in the tropical Pacific. Climate models suggest that it will continue to intensify, becoming very strong by the October–November–December 2026 season. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts."
     ],
-    "raw_text_extracted": "21 July 2026\nIssued at: 7:00 AM Tuesday, July 21, 2026\nValid until: 7:00 AM Wednesday, July 22, 2026\nMetro Manila, Ilocos Region, Cordillera Administrative Region, MIMAROPA, Batanes, Babuyan Islands, Zambales, Bataan, Cavite, Batangas, and the rest of Mindanao\nMetro Manila, Ilocos Region, Cordillera Administrative Region, Batanes, Babuyan Islands, Zambales, and Bataan –\nA weak to moderate El Niño continues to persist in the tropical Pacific. Climate models suggest that it will continue to intensify, becoming very strong by the October–November–December 2026 season. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts.",
+    "raw_text_extracted": "22 July 2026\nIssued at: 7:00 AM Wednesday, July 22, 2026\nValid until: 7:00 AM Thursday, July 23, 2026\nIlocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City\n(Updated as of 06 July 2026)\nA weak to moderate El Niño continues to persist in the tropical Pacific. Climate models suggest that it will continue to intensify, becoming very strong by the October–November–December 2026 season. Farmers are advised to maintain irrigation systems, use drought-tolerant crops, and harvest mature crops early when needed. Localized thunderstorms may still occur, especially in the afternoon or evening, bringing heavy rain, strong winds, lightning, and possible flash flooding in low-lying areas. Farmers should stay alert to daily weather updates, secure farm structures, and avoid field activities during thunderstorms, and adjust planting schedules based on DOST-PAGASA forecasts.",
     "parse_method": "static_html",
     "needs_review": true
   },
