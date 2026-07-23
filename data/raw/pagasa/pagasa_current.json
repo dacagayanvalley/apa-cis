@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-23",
+  "as_of": "2026-07-24",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather"
@@ -7,22 +7,27 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "23 July 2026 Climate models suggest El Niño will further intensify, becoming very strong by the October-November-December 2026 season. (updated 06 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "24 July 2026 Climate models suggest El Niño will further intensify, becoming very strong by the October-November-December 2026 season. (updated 06 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-07-23"
+    "as_of": "2026-07-24"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-07-23",
+    "as_of": "2026-07-24",
     "region2_forecast": [
-      "23 July 2026",
-      "Issued at: 7:00 AM Thursday, July 23, 2026",
-      "Valid until: 7:00 AM Friday, July 24, 2026",
-      "– Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City",
+      "24 July 2026",
+      "Issued at: 7:00 AM Friday, July 24, 2026",
+      "Valid until: 7:00 AM Saturday, July 25, 2026",
+      "At 3:00 AM today, the center of Tropical Storm \"KIYAPO\" {NOUL} was estimated based on all available data at 355 km East of Aparri, Cagayan (18.2°N, 125.0°E) with maximum sustained winds of 65 km/h near the center and gustiness of up to 80 km/h. It is moving West Northwestward at 30 km/h. Southwest Monsoon affecting Mindanao and the western sections of Southern Luzon and Visayas.",
+      "Ilocos Norte, Batanes, and Babuyan Islands",
+      "Cordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union, and Aurora",
+      "Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City",
       "(Updated as of 22 July 2026)",
-      "A weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability."
+      "A weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
+      "(Batanes and Babuyan Islands) and",
+      "(Cagayan {Santa Ana, Gonzaga, Santa Teresita, Buguey, Aparri, Ballesteros, Pamplona, Abulug, Sanchez-Mira, Claveria, Santa Praxedes} and Ilocos Norte {Pagudpud, Bangui, Burgos})."
     ],
-    "raw_text_extracted": "23 July 2026\nIssued at: 7:00 AM Thursday, July 23, 2026\nValid until: 7:00 AM Friday, July 24, 2026\n– Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City\n(Updated as of 22 July 2026)\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
+    "raw_text_extracted": "24 July 2026\nIssued at: 7:00 AM Friday, July 24, 2026\nValid until: 7:00 AM Saturday, July 25, 2026\nAt 3:00 AM today, the center of Tropical Storm \"KIYAPO\" {NOUL} was estimated based on all available data at 355 km East of Aparri, Cagayan (18.2°N, 125.0°E) with maximum sustained winds of 65 km/h near the center and gustiness of up to 80 km/h. It is moving West Northwestward at 30 km/h. Southwest Monsoon affecting Mindanao and the western sections of Southern Luzon and Visayas.\nIlocos Norte, Batanes, and Babuyan Islands\nCordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union, and Aurora\nIlocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City\n(Updated as of 22 July 2026)\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.\n(Batanes and Babuyan Islands) and\n(Cagayan {Santa Ana, Gonzaga, Santa Teresita, Buguey, Aparri, Ballesteros, Pamplona, Abulug, Sanchez-Mira, Claveria, Santa Praxedes} and Ilocos Norte {Pagudpud, Bangui, Burgos}).",
     "parse_method": "static_html",
     "needs_review": true
   },
