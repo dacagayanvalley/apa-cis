@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-07-25",
+  "last_run": "2026-07-26",
   "status": "success",
-  "elapsed_seconds": 205.8,
+  "elapsed_seconds": 200.3,
   "steps": {
     "apa_cis": "success",
     "acap": "success",
@@ -11,5 +11,5 @@
     "indicators": "success",
     "advisories": "success"
   },
-  "data_as_of": "2026-07-20"
+  "data_as_of": "2026-07-21"
 }

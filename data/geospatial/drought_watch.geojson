@@ -626,7 +626,7 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -752,7 +752,7 @@
         "psgc": "031413000",
         "municipality": "Divilacan",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -842,7 +842,7 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -896,7 +896,7 @@
         "psgc": "031421000",
         "municipality": "Palanan",
         "province": "Isabela",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
