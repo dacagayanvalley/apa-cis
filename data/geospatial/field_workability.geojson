@@ -78,8 +78,8 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
-          "harvesting": "defer",
+          "irrigation": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -106,7 +106,7 @@
           "transplanting": "safe",
           "fertilizer_application": "defer",
           "spraying": "defer",
-          "irrigation": "safe",
+          "irrigation": "defer",
           "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
@@ -135,7 +135,7 @@
           "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -190,7 +190,7 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
+          "irrigation": "defer",
           "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
@@ -246,9 +246,9 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
+          "irrigation": "defer",
           "harvesting": "defer",
-          "drying": "safe",
+          "drying": "defer",
           "pest_monitoring": "safe"
         }
       }
@@ -304,7 +304,7 @@
           "spraying": "defer",
           "irrigation": "defer",
           "harvesting": "defer",
-          "drying": "safe",
+          "drying": "defer",
           "pest_monitoring": "safe"
         }
       }
@@ -386,8 +386,8 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
-          "harvesting": "defer",
+          "irrigation": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -414,9 +414,9 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
+          "irrigation": "defer",
           "harvesting": "defer",
-          "drying": "safe",
+          "drying": "defer",
           "pest_monitoring": "safe"
         }
       }
@@ -443,7 +443,7 @@
           "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -470,8 +470,8 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
-          "harvesting": "defer",
+          "irrigation": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -498,8 +498,8 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
-          "harvesting": "defer",
+          "irrigation": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -554,7 +554,7 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
+          "irrigation": "defer",
           "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
@@ -658,17 +658,17 @@
         "psgc": "023124000",
         "municipality": "Santa Ana",
         "province": "Cagayan",
-        "workability_class": "workable",
-        "workability_label": "Workable — Safe for field operations",
-        "color": "#4CAF50",
+        "workability_class": "caution",
+        "workability_label": "Caution — Light work only",
+        "color": "#FF9800",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "safe",
+          "fertilizer_application": "defer",
           "spraying": "defer",
-          "irrigation": "safe",
+          "irrigation": "defer",
           "harvesting": "defer",
-          "drying": "safe",
+          "drying": "defer",
           "pest_monitoring": "safe"
         }
       }
@@ -722,9 +722,9 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
+          "irrigation": "defer",
           "harvesting": "defer",
-          "drying": "safe",
+          "drying": "defer",
           "pest_monitoring": "safe"
         }
       }
@@ -750,8 +750,8 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "defer",
-          "irrigation": "safe",
-          "harvesting": "defer",
+          "irrigation": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -833,7 +833,7 @@
           "land_preparation": "safe",
           "transplanting": "safe",
           "fertilizer_application": "safe",
-          "spraying": "safe",
+          "spraying": "defer",
           "irrigation": "defer",
           "harvesting": "safe",
           "drying": "defer",
@@ -854,16 +854,16 @@
         "psgc": "031402000",
         "municipality": "Alicia",
         "province": "Isabela",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
-          "spraying": "defer",
+          "fertilizer_application": "safe",
+          "spraying": "safe",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -882,16 +882,16 @@
         "psgc": "031403000",
         "municipality": "Angadanan",
         "province": "Isabela",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -919,7 +919,7 @@
           "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "safe",
+          "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1022,16 +1022,16 @@
         "psgc": "031408000",
         "municipality": "Cabatuan",
         "province": "Isabela",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1078,16 +1078,16 @@
         "psgc": "031410000",
         "municipality": "Cordon",
         "province": "Isabela",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1141,10 +1141,10 @@
           "land_preparation": "safe",
           "transplanting": "safe",
           "fertilizer_application": "safe",
-          "spraying": "safe",
-          "irrigation": "safe",
+          "spraying": "defer",
+          "irrigation": "defer",
           "harvesting": "safe",
-          "drying": "safe",
+          "drying": "defer",
           "pest_monitoring": "safe"
         }
       }
@@ -1169,10 +1169,10 @@
           "land_preparation": "safe",
           "transplanting": "safe",
           "fertilizer_application": "safe",
-          "spraying": "safe",
-          "irrigation": "safe",
+          "spraying": "defer",
+          "irrigation": "defer",
           "harvesting": "safe",
-          "drying": "safe",
+          "drying": "defer",
           "pest_monitoring": "safe"
         }
       }
@@ -1190,16 +1190,16 @@
         "psgc": "031414000",
         "municipality": "Echague",
         "province": "Isabela",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1310,7 +1310,7 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "safe",
-          "irrigation": "safe",
+          "irrigation": "defer",
           "harvesting": "safe",
           "drying": "safe",
           "pest_monitoring": "safe"
@@ -1358,16 +1358,16 @@
         "psgc": "031420000",
         "municipality": "Naguilian",
         "province": "Isabela",
-        "workability_class": "workable",
-        "workability_label": "Workable — Safe for field operations",
-        "color": "#4CAF50",
+        "workability_class": "caution",
+        "workability_label": "Caution — Light work only",
+        "color": "#FF9800",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "safe",
+          "fertilizer_application": "defer",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "safe",
+          "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1393,10 +1393,10 @@
           "land_preparation": "safe",
           "transplanting": "safe",
           "fertilizer_application": "safe",
-          "spraying": "safe",
-          "irrigation": "safe",
+          "spraying": "defer",
+          "irrigation": "defer",
           "harvesting": "safe",
-          "drying": "safe",
+          "drying": "defer",
           "pest_monitoring": "safe"
         }
       }
@@ -1470,13 +1470,13 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
           "harvesting": "defer",
@@ -1563,7 +1563,7 @@
           "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "safe",
+          "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1591,7 +1591,7 @@
           "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "safe",
+          "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1610,16 +1610,16 @@
         "psgc": "031429000",
         "municipality": "San Isidro",
         "province": "Isabela",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
-          "spraying": "defer",
+          "fertilizer_application": "safe",
+          "spraying": "safe",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1673,7 +1673,7 @@
           "land_preparation": "safe",
           "transplanting": "safe",
           "fertilizer_application": "safe",
-          "spraying": "safe",
+          "spraying": "defer",
           "irrigation": "defer",
           "harvesting": "safe",
           "drying": "defer",
@@ -1694,16 +1694,16 @@
         "psgc": "031432000",
         "municipality": "San Mateo",
         "province": "Isabela",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
-          "spraying": "defer",
+          "fertilizer_application": "safe",
+          "spraying": "safe",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1729,7 +1729,7 @@
           "land_preparation": "safe",
           "transplanting": "safe",
           "fertilizer_application": "safe",
-          "spraying": "safe",
+          "spraying": "defer",
           "irrigation": "defer",
           "harvesting": "safe",
           "drying": "defer",
@@ -1778,16 +1778,16 @@
         "psgc": "031435000",
         "municipality": "Santiago City",
         "province": "Isabela",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1862,16 +1862,16 @@
         "psgc": "035601000",
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -1946,16 +1946,16 @@
         "psgc": "035604000",
         "municipality": "Bagabag",
         "province": "Nueva Vizcaya",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2002,16 +2002,16 @@
         "psgc": "035606000",
         "municipality": "Diadi",
         "province": "Nueva Vizcaya",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2030,16 +2030,16 @@
         "psgc": "035607000",
         "municipality": "Dupax del Norte",
         "province": "Nueva Vizcaya",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2058,16 +2058,16 @@
         "psgc": "035608000",
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2086,16 +2086,16 @@
         "psgc": "035609000",
         "municipality": "Kasibu",
         "province": "Nueva Vizcaya",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2142,16 +2142,16 @@
         "psgc": "035611000",
         "municipality": "Quezon",
         "province": "Nueva Vizcaya",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2198,16 +2198,16 @@
         "psgc": "035613000",
         "municipality": "Solano",
         "province": "Nueva Vizcaya",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2226,16 +2226,16 @@
         "psgc": "035614000",
         "municipality": "Villaverde",
         "province": "Nueva Vizcaya",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2254,16 +2254,16 @@
         "psgc": "067001000",
         "municipality": "Cabarroguis",
         "province": "Quirino",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2289,10 +2289,10 @@
           "land_preparation": "safe",
           "transplanting": "safe",
           "fertilizer_application": "safe",
-          "spraying": "defer",
+          "spraying": "safe",
           "irrigation": "defer",
           "harvesting": "safe",
-          "drying": "defer",
+          "drying": "safe",
           "pest_monitoring": "safe"
         }
       }
@@ -2310,16 +2310,16 @@
         "psgc": "067003000",
         "municipality": "Diffun",
         "province": "Quirino",
-        "workability_class": "caution",
-        "workability_label": "Caution — Light work only",
-        "color": "#FF9800",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "defer",
+          "fertilizer_application": "safe",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "defer",
+          "harvesting": "safe",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2345,10 +2345,10 @@
           "land_preparation": "safe",
           "transplanting": "safe",
           "fertilizer_application": "safe",
-          "spraying": "defer",
+          "spraying": "safe",
           "irrigation": "defer",
           "harvesting": "safe",
-          "drying": "defer",
+          "drying": "safe",
           "pest_monitoring": "safe"
         }
       }
@@ -2394,6 +2394,34 @@
         "psgc": "067006000",
         "municipality": "Saguday",
         "province": "Quirino",
+        "workability_class": "workable",
+        "workability_label": "Workable — Safe for field operations",
+        "color": "#4CAF50",
+        "operations": {
+          "land_preparation": "safe",
+          "transplanting": "safe",
+          "fertilizer_application": "safe",
+          "spraying": "defer",
+          "irrigation": "defer",
+          "harvesting": "safe",
+          "drying": "defer",
+          "pest_monitoring": "safe"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.9701,
+          20.4487
+        ]
+      },
+      "properties": {
+        "psgc": "020100000",
+        "municipality": "Basco",
+        "province": "Batanes",
         "workability_class": "caution",
         "workability_label": "Caution — Light work only",
         "color": "#FF9800",
@@ -2414,34 +2442,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.9701,
-          20.4487
-        ]
-      },
-      "properties": {
-        "psgc": "020100000",
-        "municipality": "Basco",
-        "province": "Batanes",
-        "workability_class": "workable",
-        "workability_label": "Workable — Safe for field operations",
-        "color": "#4CAF50",
-        "operations": {
-          "land_preparation": "safe",
-          "transplanting": "safe",
-          "fertilizer_application": "safe",
-          "spraying": "defer",
-          "irrigation": "defer",
-          "harvesting": "safe",
-          "drying": "defer",
-          "pest_monitoring": "safe"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           121.843,
           20.788
         ]
@@ -2450,16 +2450,16 @@
         "psgc": "020101000",
         "municipality": "Itbayat",
         "province": "Batanes",
-        "workability_class": "workable",
-        "workability_label": "Workable — Safe for field operations",
-        "color": "#4CAF50",
+        "workability_class": "caution",
+        "workability_label": "Caution — Light work only",
+        "color": "#FF9800",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "safe",
+          "fertilizer_application": "defer",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "safe",
+          "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2478,16 +2478,16 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "workability_class": "workable",
-        "workability_label": "Workable — Safe for field operations",
-        "color": "#4CAF50",
+        "workability_class": "caution",
+        "workability_label": "Caution — Light work only",
+        "color": "#FF9800",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "safe",
+          "fertilizer_application": "defer",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "safe",
+          "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2506,16 +2506,16 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "workability_class": "workable",
-        "workability_label": "Workable — Safe for field operations",
-        "color": "#4CAF50",
+        "workability_class": "caution",
+        "workability_label": "Caution — Light work only",
+        "color": "#FF9800",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "safe",
+          "fertilizer_application": "defer",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "safe",
+          "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2534,16 +2534,16 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "workability_class": "workable",
-        "workability_label": "Workable — Safe for field operations",
-        "color": "#4CAF50",
+        "workability_class": "caution",
+        "workability_label": "Caution — Light work only",
+        "color": "#FF9800",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "safe",
+          "fertilizer_application": "defer",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "safe",
+          "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
@@ -2562,16 +2562,16 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "workability_class": "workable",
-        "workability_label": "Workable — Safe for field operations",
-        "color": "#4CAF50",
+        "workability_class": "caution",
+        "workability_label": "Caution — Light work only",
+        "color": "#FF9800",
         "operations": {
           "land_preparation": "safe",
           "transplanting": "safe",
-          "fertilizer_application": "safe",
+          "fertilizer_application": "defer",
           "spraying": "defer",
           "irrigation": "defer",
-          "harvesting": "safe",
+          "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "safe"
         }
