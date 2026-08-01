@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-01",
+  "as_of": "2026-08-02",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather"
@@ -7,22 +7,22 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "1 August 2026 : A weak to moderate El Niño is present in the tropical Pacific. Climate models suggest that El Niño will likely intensify over the next few seasons and persist until the first half of 2027 (~97%). A strong El Niño is likely to emerge by the July-Aug-Sep season (~57%), and a very strong El Niño is favored during the Oct-Nov-Dec and Nov-Dec-Jan seasons (~81%).    (updated: 22 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "2 August 2026 : A weak to moderate El Niño is present in the tropical Pacific. Climate models suggest that El Niño will likely intensify over the next few seasons and persist until the first half of 2027 (~97%). A strong El Niño is likely to emerge by the July-Aug-Sep season (~57%), and a very strong El Niño is favored during the Oct-Nov-Dec and Nov-Dec-Jan seasons (~81%).    (updated: 22 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-08-01"
+    "as_of": "2026-08-02"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-08-01",
+    "as_of": "2026-08-02",
     "region2_forecast": [
-      "1 August 2026",
+      "2 August 2026",
       "Issued at: 7:00 AM Friday, July 31, 2026",
       "Valid until: 7:00 AM Saturday, August 01, 2026",
       "Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City",
       "(Updated as of 22 July 2026)",
       "A weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability."
     ],
-    "raw_text_extracted": "1 August 2026\nIssued at: 7:00 AM Friday, July 31, 2026\nValid until: 7:00 AM Saturday, August 01, 2026\nIlocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City\n(Updated as of 22 July 2026)\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
+    "raw_text_extracted": "2 August 2026\nIssued at: 7:00 AM Friday, July 31, 2026\nValid until: 7:00 AM Saturday, August 01, 2026\nIlocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City\n(Updated as of 22 July 2026)\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
     "parse_method": "static_html",
     "needs_review": true
   },
