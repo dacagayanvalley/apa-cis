@@ -11,5 +11,7 @@
     "indicators": "success",
     "advisories": "success"
   },
-  "data_as_of": "2026-06-26"
+  "data_as_of": "2026-07-01",
+  "forecast_as_of": "2026-07-01",
+  "fallback_observation_as_of": "2026-06-26"
 }

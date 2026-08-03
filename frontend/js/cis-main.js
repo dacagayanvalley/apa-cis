@@ -156,7 +156,7 @@ async function initCIS() {
     const { indicators, advisories, status, pagasaData } = await CISData.loadAll();
 
     // Update freshness in topbar
-    _updateFreshness(indicators?.meta);
+    _updateFreshness(CISData.getPipelineStatus());
     _updateENSOBadge();
 
     // Render dashboard (default active module)

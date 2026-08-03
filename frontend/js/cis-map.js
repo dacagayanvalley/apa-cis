@@ -384,11 +384,16 @@ const CISMap = (() => {
   }
 
   function _validUntil(asOfDate) {
-    if (!asOfDate) return 'Next pipeline update';
-    const parsed = new Date(`${asOfDate}T00:00:00+08:00`);
-    if (Number.isNaN(parsed.getTime())) return 'Next pipeline update';
+    if (!asOfDate || !/^\d{4}-\d{2}-\d{2}$/.test(asOfDate)) return 'Next pipeline update';
+    const [year, month, day] = asOfDate.split('-').map(Number);
+    const parsed = new Date(year, month - 1, day);
     parsed.setDate(parsed.getDate() + 1);
-    return parsed.toISOString().slice(0, 10) + ' or until superseded';
+    const validDate = [
+      parsed.getFullYear(),
+      String(parsed.getMonth() + 1).padStart(2, '0'),
+      String(parsed.getDate()).padStart(2, '0'),
+    ].join('-');
+    return validDate + ' or until superseded';
   }
 
   function _qaLabelForLayer(layerName) {

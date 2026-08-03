@@ -206,7 +206,11 @@ def run_daily_pipeline(
         "status": report["overall_status"],
         "elapsed_seconds": report["elapsed_seconds"],
         "steps": report["steps"],
-        "data_as_of": (today_pht() - timedelta(days=cfg["nasa_power"]["lag_days"])).isoformat(),
+        "data_as_of": run_date,
+        "forecast_as_of": run_date,
+        "fallback_observation_as_of": (
+            today_pht() - timedelta(days=cfg["nasa_power"]["lag_days"])
+        ).isoformat(),
     }, status_path)
 
     log_etl_event(
