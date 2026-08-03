@@ -351,7 +351,7 @@ const CISSevereWeather = (() => {
         <td>${_escape(item.province)}</td>
         <td>${item.signal ? `TCWS ${item.signal}` : '-'}</td>
         <td>${_formatRain(item)}</td>
-        <td>${_formatWind(item)}</td>
+        <td>${_formatWindSummary(item)}</td>
         <td>${item.tmax ? item.tmax.toFixed(1) + ' C' : '-'}</td>
         <td>${item.score}</td>
         <td>${_severityPill(item.severity)}</td>
