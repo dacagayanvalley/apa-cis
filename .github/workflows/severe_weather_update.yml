@@ -3,7 +3,7 @@
 # APA-CIS PAGASA Severe Weather Bulletin Refresh
 # DA RFO 02 - Climate Information Service, Cagayan Valley
 #
-# Schedule: Runs every 30 minutes to catch PAGASA severe-weather updates quickly
+# Schedule: Runs strictly every 30 minutes to catch PAGASA severe-weather updates quickly
 #           PHT: :00 and :30 every hour
 #           UTC: :00 and :30 every hour
 # ============================================================
@@ -13,14 +13,14 @@ name: APA-CIS PAGASA Severe Weather Refresh
 on:
   schedule:
     - cron: '*/30 * * * *'
-  workflow_dispatch:
-
 jobs:
   refresh-severe-weather:
     name: Refresh PAGASA Severe Weather Bulletin
     runs-on: ubuntu-latest
     timeout-minutes: 20
-
+    concurrency:
+      group: pagasa-severe-weather-refresh
+      cancel-in-progress: false
     permissions:
       contents: write
 
