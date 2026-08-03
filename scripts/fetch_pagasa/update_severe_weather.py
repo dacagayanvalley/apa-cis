@@ -25,6 +25,7 @@ def run() -> dict:
 
     pagasa_data = fetch_live_pagasa_data()
     typhoon = pagasa_data.get("typhoon") or {}
+    fetched_at = pagasa_data.get("fetched_at") or datetime.now(timezone.utc).isoformat()
     raw_pagasa = PROJECT_ROOT / cfg["paths"]["raw_pagasa"]
 
     latest_path = raw_pagasa / "pagasa_current.json"
@@ -35,7 +36,7 @@ def run() -> dict:
     save_json(pagasa_data, dated_path)
 
     status = load_json(status_path) or {}
-    status["severe_weather_last_checked"] = datetime.now(timezone.utc).isoformat()
+    status["severe_weather_last_checked"] = fetched_at
     status["severe_weather_as_of"] = typhoon.get("as_of") or run_date
     status["severe_weather_active"] = bool(typhoon.get("active"))
     status["severe_weather_region2_affected"] = bool(typhoon.get("region2_affected"))

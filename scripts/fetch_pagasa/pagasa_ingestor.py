@@ -17,7 +17,7 @@ DA RFO 02 — APA-CIS Climate Information Service
 import html
 import re
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -379,8 +379,11 @@ def fetch_live_pagasa_data() -> Dict:
     Attempt to fetch current PAGASA data from public pages.
     Returns a combined result dict.
     """
+    fetched_at = datetime.now(timezone.utc).isoformat()
     output = {
         "as_of": today_pht().isoformat(),
+        "fetched_at": fetched_at,
+        "fetched_at_utc": fetched_at,
         "source_urls": {
             "enso": PAGASA_URLS["enso"],
             "farm_weather": PAGASA_URLS["farm_weather"],
@@ -413,6 +416,9 @@ def fetch_live_pagasa_data() -> Dict:
     typhoon_html = scrape_pagasa_page(PAGASA_URLS["typhoon"], "severe_weather_bulletin")
     if typhoon_html:
         output["typhoon"] = parse_severe_weather_bulletin(typhoon_html)
+        if isinstance(output["typhoon"], dict):
+            output["typhoon"]["fetched_at"] = fetched_at
+            output["typhoon"]["fetched_at_utc"] = fetched_at
         output["scrape_status"]["typhoon"] = "success"
     else:
         output["scrape_status"]["typhoon"] = "failed"

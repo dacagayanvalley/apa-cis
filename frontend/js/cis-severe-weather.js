@@ -23,7 +23,7 @@ const CISSevereWeather = (() => {
       _allAffected.filter(item => provinceFilter === 'all' || item.province === provinceFilter)
     );
 
-    _renderStatus(typhoon, _allAffected);
+    _renderStatus(pagasa, typhoon, _allAffected);
     _renderTable(typhoon);
     _renderSortIndicators();
     _renderSummary(typhoon);
@@ -307,13 +307,16 @@ const CISSevereWeather = (() => {
     });
   }
 
-  function _renderStatus(typhoon, affectedAll) {
+  function _renderStatus(pagasa, typhoon, affectedAll) {
     const active = Boolean(typhoon.active);
     const affected = Boolean(typhoon.region2_affected);
+    const fetchedText = _formatFetchedAt(typhoon.fetched_at || typhoon.fetched_at_utc || pagasa.fetched_at || pagasa.fetched_at_utc);
+    const issuedText = typhoon.issued_at ? `Issued ${typhoon.issued_at}` : `Bulletin date ${typhoon.as_of || pagasa.as_of || 'today'}`;
+    const validityText = typhoon.valid_until || 'Monitor PAGASA for updates';
     _setText('sw-status', active ? (affected ? 'Active and affecting Region 2' : 'Active outside Region 2') : 'No active PAGASA bulletin');
-    _setText('sw-issued', typhoon.issued_at ? `Issued ${typhoon.issued_at}` : `Checked ${typhoon.as_of || 'today'}`);
+    _setText('sw-issued', fetchedText ? `${issuedText}; fetched ${fetchedText}` : issuedText);
     _setText('sw-system', active ? `${typhoon.disturbance_type || 'Weather Disturbance'} ${typhoon.name || ''}`.trim() : 'None detected');
-    _setText('sw-validity', typhoon.valid_until || 'Monitor PAGASA for updates');
+    _setText('sw-validity', fetchedText ? `${validityText}; fetched ${fetchedText}` : validityText);
     _setText('sw-affected-count', affectedAll.length ? `${affectedAll.length} municipalities` : '0 municipalities');
     _setText('sw-affected-provinces', (typhoon.affected_provinces || []).join(', ') || 'No Cagayan Valley municipalities matched');
 
@@ -576,6 +579,19 @@ const CISSevereWeather = (() => {
     return `${system || 'The active PAGASA bulletin'} affects ${item.province}. Based on ${rainText} (${item.rainSource}), ${_formatWindAdvisory(item)} (${item.windSource}), and field-workability status (${item.fieldClass}), ${windText}.`;
   }
 
+  function _formatFetchedAt(value) {
+    if (!value) return '';
+    const parsed = new Date(value);
+    if (Number.isNaN(parsed.getTime())) return value;
+    return parsed.toLocaleString('en-PH', {
+      timeZone: 'Asia/Manila',
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+  }
   function _severityLabel(severity) {
     return severity === 'danger' ? 'Danger' : severity === 'warning' ? 'Warning' : 'Advisory';
   }
