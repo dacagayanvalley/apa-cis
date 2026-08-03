@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-03",
-  "fetched_at": "2026-08-03T07:39:27.889700+00:00",
-  "fetched_at_utc": "2026-08-03T07:39:27.889700+00:00",
+  "fetched_at": "2026-08-03T13:45:54.048032+00:00",
+  "fetched_at_utc": "2026-08-03T13:45:54.048032+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -37,9 +37,9 @@
     "active": true,
     "name": "Luis",
     "disturbance_type": "Tropical Depression",
-    "bulletin_number": "10",
-    "issued_at": "02:00 pm, 03 August 2026",
-    "valid_until": "the next advisory to be issued at 5:00 PM today)",
+    "bulletin_number": "12",
+    "issued_at": "08:00 pm, 03 August 2026",
+    "valid_until": "the next advisory to be issued at 11:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 1,
     "signal_levels": {
@@ -47,15 +47,15 @@
       "Cagayan": 1,
       "Isabela": 1,
       "Nueva Vizcaya": 0,
-      "Quirino": 1
+      "Quirino": 0
     },
     "max_sustained_wind_kmh": 45.0,
-    "peak_wind_gust_kmh": 60.0,
-    "gustiness_kmh": 60.0,
+    "peak_wind_gust_kmh": 75.0,
+    "gustiness_kmh": 75.0,
     "wind": {
       "max_sustained_wind_kmh": 45.0,
-      "peak_wind_gust_kmh": 60.0,
-      "gustiness_kmh": 60.0
+      "peak_wind_gust_kmh": 75.0,
+      "gustiness_kmh": 75.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -85,14 +85,13 @@
       }
     },
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 7 issued at 11:00 AM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon."
+      "advisory_text": "Refer to Weather Advisory No. 8 issued at 05:00 PM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 7 issued at 11:00 AM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 8 issued at 05:00 PM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon.",
     "region2_affected": true,
     "affected_provinces": [
       "Cagayan",
-      "Isabela",
-      "Quirino"
+      "Isabela"
     ],
     "affected_municipalities": [
       {
@@ -267,7 +266,7 @@
         "psgc": "031404000",
         "municipality": "Aurora",
         "province": "Isabela",
-        "match": "municipality"
+        "match": "province"
       },
       {
         "psgc": "031405000",
@@ -381,7 +380,7 @@
         "psgc": "031423000",
         "municipality": "Quirino",
         "province": "Isabela",
-        "match": "municipality"
+        "match": "province"
       },
       {
         "psgc": "031424000",
@@ -466,53 +465,23 @@
         "municipality": "Tumauini",
         "province": "Isabela",
         "match": "province"
-      },
-      {
-        "psgc": "067001000",
-        "municipality": "Cabarroguis",
-        "province": "Quirino",
-        "match": "province"
-      },
-      {
-        "psgc": "067002000",
-        "municipality": "Aglipay",
-        "province": "Quirino",
-        "match": "province"
-      },
-      {
-        "psgc": "067003000",
-        "municipality": "Diffun",
-        "province": "Quirino",
-        "match": "province"
-      },
-      {
-        "psgc": "067004000",
-        "municipality": "Maddela",
-        "province": "Quirino",
-        "match": "province"
-      },
-      {
-        "psgc": "067005000",
-        "municipality": "Nagtipunan",
-        "province": "Quirino",
-        "match": "province"
-      },
-      {
-        "psgc": "067006000",
-        "municipality": "Saguday",
-        "province": "Quirino",
-        "match": "province"
       }
     ],
-    "summary": "Tropical Depression Luis Bulletin #10",
+    "summary": "Tropical Depression Luis Bulletin #12",
     "as_of": "2026-08-03",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-03T07:39:27.889700+00:00",
-    "fetched_at_utc": "2026-08-03T07:39:27.889700+00:00"
+    "fetched_at": "2026-08-03T13:45:54.048032+00:00",
+    "fetched_at_utc": "2026-08-03T13:45:54.048032+00:00",
+    "auto_fetch_interval_minutes": 30
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
     "typhoon": "success"
+  },
+  "severe_weather_auto_fetch": {
+    "mode": "scheduled_only",
+    "interval_minutes": 30,
+    "last_checked_utc": "2026-08-03T13:45:54.048032+00:00"
   }
 }

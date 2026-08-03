@@ -13,5 +13,13 @@
   },
   "data_as_of": "2026-08-03",
   "forecast_as_of": "2026-08-03",
-  "fallback_observation_as_of": "2026-07-29"
+  "fallback_observation_as_of": "2026-07-29",
+  "severe_weather_last_checked": "2026-08-03T13:45:54.048032+00:00",
+  "severe_weather_as_of": "2026-08-03",
+  "severe_weather_active": true,
+  "severe_weather_region2_affected": true,
+  "severe_weather_system": "Tropical Depression Luis",
+  "severe_weather_bulletin_number": "12",
+  "severe_weather_auto_fetch_interval_minutes": 30,
+  "severe_weather_auto_fetch_mode": "scheduled_only"
 }
