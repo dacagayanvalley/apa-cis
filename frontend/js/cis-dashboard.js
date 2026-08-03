@@ -60,7 +60,10 @@ const CISDashboard = (() => {
       } else {
         const enso = pagasa.enso?.phase || pagasa.enso?.enso_phase || 'unknown ENSO';
         const date = pagasa.entry_date || pagasa.as_of || 'undated';
-        const typhoon = pagasa.typhoon?.active ? `; TC active: ${pagasa.typhoon.name || 'yes'}` : '';
+        const tc = pagasa.typhoon || {};
+        const typhoon = tc.active
+          ? `; active ${tc.disturbance_type || 'weather disturbance'} ${tc.name || ''}${tc.region2_affected ? ' affecting Region 2' : ''}`
+          : '';
         pagasaEl.textContent = `${enso} as of ${date}${typhoon}`;
       }
     }

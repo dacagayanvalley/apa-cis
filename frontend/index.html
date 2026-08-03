@@ -47,6 +47,9 @@
   <button class="mnav-btn" data-module="planning" onclick="switchModule('planning', this)">
     <span class="mnav-icon">🎯</span> Planning Dashboard
   </button>
+  <button class="mnav-btn" data-module="severe" onclick="switchModule('severe', this)">
+    <span class="mnav-icon">!</span> Severe Weather
+  </button>
 </nav>
 
 <!-- ══════════════════════════════════════════════════════════ -->
@@ -387,6 +390,98 @@
   <div class="intervention-matrix" id="intervention-matrix"></div>
 </div>
 
+<!-- ============================================================ -->
+<!-- MODULE: SEVERE WEATHER ADVISORY                             -->
+<!-- ============================================================ -->
+<div id="module-severe" class="module">
+  <div class="severe-header">
+    <div>
+      <h2 class="severe-title">PAGASA Severe Weather Advisory</h2>
+      <p class="severe-sub">Official disturbance status combined with municipal rainfall, wind, temperature, and field-workability indicators.</p>
+    </div>
+    <a class="cis-open-link" id="severe-source-link" href="https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin" target="_blank" rel="noopener">Open PAGASA Bulletin</a>
+  </div>
+
+  <div class="severe-status-grid">
+    <div class="severe-status-card" id="sw-status-card">
+      <span class="source-label">PAGASA Status</span>
+      <strong id="sw-status">Checking...</strong>
+      <p id="sw-issued">--</p>
+    </div>
+    <div class="severe-status-card">
+      <span class="source-label">Weather Disturbance</span>
+      <strong id="sw-system">--</strong>
+      <p id="sw-validity">--</p>
+    </div>
+    <div class="severe-status-card">
+      <span class="source-label">Region 2 Exposure</span>
+      <strong id="sw-affected-count">--</strong>
+      <p id="sw-affected-provinces">--</p>
+    </div>
+    <div class="severe-status-card">
+      <span class="source-label">Highest Local Advisory</span>
+      <strong id="sw-highest-risk">--</strong>
+      <p id="sw-highest-risk-sub">--</p>
+    </div>
+  </div>
+
+  <div id="sw-clear-state" class="alert-strip hidden"></div>
+
+  <div class="severe-layout">
+    <section class="severe-table-panel">
+      <div class="section-header">
+        <span class="section-title">Affected Municipalities</span>
+        <div class="table-controls">
+          <select id="sw-province-filter" class="sort-select" onchange="CISSevereWeather.renderAll()">
+            <option value="all">All Cagayan Valley</option>
+            <option value="Batanes">Batanes</option>
+            <option value="Cagayan">Cagayan</option>
+            <option value="Isabela">Isabela</option>
+            <option value="Nueva Vizcaya">Nueva Vizcaya</option>
+            <option value="Quirino">Quirino</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-wrap severe-table-wrap">
+        <table class="data-table" id="sw-table">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort-key="municipality" onclick="CISSevereWeather.sortTable('municipality')">Municipality <span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort-key="province" onclick="CISSevereWeather.sortTable('province')">Province <span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort-key="signal" onclick="CISSevereWeather.sortTable('signal')">Signal <span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort-key="rain24" onclick="CISSevereWeather.sortTable('rain24')">Rain 24h <span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort-key="wind" onclick="CISSevereWeather.sortTable('wind')">Wind <span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort-key="tmax" onclick="CISSevereWeather.sortTable('tmax')">Temp <span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort-key="score" onclick="CISSevereWeather.sortTable('score')">Risk <span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort-key="severity" onclick="CISSevereWeather.sortTable('severity')">Advisory <span class="sort-indicator"></span></th>
+            </tr>
+          </thead>
+          <tbody id="sw-tbody">
+            <tr><td colspan="8" class="loading-row">Loading severe weather advisory...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside class="severe-detail-panel">
+      <div class="panel-header" id="sw-detail-title">Selected Municipality</div>
+      <div id="sw-detail" class="severe-detail-body">
+        <div class="adv-empty-state">
+          <div style="font-size:40px;margin-bottom:12px;">!</div>
+          <p>Select an affected municipality to view localized agri-weather actions.</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="severe-summary-panel">
+    <div class="section-header">
+      <span class="section-title">Regional and Provincial Severe Weather Summary</span>
+    </div>
+    <div id="sw-regional-actions" class="severe-regional-actions"></div>
+    <div id="sw-provincial-summary" class="province-summary-grid"></div>
+  </div>
+</div>
 <!-- Scripts -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="js/cis-data.js"></script>
@@ -394,6 +489,7 @@
 <script src="js/cis-dashboard.js"></script>
 <script src="js/cis-advisory.js"></script>
 <script src="js/cis-planning.js"></script>
+<script src="js/cis-severe-weather.js"></script>
 <script src="js/cis-main.js"></script>
 </body>
 </html>

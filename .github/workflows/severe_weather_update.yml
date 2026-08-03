@@ -1,0 +1,71 @@
+# .github/workflows/severe_weather_update.yml
+# ============================================================
+# APA-CIS PAGASA Severe Weather Bulletin Refresh
+# DA RFO 02 - Climate Information Service, Cagayan Valley
+#
+# Schedule: Runs 10 minutes after PAGASA's 3-hour bulletin cycle
+#           5:10, 8:10, 11:10, 14:10, 17:10, 20:10, 23:10, 02:10 PHT
+#           = 21:10, 00:10, 03:10, 06:10, 09:10, 12:10, 15:10, 18:10 UTC
+# ============================================================
+
+name: APA-CIS PAGASA Severe Weather Refresh
+
+on:
+  schedule:
+    - cron: '10 0,3,6,9,12,15,18,21 * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh-severe-weather:
+    name: Refresh PAGASA Severe Weather Bulletin
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Refresh PAGASA severe-weather data
+        run: python scripts/fetch_pagasa/update_severe_weather.py
+
+      - name: Stage severe-weather site data
+        id: stage_changes
+        run: |
+          git add data/raw/pagasa/pagasa_current.json
+          git add data/raw/pagasa/pagasa_current_*.json || true
+          git add data/pipeline_status.json
+
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No severe-weather changes detected."
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            git diff --staged --name-only
+          fi
+
+      - name: Commit and push severe-weather update
+        if: steps.stage_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "APA-CIS Severe Weather Bot"
+          git config user.email "cis-bot@da-rfo2.ph"
+
+          COMMIT_DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
+          git commit -m "Auto: PAGASA severe weather refresh - ${COMMIT_DATE}"
+          git push origin main

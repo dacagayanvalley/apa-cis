@@ -11,11 +11,13 @@
     "indicators": "success",
     "advisories": "success"
   },
-<<<<<<< HEAD
-  "data_as_of": "2026-07-01",
-  "forecast_as_of": "2026-07-01",
-  "fallback_observation_as_of": "2026-06-26"
-=======
-  "data_as_of": "2026-07-29"
->>>>>>> 033015f1d57212964e5ab798ece8f4b2607b7f2f
+  "data_as_of": "2026-08-03",
+  "forecast_as_of": "2026-08-03",
+  "fallback_observation_as_of": "2026-07-29",
+  "severe_weather_last_checked": "2026-08-03T02:54:06.410577",
+  "severe_weather_as_of": "2026-08-03",
+  "severe_weather_active": true,
+  "severe_weather_region2_affected": true,
+  "severe_weather_system": "Tropical Depression Luis",
+  "severe_weather_bulletin_number": "9"
 }

@@ -1233,3 +1233,250 @@ body {
     min-height: 220px;
   }
 }
+/* Severe Weather Module */
+.severe-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.severe-title {
+  font-size: 20px;
+  color: var(--da-green);
+  line-height: 1.2;
+}
+.severe-sub {
+  color: var(--text-sub);
+  font-size: 12px;
+  margin-top: 4px;
+}
+.severe-status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.severe-status-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--da-blue-mid);
+  border-radius: 6px;
+  padding: 12px;
+  min-height: 92px;
+}
+.severe-status-card.severe-active { border-top-color: var(--danger); }
+.severe-status-card strong {
+  display: block;
+  font-size: 17px;
+  line-height: 1.2;
+  color: var(--text-main);
+  margin-bottom: 5px;
+}
+.severe-status-card p {
+  color: var(--text-sub);
+  font-size: 11px;
+}
+.severe-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 420px);
+  gap: 14px;
+  align-items: start;
+}
+.severe-table-panel,
+.severe-detail-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  min-width: 0;
+}
+.severe-table-panel { padding: 0 12px 12px; }
+.severe-table-wrap { max-height: calc(100vh - 330px); overflow: auto; }
+.data-table tr.selected-row td { background: #E8F5E9; }
+.severe-detail-panel { overflow: hidden; }
+.severe-detail-body { padding: 14px; }
+.severe-advisory-card {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--advisory);
+  border-radius: 4px;
+  padding: 12px;
+  background: #FFFDF4;
+  margin-bottom: 12px;
+}
+.severe-advisory-card.warning { border-left-color: var(--warning); background: #FFF7ED; }
+.severe-advisory-card.danger { border-left-color: var(--danger); background: #FFEBEE; }
+.severe-advisory-kicker {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-sub);
+  margin-bottom: 5px;
+}
+.severe-advisory-card h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+.severe-advisory-card p { color: var(--text-sub); font-size: 12px; }
+.severe-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.severe-metrics-grid div {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px;
+}
+.severe-metrics-grid span {
+  display: block;
+  color: var(--text-dim);
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.severe-metrics-grid strong { display: block; font-size: 13px; color: var(--text-main); margin-top: 2px; }
+.severe-actions {
+  border: 1px solid var(--border);
+  background: #F8FBF8;
+  border-radius: 4px;
+  padding: 12px;
+}
+.severe-actions ul { margin: 6px 0 0 17px; }
+.severe-actions li { margin: 5px 0; }
+.severe-source-note {
+  color: var(--text-dim);
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 980px) {
+  .severe-status-grid,
+  .severe-layout { grid-template-columns: 1fr; }
+  .severe-metrics-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.mnav-btn.severe-alert {
+  color: rgba(255,255,255,0.9);
+  background: transparent;
+  border-bottom-color: #A5D6A7;
+  font-weight: 700;
+}
+.mnav-btn.severe-alert:hover,
+.mnav-btn.severe-alert.active {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+}
+.mnav-btn.severe-alert::after {
+  content: "ACTIVE";
+  color: #FFEB3B;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  margin-left: 2px;
+  animation: severeTextBlink 1s steps(2, start) infinite;
+}
+@keyframes severeTextBlink {
+  0%, 45% { opacity: 1; }
+  46%, 100% { opacity: 0.2; }
+}
+
+.severe-summary-panel {
+  margin-top: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0 12px 12px;
+}
+.severe-regional-actions { margin-bottom: 12px; }
+.regional-actions-card,
+.province-summary-card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #F8FBF8;
+  padding: 12px;
+}
+.regional-actions-card ul,
+.province-summary-card ul { margin: 6px 0 0 17px; }
+.regional-actions-card li,
+.province-summary-card li { margin: 4px 0; }
+.province-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.province-summary-card {
+  background: var(--surface);
+}
+.province-summary-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+.province-summary-head strong {
+  display: block;
+  color: var(--da-green);
+  font-size: 15px;
+  line-height: 1.2;
+}
+.province-summary-head span {
+  color: var(--text-sub);
+  font-size: 11px;
+  font-weight: 700;
+}
+.province-summary-counts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.province-summary-counts span {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+.province-summary-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+}
+.province-summary-section {
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 9px;
+  background: #FAFCFA;
+}
+.province-summary-section.actions { background: #F8FBF8; }
+.sw-signal-group,
+.sw-muni-list {
+  color: var(--text-sub);
+  font-size: 11px;
+  line-height: 1.45;
+}
+.sw-signal-group {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 8px;
+  margin: 6px 0;
+}
+.sw-signal-group b { color: var(--text-main); }
+#sw-table th.sortable { cursor: pointer; }
+#sw-table th.sortable:hover,
+#sw-table th.sortable.sorted { background: #1D5E35; }
+
+@media (max-width: 980px) {
+  .province-summary-grid { grid-template-columns: 1fr; }
+}

@@ -8,7 +8,7 @@
  */
 
 // ── Module registry ─────────────────────────────────────────────────────────
-const MODULES = ['dashboard', 'map', 'advisory', 'municipal', 'planning'];
+const MODULES = ['dashboard', 'map', 'advisory', 'municipal', 'planning', 'severe'];
 let _mapInitialised = false;
 let _activeModule = 'dashboard';
 
@@ -41,6 +41,7 @@ function switchModule(name, btnEl) {
   if (name === 'planning') CISPlanning.renderAll();
   if (name === 'municipal') CISMunicipal.renderAll();
   if (name === 'advisory') CISAdvisory.renderAll();
+  if (name === 'severe') CISSevereWeather.renderAll();
 }
 
 // ── Province filter (dashboard only) ───────────────────────────────────────
@@ -135,6 +136,21 @@ function _formatDateTime(value) {
 }
 
 // ── Top-bar: ENSO badge ─────────────────────────────────────────────────────
+function _isSevereWeatherActiveForRegion() {
+  const typhoon = CISData.getPAGASAData()?.typhoon || {};
+  return Boolean(typhoon.active && typhoon.region2_affected);
+}
+
+function _updateSevereWeatherNavState() {
+  const btn = document.querySelector('.mnav-btn[data-module="severe"]');
+  if (!btn) return;
+  const typhoon = CISData.getPAGASAData()?.typhoon || {};
+  const activeForRegion = _isSevereWeatherActiveForRegion();
+  btn.classList.toggle('severe-alert', activeForRegion);
+  btn.title = activeForRegion
+    ? `${typhoon.disturbance_type || 'Weather disturbance'} ${typhoon.name || ''} affects Region 2. Open urgent severe-weather advisory.`
+    : 'Open PAGASA severe-weather monitoring module.';
+}
 function _updateENSOBadge() {
   // Best-effort: ENSO status from PAGASA or fallback
   const badge = document.getElementById('enso-badge');
@@ -159,8 +175,13 @@ async function initCIS() {
     _updateFreshness(CISData.getPipelineStatus());
     _updateENSOBadge();
 
-    // Render dashboard (default active module)
+    // Render the default module. Severe Weather takes priority only when
+    // PAGASA has an active bulletin affecting Cagayan Valley.
     CISDashboard.renderAll('all');
+    _updateSevereWeatherNavState();
+    if (_isSevereWeatherActiveForRegion()) {
+      switchModule('severe', document.querySelector('.mnav-btn[data-module="severe"]'));
+    }
 
     console.log(
       `[APA-CIS] Data loaded: ${indicators?.meta?.municipality_count || 0} municipalities, ` +

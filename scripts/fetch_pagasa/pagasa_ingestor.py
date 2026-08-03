@@ -14,6 +14,7 @@ This module is intended to assist, not replace, official PAGASA advisories.
 DA RFO 02 — APA-CIS Climate Information Service
 """
 
+import html
 import re
 import sys
 from datetime import date, datetime
@@ -26,6 +27,7 @@ from scripts.utils import (
     PROJECT_ROOT,
     load_config,
     load_json,
+    load_municipalities,
     log_etl_event,
     retry_get,
     save_json,
@@ -189,6 +191,126 @@ def parse_farm_weather_forecast(html_text: str) -> Dict:
     return result
 
 
+
+def _page_text(html_text: str) -> str:
+    """Return readable page text from PAGASA HTML."""
+    if not html_text:
+        return ""
+    try:
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(html_text, "html.parser")
+        for tag in soup(["script", "style"]):
+            tag.decompose()
+        text = soup.get_text(separator="\n")
+    except ImportError:
+        text = re.sub(r"<[^>]+>", " ", html_text)
+    text = html.unescape(text)
+    lines = [re.sub(r"\s+", " ", line).strip() for line in text.splitlines()]
+    return "\n".join(line for line in lines if line)
+
+
+def _extract_disturbance_name(text: str) -> Tuple[str, str]:
+    pattern = re.compile(
+        r"\b(Tropical Depression|Tropical Storm|Severe Tropical Storm|Typhoon|Super Typhoon)\s+[\"']?([^\"'\n#]+)",
+        re.IGNORECASE,
+    )
+    match = pattern.search(text or "")
+    if not match:
+        return "", ""
+    return match.group(1).title(), match.group(2).strip().strip(".")
+
+
+
+def _norm_place(value: str) -> str:
+    value = (value or "").lower()
+    value = re.sub(r"\bcity of\b", " ", value)
+    value = re.sub(r"\bcity\b", " ", value)
+    value = re.sub(r"[^a-z0-9]+", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def _municipality_name_hit(name: str, text: str) -> bool:
+    lower_text = (text or "").lower()
+    if (name or "").lower() in lower_text:
+        return True
+    norm_name = _norm_place(name)
+    norm_text = _norm_place(text)
+    return bool(norm_name and re.search(rf"\b{re.escape(norm_name)}\b", norm_text))
+
+
+def _province_is_partial(province: str, text: str) -> bool:
+    return bool(re.search(rf"\b(?:portion|portions)\s+of\s+{re.escape(province)}\s*\(", text or "", re.IGNORECASE))
+
+def _region2_affected_municipalities(text: str) -> List[Dict]:
+    """Match PAGASA affected-area text to Cagayan Valley municipalities."""
+    municipalities = load_municipalities()
+    lower_text = (text or "").lower()
+    affected = []
+
+    for mun in municipalities:
+        province = mun.get("province", "")
+        name = mun.get("name") or mun.get("municipality", "")
+        name_hit = _municipality_name_hit(name, text)
+        province_hit = (
+            bool(province and province.lower() in lower_text)
+            and not _province_is_partial(province, text)
+        )
+        if province_hit or name_hit:
+            affected.append({
+                "psgc": mun.get("psgc"),
+                "municipality": name,
+                "province": province,
+                "match": "municipality" if name_hit else "province",
+            })
+
+    return affected
+
+
+def parse_severe_weather_bulletin(html_text: str) -> Dict:
+    """
+    Parse PAGASA Severe Weather Bulletin page.
+    active=True means PAGASA is publishing a current TC bulletin/advisory page.
+    """
+    text = _page_text(html_text)
+    compact = re.sub(r"\s+", " ", text)
+    bulletin_match = re.search(r"Tropical Cyclone Bulletin\s*#\s*(\d+)", compact, re.IGNORECASE)
+    disturbance_type, disturbance_name = _extract_disturbance_name(compact)
+    issued_match = re.search(r"Issued at\s+([^\n]+?\d{4})", text, re.IGNORECASE)
+    valid_match = re.search(r"Valid for broadcast until\s+([^\n]+)", text, re.IGNORECASE)
+    signal_match = re.search(r"signalno(\d+)", html_text or "", re.IGNORECASE) or re.search(r"Wind Signal No\.\s*(\d+)", compact, re.IGNORECASE) or re.search(r"Tropical Cyclone Wind Signal\s*no\.\s*(\d+)", compact, re.IGNORECASE)
+
+    active = bool(
+        bulletin_match
+        or disturbance_name
+        or re.search(r"Tropical Cyclone Bulletin\s+Active", compact, re.IGNORECASE)
+    )
+    tcws_area_match = re.search(r"Wind Signal.*?Affected Areas(.*?)Meteorological Condition", compact, re.IGNORECASE)
+    affected_text = tcws_area_match.group(1) if tcws_area_match else compact
+    affected = _region2_affected_municipalities(affected_text) if active else []
+    affected_provinces = sorted({item["province"] for item in affected if item.get("province")})
+
+    return {
+        "active": active,
+        "name": disturbance_name,
+        "disturbance_type": disturbance_type,
+        "bulletin_number": bulletin_match.group(1) if bulletin_match else "",
+        "issued_at": issued_match.group(1).strip() if issued_match else "",
+        "valid_until": valid_match.group(1).strip() if valid_match else "",
+        "source_url": PAGASA_URLS["typhoon"],
+        "signal_level": int(signal_match.group(1)) if signal_match else 0,
+        "signal_levels": {province: (int(signal_match.group(1)) if signal_match and province in affected_provinces else 0)
+                          for province in ["Batanes", "Cagayan", "Isabela", "Nueva Vizcaya", "Quirino"]},
+        "region2_affected": bool(affected),
+        "affected_provinces": affected_provinces,
+        "affected_municipalities": affected,
+        "summary": (
+            f"{disturbance_type} {disturbance_name} Bulletin #{bulletin_match.group(1) if bulletin_match else ''}".strip()
+            if active else "No active PAGASA tropical cyclone bulletin detected."
+        ),
+        "as_of": today_pht().isoformat(),
+        "parse_method": "pagasa_public_html_static",
+    }
+
 def fetch_live_pagasa_data() -> Dict:
     """
     Attempt to fetch current PAGASA data from public pages.
@@ -199,9 +321,11 @@ def fetch_live_pagasa_data() -> Dict:
         "source_urls": {
             "enso": PAGASA_URLS["enso"],
             "farm_weather": PAGASA_URLS["farm_weather"],
+            "typhoon": PAGASA_URLS["typhoon"],
         },
         "enso": {},
         "farm_weather": {},
+        "typhoon": {},
         "scrape_status": {},
     }
 
@@ -221,6 +345,20 @@ def fetch_live_pagasa_data() -> Dict:
         output["scrape_status"]["farm_weather"] = "success"
     else:
         output["scrape_status"]["farm_weather"] = "failed"
+
+    # Try severe weather bulletin page for active tropical cyclone advisories.
+    typhoon_html = scrape_pagasa_page(PAGASA_URLS["typhoon"], "severe_weather_bulletin")
+    if typhoon_html:
+        output["typhoon"] = parse_severe_weather_bulletin(typhoon_html)
+        output["scrape_status"]["typhoon"] = "success"
+    else:
+        output["scrape_status"]["typhoon"] = "failed"
+        output["typhoon"] = {
+            "active": False,
+            "source_url": PAGASA_URLS["typhoon"],
+            "summary": "Could not fetch PAGASA Severe Weather Bulletin page.",
+            "as_of": today_pht().isoformat(),
+        }
 
     return output
 
