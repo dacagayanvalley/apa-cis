@@ -48,9 +48,11 @@
       "Quirino": 1
     },
     "max_sustained_wind_kmh": 45.0,
+    "peak_wind_gust_kmh": 55.0,
     "gustiness_kmh": 55.0,
     "wind": {
       "max_sustained_wind_kmh": 45.0,
+      "peak_wind_gust_kmh": 55.0,
       "gustiness_kmh": 55.0
     },
     "tcws_wind_ranges": {

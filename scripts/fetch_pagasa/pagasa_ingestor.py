@@ -276,9 +276,10 @@ def _region2_affected_municipalities(text: str) -> List[Dict]:
 
 def _extract_strength_metrics(text: str) -> Dict:
     sustained_match = re.search(r"Maximum sustained winds of\s*(\d+(?:\.\d+)?)\s*km/h", text or "", re.IGNORECASE)
-    gust_match = re.search(r"gustiness of up to\s*(\d+(?:\.\d+)?)\s*km/h", text or "", re.IGNORECASE)
+    gust_match = re.search(r"(?:gustiness of up to|peak wind gusts?(?: reaching| of up to)?)\s*(\d+(?:\.\d+)?)\s*km/h", text or "", re.IGNORECASE)
     return {
         "max_sustained_wind_kmh": float(sustained_match.group(1)) if sustained_match else None,
+        "peak_wind_gust_kmh": float(gust_match.group(1)) if gust_match else None,
         "gustiness_kmh": float(gust_match.group(1)) if gust_match else None,
     }
 
@@ -356,6 +357,7 @@ def parse_severe_weather_bulletin(html_text: str) -> Dict:
         "signal_levels": {province: (int(signal_match.group(1)) if signal_match and province in affected_provinces else 0)
                           for province in ["Batanes", "Cagayan", "Isabela", "Nueva Vizcaya", "Quirino"]},
         "max_sustained_wind_kmh": strength.get("max_sustained_wind_kmh"),
+        "peak_wind_gust_kmh": strength.get("peak_wind_gust_kmh"),
         "gustiness_kmh": strength.get("gustiness_kmh"),
         "wind": strength,
         "tcws_wind_ranges": tcws_wind_ranges,
