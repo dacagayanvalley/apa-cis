@@ -7,8 +7,8 @@ Issued by: DA-RFO2 APA
 
 SITUATION OVERVIEW:
   Active advisories: 92 municipalities
-  Danger alerts: 0
-  Warnings: 87
+  Danger alerts: 72
+  Warnings: 20
   Confidence: high 0, medium 92, low 0
 
 SOURCE TIMESTAMPS AND QA:
@@ -26,22 +26,22 @@ PAGASA / ACAP / CIS SUMMARY:
 
 PROVINCIAL STATUS:
   Batanes: 6 municipalities with advisories (highest: WARNING)
-  Cagayan: 29 municipalities with advisories (highest: WARNING)
-  Isabela: 37 municipalities with advisories (highest: WARNING)
+  Cagayan: 29 municipalities with advisories (highest: DANGER)
+  Isabela: 37 municipalities with advisories (highest: DANGER)
   Nueva Vizcaya: 14 municipalities with advisories (highest: WARNING)
-  Quirino: 6 municipalities with advisories (highest: WARNING)
+  Quirino: 6 municipalities with advisories (highest: DANGER)
 
 PRIORITY MUNICIPALITIES FOR IMMEDIATE ACTION:
-  1. Aurora, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  2. Quezon, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  3. San Manuel, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  4. Aglipay, Quirino [WARNING, confidence: medium] - Postharvest Drying Risk
-  5. Saguday, Quirino [WARNING, confidence: medium] - Postharvest Drying Risk
-  6. Calayan, Cagayan [WARNING, confidence: medium] - High Irrigation Demand
-  7. Kayapa, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
-  8. Alicia, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  9. Angadanan, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  10. Cabatuan, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
+  1. Aurora, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  2. Quezon, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  3. San Manuel, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  4. Aglipay, Quirino [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  5. Saguday, Quirino [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  6. Calayan, Cagayan [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  7. Alicia, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  8. Angadanan, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  9. Cabatuan, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  10. Cordon, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
 
 ACTION TIERS:
   Farmers: Follow the municipal advisory SMS/action text; adjust field work, irrigation, spraying, harvest, and drying based on local MAO guidance.
@@ -50,11 +50,11 @@ ACTION TIERS:
   Public: Monitor DA RFO2 APA and PAGASA updates; avoid sharing unofficial advisories without source date and valid-until information.
 
 SMS-READY PRIORITY ADVISORIES:
-  Aurora: DA WARNING: Drying risk in Aurora. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Quezon: DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  San Manuel: DA WARNING: Drying risk in San Manuel. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Aglipay: DA WARNING: Drying risk in Aglipay. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Saguday: DA WARNING: Drying risk in Saguday. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Aurora: PAGASA TCWS 1: Suspend farm work in Aurora. Secure crops/equipment. Coordinate with MAO/MDRRMC.
+  Quezon: PAGASA TCWS 1: Suspend farm work in Quezon. Secure crops/equipment. Coordinate with MAO/MDRRMC.
+  San Manuel: PAGASA TCWS 1: Suspend farm work in San Manuel. Secure crops/equipment. Coordinate with MAO/MDRRMC.
+  Aglipay: PAGASA TCWS 1: Suspend farm work in Aglipay. Secure crops/equipment. Coordinate with MAO/MDRRMC.
+  Saguday: PAGASA TCWS 1: Suspend farm work in Saguday. Secure crops/equipment. Coordinate with MAO/MDRRMC.
 
 For full advisory details, visit the APA-CIS portal.
 For assistance, contact DA-RFO2 APA: 0916-708-9707; DA RFO2 APA Facebook page; darfo2apa@gmail.com.
