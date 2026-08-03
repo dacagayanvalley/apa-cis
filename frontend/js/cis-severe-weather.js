@@ -78,9 +78,11 @@ const CISSevereWeather = (() => {
     const obs = row.observations || {};
     const ind = row.indicators || {};
     const signal = (typhoon.signal_levels || {})[row.province] || typhoon.signal_level || 0;
-    const rain24 = Number(obs.rainfall_24h_mm || 0);
-    const rain48 = Number(obs.rainfall_48h_mm || 0);
-    const wind = Number(obs.wind_speed_ms || 0);
+    const rainOverride = _pagasaRainOverride(row, typhoon, signal);
+    const windOverride = _pagasaWindOverride(row, typhoon, signal);
+    const rain24 = rainOverride.rain24 ?? Number(obs.rainfall_24h_mm || 0);
+    const rain48 = rainOverride.rain48 ?? Number(obs.rainfall_48h_mm || 0);
+    const wind = windOverride.windMs ?? Number(obs.wind_speed_ms || 0);
     const tmax = Number(obs.tmax_c || 0);
     const fieldClass = ind.field_workability?.overall_class || 'unknown';
     const baseRisk = Number(ind.municipal_risk_score || 0);
@@ -109,6 +111,11 @@ const CISSevereWeather = (() => {
       rain24,
       rain48,
       wind,
+      windKmh: windOverride.windKmh,
+      windRangeKmh: windOverride.windRangeKmh,
+      gustinessKmh: windOverride.gustinessKmh,
+      rainSource: rainOverride.source || 'APA-CIS municipal weather',
+      windSource: windOverride.source || 'APA-CIS municipal weather',
       tmax,
       humidity: obs.humidity_pct,
       fieldClass,
@@ -120,6 +127,157 @@ const CISSevereWeather = (() => {
     };
   }
 
+  function _pagasaRainOverride(row, typhoon, signal) {
+    const payloads = _weatherPayloads(row, typhoon, signal);
+    for (const payload of payloads) {
+      const rain24 = _numberFromAny(payload.data, [
+        'rainfall_24h_mm', 'rain_24h_mm', 'rainfall_mm', 'forecast_rainfall_mm',
+        'expected_rainfall_mm', 'max_rainfall_mm', 'amount_mm'
+      ]);
+      const rain48 = _numberFromAny(payload.data, [
+        'rainfall_48h_mm', 'rain_48h_mm', 'expected_rainfall_48h_mm', 'max_rainfall_48h_mm'
+      ]);
+      if (rain24 !== null || rain48 !== null) {
+        return { rain24, rain48, source: payload.source };
+      }
+    }
+    return { rain24: null, rain48: null, source: '' };
+  }
+
+  function _pagasaWindOverride(row, typhoon, signal) {
+    const payloads = _weatherPayloads(row, typhoon, signal);
+    for (const payload of payloads) {
+      const gustinessKmh = _numberFromAny(payload.data, [
+        'gustiness_kmh', 'wind_gustiness_kmh', 'max_gust_kmh', 'gust_kmh', 'wind_gust_kmh'
+      ]);
+      const sustainedKmh = _numberFromAny(payload.data, [
+        'max_sustained_wind_kmh', 'sustained_wind_kmh', 'wind_speed_kmh', 'expected_wind_kmh'
+      ]);
+      const range = _windRangeFromPayload(payload.data);
+      const windKmh = gustinessKmh ?? (range ? range.max : sustainedKmh);
+      if (windKmh !== null && windKmh !== undefined) {
+        return {
+          windMs: windKmh / 3.6,
+          windKmh,
+          windRangeKmh: range,
+          gustinessKmh,
+          source: payload.source,
+        };
+      }
+    }
+
+    const tcwsRange = _tcwsWindRange(typhoon, signal);
+    if (tcwsRange) {
+      return {
+        windMs: tcwsRange.max / 3.6,
+        windKmh: null,
+        windRangeKmh: tcwsRange,
+        gustinessKmh: null,
+        source: `PAGASA TCWS ${signal}`,
+      };
+    }
+    return { windMs: null, windKmh: null, windRangeKmh: null, gustinessKmh: null, source: '' };
+  }
+
+  function _weatherPayloads(row, typhoon, signal) {
+    const municipalityPayload = _findWeatherPayload([
+      typhoon.weather_by_municipality,
+      typhoon.municipality_weather,
+      typhoon.rainfall_by_municipality,
+      typhoon.wind_by_municipality,
+      typhoon.affected_municipalities,
+    ], row, 'municipality');
+    const provincePayload = _findWeatherPayload([
+      typhoon.weather_by_province,
+      typhoon.province_weather,
+      typhoon.rainfall_by_province,
+      typhoon.wind_by_province,
+    ], row, 'province');
+
+    return [
+      municipalityPayload && { data: municipalityPayload, source: 'PAGASA municipal severe-weather advisory' },
+      provincePayload && { data: provincePayload, source: 'PAGASA provincial severe-weather advisory' },
+      typhoon.weather && { data: typhoon.weather, source: 'PAGASA severe-weather bulletin' },
+      typhoon.rainfall && { data: typhoon.rainfall, source: 'PAGASA rainfall advisory' },
+      typhoon.wind && { data: typhoon.wind, source: 'PAGASA wind advisory' },
+      typhoon.gustiness_kmh !== undefined && { data: typhoon, source: 'PAGASA severe-weather bulletin' },
+      signal && typhoon.tcws_wind_ranges && { data: (typhoon.tcws_wind_ranges[String(signal)] || typhoon.tcws_wind_ranges[`TCWS ${signal}`] || {}), source: `PAGASA TCWS ${signal}` },
+    ].filter(Boolean);
+  }
+
+  function _findWeatherPayload(collections, row, scope) {
+    for (const collection of collections) {
+      if (!collection) continue;
+      if (Array.isArray(collection)) {
+        const found = collection.find(item => _matchesWeatherPayload(item, row, scope));
+        if (found) return found;
+      } else if (typeof collection === 'object') {
+        const keys = scope === 'province'
+          ? [row.province]
+          : [row.psgc, row.municipality, `${row.municipality}, ${row.province}`];
+        for (const key of keys) {
+          if (key && collection[key]) return collection[key];
+        }
+      }
+    }
+    return null;
+  }
+
+  function _matchesWeatherPayload(item, row, scope) {
+    if (!item || typeof item !== 'object') return false;
+    if (scope === 'province') return item.province === row.province;
+    return item.psgc === row.psgc || (item.municipality === row.municipality && (!item.province || item.province === row.province));
+  }
+
+  function _numberFromAny(source, keys) {
+    if (!source || typeof source !== 'object') return null;
+    for (const key of keys) {
+      const value = _numericValue(source[key]);
+      if (value !== null) return value;
+    }
+    const range = _numericRange(source.rainfall_range_mm || source.wind_range_kmh || source.range_kmh || source.range);
+    return range ? range.max : null;
+  }
+
+  function _numericValue(value) {
+    if (value === null || value === undefined || value === '') return null;
+    if (typeof value === 'number' && Number.isFinite(value)) return value;
+    const match = String(value).match(/\d+(?:\.\d+)?/);
+    return match ? Number(match[0]) : null;
+  }
+
+  function _numericRange(value) {
+    if (value === null || value === undefined || value === '') return null;
+    const nums = String(value).match(/\d+(?:\.\d+)?/g);
+    if (!nums?.length) return null;
+    const parsed = nums.map(Number).filter(Number.isFinite);
+    return parsed.length ? { min: Math.min(...parsed), max: Math.max(...parsed) } : null;
+  }
+
+  function _windRangeFromPayload(source) {
+    if (!source || typeof source !== 'object') return null;
+    if (source.min_wind_kmh !== undefined || source.max_wind_kmh !== undefined) {
+      const min = _numericValue(source.min_wind_kmh);
+      const max = _numericValue(source.max_wind_kmh);
+      if (min !== null || max !== null) return { min: min ?? max, max: max ?? min };
+    }
+    return _numericRange(source.wind_range_kmh || source.expected_wind_kmh || source.range_kmh || source.range);
+  }
+
+  function _tcwsWindRange(typhoon, signal) {
+    if (!signal) return null;
+    const ranges = typhoon.tcws_wind_ranges || {};
+    const parsed = _windRangeFromPayload(ranges[String(signal)] || ranges[`TCWS ${signal}`] || {});
+    if (parsed) return parsed;
+    const defaults = {
+      1: { min: 39, max: 61 },
+      2: { min: 62, max: 88 },
+      3: { min: 89, max: 117 },
+      4: { min: 118, max: 184 },
+      5: { min: 185, max: 220 },
+    };
+    return defaults[signal] || null;
+  }
   function _sortItems(items) {
     const severityOrder = { danger: 0, warning: 1, advisory: 2 };
     const valueFor = item => {
@@ -188,8 +346,8 @@ const CISSevereWeather = (() => {
         <td><strong>${_escape(item.municipality)}</strong></td>
         <td>${_escape(item.province)}</td>
         <td>${item.signal ? `TCWS ${item.signal}` : '-'}</td>
-        <td>${item.rain24.toFixed(1)} mm</td>
-        <td>${item.wind ? item.wind.toFixed(1) + ' m/s' : '-'}</td>
+        <td>${_formatRain(item)}</td>
+        <td>${_formatWind(item)}</td>
         <td>${item.tmax ? item.tmax.toFixed(1) + ' C' : '-'}</td>
         <td>${item.score}</td>
         <td>${_severityPill(item.severity)}</td>
@@ -313,8 +471,8 @@ const CISSevereWeather = (() => {
       </div>
       <div class="severe-metrics-grid">
         <div><span>TCWS</span><strong>${item.signal || '-'}</strong></div>
-        <div><span>Rain 24h</span><strong>${item.rain24.toFixed(1)} mm</strong></div>
-        <div><span>Wind</span><strong>${item.wind ? item.wind.toFixed(1) + ' m/s' : '-'}</strong></div>
+        <div><span>Rain 24h</span><strong>${_formatRainValue(item)}</strong><small>${_escape(item.rainSource)}</small></div>
+        <div><span>Wind</span><strong>${_formatWindValue(item)}</strong><small>${_escape(item.windSource)}</small></div>
         <div><span>Max Temp</span><strong>${item.tmax ? item.tmax.toFixed(1) + ' C' : '-'}</strong></div>
       </div>
       <div class="severe-actions">
@@ -322,7 +480,7 @@ const CISSevereWeather = (() => {
         <ul>${item.actions.map(action => `<li>${_escape(action)}</li>`).join('')}</ul>
       </div>
       <div class="severe-source-note">
-        Official trigger: PAGASA Severe Weather Bulletin. Local modifiers: rainfall, wind, temperature, field workability, crop-stage and municipal risk indicators from APA-CIS. Validate high-impact actions with PAGASA, MDRRMO/CDRRMO, MAO/PAO, and field reports.
+        Official trigger: PAGASA Severe Weather Bulletin. Rainfall and wind/gustiness values use PAGASA severe-weather advisory data when available; APA-CIS municipal weather remains the fallback for missing fields. Validate high-impact actions with PAGASA, MDRRMO/CDRRMO, MAO/PAO, and field reports.
       </div>
     `;
   }
@@ -339,6 +497,23 @@ const CISSevereWeather = (() => {
     `;
   }
 
+  function _formatRain(item) {
+    return `${_formatRainValue(item)}<div class="muted-cell">${_escape(item.rainSource)}</div>`;
+  }
+
+  function _formatRainValue(item) {
+    return `${Number(item.rain24 || 0).toFixed(1)} mm`;
+  }
+
+  function _formatWind(item) {
+    return `${_formatWindValue(item)}<div class="muted-cell">${_escape(item.windSource)}</div>`;
+  }
+
+  function _formatWindValue(item) {
+    if (item.windRangeKmh) return `${item.windRangeKmh.min}-${item.windRangeKmh.max} km/h`;
+    if (item.windKmh) return `${item.windKmh.toFixed(0)} km/h`;
+    return item.wind ? `${item.wind.toFixed(1)} m/s` : '-';
+  }
   function _actions(item) {
     const actions = [
       'Monitor PAGASA bulletins and local DRRMO instructions; update MAO/PAO field teams every advisory cycle.',
@@ -365,8 +540,8 @@ const CISSevereWeather = (() => {
   function _narrative(item) {
     const system = `${item.typhoon.disturbance_type || 'weather disturbance'} ${item.typhoon.name || ''}`.trim();
     const rainText = item.rain24 >= 50 ? 'heavy recent rainfall' : item.rain24 >= 25 ? 'moderate recent rainfall' : 'localized rainfall monitoring';
-    const windText = item.signal || item.wind >= 6 ? 'wind-sensitive farm operations should be restricted' : 'wind impact is currently limited in the local indicators';
-    return `${system || 'The active PAGASA bulletin'} affects ${item.province}. Based on ${rainText}, ${item.wind ? item.wind.toFixed(1) + ' m/s wind' : 'available wind data'}, and field-workability status (${item.fieldClass}), ${windText}.`;
+    const windText = item.signal || item.wind >= 6 ? 'wind-sensitive farm operations should be restricted' : 'wind impact is currently limited in the available indicators';
+    return `${system || 'The active PAGASA bulletin'} affects ${item.province}. Based on ${rainText} (${item.rainSource}), ${_formatWindValue(item)} wind (${item.windSource}), and field-workability status (${item.fieldClass}), ${windText}.`;
   }
 
   function _severityLabel(severity) {

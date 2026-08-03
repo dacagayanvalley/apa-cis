@@ -1341,6 +1341,7 @@ body {
   letter-spacing: 0.5px;
 }
 .severe-metrics-grid strong { display: block; font-size: 13px; color: var(--text-main); margin-top: 2px; }
+.severe-metrics-grid small { display: block; margin-top: 2px; font-size: 10px; line-height: 1.25; color: var(--text-dim); }
 .severe-actions {
   border: 1px solid var(--border);
   background: #F8FBF8;

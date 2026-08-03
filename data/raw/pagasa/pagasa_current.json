@@ -47,6 +47,43 @@
       "Nueva Vizcaya": 0,
       "Quirino": 1
     },
+    "max_sustained_wind_kmh": 45.0,
+    "gustiness_kmh": 55.0,
+    "wind": {
+      "max_sustained_wind_kmh": 45.0,
+      "gustiness_kmh": 55.0
+    },
+    "tcws_wind_ranges": {
+      "1": {
+        "min_wind_kmh": 39.0,
+        "max_wind_kmh": 61.0,
+        "wind_range_kmh": "39-61"
+      },
+      "2": {
+        "min_wind_kmh": 62,
+        "max_wind_kmh": 88,
+        "wind_range_kmh": "62-88"
+      },
+      "3": {
+        "min_wind_kmh": 89,
+        "max_wind_kmh": 117,
+        "wind_range_kmh": "89-117"
+      },
+      "4": {
+        "min_wind_kmh": 118,
+        "max_wind_kmh": 184,
+        "wind_range_kmh": "118-184"
+      },
+      "5": {
+        "min_wind_kmh": 185,
+        "max_wind_kmh": 220,
+        "wind_range_kmh": "185-220"
+      }
+    },
+    "rainfall": {
+      "advisory_text": "Refer to Weather Advisory No. 7 issued at 11:00 AM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon."
+    },
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 7 issued at 11:00 AM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon.",
     "region2_affected": true,
     "affected_provinces": [
       "Cagayan",

@@ -61,6 +61,14 @@ REGION2_IDENTIFIERS = [
     "II", "02",
 ]
 
+DEFAULT_TCWS_WIND_RANGES_KMH = {
+    1: {"min_wind_kmh": 39, "max_wind_kmh": 61, "wind_range_kmh": "39-61"},
+    2: {"min_wind_kmh": 62, "max_wind_kmh": 88, "wind_range_kmh": "62-88"},
+    3: {"min_wind_kmh": 89, "max_wind_kmh": 117, "wind_range_kmh": "89-117"},
+    4: {"min_wind_kmh": 118, "max_wind_kmh": 184, "wind_range_kmh": "118-184"},
+    5: {"min_wind_kmh": 185, "max_wind_kmh": 220, "wind_range_kmh": "185-220"},
+}
+
 
 def scrape_pagasa_page(url: str, page_name: str) -> Optional[str]:
     """
@@ -266,6 +274,50 @@ def _region2_affected_municipalities(text: str) -> List[Dict]:
     return affected
 
 
+def _extract_strength_metrics(text: str) -> Dict:
+    sustained_match = re.search(r"Maximum sustained winds of\s*(\d+(?:\.\d+)?)\s*km/h", text or "", re.IGNORECASE)
+    gust_match = re.search(r"gustiness of up to\s*(\d+(?:\.\d+)?)\s*km/h", text or "", re.IGNORECASE)
+    return {
+        "max_sustained_wind_kmh": float(sustained_match.group(1)) if sustained_match else None,
+        "gustiness_kmh": float(gust_match.group(1)) if gust_match else None,
+    }
+
+
+def _extract_tcws_wind_ranges(text: str) -> Dict[str, Dict]:
+    ranges = {str(signal): dict(values) for signal, values in DEFAULT_TCWS_WIND_RANGES_KMH.items()}
+    compact = re.sub(r"\s+", " ", text or "")
+    pattern = re.compile(
+        r"(?:Tropical Cyclone Wind Signal|Wind Signal|TCWS)\s*(?:no\.|No\.)?\s*(\d).*?"
+        r"Winds of\s*(\d+(?:\.\d+)?)\s*[-â€“â€”]\s*(\d+(?:\.\d+)?)\s*km/h",
+        re.IGNORECASE,
+    )
+    for match in pattern.finditer(compact):
+        signal = match.group(1)
+        min_wind = float(match.group(2))
+        max_wind = float(match.group(3))
+        ranges[signal] = {
+            "min_wind_kmh": min_wind,
+            "max_wind_kmh": max_wind,
+            "wind_range_kmh": f"{min_wind:g}-{max_wind:g}",
+        }
+    return ranges
+
+
+def _extract_rainfall_guidance(text: str) -> Dict:
+    compact = re.sub(r"\s+", " ", text or "")
+    rainfall_match = re.search(
+        r"Heavy Rainfall Outlook(.*?)(?:Severe Winds|HAZARDS AFFECTING COASTAL WATERS|TRACK AND INTENSITY OUTLOOK)",
+        compact,
+        re.IGNORECASE,
+    )
+    advisory_text = rainfall_match.group(1).strip(" :-") if rainfall_match else ""
+    mm_values = [float(value) for value in re.findall(r"(\d+(?:\.\d+)?)\s*mm", advisory_text, re.IGNORECASE)]
+    rainfall = {"advisory_text": advisory_text} if advisory_text else {}
+    if mm_values:
+        rainfall["forecast_rainfall_mm"] = max(mm_values)
+        rainfall["rainfall_range_mm"] = f"{min(mm_values):g}-{max(mm_values):g}" if len(mm_values) > 1 else f"{max(mm_values):g}"
+    return rainfall
+
 def parse_severe_weather_bulletin(html_text: str) -> Dict:
     """
     Parse PAGASA Severe Weather Bulletin page.
@@ -278,6 +330,9 @@ def parse_severe_weather_bulletin(html_text: str) -> Dict:
     issued_match = re.search(r"Issued at\s+([^\n]+?\d{4})", text, re.IGNORECASE)
     valid_match = re.search(r"Valid for broadcast until\s+([^\n]+)", text, re.IGNORECASE)
     signal_match = re.search(r"signalno(\d+)", html_text or "", re.IGNORECASE) or re.search(r"Wind Signal No\.\s*(\d+)", compact, re.IGNORECASE) or re.search(r"Tropical Cyclone Wind Signal\s*no\.\s*(\d+)", compact, re.IGNORECASE)
+    strength = _extract_strength_metrics(compact)
+    rainfall = _extract_rainfall_guidance(compact)
+    tcws_wind_ranges = _extract_tcws_wind_ranges(compact)
 
     active = bool(
         bulletin_match
@@ -300,6 +355,12 @@ def parse_severe_weather_bulletin(html_text: str) -> Dict:
         "signal_level": int(signal_match.group(1)) if signal_match else 0,
         "signal_levels": {province: (int(signal_match.group(1)) if signal_match and province in affected_provinces else 0)
                           for province in ["Batanes", "Cagayan", "Isabela", "Nueva Vizcaya", "Quirino"]},
+        "max_sustained_wind_kmh": strength.get("max_sustained_wind_kmh"),
+        "gustiness_kmh": strength.get("gustiness_kmh"),
+        "wind": strength,
+        "tcws_wind_ranges": tcws_wind_ranges,
+        "rainfall": rainfall,
+        "rainfall_advisory_text": rainfall.get("advisory_text", ""),
         "region2_affected": bool(affected),
         "affected_provinces": affected_provinces,
         "affected_municipalities": affected,
