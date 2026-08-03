@@ -54,7 +54,7 @@ const CISData = (() => {
         fetchJSON(PATHS.indicators),
         fetchJSON(PATHS.advisories),
         fetchJSON(PATHS.pipelineStatus),
-        fetchJSON(PATHS.pagasaData),
+        fetchJSON(PATHS.pagasaData, { bustCache: true }),
         fetchJSON(PATHS.acapData),
         fetchJSON(PATHS.acapCropCalendars),
       ]);
@@ -322,10 +322,16 @@ const CISData = (() => {
 
   // ── Internal helpers ───────────────────────────────────────────────────────
 
-  async function fetchJSON(url) {
-    const resp = await fetch(url);
+  async function fetchJSON(url, options = {}) {
+    const requestUrl = options.bustCache ? _withCacheBuster(url) : url;
+    const resp = await fetch(requestUrl, options.bustCache ? { cache: 'no-store' } : undefined);
     if (!resp.ok) throw new Error(`HTTP ${resp.status} for ${url}`);
     return resp.json();
+  }
+
+  function _withCacheBuster(url) {
+    const separator = url.includes('?') ? '&' : '?';
+    return `${url}${separator}v=${Date.now()}`;
   }
 
   async function fetchText(url) {
