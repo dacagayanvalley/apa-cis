@@ -205,7 +205,7 @@ paths:
 
 # ── SCHEDULER (GitHub Actions cron reference) ─────────────
 schedule:
-  severe_weather_fetch: "*/30 * * * *" # Strict 30-minute auto fetch only
+  severe_weather_fetch: "7,37 * * * *" # Strict 30-minute auto fetch only
   daily_fetch: "0 22 * * *"        # 6 AM PHT = 10 PM UTC
   weekly_summary: "0 22 * * 0"     # Sunday 6 AM PHT
   monthly_climatology: "0 22 1 * *" # 1st of month 6 AM PHT
