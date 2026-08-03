@@ -8,7 +8,7 @@
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <!-- Chart.js for sparklines -->
-  <link rel="stylesheet" href="css/cis.css?v=20260803-1600"/>
+  <link rel="stylesheet" href="css/cis.css?v=20260803-1530"/>
 </head>
 <body>
 
@@ -399,12 +399,8 @@
       <h2 class="severe-title">PAGASA Severe Weather Advisory</h2>
       <p class="severe-sub">Official disturbance status combined with municipal rainfall, wind, temperature, and field-workability indicators.</p>
     </div>
-    <div class="severe-header-actions">
-      <button type="button" class="btn-secondary sw-refresh-btn" id="sw-refresh-btn" onclick="CISSevereWeather.refreshLatest()" title="Fetch latest PAGASA severe weather data">Refresh PAGASA</button>
-      <a class="cis-open-link" id="severe-source-link" href="https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin" target="_blank" rel="noopener">Open PAGASA Bulletin</a>
-    </div>
+    <a class="cis-open-link" id="severe-source-link" href="https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin" target="_blank" rel="noopener">Open PAGASA Bulletin</a>
   </div>
-  <div class="sw-refresh-state" id="sw-refresh-state" aria-live="polite"></div>
 
   <div class="severe-status-grid">
     <div class="severe-status-card" id="sw-status-card">
@@ -488,12 +484,12 @@
 </div>
 <!-- Scripts -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/cis-data.js?v=20260803-1600"></script>
-<script src="js/cis-map.js?v=20260803-1600"></script>
-<script src="js/cis-dashboard.js?v=20260803-1600"></script>
-<script src="js/cis-advisory.js?v=20260803-1600"></script>
-<script src="js/cis-planning.js?v=20260803-1600"></script>
-<script src="js/cis-severe-weather.js?v=20260803-1600"></script>
-<script src="js/cis-main.js?v=20260803-1600"></script>
+<script src="js/cis-data.js?v=20260803-1530"></script>
+<script src="js/cis-map.js?v=20260803-1530"></script>
+<script src="js/cis-dashboard.js?v=20260803-1530"></script>
+<script src="js/cis-advisory.js?v=20260803-1530"></script>
+<script src="js/cis-planning.js?v=20260803-1530"></script>
+<script src="js/cis-severe-weather.js?v=20260803-1530"></script>
+<script src="js/cis-main.js?v=20260803-1530"></script>
 </body>
 </html>
