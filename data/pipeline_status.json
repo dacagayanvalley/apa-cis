@@ -1,7 +1,7 @@
 {
   "last_run": "2026-08-03",
   "status": "success",
-  "elapsed_seconds": 225.9,
+  "elapsed_seconds": 219.6,
   "steps": {
     "apa_cis": "success",
     "acap": "success",
@@ -13,11 +13,5 @@
   },
   "data_as_of": "2026-08-03",
   "forecast_as_of": "2026-08-03",
-  "fallback_observation_as_of": "2026-07-29",
-  "severe_weather_last_checked": "2026-08-03T07:39:27.889700+00:00",
-  "severe_weather_as_of": "2026-08-03",
-  "severe_weather_active": true,
-  "severe_weather_region2_affected": true,
-  "severe_weather_system": "Tropical Depression Luis",
-  "severe_weather_bulletin_number": "10"
+  "fallback_observation_as_of": "2026-07-29"
 }
