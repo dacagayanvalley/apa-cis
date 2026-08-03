@@ -34,8 +34,8 @@
         "municipality": "Abulug",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -72,8 +72,8 @@
         "municipality": "Allacapan",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -148,8 +148,8 @@
         "municipality": "Ballesteros",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -185,10 +185,10 @@
         "psgc": "023110000",
         "municipality": "Calayan",
         "province": "Cagayan",
-        "severity": "advisory",
-        "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
-        "color": "#FF9800"
+        "severity": "warning",
+        "advisory_count": 2,
+        "primary_advisory": "High Irrigation Demand",
+        "color": "#FF5722"
       }
     },
     {
@@ -224,8 +224,8 @@
         "municipality": "Claveria",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -262,8 +262,8 @@
         "municipality": "Gattaran",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 3,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
         "color": "#FF5722"
       }
     },
@@ -319,8 +319,8 @@
         "municipality": "Lal-lo",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -338,8 +338,8 @@
         "municipality": "Lasam",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -357,8 +357,8 @@
         "municipality": "Pamplona",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 3,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
         "color": "#FF5722"
       }
     },
@@ -414,8 +414,8 @@
         "municipality": "Rizal",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -433,8 +433,8 @@
         "municipality": "Sanchez-Mira",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -471,8 +471,8 @@
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -509,8 +509,8 @@
         "municipality": "Santo Niño",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 3,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
         "color": "#FF5722"
       }
     },
@@ -1648,10 +1648,10 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "severity": "advisory",
-        "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
-        "color": "#FF9800"
+        "severity": "warning",
+        "advisory_count": 2,
+        "primary_advisory": "High Irrigation Demand",
+        "color": "#FF5722"
       }
     },
     {
@@ -1667,10 +1667,10 @@
         "psgc": "020101000",
         "municipality": "Itbayat",
         "province": "Batanes",
-        "severity": "advisory",
-        "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
-        "color": "#FF9800"
+        "severity": "warning",
+        "advisory_count": 2,
+        "primary_advisory": "High Irrigation Demand",
+        "color": "#FF5722"
       }
     },
     {
@@ -1686,10 +1686,10 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "severity": "advisory",
-        "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
-        "color": "#FF9800"
+        "severity": "warning",
+        "advisory_count": 2,
+        "primary_advisory": "High Irrigation Demand",
+        "color": "#FF5722"
       }
     },
     {
@@ -1705,10 +1705,10 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "severity": "advisory",
-        "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
-        "color": "#FF9800"
+        "severity": "warning",
+        "advisory_count": 2,
+        "primary_advisory": "High Irrigation Demand",
+        "color": "#FF5722"
       }
     },
     {
@@ -1724,10 +1724,10 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "severity": "advisory",
-        "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
-        "color": "#FF9800"
+        "severity": "warning",
+        "advisory_count": 2,
+        "primary_advisory": "High Irrigation Demand",
+        "color": "#FF5722"
       }
     },
     {
@@ -1743,10 +1743,10 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "severity": "advisory",
-        "advisory_count": 1,
-        "primary_advisory": "Wet Spell Disease Watch",
-        "color": "#FF9800"
+        "severity": "warning",
+        "advisory_count": 2,
+        "primary_advisory": "High Irrigation Demand",
+        "color": "#FF5722"
       }
     }
   ]
