@@ -1,7 +1,7 @@
 {
   "last_run": "2026-08-03",
   "status": "success",
-  "elapsed_seconds": 239.6,
+  "elapsed_seconds": 229.3,
   "steps": {
     "apa_cis": "success",
     "acap": "success",
@@ -11,11 +11,7 @@
     "indicators": "success",
     "advisories": "success"
   },
-<<<<<<< HEAD
-  "data_as_of": "2026-07-01",
-  "forecast_as_of": "2026-07-01",
-  "fallback_observation_as_of": "2026-06-26"
-=======
-  "data_as_of": "2026-07-29"
->>>>>>> 033015f1d57212964e5ab798ece8f4b2607b7f2f
+  "data_as_of": "2026-08-03",
+  "forecast_as_of": "2026-08-03",
+  "fallback_observation_as_of": "2026-07-29"
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-02T23:04:59.738529",
+    "generated_at": "2026-08-03T02:29:41.526584",
     "date": "2026-07-29",
     "source": "NASA POWER (Community: AG)",
     "parameters": "PRECTOTCORR,T2M_MAX,T2M_MIN,T2M,RH2M,WS2M,ALLSKY_SFC_SW_DWN,GWETROOT,WD2M",
@@ -20,7 +20,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.81
     },
     {
@@ -35,7 +35,7 @@
       "humidity_pct": 86.36,
       "wind_speed_ms": 2.08,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.71
     },
     {
@@ -50,7 +50,7 @@
       "humidity_pct": 86.19,
       "wind_speed_ms": 1.38,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.76
     },
     {
@@ -65,7 +65,7 @@
       "humidity_pct": 89.76,
       "wind_speed_ms": 0.84,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.89
     },
     {
@@ -80,7 +80,7 @@
       "humidity_pct": 86.19,
       "wind_speed_ms": 1.38,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.76
     },
     {
@@ -95,7 +95,7 @@
       "humidity_pct": 82.69,
       "wind_speed_ms": 3.31,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.65
     },
     {
@@ -110,7 +110,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.81
     },
     {
@@ -125,7 +125,7 @@
       "humidity_pct": 86.36,
       "wind_speed_ms": 2.08,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.71
     },
     {
@@ -140,7 +140,7 @@
       "humidity_pct": 82.69,
       "wind_speed_ms": 3.31,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.65
     },
     {
@@ -155,7 +155,7 @@
       "humidity_pct": 82.45,
       "wind_speed_ms": 5.17,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 25.08,
       "soil_moisture": 0.55
     },
     {
@@ -170,7 +170,7 @@
       "humidity_pct": 82.69,
       "wind_speed_ms": 3.31,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.65
     },
     {
@@ -185,7 +185,7 @@
       "humidity_pct": 86.36,
       "wind_speed_ms": 2.08,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.71
     },
     {
@@ -200,7 +200,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.81
     },
     {
@@ -215,7 +215,7 @@
       "humidity_pct": 86.19,
       "wind_speed_ms": 1.38,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.76
     },
     {
@@ -230,7 +230,7 @@
       "humidity_pct": 82.69,
       "wind_speed_ms": 3.31,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 13.62,
       "soil_moisture": 0.65
     },
     {
@@ -245,7 +245,7 @@
       "humidity_pct": 86.19,
       "wind_speed_ms": 1.38,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.76
     },
     {
@@ -260,7 +260,7 @@
       "humidity_pct": 86.19,
       "wind_speed_ms": 1.38,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.76
     },
     {
@@ -275,7 +275,7 @@
       "humidity_pct": 86.19,
       "wind_speed_ms": 1.38,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.76
     },
     {
@@ -290,7 +290,7 @@
       "humidity_pct": 89.76,
       "wind_speed_ms": 0.84,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.89
     },
     {
@@ -305,7 +305,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.81
     },
     {
@@ -320,7 +320,7 @@
       "humidity_pct": 89.76,
       "wind_speed_ms": 0.84,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.89
     },
     {
@@ -335,7 +335,7 @@
       "humidity_pct": 89.76,
       "wind_speed_ms": 0.84,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.89
     },
     {
@@ -350,7 +350,7 @@
       "humidity_pct": 86.36,
       "wind_speed_ms": 2.08,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.71
     },
     {
@@ -365,7 +365,7 @@
       "humidity_pct": 82.69,
       "wind_speed_ms": 3.31,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 13.62,
       "soil_moisture": 0.65
     },
     {
@@ -380,7 +380,7 @@
       "humidity_pct": 86.36,
       "wind_speed_ms": 2.08,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.71
     },
     {
@@ -395,7 +395,7 @@
       "humidity_pct": 82.69,
       "wind_speed_ms": 3.31,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.65
     },
     {
@@ -410,7 +410,7 @@
       "humidity_pct": 86.19,
       "wind_speed_ms": 1.38,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 12.57,
       "soil_moisture": 0.76
     },
     {
@@ -425,7 +425,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.81
     },
     {
@@ -440,7 +440,7 @@
       "humidity_pct": 89.76,
       "wind_speed_ms": 0.84,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.89
     },
     {
@@ -455,7 +455,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.78
     },
     {
@@ -470,7 +470,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.78
     },
     {
@@ -485,7 +485,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.78
     },
     {
@@ -500,7 +500,7 @@
       "humidity_pct": 90.57,
       "wind_speed_ms": 0.92,
       "wind_dir_deg": 71.0,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -515,7 +515,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 2.72,
       "soil_moisture": 0.78
     },
     {
@@ -530,7 +530,7 @@
       "humidity_pct": 83.7,
       "wind_speed_ms": 2.96,
       "wind_dir_deg": 90.4,
-      "solar_mj": null,
+      "solar_mj": 2.72,
       "soil_moisture": 0.56
     },
     {
@@ -545,7 +545,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.81
     },
     {
@@ -560,7 +560,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.78
     },
     {
@@ -575,7 +575,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.78
     },
     {
@@ -590,7 +590,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -605,7 +605,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 2.72,
       "soil_moisture": 0.81
     },
     {
@@ -620,7 +620,7 @@
       "humidity_pct": 85.19,
       "wind_speed_ms": 3.03,
       "wind_dir_deg": 64.1,
-      "solar_mj": null,
+      "solar_mj": 3.82,
       "soil_moisture": 0.58
     },
     {
@@ -635,7 +635,7 @@
       "humidity_pct": 85.9,
       "wind_speed_ms": 2.53,
       "wind_dir_deg": 74.9,
-      "solar_mj": null,
+      "solar_mj": 2.72,
       "soil_moisture": 0.56
     },
     {
@@ -650,7 +650,7 @@
       "humidity_pct": 90.28,
       "wind_speed_ms": 1.07,
       "wind_dir_deg": 52.7,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.76
     },
     {
@@ -665,7 +665,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.78
     },
     {
@@ -680,7 +680,7 @@
       "humidity_pct": 90.28,
       "wind_speed_ms": 1.07,
       "wind_dir_deg": 52.7,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.76
     },
     {
@@ -695,7 +695,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 2.72,
       "soil_moisture": 0.81
     },
     {
@@ -710,7 +710,7 @@
       "humidity_pct": 83.7,
       "wind_speed_ms": 2.96,
       "wind_dir_deg": 90.4,
-      "solar_mj": null,
+      "solar_mj": 2.72,
       "soil_moisture": 0.56
     },
     {
@@ -725,7 +725,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.78
     },
     {
@@ -740,7 +740,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.78
     },
     {
@@ -755,7 +755,7 @@
       "humidity_pct": 85.9,
       "wind_speed_ms": 2.53,
       "wind_dir_deg": 74.9,
-      "solar_mj": null,
+      "solar_mj": 2.72,
       "soil_moisture": 0.56
     },
     {
@@ -770,7 +770,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -785,7 +785,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.78
     },
     {
@@ -800,7 +800,7 @@
       "humidity_pct": 90.57,
       "wind_speed_ms": 0.92,
       "wind_dir_deg": 71.0,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -815,7 +815,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.78
     },
     {
@@ -830,7 +830,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.78
     },
     {
@@ -845,7 +845,7 @@
       "humidity_pct": 90.57,
       "wind_speed_ms": 0.92,
       "wind_dir_deg": 71.0,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -860,7 +860,7 @@
       "humidity_pct": 90.57,
       "wind_speed_ms": 0.92,
       "wind_dir_deg": 71.0,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.92
     },
     {
@@ -875,7 +875,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.81
     },
     {
@@ -890,7 +890,7 @@
       "humidity_pct": 90.28,
       "wind_speed_ms": 1.07,
       "wind_dir_deg": 52.7,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.76
     },
     {
@@ -905,7 +905,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 3.82,
       "soil_moisture": 0.78
     },
     {
@@ -920,7 +920,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.78
     },
     {
@@ -935,7 +935,7 @@
       "humidity_pct": 89.42,
       "wind_speed_ms": 0.96,
       "wind_dir_deg": 72.3,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.78
     },
     {
@@ -950,7 +950,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 2.72,
       "soil_moisture": 0.81
     },
     {
@@ -965,7 +965,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -980,7 +980,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.81
     },
     {
@@ -995,7 +995,7 @@
       "humidity_pct": 88.13,
       "wind_speed_ms": 0.91,
       "wind_dir_deg": 88.3,
-      "solar_mj": null,
+      "solar_mj": 1.75,
       "soil_moisture": 0.81
     },
     {
@@ -1010,7 +1010,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1025,7 +1025,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1040,7 +1040,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1055,7 +1055,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1070,7 +1070,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1085,7 +1085,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1100,7 +1100,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1115,7 +1115,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1130,7 +1130,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1145,7 +1145,7 @@
       "humidity_pct": 87.57,
       "wind_speed_ms": 0.45,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 4.72,
       "soil_moisture": 0.92
     },
     {
@@ -1160,7 +1160,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1175,7 +1175,7 @@
       "humidity_pct": 90.51,
       "wind_speed_ms": 0.99,
       "wind_dir_deg": 62.1,
-      "solar_mj": null,
+      "solar_mj": 4.72,
       "soil_moisture": 0.89
     },
     {
@@ -1190,7 +1190,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1205,7 +1205,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1220,7 +1220,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1235,7 +1235,7 @@
       "humidity_pct": 90.28,
       "wind_speed_ms": 1.07,
       "wind_dir_deg": 52.7,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.76
     },
     {
@@ -1250,7 +1250,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1265,7 +1265,7 @@
       "humidity_pct": 90.28,
       "wind_speed_ms": 1.07,
       "wind_dir_deg": 52.7,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.76
     },
     {
@@ -1280,7 +1280,7 @@
       "humidity_pct": 84.42,
       "wind_speed_ms": 2.65,
       "wind_dir_deg": 47.7,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.63
     },
     {
@@ -1295,7 +1295,7 @@
       "humidity_pct": 91.63,
       "wind_speed_ms": 1.11,
       "wind_dir_deg": 59.5,
-      "solar_mj": null,
+      "solar_mj": 3.84,
       "soil_moisture": 0.92
     },
     {
@@ -1310,7 +1310,7 @@
       "humidity_pct": 81.77,
       "wind_speed_ms": 4.62,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 19.61,
       "soil_moisture": 0.5
     },
     {
@@ -1325,7 +1325,7 @@
       "humidity_pct": 82.14,
       "wind_speed_ms": 4.39,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 19.61,
       "soil_moisture": 0.53
     },
     {
@@ -1340,7 +1340,7 @@
       "humidity_pct": 81.77,
       "wind_speed_ms": 4.62,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 19.61,
       "soil_moisture": 0.5
     },
     {
@@ -1355,7 +1355,7 @@
       "humidity_pct": 81.77,
       "wind_speed_ms": 4.62,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 19.61,
       "soil_moisture": 0.5
     },
     {
@@ -1370,7 +1370,7 @@
       "humidity_pct": 81.77,
       "wind_speed_ms": 4.62,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 19.61,
       "soil_moisture": 0.5
     },
     {
@@ -1385,7 +1385,7 @@
       "humidity_pct": 81.77,
       "wind_speed_ms": 4.62,
       "wind_dir_deg": null,
-      "solar_mj": null,
+      "solar_mj": 19.61,
       "soil_moisture": 0.5
     }
   ]
