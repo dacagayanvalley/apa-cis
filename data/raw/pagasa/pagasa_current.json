@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-03",
-  "fetched_at": "2026-08-03T07:45:34.277478+00:00",
-  "fetched_at_utc": "2026-08-03T07:45:34.277478+00:00",
+  "fetched_at": "2026-08-03T10:34:35.280572+00:00",
+  "fetched_at_utc": "2026-08-03T10:34:35.280572+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -37,9 +37,9 @@
     "active": true,
     "name": "Luis",
     "disturbance_type": "Tropical Depression",
-    "bulletin_number": "10",
-    "issued_at": "02:00 pm, 03 August 2026",
-    "valid_until": "the next advisory to be issued at 5:00 PM today)",
+    "bulletin_number": "11",
+    "issued_at": "05:00 pm, 03 August 2026",
+    "valid_until": "the next advisory to be issued at 8:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 1,
     "signal_levels": {
@@ -85,9 +85,9 @@
       }
     },
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 7 issued at 11:00 AM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon."
+      "advisory_text": "Refer to Weather Advisory No. 8 issued at 05:00 PM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 7 issued at 11:00 AM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 8 issued at 05:00 PM today for the heavy rainfall outlook due to TC LUIS and the Southwest Monsoon.",
     "region2_affected": true,
     "affected_provinces": [
       "Cagayan",
@@ -504,11 +504,11 @@
         "match": "province"
       }
     ],
-    "summary": "Tropical Depression Luis Bulletin #10",
+    "summary": "Tropical Depression Luis Bulletin #11",
     "as_of": "2026-08-03",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-03T07:45:34.277478+00:00",
-    "fetched_at_utc": "2026-08-03T07:45:34.277478+00:00"
+    "fetched_at": "2026-08-03T10:34:35.280572+00:00",
+    "fetched_at_utc": "2026-08-03T10:34:35.280572+00:00"
   },
   "scrape_status": {
     "enso": "success",
