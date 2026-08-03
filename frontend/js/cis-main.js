@@ -151,6 +151,8 @@ function _updateSevereWeatherNavState() {
     ? `${typhoon.disturbance_type || 'Weather disturbance'} ${typhoon.name || ''} affects Region 2. Open urgent severe-weather advisory.`
     : 'Open PAGASA severe-weather monitoring module.';
 }
+window.updateSevereWeatherNavState = _updateSevereWeatherNavState;
+
 function _updateENSOBadge() {
   // Best-effort: ENSO status from PAGASA or fallback
   const badge = document.getElementById('enso-badge');

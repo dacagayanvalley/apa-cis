@@ -12,6 +12,8 @@ const CISSevereWeather = (() => {
   let _sortDir = 'desc';
 
   const PROVINCES = ['Batanes', 'Cagayan', 'Isabela', 'Nueva Vizcaya', 'Quirino'];
+  const WORKFLOW_API = 'https://api.github.com/repos/dacagayanvalley/apa-cis/actions/workflows/severe_weather_update.yml/dispatches';
+  const WORKFLOW_PAGE = 'https://github.com/dacagayanvalley/apa-cis/actions/workflows/severe_weather_update.yml';
 
   function renderAll() {
     const pagasa = CISData.getPAGASAData() || {};
@@ -59,6 +61,35 @@ const CISSevereWeather = (() => {
     if (detail) detail.innerHTML = _detailHTML(_selected);
   }
 
+  async function refreshLatest() {
+    const btn = document.getElementById('sw-refresh-btn');
+    _setRefreshState('Checking latest published PAGASA data...', 'loading');
+    if (btn) btn.disabled = true;
+
+    try {
+      const token = _githubToken();
+      if (token) {
+        await _dispatchWorkflow(token);
+        _setRefreshState('Fetch queued in GitHub Actions; checking published data while it runs.', 'queued');
+      } else {
+        window.open(WORKFLOW_PAGE, '_blank', 'noopener');
+        _setRefreshState('Opened GitHub Actions. Run the workflow, then press this button again after it completes.', 'queued');
+      }
+
+      await CISData.refreshSevereWeatherData();
+      renderAll();
+      if (typeof window.updateSevereWeatherNavState === 'function') window.updateSevereWeatherNavState();
+      const pagasa = CISData.getPAGASAData() || {};
+      const typhoon = pagasa.typhoon || {};
+      const fetchedText = _formatFetchedAt(typhoon.fetched_at || typhoon.fetched_at_utc || pagasa.fetched_at || pagasa.fetched_at_utc);
+      _setRefreshState(fetchedText ? `Latest published data loaded; fetched ${fetchedText}.` : 'Latest published PAGASA data loaded.', 'success');
+    } catch (err) {
+      console.warn('[APA-CIS] Severe weather refresh failed:', err);
+      _setRefreshState(`Refresh failed: ${err.message || err}`, 'error');
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  }
   function _affectedRows(rows, typhoon) {
     if (!typhoon.active || !typhoon.region2_affected) return [];
     const affectedPsgc = new Set((typhoon.affected_municipalities || []).map(item => item.psgc));
@@ -579,6 +610,30 @@ const CISSevereWeather = (() => {
     return `${system || 'The active PAGASA bulletin'} affects ${item.province}. Based on ${rainText} (${item.rainSource}), ${_formatWindAdvisory(item)} (${item.windSource}), and field-workability status (${item.fieldClass}), ${windText}.`;
   }
 
+  function _githubToken() {
+    return window.APA_CIS_GITHUB_TOKEN || localStorage.getItem('apaCisGitHubToken') || '';
+  }
+
+  async function _dispatchWorkflow(token) {
+    const resp = await fetch(WORKFLOW_API, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/vnd.github+json',
+        Authorization: `Bearer ${token}`,
+        'X-GitHub-Api-Version': '2022-11-28',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ref: 'main' }),
+    });
+    if (resp.status !== 204) throw new Error(`GitHub workflow dispatch returned HTTP ${resp.status}`);
+  }
+
+  function _setRefreshState(message, state = '') {
+    const el = document.getElementById('sw-refresh-state');
+    if (!el) return;
+    el.textContent = message || '';
+    el.className = `sw-refresh-state ${state}`.trim();
+  }
   function _formatFetchedAt(value) {
     if (!value) return '';
     const parsed = new Date(value);
@@ -610,5 +665,5 @@ const CISSevereWeather = (() => {
     return String(value || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  return { renderAll, sortTable, selectMunicipality };
+  return { renderAll, sortTable, selectMunicipality, refreshLatest };
 })();

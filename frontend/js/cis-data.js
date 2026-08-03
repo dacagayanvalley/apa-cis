@@ -235,6 +235,18 @@ const CISData = (() => {
     return _pagasaData;
   }
 
+  async function refreshSevereWeatherData() {
+    const [pagasaResult, statusResult] = await Promise.allSettled([
+      fetchJSON(PATHS.pagasaData, { bustCache: true }),
+      fetchJSON(PATHS.pipelineStatus, { bustCache: true }),
+    ]);
+
+    if (pagasaResult.status !== 'fulfilled') throw pagasaResult.reason;
+    _pagasaData = pagasaResult.value;
+    if (statusResult.status === 'fulfilled') _pipelineStatus = statusResult.value;
+    return { pagasaData: _pagasaData, status: _pipelineStatus };
+  }
+
   function getACAPData() {
     return _acapData;
   }
@@ -412,7 +424,7 @@ const CISData = (() => {
     loadAll, getGeoJSON, getRegionalBulletin, getMunicipalRows, getAdvisoryForMunicipality,
     getActiveAdvisories, getIndicatorByPSGC, getSummaryStats,
     getPriorityMunicipalities, getProvinceSummary, getPipelineStatus,
-    getPAGASAData, getACAPData, getACAPCropCalendars, setProvince,
+    getPAGASAData, refreshSevereWeatherData, getACAPData, getACAPCropCalendars, setProvince,
     fmt: { formatRainfall, formatTemp, formatPercent,
            severityPill, droughtPill, heatPill, workabilityPill, riskScoreBadge }
   };
