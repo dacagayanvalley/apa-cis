@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-05",
-  "fetched_at": "2026-08-04T22:19:20.559788+00:00",
-  "fetched_at_utc": "2026-08-04T22:19:20.559788+00:00",
+  "fetched_at": "2026-08-04T23:35:30.129582+00:00",
+  "fetched_at_utc": "2026-08-04T23:35:30.129582+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,25 +11,24 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "4 August 2026 : A weak to moderate El Niño is present in the tropical Pacific. Climate models suggest that El Niño will likely intensify over the next few seasons and persist until the first half of 2027 (~97%). A strong El Niño is likely to emerge by the July-Aug-Sep season (~57%), and a very strong El Niño is favored during the Oct-Nov-Dec and Nov-Dec-Jan seasons (~81%).    (updated: 22 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "5 August 2026 : A weak to moderate El Niño is present in the tropical Pacific. Climate models suggest that El Niño will likely intensify over the next few seasons and persist until the first half of 2027 (~97%). A strong El Niño is likely to emerge by the July-Aug-Sep season (~57%), and a very strong El Niño is favored during the Oct-Nov-Dec and Nov-Dec-Jan seasons (~81%).    (updated: 22 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-08-04"
+    "as_of": "2026-08-05"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-08-04",
+    "as_of": "2026-08-05",
     "region2_forecast": [
-      "4 August 2026",
-      "Issued at: 7:00 AM Tuesday, August 04, 2026",
-      "Valid until: 7:00 AM Wednesday, August 05, 2026",
-      "At 3:00 AM today, a Low Pressure Area (LPA) was estimated based on all available data in the vicnity of Baggao, Cagayan (17.5°N, 121.9°E). Another Low Pressure Area (LPA) was estimated over coastal waters of Balaon, La Union (16.8°N, 120.1°E). Southwest Monsoon affecting Southern Luzon and the western section of Visayas.",
-      "Ilocos Region, Cordillera Administrative Region, Cagayan Valley, and Central Luzon",
-      "Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Zambales, Bataan, Pampanga, Nueva Ecija, Bulacan, Tarlac,  Cordillera Administrative Region, northern part of National Capital Region, Quezon, Rizal, some portions of Cavite, northern parts of Palawan, Romblon, Occidental Mindoro, Oriental Mindoro, West Panay, Samar, Southern Leyte,  Negros Occidental, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, South Cotabato, Surigao del Norte, Surigao del Sur,  and some parts of BARMM",
-      "Cagayan, Aurora, Batangas, some parts of Palawan, Albay, Catanduanes, East Panay, Eastern Samar, Negros Oriental, and Zamboanga del Sur",
+      "5 August 2026",
+      "Issued at: 7:00 AM Wednesday, August 05, 2026",
+      "Valid until: 7:00 AM Thursday, August 06, 2026",
+      "Cagayan Valley, the rest of Ilocos Region, the rest of Cordillera Administrative Region, Zambales, Tarlac, and Nueva Ecija",
+      "Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Zambales, Bataan, Pampanga, Nueva Ecija, Bulacan, Tarlac, Cordillera Administrative Region, northern part of National Capital Region, Quezon, Rizal, some portions of Cavite, northern parts of Palawan, Romblon, Occidental Mindoro, Oriental Mindoro, West Panay, Samar, Southern Leyte,  Negros Occidental, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, South Cotabato, Surigao del Norte, Surigao del Sur,  and some parts of BARMM",
+      "Moist – Cagayan, Aurora, Batangas, some parts of Palawan, Albay, Catanduanes, East Panay, Eastern Samar, Negros Oriental, and Zamboanga del Sur",
       "(Updated as of 22 July 2026)",
       "A weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability."
     ],
-    "raw_text_extracted": "4 August 2026\nIssued at: 7:00 AM Tuesday, August 04, 2026\nValid until: 7:00 AM Wednesday, August 05, 2026\nAt 3:00 AM today, a Low Pressure Area (LPA) was estimated based on all available data in the vicnity of Baggao, Cagayan (17.5°N, 121.9°E). Another Low Pressure Area (LPA) was estimated over coastal waters of Balaon, La Union (16.8°N, 120.1°E). Southwest Monsoon affecting Southern Luzon and the western section of Visayas.\nIlocos Region, Cordillera Administrative Region, Cagayan Valley, and Central Luzon\nIlocos Norte, Ilocos Sur, Pangasinan, Isabela, Zambales, Bataan, Pampanga, Nueva Ecija, Bulacan, Tarlac,  Cordillera Administrative Region, northern part of National Capital Region, Quezon, Rizal, some portions of Cavite, northern parts of Palawan, Romblon, Occidental Mindoro, Oriental Mindoro, West Panay, Samar, Southern Leyte,  Negros Occidental, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, South Cotabato, Surigao del Norte, Surigao del Sur,  and some parts of BARMM\nCagayan, Aurora, Batangas, some parts of Palawan, Albay, Catanduanes, East Panay, Eastern Samar, Negros Oriental, and Zamboanga del Sur\n(Updated as of 22 July 2026)\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
+    "raw_text_extracted": "5 August 2026\nIssued at: 7:00 AM Wednesday, August 05, 2026\nValid until: 7:00 AM Thursday, August 06, 2026\nCagayan Valley, the rest of Ilocos Region, the rest of Cordillera Administrative Region, Zambales, Tarlac, and Nueva Ecija\nIlocos Norte, Ilocos Sur, Pangasinan, Isabela, Zambales, Bataan, Pampanga, Nueva Ecija, Bulacan, Tarlac, Cordillera Administrative Region, northern part of National Capital Region, Quezon, Rizal, some portions of Cavite, northern parts of Palawan, Romblon, Occidental Mindoro, Oriental Mindoro, West Panay, Samar, Southern Leyte,  Negros Occidental, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, South Cotabato, Surigao del Norte, Surigao del Sur,  and some parts of BARMM\nMoist – Cagayan, Aurora, Batangas, some parts of Palawan, Albay, Catanduanes, East Panay, Eastern Samar, Negros Oriental, and Zamboanga del Sur\n(Updated as of 22 July 2026)\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -178,8 +177,8 @@
     "summary": "Tropical Storm Maymay Bulletin #3",
     "as_of": "2026-08-05",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-04T22:19:20.559788+00:00",
-    "fetched_at_utc": "2026-08-04T22:19:20.559788+00:00",
+    "fetched_at": "2026-08-04T23:35:30.129582+00:00",
+    "fetched_at_utc": "2026-08-04T23:35:30.129582+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -265,6 +264,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-04T22:19:20.559788+00:00"
+    "last_checked_utc": "2026-08-04T23:35:30.129582+00:00"
   }
 }
