@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-04",
-  "fetched_at": "2026-08-04T04:19:36.717058+00:00",
-  "fetched_at_utc": "2026-08-04T04:19:36.717058+00:00",
+  "fetched_at": "2026-08-04T07:17:29.675780+00:00",
+  "fetched_at_utc": "2026-08-04T07:17:29.675780+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -35,23 +35,79 @@
   },
   "typhoon": {
     "active": false,
+    "is_final": false,
+    "bulletin_status": "active",
+    "name": "",
+    "disturbance_type": "",
+    "bulletin_number": "",
+    "issued_at": "",
+    "valid_until": "",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
-    "summary": "Could not fetch PAGASA Severe Weather Bulletin page.",
+    "signal_level": 0,
+    "signal_levels": {
+      "Batanes": 0,
+      "Cagayan": 0,
+      "Isabela": 0,
+      "Nueva Vizcaya": 0,
+      "Quirino": 0
+    },
+    "max_sustained_wind_kmh": null,
+    "peak_wind_gust_kmh": null,
+    "gustiness_kmh": null,
+    "wind": {
+      "max_sustained_wind_kmh": null,
+      "peak_wind_gust_kmh": null,
+      "gustiness_kmh": null
+    },
+    "tcws_wind_ranges": {
+      "1": {
+        "min_wind_kmh": 39,
+        "max_wind_kmh": 61,
+        "wind_range_kmh": "39-61"
+      },
+      "2": {
+        "min_wind_kmh": 62,
+        "max_wind_kmh": 88,
+        "wind_range_kmh": "62-88"
+      },
+      "3": {
+        "min_wind_kmh": 89,
+        "max_wind_kmh": 117,
+        "wind_range_kmh": "89-117"
+      },
+      "4": {
+        "min_wind_kmh": 118,
+        "max_wind_kmh": 184,
+        "wind_range_kmh": "118-184"
+      },
+      "5": {
+        "min_wind_kmh": 185,
+        "max_wind_kmh": 220,
+        "wind_range_kmh": "185-220"
+      }
+    },
+    "rainfall": {},
+    "rainfall_advisory_text": "",
+    "region2_affected": false,
+    "affected_provinces": [],
+    "affected_municipalities": [],
+    "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-08-04",
-    "fetched_at": "2026-08-04T04:19:36.717058+00:00",
-    "fetched_at_utc": "2026-08-04T04:19:36.717058+00:00",
+    "parse_method": "pagasa_public_html_static",
+    "fetched_at": "2026-08-04T07:17:29.675780+00:00",
+    "fetched_at_utc": "2026-08-04T07:17:29.675780+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "failed",
+    "typhoon": "success",
     "typhoon_agriculture": "skipped"
   },
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-04T04:19:36.717058+00:00"
+    "last_checked_utc": "2026-08-04T07:17:29.675780+00:00"
   }
 }
