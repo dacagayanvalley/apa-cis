@@ -453,11 +453,13 @@ def parse_severe_weather_bulletin(html_text: str) -> Dict:
     issued_match = re.search(r"Issued at\s+([^\n]+?\d{4})", text, re.IGNORECASE)
     valid_match = re.search(r"Valid for broadcast until\s+([^\n]+)", text, re.IGNORECASE)
     signal_match = re.search(r"signalno(\d+)", html_text or "", re.IGNORECASE) or re.search(r"Wind Signal No\.\s*(\d+)", compact, re.IGNORECASE) or re.search(r"Tropical Cyclone Wind Signal\s*no\.\s*(\d+)", compact, re.IGNORECASE)
+    is_final = bool(re.search(r"\b(?:final|final bulletin|final advisory)\b", compact, re.IGNORECASE))
+    bulletin_status = "final" if is_final else "active"
     strength = _extract_strength_metrics(compact)
     rainfall = _extract_rainfall_guidance(compact)
     tcws_wind_ranges = _extract_tcws_wind_ranges(compact)
 
-    active = bool(
+    active = (not is_final) and bool(
         bulletin_match
         or disturbance_name
         or re.search(r"Tropical Cyclone Bulletin\s+Active", compact, re.IGNORECASE)
@@ -469,6 +471,8 @@ def parse_severe_weather_bulletin(html_text: str) -> Dict:
 
     return {
         "active": active,
+        "is_final": is_final,
+        "bulletin_status": bulletin_status,
         "name": disturbance_name,
         "disturbance_type": disturbance_type,
         "bulletin_number": bulletin_match.group(1) if bulletin_match else "",

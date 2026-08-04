@@ -119,6 +119,8 @@ def run() -> dict:
     status["severe_weather_as_of"] = typhoon.get("as_of") or run_date
     status["severe_weather_active"] = bool(typhoon.get("active"))
     status["severe_weather_region2_affected"] = bool(typhoon.get("region2_affected"))
+    status["severe_weather_bulletin_status"] = typhoon.get("bulletin_status") or "unknown"
+    status["severe_weather_is_final"] = bool(typhoon.get("is_final"))
     status["severe_weather_agriculture_advisory_status"] = typhoon.get("agriculture_advisory_fetch_status", "skipped")
     status["severe_weather_agriculture_advisory_active"] = bool((typhoon.get("agriculture_advisory") or {}).get("active"))
     status["severe_weather_system"] = " ".join(

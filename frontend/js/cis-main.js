@@ -138,7 +138,8 @@ function _formatDateTime(value) {
 // ── Top-bar: ENSO badge ─────────────────────────────────────────────────────
 function _isSevereWeatherActiveForRegion() {
   const typhoon = CISData.getPAGASAData()?.typhoon || {};
-  return Boolean(typhoon.active && typhoon.region2_affected);
+  const isFinal = typhoon.is_final || String(typhoon.bulletin_status || '').toLowerCase() === 'final';
+  return Boolean(!isFinal && typhoon.active && typhoon.region2_affected);
 }
 
 function _updateSevereWeatherNavState() {
