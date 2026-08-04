@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-08-03",
+  "last_run": "2026-08-04",
   "status": "success",
-  "elapsed_seconds": 218.3,
+  "elapsed_seconds": 221.0,
   "steps": {
     "apa_cis": "success",
     "acap": "success",
@@ -11,15 +11,7 @@
     "indicators": "success",
     "advisories": "success"
   },
-  "data_as_of": "2026-08-03",
-  "forecast_as_of": "2026-08-03",
-  "fallback_observation_as_of": "2026-07-29",
-  "severe_weather_last_checked": "2026-08-03T23:12:54.206474+00:00",
-  "severe_weather_as_of": "2026-08-04",
-  "severe_weather_active": true,
-  "severe_weather_region2_affected": true,
-  "severe_weather_system": "",
-  "severe_weather_bulletin_number": "13",
-  "severe_weather_auto_fetch_interval_minutes": 30,
-  "severe_weather_auto_fetch_mode": "scheduled_only"
+  "data_as_of": "2026-08-04",
+  "forecast_as_of": "2026-08-04",
+  "fallback_observation_as_of": "2026-07-30"
 }

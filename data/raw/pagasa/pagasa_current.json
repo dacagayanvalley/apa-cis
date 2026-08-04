@@ -1,35 +1,35 @@
 {
   "as_of": "2026-08-04",
-  "fetched_at": "2026-08-03T23:12:54.206474+00:00",
-  "fetched_at_utc": "2026-08-03T23:12:54.206474+00:00",
+  "fetched_at": "2026-08-04T00:51:33.766554+00:00",
+  "fetched_at_utc": "2026-08-04T00:51:33.766554+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
-    "typhoon": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin"
+    "typhoon": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
+    "typhoon_agriculture": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture"
   },
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "3 August 2026 : A weak to moderate El Niño is present in the tropical Pacific. Climate models suggest that El Niño will likely intensify over the next few seasons and persist until the first half of 2027 (~97%). A strong El Niño is likely to emerge by the July-Aug-Sep season (~57%), and a very strong El Niño is favored during the Oct-Nov-Dec and Nov-Dec-Jan seasons (~81%).    (updated: 22 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "4 August 2026 : A weak to moderate El Niño is present in the tropical Pacific. Climate models suggest that El Niño will likely intensify over the next few seasons and persist until the first half of 2027 (~97%). A strong El Niño is likely to emerge by the July-Aug-Sep season (~57%), and a very strong El Niño is favored during the Oct-Nov-Dec and Nov-Dec-Jan seasons (~81%).    (updated: 22 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-08-03"
+    "as_of": "2026-08-04"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-08-03",
+    "as_of": "2026-08-04",
     "region2_forecast": [
-      "3 August 2026",
-      "Issued at: 7:00 AM Monday, August 03, 2026",
-      "Valid until: 7:00 AM Tuesday, August 04, 2026",
-      "Cagayan, Isabela, Quirino, Apayao, Kalinga, Mountain Province, Ifugao, Aurora, Quezon, and Camarines Norte",
-      "Cagayan, Isabela, Quirino, Apayao, Kalinga, Mountain Province, Ifugao, and Aurora",
-      "Metro Manila, Ilocos Region, Central Luzon, the rest of Cordillera Administrative Region, the rest of Cagayan Valley, the rest of CALABARZON, Occidental Mindoro, Oriental Mindoro, and Marinduque",
-      "Ilocos Region, Central Luzon, the rest of Cordillera Administrative Region, and the rest of Cagayan Valley",
-      "Moist – Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City",
+      "4 August 2026",
+      "Issued at: 7:00 AM Tuesday, August 04, 2026",
+      "Valid until: 7:00 AM Wednesday, August 05, 2026",
+      "At 3:00 AM today, a Low Pressure Area (LPA) was estimated based on all available data in the vicnity of Baggao, Cagayan (17.5°N, 121.9°E). Another Low Pressure Area (LPA) was estimated over coastal waters of Balaon, La Union (16.8°N, 120.1°E). Southwest Monsoon affecting Southern Luzon and the western section of Visayas.",
+      "Ilocos Region, Cordillera Administrative Region, Cagayan Valley, and Central Luzon",
+      "Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Zambales, Bataan, Pampanga, Nueva Ecija, Bulacan, Tarlac,  Cordillera Administrative Region, northern part of National Capital Region, Quezon, Rizal, some portions of Cavite, northern parts of Palawan, Romblon, Occidental Mindoro, Oriental Mindoro, West Panay, Samar, Southern Leyte,  Negros Occidental, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, South Cotabato, Surigao del Norte, Surigao del Sur,  and some parts of BARMM",
+      "Cagayan, Aurora, Batangas, some parts of Palawan, Albay, Catanduanes, East Panay, Eastern Samar, Negros Oriental, and Zamboanga del Sur",
       "(Updated as of 22 July 2026)",
       "A weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability."
     ],
-    "raw_text_extracted": "3 August 2026\nIssued at: 7:00 AM Monday, August 03, 2026\nValid until: 7:00 AM Tuesday, August 04, 2026\nCagayan, Isabela, Quirino, Apayao, Kalinga, Mountain Province, Ifugao, Aurora, Quezon, and Camarines Norte\nCagayan, Isabela, Quirino, Apayao, Kalinga, Mountain Province, Ifugao, and Aurora\nMetro Manila, Ilocos Region, Central Luzon, the rest of Cordillera Administrative Region, the rest of Cagayan Valley, the rest of CALABARZON, Occidental Mindoro, Oriental Mindoro, and Marinduque\nIlocos Region, Central Luzon, the rest of Cordillera Administrative Region, and the rest of Cagayan Valley\nMoist – Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Bulacan, Quezon City, Batangas, Tayabas, southern parts of Palawan, Dumangas, Southern Leyte, Eastern Samar, Davao del Sur, and General Santos City\n(Updated as of 22 July 2026)\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
+    "raw_text_extracted": "4 August 2026\nIssued at: 7:00 AM Tuesday, August 04, 2026\nValid until: 7:00 AM Wednesday, August 05, 2026\nAt 3:00 AM today, a Low Pressure Area (LPA) was estimated based on all available data in the vicnity of Baggao, Cagayan (17.5°N, 121.9°E). Another Low Pressure Area (LPA) was estimated over coastal waters of Balaon, La Union (16.8°N, 120.1°E). Southwest Monsoon affecting Southern Luzon and the western section of Visayas.\nIlocos Region, Cordillera Administrative Region, Cagayan Valley, and Central Luzon\nIlocos Norte, Ilocos Sur, Pangasinan, Isabela, Zambales, Bataan, Pampanga, Nueva Ecija, Bulacan, Tarlac,  Cordillera Administrative Region, northern part of National Capital Region, Quezon, Rizal, some portions of Cavite, northern parts of Palawan, Romblon, Occidental Mindoro, Oriental Mindoro, West Panay, Samar, Southern Leyte,  Negros Occidental, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, South Cotabato, Surigao del Norte, Surigao del Sur,  and some parts of BARMM\nCagayan, Aurora, Batangas, some parts of Palawan, Albay, Catanduanes, East Panay, Eastern Samar, Negros Oriental, and Zamboanga del Sur\n(Updated as of 22 July 2026)\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -531,18 +531,86 @@
     "summary": "Bulletin #13",
     "as_of": "2026-08-04",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-03T23:12:54.206474+00:00",
-    "fetched_at_utc": "2026-08-03T23:12:54.206474+00:00",
-    "auto_fetch_interval_minutes": 30
+    "fetched_at": "2026-08-04T00:51:33.766554+00:00",
+    "fetched_at_utc": "2026-08-04T00:51:33.766554+00:00",
+    "agriculture_advisory": {
+      "source": "pagasa_tropical_cyclone_warning_for_agriculture",
+      "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
+      "as_of": "2026-08-04",
+      "active": true,
+      "region2_relevant": true,
+      "summary": "PAGASA agriculture warning for Rehiyon ng Ilocos, Cordillera Administrative Region, Lambak ng Cagayan, at Gitnang Luzon: Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
+      "agri_weather": [
+        {
+          "forecast_area": "Rehiyon ng Ilocos, Cordillera Administrative Region, Lambak ng Cagayan, at Gitnang Luzon",
+          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
+          "lowland_temp_c": "23 – 33",
+          "upland_temp_c": "17 – 30",
+          "relative_humidity_pct": "60 – 99",
+          "leaf_wetness_hours": "6 – 10"
+        },
+        {
+          "forecast_area": "Metro Manila, CALABARAZON, Occidental Mindoro, Oriental Mindoro, Marinduque, Antique, Iloilo, at Guimaras",
+          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
+          "lowland_temp_c": "22 – 33",
+          "upland_temp_c": "20 – 30",
+          "relative_humidity_pct": "55 – 98",
+          "leaf_wetness_hours": "4 – 8"
+        },
+        {
+          "forecast_area": "Natitirang bahagi ng bansa",
+          "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
+          "lowland_temp_c": "23 – 35",
+          "upland_temp_c": "19 – 32",
+          "relative_humidity_pct": "45 – 97",
+          "leaf_wetness_hours": "0 – 4"
+        }
+      ],
+      "affected_area_advisories": [
+        "PAYONG PANGSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
+        "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
+        "Regular na linisin at ayusin ang mga kanal, pilapil, at daluyan ng tubig upang matiyak ang maayos na agos ng tubig at maiwasan ang pagbaha sa mabababang lugar.",
+        "Magtanim sa raised beds o gumamit ng plastic mulch upang makaiwas sa root rot at erosion.",
+        "Maglagay ng rain shelters o simpleng bubong sa mga maselan na pananim.",
+        "Agapan ang pagkalat ng fungal diseases tulad ng leaf blight at mildew.",
+        "Putulin ang sobrang sanga at bigyan ng suporta ang mga batang puno upang hindi mapinsala ng hangin.",
+        "I-monitor ang lagay ng panahon bago bumiyahe ng ani o produkto upang maiwasan ang abala at panganib sa daan.",
+        "Gumamit ng covered vans o waterproof na tolda upang maprotektahan ang ani laban sa ulan at pagkabasa.",
+        "Iwasan ang paglilinis o pagsasaayos ng mga kanal, pilapil, at daluyan ng tubig habang may banta ng pagguho ng lupa upang maiwasan ang aksidente. Gawin lamang ang mga ito kapag ligtas na ang panahon at ang lugar ay kumpirmadong walang panganib.",
+        "Patuloy na mag-antabay sa mga updates at pagbabago ukol sa sama ng panahon.",
+        "na maaaring maapektuhan ay pinapayuhan na gumawa ng mga kaukulang hakbang para maprotektahan ang buhay at mga ari-arian. Ang mga nakatira sa mga lugar na maaaring maapektuhan ay pinapayuhang sumunod sa mga tagubilin ng mga namumuno sa inyong lugar. Para sa heavy rainfall warnings, thunderstorm/rainfall advisories, at iba pang severe weather information na para sa inyong lugar, palaging magbantay sa mga produktong ilalabas ng inyong lokal"
+      ],
+      "unaffected_area_advisories": [
+        "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
+        "Regular na linisin at ayusin ang mga kanal, pilapil, at daluyan ng tubig upang matiyak ang maayos na agos ng tubig at maiwasan ang pagbaha sa mabababang lugar.",
+        "Magtanim sa raised beds o gumamit ng plastic mulch upang makaiwas sa root rot at erosion.",
+        "Maglagay ng rain shelters o simpleng bubong sa mga maselan na pananim.",
+        "Agapan ang pagkalat ng fungal diseases tulad ng leaf blight at mildew.",
+        "Putulin ang sobrang sanga at bigyan ng suporta ang mga batang puno upang hindi mapinsala ng hangin.",
+        "I-monitor ang lagay ng panahon bago bumiyahe ng ani o produkto upang maiwasan ang abala at panganib sa daan.",
+        "Gumamit ng covered vans o waterproof na tolda upang maprotektahan ang ani laban sa ulan at pagkabasa.",
+        "Iwasan ang paglilinis o pagsasaayos ng mga kanal, pilapil, at daluyan ng tubig habang may banta ng pagguho ng lupa upang maiwasan ang aksidente. Gawin lamang ang mga ito kapag ligtas na ang panahon at ang lugar ay kumpirmadong walang panganib.",
+        "Patuloy na mag-antabay sa mga updates at pagbabago ukol sa sama ng panahon.",
+        "na maaaring maapektuhan ay pinapayuhan na gumawa ng mga kaukulang hakbang para maprotektahan ang buhay at mga ari-arian. Ang mga nakatira sa mga lugar na maaaring maapektuhan ay pinapayuhang sumunod sa mga tagubilin ng mga namumuno sa inyong lugar. Para sa heavy rainfall warnings, thunderstorm/rainfall advisories, at iba pang severe weather information na para sa inyong lugar, palaging magbantay sa mga produktong ilalabas ng inyong lokal"
+      ],
+      "raw_text_excerpt": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling CliMap Statistical Downscaling Climate Data Agri-Weather Climate Information for Agriculture Farm Weather Forecast Weekend/Special Farm Weather Forecast Ten-Day Regional Agri-Weather Information Monthly Philippine Agro-Climatic Review and Outlook Impact Assessment for Agriculture Astronomy Telescoping and Stargazing Astronomy in the Philippines Planetarium Astronomical Observatory Time Service Philippine Standard Time Astronomical Diary Regional Forecast Northern Luzon National Capital Region Southern Luzon Visayas Mindanao Products and Services Engineering Services Calibration Services Numerical Prediction Model Satellites Flood Monitoring for Metro Manila Risk Analysis Map Flood Hazard Map Regional Severe Wind Hazard Maps High Frequency Doppler Radar Vacancy GAD Corner Learnings Publication FAQs and Trivias Learning Tools Research and Development Information Rainfall and Thunderstorm Warning System Weather Terminologies Flood Forecasting and Warning System for River Basins Climate of the Philippines Climate Change in the Philippines Astronomy in the Philippines Field Station Categories Basic Cloud Seeding Operations Storm Surge Information Legend About Us Contact Us National Meteorological and Hydrological Services Related Linkages Transparency Seal About Us Mandate and Functions ",
+      "parse_method": "pagasa_public_html_static",
+      "region2_agri_weather": [
+        {
+          "forecast_area": "Rehiyon ng Ilocos, Cordillera Administrative Region, Lambak ng Cagayan, at Gitnang Luzon",
+          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
+          "lowland_temp_c": "23 – 33",
+          "upland_temp_c": "17 – 30",
+          "relative_humidity_pct": "60 – 99",
+          "leaf_wetness_hours": "6 – 10"
+        }
+      ]
+    }
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-08-03T23:12:54.206474+00:00"
+    "typhoon": "success",
+    "typhoon_agriculture": "success"
   }
 }
