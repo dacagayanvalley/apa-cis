@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from scripts.fetch_pagasa.pagasa_ingestor import (
     PAGASA_URLS,
+    parse_agriculture_warning,
     parse_severe_weather_bulletin,
     scrape_pagasa_page,
 )
@@ -40,6 +41,7 @@ def _load_current_pagasa(latest_path: Path) -> dict:
         "as_of": today_pht().isoformat(),
         "source_urls": {
             "typhoon": PAGASA_URLS["typhoon"],
+            "typhoon_agriculture": PAGASA_URLS["typhoon_agriculture"],
         },
         "enso": {},
         "farm_weather": {},
@@ -59,12 +61,23 @@ def _fetch_severe_weather_only(fetched_at: str) -> tuple[dict, str]:
             "fetched_at": fetched_at,
             "fetched_at_utc": fetched_at,
             "auto_fetch_interval_minutes": AUTO_FETCH_INTERVAL_MINUTES,
+            "agriculture_advisory_fetch_status": "skipped",
         }, "failed"
 
     typhoon = parse_severe_weather_bulletin(html_text)
     typhoon["fetched_at"] = fetched_at
     typhoon["fetched_at_utc"] = fetched_at
     typhoon["auto_fetch_interval_minutes"] = AUTO_FETCH_INTERVAL_MINUTES
+    typhoon["agriculture_advisory_fetch_status"] = "skipped"
+
+    if typhoon.get("active") and typhoon.get("region2_affected"):
+        agri_html = scrape_pagasa_page(PAGASA_URLS["typhoon_agriculture"], "typhoon_agriculture")
+        if agri_html:
+            typhoon["agriculture_advisory"] = parse_agriculture_warning(agri_html)
+            typhoon["agriculture_advisory_fetch_status"] = "success"
+        else:
+            typhoon["agriculture_advisory_fetch_status"] = "failed"
+
     return typhoon, "success"
 
 
@@ -88,7 +101,9 @@ def run() -> dict:
     pagasa_data["fetched_at"] = fetched_at
     pagasa_data["fetched_at_utc"] = fetched_at
     pagasa_data.setdefault("source_urls", {})["typhoon"] = PAGASA_URLS["typhoon"]
+    pagasa_data.setdefault("source_urls", {})["typhoon_agriculture"] = PAGASA_URLS["typhoon_agriculture"]
     pagasa_data.setdefault("scrape_status", {})["typhoon"] = scrape_status
+    pagasa_data.setdefault("scrape_status", {})["typhoon_agriculture"] = typhoon.get("agriculture_advisory_fetch_status", "skipped")
     pagasa_data["typhoon"] = typhoon
     pagasa_data["severe_weather_auto_fetch"] = {
         "mode": "scheduled_only",
@@ -104,6 +119,8 @@ def run() -> dict:
     status["severe_weather_as_of"] = typhoon.get("as_of") or run_date
     status["severe_weather_active"] = bool(typhoon.get("active"))
     status["severe_weather_region2_affected"] = bool(typhoon.get("region2_affected"))
+    status["severe_weather_agriculture_advisory_status"] = typhoon.get("agriculture_advisory_fetch_status", "skipped")
+    status["severe_weather_agriculture_advisory_active"] = bool((typhoon.get("agriculture_advisory") or {}).get("active"))
     status["severe_weather_system"] = " ".join(
         part for part in [typhoon.get("disturbance_type"), typhoon.get("name")] if part
     )

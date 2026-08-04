@@ -181,6 +181,8 @@ async function initCIS() {
     _updateSevereWeatherNavState();
     if (_isSevereWeatherActiveForRegion()) {
       switchModule('severe', document.querySelector('.mnav-btn[data-module="severe"]'));
+    } else {
+      switchModule('dashboard', document.querySelector('.mnav-btn[data-module="dashboard"]'));
     }
 
     console.log(

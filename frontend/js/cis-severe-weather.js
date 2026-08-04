@@ -420,6 +420,48 @@ const CISSevereWeather = (() => {
     }).join('');
   }
 
+  function _agriAdvisory(typhoon) {
+    return typhoon?.agriculture_advisory || {};
+  }
+
+  function _agriRows(advisory) {
+    const rows = advisory.region2_agri_weather || advisory.agri_weather || [];
+    return rows.filter(row => {
+      const area = String(row.forecast_area || '').toLowerCase();
+      return !area || ['lambak ng cagayan', 'cagayan valley', 'cagayan', 'isabela', 'quirino'].some(term => area.includes(term));
+    });
+  }
+
+  function _agriActions(advisory) {
+    const affected = advisory.affected_area_advisories || [];
+    const fallback = advisory.unaffected_area_advisories || [];
+    return (affected.length ? affected : fallback).slice(0, 8);
+  }
+
+  function _officialAgriHTML(typhoon) {
+    const advisory = _agriAdvisory(typhoon);
+    if (!advisory.active || !advisory.region2_relevant) return '';
+    const rows = _agriRows(advisory);
+    const actions = _agriActions(advisory);
+    const rowHtml = rows.length ? rows.map(row => `
+      <div class="severe-official-agri-row">
+        <strong>${_escape(row.forecast_area || 'Region 2')}</strong>
+        <span>${_escape(row.agri_weather || advisory.summary || '')}</span>
+        <small>Lowland ${_escape(row.lowland_temp_c || '-')} C · Upland ${_escape(row.upland_temp_c || '-')} C · RH ${_escape(row.relative_humidity_pct || '-')}% · Leaf wetness ${_escape(row.leaf_wetness_hours || '-')} hrs</small>
+      </div>
+    `).join('') : `<p>${_escape(advisory.summary || 'PAGASA agriculture advisory is active for Region 2.')}</p>`;
+    const actionsHtml = actions.length
+      ? `<ul>${actions.map(action => `<li>${_escape(action)}</li>`).join('')}</ul>`
+      : '<p>No parsed agriculture action list is available from the PAGASA page yet.</p>';
+    return `
+      <div class="severe-official-agri">
+        <div class="adaptation-title">Official PAGASA Agriculture Warning</div>
+        ${rowHtml}
+        <div class="severe-official-agri-actions">${actionsHtml}</div>
+        <a href="${_escape(advisory.source_url || 'https://pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture')}" target="_blank" rel="noopener">View PAGASA agriculture warning</a>
+      </div>
+    `;
+  }
   function _regionalActionsHTML(typhoon) {
     if (!typhoon.active || !typhoon.region2_affected) {
       return '<div class="ops-empty">No active Region 2 severe-weather advisory. Maintain routine monitoring.</div>';
@@ -427,6 +469,7 @@ const CISSevereWeather = (() => {
     const affectedProvinces = [...new Set(_allAffected.map(item => item.province))];
     const highestSignal = Math.max(0, ..._allAffected.map(item => item.signal || 0));
     const highRiskCount = _allAffected.filter(item => ['danger', 'warning'].includes(item.severity)).length;
+    const officialAgri = _officialAgriHTML(typhoon);
     const actions = [
       `Activate regional APA-CIS severe-weather monitoring for ${affectedProvinces.join(', ')} under highest parsed TCWS ${highestSignal || '-'}.`,
       'Issue synchronized DA RFO 02, PAO, MAO, and LGU agri advisories after each PAGASA bulletin cycle and whenever local DRRMO reports change.',
@@ -439,6 +482,7 @@ const CISSevereWeather = (() => {
         <div class="adaptation-title">Regional DA / LGU Agri Action</div>
         <ul>${actions.map(action => `<li>${_escape(action)}</li>`).join('')}</ul>
       </div>
+      ${officialAgri}
     `;
   }
 
@@ -487,6 +531,7 @@ const CISSevereWeather = (() => {
         <div class="adaptation-title">Recommended DA / LGU Agri Actions</div>
         <ul>${item.actions.map(action => `<li>${_escape(action)}</li>`).join('')}</ul>
       </div>
+      ${_officialAgriHTML(item.typhoon)}
       <div class="severe-source-note">
         Official trigger: PAGASA Severe Weather Bulletin. Rainfall, maximum sustained winds, and peak wind gusts use PAGASA severe-weather advisory data when available; APA-CIS municipal weather remains the fallback for missing fields. Validate high-impact actions with PAGASA, MDRRMO/CDRRMO, MAO/PAO, and field reports.
       </div>

@@ -319,6 +319,128 @@ def _extract_rainfall_guidance(text: str) -> Dict:
         rainfall["rainfall_range_mm"] = f"{min(mm_values):g}-{max(mm_values):g}" if len(mm_values) > 1 else f"{max(mm_values):g}"
     return rainfall
 
+
+def _clean_text(value: str) -> str:
+    return re.sub(r"\s+", " ", html.unescape(value or "")).strip()
+
+
+def _extract_pagasa_agri_actions(text: str) -> List[str]:
+    candidates = []
+    for line in (text or "").split("\n"):
+        line = _clean_text(line)
+        if len(line) < 14:
+            continue
+        lower = line.lower()
+        if any(keyword in lower for keyword in [
+            "linisin", "kanal", "pilapil", "magtanim", "mulch", "rain shelter",
+            "fungal", "disease", "putulin", "i-monitor", "ani", "produkto",
+            "pananim", "sakahan", "patuloy", "mag-antabay", "baha", "hangin",
+        ]):
+            candidates.append(line)
+
+    seen = set()
+    unique = []
+    for item in candidates:
+        key = item.lower()
+        if key not in seen:
+            seen.add(key)
+            unique.append(item)
+    return unique[:12]
+
+
+def parse_agriculture_warning(html_text: str) -> Dict:
+    """Parse PAGASA Tropical Cyclone Warning for Agriculture page."""
+    result = {
+        "source": "pagasa_tropical_cyclone_warning_for_agriculture",
+        "source_url": PAGASA_URLS["typhoon_agriculture"],
+        "as_of": today_pht().isoformat(),
+        "active": False,
+        "region2_relevant": False,
+        "summary": "No active PAGASA agriculture warning parsed.",
+        "agri_weather": [],
+        "affected_area_advisories": [],
+        "unaffected_area_advisories": [],
+        "raw_text_excerpt": "",
+        "parse_method": "pagasa_public_html_static",
+    }
+    if not html_text:
+        return result
+
+    text = _page_text(html_text)
+    compact = re.sub(r"\s+", " ", text)
+    lower_compact = compact.lower()
+    result["raw_text_excerpt"] = compact[:2500]
+    result["active"] = bool(re.search(r"(agri-panahon|payong pangsakahan|bagyo|tropical cyclone)", lower_compact, re.IGNORECASE))
+    result["region2_relevant"] = any(
+        identifier.lower() in lower_compact
+        for identifier in ["cagayan valley", "lambak ng cagayan", "cagayan", "isabela", "quirino", "batanes", "nueva vizcaya"]
+    )
+
+    try:
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(html_text, "html.parser")
+        for panel in soup.select(".panel"):
+            heading_node = panel.select_one(".panel-heading")
+            heading = _clean_text(heading_node.get_text(" ", strip=True) if heading_node else "")
+            body = panel.select_one(".panel-body") or panel
+            body_text = body.get_text("\n", strip=True)
+            heading_lower = heading.lower()
+
+            if "agri-panahon" in heading_lower:
+                for row in body.select("tr"):
+                    cells = [_clean_text(cell.get_text(" ", strip=True)) for cell in row.select("td")]
+                    if len(cells) >= 6 and not cells[0].lower().startswith("lugar"):
+                        result["agri_weather"].append({
+                            "forecast_area": cells[0],
+                            "agri_weather": cells[1],
+                            "lowland_temp_c": cells[2],
+                            "upland_temp_c": cells[3],
+                            "relative_humidity_pct": cells[4],
+                            "leaf_wetness_hours": cells[5],
+                        })
+            elif "hindi apektado" in heading_lower:
+                result["unaffected_area_advisories"] = _extract_pagasa_agri_actions(body_text)
+            elif "apektado" in heading_lower or "payong" in heading_lower:
+                result["affected_area_advisories"] = _extract_pagasa_agri_actions(body_text)
+    except ImportError:
+        pass
+
+    if not result["affected_area_advisories"]:
+        affected_match = re.search(
+            r"PAYONG PANGSAKAHAN.*?(?=PAYONG PANGSAKAHAN SA MGA LUGAR NA HINDI|AGRI-PANAHON|PAGKILOS NG BAGYO|$)",
+            text,
+            re.IGNORECASE | re.DOTALL,
+        )
+        if affected_match:
+            result["affected_area_advisories"] = _extract_pagasa_agri_actions(affected_match.group(0))
+
+    if not result["unaffected_area_advisories"]:
+        unaffected_match = re.search(
+            r"PAYONG PANGSAKAHAN SA MGA LUGAR NA HINDI APEKTADO.*?(?=Inihanda|$)",
+            text,
+            re.IGNORECASE | re.DOTALL,
+        )
+        if unaffected_match:
+            result["unaffected_area_advisories"] = _extract_pagasa_agri_actions(unaffected_match.group(0))
+
+    region2_rows = [
+        row for row in result["agri_weather"]
+        if any(term in row.get("forecast_area", "").lower() for term in [
+            "lambak ng cagayan", "cagayan valley", "cagayan", "isabela", "quirino",
+        ])
+    ]
+    if region2_rows:
+        result["region2_agri_weather"] = region2_rows
+        first = region2_rows[0]
+        result["region2_relevant"] = True
+        result["summary"] = (
+            f"PAGASA agriculture warning for {first['forecast_area']}: "
+            f"{first['agri_weather']}"
+        )
+    elif result["region2_relevant"]:
+        result["summary"] = "PAGASA agriculture warning contains Cagayan Valley / Region 2 references."
+
+    return result
 def parse_severe_weather_bulletin(html_text: str) -> Dict:
     """
     Parse PAGASA Severe Weather Bulletin page.
@@ -388,6 +510,7 @@ def fetch_live_pagasa_data() -> Dict:
             "enso": PAGASA_URLS["enso"],
             "farm_weather": PAGASA_URLS["farm_weather"],
             "typhoon": PAGASA_URLS["typhoon"],
+            "typhoon_agriculture": PAGASA_URLS["typhoon_agriculture"],
         },
         "enso": {},
         "farm_weather": {},
@@ -428,6 +551,14 @@ def fetch_live_pagasa_data() -> Dict:
             "summary": "Could not fetch PAGASA Severe Weather Bulletin page.",
             "as_of": today_pht().isoformat(),
         }
+
+    if output["typhoon"].get("active") and output["typhoon"].get("region2_affected"):
+        agri_html = scrape_pagasa_page(PAGASA_URLS["typhoon_agriculture"], "typhoon_agriculture")
+        if agri_html:
+            output["typhoon"]["agriculture_advisory"] = parse_agriculture_warning(agri_html)
+            output["scrape_status"]["typhoon_agriculture"] = "success"
+        else:
+            output["scrape_status"]["typhoon_agriculture"] = "failed"
 
     return output
 
