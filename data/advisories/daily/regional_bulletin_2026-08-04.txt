@@ -8,7 +8,7 @@ Issued by: DA-RFO2 APA
 SITUATION OVERVIEW:
   Active advisories: 92 municipalities
   Danger alerts: 0
-  Warnings: 77
+  Warnings: 84
   Confidence: high 0, medium 92, low 0
 
 SOURCE TIMESTAMPS AND QA:
@@ -25,7 +25,7 @@ PAGASA / ACAP / CIS SUMMARY:
   APA CIS is prioritized for same-day municipal rainfall, maximum temperature, and wind when available.
 
 PROVINCIAL STATUS:
-  Batanes: 6 municipalities with advisories (highest: ADVISORY)
+  Batanes: 6 municipalities with advisories (highest: WARNING)
   Cagayan: 29 municipalities with advisories (highest: WARNING)
   Isabela: 37 municipalities with advisories (highest: WARNING)
   Nueva Vizcaya: 14 municipalities with advisories (highest: WARNING)
@@ -33,11 +33,11 @@ PROVINCIAL STATUS:
 
 PRIORITY MUNICIPALITIES FOR IMMEDIATE ACTION:
   1. Piat, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
-  2. Rizal, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  2. Rizal, Cagayan [WARNING, confidence: medium] - High Irrigation Demand
   3. Tuao, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
   4. Aurora, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
   5. Saguday, Quirino [WARNING, confidence: medium] - Postharvest Drying Risk
-  6. Kayapa, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
+  6. Kayapa, Nueva Vizcaya [WARNING, confidence: medium] - Operations Advisory - Defer Irrigation
   7. Alicia, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
   8. Cabatuan, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
   9. Jones, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
@@ -51,7 +51,7 @@ ACTION TIERS:
 
 SMS-READY PRIORITY ADVISORIES:
   Piat: DA WARNING: Drying risk in Piat. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Rizal: DA WARNING: Drying risk in Rizal. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Rizal: DA ADVISORY: Irrigation priority in Rizal. Prioritize reproductive-stage rice/corn and rainfed fields.
   Tuao: DA WARNING: Drying risk in Tuao. Use mechanical dryer/covered storage; avoid wet grain spoilage.
   Aurora: DA WARNING: Drying risk in Aurora. Use mechanical dryer/covered storage; avoid wet grain spoilage.
   Saguday: DA WARNING: Drying risk in Saguday. Use mechanical dryer/covered storage; avoid wet grain spoilage.
