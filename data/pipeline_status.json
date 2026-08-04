@@ -13,5 +13,15 @@
   },
   "data_as_of": "2026-08-04",
   "forecast_as_of": "2026-08-04",
-  "fallback_observation_as_of": "2026-07-30"
+  "fallback_observation_as_of": "2026-07-30",
+  "severe_weather_last_checked": "2026-08-04T01:02:37.956391+00:00",
+  "severe_weather_as_of": "2026-08-04",
+  "severe_weather_active": true,
+  "severe_weather_region2_affected": true,
+  "severe_weather_agriculture_advisory_status": "success",
+  "severe_weather_agriculture_advisory_active": true,
+  "severe_weather_system": "",
+  "severe_weather_bulletin_number": "13",
+  "severe_weather_auto_fetch_interval_minutes": 30,
+  "severe_weather_auto_fetch_mode": "scheduled_only"
 }
