@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-06",
-  "fetched_at": "2026-08-05T16:47:45.954057+00:00",
-  "fetched_at_utc": "2026-08-05T16:47:45.954057+00:00",
+  "fetched_at": "2026-08-05T18:41:08.121251+00:00",
+  "fetched_at_utc": "2026-08-05T18:41:08.121251+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -38,9 +38,9 @@
     "bulletin_status": "active",
     "name": "Maymay",
     "disturbance_type": "Tropical Storm",
-    "bulletin_number": "9",
-    "issued_at": "11:00 pm, 05 August 2026",
-    "valid_until": "the next advisory to be issued at 2:00 AM tomorrow)",
+    "bulletin_number": "10",
+    "issued_at": "02:00 am, 06 August 2026",
+    "valid_until": "the next advisory to be issued at 5:00 AM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 2,
     "signal_levels": {
@@ -51,12 +51,12 @@
       "Quirino": 1
     },
     "max_sustained_wind_kmh": 75.0,
-    "peak_wind_gust_kmh": 90.0,
-    "gustiness_kmh": 90.0,
+    "peak_wind_gust_kmh": 105.0,
+    "gustiness_kmh": 105.0,
     "wind": {
       "max_sustained_wind_kmh": 75.0,
-      "peak_wind_gust_kmh": 90.0,
-      "gustiness_kmh": 90.0
+      "peak_wind_gust_kmh": 105.0,
+      "gustiness_kmh": 105.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -100,9 +100,9 @@
       }
     ],
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 17 issued at 11:00 PM today for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon."
+      "advisory_text": "Refer to Weather Advisory No. 17 issued at 11:00 PM yesterday for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 17 issued at 11:00 PM today for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 17 issued at 11:00 PM yesterday for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon.",
     "region2_affected": true,
     "affected_provinces": [
       "Cagayan",
@@ -886,11 +886,11 @@
         "official_area_text": "Luzon The rest of La Union, the rest of Pangasinan, the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), the rest of mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
       }
     ],
-    "summary": "Tropical Storm Maymay Bulletin #9",
+    "summary": "Tropical Storm Maymay Bulletin #10",
     "as_of": "2026-08-06",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-05T16:47:45.954057+00:00",
-    "fetched_at_utc": "2026-08-05T16:47:45.954057+00:00",
+    "fetched_at": "2026-08-05T18:41:08.121251+00:00",
+    "fetched_at_utc": "2026-08-05T18:41:08.121251+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -1008,6 +1008,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-05T16:47:45.954057+00:00"
+    "last_checked_utc": "2026-08-05T18:41:08.121251+00:00"
   }
 }
