@@ -10,7 +10,7 @@
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <!-- Chart.js for sparklines -->
-  <link rel="stylesheet" href="css/cis.css?v=20260805-levels"/>
+  <link rel="stylesheet" href="css/cis.css?v=20260805-icons-tiles"/>
 </head>
 <body>
 
@@ -35,25 +35,25 @@
 <!-- â”€â”€ MODULE TABS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <nav class="module-nav">
   <button class="mnav-btn active" data-module="dashboard" onclick="switchModule('dashboard', this)">
-    <span class="mnav-icon">ðŸ“Š</span> Climate Dashboard
+    <span class="mnav-icon">&#128202;</span> Climate Dashboard
   </button>
   <button class="mnav-btn" data-module="map" onclick="switchModule('map', this)">
-    <span class="mnav-icon">ðŸ—º</span> Map Layers
+    <span class="mnav-icon">&#128506;</span> Map Layers
   </button>
   <button class="mnav-btn" data-module="advisory" onclick="switchModule('advisory', this)">
-    <span class="mnav-icon">ðŸ“‹</span> Agri-Operations Advisory
-  </button>
-  <button class="mnav-btn" data-module="pdf" onclick="switchModule('pdf', this)">
-    <span class="mnav-icon">PDF</span> Advisories in PDF
+    <span class="mnav-icon">&#128203;</span> Agri-Operations Advisory
   </button>
   <button class="mnav-btn" data-module="municipal" onclick="switchModule('municipal', this)">
-    <span class="mnav-icon">ðŸ˜</span> Municipal Profile
+    <span class="mnav-icon">&#127960;</span> Municipal Profile
   </button>
   <button class="mnav-btn" data-module="planning" onclick="switchModule('planning', this)">
-    <span class="mnav-icon">ðŸŽ¯</span> Planning Dashboard
+    <span class="mnav-icon">&#127919;</span> Planning Dashboard
   </button>
   <button class="mnav-btn" data-module="severe" onclick="switchModule('severe', this)">
-    <span class="mnav-icon">!</span> Severe Weather
+    <span class="mnav-icon">&#9888;</span> Severe Weather
+  </button>
+  <button class="mnav-btn" data-module="pdf" onclick="switchModule('pdf', this)">
+    <span class="mnav-icon">&#128196;</span> Advisories in PDF
   </button>
 </nav>
 
@@ -93,37 +93,37 @@
   <!-- Summary stat cards -->
   <div class="stat-grid" id="stat-grid">
     <div class="stat-card" id="sc-rainfall">
-      <div class="sc-icon">ðŸŒ§</div>
+      <div class="sc-icon">&#127783;</div>
       <div class="sc-value" id="sc-rainfall-val">â€”</div>
       <div class="sc-label">Avg Rainfall Today (mm)</div>
       <div class="sc-sub" id="sc-rainfall-sub"></div>
     </div>
     <div class="stat-card" id="sc-temp">
-      <div class="sc-icon">ðŸŒ¡</div>
+      <div class="sc-icon">&#127777;</div>
       <div class="sc-value" id="sc-temp-val">â€”</div>
       <div class="sc-label">Max Temperature (Â°C)</div>
       <div class="sc-sub" id="sc-temp-sub"></div>
     </div>
     <div class="stat-card" id="sc-drought">
-      <div class="sc-icon">ðŸœ</div>
+      <div class="sc-icon">&#127964;</div>
       <div class="sc-value" id="sc-drought-val">â€”</div>
       <div class="sc-label">Municipalities in Dry Spell</div>
       <div class="sc-sub" id="sc-drought-sub"></div>
     </div>
     <div class="stat-card" id="sc-advisory">
-      <div class="sc-icon">âš ï¸</div>
+      <div class="sc-icon">&#9888;</div>
       <div class="sc-value" id="sc-advisory-val">â€”</div>
       <div class="sc-label">Active Advisories</div>
       <div class="sc-sub" id="sc-advisory-sub"></div>
     </div>
     <div class="stat-card" id="sc-heat">
-      <div class="sc-icon">â˜€ï¸</div>
+      <div class="sc-icon">&#9728;</div>
       <div class="sc-value" id="sc-heat-val">â€”</div>
       <div class="sc-label">Heat Stress Risk Areas</div>
       <div class="sc-sub" id="sc-heat-sub"></div>
     </div>
     <div class="stat-card" id="sc-workability">
-      <div class="sc-icon">ðŸšœ</div>
+      <div class="sc-icon">&#128668;</div>
       <div class="sc-value" id="sc-workability-val">â€”</div>
       <div class="sc-label">Municipalities â€” Safe for Field Work</div>
       <div class="sc-sub" id="sc-workability-sub"></div>
@@ -276,9 +276,9 @@
       <div class="adv-filters">
         <select id="adv-severity-filter" onchange="filterAdvisories()" class="adv-filter-sel">
           <option value="all">All Severity Levels</option>
-          <option value="danger">ðŸ”´ Danger Only</option>
-          <option value="warning">ðŸŸ  Warning+</option>
-          <option value="advisory">ðŸŸ¡ Advisory+</option>
+          <option value="danger">&#128308; Danger Only</option>
+          <option value="warning">&#128992; Warning+</option>
+          <option value="advisory">&#128993; Advisory+</option>
         </select>
         <select id="adv-province-filter" onchange="filterAdvisories()" class="adv-filter-sel">
           <option value="all">All Provinces</option>
@@ -299,7 +299,7 @@
       <div class="panel-header" id="adv-detail-header">Select a municipality to view full advisory</div>
       <div id="adv-detail-content">
         <div class="adv-empty-state">
-          <div style="font-size:48px;margin-bottom:16px;">ðŸ“‹</div>
+          <div class="empty-state-icon">&#128203;</div>
           <p>Click any municipality from the list to view the full advisory text, operations guidance, and recommended DA actions.</p>
         </div>
       </div>
@@ -344,7 +344,7 @@
     </div>
     <div class="mprofile-content" id="mprofile-content">
       <div class="adv-empty-state">
-        <div style="font-size:48px;margin-bottom:16px;">ðŸ˜</div>
+        <div class="empty-state-icon">&#127960;</div>
         <p>Select a municipality from the left panel to view its full climate profile, crop calendar risk, and recommended adaptation measures.</p>
       </div>
     </div>
@@ -362,24 +362,27 @@
 
   <!-- Summary cards for planners -->
   <div class="planning-cards" id="planning-cards">
-    <div class="pcard">
-      <div class="pcard-num" id="pc-danger">â€”</div>
+    <div class="pcard pcard-danger">
+      <div class="pcard-icon">&#128308;</div>
+      <div class="pcard-num" id="pc-danger">&mdash;</div>
       <div class="pcard-label">Municipalities in Danger / Critical</div>
     </div>
-    <div class="pcard">
-      <div class="pcard-num" id="pc-warning">â€”</div>
+    <div class="pcard pcard-warning">
+      <div class="pcard-icon">&#128992;</div>
+      <div class="pcard-num" id="pc-warning">&mdash;</div>
       <div class="pcard-label">Municipalities with Warnings</div>
     </div>
-    <div class="pcard">
-      <div class="pcard-num" id="pc-drought">â€”</div>
+    <div class="pcard pcard-drought">
+      <div class="pcard-icon">&#127964;</div>
+      <div class="pcard-num" id="pc-drought">&mdash;</div>
       <div class="pcard-label">Municipalities in Dry Spell Watch+</div>
     </div>
-    <div class="pcard">
-      <div class="pcard-num" id="pc-heat">â€”</div>
-      <div class="pcard-label">Municipalities â€” High Heat Risk</div>
+    <div class="pcard pcard-heat">
+      <div class="pcard-icon">&#9728;</div>
+      <div class="pcard-num" id="pc-heat">&mdash;</div>
+      <div class="pcard-label">Municipalities &mdash; High Heat Risk</div>
     </div>
   </div>
-
   <!-- Priority list -->
   <div class="section-header">
     <span class="section-title">Priority Municipalities for DA Intervention</span>
@@ -409,27 +412,30 @@
 
   <div class="severe-status-grid">
     <div class="severe-status-card" id="sw-status-card">
+      <div class="tile-icon">&#128225;</div>
       <span class="source-label">PAGASA Status</span>
       <strong id="sw-status">Checking...</strong>
       <p id="sw-issued">--</p>
     </div>
     <div class="severe-status-card">
+      <div class="tile-icon">&#127744;</div>
       <span class="source-label">Weather Disturbance</span>
       <strong id="sw-system">--</strong>
       <p id="sw-validity">--</p>
     </div>
     <div class="severe-status-card">
+      <div class="tile-icon">&#128506;</div>
       <span class="source-label">Region 2 Exposure</span>
       <strong id="sw-affected-count">--</strong>
       <p id="sw-affected-provinces">--</p>
     </div>
     <div class="severe-status-card">
+      <div class="tile-icon">&#9888;</div>
       <span class="source-label">Highest Local Advisory</span>
       <strong id="sw-highest-risk">--</strong>
       <p id="sw-highest-risk-sub">--</p>
     </div>
   </div>
-
   <div id="sw-clear-state" class="alert-strip hidden"></div>
 
   <div class="severe-layout">
@@ -595,10 +601,10 @@
 <script src="js/cis-data.js?v=20260805-pdf"></script>
 <script src="js/cis-map.js?v=20260804-agri"></script>
 <script src="js/cis-dashboard.js?v=20260804-agri"></script>
-<script src="js/cis-advisory.js?v=20260804-agri"></script>
-<script src="js/cis-planning.js?v=20260804-agri"></script>
+<script src="js/cis-advisory.js?v=20260805-icons-tiles"></script>
+<script src="js/cis-planning.js?v=20260805-icons-tiles"></script>
 <script src="js/cis-severe-weather.js?v=20260804-agri"></script>
-<script src="js/cis-advisory-pdf.js?v=20260805-apa-strict"></script>
-<script src="js/cis-main.js?v=20260805-levels"></script>
+<script src="js/cis-advisory-pdf.js?v=20260805-icons-tiles"></script>
+<script src="js/cis-main.js?v=20260805-icons-tiles"></script>
 </body>
 </html>

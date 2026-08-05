@@ -11,7 +11,7 @@
  *   - Scrollable municipality selector
  *   - Full climate profile, crop calendar, risk history, adaptation options
  *
- * DA RFO 02 — APA-CIS Climate Information Service
+ * DA RFO 02 &mdash; APA-CIS Climate Information Service
  */
 
 const CISPlanning = (() => {
@@ -51,7 +51,7 @@ const CISPlanning = (() => {
 
     const priority = CISData.getPriorityMunicipalities(20);
     if (!priority.length) {
-      container.innerHTML = '<div class="loading-msg">No priority data available — run the pipeline first.</div>';
+      container.innerHTML = '<div class="loading-msg">No priority data available &mdash; run the pipeline first.</div>';
       return;
     }
 
@@ -92,19 +92,19 @@ const CISPlanning = (() => {
 
     const interventions = [
       {
-        icon: '💧', title: 'Emergency Irrigation',
-        trigger: 'CDD ≥ 21 days (rainfed)',
+        icon: '&#128167;', title: 'Emergency Irrigation',
+        trigger: 'CDD &ge; 21 days (rainfed)',
         count: droughtCritical, countLabel: 'municipalities need immediate water',
         actions: ['Coordinate with NIA for emergency allocation', 'Activate SPIS pump irrigation', 'Deploy mobile water pumps']
       },
       {
-        icon: '🌱', title: 'Drought-Tolerant Seeds',
+        icon: '&#127793;', title: 'Drought-Tolerant Seeds',
         trigger: 'Dry spell watch/warning',
         count: droughtWatch, countLabel: 'municipalities under dry spell',
         actions: ['Pre-position DTR seed buffer', 'Issue free seeds to affected farmers', 'Coordinate with PhilRice/BPI']
       },
       {
-        icon: '📋', title: 'Crop Insurance (PCIC)',
+        icon: '&#128203;', title: 'Crop Insurance (PCIC)',
         trigger: 'Danger/Warning advisories',
         count: rows.filter(r => {
           const a = CISData.getAdvisoryForMunicipality(r.psgc);
@@ -114,10 +114,10 @@ const CISPlanning = (() => {
         actions: ['Facilitate PCIC crop insurance enrollment', 'Coordinate loss assessment', 'Fast-track claims processing']
       },
       {
-        icon: '🏥', title: 'Heat & Labour Protection',
+        icon: '&#127973;', title: 'Heat & Labour Protection',
         trigger: 'WBGT high/danger',
         count: heatHigh, countLabel: 'municipalities with high heat risk',
-        actions: ['Issue heat advisory to AEWs/MAOs', 'Coordinate with DOH-CHD 02', 'Restrict field work 9AM–4PM']
+        actions: ['Issue heat advisory to AEWs/MAOs', 'Coordinate with DOH-CHD 02', 'Restrict field work 9AM&ndash;4PM']
       },
     ];
 
@@ -234,7 +234,7 @@ const CISMunicipal = (() => {
     content.innerHTML = `
       <div style="margin-bottom:16px">
         <h2 style="font-size:20px;font-weight:800;color:#1B5E20;margin-bottom:2px">${ind.municipality}</h2>
-        <div style="font-size:12px;color:#546E7A">${ind.province} · As of ${ind.as_of_date || '—'} · Source: ${_sourceSummary(obs)}</div>
+        <div style="font-size:12px;color:#546E7A">${ind.province} &middot; As of ${ind.as_of_date || '&mdash;'} &middot; Source: ${_sourceSummary(obs)}</div>
       </div>
 
       ${activeAdvisories}
@@ -251,7 +251,7 @@ const CISMunicipal = (() => {
             <div class="mc-row"><span class="mc-key">T-min</span><span class="mc-val">${fmt.formatTemp(obs.tmin_c)}</span></div>
             <div class="mc-row"><span class="mc-key">T-mean</span><span class="mc-val">${fmt.formatTemp(obs.tmean_c)}</span></div>
             <div class="mc-row"><span class="mc-key">Humidity</span><span class="mc-val">${fmt.formatPercent(obs.humidity_pct)}</span></div>
-            <div class="mc-row"><span class="mc-key">Wind Speed</span><span class="mc-val">${obs.wind_speed_ms ?? '—'} m/s</span></div>
+            <div class="mc-row"><span class="mc-key">Wind Speed</span><span class="mc-val">${obs.wind_speed_ms ?? '&mdash;'} m/s</span></div>
           </div>
         </div>
 
@@ -259,12 +259,12 @@ const CISMunicipal = (() => {
         <div class="mprofile-card">
           <div class="mc-header">🌡 Climate Indicators</div>
           <div class="mc-body">
-            <div class="mc-row"><span class="mc-key">Consecutive Dry Days</span><span class="mc-val">${indicators.cdd ?? '—'}</span></div>
+            <div class="mc-row"><span class="mc-key">Consecutive Dry Days</span><span class="mc-val">${indicators.cdd ?? '&mdash;'}</span></div>
             <div class="mc-row"><span class="mc-key">Drought Status</span><span class="mc-val">${fmt.droughtPill(indicators.drought_class)}</span></div>
-            <div class="mc-row"><span class="mc-key">Rainfall Anomaly</span><span class="mc-val">${anom.pct_of_normal ? anom.pct_of_normal + '% of normal' : '—'}</span></div>
-            <div class="mc-row"><span class="mc-key">Anomaly Class</span><span class="mc-val">${(anom.anomaly_class || '—').replace('_',' ')}</span></div>
-            <div class="mc-row"><span class="mc-key">ETo (mm/day)</span><span class="mc-val">${indicators.eto_mm ?? '—'}</span></div>
-            <div class="mc-row"><span class="mc-key">Irrig. Demand</span><span class="mc-val">${id.demand_mm ?? '—'} mm/day</span></div>
+            <div class="mc-row"><span class="mc-key">Rainfall Anomaly</span><span class="mc-val">${anom.pct_of_normal ? anom.pct_of_normal + '% of normal' : '&mdash;'}</span></div>
+            <div class="mc-row"><span class="mc-key">Anomaly Class</span><span class="mc-val">${(anom.anomaly_class || '&mdash;').replace('_',' ')}</span></div>
+            <div class="mc-row"><span class="mc-key">ETo (mm/day)</span><span class="mc-val">${indicators.eto_mm ?? '&mdash;'}</span></div>
+            <div class="mc-row"><span class="mc-key">Irrig. Demand</span><span class="mc-val">${id.demand_mm ?? '&mdash;'} mm/day</span></div>
             <div class="mc-row"><span class="mc-key">Risk Score</span><span class="mc-val">${fmt.riskScoreBadge(indicators.municipal_risk_score)}</span></div>
           </div>
         </div>
@@ -274,12 +274,12 @@ const CISMunicipal = (() => {
           <div class="mc-header">⚠️ Risk Assessment</div>
           <div class="mc-body">
             <div class="mc-row"><span class="mc-key">Heat Stress</span><span class="mc-val">${fmt.heatPill(hs.heat_class)}</span></div>
-            <div class="mc-row"><span class="mc-key">WBGT (approx)</span><span class="mc-val">${hs.wbgt_approx ?? '—'}°C</span></div>
+            <div class="mc-row"><span class="mc-key">WBGT (approx)</span><span class="mc-val">${hs.wbgt_approx ?? '&mdash;'}°C</span></div>
             <div class="mc-row"><span class="mc-key">Field Work Status</span><span class="mc-val">${fmt.workabilityPill(fw.overall_class)}</span></div>
-            <div class="mc-row"><span class="mc-key">Crop Stage Risk</span><span class="mc-val">${cr.risk_score ?? '—'}/5 (${cr.risk_class || '—'})</span></div>
-            <div class="mc-row"><span class="mc-key">Drought Risk</span><span class="mc-val">${cr.components?.drought ?? '—'}</span></div>
-            <div class="mc-row"><span class="mc-key">Flood Risk</span><span class="mc-val">${cr.components?.flood ?? '—'}</span></div>
-            <div class="mc-row"><span class="mc-key">Disease Risk</span><span class="mc-val">${cr.components?.disease ?? '—'}</span></div>
+            <div class="mc-row"><span class="mc-key">Crop Stage Risk</span><span class="mc-val">${cr.risk_score ?? '&mdash;'}/5 (${cr.risk_class || '&mdash;'})</span></div>
+            <div class="mc-row"><span class="mc-key">Drought Risk</span><span class="mc-val">${cr.components?.drought ?? '&mdash;'}</span></div>
+            <div class="mc-row"><span class="mc-key">Flood Risk</span><span class="mc-val">${cr.components?.flood ?? '&mdash;'}</span></div>
+            <div class="mc-row"><span class="mc-key">Disease Risk</span><span class="mc-val">${cr.components?.disease ?? '&mdash;'}</span></div>
           </div>
         </div>
 

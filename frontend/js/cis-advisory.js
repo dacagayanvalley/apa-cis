@@ -4,7 +4,7 @@
  * Renders the advisory list, full advisory detail cards,
  * field operations quick-reference table, and bulletin generator.
  *
- * DA RFO 02 — APA-CIS Climate Information Service
+ * DA RFO 02 &mdash; APA-CIS Climate Information Service
  */
 
 const CISAdvisory = (() => {
@@ -66,7 +66,7 @@ const CISAdvisory = (() => {
     // Update detail panel header
     const header = document.getElementById('adv-detail-header');
     if (header && adv) {
-      header.textContent = `${adv.municipality}, ${adv.province} — ${adv.advisory_count} Active Advisories`;
+      header.textContent = `${adv.municipality}, ${adv.province} &mdash; ${adv.advisory_count} Active Advisories`;
     }
 
     // Render detail content
@@ -98,12 +98,12 @@ const CISAdvisory = (() => {
 
     const obsSection = ind ? `
       <div style="background:#F8FBF8;border:1px solid #DDE2EA;border-radius:4px;padding:10px 12px;margin-bottom:12px;font-size:11px;">
-        <strong>Current Conditions</strong> &nbsp;·&nbsp; As of ${ind.as_of_date || '—'}
+        <strong>Current Conditions</strong> &nbsp;&middot;&nbsp; As of ${ind.as_of_date || '&mdash;'}
         <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:6px;">
-          <div>Rainfall: <strong>${ind.observations?.rainfall_24h_mm ?? '—'} mm</strong></div>
-          <div>T-max: <strong>${ind.observations?.tmax_c ?? '—'}°C</strong></div>
-          <div>CDD: <strong>${ind.indicators?.cdd ?? '—'} days</strong></div>
-          <div>Risk Score: <strong>${ind.indicators?.municipal_risk_score ?? '—'}/100</strong></div>
+          <div>Rainfall: <strong>${ind.observations?.rainfall_24h_mm ?? '&mdash;'} mm</strong></div>
+          <div>T-max: <strong>${ind.observations?.tmax_c ?? '&mdash;'}°C</strong></div>
+          <div>CDD: <strong>${ind.indicators?.cdd ?? '&mdash;'} days</strong></div>
+          <div>Risk Score: <strong>${ind.indicators?.municipal_risk_score ?? '&mdash;'}/100</strong></div>
         </div>
       </div>
     ` : '';
@@ -133,8 +133,8 @@ const CISAdvisory = (() => {
           </div>
           <div style="padding:8px 12px 0">
             <small style="color:#546E7A">Affected crops: ${(rule.affected_crops || []).join(', ')}</small>
-            &nbsp;·&nbsp;
-            <small style="color:#546E7A">Responsible: ${rule.responsible_office || '—'}</small>
+            &nbsp;&middot;&nbsp;
+            <small style="color:#546E7A">Responsible: ${rule.responsible_office || '&mdash;'}</small>
           </div>
           <div class="adv-tabs" id="tabs-${ruleId}">
             ${['bulletin','sms','lgu','facebook'].map(tab => `
@@ -195,27 +195,27 @@ const CISAdvisory = (() => {
 
     const ops = fw.operations;
     const opLabels = {
-      land_preparation:     ['🚜 Land Preparation', 'Ploughing, harrowing, puddling'],
-      transplanting:        ['🌱 Transplanting', 'Moving seedlings to field'],
-      fertilizer_application:['💊 Fertilizer Application', 'Basal and top-dressing'],
-      spraying:             ['🧴 Pesticide Spraying', 'Foliar and pest management'],
-      irrigation:           ['💧 Irrigation', 'Supplemental watering'],
-      harvesting:           ['🌾 Harvesting', 'Combine or manual harvest'],
-      drying:               ['☀️ Grain Drying', 'Sun-drying or mechanical'],
-      pest_monitoring:      ['🔍 Pest Monitoring', 'Scouting and IPM'],
+      land_preparation:     ['&#128668; Land Preparation', 'Ploughing, harrowing, puddling'],
+      transplanting:        ['&#127793; Transplanting', 'Moving seedlings to field'],
+      fertilizer_application:['&#128138; Fertilizer Application', 'Basal and top-dressing'],
+      spraying:             ['&#129524; Pesticide Spraying', 'Foliar and pest management'],
+      irrigation:           ['&#128167; Irrigation', 'Supplemental watering'],
+      harvesting:           ['&#127806; Harvesting', 'Combine or manual harvest'],
+      drying:               ['&#9728; Grain Drying', 'Sun-drying or mechanical'],
+      pest_monitoring:      ['&#128269; Pest Monitoring', 'Scouting and IPM'],
     };
 
     const overallColor = fw.color || '#4CAF50';
-    const overallClass = fw.overall_class || '—';
+    const overallClass = fw.overall_class || '&mdash;';
 
     wrap.innerHTML = `
       <div style="background:${overallColor}15;border:1px solid ${overallColor};border-radius:4px;padding:8px 12px;margin-bottom:10px;font-size:12px;">
         <strong>Overall Field Status:</strong>
         <span style="color:${overallColor};font-weight:700;margin-left:6px">${fw.overall_label || overallClass}</span>
-        &nbsp;·&nbsp;
-        Rain (24h): ${fw.rain_24h_mm ?? '—'} mm
-        &nbsp;·&nbsp;
-        CDD: ${fw.cdd ?? '—'} days
+        &nbsp;&middot;&nbsp;
+        Rain (24h): ${fw.rain_24h_mm ?? '&mdash;'} mm
+        &nbsp;&middot;&nbsp;
+        CDD: ${fw.cdd ?? '&mdash;'} days
       </div>
       <table class="ops-table">
         <thead>
@@ -234,7 +234,7 @@ const CISAdvisory = (() => {
               <tr>
                 <td>${icon}</td>
                 <td>${desc}</td>
-                <td class="${isSafe ? 'ops-safe' : 'ops-defer'}">${isSafe ? '✅ SAFE' : '⛔ DEFER'}</td>
+                <td class="${isSafe ? 'ops-safe' : 'ops-defer'}">${isSafe ? '&#10003; SAFE' : '&#9940; DEFER'}</td>
                 <td style="font-size:11px;color:#546E7A">${isSafe ? 'Proceed as planned' : 'Wait for better conditions'}</td>
               </tr>
             `;
@@ -280,7 +280,7 @@ const CISAdvisory = (() => {
     bulletin += `  Warnings: ${warnMuns.length}\n\n`;
 
     if (dangMuns.length) {
-      bulletin += `DANGER MUNICIPALITIES — IMMEDIATE ACTION REQUIRED:\n`;
+      bulletin += `DANGER MUNICIPALITIES &mdash; IMMEDIATE ACTION REQUIRED:\n`;
       dangMuns.forEach((m, i) => {
         bulletin += `  ${i+1}. ${m.municipality}, ${m.province}\n`;
         if (m.advisories?.[0]) bulletin += `     → ${m.advisories[0].rule_name}\n`;
@@ -292,7 +292,7 @@ const CISAdvisory = (() => {
       bulletin += `WARNING MUNICIPALITIES:\n`;
       warnMuns.slice(0,10).forEach((m, i) => {
         bulletin += `  ${i+1}. ${m.municipality}, ${m.province}`;
-        if (m.advisories?.[0]) bulletin += ` — ${m.advisories[0].rule_name}`;
+        if (m.advisories?.[0]) bulletin += ` &mdash; ${m.advisories[0].rule_name}`;
         bulletin += `\n`;
       });
       bulletin += `\n`;

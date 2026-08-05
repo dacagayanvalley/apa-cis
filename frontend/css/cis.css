@@ -145,7 +145,16 @@ body {
   border-bottom-color: #A5D6A7;
   background: rgba(255,255,255,0.1);
 }
-.mnav-icon { font-size: 14px; }
+.mnav-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  line-height: 1;
+  flex-shrink: 0;
+}
 
 /* ── MODULES ──────────────────────────────────────────────── */
 .module {
@@ -202,8 +211,28 @@ body {
   border: 1px solid var(--border);
   border-left: 4px solid var(--da-blue-mid);
   border-radius: 4px;
-  padding: 10px 12px;
+  padding: 10px 12px 10px 46px;
+  position: relative;
+  min-height: 64px;
 }
+.source-card::before {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #E8F5E9;
+  color: var(--da-green);
+  font-size: 14px;
+  line-height: 1;
+}
+.source-card:nth-child(1)::before { content: "\1F327"; }
+.source-card:nth-child(2)::before { content: "\1F4E1"; }
+.source-card:nth-child(3)::before { content: "\1F33E"; }
 .source-label {
   display: block;
   font-size: 9px;
@@ -231,12 +260,38 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 14px 12px;
+  padding: 11px 12px;
   border-top: 3px solid var(--da-green-light);
+  min-height: 116px;
 }
 .stat-card.danger-card { border-top-color: var(--danger); }
 .stat-card.warning-card { border-top-color: var(--warning); }
-.sc-icon { font-size: 20px; margin-bottom: 6px; }
+.sc-icon,
+.pcard-icon,
+.int-card-icon,
+.tile-icon,
+.pdf-status-icon,
+.empty-state-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #E8F5E9;
+  color: var(--da-green);
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1;
+  box-shadow: inset 0 0 0 1px rgba(27, 94, 50, 0.12);
+}
+.sc-icon { margin-bottom: 7px; }
+.empty-state-icon {
+  width: 42px;
+  height: 42px;
+  font-size: 22px;
+  margin: 0 auto 12px;
+}
 .sc-value {
   font-size: 26px;
   font-weight: 800;
@@ -888,10 +943,16 @@ body {
   border: 1px solid var(--border);
   border-top: 4px solid var(--da-green-light);
   border-radius: 4px;
-  padding: 16px;
+  padding: 12px;
   text-align: center;
+  min-height: 118px;
 }
-.pcard-num { font-size: 36px; font-weight: 800; color: var(--da-green); }
+.pcard-icon { margin-bottom: 7px; }
+.pcard-danger { border-top-color: var(--danger); }
+.pcard-warning { border-top-color: var(--warning); }
+.pcard-drought { border-top-color: #FF7043; }
+.pcard-heat { border-top-color: #F9A825; }
+.pcard-num { font-size: 30px; font-weight: 800; color: var(--da-green); line-height: 1; }
 .pcard-label { font-size: 11px; color: var(--text-sub); margin-top: 4px; }
 .priority-list { display: flex; flex-direction: column; gap: 6px; }
 .priority-item {
@@ -922,9 +983,10 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 4px;
-  padding: 12px;
+  padding: 11px;
+  min-height: 184px;
 }
-.int-card-icon { font-size: 24px; margin-bottom: 6px; }
+.int-card-icon { margin-bottom: 7px; }
 .int-card-title { font-size: 12px; font-weight: 700; color: var(--da-green); margin-bottom: 6px; }
 .int-card-trigger { font-size: 10px; color: var(--text-sub); line-height: 1.5; margin-bottom: 6px; }
 .int-card-count { font-size: 18px; font-weight: 800; color: var(--da-green); }
@@ -1274,8 +1336,14 @@ body {
   border: 1px solid var(--border);
   border-top: 3px solid var(--da-blue-mid);
   border-radius: 6px;
-  padding: 12px;
-  min-height: 92px;
+  padding: 11px 12px 11px 50px;
+  min-height: 96px;
+  position: relative;
+}
+.severe-status-card .tile-icon {
+  position: absolute;
+  left: 12px;
+  top: 13px;
 }
 .severe-status-card.severe-active { border-top-color: var(--danger); }
 .severe-status-card strong {
@@ -1602,14 +1670,20 @@ body {
   padding: 10px;
 }
 .pdf-status-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 26px minmax(84px, 1fr) minmax(0, 1.1fr);
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  gap: 7px;
   border: 1px solid var(--border);
   border-radius: 4px;
   background: #FAFCFA;
-  padding: 8px 10px;
+  padding: 7px 8px;
+}
+.pdf-status-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 .pdf-status-item span {
   color: var(--text-sub);
@@ -1620,8 +1694,9 @@ body {
 }
 .pdf-status-item strong {
   color: var(--text-main);
-  font-size: 12px;
+  font-size: 11.5px;
   text-align: right;
+  line-height: 1.25;
 }
 .pdf-visual-preview {
   max-height: 76vh;

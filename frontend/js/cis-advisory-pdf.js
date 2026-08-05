@@ -129,13 +129,13 @@ var CISAdvisoryPDF = (() => {
     if (status) {
       const stats = _summarizeRows(rows, advisories);
       status.innerHTML = `
-        <div class="pdf-status-item"><span>Level</span><strong>${_escapeHtml(_levelLabel(latestCfg.level))}</strong></div>
-        <div class="pdf-status-item"><span>Target</span><strong>${_escapeHtml(_targetLabel(latestCfg, rows))}</strong></div>
-        <div class="pdf-status-item"><span>Template</span><strong>${_escapeHtml(_templateLabel(latestCfg.template))}</strong></div>
-        <div class="pdf-status-item"><span>Type</span><strong>${_escapeHtml(_typeLabel(latestCfg.type))}</strong></div>
-        <div class="pdf-status-item"><span>Municipalities</span><strong>${stats.total}</strong></div>
-        <div class="pdf-status-item"><span>Active advisories</span><strong>${advisories.length}</strong></div>
-        <div class="pdf-status-item"><span>Highest severity</span><strong>${_escapeHtml(stats.highestSeverity)}</strong></div>
+        <div class="pdf-status-item"><i class="pdf-status-icon">&#127970;</i><span>Level</span><strong>${_escapeHtml(_levelLabel(latestCfg.level))}</strong></div>
+        <div class="pdf-status-item"><i class="pdf-status-icon">&#128205;</i><span>Target</span><strong>${_escapeHtml(_targetLabel(latestCfg, rows))}</strong></div>
+        <div class="pdf-status-item"><i class="pdf-status-icon">&#128196;</i><span>Template</span><strong>${_escapeHtml(_templateLabel(latestCfg.template))}</strong></div>
+        <div class="pdf-status-item"><i class="pdf-status-icon">&#9888;</i><span>Type</span><strong>${_escapeHtml(_typeLabel(latestCfg.type))}</strong></div>
+        <div class="pdf-status-item"><i class="pdf-status-icon">&#127960;</i><span>Municipalities</span><strong>${stats.total}</strong></div>
+        <div class="pdf-status-item"><i class="pdf-status-icon">&#128226;</i><span>Active advisories</span><strong>${advisories.length}</strong></div>
+        <div class="pdf-status-item"><i class="pdf-status-icon">&#128308;</i><span>Highest severity</span><strong>${_escapeHtml(stats.highestSeverity)}</strong></div>
       `;
     }
   }
@@ -386,12 +386,12 @@ var CISAdvisoryPDF = (() => {
     const title = isSevere ? 'TROPICAL CYCLONE ADVISORY PARA SA AGRIKULTURA' : 'FARM WEATHER ADVISORY PARA SA AGRIKULTURA';
     const system = isSevere ? cfg.systemName.toUpperCase() : 'NORMAL FARM WEATHER';
 
-    _centerText(ctx, title, 640, 280, 40, '#063b16', '900', 1130, 44);
-    _centerText(ctx, target.toUpperCase(), 640, 323, 42, '#063b16', '900', 1130, 44);
+    _centerText(ctx, title, 640, 280, 36, '#063b16', '900', 1130, 40);
+    _centerText(ctx, target.toUpperCase(), 640, 320, 38, '#063b16', '900', 1130, 40);
     _drawCycloneIcon(ctx, 52, 366, isSevere);
-    _fitText(ctx, system, 90, 390, 56, '#050505', '900', 760);
+    _fitText(ctx, system, 90, 388, 48, '#050505', '900', 770);
     _roundRect(ctx, 982, 342, 280, 70, 16, '#39a6db');
-    _multiText(ctx, [`Issued ${_formatShortDate(cfg.issueDate)}`, `No. ${cfg.issueNo}`], 1008, 369, 24, 30, '#ffffff', '800', 230);
+    _multiText(ctx, [`Issued ${_formatShortDate(cfg.issueDate)}`, `No. ${cfg.issueNo}`], 1008, 368, 21, 27, '#ffffff', '800', 230);
 
     _drawMapPanel(ctx, cfg, rows, advisories, stats);
     _drawWindPanel(ctx, cfg, rows, advisories);
@@ -404,7 +404,7 @@ var CISAdvisoryPDF = (() => {
   function _drawMapPanel(ctx, cfg, rows, advisories, stats) {
     _strokeRect(ctx, 14, 435, 612, 500, '#222222', 2);
     _rect(ctx, 139, 466, 354, 36, '#050505');
-    _multiText(ctx, ['Track and Intensity / Advisory Map', `${_formatDate(cfg.issueDate)} - ${cfg.systemName}`], 148, 487, 16, 18, '#ffffff', '800', 330);
+    _multiText(ctx, ['Track and Intensity / Advisory Map', `${_formatDate(cfg.issueDate)} - ${cfg.systemName}`], 148, 486, 14, 16, '#ffffff', '800', 330);
     _rect(ctx, 33, 451, 578, 448, '#c8eefb');
     ctx.globalAlpha = 0.3;
     for (let x = 40; x < 610; x += 82) _line(ctx, x, 451, x, 899, '#6096aa', 1);
@@ -412,21 +412,21 @@ var CISAdvisoryPDF = (() => {
     ctx.globalAlpha = 1;
     _drawLuzonShape(ctx, 182, 606, 190, 250);
     _drawStormTrack(ctx);
-    _multiText(ctx, [cfg.level.toUpperCase(), _targetLabel(cfg, rows), `Rainfall: ${stats.avgRainfall}`, `Highest severity: ${stats.highestSeverity}`], 373, 682, 18, 28, '#1e1e1e', '700', 220);
-    _fitText(ctx, 'Source: DOST-PAGASA / APA-CIS loaded monitoring data', 16, 963, 24, '#222222', '400', 610);
+    _multiText(ctx, [cfg.level.toUpperCase(), _targetLabel(cfg, rows), `Rainfall: ${stats.avgRainfall}`, `Highest severity: ${stats.highestSeverity}`], 373, 682, 15, 22, '#1e1e1e', '700', 220);
+    _fitText(ctx, 'Source: DOST-PAGASA / APA-CIS loaded monitoring data', 16, 960, 18, '#222222', '400', 610);
   }
 
   function _drawWindPanel(ctx, cfg, rows, advisories) {
     _roundRect(ctx, 20, 972, 608, 186, 12, '#ffffff', '#3aa6d8', 3);
     _roundRect(ctx, 20, 972, 608, 45, 12, '#3aa6d8');
-    _centerText(ctx, 'LAKAS NG HANGIN NG BAGYO', 324, 1004, 28, '#ffffff', '900', 560, 30);
+    _centerText(ctx, 'LAKAS NG HANGIN NG BAGYO', 324, 1003, 25, '#ffffff', '900', 560, 28);
     _circle(ctx, 62, 1084, 29, '#182298');
-    _centerText(ctx, '1', 62, 1096, 42, '#ffffff', '900', 44, 42);
+    _centerText(ctx, '1', 62, 1094, 38, '#ffffff', '900', 44, 40);
     const affected = advisories.slice(0, 10).map(a => a.municipality).filter(Boolean);
     const areaText = affected.length
       ? `Ang mga lugar na may aktibong advisory ay kinabibilangan ng ${affected.join(', ')}${advisories.length > affected.length ? ', at iba pa.' : '.'}`
       : `Ang piling bahagi ng ${_targetLabel(cfg, rows)} ay maaaring makaranas ng pabugso-bugsong hangin depende sa lokal na kondisyon.`;
-    _wrapCanvasText(ctx, areaText, 92, 1044, 500, 23, 19, '#060606', '800', 6);
+    _wrapCanvasTextFit(ctx, areaText, 92, 1040, 500, 100, 19, '#060606', '800', 6);
   }
 
   function _drawBlueInfoPanel(ctx, x, y, w, h, title, lines, icon) {
@@ -434,24 +434,24 @@ var CISAdvisoryPDF = (() => {
     _roundRect(ctx, x, y, w, 52, 14, '#39a6db');
     _circle(ctx, x + 48, y + 48, 40, '#e6f6ff', '#176b9d', 3);
     _drawRainIcon(ctx, x + 49, y + 48);
-    _centerText(ctx, title, x + w / 2 + 30, y + 35, 30, '#ffffff', '900', w - 130, 34);
-    _wrapCanvasText(ctx, lines.join(' '), x + 59, y + 92, w - 82, 33, 25, '#080808', '800', 6);
+    _centerText(ctx, title, x + w / 2 + 30, y + 34, 26, '#ffffff', '900', w - 130, 30);
+    _wrapCanvasTextFit(ctx, lines.join(' '), x + 59, y + 90, w - 82, h - 108, 22, '#080808', '800', 8);
   }
 
   function _drawGreenInfoPanel(ctx, x, y, w, h, title, lines) {
     _roundRect(ctx, x, y, w, h, 12, '#ffffff', '#087637', 4);
     _roundRect(ctx, x, y, w, 50, 12, '#087637');
-    _centerText(ctx, title, x + w / 2, y + 35, 28, '#ffffff', '900', w - 40, 30);
+    _centerText(ctx, title, x + w / 2, y + 34, 25, '#ffffff', '900', w - 40, 28);
     let cy = y + 88;
     lines.slice(0, 4).forEach(line => {
       _checkIcon(ctx, x + 30, cy - 3, 18);
-      cy = _wrapCanvasText(ctx, line, x + 60, cy, w - 90, 31, 25, '#050505', '800', 4) + 20;
+      cy = _wrapCanvasTextFit(ctx, line, x + 60, cy, w - 90, 88, 21, '#050505', '800', 5) + 11;
     });
   }
 
   function _drawRecommendations(ctx, groups) {
     _roundRect(ctx, 22, 1170, 1226, 48, 10, '#087637');
-    _centerText(ctx, 'MGA REKOMENDASYON', 635, 1205, 30, '#ffffff', '900', 1000, 34);
+    _centerText(ctx, 'MGA REKOMENDASYON', 635, 1204, 26, '#ffffff', '900', 1000, 30);
     _line(ctx, 635, 1218, 635, 1650, '#222222', 2);
     _line(ctx, 22, 1434, 1248, 1434, '#222222', 2);
     const names = Object.keys(groups).slice(0, 4);
@@ -459,13 +459,13 @@ var CISAdvisoryPDF = (() => {
     names.forEach((name, index) => {
       const box = boxes[index];
       const x = box[0], y = box[1], w = box[2];
-      _centerText(ctx, name.toUpperCase(), x + w / 2, y + 42, 28, '#087637', '900', w - 40, 30);
+      _centerText(ctx, name.toUpperCase(), x + w / 2, y + 39, 24, '#087637', '900', w - 40, 28);
       _circle(ctx, x + 88, y + 117, 48, '#ffffff', '#087637', 4);
       _simpleSectorIcon(ctx, x + 88, y + 117, index);
       let cy = y + 83;
       groups[name].slice(0, 3).forEach(item => {
         _checkIcon(ctx, x + 150, cy - 5, 10);
-        cy = _wrapCanvasText(ctx, item, x + 172, cy, w - 192, 22, 17, '#050505', '800', 3) + 7;
+        cy = _wrapCanvasTextFit(ctx, item, x + 172, cy, w - 192, 56, 15, '#050505', '800', 4) + 4;
       });
     });
   }
@@ -474,9 +474,9 @@ var CISAdvisoryPDF = (() => {
     _strokeRect(ctx, 22, 1650, 1226, 84, '#222222', 2);
     _circle(ctx, 176, 1681, 12, '#ff7d35');
     _circle(ctx, 176, 1715, 12, '#ff7d35');
-    _wrapCanvasText(ctx, 'Makipag-ugnayan sa Department of Agriculture, mga LGU, at lokal na tanggapan ng agrikultura para sa maagap na kaukulang impormasyon at tulong.', 210, 1686, 970, 24, 19, '#050505', '800', 2);
-    _wrapCanvasText(ctx, 'Patuloy na subaybayan ang mga opisyal na ulat at babala ng DOST-PAGASA at mga lokal na awtoridad.', 210, 1719, 970, 24, 19, '#050505', '800', 2);
-    _wrapCanvasText(ctx, `Ang advisory na ito ay inilalabas sa ilalim ng Adapting Philippine Agriculture to Climate Change (APA) Project para sa ${_targetLabel(cfg, _targetRows(cfg))}. Data coverage: ${stats.total} municipalities.`, 36, 1794, 990, 28, 23, '#171717', '400', 3, 'italic');
+    _wrapCanvasTextFit(ctx, 'Makipag-ugnayan sa Department of Agriculture, mga LGU, at lokal na tanggapan ng agrikultura para sa maagap na kaukulang impormasyon at tulong.', 210, 1683, 970, 30, 16, '#050505', '800', 2);
+    _wrapCanvasTextFit(ctx, 'Patuloy na subaybayan ang mga opisyal na ulat at babala ng DOST-PAGASA at mga lokal na awtoridad.', 210, 1714, 970, 30, 16, '#050505', '800', 2);
+    _wrapCanvasTextFit(ctx, `Ang advisory na ito ay inilalabas sa ilalim ng Adapting Philippine Agriculture to Climate Change (APA) Project para sa ${_targetLabel(cfg, _targetRows(cfg))}. Data coverage: ${stats.total} municipalities.`, 36, 1788, 990, 88, 20, '#171717', '400', 4, 'italic');
   }
 
   async function _createApaDesignedPDF(cfg, rows, advisories) {
@@ -525,11 +525,47 @@ var CISAdvisoryPDF = (() => {
   function _line(ctx, x1, y1, x2, y2, color, width) { ctx.strokeStyle = color; ctx.lineWidth = width; ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); }
   function _circle(ctx, x, y, r, fill, stroke, width) { ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fillStyle = fill; ctx.fill(); if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = width || 2; ctx.stroke(); } }
   function _roundRect(ctx, x, y, w, h, r, fill, stroke, width) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); if (fill) { ctx.fillStyle = fill; ctx.fill(); } if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = width || 2; ctx.stroke(); } }
-  function _font(size, weight, style) { return `${style ? `${style} ` : ''}${weight || '700'} ${size}px Arial, Helvetica, sans-serif`; }
+  function _font(size, weight, style) { return `${style ? `${style} ` : ''}${weight || '700'} ${size}px 'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif`; }
   function _fitText(ctx, text, x, y, size, color, weight, maxWidth) { let s = size; ctx.fillStyle = color; ctx.textBaseline = 'alphabetic'; do { ctx.font = _font(s, weight); s -= 1; } while (ctx.measureText(text).width > maxWidth && s > 14); ctx.fillText(text, x, y); }
   function _centerText(ctx, text, x, y, size, color, weight, maxWidth) { let s = size; ctx.fillStyle = color; ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic'; do { ctx.font = _font(s, weight); s -= 1; } while (ctx.measureText(text).width > maxWidth && s > 14); ctx.fillText(text, x, y); ctx.textAlign = 'left'; }
   function _multiText(ctx, lines, x, y, size, lineHeight, color, weight, maxWidth) { lines.forEach((line, index) => _fitText(ctx, line, x, y + index * lineHeight, size, color, weight, maxWidth)); }
-  function _wrapCanvasText(ctx, text, x, y, maxWidth, lineHeight, size, color, weight, maxLines, style) { ctx.font = _font(size, weight, style); ctx.fillStyle = color; ctx.textBaseline = 'alphabetic'; const words = String(text || '').split(/\s+/); let line = ''; let cy = y; let drawn = 0; words.forEach(word => { const test = line ? `${line} ${word}` : word; if (ctx.measureText(test).width > maxWidth && line) { if (drawn < maxLines) ctx.fillText(line, x, cy); cy += lineHeight; drawn += 1; line = word; } else line = test; }); if (line && drawn < maxLines) { ctx.fillText(line, x, cy); drawn += 1; } return y + drawn * lineHeight; }
+  function _measureWrapLines(ctx, text, maxWidth, size, weight, style) {
+    ctx.font = _font(size, weight, style);
+    const words = String(text || '').split(/\s+/).filter(Boolean);
+    const lines = [];
+    let line = '';
+    words.forEach(word => {
+      const test = line ? `${line} ${word}` : word;
+      if (ctx.measureText(test).width > maxWidth && line) { lines.push(line); line = word; }
+      else line = test;
+    });
+    if (line) lines.push(line);
+    return lines;
+  }
+  function _wrapCanvasText(ctx, text, x, y, maxWidth, lineHeight, size, color, weight, maxLines, style) {
+    const lines = _measureWrapLines(ctx, text, maxWidth, size, weight, style).slice(0, maxLines);
+    ctx.font = _font(size, weight, style);
+    ctx.fillStyle = color;
+    ctx.textBaseline = 'alphabetic';
+    lines.forEach((line, index) => ctx.fillText(line, x, y + index * lineHeight));
+    return y + lines.length * lineHeight;
+  }
+  function _wrapCanvasTextFit(ctx, text, x, y, maxWidth, maxHeight, size, color, weight, maxLines, style) {
+    let s = size;
+    let lh = Math.max(13, Math.round(size * 1.12));
+    let lines = _measureWrapLines(ctx, text, maxWidth, s, weight, style);
+    while ((lines.length > maxLines || lines.length * lh > maxHeight) && s > 11) {
+      s -= 1;
+      lh = Math.max(12, Math.round(s * 1.12));
+      lines = _measureWrapLines(ctx, text, maxWidth, s, weight, style);
+    }
+    lines = lines.slice(0, Math.min(maxLines, Math.floor(maxHeight / lh)));
+    ctx.font = _font(s, weight, style);
+    ctx.fillStyle = color;
+    ctx.textBaseline = 'alphabetic';
+    lines.forEach((line, index) => ctx.fillText(line, x, y + index * lh));
+    return y + lines.length * lh;
+  }
   function _formatShortDate(value) { const d = new Date(value); if (Number.isNaN(d.getTime())) return value; const day = String(d.getDate()).padStart(2, '0'); const month = d.toLocaleDateString('en-PH', { month: 'long' }); return `${day} ${month} ${d.getFullYear()}`; }
   function _drawCycloneIcon(ctx, x, y, severe) { _circle(ctx, x, y, 33, severe ? '#9c9c9c' : '#2da3d5'); _circle(ctx, x + 3, y - 2, 10, '#ffffff'); }
   function _drawRainIcon(ctx, x, y) { ctx.fillStyle = '#243081'; ctx.beginPath(); ctx.arc(x - 11, y - 8, 15, Math.PI, Math.PI * 2); ctx.arc(x + 7, y - 13, 20, Math.PI, Math.PI * 2); ctx.arc(x + 25, y - 7, 14, Math.PI, Math.PI * 2); ctx.fill(); ctx.strokeStyle = '#243081'; ctx.lineWidth = 4; for (let i = -20; i <= 28; i += 16) _line(ctx, x + i, y + 14, x + i - 9, y + 34, '#243081', 4); }

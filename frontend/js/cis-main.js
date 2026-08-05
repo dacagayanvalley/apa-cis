@@ -8,7 +8,7 @@
  */
 
 // ── Module registry ─────────────────────────────────────────────────────────
-const MODULES = ['dashboard', 'map', 'advisory', 'pdf', 'municipal', 'planning', 'severe'];
+const MODULES = ['dashboard', 'map', 'advisory', 'municipal', 'planning', 'severe', 'pdf'];
 let _mapInitialised = false;
 let _activeModule = 'dashboard';
 
