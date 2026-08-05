@@ -7,8 +7,10 @@
 var CISAdvisoryPDF = (() => {
   const PROVINCES = ['Batanes', 'Cagayan', 'Isabela', 'Nueva Vizcaya', 'Quirino'];
   const APA_TEMPLATE_SRC = 'assets/templates/apa-weather-disturbance-template.jpg';
+  const AMIA_TEMPLATE_SRC = 'assets/templates/amia-weather-disturbance-template.jpg';
   let _ready = false;
   let _apaImagePromise = null;
+  let _amiaImagePromise = null;
 
   function renderAll() {
     _ensureDefaults();
@@ -121,9 +123,11 @@ var CISAdvisoryPDF = (() => {
 
     const text = _buildAdvisoryText(latestCfg, rows, advisories);
     preview.textContent = text;
-    preview.hidden = latestCfg.template === 'apa';
-    if (visualPreview) visualPreview.hidden = latestCfg.template !== 'apa';
+    const hasDesignedTemplate = ['apa', 'amia'].includes(latestCfg.template);
+    preview.hidden = hasDesignedTemplate;
+    if (visualPreview) visualPreview.hidden = !hasDesignedTemplate;
     if (latestCfg.template === 'apa') _renderApaPreview(latestCfg, rows, advisories);
+    if (latestCfg.template === 'amia') _renderAmiaPreview(latestCfg, rows, advisories);
     _renderTemplateReference(latestCfg);
 
     if (status) {
@@ -155,6 +159,10 @@ var CISAdvisoryPDF = (() => {
     if (!el) return;
     if (cfg.template === 'apa') {
       el.innerHTML = '<img src="assets/templates/apa-weather-disturbance-template.jpg" alt="APA advisory template reference">';
+      return;
+    }
+    if (cfg.template === 'amia') {
+      el.innerHTML = '<img src="assets/templates/amia-weather-disturbance-template.jpg" alt="AMIA advisory template reference">';
       return;
     }
     el.innerHTML = `<div class="pdf-template-placeholder"><strong>${_escapeHtml(_templateLabel(cfg.template))}</strong><span>Template image to follow. Current PDF uses the shared advisory layout.</span></div>`;
@@ -317,7 +325,9 @@ var CISAdvisoryPDF = (() => {
     const text = document.getElementById('pdf-preview')?.textContent || _buildAdvisoryText(cfg, rows, advisories);
     const blob = cfg.template === 'apa'
       ? await _createApaDesignedPDF(cfg, rows, advisories)
-      : _createSimplePDF(text, cfg);
+      : cfg.template === 'amia'
+        ? await _createAmiaDesignedPDF(cfg, rows, advisories)
+        : _createSimplePDF(text, cfg);
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
@@ -368,6 +378,214 @@ var CISAdvisoryPDF = (() => {
     return _apaImagePromise;
   }
 
+  async function _renderAmiaPreview(cfg, rows, advisories) {
+    const canvas = document.getElementById('pdf-apa-canvas');
+    if (!canvas) return;
+    try {
+      await _drawAmiaCanvas(canvas, cfg, rows, advisories);
+    } catch (error) {
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#075f2d';
+      ctx.font = '700 34px Arial, Helvetica, sans-serif';
+      ctx.fillText('AMIA template preview could not be loaded.', 80, 120);
+      console.warn('AMIA PDF preview failed', error);
+    }
+  }
+
+  async function _drawAmiaCanvas(canvas, cfg, rows, advisories) {
+    canvas.width = 1414;
+    canvas.height = 2000;
+    const ctx = canvas.getContext('2d');
+    const img = await _loadAmiaTemplateImage();
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    _drawAmiaMasks(ctx);
+    _drawAmiaDynamicContent(ctx, cfg, rows, advisories);
+  }
+
+  function _loadAmiaTemplateImage() {
+    if (!_amiaImagePromise) {
+      _amiaImagePromise = new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = reject;
+        img.src = AMIA_TEMPLATE_SRC;
+      });
+    }
+    return _amiaImagePromise;
+  }
+
+  function _drawAmiaMasks(ctx) {
+    _rect(ctx, 0, 323, 1414, 96, '#ffffff');
+    _rect(ctx, 32, 420, 1347, 142, '#f9f58a');
+    _rect(ctx, 44, 610, 500, 474, '#ffffff');
+    _rect(ctx, 40, 1104, 505, 436, '#ffffff');
+    _rect(ctx, 590, 625, 780, 608, '#bfeeff');
+    _rect(ctx, 560, 1255, 820, 286, '#ffffff');
+    _rect(ctx, 42, 1556, 1332, 210, '#ffffff');
+    _rect(ctx, 42, 1804, 1332, 140, '#ffffff');
+  }
+
+  function _drawAmiaDynamicContent(ctx, cfg, rows, advisories) {
+    const stats = _summarizeRows(rows, advisories);
+    const sections = cfg.type === 'severe' ? _severeSections(cfg, rows, advisories, stats) : _normalSections(cfg, rows, advisories, stats);
+    const target = _targetLabel(cfg, rows).replace('Province of ', '').replace(', ', ' - ');
+    const systemName = (cfg.type === 'severe' ? cfg.systemName : 'Normal Farm Weather').toUpperCase();
+    const bulletin = cfg.type === 'severe' ? cfg.issueNo.replace(/^R02-/, 'BULLETIN ') : 'NORMAL FARM WEATHER OUTLOOK';
+
+    _centerText(ctx, bulletin.toUpperCase(), 707, 358, 32, '#050505', '900', 720, 36);
+    _centerText(ctx, `Issued ${_formatShortDate(cfg.issueDate)} | ${cfg.validity}`, 707, 386, 18, '#111111', '600', 720, 22);
+    _drawAmiaGlance(ctx, cfg, rows, advisories, stats, systemName);
+    _drawAmiaStormPanel(ctx, cfg, stats, systemName);
+    _drawAmiaMapPanel(ctx, cfg, rows, advisories, stats);
+    _drawAmiaForecastPanel(ctx, cfg, rows, advisories);
+    _drawAmiaTcwsPanel(ctx, cfg, rows, advisories, stats);
+    _drawAmiaAdvisoryRows(ctx, sections.recommendations);
+    _drawAmiaSupportRows(ctx);
+    _fitText(ctx, `Department of Agriculture Regional Field Office No. 02 - ${target}`, 206, 1960, 29, '#ffffff', '900', 900);
+  }
+
+  function _drawAmiaGlance(ctx, cfg, rows, advisories, stats, systemName) {
+    _roundRect(ctx, 32, 420, 1348, 145, 11, '#f9f58a', '#075f2d', 4);
+    _roundRect(ctx, 49, 385, 267, 72, 18, '#075f2d');
+    _centerText(ctx, 'AT A GLANCE', 182, 431, 30, '#ffffff', '900', 230, 34);
+    _circle(ctx, 86, 503, 21, '#050505');
+    _centerText(ctx, cfg.type === 'severe' ? 'S' : 'N', 86, 513, 24, '#ffffff', '900', 28, 28);
+    _fitText(ctx, systemName, 122, 512, 30, '#050505', '900', 380);
+    _line(ctx, 456, 440, 456, 545, '#075f2d', 2);
+    _fitText(ctx, 'Max Winds', 554, 469, 21, '#050505', '900', 200);
+    _fitText(ctx, cfg.type === 'severe' ? '65 km/h' : stats.maxTemp, 554, 508, 31, '#050505', '900', 190);
+    _fitText(ctx, cfg.type === 'severe' ? 'Gustiness: up to 80 km/h' : `Avg rainfall: ${stats.avgRainfall}`, 554, 539, 17, '#050505', '700', 250);
+    _line(ctx, 783, 440, 783, 545, '#075f2d', 2);
+    _drawArrowIcon(ctx, 832, 494);
+    _fitText(ctx, 'Movement', 890, 469, 21, '#050505', '900', 200);
+    _fitText(ctx, cfg.type === 'severe' ? 'Monitor track' : 'Routine', 890, 508, 25, '#050505', '900', 220);
+    _fitText(ctx, 'next bulletin', 890, 539, 20, '#050505', '900', 220);
+    _line(ctx, 1060, 440, 1060, 545, '#075f2d', 2);
+    _drawRainIcon(ctx, 1115, 493);
+    _fitText(ctx, cfg.type === 'severe' ? 'Heavy Rainfall' : 'Farm Weather', 1170, 484, 22, '#050505', '900', 170);
+    _fitText(ctx, advisories.length ? `${advisories.length} advisory areas` : 'Possible in some areas', 1170, 520, 16, '#050505', '600', 180);
+  }
+
+  function _drawAmiaStormPanel(ctx, cfg, stats, systemName) {
+    _roundRect(ctx, 46, 610, 495, 475, 8, '#ffffff', '#e21a0c', 4);
+    _rect(ctx, 46, 610, 495, 62, '#e21a0c');
+    _fitText(ctx, systemName, 70, 652, 30, '#ffffff', '900', 455);
+    const rows = [
+      ['\u25CF', 'Location / Coverage', `${_targetLabel(cfg, _targetRows(cfg))}. Generated from loaded APA-CIS municipal indicators and latest PAGASA context.`],
+      ['\u224B', 'Intensity', `Rainfall ${stats.avgRainfall}; maximum temperature ${stats.maxTemp}; active advisories ${stats.total ? stats.highestSeverity : 'none'}.`],
+      ['\u25B6', 'Present Movement', cfg.type === 'severe' ? 'Monitor PAGASA track and bulletin updates.' : 'Routine farm-weather monitoring.'],
+      ['\u25C9', 'Extent of Weather Risk', 'Localized flooding, strong wind, heat stress, or field-workability risks depend on municipal conditions.'],
+    ];
+    let y = 706;
+    rows.forEach(row => {
+      _line(ctx, 46, y - 34, 541, y - 34, '#e21a0c', 2);
+      _centerText(ctx, row[0], 80, y + 15, 37, '#050505', '900', 50, 40);
+      _line(ctx, 108, y - 34, 108, y + 76, '#e21a0c', 2);
+      _fitText(ctx, row[1], 124, y, 20, '#050505', '900', 385);
+      _wrapCanvasTextFit(ctx, row[2], 124, y + 28, 385, 72, 18, '#050505', '600', 4);
+      y += 110;
+    });
+  }
+
+  function _drawAmiaMapPanel(ctx, cfg, rows, advisories, stats) {
+    _strokeRect(ctx, 590, 625, 780, 608, '#444444', 2);
+    _rect(ctx, 615, 645, 730, 560, '#c8eefb');
+    ctx.globalAlpha = 0.32;
+    for (let x = 630; x < 1340; x += 105) _line(ctx, x, 645, x, 1205, '#6096aa', 1);
+    for (let y = 670; y < 1200; y += 85) _line(ctx, 615, y, 1345, y, '#6096aa', 1);
+    ctx.globalAlpha = 1;
+    _rect(ctx, 690, 654, 510, 42, '#050505');
+    _centerText(ctx, `Track and Intensity Forecast of ${cfg.systemName}`, 945, 681, 19, '#ffffff', '800', 490, 22);
+    _drawLuzonShape(ctx, 888, 810, 220, 300);
+    _drawStormTrackAmia(ctx);
+    _multiText(ctx, [_targetLabel(cfg, rows), `Rainfall: ${stats.avgRainfall}`, `Highest severity: ${stats.highestSeverity}`], 1115, 915, 20, 28, '#1e1e1e', '800', 230);
+    _fitText(ctx, 'Source: DOST-PAGASA / APA-CIS', 600, 1245, 21, '#222222', '500', 500);
+  }
+
+  function _drawAmiaForecastPanel(ctx, cfg, rows, advisories) {
+    _roundRect(ctx, 44, 1106, 500, 432, 8, '#ffffff', '#ff6a1a', 4);
+    _rect(ctx, 44, 1106, 500, 58, '#ff6a1a');
+    _centerText(ctx, 'FORECAST POSITIONS', 294, 1145, 31, '#ffffff', '900', 450, 34);
+    const target = _targetLabel(cfg, rows).replace('Province of ', '');
+    const rowsText = [
+      ['12-Hour Forecast', cfg.type === 'severe' ? `Near ${target}` : `Farm weather over ${target}`, cfg.type === 'severe' ? 'TS\n65 km/h' : 'NORMAL'],
+      ['24-Hour Forecast', 'Monitor local rainfall, wind, heat, and field-workability updates.', cfg.type === 'severe' ? 'TS\n45 km/h' : 'WATCH'],
+      ['36-Hour Forecast', 'Update advisory after next PAGASA and APA-CIS data refresh.', cfg.type === 'severe' ? 'LOW' : 'INFO'],
+    ];
+    let y = 1210;
+    rowsText.forEach(row => {
+      _line(ctx, 44, y - 30, 544, y - 30, '#ff6a1a', 2);
+      _wrapCanvasTextFit(ctx, row[0], 62, y + 8, 160, 72, 20, '#050505', '900', 3);
+      _wrapCanvasTextFit(ctx, row[1], 238, y + 8, 220, 72, 19, '#050505', '500', 4);
+      _wrapCanvasTextFit(ctx, row[2], 466, y + 8, 60, 72, 24, '#050505', '500', 3);
+      _line(ctx, 225, y - 30, 225, y + 92, '#ff6a1a', 2);
+      _line(ctx, 454, y - 30, 454, y + 92, '#ff6a1a', 2);
+      y += 122;
+    });
+  }
+
+  function _drawAmiaTcwsPanel(ctx, cfg, rows, advisories, stats) {
+    _roundRect(ctx, 560, 1264, 820, 274, 8, '#ffffff', '#ffc928', 4);
+    _rect(ctx, 560, 1264, 820, 58, '#ffc928');
+    _centerText(ctx, cfg.type === 'severe' ? 'TROPICAL CYCLONE WIND SIGNALS (TCWS) IN EFFECT' : 'LOCAL FARM WEATHER WATCH IN EFFECT', 970, 1304, 25, '#ffffff', '900', 760, 30);
+    _centerText(ctx, cfg.type === 'severe' ? '1' : 'i', 670, 1409, 55, '#050505', '900', 80, 60);
+    _line(ctx, 760, 1323, 760, 1538, '#d6b21f', 2);
+    _fitText(ctx, _targetLabel(cfg, rows), 785, 1372, 26, '#050505', '900', 540);
+    _wrapCanvasTextFit(ctx, `Warning lead time and risk level should be validated with PAGASA, MDRRMO/CDRRMO, MAO/PAO, and field reports. Current loaded severity: ${stats.highestSeverity}.`, 785, 1415, 530, 85, 21, '#050505', '500', 4);
+  }
+
+  function _drawAmiaAdvisoryRows(ctx, groups) {
+    _roundRect(ctx, 42, 1556, 1332, 210, 8, '#ffffff', '#075f2d', 4);
+    _rect(ctx, 42, 1556, 1332, 52, '#075f2d');
+    _centerText(ctx, "FARMERS' ADVISORY / CLIMATE RESILIENT AGRICULTURE PRACTICES", 708, 1593, 30, '#ffffff', '900', 1200, 34);
+    const labels = ['CROPS', 'INFRASTRUCTURE', 'IRRIGATION', 'LIVESTOCK', 'FARM MACHINERY', 'HARVEST & STORAGE'];
+    const icons = ['\u2618', '\u2302', '\u27F3', '\u25C9', '\u25A3', '\u25A4'];
+    const items = Object.values(groups).flat().slice(0, 6);
+    labels.forEach((label, i) => {
+      const x = 50 + i * 220;
+      if (i) _line(ctx, x - 8, 1608, x - 8, 1766, '#075f2d', 2);
+      _centerText(ctx, label, x + 110, 1632, 18, '#075f2d', '900', 200, 22);
+      _centerText(ctx, icons[i], x + 35, 1684, 40, '#075f2d', '700', 55, 42);
+      _wrapCanvasTextFit(ctx, items[i] || 'Maintain monitoring and coordinate with MAO/PAO.', x + 68, 1668, 140, 75, 16, '#050505', '500', 4);
+    });
+  }
+
+  function _drawAmiaSupportRows(ctx) {
+    _roundRect(ctx, 42, 1805, 1332, 140, 8, '#ffffff', '#1155a3', 4);
+    _rect(ctx, 42, 1805, 1332, 52, '#1155a3');
+    _centerText(ctx, 'DA RFO 02 SUPPORTS', 708, 1842, 31, '#ffffff', '900', 800, 34);
+    const supports = ['INPUTS & FARM MATERIALS', 'WEATHER & CLIMATE SERVICES', 'FARM MACHINERY & TECHNICAL ASSISTANCE', 'TRAINING & EXTENSION SERVICES', 'LIVESTOCK SUPPORT'];
+    supports.forEach((label, i) => {
+      const x = 54 + i * 264;
+      if (i) _line(ctx, x - 12, 1858, x - 12, 1944, '#1155a3', 2);
+      _fitText(ctx, label, x + 55, 1890, 16, '#1155a3', '900', 190);
+      _wrapCanvasTextFit(ctx, i === 0 ? 'Pre-positioned materials and farm inputs' : i === 1 ? 'Climate information services and early warnings' : i === 2 ? 'Machinery and field support' : i === 3 ? 'Technical assistance and resilient practices' : 'Animal health support', x + 55, 1918, 185, 40, 13, '#050505', '500', 3);
+    });
+  }
+
+  function _drawArrowIcon(ctx, x, y) {
+    ctx.fillStyle = '#050505';
+    ctx.beginPath();
+    ctx.moveTo(x - 25, y - 28);
+    ctx.lineTo(x + 30, y);
+    ctx.lineTo(x - 25, y + 28);
+    ctx.lineTo(x - 10, y);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  function _drawStormTrackAmia(ctx) {
+    const pts = [[850,1024], [878,985], [910,940], [946,892], [1005,860], [1088,925]];
+    ctx.strokeStyle = '#1e4dd8';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    pts.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]));
+    ctx.stroke();
+    pts.forEach((p, i) => _circle(ctx, p[0], p[1], i < 2 ? 6 : 5, '#ffffff', '#1e4dd8', 3));
+  }
   function _drawApaMasks(ctx) {
     _rect(ctx, 0, 226, 1280, 206, '#ffffff');
     _rect(ctx, 14, 435, 612, 540, '#ffffff');
@@ -483,10 +701,17 @@ var CISAdvisoryPDF = (() => {
     const canvas = document.createElement('canvas');
     await _drawApaCanvas(canvas, cfg, rows, advisories);
     const bytes = _dataUrlToBytes(canvas.toDataURL('image/jpeg', 0.94));
-    return _createImageOnlyPDF(bytes, 595.28, 892.92);
+    return _createImageOnlyPDF(bytes, 595.28, 892.92, canvas.width, canvas.height);
   }
 
-  function _createImageOnlyPDF(jpegBytes, pageWidth, pageHeight) {
+  async function _createAmiaDesignedPDF(cfg, rows, advisories) {
+    const canvas = document.createElement('canvas');
+    await _drawAmiaCanvas(canvas, cfg, rows, advisories);
+    const bytes = _dataUrlToBytes(canvas.toDataURL('image/jpeg', 0.94));
+    return _createImageOnlyPDF(bytes, 595.28, 841.89, canvas.width, canvas.height);
+  }
+
+  function _createImageOnlyPDF(jpegBytes, pageWidth, pageHeight, imageWidth, imageHeight) {
     const encoder = new TextEncoder();
     const chunks = [];
     const offsets = [0];
@@ -500,7 +725,7 @@ var CISAdvisoryPDF = (() => {
     addObject(2, '<< /Type /Pages /Kids [3 0 R] /Count 1 >>');
     addObject(3, `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${pageWidth} ${pageHeight}] /Resources << /XObject << /Im1 4 0 R >> >> /Contents 5 0 R >>`);
     offsets[4] = position;
-    addString(`4 0 obj\n<< /Type /XObject /Subtype /Image /Width 1280 /Height 1920 /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${jpegBytes.length} >>\nstream\n`);
+    addString(`4 0 obj\n<< /Type /XObject /Subtype /Image /Width ${imageWidth || 1280} /Height ${imageHeight || 1920} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${jpegBytes.length} >>\nstream\n`);
     addBytes(jpegBytes);
     addString('\nendstream\nendobj\n');
     const stream = `q\n${pageWidth} 0 0 ${pageHeight} 0 0 cm\n/Im1 Do\nQ`;
