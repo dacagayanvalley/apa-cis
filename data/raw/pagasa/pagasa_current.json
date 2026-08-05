@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-05",
-  "fetched_at": "2026-08-05T04:18:20.038383+00:00",
-  "fetched_at_utc": "2026-08-05T04:18:20.038383+00:00",
+  "fetched_at": "2026-08-05T07:18:41.072336+00:00",
+  "fetched_at_utc": "2026-08-05T07:18:41.072336+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -38,9 +38,9 @@
     "bulletin_status": "active",
     "name": "Maymay",
     "disturbance_type": "Tropical Storm",
-    "bulletin_number": "5",
-    "issued_at": "11:00 am, 05 August 2026",
-    "valid_until": "the next advisory to be issued at 2:00 PM today)",
+    "bulletin_number": "6",
+    "issued_at": "02:00 pm, 05 August 2026",
+    "valid_until": "the next advisory to be issued at 5:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 2,
     "signal_levels": {
@@ -50,13 +50,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": 65.0,
-    "peak_wind_gust_kmh": 80.0,
-    "gustiness_kmh": 80.0,
+    "max_sustained_wind_kmh": 75.0,
+    "peak_wind_gust_kmh": 90.0,
+    "gustiness_kmh": 90.0,
     "wind": {
-      "max_sustained_wind_kmh": 65.0,
-      "peak_wind_gust_kmh": 80.0,
-      "gustiness_kmh": 80.0
+      "max_sustained_wind_kmh": 75.0,
+      "peak_wind_gust_kmh": 90.0,
+      "gustiness_kmh": 90.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -119,11 +119,11 @@
         "match": "municipality"
       }
     ],
-    "summary": "Tropical Storm Maymay Bulletin #5",
+    "summary": "Tropical Storm Maymay Bulletin #6",
     "as_of": "2026-08-05",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-05T04:18:20.038383+00:00",
-    "fetched_at_utc": "2026-08-05T04:18:20.038383+00:00",
+    "fetched_at": "2026-08-05T07:18:41.072336+00:00",
+    "fetched_at_utc": "2026-08-05T07:18:41.072336+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -135,12 +135,12 @@
       "summary": "PAGASA agriculture warning for Lambak ng Cagayan, natitirang bahagi ng Rehiyon ng Ilocos natitirang bahagi ng Cordillera Administrative Region, Zambales, Tarlac, at Nueva Ecija: Maulan na may pagbugso ng hangin",
       "agri_weather": [
         {
-          "forecast_area": "POSIBLENG MARANASAN LAKAS NG HANGIN (km/h) ORAS NA INAASAHAN (mula sa unang paglabas ng babala) 5 Lubhang mapanganib sa buhay at mga ari-arian >185 12 na oras 4 Malaki hanggang sa matinding pinsala 118 - 184 12 na oras 3 Katamtaman hanggang sa malaking pinsala 89 - 117 18 na oras 2 Bahagya hanggang sa katamtamang pinsala 62 - 88 24 na oras 1 Maliit hanggang sa bahagyang pinsala 39 - 61 36 na oras",
-          "agri_weather": "",
-          "lowland_temp_c": "POSIBLENG MARANASAN",
-          "upland_temp_c": "LAKAS NG HANGIN (km/h)",
-          "relative_humidity_pct": "ORAS NA INAASAHAN (mula sa unang paglabas ng babala)",
-          "leaf_wetness_hours": "5"
+          "forecast_area": "BABALA NG BAGYO POSIBLENG MARANASAN LAKAS NG HANGIN (km/h) ORAS NA INAASAHAN (mula sa unang paglabas ng babala) 5 Lubhang mapanganib sa buhay at mga ari-arian >185 12 na oras 4 Malaki hanggang sa matinding pinsala 118 - 184 12 na oras 3 Katamtaman hanggang sa malaking pinsala 89 - 117 18 na oras 2 Bahagya hanggang sa katamtamang pinsala 62 - 88 24 na oras 1 Maliit hanggang sa bahagyang pinsala 39 - 61 36 na oras",
+          "agri_weather": "BABALA NG BAGYO",
+          "lowland_temp_c": "",
+          "upland_temp_c": "POSIBLENG MARANASAN",
+          "relative_humidity_pct": "LAKAS NG HANGIN (km/h)",
+          "leaf_wetness_hours": "ORAS NA INAASAHAN (mula sa unang paglabas ng babala)"
         },
         {
           "forecast_area": "Ilocos Sur, La Union, Pangasinan, Benguet, Mountain Province, at Abra",
@@ -233,6 +233,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-05T04:18:20.038383+00:00"
+    "last_checked_utc": "2026-08-05T07:18:41.072336+00:00"
   }
 }
