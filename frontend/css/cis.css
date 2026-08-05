@@ -71,15 +71,18 @@ body {
   display: block;
   font-size: 13px;
   line-height: 1.25;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0;
-  max-width: 820px;
+  max-width: 980px;
 }
 .topbar-sub {
-  color: rgba(255,255,255,0.7);
-  font-size: 11px;
+  color: rgba(255,255,255,0.86);
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1.25;
   display: block;
-  margin-top: -2px;
+  margin-top: 0;
+  max-width: 980px;
 }
 .topbar-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .data-freshness {
@@ -1619,6 +1622,26 @@ body {
   color: var(--text-main);
   font-size: 12px;
   text-align: right;
+}
+.pdf-visual-preview {
+  max-height: 76vh;
+  overflow: auto;
+  background: #e8ece9;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 14px;
+}
+.pdf-visual-preview canvas {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(23, 59, 36, 0.18);
+}
+.pdf-visual-preview[hidden],
+.pdf-preview[hidden] {
+  display: none;
 }
 .pdf-preview {
   min-height: 460px;

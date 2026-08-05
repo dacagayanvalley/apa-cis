@@ -6,7 +6,9 @@
 
 var CISAdvisoryPDF = (() => {
   const PROVINCES = ['Batanes', 'Cagayan', 'Isabela', 'Nueva Vizcaya', 'Quirino'];
+  const APA_TEMPLATE_SRC = 'assets/templates/apa-weather-disturbance-template.jpg';
   let _ready = false;
+  let _apaImagePromise = null;
 
   function renderAll() {
     _ensureDefaults();
@@ -31,7 +33,7 @@ var CISAdvisoryPDF = (() => {
   function _defaultWeatherSystem() {
     const typhoon = CISData.getPAGASAData()?.typhoon || {};
     if (typhoon.active) return `${typhoon.disturbance_type || 'Weather Disturbance'} ${typhoon.name || ''}`.trim();
-    return 'Farm Weather Advisory';
+    return 'Weather Disturbance Advisory';
   }
 
   function _defaultIssueNo() {
@@ -109,23 +111,28 @@ var CISAdvisoryPDF = (() => {
     const cfg = _config();
     _syncControlVisibility(cfg);
     _populateMunicipalities();
-    const rows = _targetRows(_config());
-    const advisories = _targetAdvisories(_config(), rows);
+    const latestCfg = _config();
+    const rows = _targetRows(latestCfg);
+    const advisories = _targetAdvisories(latestCfg, rows);
     const preview = document.getElementById('pdf-preview');
+    const visualPreview = document.getElementById('pdf-visual-preview');
     const status = document.getElementById('pdf-status-list');
     if (!preview) return;
 
-    const text = _buildAdvisoryText(_config(), rows, advisories);
+    const text = _buildAdvisoryText(latestCfg, rows, advisories);
     preview.textContent = text;
-    _renderTemplateReference(_config());
+    preview.hidden = latestCfg.template === 'apa';
+    if (visualPreview) visualPreview.hidden = latestCfg.template !== 'apa';
+    if (latestCfg.template === 'apa') _renderApaPreview(latestCfg, rows, advisories);
+    _renderTemplateReference(latestCfg);
 
     if (status) {
       const stats = _summarizeRows(rows, advisories);
       status.innerHTML = `
-        <div class="pdf-status-item"><span>Level</span><strong>${_escapeHtml(_levelLabel(_config().level))}</strong></div>
-        <div class="pdf-status-item"><span>Target</span><strong>${_escapeHtml(_targetLabel(_config(), rows))}</strong></div>
-        <div class="pdf-status-item"><span>Template</span><strong>${_escapeHtml(_templateLabel(_config().template))}</strong></div>
-        <div class="pdf-status-item"><span>Type</span><strong>${_escapeHtml(_typeLabel(_config().type))}</strong></div>
+        <div class="pdf-status-item"><span>Level</span><strong>${_escapeHtml(_levelLabel(latestCfg.level))}</strong></div>
+        <div class="pdf-status-item"><span>Target</span><strong>${_escapeHtml(_targetLabel(latestCfg, rows))}</strong></div>
+        <div class="pdf-status-item"><span>Template</span><strong>${_escapeHtml(_templateLabel(latestCfg.template))}</strong></div>
+        <div class="pdf-status-item"><span>Type</span><strong>${_escapeHtml(_typeLabel(latestCfg.type))}</strong></div>
         <div class="pdf-status-item"><span>Municipalities</span><strong>${stats.total}</strong></div>
         <div class="pdf-status-item"><span>Active advisories</span><strong>${advisories.length}</strong></div>
         <div class="pdf-status-item"><span>Highest severity</span><strong>${_escapeHtml(stats.highestSeverity)}</strong></div>
@@ -299,15 +306,18 @@ var CISAdvisoryPDF = (() => {
     return `Farm Weather Advisory para sa Agrikultura - ${scope}`;
   }
 
-  function downloadPDF() {
+  async function downloadPDF() {
     renderPreview();
     const cfg = _config();
     const rows = _targetRows(cfg);
+    const advisories = _targetAdvisories(cfg, rows);
     const target = _targetLabel(cfg, rows);
-    const text = document.getElementById('pdf-preview')?.textContent || _buildAdvisoryText(cfg, rows, _targetAdvisories(cfg, rows));
     const safeName = `${cfg.template}-${cfg.type}-${cfg.level}-${target}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const filename = `apa-cis-advisory-${safeName}-${cfg.issueDate}.pdf`;
-    const blob = _createSimplePDF(text, cfg);
+    const text = document.getElementById('pdf-preview')?.textContent || _buildAdvisoryText(cfg, rows, advisories);
+    const blob = cfg.template === 'apa'
+      ? await _createApaDesignedPDF(cfg, rows, advisories)
+      : _createSimplePDF(text, cfg);
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
@@ -319,6 +329,214 @@ var CISAdvisoryPDF = (() => {
     URL.revokeObjectURL(url);
   }
 
+  async function _renderApaPreview(cfg, rows, advisories) {
+    const canvas = document.getElementById('pdf-apa-canvas');
+    if (!canvas) return;
+    try {
+      await _drawApaCanvas(canvas, cfg, rows, advisories);
+    } catch (error) {
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#173b24';
+      ctx.font = '700 34px Arial, Helvetica, sans-serif';
+      ctx.fillText('APA template preview could not be loaded.', 80, 120);
+      console.warn('APA PDF preview failed', error);
+    }
+  }
+
+  async function _drawApaCanvas(canvas, cfg, rows, advisories) {
+    canvas.width = 1280;
+    canvas.height = 1920;
+    const ctx = canvas.getContext('2d');
+    const img = await _loadApaTemplateImage();
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    _drawApaMasks(ctx);
+    _drawApaDynamicContent(ctx, cfg, rows, advisories);
+  }
+
+  function _loadApaTemplateImage() {
+    if (!_apaImagePromise) {
+      _apaImagePromise = new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = reject;
+        img.src = APA_TEMPLATE_SRC;
+      });
+    }
+    return _apaImagePromise;
+  }
+
+  function _drawApaMasks(ctx) {
+    _rect(ctx, 0, 226, 1280, 206, '#ffffff');
+    _rect(ctx, 14, 435, 612, 540, '#ffffff');
+    _rect(ctx, 648, 434, 600, 726, '#ffffff');
+    _rect(ctx, 22, 970, 604, 186, '#ffffff');
+    _rect(ctx, 22, 1168, 1226, 482, '#ffffff');
+    _rect(ctx, 22, 1650, 1028, 178, '#eeeeee');
+    _rect(ctx, 1055, 1650, 208, 178, '#ffffff');
+  }
+
+  function _drawApaDynamicContent(ctx, cfg, rows, advisories) {
+    const stats = _summarizeRows(rows, advisories);
+    const sections = cfg.type === 'severe' ? _severeSections(cfg, rows, advisories, stats) : _normalSections(cfg, rows, advisories, stats);
+    const target = _targetLabel(cfg, rows).replace('Province of ', '').replace(', ', ' - ');
+    const isSevere = cfg.type === 'severe';
+    const title = isSevere ? 'TROPICAL CYCLONE ADVISORY PARA SA AGRIKULTURA' : 'FARM WEATHER ADVISORY PARA SA AGRIKULTURA';
+    const system = isSevere ? cfg.systemName.toUpperCase() : 'NORMAL FARM WEATHER';
+
+    _centerText(ctx, title, 640, 280, 40, '#063b16', '900', 1130, 44);
+    _centerText(ctx, target.toUpperCase(), 640, 323, 42, '#063b16', '900', 1130, 44);
+    _drawCycloneIcon(ctx, 52, 366, isSevere);
+    _fitText(ctx, system, 90, 390, 56, '#050505', '900', 760);
+    _roundRect(ctx, 982, 342, 280, 70, 16, '#39a6db');
+    _multiText(ctx, [`Issued ${_formatShortDate(cfg.issueDate)}`, `No. ${cfg.issueNo}`], 1008, 369, 24, 30, '#ffffff', '800', 230);
+
+    _drawMapPanel(ctx, cfg, rows, advisories, stats);
+    _drawWindPanel(ctx, cfg, rows, advisories);
+    _drawBlueInfoPanel(ctx, 648, 434, 600, 246, sections.hazardTitle.toUpperCase().replace(' / WEATHER DISTURBANCE', ''), sections.hazard.slice(0, 3), 'rain');
+    _drawGreenInfoPanel(ctx, 648, 686, 600, 474, 'INAASAHANG EPEKTO SA AGRIKULTURA', sections.impacts);
+    _drawRecommendations(ctx, sections.recommendations);
+    _drawCoordinationFooter(ctx, cfg, stats);
+  }
+
+  function _drawMapPanel(ctx, cfg, rows, advisories, stats) {
+    _strokeRect(ctx, 14, 435, 612, 500, '#222222', 2);
+    _rect(ctx, 139, 466, 354, 36, '#050505');
+    _multiText(ctx, ['Track and Intensity / Advisory Map', `${_formatDate(cfg.issueDate)} - ${cfg.systemName}`], 148, 487, 16, 18, '#ffffff', '800', 330);
+    _rect(ctx, 33, 451, 578, 448, '#c8eefb');
+    ctx.globalAlpha = 0.3;
+    for (let x = 40; x < 610; x += 82) _line(ctx, x, 451, x, 899, '#6096aa', 1);
+    for (let y = 470; y < 900; y += 68) _line(ctx, 33, y, 611, y, '#6096aa', 1);
+    ctx.globalAlpha = 1;
+    _drawLuzonShape(ctx, 182, 606, 190, 250);
+    _drawStormTrack(ctx);
+    _multiText(ctx, [cfg.level.toUpperCase(), _targetLabel(cfg, rows), `Rainfall: ${stats.avgRainfall}`, `Highest severity: ${stats.highestSeverity}`], 373, 682, 18, 28, '#1e1e1e', '700', 220);
+    _fitText(ctx, 'Source: DOST-PAGASA / APA-CIS loaded monitoring data', 16, 963, 24, '#222222', '400', 610);
+  }
+
+  function _drawWindPanel(ctx, cfg, rows, advisories) {
+    _roundRect(ctx, 20, 972, 608, 186, 12, '#ffffff', '#3aa6d8', 3);
+    _roundRect(ctx, 20, 972, 608, 45, 12, '#3aa6d8');
+    _centerText(ctx, 'LAKAS NG HANGIN NG BAGYO', 324, 1004, 28, '#ffffff', '900', 560, 30);
+    _circle(ctx, 62, 1084, 29, '#182298');
+    _centerText(ctx, '1', 62, 1096, 42, '#ffffff', '900', 44, 42);
+    const affected = advisories.slice(0, 10).map(a => a.municipality).filter(Boolean);
+    const areaText = affected.length
+      ? `Ang mga lugar na may aktibong advisory ay kinabibilangan ng ${affected.join(', ')}${advisories.length > affected.length ? ', at iba pa.' : '.'}`
+      : `Ang piling bahagi ng ${_targetLabel(cfg, rows)} ay maaaring makaranas ng pabugso-bugsong hangin depende sa lokal na kondisyon.`;
+    _wrapCanvasText(ctx, areaText, 92, 1044, 500, 23, 19, '#060606', '800', 6);
+  }
+
+  function _drawBlueInfoPanel(ctx, x, y, w, h, title, lines, icon) {
+    _roundRect(ctx, x, y, w, h, 14, '#ffffff', '#2aa0d5', 4);
+    _roundRect(ctx, x, y, w, 52, 14, '#39a6db');
+    _circle(ctx, x + 48, y + 48, 40, '#e6f6ff', '#176b9d', 3);
+    _drawRainIcon(ctx, x + 49, y + 48);
+    _centerText(ctx, title, x + w / 2 + 30, y + 35, 30, '#ffffff', '900', w - 130, 34);
+    _wrapCanvasText(ctx, lines.join(' '), x + 59, y + 92, w - 82, 33, 25, '#080808', '800', 6);
+  }
+
+  function _drawGreenInfoPanel(ctx, x, y, w, h, title, lines) {
+    _roundRect(ctx, x, y, w, h, 12, '#ffffff', '#087637', 4);
+    _roundRect(ctx, x, y, w, 50, 12, '#087637');
+    _centerText(ctx, title, x + w / 2, y + 35, 28, '#ffffff', '900', w - 40, 30);
+    let cy = y + 88;
+    lines.slice(0, 4).forEach(line => {
+      _checkIcon(ctx, x + 30, cy - 3, 18);
+      cy = _wrapCanvasText(ctx, line, x + 60, cy, w - 90, 31, 25, '#050505', '800', 4) + 20;
+    });
+  }
+
+  function _drawRecommendations(ctx, groups) {
+    _roundRect(ctx, 22, 1170, 1226, 48, 10, '#087637');
+    _centerText(ctx, 'MGA REKOMENDASYON', 635, 1205, 30, '#ffffff', '900', 1000, 34);
+    _line(ctx, 635, 1218, 635, 1650, '#222222', 2);
+    _line(ctx, 22, 1434, 1248, 1434, '#222222', 2);
+    const names = Object.keys(groups).slice(0, 4);
+    const boxes = [[22, 1218, 613, 216], [635, 1218, 613, 216], [22, 1434, 613, 216], [635, 1434, 613, 216]];
+    names.forEach((name, index) => {
+      const box = boxes[index];
+      const x = box[0], y = box[1], w = box[2];
+      _centerText(ctx, name.toUpperCase(), x + w / 2, y + 42, 28, '#087637', '900', w - 40, 30);
+      _circle(ctx, x + 88, y + 117, 48, '#ffffff', '#087637', 4);
+      _simpleSectorIcon(ctx, x + 88, y + 117, index);
+      let cy = y + 83;
+      groups[name].slice(0, 3).forEach(item => {
+        _checkIcon(ctx, x + 150, cy - 5, 10);
+        cy = _wrapCanvasText(ctx, item, x + 172, cy, w - 192, 22, 17, '#050505', '800', 3) + 7;
+      });
+    });
+  }
+
+  function _drawCoordinationFooter(ctx, cfg, stats) {
+    _strokeRect(ctx, 22, 1650, 1226, 84, '#222222', 2);
+    _circle(ctx, 176, 1681, 12, '#ff7d35');
+    _circle(ctx, 176, 1715, 12, '#ff7d35');
+    _wrapCanvasText(ctx, 'Makipag-ugnayan sa Department of Agriculture, mga LGU, at lokal na tanggapan ng agrikultura para sa maagap na kaukulang impormasyon at tulong.', 210, 1686, 970, 24, 19, '#050505', '800', 2);
+    _wrapCanvasText(ctx, 'Patuloy na subaybayan ang mga opisyal na ulat at babala ng DOST-PAGASA at mga lokal na awtoridad.', 210, 1719, 970, 24, 19, '#050505', '800', 2);
+    _wrapCanvasText(ctx, `Ang advisory na ito ay inilalabas sa ilalim ng Adapting Philippine Agriculture to Climate Change (APA) Project para sa ${_targetLabel(cfg, _targetRows(cfg))}. Data coverage: ${stats.total} municipalities.`, 36, 1794, 990, 28, 23, '#171717', '400', 3, 'italic');
+  }
+
+  async function _createApaDesignedPDF(cfg, rows, advisories) {
+    const canvas = document.createElement('canvas');
+    await _drawApaCanvas(canvas, cfg, rows, advisories);
+    const bytes = _dataUrlToBytes(canvas.toDataURL('image/jpeg', 0.94));
+    return _createImageOnlyPDF(bytes, 595.28, 892.92);
+  }
+
+  function _createImageOnlyPDF(jpegBytes, pageWidth, pageHeight) {
+    const encoder = new TextEncoder();
+    const chunks = [];
+    const offsets = [0];
+    let position = 0;
+    const addString = value => { const bytes = encoder.encode(value); chunks.push(bytes); position += bytes.length; };
+    const addBytes = bytes => { chunks.push(bytes); position += bytes.length; };
+    const objectCount = 5;
+    addString('%PDF-1.4\n');
+    const addObject = (id, body) => { offsets[id] = position; addString(`${id} 0 obj\n${body}\nendobj\n`); };
+    addObject(1, '<< /Type /Catalog /Pages 2 0 R >>');
+    addObject(2, '<< /Type /Pages /Kids [3 0 R] /Count 1 >>');
+    addObject(3, `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${pageWidth} ${pageHeight}] /Resources << /XObject << /Im1 4 0 R >> >> /Contents 5 0 R >>`);
+    offsets[4] = position;
+    addString(`4 0 obj\n<< /Type /XObject /Subtype /Image /Width 1280 /Height 1920 /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${jpegBytes.length} >>\nstream\n`);
+    addBytes(jpegBytes);
+    addString('\nendstream\nendobj\n');
+    const stream = `q\n${pageWidth} 0 0 ${pageHeight} 0 0 cm\n/Im1 Do\nQ`;
+    addObject(5, `<< /Length ${encoder.encode(stream).length} >>\nstream\n${stream}\nendstream`);
+    const xrefOffset = position;
+    addString(`xref\n0 ${objectCount + 1}\n0000000000 65535 f \n`);
+    for (let i = 1; i <= objectCount; i += 1) addString(`${String(offsets[i]).padStart(10, '0')} 00000 n \n`);
+    addString(`trailer\n<< /Size ${objectCount + 1} /Root 1 0 R >>\nstartxref\n${xrefOffset}\n%%EOF`);
+    return new Blob(chunks, { type: 'application/pdf' });
+  }
+
+  function _dataUrlToBytes(dataUrl) {
+    const base64 = dataUrl.split(',')[1] || '';
+    const binary = atob(base64);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
+    return bytes;
+  }
+
+  function _rect(ctx, x, y, w, h, fill) { ctx.fillStyle = fill; ctx.fillRect(x, y, w, h); }
+  function _strokeRect(ctx, x, y, w, h, color, width) { ctx.strokeStyle = color; ctx.lineWidth = width; ctx.strokeRect(x, y, w, h); }
+  function _line(ctx, x1, y1, x2, y2, color, width) { ctx.strokeStyle = color; ctx.lineWidth = width; ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); }
+  function _circle(ctx, x, y, r, fill, stroke, width) { ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fillStyle = fill; ctx.fill(); if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = width || 2; ctx.stroke(); } }
+  function _roundRect(ctx, x, y, w, h, r, fill, stroke, width) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); if (fill) { ctx.fillStyle = fill; ctx.fill(); } if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = width || 2; ctx.stroke(); } }
+  function _font(size, weight, style) { return `${style ? `${style} ` : ''}${weight || '700'} ${size}px Arial, Helvetica, sans-serif`; }
+  function _fitText(ctx, text, x, y, size, color, weight, maxWidth) { let s = size; ctx.fillStyle = color; ctx.textBaseline = 'alphabetic'; do { ctx.font = _font(s, weight); s -= 1; } while (ctx.measureText(text).width > maxWidth && s > 14); ctx.fillText(text, x, y); }
+  function _centerText(ctx, text, x, y, size, color, weight, maxWidth) { let s = size; ctx.fillStyle = color; ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic'; do { ctx.font = _font(s, weight); s -= 1; } while (ctx.measureText(text).width > maxWidth && s > 14); ctx.fillText(text, x, y); ctx.textAlign = 'left'; }
+  function _multiText(ctx, lines, x, y, size, lineHeight, color, weight, maxWidth) { lines.forEach((line, index) => _fitText(ctx, line, x, y + index * lineHeight, size, color, weight, maxWidth)); }
+  function _wrapCanvasText(ctx, text, x, y, maxWidth, lineHeight, size, color, weight, maxLines, style) { ctx.font = _font(size, weight, style); ctx.fillStyle = color; ctx.textBaseline = 'alphabetic'; const words = String(text || '').split(/\s+/); let line = ''; let cy = y; let drawn = 0; words.forEach(word => { const test = line ? `${line} ${word}` : word; if (ctx.measureText(test).width > maxWidth && line) { if (drawn < maxLines) ctx.fillText(line, x, cy); cy += lineHeight; drawn += 1; line = word; } else line = test; }); if (line && drawn < maxLines) { ctx.fillText(line, x, cy); drawn += 1; } return y + drawn * lineHeight; }
+  function _formatShortDate(value) { const d = new Date(value); if (Number.isNaN(d.getTime())) return value; const day = String(d.getDate()).padStart(2, '0'); const month = d.toLocaleDateString('en-PH', { month: 'long' }); return `${day} ${month} ${d.getFullYear()}`; }
+  function _drawCycloneIcon(ctx, x, y, severe) { _circle(ctx, x, y, 33, severe ? '#9c9c9c' : '#2da3d5'); _circle(ctx, x + 3, y - 2, 10, '#ffffff'); }
+  function _drawRainIcon(ctx, x, y) { ctx.fillStyle = '#243081'; ctx.beginPath(); ctx.arc(x - 11, y - 8, 15, Math.PI, Math.PI * 2); ctx.arc(x + 7, y - 13, 20, Math.PI, Math.PI * 2); ctx.arc(x + 25, y - 7, 14, Math.PI, Math.PI * 2); ctx.fill(); ctx.strokeStyle = '#243081'; ctx.lineWidth = 4; for (let i = -20; i <= 28; i += 16) _line(ctx, x + i, y + 14, x + i - 9, y + 34, '#243081', 4); }
+  function _checkIcon(ctx, x, y, r) { _circle(ctx, x, y, r, '#087637'); ctx.strokeStyle = '#ffffff'; ctx.lineWidth = Math.max(4, r / 3); ctx.beginPath(); ctx.moveTo(x - r * 0.45, y); ctx.lineTo(x - r * 0.12, y + r * 0.35); ctx.lineTo(x + r * 0.52, y - r * 0.45); ctx.stroke(); }
+  function _drawLuzonShape(ctx, x, y, w, h) { ctx.fillStyle = '#f6d98d'; ctx.strokeStyle = '#bfa35c'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(x + w * 0.55, y); ctx.bezierCurveTo(x + w * 0.15, y + h * 0.1, x, y + h * 0.45, x + w * 0.22, y + h * 0.72); ctx.bezierCurveTo(x + w * 0.45, y + h, x + w * 0.86, y + h * 0.88, x + w * 0.75, y + h * 0.55); ctx.bezierCurveTo(x + w, y + h * 0.22, x + w * 0.82, y + h * 0.02, x + w * 0.55, y); ctx.fill(); ctx.stroke(); }
+  function _drawStormTrack(ctx) { const pts = [[438,867], [409,832], [375,786], [344,739], [310,694], [281,650]]; ctx.strokeStyle = '#1e4dd8'; ctx.lineWidth = 4; ctx.beginPath(); pts.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.stroke(); pts.forEach(p => _circle(ctx, p[0], p[1], 5, '#ffffff', '#1e4dd8', 3)); }
+  function _simpleSectorIcon(ctx, x, y, index) { ctx.strokeStyle = '#087637'; ctx.lineWidth = 5; ctx.beginPath(); if (index === 0) { ctx.moveTo(x, y + 28); ctx.lineTo(x, y - 20); ctx.moveTo(x, y - 4); ctx.quadraticCurveTo(x - 34, y - 20, x - 20, y + 14); ctx.moveTo(x, y - 8); ctx.quadraticCurveTo(x + 34, y - 28, x + 20, y + 10); } else if (index === 1) { ctx.arc(x - 18, y + 5, 14, 0, Math.PI * 2); ctx.moveTo(x + 18, y + 18); ctx.lineTo(x + 32, y - 22); ctx.lineTo(x + 5, y - 8); } else if (index === 2) { ctx.moveTo(x - 36, y); ctx.quadraticCurveTo(x, y - 30, x + 38, y); ctx.quadraticCurveTo(x, y + 30, x - 36, y); ctx.moveTo(x + 12, y - 4); ctx.arc(x + 17, y - 4, 2, 0, Math.PI * 2); } else { ctx.rect(x - 28, y - 18, 46, 32); ctx.arc(x - 15, y + 23, 8, 0, Math.PI * 2); ctx.arc(x + 18, y + 23, 8, 0, Math.PI * 2); } ctx.stroke(); }
   function _createSimplePDF(text, cfg) {
     const pageWidth = 595.28;
     const pageHeight = 841.89;

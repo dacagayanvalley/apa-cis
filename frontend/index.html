@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APA-CIS — Climate Information Service | DA RFO 02 Cagayan Valley</title>
+  <title>Climate Information Service (CIS) &middot; DA RFO 02 Cagayan Valley | Disaster Risk Reduction Management (DRRM), Adapting Philippine Agriculture to Climate Change (APA), Adaptation and Mitigation Initiatives in Agriculture (AMIA) - CRAO</title>
   <link rel="icon" type="image/svg+xml" href="assets/da-logo.svg">
   <link rel="shortcut icon" href="assets/da-logo.svg">
 
@@ -14,13 +14,13 @@
 </head>
 <body>
 
-<!-- ── TOP BAR ─────────────────────────────────────────────── -->
+<!-- â”€â”€ TOP BAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <header class="topbar">
   <div class="topbar-left">
     <img class="da-seal" src="assets/da-logo.svg" alt="Department of Agriculture logo">
     <div class="topbar-text">
-      <span class="topbar-title">Adapting Philippine Agriculture to Climate Change (APA)</span>
-      <span class="topbar-sub">Climate Information Service (CIS) · DA RFO 02 Cagayan Valley</span>
+      <span class="topbar-title">Climate Information Services (CIS) - DA RFO 02 Cagayan Valley</span>
+      <span class="topbar-sub">Disaster Risk Reduction Management (DRRM), Adapting Philippine Agriculture to Climate Change (APA), Adaptation and Mitigation Initiatives in Agriculture (AMIA) - CRAO</span>
     </div>
   </div>
   <div class="topbar-right">
@@ -28,38 +28,38 @@
       <span class="freshness-dot" id="freshness-dot"></span>
       <span id="freshness-label">Loading data...</span>
     </div>
-    <div class="enso-badge" id="enso-badge">ENSO: —</div>
+    <div class="enso-badge" id="enso-badge">ENSO: â€”</div>
   </div>
 </header>
 
-<!-- ── MODULE TABS ─────────────────────────────────────────── -->
+<!-- â”€â”€ MODULE TABS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <nav class="module-nav">
   <button class="mnav-btn active" data-module="dashboard" onclick="switchModule('dashboard', this)">
-    <span class="mnav-icon">📊</span> Climate Dashboard
+    <span class="mnav-icon">ðŸ“Š</span> Climate Dashboard
   </button>
   <button class="mnav-btn" data-module="map" onclick="switchModule('map', this)">
-    <span class="mnav-icon">🗺</span> Map Layers
+    <span class="mnav-icon">ðŸ—º</span> Map Layers
   </button>
   <button class="mnav-btn" data-module="advisory" onclick="switchModule('advisory', this)">
-    <span class="mnav-icon">📋</span> Agri-Operations Advisory
+    <span class="mnav-icon">ðŸ“‹</span> Agri-Operations Advisory
   </button>
   <button class="mnav-btn" data-module="pdf" onclick="switchModule('pdf', this)">
-    <span class="mnav-icon">PDF</span> Advisory PDF
+    <span class="mnav-icon">PDF</span> Advisories in PDF
   </button>
   <button class="mnav-btn" data-module="municipal" onclick="switchModule('municipal', this)">
-    <span class="mnav-icon">🏘</span> Municipal Profile
+    <span class="mnav-icon">ðŸ˜</span> Municipal Profile
   </button>
   <button class="mnav-btn" data-module="planning" onclick="switchModule('planning', this)">
-    <span class="mnav-icon">🎯</span> Planning Dashboard
+    <span class="mnav-icon">ðŸŽ¯</span> Planning Dashboard
   </button>
   <button class="mnav-btn" data-module="severe" onclick="switchModule('severe', this)">
     <span class="mnav-icon">!</span> Severe Weather
   </button>
 </nav>
 
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <!-- MODULE: CLIMATE DASHBOARD                                  -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div id="module-dashboard" class="module active">
 
   <!-- Province filter bar -->
@@ -93,39 +93,39 @@
   <!-- Summary stat cards -->
   <div class="stat-grid" id="stat-grid">
     <div class="stat-card" id="sc-rainfall">
-      <div class="sc-icon">🌧</div>
-      <div class="sc-value" id="sc-rainfall-val">—</div>
+      <div class="sc-icon">ðŸŒ§</div>
+      <div class="sc-value" id="sc-rainfall-val">â€”</div>
       <div class="sc-label">Avg Rainfall Today (mm)</div>
       <div class="sc-sub" id="sc-rainfall-sub"></div>
     </div>
     <div class="stat-card" id="sc-temp">
-      <div class="sc-icon">🌡</div>
-      <div class="sc-value" id="sc-temp-val">—</div>
-      <div class="sc-label">Max Temperature (°C)</div>
+      <div class="sc-icon">ðŸŒ¡</div>
+      <div class="sc-value" id="sc-temp-val">â€”</div>
+      <div class="sc-label">Max Temperature (Â°C)</div>
       <div class="sc-sub" id="sc-temp-sub"></div>
     </div>
     <div class="stat-card" id="sc-drought">
-      <div class="sc-icon">🏜</div>
-      <div class="sc-value" id="sc-drought-val">—</div>
+      <div class="sc-icon">ðŸœ</div>
+      <div class="sc-value" id="sc-drought-val">â€”</div>
       <div class="sc-label">Municipalities in Dry Spell</div>
       <div class="sc-sub" id="sc-drought-sub"></div>
     </div>
     <div class="stat-card" id="sc-advisory">
-      <div class="sc-icon">⚠️</div>
-      <div class="sc-value" id="sc-advisory-val">—</div>
+      <div class="sc-icon">âš ï¸</div>
+      <div class="sc-value" id="sc-advisory-val">â€”</div>
       <div class="sc-label">Active Advisories</div>
       <div class="sc-sub" id="sc-advisory-sub"></div>
     </div>
     <div class="stat-card" id="sc-heat">
-      <div class="sc-icon">☀️</div>
-      <div class="sc-value" id="sc-heat-val">—</div>
+      <div class="sc-icon">â˜€ï¸</div>
+      <div class="sc-value" id="sc-heat-val">â€”</div>
       <div class="sc-label">Heat Stress Risk Areas</div>
       <div class="sc-sub" id="sc-heat-sub"></div>
     </div>
     <div class="stat-card" id="sc-workability">
-      <div class="sc-icon">🚜</div>
-      <div class="sc-value" id="sc-workability-val">—</div>
-      <div class="sc-label">Municipalities — Safe for Field Work</div>
+      <div class="sc-icon">ðŸšœ</div>
+      <div class="sc-value" id="sc-workability-val">â€”</div>
+      <div class="sc-label">Municipalities â€” Safe for Field Work</div>
       <div class="sc-sub" id="sc-workability-sub"></div>
     </div>
   </div>
@@ -144,7 +144,7 @@
         <option value="risk_desc">Sort: Highest Risk First</option>
         <option value="drought_desc">Sort: Driest First</option>
         <option value="rain_desc">Sort: Most Rain First</option>
-        <option value="alpha">Sort: A–Z</option>
+        <option value="alpha">Sort: Aâ€“Z</option>
       </select>
     </div>
   </div>
@@ -158,8 +158,8 @@
           <th class="sortable" data-sort-key="rainfall" onclick="sortTable('rainfall')">Rainfall 24h (mm) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="forecast_rain" onclick="sortTable('forecast_rain')">10-Day Rain <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="forecast_weather" onclick="sortTable('forecast_weather')">10-Day Weather <span class="sort-indicator"></span></th>
-          <th class="sortable" data-sort-key="forecast_tmax" onclick="sortTable('forecast_tmax')">Forecast Temp (°C) <span class="sort-indicator"></span></th>
-          <th class="sortable" data-sort-key="tmax" onclick="sortTable('tmax')">Temp Max (°C) <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="forecast_tmax" onclick="sortTable('forecast_tmax')">Forecast Temp (Â°C) <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort-key="tmax" onclick="sortTable('tmax')">Temp Max (Â°C) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="humidity" onclick="sortTable('humidity')">Humidity (%) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="cdd" onclick="sortTable('cdd')">Dry Spell Days (Consecutive) <span class="sort-indicator"></span></th>
           <th class="sortable" data-sort-key="drought" onclick="sortTable('drought')">Drought Status <span class="sort-indicator"></span></th>
@@ -186,9 +186,9 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <!-- MODULE: MAP LAYERS                                         -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div id="module-map" class="module">
   <div class="map-container">
     <!-- Layer selector sidebar -->
@@ -248,9 +248,9 @@
         <div class="di-label">Data Source</div>
         <div class="di-value" id="map-source-label">NASA POWER (AG Community)</div>
         <div class="di-label">As of</div>
-        <div class="di-value" id="map-asof-label">—</div>
+        <div class="di-value" id="map-asof-label">â€”</div>
         <div class="di-label">Valid Until</div>
-        <div class="di-value" id="map-valid-label">—</div>
+        <div class="di-value" id="map-valid-label">â€”</div>
         <div class="di-label">Source QA</div>
         <div class="di-value" id="map-qa-label">Checking...</div>
       </div>
@@ -264,9 +264,9 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <!-- MODULE: AGRI-OPERATIONS ADVISORY                          -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div id="module-advisory" class="module">
   <div class="advisory-layout">
 
@@ -276,9 +276,9 @@
       <div class="adv-filters">
         <select id="adv-severity-filter" onchange="filterAdvisories()" class="adv-filter-sel">
           <option value="all">All Severity Levels</option>
-          <option value="danger">🔴 Danger Only</option>
-          <option value="warning">🟠 Warning+</option>
-          <option value="advisory">🟡 Advisory+</option>
+          <option value="danger">ðŸ”´ Danger Only</option>
+          <option value="warning">ðŸŸ  Warning+</option>
+          <option value="advisory">ðŸŸ¡ Advisory+</option>
         </select>
         <select id="adv-province-filter" onchange="filterAdvisories()" class="adv-filter-sel">
           <option value="all">All Provinces</option>
@@ -299,7 +299,7 @@
       <div class="panel-header" id="adv-detail-header">Select a municipality to view full advisory</div>
       <div id="adv-detail-content">
         <div class="adv-empty-state">
-          <div style="font-size:48px;margin-bottom:16px;">📋</div>
+          <div style="font-size:48px;margin-bottom:16px;">ðŸ“‹</div>
           <p>Click any municipality from the list to view the full advisory text, operations guidance, and recommended DA actions.</p>
         </div>
       </div>
@@ -309,7 +309,7 @@
 
   <!-- Operations quick-reference table -->
   <div class="ops-quick-ref" id="ops-quick-ref">
-    <div class="section-header"><span class="section-title">Field Operations Recommendation — Selected Municipality</span></div>
+    <div class="section-header"><span class="section-title">Field Operations Recommendation â€” Selected Municipality</span></div>
     <div id="ops-table-wrap">
       <div class="ops-empty">Select a municipality above to see field operations guidance.</div>
     </div>
@@ -330,9 +330,9 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <!-- MODULE: MUNICIPAL PROFILE                                 -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div id="module-municipal" class="module">
   <div class="mprofile-layout">
     <div class="mprofile-selector">
@@ -344,39 +344,39 @@
     </div>
     <div class="mprofile-content" id="mprofile-content">
       <div class="adv-empty-state">
-        <div style="font-size:48px;margin-bottom:16px;">🏘</div>
+        <div style="font-size:48px;margin-bottom:16px;">ðŸ˜</div>
         <p>Select a municipality from the left panel to view its full climate profile, crop calendar risk, and recommended adaptation measures.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <!-- MODULE: PLANNING DASHBOARD                                 -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div id="module-planning" class="module">
   <div class="planning-header">
-    <h2 class="planning-title">DA RFO 02 — Planning & Intervention Dashboard</h2>
-    <p class="planning-sub">Priority municipalities for climate-adaptive agriculture investments · Updated daily</p>
+    <h2 class="planning-title">DA RFO 02 â€” Planning & Intervention Dashboard</h2>
+    <p class="planning-sub">Priority municipalities for climate-adaptive agriculture investments Â· Updated daily</p>
   </div>
 
   <!-- Summary cards for planners -->
   <div class="planning-cards" id="planning-cards">
     <div class="pcard">
-      <div class="pcard-num" id="pc-danger">—</div>
+      <div class="pcard-num" id="pc-danger">â€”</div>
       <div class="pcard-label">Municipalities in Danger / Critical</div>
     </div>
     <div class="pcard">
-      <div class="pcard-num" id="pc-warning">—</div>
+      <div class="pcard-num" id="pc-warning">â€”</div>
       <div class="pcard-label">Municipalities with Warnings</div>
     </div>
     <div class="pcard">
-      <div class="pcard-num" id="pc-drought">—</div>
+      <div class="pcard-num" id="pc-drought">â€”</div>
       <div class="pcard-label">Municipalities in Dry Spell Watch+</div>
     </div>
     <div class="pcard">
-      <div class="pcard-num" id="pc-heat">—</div>
-      <div class="pcard-label">Municipalities — High Heat Risk</div>
+      <div class="pcard-num" id="pc-heat">â€”</div>
+      <div class="pcard-label">Municipalities â€” High Heat Risk</div>
     </div>
   </div>
 
@@ -493,7 +493,7 @@
 <div id="module-pdf" class="module">
   <div class="pdf-advisory-header">
     <div>
-      <h2 class="pdf-advisory-title">Weather Advisory PDF Generator</h2>
+      <h2 class="pdf-advisory-title">Advisories in PDF</h2>
       <p class="pdf-advisory-sub">Create Region 2, province, or municipal advisory PDFs using APA, DRRM, or AMIA template modes.</p>
     </div>
     <button class="btn-primary" data-pdf-action="download">Download PDF</button>
@@ -582,7 +582,10 @@
 
   <div class="pdf-preview-panel">
     <div class="section-header">
-      <span class="section-title">Draft Advisory Preview</span>
+      <span class="section-title">Advisory Preview</span>
+    </div>
+    <div id="pdf-visual-preview" class="pdf-visual-preview">
+      <canvas id="pdf-apa-canvas" width="1280" height="1920" aria-label="APA advisory PDF preview"></canvas>
     </div>
     <pre id="pdf-preview" class="pdf-preview">Loading advisory preview...</pre>
   </div>
@@ -595,7 +598,7 @@
 <script src="js/cis-advisory.js?v=20260804-agri"></script>
 <script src="js/cis-planning.js?v=20260804-agri"></script>
 <script src="js/cis-severe-weather.js?v=20260804-agri"></script>
-<script src="js/cis-advisory-pdf.js?v=20260805-levels"></script>
+<script src="js/cis-advisory-pdf.js?v=20260805-apa-strict"></script>
 <script src="js/cis-main.js?v=20260805-levels"></script>
 </body>
 </html>
