@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-06",
-  "fetched_at": "2026-08-05T21:52:01.511665+00:00",
-  "fetched_at_utc": "2026-08-05T21:52:01.511665+00:00",
+  "fetched_at": "2026-08-05T23:10:38.387478+00:00",
+  "fetched_at_utc": "2026-08-05T23:10:38.387478+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -889,8 +889,8 @@
     "summary": "Tropical Storm Maymay Bulletin #11",
     "as_of": "2026-08-06",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-05T21:52:01.511665+00:00",
-    "fetched_at_utc": "2026-08-05T21:52:01.511665+00:00",
+    "fetched_at": "2026-08-05T23:10:38.387478+00:00",
+    "fetched_at_utc": "2026-08-05T23:10:38.387478+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -1008,6 +1008,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-05T21:52:01.511665+00:00"
+    "last_checked_utc": "2026-08-05T23:10:38.387478+00:00"
   }
 }
