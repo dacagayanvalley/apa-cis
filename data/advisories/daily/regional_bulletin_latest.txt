@@ -7,8 +7,8 @@ Issued by: DA-RFO2 APA
 
 SITUATION OVERVIEW:
   Active advisories: 92 municipalities
-  Danger alerts: 43
-  Warnings: 49
+  Danger alerts: 86
+  Warnings: 6
   Confidence: high 0, medium 92, low 0
 
 SOURCE TIMESTAMPS AND QA:
@@ -26,22 +26,22 @@ PAGASA / ACAP / CIS SUMMARY:
 
 PROVINCIAL STATUS:
   Batanes: 6 municipalities with advisories (highest: WARNING)
-  Cagayan: 29 municipalities with advisories (highest: WARNING)
+  Cagayan: 29 municipalities with advisories (highest: DANGER)
   Isabela: 37 municipalities with advisories (highest: DANGER)
-  Nueva Vizcaya: 14 municipalities with advisories (highest: WARNING)
+  Nueva Vizcaya: 14 municipalities with advisories (highest: DANGER)
   Quirino: 6 municipalities with advisories (highest: DANGER)
 
 PRIORITY MUNICIPALITIES FOR IMMEDIATE ACTION:
-  1. Aurora, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
-  2. Quezon, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
-  3. San Guillermo, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
-  4. San Manuel, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
-  5. Aglipay, Quirino [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
-  6. Saguday, Quirino [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
-  7. Alicia, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
-  8. Angadanan, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
-  9. Benito Soliven, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
-  10. Cabatuan, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  1. Kayapa, Nueva Vizcaya [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  2. Piat, Cagayan [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  3. Rizal, Cagayan [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  4. Tuao, Cagayan [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  5. Aurora, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  6. Quezon, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  7. San Guillermo, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  8. San Manuel, Isabela [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  9. Aglipay, Quirino [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
+  10. Saguday, Quirino [DANGER, confidence: medium] - PAGASA Tropical Cyclone Wind Signal Active
 
 ACTION TIERS:
   Farmers: Follow the municipal advisory SMS/action text; adjust field work, irrigation, spraying, harvest, and drying based on local MAO guidance.
@@ -50,11 +50,11 @@ ACTION TIERS:
   Public: Monitor DA RFO2 APA and PAGASA updates; avoid sharing unofficial advisories without source date and valid-until information.
 
 SMS-READY PRIORITY ADVISORIES:
-  Aurora: PAGASA TCWS 2: Suspend farm work in Aurora. Secure crops/equipment. Coordinate with MAO/MDRRMC.
-  Quezon: PAGASA TCWS 2: Suspend farm work in Quezon. Secure crops/equipment. Coordinate with MAO/MDRRMC.
-  San Guillermo: PAGASA TCWS 2: Suspend farm work in San Guillermo. Secure crops/equipment. Coordinate with MAO/MDRRMC.
-  San Manuel: PAGASA TCWS 2: Suspend farm work in San Manuel. Secure crops/equipment. Coordinate with MAO/MDRRMC.
-  Aglipay: PAGASA TCWS 2: Suspend farm work in Aglipay. Secure crops/equipment. Coordinate with MAO/MDRRMC.
+  Kayapa: PAGASA TCWS 1: Suspend farm work in Kayapa. Secure crops/equipment. Coordinate with MAO/MDRRMC.
+  Piat: PAGASA TCWS 1: Suspend farm work in Piat. Secure crops/equipment. Coordinate with MAO/MDRRMC.
+  Rizal: PAGASA TCWS 1: Suspend farm work in Rizal. Secure crops/equipment. Coordinate with MAO/MDRRMC.
+  Tuao: PAGASA TCWS 1: Suspend farm work in Tuao. Secure crops/equipment. Coordinate with MAO/MDRRMC.
+  Aurora: PAGASA TCWS 1: Suspend farm work in Aurora. Secure crops/equipment. Coordinate with MAO/MDRRMC.
 
 For full advisory details, visit the APA-CIS portal.
 For assistance, contact DA-RFO2 APA: 0916-708-9707; DA RFO2 APA Facebook page; darfo2apa@gmail.com.

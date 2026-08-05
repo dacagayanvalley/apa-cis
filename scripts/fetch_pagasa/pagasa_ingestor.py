@@ -249,7 +249,7 @@ def _municipality_name_hit(name: str, text: str) -> bool:
 def _province_is_partial(province: str, text: str) -> bool:
     return bool(re.search(rf"\b(?:portion|portions)\s+of\s+{re.escape(province)}\s*\(", text or "", re.IGNORECASE))
 
-def _region2_affected_municipalities(text: str) -> List[Dict]:
+def _region2_affected_municipalities(text: str, signal_level: Optional[int] = None) -> List[Dict]:
     """Match PAGASA affected-area text to Cagayan Valley municipalities."""
     municipalities = load_municipalities()
     lower_text = (text or "").lower()
@@ -263,17 +263,70 @@ def _region2_affected_municipalities(text: str) -> List[Dict]:
             bool(province and province.lower() in lower_text)
             and not _province_is_partial(province, text)
         )
+        # Municipality names are reused across provinces. Only accept a name hit
+        # when the same affected-area text also names its Region 2 province.
+        name_hit = name_hit and bool(province and province.lower() in lower_text)
         if province_hit or name_hit:
             affected.append({
                 "psgc": mun.get("psgc"),
                 "municipality": name,
                 "province": province,
                 "match": "municipality" if name_hit else "province",
+                "signal": signal_level or 0,
+                "tcws_signal": signal_level or 0,
+                "official_area_text": _clean_text(text)[:1200],
             })
 
     return affected
 
 
+
+def _extract_tcws_signal_groups(html_text: str, text: str) -> List[Dict]:
+    """Capture PAGASA TCWS affected-area groups by signal number."""
+    groups: List[Dict] = []
+    try:
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(html_text or "", "html.parser")
+        for heading in soup.select("th[class*=signalno]"):
+            classes = " ".join(heading.get("class") or [])
+            signal_match = re.search(r"signalno(\d+)", classes, re.IGNORECASE)
+            if not signal_match:
+                signal_match = re.search(r"Signal\s*no\.\s*(\d+)", heading.get_text(" ", strip=True), re.IGNORECASE)
+            if not signal_match:
+                continue
+            signal = int(signal_match.group(1))
+            tbody = heading.find_parent("thead")
+            tbody = tbody.find_next_sibling("tbody") if tbody else None
+            area_text = ""
+            if tbody:
+                for row in tbody.select("tr"):
+                    cells = row.find_all(["td", "th"], recursive=False)
+                    if len(cells) >= 2 and "affected areas" in cells[0].get_text(" ", strip=True).lower():
+                        area_text = _clean_text(cells[1].get_text(" ", strip=True))
+                        break
+            if area_text:
+                groups.append({
+                    "signal": signal,
+                    "label": f"TCWS {signal}",
+                    "areas_text": area_text,
+                    "region2_relevant": any(identifier.lower() in area_text.lower() for identifier in REGION2_IDENTIFIERS),
+                })
+    except Exception as exc:
+        logger.warning(f"Could not parse PAGASA TCWS signal groups: {exc}")
+
+    if groups:
+        return groups
+
+    compact = re.sub(r"\s+", " ", text or "")
+    fallback_signal = re.search(r"(?:Wind Signal No\.|Tropical Cyclone Wind Signal\s*no\.)\s*(\d+)", compact, re.IGNORECASE)
+    if fallback_signal:
+        groups.append({
+            "signal": int(fallback_signal.group(1)),
+            "label": f"TCWS {fallback_signal.group(1)}",
+            "areas_text": compact,
+            "region2_relevant": any(identifier.lower() in compact.lower() for identifier in REGION2_IDENTIFIERS),
+        })
+    return groups
 def _extract_strength_metrics(text: str) -> Dict:
     sustained_match = re.search(r"Maximum sustained winds of\s*(\d+(?:\.\d+)?)\s*km/h", text or "", re.IGNORECASE)
     gust_match = re.search(r"(?:gustiness of up to|peak wind gusts?(?: reaching| of up to)?)\s*(\d+(?:\.\d+)?)\s*km/h", text or "", re.IGNORECASE)
@@ -464,10 +517,29 @@ def parse_severe_weather_bulletin(html_text: str) -> Dict:
         or disturbance_name
         or re.search(r"Tropical Cyclone Bulletin\s+Active", compact, re.IGNORECASE)
     )
-    tcws_area_match = re.search(r"Wind Signal.*?Affected Areas(.*?)Meteorological Condition", compact, re.IGNORECASE)
-    affected_text = tcws_area_match.group(1) if tcws_area_match else compact
-    affected = _region2_affected_municipalities(affected_text) if active else []
+    tcws_signal_groups = _extract_tcws_signal_groups(html_text, text) if active else []
+    if tcws_signal_groups:
+        affected = []
+        seen_psgc = set()
+        for group in tcws_signal_groups:
+            for item in _region2_affected_municipalities(group.get("areas_text", ""), group.get("signal")):
+                key = item.get("psgc")
+                if key in seen_psgc:
+                    continue
+                seen_psgc.add(key)
+                affected.append(item)
+    else:
+        tcws_area_match = re.search(r"Wind Signal.*?Affected Areas(.*?)Meteorological Condition", compact, re.IGNORECASE)
+        affected_text = tcws_area_match.group(1) if tcws_area_match else compact
+        fallback_signal = int(signal_match.group(1)) if signal_match else 0
+        affected = _region2_affected_municipalities(affected_text, fallback_signal) if active else []
+
     affected_provinces = sorted({item["province"] for item in affected if item.get("province")})
+    province_signal_levels = {
+        province: max([int(item.get("tcws_signal") or item.get("signal") or 0) for item in affected if item.get("province") == province] or [0])
+        for province in ["Batanes", "Cagayan", "Isabela", "Nueva Vizcaya", "Quirino"]
+    }
+    highest_signal = max(province_signal_levels.values() or [0])
 
     return {
         "active": active,
@@ -479,14 +551,14 @@ def parse_severe_weather_bulletin(html_text: str) -> Dict:
         "issued_at": issued_match.group(1).strip() if issued_match else "",
         "valid_until": valid_match.group(1).strip() if valid_match else "",
         "source_url": PAGASA_URLS["typhoon"],
-        "signal_level": int(signal_match.group(1)) if signal_match else 0,
-        "signal_levels": {province: (int(signal_match.group(1)) if signal_match and province in affected_provinces else 0)
-                          for province in ["Batanes", "Cagayan", "Isabela", "Nueva Vizcaya", "Quirino"]},
+        "signal_level": highest_signal,
+        "signal_levels": province_signal_levels,
         "max_sustained_wind_kmh": strength.get("max_sustained_wind_kmh"),
         "peak_wind_gust_kmh": strength.get("peak_wind_gust_kmh"),
         "gustiness_kmh": strength.get("gustiness_kmh"),
         "wind": strength,
         "tcws_wind_ranges": tcws_wind_ranges,
+        "tcws_signal_groups": tcws_signal_groups,
         "rainfall": rainfall,
         "rainfall_advisory_text": rainfall.get("advisory_text", ""),
         "region2_affected": bool(affected),

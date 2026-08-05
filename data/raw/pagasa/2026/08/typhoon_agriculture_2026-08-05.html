@@ -1,0 +1,1970 @@
+<html>
+
+<head>
+	<title>PAGASA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=.8">
+	
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<link rel="shortcut icon" href="https://pagasa.dost.gov.ph/themes/hiraia/assets/images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css"
+    type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/ol-popup@4.0.0/src/ol-popup.css" />
+	<link href="https://pagasa.dost.gov.ph/combine/359f49d99933187b721d9cc09cef747d-1785888740.css" rel="stylesheet">
+			
+		 <script src="https://pagasa.dost.gov.ph/themes/hiraia/assets/js/pdf.js"></script>
+	<!-- <script>
+	pdfjsLib.GlobalWorkerOptions.workerSrc = "https://pagasa.dost.gov.ph/themes/hiraia/assets/js/pdf.worker.js";
+	</script> -->
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top gov-ph">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.gov.ph/">
+                <img src="https://pagasa.dost.gov.ph/themes/hiraia//assets/images/layout/coa.png" width="25" style="margin-top:-5px;" class="pull-left">
+                <span class="pull-right color-white" style="margin-top:-23px;margin-left:10px;"><h3 class="gov-text">GOVPH</h3></span>
+            </a>
+        </div>
+        <style type="text/css">
+            .mobile-links .sidemenu a {
+                color: white !important;
+            }
+            .mobile-links li {
+                padding: .25em;
+            }
+            .mobile-links .sub-level li {
+                padding: .5em;
+            }
+            .mobile-links>li>a {
+                padding-top: 9px;
+                padding-bottom: 5px;
+            }
+            .mobile-links .sub-level {
+                padding-left: 3em;
+            }
+        </style>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav mobile-links">
+                <li><a href="https://pagasa.dost.gov.ph" class="color-white">Home</a></li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#weather-mobile' class='sidemenu'>Weather <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/weather.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="weather-mobile">
+                             
+                                <li>
+                                     
+                                        <a href="#general-weather-mobile" style="padding-left:2em;" class="submenu sidemenu-level">General Weather <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="general-weather-mobile">
+                                                                                                                                                <li><a href="/weather#daily-weather-forecast" class="anchor-link">Daily Weather Forecast</a></li>
+                                                                                                                                                                                                <li><a href="/weather/weather-outlook-selected-philippine-cities" class="anchor-link">Weather Outlook Selected Philippine Cities</a></li>
+                                                                                                                                                                                                <li><a href="/weather/weather-asian-cities-weather-forecast" class="anchor-link">Asian Cities Weather Forecast</a></li>
+                                                                                                                                                                                                <li><a href="/weather/weather-outlook-selected-tourist-areas" class="anchor-link">Weather Outlook Selected Tourist Areas</a></li>
+                                                                                                                                                                                                <li><a href="/weather/weather-outlook-weekly" class="anchor-link">Weekly Weather Outlook</a></li>
+                                                                                                                                                                                                <li><a href="/weather/weather-advisory" class="anchor-link">Weather Advisory</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                     
+                                        <a href="#aviation-mobile" style="padding-left:2em;" class="submenu sidemenu-level">Aviation <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="aviation-mobile">
+                                                                                                                                                <li><a href="/aviation#sigmet" class="anchor-link">SIGMET</a></li>
+                                                                                                                                                                                                <li><a href="/aviation/metar" class="anchor-link">METAR</a></li>
+                                                                                                                                                                                                <li><a href="/aviation#terminal-aerodome-forecast" class="anchor-link">Terminal Aerodome Forecast</a></li>
+                                                                                                                                                                                                <li><a href="/aviation#airways-and-terminal-forecast" class="anchor-link">Airways and Terminal Forecast</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                     
+                                        <a href="#marine-mobile" style="padding-left:2em;" class="submenu sidemenu-level">Marine <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="marine-mobile">
+                                                                                                                                                <li><a href="/marine/high-seas-forecast" class="anchor-link">High Seas and Offshore Waters Forecast</a></li>
+                                                                                                                                                                                                <li><a href="/marine/gale-warning" class="anchor-link">Gale Warning</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/weather/heat-index" style="padding-left:20px;" class="submenu   anchor-link">Heat Index</a>
+                                                                                <!--  <a href="/weather/heat-index" style="padding-left:20px;" class="submenu   anchor-link">Heat Index</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/weather/low-high-temperature" style="padding-left:20px;" class="submenu   anchor-link">Daily Temperature</a>
+                                                                                <!--  <a href="/weather/low-high-temperature" style="padding-left:20px;" class="submenu   anchor-link">Daily Temperature</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#flood-mobile' class='sidemenu'>Flood <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/flood.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="flood-mobile">
+                             
+                                <li>
+                                                                             
+                                            <a href="/flood#flood-information" style="padding-left:20px;" class="submenu   anchor-link">Flood Information</a>
+                                                                                <!--  <a href="/flood#flood-information" style="padding-left:20px;" class="submenu   anchor-link">Flood Information</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/flood#dam-information" style="padding-left:20px;" class="submenu   anchor-link">Dam Information</a>
+                                                                                <!--  <a href="/flood#dam-information" style="padding-left:20px;" class="submenu   anchor-link">Dam Information</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/flood#projects" style="padding-left:20px;" class="submenu   anchor-link">Projects</a>
+                                                                                <!--  <a href="/flood#projects" style="padding-left:20px;" class="submenu   anchor-link">Projects</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="https://bit.ly/hmd-datarequestportal" style="padding-left:20px;" class="submenu   anchor-link">Hydromet Data</a>
+                                                                                <!--  <a href="https://bit.ly/hmd-datarequestportal" style="padding-left:20px;" class="submenu   anchor-link">Hydromet Data</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#tropical-cyclone-mobile' class='sidemenu'>Tropical Cyclone <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/tropical-cyclone.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="tropical-cyclone-mobile">
+                             
+                                <li>
+                                                                                                                        <a href="/tropical-cyclone-advisory-iframe" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Advisory</a>
+                                                                                <!--  <a href="/tropical-cyclone/tropical-cyclone-advisory" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Advisory</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/tropical-cyclone/severe-weather-bulletin" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Bulletin</a>
+                                                                                <!--  <a href="/tropical-cyclone/severe-weather-bulletin" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Bulletin</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/tropical-cyclone/severe-wind-impact-based-forecast" style="padding-left:20px;" class="submenu   anchor-link">Severe Wind Impact Based Forecast</a>
+                                                                                <!--  <a href="/tropical-cyclone/severe-wind-impact-based-forecast" style="padding-left:20px;" class="submenu   anchor-link">Severe Wind Impact Based Forecast</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/tropical-cyclone/tropical-cyclone-warning-for-shipping" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Warning for Shipping</a>
+                                                                                <!--  <a href="/tropical-cyclone/tropical-cyclone-warning-for-shipping" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Warning for Shipping</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/tropical-cyclone/forecast-storm-surge" style="padding-left:20px;" class="submenu   anchor-link">Forecast Storm Surge</a>
+                                                                                <!--  <a href="/tropical-cyclone/forecast-storm-surge" style="padding-left:20px;" class="submenu   anchor-link">Forecast Storm Surge</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/tropical-cyclone/tropical-cyclone-warning-for-agriculture" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Warning for Agriculture</a>
+                                                                                <!--  <a href="/tropical-cyclone/tropical-cyclone-warning-for-agriculture" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Warning for Agriculture</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/tropical-cyclone/tc-threat-potential-forecast" style="padding-left:20px;" class="submenu   anchor-link">TC-Threat Potential Forecast</a>
+                                                                                <!--  <a href="/tropical-cyclone/tc-threat-potential-forecast" style="padding-left:20px;" class="submenu   anchor-link">TC-Threat Potential Forecast</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/climate/tropical-cyclone-associated-rainfall" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Associated Rainfall</a>
+                                                                                <!--  <a href="/climate/tropical-cyclone-associated-rainfall" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Associated Rainfall</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                     
+                                        <a href="#tropical-cyclone-publications-mobile" style="padding-left:2em;" class="submenu sidemenu-level">Tropical Cyclone Publications <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="tropical-cyclone-publications-mobile">
+                                                                                                                                                <li><a href="/tropical-cyclone/publications/annual-report" class="anchor-link">Annual Report on Philippine Tropical Cyclones</a></li>
+                                                                                                                                                                                                <li><a href="/tropical-cyclone/publications/preliminary-report" class="anchor-link">Tropical Cyclone Preliminary Report</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/information/about-tropical-cyclone" style="padding-left:20px;" class="submenu   anchor-link">About Tropical Cyclone</a>
+                                                                                <!--  <a href="/information/about-tropical-cyclone" style="padding-left:20px;" class="submenu   anchor-link">About Tropical Cyclone</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#climate-mobile' class='sidemenu'>Climate <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/climate.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="climate-mobile">
+                             
+                                <li>
+                                     
+                                        <a href="#climate-monitoring-mobile" style="padding-left:2em;" class="submenu sidemenu-level">Climate Monitoring <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="climate-monitoring-mobile">
+                                                                                                                                                <li><a href="/climate/climate-monitoring#daily-rainfall-and-temperature" class="anchor-link">Daily Rainfall and Temperature</a></li>
+                                                                                                                                                                                                <li><a href="/climate/climate-monthly-monitoring-products" class="anchor-link">Monthly Monitoring Products</a></li>
+                                                                                                                                                                                                <li><a href="http://seacm.pagasa.dost.gov.ph/" class="anchor-link">Southeast Asia Climate Monitoring</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/climate" style="padding-left:20px;" class="submenu   anchor-link">Climate Forum</a>
+                                                                                <!--  <a href="/climate" style="padding-left:20px;" class="submenu   anchor-link">Climate Forum</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                     
+                                        <a href="#climate-prediction-mobile" style="padding-left:2em;" class="submenu sidemenu-level">Climate Prediction <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="climate-prediction-mobile">
+                                                                                                                                                <li><a href="/climate/climate-prediction/10-day-climate-forecast" class="anchor-link">TenDay: Weather Forecast</a></li>
+                                                                                                                                                                                                <li><a href="/climate/climate-prediction/sub-seasonal2" class="anchor-link">Sub Seasonal</a></li>
+                                                                                                                                                                                                <li><a href="/climate/climate-prediction/seasonal-forecast" class="anchor-link">Seasonal Forecast</a></li>
+                                                                                                                                                                                                <li><a href="/climate/climate-prediction/specialized-forecast" class="anchor-link">Specialized Forecast</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/climate/climate-advisories" style="padding-left:20px;" class="submenu   anchor-link">Climate Advisories</a>
+                                                                                <!--  <a href="/climate/climate-advisories" style="padding-left:20px;" class="submenu   anchor-link">Climate Advisories</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                     
+                                        <a href="#el-nino-la-nina-mobile" style="padding-left:2em;" class="submenu sidemenu-level">El Niño / La Niña <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="el-nino-la-nina-mobile">
+                                                                                                                                                <li><a href="/climate/el-nino-la-nina/monitoring" class="anchor-link">Monitoring</a></li>
+                                                                                                                                                                                                <li><a href="/climate/el-nino-la-nina/advisories" class="anchor-link">Advisories</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                     
+                                        <a href="#climate-projection-mobile" style="padding-left:2em;" class="submenu sidemenu-level">Climate Projection <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="climate-projection-mobile">
+                                                                                                                                                <li><a href="/climate/climate-change/dynamic-downscaling" class="anchor-link">Dynamic Downscaling</a></li>
+                                                    <li><a href="/climate/climate-change/dynamic-downscaling/climap" class="anchor-link">CliMap</a></li>
+                                                                                                                                                                                                <li><a href="/climate/climate-change/statistical-downscaling" class="anchor-link">Statistical Downscaling</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/climate/climate-data" style="padding-left:20px;" class="submenu   anchor-link">Climate Data</a>
+                                                                                <!--  <a href="/climate/climate-data" style="padding-left:20px;" class="submenu   anchor-link">Climate Data</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#agri-weather-mobile' class='sidemenu'>Agri-Weather <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/agri-weather.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="agri-weather-mobile">
+                             
+                                <li>
+                                     
+                                        <a href="#climate-information-for-agriculture-mobile" style="padding-left:2em;" class="submenu sidemenu-level">Climate Information for Agriculture <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="climate-information-for-agriculture-mobile">
+                                                                                                                                                <li><a href="/agri-weather#farm-weather-forecast" class="anchor-link">Farm Weather Forecast</a></li>
+                                                                                                                                                                                                <li><a href="/weekend-special-outlook" class="anchor-link">Weekend/Special Farm Weather Forecast</a></li>
+                                                                                                                                                                                                <li><a href="/ten-day-regional-agri-weather" class="anchor-link">Ten-Day Regional Agri-Weather Information</a></li>
+                                                                                                                                                                                                <li><a href="/agri-weather/monthly-agroclimatic-review-and-outlook" class="anchor-link">Monthly Philippine Agro-Climatic Review and Outlook</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/agri-weather/impact-assessment-for-agriculture" style="padding-left:20px;" class="submenu   anchor-link">Impact Assessment for Agriculture</a>
+                                                                                <!--  <a href="/agri-weather/impact-assessment-for-agriculture" style="padding-left:20px;" class="submenu   anchor-link">Impact Assessment for Agriculture</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#astronomy-mobile' class='sidemenu'>Astronomy <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/astronomy.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="astronomy-mobile">
+                             
+                                <li>
+                                                                             
+                                            <a href="/astronomy#telescoping-and-stargazing" style="padding-left:20px;" class="submenu   anchor-link">Telescoping and Stargazing</a>
+                                                                                <!--  <a href="/astronomy#telescoping-and-stargazing" style="padding-left:20px;" class="submenu   anchor-link">Telescoping and Stargazing</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/astronomy#astronomy-in-the-philippines" style="padding-left:20px;" class="submenu   anchor-link">Astronomy in the Philippines</a>
+                                                                                <!--  <a href="/astronomy#astronomy-in-the-philippines" style="padding-left:20px;" class="submenu   anchor-link">Astronomy in the Philippines</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/astronomy#planetarium" style="padding-left:20px;" class="submenu   anchor-link">Planetarium</a>
+                                                                                <!--  <a href="/astronomy#planetarium" style="padding-left:20px;" class="submenu   anchor-link">Planetarium</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/astronomy#astronomical-observatory" style="padding-left:20px;" class="submenu   anchor-link">Astronomical Observatory</a>
+                                                                                <!--  <a href="/astronomy#astronomical-observatory" style="padding-left:20px;" class="submenu   anchor-link">Astronomical Observatory</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/astronomy#time-service" style="padding-left:20px;" class="submenu   anchor-link">Time Service</a>
+                                                                                <!--  <a href="/astronomy#time-service" style="padding-left:20px;" class="submenu   anchor-link">Time Service</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/astronomy#philippine-standard-time" style="padding-left:20px;" class="submenu   anchor-link">Philippine Standard Time</a>
+                                                                                <!--  <a href="/astronomy#philippine-standard-time" style="padding-left:20px;" class="submenu   anchor-link">Philippine Standard Time</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/astronomy/astronomical-diary" style="padding-left:20px;" class="submenu   anchor-link">Astronomical Diary</a>
+                                                                                <!--  <a href="/astronomy/astronomical-diary" style="padding-left:20px;" class="submenu   anchor-link">Astronomical Diary</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#regional-forecast-mobile' class='sidemenu'>Regional Forecast <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/regional-forecast.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="regional-forecast-mobile">
+                             
+                                <li>
+                                                                             
+                                            <a href="/regional-forecast/nlprsd" style="padding-left:20px;" class="submenu   anchor-link">Northern Luzon</a>
+                                                                                <!--  <a href="/regional-forecast/nlprsd" style="padding-left:20px;" class="submenu   anchor-link">Northern Luzon</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/regional-forecast/ncrprsd" style="padding-left:20px;" class="submenu   anchor-link">National Capital Region</a>
+                                                                                <!--  <a href="/regional-forecast/ncrprsd" style="padding-left:20px;" class="submenu   anchor-link">National Capital Region</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/regional-forecast/slprsd" style="padding-left:20px;" class="submenu   anchor-link">Southern Luzon</a>
+                                                                                <!--  <a href="/regional-forecast/slprsd" style="padding-left:20px;" class="submenu   anchor-link">Southern Luzon</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/regional-forecast/visprsd" style="padding-left:20px;" class="submenu   anchor-link">Visayas</a>
+                                                                                <!--  <a href="/regional-forecast/visprsd" style="padding-left:20px;" class="submenu   anchor-link">Visayas</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/regional-forecast/minprsd" style="padding-left:20px;" class="submenu   anchor-link">Mindanao</a>
+                                                                                <!--  <a href="/regional-forecast/minprsd" style="padding-left:20px;" class="submenu   anchor-link">Mindanao</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#products-and-services-mobile' class='sidemenu'>Products and Services <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/products-and-services.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="products-and-services-mobile">
+                             
+                                <li>
+                                                                             
+                                            <a href="/products-and-services/engineering-services" style="padding-left:20px;" class="submenu   anchor-link">Engineering Services</a>
+                                                                                <!--  <a href="/products-and-services/engineering-services" style="padding-left:20px;" class="submenu   anchor-link">Engineering Services</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/products-and-services/calibration-services" style="padding-left:20px;" class="submenu   anchor-link">Calibration Services</a>
+                                                                                <!--  <a href="/products-and-services/calibration-services" style="padding-left:20px;" class="submenu   anchor-link">Calibration Services</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/products-and-services/numerical-modelling-system" style="padding-left:20px;" class="submenu   anchor-link">Numerical Prediction Model</a>
+                                                                                <!--  <a href="/products-and-services/numerical-modelling-system" style="padding-left:20px;" class="submenu   anchor-link">Numerical Prediction Model</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/products-and-services/satellite" style="padding-left:20px;" class="submenu   anchor-link">Satellites</a>
+                                                                                <!--  <a href="/products-and-services/satellite" style="padding-left:20px;" class="submenu   anchor-link">Satellites</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="http://121.58.193.173:8080/" style="padding-left:20px;" class="submenu   anchor-link">Flood Monitoring for Metro Manila</a>
+                                                                                <!--  <a href="http://121.58.193.173:8080/" style="padding-left:20px;" class="submenu   anchor-link">Flood Monitoring for Metro Manila</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/products-and-services/risk-analysis-maps" style="padding-left:20px;" class="submenu   anchor-link">Risk Analysis Map</a>
+                                                                                <!--  <a href="/products-and-services/risk-analysis-maps" style="padding-left:20px;" class="submenu   anchor-link">Risk Analysis Map</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/products-and-services/flood-hazard-maps" style="padding-left:20px;" class="submenu   anchor-link">Flood Hazard Map</a>
+                                                                                <!--  <a href="/products-and-services/flood-hazard-maps" style="padding-left:20px;" class="submenu   anchor-link">Flood Hazard Map</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/products-and-services/severe-wind-maps" style="padding-left:20px;" class="submenu   anchor-link">Regional Severe Wind Hazard Maps</a>
+                                                                                <!--  <a href="/products-and-services/severe-wind-maps" style="padding-left:20px;" class="submenu   anchor-link">Regional Severe Wind Hazard Maps</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/products-and-services/hfdr" style="padding-left:20px;" class="submenu   anchor-link">High Frequency Doppler Radar</a>
+                                                                                <!--  <a href="/products-and-services/hfdr" style="padding-left:20px;" class="submenu   anchor-link">High Frequency Doppler Radar</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                    <li class="visible-xs">
+                                                <a href='/vacancy' class='sidemenu'>Vacancy <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/vacancy.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                                            </li>
+                                    <li class="visible-xs">
+                                                <a href='/gad-corner' class='sidemenu'>GAD Corner <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/gad-corner.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                                            </li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#learnings-mobile' class='sidemenu'>Learnings <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/learnings.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="learnings-mobile">
+                             
+                                <li>
+                                                                             
+                                            <a href="/learnings/publication" style="padding-left:20px;" class="submenu   anchor-link">Publication</a>
+                                                                                <!--  <a href="/learnings/publication" style="padding-left:20px;" class="submenu   anchor-link">Publication</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/learnings/faqs-and-trivias" style="padding-left:20px;" class="submenu   anchor-link">FAQs and Trivias</a>
+                                                                                <!--  <a href="/learnings/faqs-and-trivias" style="padding-left:20px;" class="submenu   anchor-link">FAQs and Trivias</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/learnings/learning-tools" style="padding-left:20px;" class="submenu   anchor-link">Learning Tools</a>
+                                                                                <!--  <a href="/learnings/learning-tools" style="padding-left:20px;" class="submenu   anchor-link">Learning Tools</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/learnings/research-and-development" style="padding-left:20px;" class="submenu   anchor-link">Research and Development</a>
+                                                                                <!--  <a href="/learnings/research-and-development" style="padding-left:20px;" class="submenu   anchor-link">Research and Development</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                     
+                                        <a href="#information-mobile" style="padding-left:2em;" class="submenu sidemenu-level">Information <span class="caret"></span></a>
+                                        <ul class="collapse list-unstyled sub-level" id="information-mobile">
+                                                                                                                                                <li><a href="/learnings/legend" class="anchor-link">Rainfall and Thunderstorm Warning System</a></li>
+                                                                                                                                                                                                <li><a href="/information/weather-terminologies" class="anchor-link">Weather Terminologies</a></li>
+                                                                                                                                                                                                <li><a href="/information/flood-forecasting-and-warning-system-river-basins" class="anchor-link">Flood Forecasting and Warning System for River Basins</a></li>
+                                                                                                                                                                                                <li><a href="/information/climate-philippines" class="anchor-link">Climate of the Philippines</a></li>
+                                                                                                                                                                                                <li><a href="/information/climate-change-in-the-philippines" class="anchor-link">Climate Change in the Philippines</a></li>
+                                                                                                                                                                                                <li><a href="/astronomy" class="anchor-link">Astronomy in the Philippines</a></li>
+                                                                                                                                                                                                <li><a href="/information/field-station-categories" class="anchor-link">Field Station Categories</a></li>
+                                                                                                                                                                                                <li><a href="/information/basic-cloud-seeding-operations" class="anchor-link">Basic Cloud Seeding Operations</a></li>
+                                                                                                                                                                                                <li><a href="/information/storm-surge" class="anchor-link">Storm Surge Information</a></li>
+                                                                                                                                    </ul>
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/learnings/legend" style="padding-left:20px;" class="submenu   anchor-link">Legend</a>
+                                                                                <!--  <a href="/learnings/legend" style="padding-left:20px;" class="submenu   anchor-link">Legend</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                    <li class="visible-xs">
+                         
+                        <a href='#about-us-mobile' class='sidemenu'>About Us <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/about-us.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                        <ul class="collapse list-unstyled sub-menu" id="about-us-mobile">
+                             
+                                <li>
+                                                                             
+                                            <a href="/contact-us" style="padding-left:20px;" class="submenu   anchor-link">Contact Us</a>
+                                                                                <!--  <a href="/contact-us" style="padding-left:20px;" class="submenu   anchor-link">Contact Us</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/about-us/national-meteorological-and-hydrological-services" style="padding-left:20px;" class="submenu   anchor-link">National Meteorological and Hydrological Services</a>
+                                                                                <!--  <a href="/about-us/national-meteorological-and-hydrological-services" style="padding-left:20px;" class="submenu   anchor-link">National Meteorological and Hydrological Services</a> -->
+                                                                    </li>
+                             
+                                <li>
+                                                                             
+                                            <a href="/about-us/related-linkages" style="padding-left:20px;" class="submenu   anchor-link">Related Linkages</a>
+                                                                                <!--  <a href="/about-us/related-linkages" style="padding-left:20px;" class="submenu   anchor-link">Related Linkages</a> -->
+                                                                    </li>
+                                                    </ul>
+                                            </li>
+                                <li class="dropdown">
+                    <a href="#" class="color-white dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Transparency Seal<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://pagasa.dost.gov.ph/about-us">About Us</a></li>
+                        <li><a href="https://pagasa.dost.gov.ph/mandate-and-functions">Mandate and Functions</a></li>
+                        <li><a href="https://pagasa.dost.gov.ph/aboutus/key-officials">PAGASA Key Officials</a></li>
+                        <li><a href="https://pagasa.dost.gov.ph/annual-reports">Annual Reports</a></li>
+                        <li><a href="https://pagasa.dost.gov.ph/accomplishment-reports">Accomplishment Reports</a></li>
+                        <!-- <li><a href="https://pagasa.dost.gov.ph/lddap-ada-reports">LDDAP-ADA Reports</a></li> -->
+                        <li><a href="https://pagasa.dost.gov.ph/annual-procurement-plan">Annual Procurement Plan</a></li>
+                        <li><a href="https://pagasa.dost.gov.ph/approved-budgets-and-corresponding-targets">Approved Budget and Corresponding Targets</a></li>
+                        <li><a href="https://pagasa.dost.gov.ph/major-programs-and-projects">Major Programs and Projects</a></li>
+                        <li><a href="https://pagasa.dost.gov.ph/status-implementation">Status of Implementations of Program/Projects</a></li>
+                        <li><a href="https://pagasa.dost.gov.ph/program-project-beneficiaries">Program/Projects Beneficiaries</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://pagasa.dost.gov.ph/products-and-services" class="color-white">Products and Services</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://pagasa.dost.gov.ph/privacy-notice" class="color-white">Privacy Notice</a></li>
+                <li><a href="https://pagasa.dost.gov.ph/accessibility" class="color-white">Accessibility</a></li>
+                <li><a href="https://pagasa.dost.gov.ph/contact-us" class="color-white">Contact Us</a></li>
+                <li><form name="psearch" action="https://www.google.com/search" method="get" onSubmit="siteSearch(this)" style="margin: 0px;padding: 0px;height: 0px;margin-right: 8px;">
+                    <input id="hiddenquery" type="hidden" name="q" />
+                    <input class="form-control" name="qfront" type="text" style="margin-top: 9px;height: 28px;border-radius: 2px;" value="" placeholder="Search PAGASA Website" /><br />
+                </form></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script type="text/javascript">
+var domainroot="https://bagong.pagasa.dost.gov.ph";
+var searchaction=["https://www.google.com/search"];
+function siteSearch(curobj){
+    document.getElementById("hiddenquery").value="site:"+domainroot+" "+curobj.qfront.value
+}
+</script>	<style type="text/css">
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+</style>
+<nav id="sidebar" class="hidden-xs"> 
+    <ul class="list-unstyled components">
+                <li>
+            <a href="#" class="sidemenu sidehide" id="show-sidebar">&nbsp; <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/bars.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"></a>
+        </li>
+                        <li>
+             
+            <a href='#weather' class='sidemenu'>Weather <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/weather.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="weather">
+                 
+                <li>
+                     
+                    <a href="#general-weather" style="padding-left:20px;" class="submenu sidemenu-level">General Weather <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="general-weather">
+                                                                                    <li><a href="/weather#daily-weather-forecast" class="anchor-link">Daily Weather Forecast</a></li>
+                                                                                                                <li><a href="/weather/weather-outlook-selected-philippine-cities" class="anchor-link">Weather Outlook Selected Philippine Cities</a></li>
+                                                                                                                <li><a href="/weather/weather-asian-cities-weather-forecast" class="anchor-link">Asian Cities Weather Forecast</a></li>
+                                                                                                                <li><a href="/weather/weather-outlook-selected-tourist-areas" class="anchor-link">Weather Outlook Selected Tourist Areas</a></li>
+                                                                                                                <li><a href="/weather/weather-outlook-weekly" class="anchor-link">Weekly Weather Outlook</a></li>
+                                                                                                                <li><a href="/weather/weather-advisory" class="anchor-link">Weather Advisory</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                    <a href="#aviation" style="padding-left:20px;" class="submenu sidemenu-level">Aviation <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="aviation">
+                                                                                    <li><a href="/aviation#sigmet" class="anchor-link">SIGMET</a></li>
+                                                                                                                <li><a href="/aviation/metar" class="anchor-link">METAR</a></li>
+                                                                                                                <li><a href="/aviation#terminal-aerodome-forecast" class="anchor-link">Terminal Aerodome Forecast</a></li>
+                                                                                                                <li><a href="/aviation#airways-and-terminal-forecast" class="anchor-link">Airways and Terminal Forecast</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                    <a href="#marine" style="padding-left:20px;" class="submenu sidemenu-level">Marine <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="marine">
+                                                                                    <li><a href="/marine/high-seas-forecast" class="anchor-link">High Seas and Offshore Waters Forecast</a></li>
+                                                                                                                <li><a href="/marine/gale-warning" class="anchor-link">Gale Warning</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/weather/heat-index" style="padding-left:20px;" class="submenu   anchor-link">Heat Index</a>
+                          
+                        <!-- <a href="/weather/heat-index" style="padding-left:20px;" class="submenu   anchor-link">Heat Index</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/weather/low-high-temperature" style="padding-left:20px;" class="submenu   anchor-link">Daily Temperature</a>
+                          
+                        <!-- <a href="/weather/low-high-temperature" style="padding-left:20px;" class="submenu   anchor-link">Daily Temperature</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+                <li>
+             
+            <a href='#flood' class='sidemenu'>Flood <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/flood.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="flood">
+                 
+                <li>
+                     
+                                                    <a href="/flood#flood-information" style="padding-left:20px;" class="submenu   anchor-link">Flood Information</a>
+                          
+                        <!-- <a href="/flood#flood-information" style="padding-left:20px;" class="submenu   anchor-link">Flood Information</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/flood#dam-information" style="padding-left:20px;" class="submenu   anchor-link">Dam Information</a>
+                          
+                        <!-- <a href="/flood#dam-information" style="padding-left:20px;" class="submenu   anchor-link">Dam Information</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/flood#projects" style="padding-left:20px;" class="submenu   anchor-link">Projects</a>
+                          
+                        <!-- <a href="/flood#projects" style="padding-left:20px;" class="submenu   anchor-link">Projects</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="https://bit.ly/hmd-datarequestportal" style="padding-left:20px;" class="submenu   anchor-link">Hydromet Data</a>
+                          
+                        <!-- <a href="https://bit.ly/hmd-datarequestportal" style="padding-left:20px;" class="submenu   anchor-link">Hydromet Data</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+                <li>
+             
+            <a href='#tropical-cyclone' class='sidemenu'>Tropical Cyclone <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/tropical-cyclone.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="tropical-cyclone">
+                 
+                <li>
+                     
+                                                    <a href="/tropical-cyclone-advisory-iframe" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Advisory</a>
+                          
+                        <!-- <a href="/tropical-cyclone/tropical-cyclone-advisory" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Advisory</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/tropical-cyclone/severe-weather-bulletin" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Bulletin</a>
+                          
+                        <!-- <a href="/tropical-cyclone/severe-weather-bulletin" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Bulletin</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/tropical-cyclone/severe-wind-impact-based-forecast" style="padding-left:20px;" class="submenu   anchor-link">Severe Wind Impact Based Forecast</a>
+                          
+                        <!-- <a href="/tropical-cyclone/severe-wind-impact-based-forecast" style="padding-left:20px;" class="submenu   anchor-link">Severe Wind Impact Based Forecast</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/tropical-cyclone/tropical-cyclone-warning-for-shipping" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Warning for Shipping</a>
+                          
+                        <!-- <a href="/tropical-cyclone/tropical-cyclone-warning-for-shipping" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Warning for Shipping</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/tropical-cyclone/forecast-storm-surge" style="padding-left:20px;" class="submenu   anchor-link">Forecast Storm Surge</a>
+                          
+                        <!-- <a href="/tropical-cyclone/forecast-storm-surge" style="padding-left:20px;" class="submenu   anchor-link">Forecast Storm Surge</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/tropical-cyclone/tropical-cyclone-warning-for-agriculture" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Warning for Agriculture</a>
+                          
+                        <!-- <a href="/tropical-cyclone/tropical-cyclone-warning-for-agriculture" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Warning for Agriculture</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/tropical-cyclone/tc-threat-potential-forecast" style="padding-left:20px;" class="submenu   anchor-link">TC-Threat Potential Forecast</a>
+                          
+                        <!-- <a href="/tropical-cyclone/tc-threat-potential-forecast" style="padding-left:20px;" class="submenu   anchor-link">TC-Threat Potential Forecast</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/climate/tropical-cyclone-associated-rainfall" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Associated Rainfall</a>
+                          
+                        <!-- <a href="/climate/tropical-cyclone-associated-rainfall" style="padding-left:20px;" class="submenu   anchor-link">Tropical Cyclone Associated Rainfall</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                    <a href="#tropical-cyclone-publications" style="padding-left:20px;" class="submenu sidemenu-level">Tropical Cyclone Publications <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="tropical-cyclone-publications">
+                                                                                    <li><a href="/tropical-cyclone/publications/annual-report" class="anchor-link">Annual Report on Philippine Tropical Cyclones</a></li>
+                                                                                                                <li><a href="/tropical-cyclone/publications/preliminary-report" class="anchor-link">Tropical Cyclone Preliminary Report</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/information/about-tropical-cyclone" style="padding-left:20px;" class="submenu   anchor-link">About Tropical Cyclone</a>
+                          
+                        <!-- <a href="/information/about-tropical-cyclone" style="padding-left:20px;" class="submenu   anchor-link">About Tropical Cyclone</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+                <li>
+             
+            <a href='#climate' class='sidemenu'>Climate <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/climate.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="climate">
+                 
+                <li>
+                     
+                    <a href="#climate-monitoring" style="padding-left:20px;" class="submenu sidemenu-level">Climate Monitoring <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="climate-monitoring">
+                                                                                    <li><a href="/climate/climate-monitoring#daily-rainfall-and-temperature" class="anchor-link">Daily Rainfall and Temperature</a></li>
+                                                                                                                <li><a href="/climate/climate-monthly-monitoring-products" class="anchor-link">Monthly Monitoring Products</a></li>
+                                                                                                                <li><a href="http://seacm.pagasa.dost.gov.ph/" class="anchor-link">Southeast Asia Climate Monitoring</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/climate" style="padding-left:20px;" class="submenu   anchor-link">Climate Forum</a>
+                          
+                        <!-- <a href="/climate" style="padding-left:20px;" class="submenu   anchor-link">Climate Forum</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                    <a href="#climate-prediction" style="padding-left:20px;" class="submenu sidemenu-level">Climate Prediction <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="climate-prediction">
+                                                                                    <li><a href="/climate/climate-prediction/10-day-climate-forecast" class="anchor-link">TenDay: Weather Forecast</a></li>
+                                                                                                                <li><a href="/climate/climate-prediction/sub-seasonal2" class="anchor-link">Sub Seasonal</a></li>
+                                                                                                                <li><a href="/climate/climate-prediction/seasonal-forecast" class="anchor-link">Seasonal Forecast</a></li>
+                                                                                                                <li><a href="/climate/climate-prediction/specialized-forecast" class="anchor-link">Specialized Forecast</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/climate/climate-advisories" style="padding-left:20px;" class="submenu   anchor-link">Climate Advisories</a>
+                          
+                        <!-- <a href="/climate/climate-advisories" style="padding-left:20px;" class="submenu   anchor-link">Climate Advisories</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                    <a href="#el-nino-la-nina" style="padding-left:20px;" class="submenu sidemenu-level">El Niño / La Niña <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="el-nino-la-nina">
+                                                                                    <li><a href="/climate/el-nino-la-nina/monitoring" class="anchor-link">Monitoring</a></li>
+                                                                                                                <li><a href="/climate/el-nino-la-nina/advisories" class="anchor-link">Advisories</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                    <a href="#climate-projection" style="padding-left:20px;" class="submenu sidemenu-level">Climate Projection <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="climate-projection">
+                                                                                    <li><a href="/climate/climate-change/dynamic-downscaling" class="anchor-link">Dynamic Downscaling</a></li>
+                                <li><a href="/climate/climate-change/dynamic-downscaling/climap" class="anchor-link">CliMap</a></li>
+                                <li><a href="/climate/climate-change/dynamic-downscaling/climap-v2" class="drop-list">CliMap v2.0</a></li>
+                                                                                                                <li><a href="/climate/climate-change/statistical-downscaling" class="anchor-link">Statistical Downscaling</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/climate/climate-data" style="padding-left:20px;" class="submenu   anchor-link">Climate Data</a>
+                          
+                        <!-- <a href="/climate/climate-data" style="padding-left:20px;" class="submenu   anchor-link">Climate Data</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+                <li>
+             
+            <a href='#agri-weather' class='sidemenu'>Agri-Weather <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/agri-weather.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="agri-weather">
+                 
+                <li>
+                     
+                    <a href="#climate-information-for-agriculture" style="padding-left:20px;" class="submenu sidemenu-level">Climate Information for Agriculture <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="climate-information-for-agriculture">
+                                                                                    <li><a href="/agri-weather#farm-weather-forecast" class="anchor-link">Farm Weather Forecast</a></li>
+                                                                                                                <li><a href="/weekend-special-outlook" class="anchor-link">Weekend/Special Farm Weather Forecast</a></li>
+                                                                                                                <li><a href="/ten-day-regional-agri-weather" class="anchor-link">Ten-Day Regional Agri-Weather Information</a></li>
+                                                                                                                <li><a href="/agri-weather/monthly-agroclimatic-review-and-outlook" class="anchor-link">Monthly Philippine Agro-Climatic Review and Outlook</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/agri-weather/impact-assessment-for-agriculture" style="padding-left:20px;" class="submenu   anchor-link">Impact Assessment for Agriculture</a>
+                          
+                        <!-- <a href="/agri-weather/impact-assessment-for-agriculture" style="padding-left:20px;" class="submenu   anchor-link">Impact Assessment for Agriculture</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+                <li>
+             
+            <a href='#astronomy' class='sidemenu'>Astronomy <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/astronomy.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="astronomy">
+                 
+                <li>
+                     
+                                                    <a href="/astronomy#telescoping-and-stargazing" style="padding-left:20px;" class="submenu   anchor-link">Telescoping and Stargazing</a>
+                          
+                        <!-- <a href="/astronomy#telescoping-and-stargazing" style="padding-left:20px;" class="submenu   anchor-link">Telescoping and Stargazing</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/astronomy#astronomy-in-the-philippines" style="padding-left:20px;" class="submenu   anchor-link">Astronomy in the Philippines</a>
+                          
+                        <!-- <a href="/astronomy#astronomy-in-the-philippines" style="padding-left:20px;" class="submenu   anchor-link">Astronomy in the Philippines</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/astronomy#planetarium" style="padding-left:20px;" class="submenu   anchor-link">Planetarium</a>
+                          
+                        <!-- <a href="/astronomy#planetarium" style="padding-left:20px;" class="submenu   anchor-link">Planetarium</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/astronomy#astronomical-observatory" style="padding-left:20px;" class="submenu   anchor-link">Astronomical Observatory</a>
+                          
+                        <!-- <a href="/astronomy#astronomical-observatory" style="padding-left:20px;" class="submenu   anchor-link">Astronomical Observatory</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/astronomy#time-service" style="padding-left:20px;" class="submenu   anchor-link">Time Service</a>
+                          
+                        <!-- <a href="/astronomy#time-service" style="padding-left:20px;" class="submenu   anchor-link">Time Service</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/astronomy#philippine-standard-time" style="padding-left:20px;" class="submenu   anchor-link">Philippine Standard Time</a>
+                          
+                        <!-- <a href="/astronomy#philippine-standard-time" style="padding-left:20px;" class="submenu   anchor-link">Philippine Standard Time</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/astronomy/astronomical-diary" style="padding-left:20px;" class="submenu   anchor-link">Astronomical Diary</a>
+                          
+                        <!-- <a href="/astronomy/astronomical-diary" style="padding-left:20px;" class="submenu   anchor-link">Astronomical Diary</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+                <li>
+             
+            <a href='#regional-forecast' class='sidemenu'>Regional Forecast <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/regional-forecast.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="regional-forecast">
+                 
+                <li>
+                     
+                                                    <a href="/regional-forecast/nlprsd" style="padding-left:20px;" class="submenu   anchor-link">Northern Luzon</a>
+                          
+                        <!-- <a href="/regional-forecast/nlprsd" style="padding-left:20px;" class="submenu   anchor-link">Northern Luzon</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/regional-forecast/ncrprsd" style="padding-left:20px;" class="submenu   anchor-link">National Capital Region</a>
+                          
+                        <!-- <a href="/regional-forecast/ncrprsd" style="padding-left:20px;" class="submenu   anchor-link">National Capital Region</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/regional-forecast/slprsd" style="padding-left:20px;" class="submenu   anchor-link">Southern Luzon</a>
+                          
+                        <!-- <a href="/regional-forecast/slprsd" style="padding-left:20px;" class="submenu   anchor-link">Southern Luzon</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/regional-forecast/visprsd" style="padding-left:20px;" class="submenu   anchor-link">Visayas</a>
+                          
+                        <!-- <a href="/regional-forecast/visprsd" style="padding-left:20px;" class="submenu   anchor-link">Visayas</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/regional-forecast/minprsd" style="padding-left:20px;" class="submenu   anchor-link">Mindanao</a>
+                          
+                        <!-- <a href="/regional-forecast/minprsd" style="padding-left:20px;" class="submenu   anchor-link">Mindanao</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+                <li>
+             
+            <a href='#products-and-services' class='sidemenu'>Products and Services <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/products-and-services.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="products-and-services">
+                 
+                <li>
+                     
+                                                    <a href="/products-and-services/engineering-services" style="padding-left:20px;" class="submenu   anchor-link">Engineering Services</a>
+                          
+                        <!-- <a href="/products-and-services/engineering-services" style="padding-left:20px;" class="submenu   anchor-link">Engineering Services</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/products-and-services/calibration-services" style="padding-left:20px;" class="submenu   anchor-link">Calibration Services</a>
+                          
+                        <!-- <a href="/products-and-services/calibration-services" style="padding-left:20px;" class="submenu   anchor-link">Calibration Services</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/products-and-services/numerical-modelling-system" style="padding-left:20px;" class="submenu   anchor-link">Numerical Prediction Model</a>
+                          
+                        <!-- <a href="/products-and-services/numerical-modelling-system" style="padding-left:20px;" class="submenu   anchor-link">Numerical Prediction Model</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/products-and-services/satellite" style="padding-left:20px;" class="submenu   anchor-link">Satellites</a>
+                          
+                        <!-- <a href="/products-and-services/satellite" style="padding-left:20px;" class="submenu   anchor-link">Satellites</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="http://121.58.193.173:8080/" style="padding-left:20px;" class="submenu   anchor-link">Flood Monitoring for Metro Manila</a>
+                          
+                        <!-- <a href="http://121.58.193.173:8080/" style="padding-left:20px;" class="submenu   anchor-link">Flood Monitoring for Metro Manila</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/products-and-services/risk-analysis-maps" style="padding-left:20px;" class="submenu   anchor-link">Risk Analysis Map</a>
+                          
+                        <!-- <a href="/products-and-services/risk-analysis-maps" style="padding-left:20px;" class="submenu   anchor-link">Risk Analysis Map</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/products-and-services/flood-hazard-maps" style="padding-left:20px;" class="submenu   anchor-link">Flood Hazard Map</a>
+                          
+                        <!-- <a href="/products-and-services/flood-hazard-maps" style="padding-left:20px;" class="submenu   anchor-link">Flood Hazard Map</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/products-and-services/severe-wind-maps" style="padding-left:20px;" class="submenu   anchor-link">Regional Severe Wind Hazard Maps</a>
+                          
+                        <!-- <a href="/products-and-services/severe-wind-maps" style="padding-left:20px;" class="submenu   anchor-link">Regional Severe Wind Hazard Maps</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/products-and-services/hfdr" style="padding-left:20px;" class="submenu   anchor-link">High Frequency Doppler Radar</a>
+                          
+                        <!-- <a href="/products-and-services/hfdr" style="padding-left:20px;" class="submenu   anchor-link">High Frequency Doppler Radar</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+                <li>
+                        <a href='/vacancy' class='sidemenu'>Vacancy <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/vacancy.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                    </li>
+                <li>
+                        <a href='/gad-corner' class='sidemenu'>GAD Corner <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/gad-corner.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+                    </li>
+                <li>
+             
+            <a href='#learnings' class='sidemenu'>Learnings <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/learnings.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="learnings">
+                 
+                <li>
+                     
+                                                    <a href="/learnings/publication" style="padding-left:20px;" class="submenu   anchor-link">Publication</a>
+                          
+                        <!-- <a href="/learnings/publication" style="padding-left:20px;" class="submenu   anchor-link">Publication</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/learnings/faqs-and-trivias" style="padding-left:20px;" class="submenu   anchor-link">FAQs and Trivias</a>
+                          
+                        <!-- <a href="/learnings/faqs-and-trivias" style="padding-left:20px;" class="submenu   anchor-link">FAQs and Trivias</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/learnings/learning-tools" style="padding-left:20px;" class="submenu   anchor-link">Learning Tools</a>
+                          
+                        <!-- <a href="/learnings/learning-tools" style="padding-left:20px;" class="submenu   anchor-link">Learning Tools</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/learnings/research-and-development" style="padding-left:20px;" class="submenu   anchor-link">Research and Development</a>
+                          
+                        <!-- <a href="/learnings/research-and-development" style="padding-left:20px;" class="submenu   anchor-link">Research and Development</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                    <a href="#information" style="padding-left:20px;" class="submenu sidemenu-level">Information <span class="caret"></span></a>
+                    <ul class="collapse list-unstyled sub-level" id="information">
+                                                                                    <li><a href="/learnings/legend" class="anchor-link">Rainfall and Thunderstorm Warning System</a></li>
+                                                                                                                <li><a href="/information/weather-terminologies" class="anchor-link">Weather Terminologies</a></li>
+                                                                                                                <li><a href="/information/flood-forecasting-and-warning-system-river-basins" class="anchor-link">Flood Forecasting and Warning System for River Basins</a></li>
+                                                                                                                <li><a href="/information/climate-philippines" class="anchor-link">Climate of the Philippines</a></li>
+                                                                                                                <li><a href="/information/climate-change-in-the-philippines" class="anchor-link">Climate Change in the Philippines</a></li>
+                                                                                                                <li><a href="/astronomy" class="anchor-link">Astronomy in the Philippines</a></li>
+                                                                                                                <li><a href="/information/field-station-categories" class="anchor-link">Field Station Categories</a></li>
+                                                                                                                <li><a href="/information/basic-cloud-seeding-operations" class="anchor-link">Basic Cloud Seeding Operations</a></li>
+                                                                                                                <li><a href="/information/storm-surge" class="anchor-link">Storm Surge Information</a></li>
+                                                                        </ul>
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/learnings/legend" style="padding-left:20px;" class="submenu   anchor-link">Legend</a>
+                          
+                        <!-- <a href="/learnings/legend" style="padding-left:20px;" class="submenu   anchor-link">Legend</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+                <li>
+             
+            <a href='#about-us' class='sidemenu'>About Us <span class="caret"></span> <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/icons/sidebar/about-us.png" alt="" class="menu-icon pull-right" style="margin-top:-6px;"/></a>
+            <ul class="collapse list-unstyled sub-menu" id="about-us">
+                 
+                <li>
+                     
+                                                    <a href="/contact-us" style="padding-left:20px;" class="submenu   anchor-link">Contact Us</a>
+                          
+                        <!-- <a href="/contact-us" style="padding-left:20px;" class="submenu   anchor-link">Contact Us</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/about-us/national-meteorological-and-hydrological-services" style="padding-left:20px;" class="submenu   anchor-link">National Meteorological and Hydrological Services</a>
+                          
+                        <!-- <a href="/about-us/national-meteorological-and-hydrological-services" style="padding-left:20px;" class="submenu   anchor-link">National Meteorological and Hydrological Services</a> -->
+                                    </li>
+                 
+                <li>
+                     
+                                                    <a href="/about-us/related-linkages" style="padding-left:20px;" class="submenu   anchor-link">Related Linkages</a>
+                          
+                        <!-- <a href="/about-us/related-linkages" style="padding-left:20px;" class="submenu   anchor-link">Related Linkages</a> -->
+                                    </li>
+                            </ul>
+                    </li>
+            </ul>
+</nav>	<style>
+    .tc-badge {
+        float: right;
+        margin-top: -25px;
+        margin-right: 5px;
+        background: green;
+    }
+</style>
+<div class="header">
+    <div class="pagasa-logo redirect-link">
+        <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/images/pagasa-logo.png">
+    </div>
+    <div class="pagasa-text redirect-link">
+        <div class="republic">Department of Science and Technology</div>
+        <div class="pagasa">Philippine Atmospheric, Geophysical and<br>Astronomical Services Administration</div>
+    </div>
+    <a href="https://bagong.pagasa.dost.gov.ph/astronomy#philippine-standard-time" class="hidden-xs">
+        <div class='pagasa-phst'>
+            <div class="title">Philippine Standard Time</div>
+            <div class="time" id='time'>04:30:20 PM</div>
+            <div class="date">5 August 2026</div>
+        </div>
+    </a>
+    <div class="hidden-xs pagasa-menu">
+        <ul class="pagasa-ul-menu">
+                        <li class="dropdown">
+                <a href="https://pagasa.dost.gov.ph/weather"
+                    class=" dropbtn text-uppercase">Weather <i
+                        class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <ul class="pagasa-ul-menu-2nd">
+                                                                        <li class="dropdown-3rd">
+                            <a href="/weather" class="drop-list">General Weather<i
+                                    class="fa fa-caret-right"></i></a>
+                            <ul class="dropdown-content-3rd">
+                                                                                                            <li>
+                                            <a href="/weather#daily-weather-forecast" class="drop-list anchor-link">Daily Weather Forecast</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/weather/weather-outlook-selected-philippine-cities" class="drop-list anchor-link">Weather Outlook Selected Philippine Cities</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/weather/weather-asian-cities-weather-forecast" class="drop-list anchor-link">Asian Cities Weather Forecast</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/weather/weather-outlook-selected-tourist-areas" class="drop-list anchor-link">Weather Outlook Selected Tourist Areas</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/weather/weather-outlook-weekly" class="drop-list anchor-link">Weekly Weather Outlook</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/weather/weather-advisory" class="drop-list anchor-link">Weather Advisory</a>
+                                        </li>
+                                                                                                </ul>
+                        </li>
+                                                                                                <li class="dropdown-3rd">
+                            <a href="/aviation" class="drop-list">Aviation<i
+                                    class="fa fa-caret-right"></i></a>
+                            <ul class="dropdown-content-3rd">
+                                                                                                            <li>
+                                            <a href="/aviation#sigmet" class="drop-list anchor-link">SIGMET</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/aviation/metar" class="drop-list anchor-link">METAR</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/aviation#terminal-aerodome-forecast" class="drop-list anchor-link">Terminal Aerodome Forecast</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/aviation#airways-and-terminal-forecast" class="drop-list anchor-link">Airways and Terminal Forecast</a>
+                                        </li>
+                                                                                                </ul>
+                        </li>
+                                                                                                <li class="dropdown-3rd">
+                            <a href="#" class="drop-list">Marine<i
+                                    class="fa fa-caret-right"></i></a>
+                            <ul class="dropdown-content-3rd">
+                                                                                                            <li>
+                                            <a href="/marine/high-seas-forecast" class="drop-list anchor-link">High Seas and Offshore Waters Forecast</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/marine/gale-warning" class="drop-list anchor-link">Gale Warning</a>
+                                        </li>
+                                                                                                </ul>
+                        </li>
+                                                                                                                                    <li><a href="/weather/heat-index" class="drop-list anchor-link">Heat Index</a> </li>
+                                                                                                                                                                <li><a href="/weather/low-high-temperature" class="drop-list anchor-link">Daily Temperature</a> </li>
+                                                                                                </ul>
+                </div>
+            </li>
+                        <li class="dropdown">
+                <a href="https://pagasa.dost.gov.ph/flood"
+                    class=" dropbtn text-uppercase">Flood <i
+                        class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <ul class="pagasa-ul-menu-2nd">
+                                                                                                            <li><a href="/flood#flood-information" class="drop-list anchor-link">Flood Information</a> </li>
+                                                                                                                                                                <li><a href="/flood#dam-information" class="drop-list anchor-link">Dam Information</a> </li>
+                                                                                                                                                                <li><a href="/flood#projects" class="drop-list anchor-link">Projects</a> </li>
+                                                                                                                                                                <li><a href="https://bit.ly/hmd-datarequestportal" class="drop-list anchor-link">Hydromet Data</a> </li>
+                                                                                                </ul>
+                </div>
+            </li>
+                        <li class="dropdown">
+                <a href="https://pagasa.dost.gov.ph/#"
+                    class=" dropbtn text-uppercase">Tropical Cyclone <i
+                        class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <ul class="pagasa-ul-menu-2nd">
+                                                                                                            <li>
+                                    <!-- <a href="/tropical-cyclone/tropical-cyclone-advisory" class="drop-list anchor-link">Tropical Cyclone Advisory</a> -->
+                                    <a href="/tropical-cyclone-advisory-iframe" class="drop-list anchor-link">Tropical Cyclone Advisory</a>
+                                                                    </li>
+                                                                                                                                                                <li>
+                                    <a href="/tropical-cyclone/severe-weather-bulletin" class="drop-list anchor-link">Tropical Cyclone Bulletin</a>
+                                    <!-- <a href="/tropical-cyclone-bulletin-iframe" class="drop-list anchor-link">Tropical Cyclone Bulletin</a> -->
+                                                                            <span class="label label-success tc-badge">Active</span>
+                                                                   </li>
+                                                                                                                                                                <li>
+                                    <!-- <a href="/tropical-cyclone/severe-wind-impact-based-forecast" class="drop-list anchor-link">Severe Wind Impact Based Forecast</a> -->
+                                    <a href="/tropical-cyclone/severe-wind-impact-based-forecast" class="drop-list anchor-link">Severe Wind Impact Based Forecast</a>
+                                                                            <span class="label label-success tc-badge">Active</span>
+                                                                    </li>
+                                                                                                                                                                <li>
+                                    <a href="/tropical-cyclone/tropical-cyclone-warning-for-shipping" class="drop-list anchor-link">Tropical Cyclone Warning for Shipping</a>
+                                    <!-- <a href="/tropical-cyclone-shipping-iframe" class="drop-list anchor-link">Tropical Cyclone Warning for Shipping</a> -->
+                                                                            <span class="label label-success tc-badge">Active</span> 
+                                                                    </li>
+
+                                                                                                                                                                <li><a href="/tropical-cyclone/forecast-storm-surge" class="drop-list anchor-link">Forecast Storm Surge</a> </li>
+                                                                                                                                                                <li>
+                                    <a href="/tropical-cyclone/tropical-cyclone-warning-for-agriculture" class="drop-list anchor-link">Tropical Cyclone Warning for Agriculture</a>
+                                    <!-- <a href="/tropical-cyclone-shipping-iframe" class="drop-list anchor-link">Tropical Cyclone Warning for Agriculture</a> -->
+                                                                            <span class="label label-success tc-badge">Active</span> 
+                                                                    </li>
+
+                                                                                                                                                                <li><a href="/tropical-cyclone/tc-threat-potential-forecast" class="drop-list anchor-link">TC-Threat Potential Forecast</a> </li>
+                                                                                                                                                                <li><a href="/climate/tropical-cyclone-associated-rainfall" class="drop-list anchor-link">Tropical Cyclone Associated Rainfall</a> </li>
+                                                                                                                            <li class="dropdown-3rd">
+                            <a href="/tropical-cyclone-publications" class="drop-list">Tropical Cyclone Publications<i
+                                    class="fa fa-caret-right"></i></a>
+                            <ul class="dropdown-content-3rd">
+                                                                                                            <li>
+                                            <a href="/tropical-cyclone/publications/annual-report" class="drop-list anchor-link">Annual Report on Philippine Tropical Cyclones</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/tropical-cyclone/publications/preliminary-report" class="drop-list anchor-link">Tropical Cyclone Preliminary Report</a>
+                                        </li>
+                                                                                                </ul>
+                        </li>
+                                                                                                                                    <li><a href="/information/about-tropical-cyclone" class="drop-list anchor-link">About Tropical Cyclone</a> </li>
+                                                                                                </ul>
+                </div>
+            </li>
+                        <li class="dropdown">
+                <a href="https://pagasa.dost.gov.ph/climate"
+                    class=" dropbtn text-uppercase">Climate <i
+                        class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <ul class="pagasa-ul-menu-2nd">
+                                                                        <li class="dropdown-3rd">
+                            <a href="/climate/climate-monitoring" class="drop-list">Climate Monitoring<i
+                                    class="fa fa-caret-right"></i></a>
+                            <ul class="dropdown-content-3rd">
+                                                                                                            <li>
+                                            <a href="/climate/climate-monitoring#daily-rainfall-and-temperature" class="drop-list anchor-link">Daily Rainfall and Temperature</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/climate/climate-monthly-monitoring-products" class="drop-list anchor-link">Monthly Monitoring Products</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="http://seacm.pagasa.dost.gov.ph/" class="drop-list anchor-link">Southeast Asia Climate Monitoring</a>
+                                        </li>
+                                                                                                </ul>
+                        </li>
+                                                                                                                                    <li><a href="/climate" class="drop-list anchor-link">Climate Forum</a> </li>
+                                                                                                                            <li class="dropdown-3rd">
+                            <a href="#" class="drop-list">Climate Prediction<i
+                                    class="fa fa-caret-right"></i></a>
+                            <ul class="dropdown-content-3rd">
+                                                                                                            <li>
+                                            <a href="/climate/climate-prediction/10-day-climate-forecast" class="drop-list anchor-link">TenDay: Weather Forecast</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/climate/climate-prediction/sub-seasonal2" class="drop-list anchor-link">Sub Seasonal</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/climate/climate-prediction/seasonal-forecast" class="drop-list anchor-link">Seasonal Forecast</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/climate/climate-prediction/specialized-forecast" class="drop-list anchor-link">Specialized Forecast</a>
+                                        </li>
+                                                                                                </ul>
+                        </li>
+                                                                                                                                    <li><a href="/climate/climate-advisories" class="drop-list anchor-link">Climate Advisories</a> </li>
+                                                                                                                            <li class="dropdown-3rd">
+                            <a href="#" class="drop-list">El Niño / La Niña<i
+                                    class="fa fa-caret-right"></i></a>
+                            <ul class="dropdown-content-3rd">
+                                                                                                            <li>
+                                            <a href="/climate/el-nino-la-nina/monitoring" class="drop-list anchor-link">Monitoring</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/climate/el-nino-la-nina/advisories" class="drop-list anchor-link">Advisories</a>
+                                        </li>
+                                                                                                </ul>
+                        </li>
+                                                                                                <li class="dropdown-3rd">
+                            <a href="#" class="drop-list">Climate Projection<i
+                                    class="fa fa-caret-right"></i></a>
+                            <ul class="dropdown-content-3rd">
+                                                                                                            <li class="dropdown-4th">
+                                            <a href="/climate/climate-change/dynamic-downscaling" class="drop-list">Dynamic Downscaling<i
+                                                class="fa fa-caret-right"></i></a>
+                                            <ul class="dropdown-content-4th">
+                                                <li>
+                                                    <a href="/climate/climate-change/dynamic-downscaling/climap" class="drop-list">CliMap</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/climate/climate-change/dynamic-downscaling/climap-v2" class="drop-list">CliMap v2.0</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/climate/climate-change/statistical-downscaling" class="drop-list anchor-link">Statistical Downscaling</a>
+                                        </li>
+                                                                                                </ul>
+                        </li>
+                                                                                                                                    <li><a href="/climate/climate-data" class="drop-list anchor-link">Climate Data</a> </li>
+                                                                                                </ul>
+                </div>
+            </li>
+                        <li class="dropdown">
+                <a href="https://pagasa.dost.gov.ph/agri-weather"
+                    class=" dropbtn text-uppercase">Agri-Weather <i
+                        class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <ul class="pagasa-ul-menu-2nd">
+                                                                        <li class="dropdown-3rd">
+                            <a href="#" class="drop-list">Climate Information for Agriculture<i
+                                    class="fa fa-caret-right"></i></a>
+                            <ul class="dropdown-content-3rd">
+                                                                                                            <li>
+                                            <a href="/agri-weather#farm-weather-forecast" class="drop-list anchor-link">Farm Weather Forecast</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/weekend-special-outlook" class="drop-list anchor-link">Weekend/Special Farm Weather Forecast</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/ten-day-regional-agri-weather" class="drop-list anchor-link">Ten-Day Regional Agri-Weather Information</a>
+                                        </li>
+                                                                                                                                                <li>
+                                            <a href="/agri-weather/monthly-agroclimatic-review-and-outlook" class="drop-list anchor-link">Monthly Philippine Agro-Climatic Review and Outlook</a>
+                                        </li>
+                                                                                                </ul>
+                        </li>
+                                                                                                                                    <li><a href="/agri-weather/impact-assessment-for-agriculture" class="drop-list anchor-link">Impact Assessment for Agriculture</a> </li>
+                                                                                                </ul>
+                </div>
+            </li>
+                        <li class="dropdown">
+                <a href="https://pagasa.dost.gov.ph/astronomy"
+                    class=" dropbtn text-uppercase">Astronomy <i
+                        class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <ul class="pagasa-ul-menu-2nd">
+                                                                                                            <li><a href="/astronomy#telescoping-and-stargazing" class="drop-list anchor-link">Telescoping and Stargazing</a> </li>
+                                                                                                                                                                <li><a href="/astronomy#astronomy-in-the-philippines" class="drop-list anchor-link">Astronomy in the Philippines</a> </li>
+                                                                                                                                                                <li><a href="/astronomy#planetarium" class="drop-list anchor-link">Planetarium</a> </li>
+                                                                                                                                                                <li><a href="/astronomy#astronomical-observatory" class="drop-list anchor-link">Astronomical Observatory</a> </li>
+                                                                                                                                                                <li><a href="/astronomy#time-service" class="drop-list anchor-link">Time Service</a> </li>
+                                                                                                                                                                <li><a href="/astronomy#philippine-standard-time" class="drop-list anchor-link">Philippine Standard Time</a> </li>
+                                                                                                                                                                <li><a href="/astronomy/astronomical-diary" class="drop-list anchor-link">Astronomical Diary</a> </li>
+                                                                                                </ul>
+                </div>
+            </li>
+                        <li class="dropdown">
+                <a href="https://pagasa.dost.gov.ph/#"
+                    class=" dropbtn text-uppercase">Regional Forecast <i
+                        class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <ul class="pagasa-ul-menu-2nd">
+                                                                                                            <li><a href="/regional-forecast/nlprsd" class="drop-list anchor-link">Northern Luzon</a> </li>
+                                                                                                                                                                <li><a href="/regional-forecast/ncrprsd" class="drop-list anchor-link">National Capital Region</a> </li>
+                                                                                                                                                                <li><a href="/regional-forecast/slprsd" class="drop-list anchor-link">Southern Luzon</a> </li>
+                                                                                                                                                                <li><a href="/regional-forecast/visprsd" class="drop-list anchor-link">Visayas</a> </li>
+                                                                                                                                                                <li><a href="/regional-forecast/minprsd" class="drop-list anchor-link">Mindanao</a> </li>
+                                                                                                </ul>
+                </div>
+            </li>
+                    </ul>
+    </div>
+</div>	<div class="container-fluid container-space">
+		<div class='row agriculture-page'>
+
+    <div class="col-md-12 fixed-sidebar  col-lg-10 col-lg-offset-1">
+        <div class="col-md-12 article-header">
+            Tropical Cyclone Warning for Agriculture
+        </div> 
+        <div class="col-md-12 article-content">
+            <div class='col-md-12'>
+                                <style type="text/css">
+.header2 {
+    font-size:16px!important;
+}
+.storm-container {
+    max-width: 1100px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+.storm-description {
+    padding: 10px;
+    font-size: 14px;
+}
+.storm-content {
+    display: flex;
+}
+.forecast-table {
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.forecast-table thead th {
+    font-size: 14px;
+    word-wrap: break-word;
+}
+</style>
+
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active">
+                        <a href="#tcwb__0" role="tab" data-toggle="tab">TCWA NO. 3 TROPICAL STORM “MAYMAY”</a>
+                    </li>
+                                    </ul>
+        <div class="tab-content" style='border:0px solid #ddd;'>
+                            <div role="tabpanel" class="tab-pane active" id="tcwb__0">
+                    <a href="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/files/agriculture/tropical_cyclone/pdf/tc_agriculture_6a72dc9f04859.pdf" target="_blank" class="pull-right">
+                        <i class="fa fa-file-pdf-o fa-2x fa-fw"></i>
+                    </a>
+                    <div class="row">
+                        <br>
+                        <div class="col-md-8 text-center">
+                            <h3>
+                                TROPICAL CYCLONE WARNING<br>
+                                <small><strong>TCWA NO. 3 TROPICAL STORM “MAYMAY”</strong></small>
+                            </h3>
+                        </div>
+                        <div class="col-md-4 text-right">
+                            <h6><b>INILABAS 2:00 PM 05 AGOSTO 2026                MAY BISA HANGGANG 5:00 PM MAMAYA</b></h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                                                                                        <div class="panel">
+                                    <div class="header2 panel-heading">SYNOPSIS</div>
+                                    <div class="panel-body">
+                                        <p>BAHAGYANG LUMAKAS ANG BAGYONG “MAYMAY” HABANG PABAGO-BAGO ANG PAGKILOS SA KARAGATAN NG KANLURAN NG ILOCOS SUR.</p>
+                                    </div>
+                                </div>
+                                                            <div class="panel">
+                                    <div class="header2 panel-heading">LOKASYON</div>
+                                    <div class="panel-body">
+                                        <p>Kaninang 1:00 PM, ito ay nasa 160 km Kanluran Timog-kanluran ng Sinait, Ilocos Sur</p>
+                                    </div>
+                                </div>
+                                                            <div class="panel">
+                                    <div class="header2 panel-heading">COORDINATES</div>
+                                    <div class="panel-body">
+                                        <p>17.6°N, 119.0°E</p>
+                                    </div>
+                                </div>
+                                                            <div class="panel">
+                                    <div class="header2 panel-heading">TAGLAY NA LAKAS NG HANGIN</div>
+                                    <div class="panel-body">
+                                        <p>75 km/h malapit sa gitna        PAGBUGSO NG HANGIN:	90 km/h</p>
+                                    </div>
+                                </div>
+                                                            <div class="panel">
+                                    <div class="header2 panel-heading">PAGKILOS</div>
+                                    <div class="panel-body">
+                                        <p>Mabagal pa-hilagang silangan</p>
+                                    </div>
+                                </div>
+                                                    </div>
+                        <div class="col-md-6">
+                            <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/files/agriculture/tropical_cyclone/6a72dc9f4e16a_6a72dc9f4e1dd.jpg" class="img-responsive image-preview">
+                        </div>
+                    </div>
+                    <div class="row">
+                                                <div class="col-md-6">
+                            <div class="panel">
+                                <div class="header2 panel-heading">Babala ng Bagyo I</div>
+                                <div class="panel-body">
+                                    <img src="https://pubfiles.pagasa.dost.gov.ph/pagasaweb/files/agriculture/tropical_cyclone/babala_bgyo_img_a_6a72dc9f58b28.jpeg" class="img-responsive image-preview">
+                                </div>
+                            </div>
+                        </div>
+                        
+                                            </div>
+                    <div class="panel">
+                                                <div class="header2 panel-heading">TINATAYANG LUGAR NA DADAANAN NG BAGYO</div>
+                        <div class="panel-body">
+                            <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="background-color:#00b050"><strong><span style="color:black">TINATAYANG LUGAR NA DADAANAN NG BAGYO</span></strong></span></span></span>
+<table border="1" cellspacing="0" class="MsoTable15Grid6ColorfulAccent6" style="border-collapse:collapse; border:solid #a8d08d 1.0pt">
+	<tbody>
+		<tr>
+			<td style="background-color:#d9d9d9; height:28.6pt; text-align:center; width:100.2pt"> </td>
+			<td style="background-color:#d9d9d9; height:28.6pt; text-align:center; width:38.4pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">LAT</span></strong><br />
+			<strong><span style="color:black">(°N)</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:28.6pt; text-align:center; width:39.7pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">LONG</span></strong><br />
+			<strong><span style="color:black">(°E)</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:28.6pt; text-align:center; width:182.95pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">LOKASYON</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:28.6pt; text-align:center; width:63.75pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">LAKAS</span></strong><br />
+			<strong><span style="color:black">(km/h)</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:28.6pt; text-align:center; width:97.8pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">KATEGORYA</span></strong></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#e2efd9; text-align:center; width:100.2pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">BUKAS NG UMAGA: </span></strong></span></span></td>
+			<td style="background-color:#e2efd9; text-align:center; width:38.4pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">17.0</span></span></span></td>
+			<td style="background-color:#e2efd9; text-align:center; width:39.7pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">121.3</span></span></span></td>
+			<td style="background-color:#e2efd9; text-align:center; width:182.95pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Nasa Aguinaldo, Ifugao</span></span></span></td>
+			<td style="background-color:#e2efd9; text-align:center; width:63.75pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">45</span></span></span></td>
+			<td style="background-color:#e2efd9; text-align:center; width:97.8pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">TD</span></span></span></td>
+		</tr>
+	</tbody>
+</table>
+                        </div>
+                                                <br>
+                                                </div>
+                                        <div class="panel">
+                                            </div>
+                    <div class="panel">
+                                                <div class="panel-body">
+                            <strong>PAGKILOS NG BAGYO:</strong>
+                            <p><ul>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Dapat bigyang-diin na ang malalakas na pag-ulan at mapaminsalang hangin ay maaari pa ring maranasan sa mga lugar na nasa labas ng landfall point at ng forecast confidence cone. Bukod pa dito, maaari pang magbago ang dadaanan ng bagyo sa loob ng forecast confidence cone.</span></span></span></li>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Kikilos ang bagyong MAYMAY pa-silangan at posibleng tumama sa kalupaan ng Ilocos Sur o La Union mamayang gabi o bukas (06 Agosto) ng madaling araw. Pagkatapos nito, tatawid ang bagyo sa kalupaan ng Hilaga at Gitnang Luzon hanggang bukas.</span></span></span></li>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Inaasahang mananatiling tropical storm ang bagyong MAYMAY habang papalapit sa kalupaan ng bansa. Pagkatapos nitong tumama sa kalupaan, hihina ang bagyong MAYMAY at magiging tropical depression bukas ng umaga at magiging low pressure area bukas ng hapon o gabi. </span></span></span></li>
+</ul></p>
+                        </div>
+                                            </div>
+                    <div class="panel">
+                        <div class="header2 panel-heading">AGRI-PANAHON</div>
+                        <div class="panel-body">
+                            <table cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse; border:none; margin-left:-.25pt">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top; width:522.8pt">
+			<table style="border:undefined; width:100%">
+				<tbody>
+					<tr>
+						<td>
+						<div><span style="font-size:12px"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:Arial,Helvetica,sans-serif"><span style="background-color:#00b050"><strong><span style="color:black">BABALA NG BAGYO</span></strong></span></span></span></span><br />
+						</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table align="left" border="1" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse; border:solid windowtext 1.0pt; margin-left:6.75pt; margin-right:6.75pt">
+				<tbody>
+					<tr>
+						<td style="background-color:#bfbfbf; height:71.6pt; text-align:center; width:29.95pt"> </td>
+						<td style="background-color:#bfbfbf; height:71.6pt; text-align:center; width:99.25pt"><br />
+						<span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px"><strong><span style="color:black">POSIBLENG MARANASAN</span></strong></span></span></td>
+						<td style="background-color:#bfbfbf; height:71.6pt; text-align:center; width:2cm"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px"><strong><span style="color:black">LAKAS NG HANGIN (km/h)</span></strong></span></span></td>
+						<td style="background-color:#bfbfbf; height:71.6pt; text-align:center; width:70.8pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px"><strong><span style="color:black">ORAS NA INAASAHAN </span></strong><span style="color:black">(mula sa unang paglabas ng babala)</span></span></span></td>
+					</tr>
+					<tr>
+						<td style="background-color:#cc66ff; text-align:center; width:29.95pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px"><strong><span style="color:black">5</span></strong></span></span></td>
+						<td style="text-align:center; vertical-align:top; width:99.25pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">Lubhang mapanganib sa buhay at mga ari-arian</span></span></td>
+						<td style="text-align:center; vertical-align:top; width:2cm"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">>185</span></span></td>
+						<td style="text-align:center; vertical-align:top; width:70.8pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">12 na oras</span></span></td>
+					</tr>
+					<tr>
+						<td style="background-color:#ff3300; text-align:center; width:29.95pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px"><strong><span style="color:black">4</span></strong></span></span></td>
+						<td style="text-align:center; vertical-align:top; width:99.25pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">Malaki hanggang sa matinding pinsala</span></span></td>
+						<td style="text-align:center; vertical-align:top; width:2cm"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">118 - 184 </span></span></td>
+						<td style="text-align:center; vertical-align:top; width:70.8pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">12 na oras</span></span></td>
+					</tr>
+					<tr>
+						<td style="background-color:#ffc000; text-align:center; width:29.95pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px"><strong><span style="color:black">3</span></strong></span></span></td>
+						<td style="text-align:center; vertical-align:top; width:99.25pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">Katamtaman hanggang sa malaking pinsala</span></span></td>
+						<td style="text-align:center; vertical-align:top; width:2cm"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">89 - 117</span></span></td>
+						<td style="text-align:center; vertical-align:top; width:70.8pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">18 na oras</span></span></td>
+					</tr>
+					<tr>
+						<td style="background-color:yellow; text-align:center; width:29.95pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px"><strong><span style="color:black">2</span></strong></span></span></td>
+						<td style="text-align:center; vertical-align:top; width:99.25pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">Bahagya hanggang sa katamtamang pinsala</span></span></td>
+						<td style="text-align:center; vertical-align:top; width:2cm"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">62 - 88</span></span></td>
+						<td style="text-align:center; vertical-align:top; width:70.8pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">24 na oras </span></span></td>
+					</tr>
+					<tr>
+						<td style="background-color:#00b0f0; text-align:center; width:29.95pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px"><strong><span style="color:black">1</span></strong></span></span></td>
+						<td style="text-align:center; vertical-align:top; width:99.25pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">Maliit hanggang sa bahagyang pinsala</span></span></td>
+						<td style="text-align:center; vertical-align:top; width:2cm"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">39 - 61</span></span></td>
+						<td style="text-align:center; vertical-align:top; width:70.8pt"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:12px">36 na oras </span></span></td>
+					</tr>
+				</tbody>
+			</table>
+			<span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"> </span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+
+<hr />
+<table border="1" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse; border:solid windowtext 1.0pt">
+	<tbody>
+		<tr>
+			<td style="background-color:#bfbfbf; height:23.6pt; width:77.3pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">BABALA BLG</span></strong></span></span></td>
+			<td style="background-color:#bfbfbf; height:23.6pt; width:276.85pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">LUZON</span></strong></span></span></td>
+			<td style="background-color:#bfbfbf; height:23.6pt; width:3cm"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">KABISAYAAN</span></strong></span></span></td>
+			<td style="background-color:#bfbfbf; height:23.6pt; width:78pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">MINDANAO</span></strong></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:yellow; height:41.4pt; width:77.3pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">2</span></strong></span></span></td>
+			<td style="height:41.4pt; vertical-align:top; width:276.85pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Ilocos Sur, hilaga at gitnang mga bahagi ng La Union </span></strong><span style="color:black">(Luna, Caba, Santol, Bauang, City of San Fernando, San Juan, Bagulin, Aringay, Bangar, San Gabriel, Burgos, Naguilian, Bacnotan, Sudipen, Balaoan),<strong> hilagang kanlurang bahagi ng Pangasinan </strong>(Anda, Bolinao, Bani)<strong>, timog-kanlurang bahagi ng Abra </strong>(Manabo, Pidigan, Langiden, Luba, Boliney, Sallapadan, Bucloc, Tubo, Villaviciosa, Pilar, Peñarrubia, San Isidro, San Quintin, Bangued, Bucay, Danglas, La Paz, Tayum, Lagangilang, Dolores, Licuan-Baay, Daguioman, San Juan)<strong>, kanlurang bahagi ng Mountain Province </strong>(Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc)<strong>, at hilagang kanlurang bahagi ng Benguet </strong>(Mankayan, Kapangan, Kibungan, Sablan, Bakun, La Trinidad, Tublay, Atok, Buguias)</span></span></span></td>
+			<td style="height:41.4pt; vertical-align:top; width:3cm"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">--</span></span></span></td>
+			<td style="height:41.4pt; vertical-align:top; width:78pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">--</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#00b0f0; height:55.6pt; width:77.3pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">1</span></strong></span></span><br />
+			</td>
+			<td style="height:55.6pt; vertical-align:top; width:276.85pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Ilocos Norte, natitirang bahagi ng La Union, natitirang </span></strong><strong><span style="color:black">bahagi ng</span></strong><strong><span style="color:black"> Pangasinan, Apayao, natitirang </span></strong><strong><span style="color:black">bahagi ng</span></strong><strong><span style="color:black"> Abra, Kalinga, natitirang </span></strong><strong><span style="color:black">bahagi ng</span></strong><strong><span style="color:black"> Mountain Province, Ifugao, natitirang </span></strong><strong><span style="color:black">bahagi ng</span></strong><strong><span style="color:black"> Benguet, kalupaan ng Cagayan, Isabela, Quirino, Nueva Vizcaya, hilagang bahagi ng Zambales </span></strong><span style="color:black">(Candelaria, Santa Cruz, Masinloc, Palauig),</span><strong><span style="color:black"> hilagang bahagi ng Tarlac </span></strong><span style="color:black">(Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura,</span> <span style="color:black">Victoria),</span><strong><span style="color:black"> hilagang bahagi ng Nueva Ecija </span></strong><span style="color:black">(Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan,</span> <span style="color:black">Bongabon, Rizal, Llanera,Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab),</span><strong><span style="color:black"> at hilaga at gitnang mga bahagi ng Aurora </span></strong><span style="color:black">(Dilasag, Casiguran, Dinalungan,</span><br />
+			<span style="color:black">Dipaculao, Baler, San Luis, Maria Aurora)</span></span></span></td>
+			<td style="height:55.6pt; vertical-align:top; width:3cm"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">--</span></span></span></td>
+			<td style="height:55.6pt; vertical-align:top; width:78pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">--</span></span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+
+<hr /><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">PAYONG PANGSAKAHAN SA MGA POSIBLENG MAAPEKTUHAN NG BAGYO</span></strong><br />
+<em><span style="color:black">(Base sa tinatayang lugar na dadaanan ng bagyo)</span></em></span></span>
+
+<ul>
+	<li><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Putulin and mga labis na sanga at pati na rin ang malalaking sanga ng punong-kahoy na maaring magdulot ng panganib sa tinitirhan o sa alin mang estraktura at iyong malapit sa poste ng elektrisidad.</span></span></span></li>
+	<li><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Tingnan at isaayos ang daluyan ang tubig na dinadaanan ng labis na tubig na maaring idulot ng malakas na ulan.</span></span></span></li>
+	<li><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Siyasatin ang mga mahihinang balangkas na sinisilungan ng mga alagang hayop, isaayos kung kinakailangan</span></span></span></li>
+	<li><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Anihin at ipagbili ang mga halamang madaling mabulok tulad ng gulay at bungang kahoy.</span></span></span></li>
+	<li><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Magsagawa ng mga kinauukulang paghahanda sa ano mang di inaasahang pangyayari sa paglapit ng unos o sama ng panahon.</span></span></span></li>
+</ul>
+
+<hr /><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="background-color:#00b050"><strong><span style="color:black">MALAKAS NA PAG-ULAN</span></strong></span></span></span>
+
+<table cellspacing="0" class="MsoTable15Grid4Accent6" style="border-collapse:collapse; border:none; margin-left:-.25pt; width:100.08%">
+	<tbody>
+		<tr>
+			<td style="background-color:#d9d9d9; height:14.9pt; text-align:center; width:16.26%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">DAMI NG ULAN</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:14.9pt; text-align:center; width:17.62%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">NGAYONG ARAW HANGGANG BUKAS NG TANGHALI (AGOSTO 06)</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:14.9pt; text-align:center; width:20.3%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">BUKAS NG TANGHALI HANGGANG BIYERNES NG TANGHALI (AGOSTO 07)</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:14.9pt; text-align:center; width:20.66%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">BIYERNES NG TANGHALI HANGGANG SABADO NG TANGHALI</span></strong><br />
+			<strong><span style="color:black">(Agosto 08)</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:14.9pt; text-align:center; width:25.16%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">POSIBLENG EPEKTO</span></strong></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#e2efd9; height:41.5pt; text-align:center; width:16.26%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Napakalakas hanggang sa matinding pag-ulan (>200 mm)</span></span></span></td>
+			<td style="background-color:#e2efd9; height:41.5pt; text-align:center; width:17.62%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">La Union at Benguet</span></span></span></td>
+			<td style="background-color:#e2efd9; height:41.5pt; text-align:center; width:20.3%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">--</span></span></span></td>
+			<td style="background-color:#e2efd9; height:41.5pt; text-align:center; width:20.66%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">--</span></span></span></td>
+			<td style="background-color:#e2efd9; height:41.5pt; width:25.16%">
+			<ul>
+				<li style="text-align: center;"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Inaasahan ang malawakang pagbaha at pagguho ng lupa</span></span></span></li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:41.5pt; text-align:center; vertical-align:top; width:16.26%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Malakas hanggang sa napakalakas na pag-ulan (100 - 200 mm)</span></span></span></td>
+			<td style="height:41.5pt; text-align:center; vertical-align:top; width:17.62%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Ilocos Sur, Pangasinan, Abra, at Zambales</span></span></span></td>
+			<td style="height:41.5pt; text-align:center; vertical-align:top; width:20.3%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">--</span></span></span></td>
+			<td style="height:41.5pt; text-align:center; vertical-align:top; width:20.66%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">--</span></span></span></td>
+			<td style="height:41.5pt; vertical-align:top; width:25.16%">
+			<ul>
+				<li style="text-align: center;"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Posibleng magkaroon ng maraming pagbaha, lalo na sa mga urbanisadong lugar, mabababang lugar, o malapit sa mga ilog.</span></span></span></li>
+				<li style="text-align: center;"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">May posibilidad ng pagguho ng lupa sa mga lugar na may katamtaman hanggang sa mataas ang panganib.</span></span></span></li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#e2efd9; height:41.5pt; text-align:center; width:16.26%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Katamtaman hanggang sa malakas na pag-ulan (50 - 100 mm)</span></span></span></td>
+			<td style="background-color:#e2efd9; height:41.5pt; text-align:center; width:17.62%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Ilocos Norte, Apayao, Kalinga, Mountain Province, Ifugao, Nueva Vizcaya, Tarlac, Nueva Ecija, Bataan, Pampanga, at Bulacan</span></span></span></td>
+			<td style="background-color:#e2efd9; height:41.5pt; text-align:center; width:20.3%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Ilocos Sur, La Union, Pangasinan, at Benguet</span></span></span></td>
+			<td style="background-color:#e2efd9; height:41.5pt; text-align:center; width:20.66%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">--</span></span></span></td>
+			<td style="background-color:#e2efd9; height:41.5pt; width:25.16%">
+			<ul>
+				<li style="text-align: center;"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Posibleng magkaroon ng mga localized na pagbaha, lalo na sa mga urbanisadong lugar, mabababang lugar, o malapit sa mga ilog.</span></span></span></li>
+				<li style="text-align: center;"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">May posibilidad ang pagguho ng lupa sa mga lugar na may mataas na panganib.</span></span></span></li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr /><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">PAALALA: Inaasahan ang mas malakas na mga pag-ulan sa mga matataas ang mabundok na lugar. Sa ganitong kalagayan, posible ang pagbaha at pagguho ng lupa dulot ng mga pag-ulan, lalo na sa mga lugar na madalas na nakakaranas nito ayun sa mga hazard maps at sa mga lugar na nakaranas ng malalakas na pag-ulan noong mga nakalipas na mga araw.</span><br />
+<br />
+<em><span style="color:black">Para sa karagdagang impormasyon, tingnan ang Weather Advisory #15 na inilabas ng PAGASA kaninang 11:00 AM para sa Heavy Rainfall Outlook dulot ng bagyong “MAYMAY” at ng Habagat.</span></em><br />
+<em> </em><a href="https://www.pagasa.dost.gov.ph/weather/weather-advisory" style="color:#0563c1; text-decoration:underline"><em><span style="color:black">https://www.pagasa.dost.gov.ph/weather/weather-advisory</span></em></a></span></span>
+
+<hr /><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="background-color:#00b050"><strong><span style="color:black">MALAKAS NA HANGIN</span></strong></span></span></span>
+
+<table align="center" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse; border:none; width:100.0%">
+	<tbody>
+		<tr>
+			<td style="background-color:#a8d08d; height:13.9pt; text-align:center; width:46.72%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">NGAYONG ARAW</span></strong></span></span></td>
+			<td colspan="2" style="background-color:#c5e0b3; height:13.9pt; text-align:center; width:53.28%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">BUKAS </span></strong><span style="color:black">(AGOSTO 06) HANGGANG BIYERNES (AGOSTO 07)</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#a8d08d; height:36.75pt; text-align:center; width:46.72%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Malaking bahagi ng Luzon at Kabisayaan, Surigao del Norte, Dinagat Islands, Misamis Occidental, Misamis Oriental, Agusan del Norte, Camiguin, Lanao del Norte, Lanao del Sur, Zamboanga del Norte, Maguindanao del Norte, Sultan Kudarat,</span><br />
+			<span style="color:black">Sarangani, Davao Occidental, at Davao Oriental.</span></span></span></td>
+			<td style="background-color:#c5e0b3; height:36.75pt; text-align:center; width:52.64%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Malaking bahagi ng bansa</span></span></span></td>
+			<td style="height:36.75pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"> </span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+
+<hr /><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>PAALALA: </strong>Ang mga babala ng bagyo ay upang mabigyan ng babala ang lahat sa panganib na dulot ng hangin dahil sa bagyo. Ang mga lokal na hangin ay posibleng bahagyang mas malakas sa mga lugar malapit sa tabing-dagat o matataas at mabubundok na lugar. Mas mahina ang hangin sa mga lugar na hindi direktang tinatamaan nito.</span></span>
+
+<hr /><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="background-color:#00b050"><strong><span style="color:black">MALAKAS NA PAG-ALON</span></strong></span></span></span>
+
+<table border="1" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse; border:solid gray 1.0pt">
+	<tbody>
+		<tr>
+			<td style="background-color:#d9e2f3; height:61.95pt; text-align:center; width:141.7pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Nakataas ang Gale Warning</span></strong><br />
+			<em><span style="color:black">(mula sa Gale Warning #2 na inilabas ngayong 5:00 AM)</span></em></span></span></td>
+			<td style="background-color:#d9e2f3; height:61.95pt; text-align:center; width:381.1pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Kanlurang baybayin ng Hilagang Luzon</span></strong></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#d9d9d9; height:47.2pt; text-align:center; width:141.7pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Hanggang sa napakaalon na karagatan</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:47.2pt; text-align:center; width:381.1pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Hanggang sa 5.0 m: </span></strong><span style="color:black">Mga baybayin sa Ilocos Sur, La Union, at Pangasinan.</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#d9d9d9; height:71.95pt; text-align:center; width:141.7pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Hanggang sa maalon na karagatan</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:71.95pt; text-align:center; width:381.1pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Hanggang sa 3.5 m: </span></strong><span style="color:black">Mga baybayin sa hilagang Zambales</span><br />
+			<br />
+			<strong><span style="color:black">Hanggang sa 3.0 m: </span></strong><span style="color:black">Mga baybayin sa Isabela at Lubang Islands; hilaga at silangang mga baybayin ng Batanes at Catanduanes; kanlurang baybayin ng Ilocos Norte, Bataan, Cavite, at Batangas; hilagang baybayin ng Camarines Norte at Camarines Sur; silangang baybayin ng Davao Oriental; natitirang baybayin ng Zambales.</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#d9d9d9; height:34.3pt; text-align:center; width:141.7pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Katamtaman hanggang sa maalon na karagatan</span></strong></span></span></td>
+			<td style="background-color:#d9d9d9; height:34.3pt; text-align:center; width:381.1pt"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Hanggang sa 2.5 m: </span></strong><span style="color:black">Natitirang baybayin ng Batanes; hilaga at silangang mga baybayin ng Babuyan Islands, Polillo Islands, at Northern Samar; hilagang baybayin ng Aurora; kanlurang baybayin ng Occidental Mindoro, Calamian Islands, Kalayaan Islands, at hilagang kalupaan ng Palawan; silangang baybayin sa kalupaan ng Cagayan, Albay, Sorsogon, Eastern Samar, at Dinagat Islands. </span><br />
+			<br />
+			<strong><span style="color:black">Hanggang sa 2.0 m: </span></strong><span style="color:black">Mga baybayin sa Romblon, Masbate kasama ang Burias at Ticao Islands, Caluya Islands, Surigao del Sur, at Davao Occidental; silangang baybayin ng Siargao-Bucas Grande Islands; katimugang baybayin ng Davao Oriental; kanlurang baybayin sa kalupaan ng Palawan; natitirang baybayin sa kalupaan ng Cagayan kasama ang Babuyan Islands, Ilocos Norte, Aurora, Kalayaan Islands; Camarines Norte, Camarines Sur, Catanduanes, Albay, at Sorsogon.</span></span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+
+<hr /><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">PAALALA:</span></strong><br />
+<br />
+<strong><span style="color:black">Napakaalon na karagatan:</span></strong><span style="color:black"> Mapanganib maglayag ang anumang uri ng sasakyang pandagat. Pinapayuhan ang mga maglalayag na manatili muna sa port o pumunta sa pinakamalapit na daungan.</span><br />
+<br />
+<strong><span style="color:black">Maalon na karagatan: </span></strong><span style="color:black">Pinapayuhan ang mga mandaragat na gumagamit ng maliliit na sasakyang pandagat, kasama na ang mga bangkang de motor, na huwag munang maglayag lalo na ang mga walang karanasan sa ganitong kondisyon o mga gumagamit ng mga sasakyan na may sira.</span><br />
+<br />
+<strong><span style="color:black">Katamtaman hanggang sa maalon na karagatan: </span></strong><span style="color:black">Pinapayuhan ang mga mandaragat na gumagamit ng mga bangkang de motor at iba pang kahalintulad na sasakyang pandagat na mag-ingat habang pumapalaot sa karagatan. Kung maaari ay umiwas muna sa ganitong kondisyon.</span></span></span>
+
+<hr /><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="background-color:#00b050"><strong><span style="color:black">AGRI-PANAHON</span></strong></span></span></span>
+
+<table cellspacing="0" class="TableGrid" style="border-collapse:collapse; border:none; width:100%">
+	<tbody>
+		<tr>
+			<td rowspan="2" style="background-color:#d9d9d9; height:6.65pt; text-align:center; width:27.06%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">LUGAR NG PAGTAYA</span></strong></span></span></td>
+			<td rowspan="2" style="background-color:#d9d9d9; height:6.65pt; text-align:center; width:20.34%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">LAGAY NG PANAHON</span></strong><br />
+			<strong><span style="color:black">PANG-AGRIKULTURA</span></strong></span></span></td>
+			<td colspan="2" style="background-color:#d9d9d9; height:6.65pt; text-align:center; width:24.4%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">TEMPERATURA (<sup>0</sup>C)</span></strong></span></span></td>
+			<td rowspan="2" style="background-color:#d9d9d9; height:6.65pt; text-align:center; width:9.5%"><br />
+			<span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">RH%</span></strong></span></span></td>
+			<td rowspan="2" style="background-color:#d9d9d9; height:6.65pt; text-align:center; width:18.7%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">PAGKABASA NG</span></strong><br />
+			<strong><span style="color:black">DAHON</span></strong><br />
+			<strong><span style="color:black">(ORAS)</span></strong></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#d9d9d9; height:19.7pt; text-align:center; width:12.46%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Mababang</span><br />
+			<span style="color:black">Bukirin</span></span></span></td>
+			<td style="background-color:#d9d9d9; height:19.7pt; text-align:center; width:11.94%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Mataas na</span><br />
+			<span style="color:black">Bukirin</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:27.06%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Ilocos Sur, La Union,</span></strong><br />
+			<strong><span style="color:black">Pangasinan, Benguet, Mountain Province, at Abra</span></strong></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:20.34%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Masungit na panahon</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:12.46%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">24 – 29</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:11.94%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">18 – 28</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:9.5%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">70 – 99</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:18.7%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">8 – 12</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:27.06%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Lambak ng Cagayan,</span></strong><br />
+			<strong><span style="color:black">natitirang bahagi ng Rehiyon ng Ilocos natitirang bahagi ng</span></strong><br />
+			<strong><span style="color:black">Cordillera Administrative</span></strong><br />
+			<strong><span style="color:black">Region, Zambales, Tarlac, at Nueva Ecija</span></strong></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:20.34%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Maulan na may pagbugso ng hangin</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:12.46%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">23 – 32</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:11.94%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black"> 17 – 29</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:9.5%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">65 – 99</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:18.7%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">8 – 12</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:27.06%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Natitirang bahagi ng Gitnang Luzon</span></strong></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:20.34%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:12.46%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">24 – 30</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:11.94%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">22 – 28</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:9.5%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">60 – 98</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:18.7%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">6 – 10</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:27.06%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Metro Manila, CALABARZON, Occidental</span></strong><br />
+			<strong><span style="color:black">Mindoro, Oriental Mindoro,</span></strong><br />
+			<strong><span style="color:black">Marinduque, Antique, Iloilo, at Guimaras</span></strong></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:20.34%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:12.46%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">23 – 32</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:11.94%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">21 – 30</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:9.5%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">55 – 98</span></span></span></td>
+			<td style="background-color:#e2efd9; height:34.2pt; text-align:center; width:18.7%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">4 – 8</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#e2efd9; height:31.5pt; text-align:center; width:27.06%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:black">Natitirang bahagi ng bansa</span></strong></span></span></td>
+			<td style="background-color:#e2efd9; height:31.5pt; text-align:center; width:20.34%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog</span></span></span></td>
+			<td style="background-color:#e2efd9; height:31.5pt; text-align:center; width:12.46%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">24 – 36</span></span></span></td>
+			<td style="background-color:#e2efd9; height:31.5pt; text-align:center; width:11.94%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black"> 22 – 34</span></span></span></td>
+			<td style="background-color:#e2efd9; height:31.5pt; text-align:center; width:9.5%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">45 – 96</span></span></span></td>
+			<td style="background-color:#e2efd9; height:31.5pt; text-align:center; width:18.7%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:black">0 – 4</span></span></span></td>
+		</tr>
+	</tbody>
+</table>
+<br />
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="header2 panel-heading">
+                            PAYONG PANGSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO
+                        </div>
+                        <div class="panel-body">
+                            <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO</strong></span></span>
+<ul>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Regular na linisin at ayusin ang mga kanal, pilapil, at daluyan ng tubig upang matiyak ang maayos na agos ng tubig at maiwasan ang pagbaha sa mabababang lugar.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Magtanim sa raised beds o gumamit ng plastic mulch upang makaiwas sa root rot at erosion.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Maglagay ng rain shelters o simpleng bubong sa mga maselan na pananim.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Agapan ang pagkalat ng fungal diseases tulad ng leaf blight at mildew.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Putulin ang sobrang sanga at bigyan ng suporta ang mga batang puno upang hindi mapinsala ng hangin.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">I-monitor ang lagay ng panahon bago bumiyahe ng ani o produkto upang maiwasan ang abala at panganib sa daan.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Gumamit ng covered vans o waterproof na tolda upang maprotektahan ang ani laban sa ulan at pagkabasa.</span></span></li>
+	<li><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Iwasan ang paglilinis o pagsasaayos ng mga kanal, pilapil, at daluyan ng tubig habang may banta ng pagguho ng lupa upang maiwasan ang aksidente. Gawin lamang ang mga ito kapag ligtas na ang panahon at ang lugar ay kumpirmadong walang panganib.</span></span></li>
+</ul>
+
+<hr /><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="background-color:white"><span style="color:black">Patuloy na mag-antabay sa mga updates at pagbabago ukol sa sama ng panahon.</span></span><br />
+<br />
+<span style="background-color:white"><span style="color:black">Ang mga public and disaster risk reduction and management office </span></span><strong><span style="background-color:white"><span style="color:black">(PDRRMO)</span></span></strong><span style="background-color:white"><span style="color:black"> na maaaring maapektuhan ay pinapayuhan na gumawa ng mga kaukulang hakbang para maprotektahan ang buhay at mga ari-arian. Ang mga nakatira sa mga lugar na maaaring maapektuhan ay pinapayuhang sumunod sa mga tagubilin ng mga namumuno sa inyong lugar. Para sa heavy rainfall warnings, thunderstorm/rainfall advisories, at iba pang severe weather information na para sa inyong lugar, palaging magbantay sa mga produktong ilalabas ng inyong lokal </span></span><strong><span style="background-color:white"><span style="color:black">PAGASA Regional Services Division.</span></span></strong></span></span><br />
+                            <br>
+                            <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Inihanda nina:<br />
+<strong>RAMF / ARL</strong><br />
+Binigyang pansin:<br />
+<strong>MEVT</strong></span></span><br />
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</div>                            </div>
+        </div>
+    </div>
+</div>		<style type="text/css">
+    .image-modal-container .image-container>img {
+        /* width: auto; */
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+	    height: auto;
+	    width: auto;
+    }
+    .image-modal-container .image-container {
+	    overflow: hidden;
+	    /* height: 250px; */
+	    position: relative;
+	    height: 94%;
+	    width: 94%;
+	    margin: 3vh 3vw;
+    }
+    .image-modal-container .image-close {
+		position: absolute;
+		top: 0px;
+		right: 5px;
+		font-size: 34px;
+    }
+	.image-modal-container .image-preview {
+		cursor: pointer;
+	}
+        .close{
+            margin-top:20px;
+            opacity:1;
+            text-shadow:none;
+        }
+        .fa-close{
+            background:#ffffff;
+            border-radius:7px;
+        }
+        .fa-close:hover{
+             background:#ffffff;
+            border-radius:7px;
+        }
+</style>
+<div class="modal fade image-modal-container" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="image-modal-label">
+	<div class="image-container" data-dismiss="modal">
+        <button type="button" class="close p-image-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa-close fa fa-times fa-2x" aria-hidden="true"></i></span></button>
+        <img src="" class="image-container" alt="">
+	</div>
+</div>		<div class="row footer-frame  hidden-xs">
+    <iframe src="https://gwhs.i.gov.ph/gwt-footer/footer-source.html" ></iframe>
+</div>		<div id="back-to-top" onclick="topFunction()"></div>
+	</div>
+	<!-- ???? -->
+	<script type="text/javascript">
+		var id_ = "tropical-cyclone-tropical-cyclone-warning-for-agriculture",
+		env_ = "production",
+		muniV = 'v1',
+			homeV = 'v1',
+			houseV = 'v1',
+			municipalityKey = 'municipality-' + muniV,
+			homeSearchKey = 'homeSearch-' + homeV,
+			housePopulation = 'housePopulation-' + houseV;
+		var map_var = false;
+		var auto_skip = false;
+		var synop_id = 425;
+	</script>
+	<script>var server_timestamp = 1785918620;</script>
+	<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+	<script src="https://unpkg.com/ol-popup@4.0.0/dist/ol-popup.js"></script>
+	<script type="text/javascript"
+	  src="https://openlayersbook.github.io/openlayers_book_samples/assets/proj4js/proj4.js"></script>
+	<script src="https://pagasa.dost.gov.ph/combine/20759e66ace78114cc0edada61c4a3b3-1785888740.js">
+	</script>
+	
+		<script type="text/javascript">
+		window.onresize = function() {
+		    var screen_width = $(window).width();
+            if(typeof(map) != 'undefined') {
+                if (screen_width < 764){
+                    map.setTarget('map-canvas-mobile');
+                }else {
+                    map.setTarget('map-canvas');
+                }
+            }
+		};
+	</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8HF8RT5CE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R8HF8RT5CE');
+    </script>
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110677925-1"></script>
+	<script type="text/javascript">
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-110677925-1');
+	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153677671-1"></script>
+	<script type="text/javascript">
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-153677671-1');
+	</script> -->
+</body>
+
+</html>

@@ -1151,6 +1151,21 @@ def _official_hazards_for_municipality(
     seasonal = pagasa_data.get("seasonal_outlook", {}) if isinstance(pagasa_data, dict) else {}
 
     signal_levels = typhoon.get("signal_levels", {}) if isinstance(typhoon, dict) else {}
+    affected_municipalities = typhoon.get("affected_municipalities", []) if isinstance(typhoon, dict) else []
+    official_municipality_signal = 0
+    if isinstance(affected_municipalities, list):
+        for affected in affected_municipalities:
+            if not isinstance(affected, dict):
+                continue
+            same_psgc = affected.get("psgc") and affected.get("psgc") == mun.get("psgc")
+            same_name = (
+                affected.get("municipality") == mun.get("municipality")
+                and affected.get("province") == province
+            )
+            if same_psgc or same_name:
+                official_municipality_signal = int(affected.get("tcws_signal") or affected.get("signal") or affected.get("signal_level") or 0)
+                break
+    tcws_signal = official_municipality_signal if affected_municipalities else signal_levels.get(province, 0)
     ten_day_province = ten_day.get(province_key, {}) if isinstance(ten_day, dict) else {}
     acap_ten_day = _acap_province_ten_day(province, acap_data)
 
@@ -1160,7 +1175,7 @@ def _official_hazards_for_municipality(
         "pagasa_source_date": pagasa_data.get("entry_date") or pagasa_data.get("as_of"),
         "typhoon_active": bool(typhoon.get("active")),
         "typhoon_name": typhoon.get("name"),
-        "tcws_signal": signal_levels.get(province, 0),
+        "tcws_signal": tcws_signal,
         "ten_day_outlook": ten_day_province.get("outlook"),
         "ten_day_rainfall_range_mm": ten_day_province.get("rainfall_range_mm"),
         "ten_day_agri_advisory": ten_day_province.get("agri_advisory"),

@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-05",
-  "fetched_at": "2026-08-05T07:18:41.072336+00:00",
-  "fetched_at_utc": "2026-08-05T07:18:41.072336+00:00",
+  "fetched_at": "2026-08-05T08:30:09.121452+00:00",
+  "fetched_at_utc": "2026-08-05T08:30:09.121452+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -42,13 +42,13 @@
     "issued_at": "02:00 pm, 05 August 2026",
     "valid_until": "the next advisory to be issued at 5:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
-    "signal_level": 2,
+    "signal_level": 1,
     "signal_levels": {
       "Batanes": 0,
-      "Cagayan": 0,
-      "Isabela": 2,
-      "Nueva Vizcaya": 0,
-      "Quirino": 0
+      "Cagayan": 1,
+      "Isabela": 1,
+      "Nueva Vizcaya": 1,
+      "Quirino": 1
     },
     "max_sustained_wind_kmh": 75.0,
     "peak_wind_gust_kmh": 90.0,
@@ -85,47 +85,812 @@
         "wind_range_kmh": "185-220"
       }
     },
+    "tcws_signal_groups": [
+      {
+        "signal": 2,
+        "label": "TCWS 2",
+        "areas_text": "Luzon Ilocos Sur, the northern and central portions of La Union (Luna, Caba, Santol, Bauang, City of San Fernando, San Juan, Bagulin, Aringay, Bangar, San Gabriel, Burgos, Naguilian, Bacnotan, Sudipen, Balaoan), the northwestern portion of Pangasinan (Anda, Bolinao, Bani), the southwestern portion of Abra (Manabo, Pidigan, Langiden, Luba, Boliney, Sallapadan, Bucloc, Tubo, Villaviciosa, Pilar, Peñarrubia, San Isidro, San Quintin, Bangued, Bucay, Danglas, La Paz, Tayum, Lagangilang, Dolores, Licuan-Baay, Daguioman, San Juan), the western portion of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc), and the northwestern portion of Benguet (Mankayan, Kapangan, Kibungan, Sablan, Bakun, La Trinidad, Tublay, Atok, Buguias) Visayas - Mindanao -",
+        "region2_relevant": false
+      },
+      {
+        "signal": 1,
+        "label": "TCWS 1",
+        "areas_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -",
+        "region2_relevant": true
+      }
+    ],
     "rainfall": {
       "advisory_text": "Refer to Weather Advisory No. 15 issued at 11:00 AM today for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon."
     },
     "rainfall_advisory_text": "Refer to Weather Advisory No. 15 issued at 11:00 AM today for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon.",
     "region2_affected": true,
     "affected_provinces": [
-      "Isabela"
+      "Cagayan",
+      "Isabela",
+      "Nueva Vizcaya",
+      "Quirino"
     ],
     "affected_municipalities": [
+      {
+        "psgc": "023101000",
+        "municipality": "City of Tuguegarao",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023102000",
+        "municipality": "Abulug",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023103000",
+        "municipality": "Alcala",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023104000",
+        "municipality": "Allacapan",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023105000",
+        "municipality": "Amulung",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023106000",
+        "municipality": "Aparri",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023107000",
+        "municipality": "Baggao",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023108000",
+        "municipality": "Ballesteros",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023109000",
+        "municipality": "Buguey",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023110000",
+        "municipality": "Calayan",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023111000",
+        "municipality": "Camalaniugan",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023112000",
+        "municipality": "Claveria",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023113000",
+        "municipality": "Enrile",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023114000",
+        "municipality": "Gattaran",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023115000",
+        "municipality": "Gonzaga",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023116000",
+        "municipality": "Iguig",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023117000",
+        "municipality": "Lal-lo",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023118000",
+        "municipality": "Lasam",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023119000",
+        "municipality": "Pamplona",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023120000",
+        "municipality": "Peñablanca",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023121000",
+        "municipality": "Piat",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023122000",
+        "municipality": "Rizal",
+        "province": "Cagayan",
+        "match": "municipality",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023123000",
+        "municipality": "Sanchez-Mira",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023124000",
+        "municipality": "Santa Ana",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023125000",
+        "municipality": "Santa Praxedes",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023126000",
+        "municipality": "Santa Teresita",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023127000",
+        "municipality": "Santo Niño",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023128000",
+        "municipality": "Solana",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "023129000",
+        "municipality": "Tuao",
+        "province": "Cagayan",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031401000",
+        "municipality": "City of Ilagan",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031402000",
+        "municipality": "Alicia",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031403000",
+        "municipality": "Angadanan",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031404000",
+        "municipality": "Aurora",
+        "province": "Isabela",
+        "match": "municipality",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031405000",
+        "municipality": "Benito Soliven",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
       {
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "match": "municipality"
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031407000",
+        "municipality": "Cabagan",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031408000",
+        "municipality": "Cabatuan",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031409000",
+        "municipality": "Cauayan City",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031410000",
+        "municipality": "Cordon",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031411000",
+        "municipality": "Delfin Albano",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031412000",
+        "municipality": "Dinapigue",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031413000",
+        "municipality": "Divilacan",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031414000",
+        "municipality": "Echague",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031415000",
+        "municipality": "Gamu",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031416000",
+        "municipality": "Jones",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
       },
       {
         "psgc": "031417000",
         "municipality": "Luna",
         "province": "Isabela",
-        "match": "municipality"
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031418000",
+        "municipality": "Maconacon",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031419000",
+        "municipality": "Mallig",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
       },
       {
         "psgc": "031420000",
         "municipality": "Naguilian",
         "province": "Isabela",
-        "match": "municipality"
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031421000",
+        "municipality": "Palanan",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031422000",
+        "municipality": "Quezon",
+        "province": "Isabela",
+        "match": "municipality",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031423000",
+        "municipality": "Quirino",
+        "province": "Isabela",
+        "match": "municipality",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031424000",
+        "municipality": "Ramon",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031425000",
+        "municipality": "Reina Mercedes",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031426000",
+        "municipality": "Roxas",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031427000",
+        "municipality": "San Agustin",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031428000",
+        "municipality": "San Guillermo",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
       },
       {
         "psgc": "031429000",
         "municipality": "San Isidro",
         "province": "Isabela",
-        "match": "municipality"
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031430000",
+        "municipality": "San Manuel",
+        "province": "Isabela",
+        "match": "municipality",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031431000",
+        "municipality": "San Mariano",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031432000",
+        "municipality": "San Mateo",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031433000",
+        "municipality": "San Pablo",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031434000",
+        "municipality": "Santa Maria",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031435000",
+        "municipality": "Santiago City",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031436000",
+        "municipality": "Santo Tomas",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "031437000",
+        "municipality": "Tumauini",
+        "province": "Isabela",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035601000",
+        "municipality": "Bayombong",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035602000",
+        "municipality": "Ambaguio",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035603000",
+        "municipality": "Aritao",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035604000",
+        "municipality": "Bagabag",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035605000",
+        "municipality": "Bambang",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035606000",
+        "municipality": "Diadi",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035607000",
+        "municipality": "Dupax del Norte",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035608000",
+        "municipality": "Dupax del Sur",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035609000",
+        "municipality": "Kasibu",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035610000",
+        "municipality": "Kayapa",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035611000",
+        "municipality": "Quezon",
+        "province": "Nueva Vizcaya",
+        "match": "municipality",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035612000",
+        "municipality": "Santa Fe",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035613000",
+        "municipality": "Solano",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "035614000",
+        "municipality": "Villaverde",
+        "province": "Nueva Vizcaya",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "067001000",
+        "municipality": "Cabarroguis",
+        "province": "Quirino",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "067002000",
+        "municipality": "Aglipay",
+        "province": "Quirino",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "067003000",
+        "municipality": "Diffun",
+        "province": "Quirino",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "067004000",
+        "municipality": "Maddela",
+        "province": "Quirino",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "067005000",
+        "municipality": "Nagtipunan",
+        "province": "Quirino",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
+      },
+      {
+        "psgc": "067006000",
+        "municipality": "Saguday",
+        "province": "Quirino",
+        "match": "province",
+        "signal": 1,
+        "tcws_signal": 1,
+        "official_area_text": "Luzon Ilocos Norte, the rest of La Union, the rest of Pangasinan, Apayao, the rest of Abra, Kalinga, the rest of Mountain Province, Ifugao, the rest of Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, the northern portion of Zambales (Candelaria, Santa Cruz, Masinloc, Palauig), the northern portion of Tarlac (Mayantoc, San Clemente, Camiling, Santa Ignacia, Gerona, Paniqui, Moncada, San Manuel, Anao, Ramos, Pura, Victoria), the northern portion of Nueva Ecija (Carranglan, Lupao, Cuyapo, Talugtug, Nampicuan, Guimba, Science City of Muñoz, San Jose City, Pantabangan, Bongabon, Rizal, Llanera, Talavera, Santo Domingo, General Mamerto Natividad, Quezon, Licab), and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao, Baler, San Luis, Maria Aurora) Visayas - Mindanao -"
       }
     ],
     "summary": "Tropical Storm Maymay Bulletin #6",
     "as_of": "2026-08-05",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-05T07:18:41.072336+00:00",
-    "fetched_at_utc": "2026-08-05T07:18:41.072336+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "success",
+    "fetched_at": "2026-08-05T08:30:09.121452+00:00",
+    "fetched_at_utc": "2026-08-05T08:30:09.121452+00:00",
     "agriculture_advisory": {
       "source": "pagasa_tropical_cyclone_warning_for_agriculture",
       "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
@@ -229,10 +994,5 @@
     "farm_weather": "success",
     "typhoon": "success",
     "typhoon_agriculture": "success"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-08-05T07:18:41.072336+00:00"
   }
 }

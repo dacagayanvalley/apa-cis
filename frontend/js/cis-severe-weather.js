@@ -61,9 +61,17 @@ const CISSevereWeather = (() => {
 
   function _affectedRows(rows, typhoon) {
     if (!typhoon.active || !typhoon.region2_affected) return [];
-    const affectedPsgc = new Set((typhoon.affected_municipalities || []).map(item => item.psgc));
-    const signalLevels = typhoon.signal_levels || {};
-    return rows.filter(row => affectedPsgc.has(row.psgc) || (signalLevels[row.province] || 0) > 0);
+    return rows.filter(row => _officialSignalForRow(row, typhoon) > 0);
+  }
+
+  function _officialSignalForRow(row, typhoon) {
+    const affectedList = Array.isArray(typhoon.affected_municipalities) ? typhoon.affected_municipalities : [];
+    const officialMatch = affectedList.find(item => _matchesWeatherPayload(item, row, 'municipality'));
+    if (officialMatch) {
+      return _numericValue(officialMatch.tcws_signal ?? officialMatch.signal ?? officialMatch.signal_level) || 0;
+    }
+    if (affectedList.length) return 0;
+    return _numericValue((typhoon.signal_levels || {})[row.province] ?? typhoon.signal_level) || 0;
   }
 
   function _unaffectedRows(province = null) {
@@ -77,7 +85,7 @@ const CISSevereWeather = (() => {
   function _buildItem(row, typhoon) {
     const obs = row.observations || {};
     const ind = row.indicators || {};
-    const signal = (typhoon.signal_levels || {})[row.province] || typhoon.signal_level || 0;
+    const signal = _officialSignalForRow(row, typhoon);
     const rainOverride = _pagasaRainOverride(row, typhoon, signal);
     const windOverride = _pagasaWindOverride(row, typhoon, signal);
     const rain24 = rainOverride.rain24 ?? Number(obs.rainfall_24h_mm || 0);
@@ -462,6 +470,26 @@ const CISSevereWeather = (() => {
       </div>
     `;
   }
+  function _officialTcwsHTML(typhoon) {
+    const groups = Array.isArray(typhoon.tcws_signal_groups) ? typhoon.tcws_signal_groups : [];
+    const relevantGroups = groups.filter(group => {
+      const area = String(group.areas_text || '').toLowerCase();
+      return group.region2_relevant || PROVINCES.some(province => area.includes(province.toLowerCase()));
+    });
+    if (!relevantGroups.length) return '';
+    return `
+      <div class="severe-official-tcws">
+        <div class="adaptation-title">Official PAGASA TCWS Capture</div>
+        ${relevantGroups.map(group => `
+          <div class="severe-official-tcws-row">
+            <strong>${_escape(group.label || `TCWS ${group.signal || ''}`)}</strong>
+            <span>${_escape(group.areas_text || '')}</span>
+          </div>
+        `).join('')}
+        <small>Shown verbatim from the PAGASA affected-area table used by the parser; municipality rows below are matched only from these official signal groups.</small>
+      </div>
+    `;
+  }
   function _regionalActionsHTML(typhoon) {
     if (!typhoon.active || !typhoon.region2_affected) {
       return '<div class="ops-empty">No active Region 2 severe-weather advisory. Maintain routine monitoring.</div>';
@@ -469,6 +497,7 @@ const CISSevereWeather = (() => {
     const affectedProvinces = [...new Set(_allAffected.map(item => item.province))];
     const highestSignal = Math.max(0, ..._allAffected.map(item => item.signal || 0));
     const highRiskCount = _allAffected.filter(item => ['danger', 'warning'].includes(item.severity)).length;
+    const officialTcws = _officialTcwsHTML(typhoon);
     const officialAgri = _officialAgriHTML(typhoon);
     const actions = [
       `Activate regional APA-CIS severe-weather monitoring for ${affectedProvinces.join(', ')} under highest parsed TCWS ${highestSignal || '-'}.`,
@@ -482,6 +511,7 @@ const CISSevereWeather = (() => {
         <div class="adaptation-title">Regional DA / LGU Agri Action</div>
         <ul>${actions.map(action => `<li>${_escape(action)}</li>`).join('')}</ul>
       </div>
+      ${officialTcws}
       ${officialAgri}
     `;
   }
