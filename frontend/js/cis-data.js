@@ -78,7 +78,13 @@ const CISData = (() => {
     } catch (err) {
       console.warn('CISData.loadAll using demo fallback:', err);
       // Return demo/sample data so the UI doesn't stay blank during dev
-      return { indicators: _getDemoIndicators(), advisories: null, status: null };
+      _indicators = _getDemoIndicators();
+      _advisories = null;
+      _pagasaData = null;
+      _acapData = null;
+      _acapCropCalendars = null;
+      _pipelineStatus = null;
+      return { indicators: _indicators, advisories: _advisories, status: _pipelineStatus };
     }
   }
 

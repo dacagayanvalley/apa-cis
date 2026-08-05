@@ -8,7 +8,7 @@
  */
 
 // ── Module registry ─────────────────────────────────────────────────────────
-const MODULES = ['dashboard', 'map', 'advisory', 'municipal', 'planning', 'severe'];
+const MODULES = ['dashboard', 'map', 'advisory', 'pdf', 'municipal', 'planning', 'severe'];
 let _mapInitialised = false;
 let _activeModule = 'dashboard';
 
@@ -41,6 +41,7 @@ function switchModule(name, btnEl) {
   if (name === 'planning') CISPlanning.renderAll();
   if (name === 'municipal') CISMunicipal.renderAll();
   if (name === 'advisory') CISAdvisory.renderAll();
+  if (name === 'pdf' && window.CISAdvisoryPDF) CISAdvisoryPDF.renderAll();
   if (name === 'severe') CISSevereWeather.renderAll();
 }
 
@@ -179,6 +180,7 @@ async function initCIS() {
     // Render the default module. Severe Weather takes priority only when
     // PAGASA has an active bulletin affecting Cagayan Valley.
     CISDashboard.renderAll('all');
+    if (_activeModule === 'pdf' && window.CISAdvisoryPDF) CISAdvisoryPDF.renderAll();
     _updateSevereWeatherNavState();
     if (_isSevereWeatherActiveForRegion()) {
       switchModule('severe', document.querySelector('.mnav-btn[data-module="severe"]'));

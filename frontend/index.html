@@ -10,7 +10,7 @@
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <!-- Chart.js for sparklines -->
-  <link rel="stylesheet" href="css/cis.css?v=20260804-agri"/>
+  <link rel="stylesheet" href="css/cis.css?v=20260805-levels"/>
 </head>
 <body>
 
@@ -42,6 +42,9 @@
   </button>
   <button class="mnav-btn" data-module="advisory" onclick="switchModule('advisory', this)">
     <span class="mnav-icon">📋</span> Agri-Operations Advisory
+  </button>
+  <button class="mnav-btn" data-module="pdf" onclick="switchModule('pdf', this)">
+    <span class="mnav-icon">PDF</span> Advisory PDF
   </button>
   <button class="mnav-btn" data-module="municipal" onclick="switchModule('municipal', this)">
     <span class="mnav-icon">🏘</span> Municipal Profile
@@ -484,14 +487,115 @@
     <div id="sw-provincial-summary" class="province-summary-grid"></div>
   </div>
 </div>
+<!-- ============================================================ -->
+<!-- MODULE: WEATHER ADVISORY PDF                                -->
+<!-- ============================================================ -->
+<div id="module-pdf" class="module">
+  <div class="pdf-advisory-header">
+    <div>
+      <h2 class="pdf-advisory-title">Weather Advisory PDF Generator</h2>
+      <p class="pdf-advisory-sub">Create Region 2, province, or municipal advisory PDFs using APA, DRRM, or AMIA template modes.</p>
+    </div>
+    <button class="btn-primary" data-pdf-action="download">Download PDF</button>
+  </div>
+
+  <div class="pdf-advisory-layout">
+    <section class="pdf-control-panel">
+      <div class="section-header">
+        <span class="section-title">Advisory Setup</span>
+      </div>
+      <div class="pdf-form-grid expanded">
+        <label>
+          <span>Advisory Level</span>
+          <select id="pdf-level" data-pdf-input="preview">
+            <option value="region">Region 2 Level</option>
+            <option value="province">Province Level</option>
+            <option value="municipal">Municipal Level</option>
+          </select>
+        </label>
+        <label>
+          <span>Template</span>
+          <select id="pdf-template" data-pdf-input="preview">
+            <option value="apa">APA Template</option>
+            <option value="drrm">DRRM Template</option>
+            <option value="amia">AMIA Template</option>
+          </select>
+        </label>
+        <label>
+          <span>Advisory Type</span>
+          <select id="pdf-advisory-type" data-pdf-input="preview">
+            <option value="severe">Severe Weather / Disturbance</option>
+            <option value="normal">Normal Days / Farm Weather</option>
+          </select>
+        </label>
+        <label>
+          <span>Province</span>
+          <select id="pdf-province" data-pdf-input="preview">
+            <option value="all">All Region 2</option>
+            <option value="Batanes">Batanes</option>
+            <option value="Cagayan">Cagayan</option>
+            <option value="Isabela">Isabela</option>
+            <option value="Nueva Vizcaya">Nueva Vizcaya</option>
+            <option value="Quirino">Quirino</option>
+          </select>
+        </label>
+        <label>
+          <span>Municipality</span>
+          <select id="pdf-municipality" data-pdf-input="preview"></select>
+        </label>
+        <label>
+          <span>Weather System / Title</span>
+          <input type="text" id="pdf-system-name" placeholder="e.g. Tropical Depression Luis" data-pdf-input="preview">
+        </label>
+        <label>
+          <span>Issued No.</span>
+          <input type="text" id="pdf-issue-no" placeholder="e.g. TC-R02-2026-022" data-pdf-input="preview">
+        </label>
+        <label>
+          <span>Prepared By</span>
+          <input type="text" id="pdf-prepared-by" placeholder="DA RFO 02 / PAO / MAO" data-pdf-input="preview">
+        </label>
+        <label>
+          <span>Advisory Date</span>
+          <input type="date" id="pdf-issue-date" data-pdf-input="preview">
+        </label>
+        <label>
+          <span>Validity</span>
+          <input type="text" id="pdf-validity" placeholder="Today until next update" data-pdf-input="preview">
+        </label>
+      </div>
+      <div class="pdf-actions">
+        <button class="btn-secondary" data-pdf-action="preview">Refresh Preview</button>
+        <button class="btn-secondary" data-pdf-action="copy">Copy Text</button>
+      </div>
+    </section>
+
+    <aside class="pdf-status-panel">
+      <div class="panel-header">PDF Contents</div>
+      <div id="pdf-status-list" class="pdf-status-list"></div>
+      <div class="panel-header">Template Reference</div>
+      <div class="pdf-template-reference" id="pdf-template-reference">
+        <img src="assets/templates/apa-weather-disturbance-template.jpg" alt="APA advisory template reference">
+      </div>
+    </aside>
+  </div>
+
+  <div class="pdf-preview-panel">
+    <div class="section-header">
+      <span class="section-title">Draft Advisory Preview</span>
+    </div>
+    <pre id="pdf-preview" class="pdf-preview">Loading advisory preview...</pre>
+  </div>
+</div>
 <!-- Scripts -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/cis-data.js?v=20260804-agri"></script>
+<script src="js/cis-data.js?v=20260805-pdf"></script>
 <script src="js/cis-map.js?v=20260804-agri"></script>
 <script src="js/cis-dashboard.js?v=20260804-agri"></script>
 <script src="js/cis-advisory.js?v=20260804-agri"></script>
 <script src="js/cis-planning.js?v=20260804-agri"></script>
 <script src="js/cis-severe-weather.js?v=20260804-agri"></script>
-<script src="js/cis-main.js?v=20260804-agri"></script>
+<script src="js/cis-advisory-pdf.js?v=20260805-levels"></script>
+<script src="js/cis-main.js?v=20260805-levels"></script>
 </body>
 </html>
