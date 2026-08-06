@@ -14,7 +14,7 @@
   "data_as_of": "2026-08-05",
   "forecast_as_of": "2026-08-05",
   "fallback_observation_as_of": "2026-07-31",
-  "severe_weather_last_checked": "2026-08-06T00:55:10.401139+00:00",
+  "severe_weather_last_checked": "2026-08-06T04:21:20.497301+00:00",
   "severe_weather_as_of": "2026-08-06",
   "severe_weather_active": true,
   "severe_weather_region2_affected": true,
@@ -22,8 +22,8 @@
   "severe_weather_is_final": false,
   "severe_weather_agriculture_advisory_status": "success",
   "severe_weather_agriculture_advisory_active": true,
-  "severe_weather_system": "Tropical Storm Maymay",
-  "severe_weather_bulletin_number": "12",
+  "severe_weather_system": "Tropical Depression Maymay",
+  "severe_weather_bulletin_number": "13",
   "severe_weather_auto_fetch_interval_minutes": 30,
   "severe_weather_auto_fetch_mode": "scheduled_only"
 }
