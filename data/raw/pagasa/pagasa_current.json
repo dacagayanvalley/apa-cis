@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-06",
-  "fetched_at": "2026-08-06T07:20:33.033280+00:00",
-  "fetched_at_utc": "2026-08-06T07:20:33.033280+00:00",
+  "fetched_at": "2026-08-06T10:13:11.079592+00:00",
+  "fetched_at_utc": "2026-08-06T10:13:11.079592+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -40,9 +40,9 @@
     "bulletin_status": "active",
     "name": "Maymay",
     "disturbance_type": "Tropical Depression",
-    "bulletin_number": "14",
-    "issued_at": "02:00 pm, 06 August 2026",
-    "valid_until": "the next advisory to be issued at 5:00 PM today)",
+    "bulletin_number": "15",
+    "issued_at": "05:00 pm, 06 August 2026",
+    "valid_until": "the next advisory to be issued at 11:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 1,
     "signal_levels": {
@@ -53,12 +53,12 @@
       "Quirino": 1
     },
     "max_sustained_wind_kmh": 45.0,
-    "peak_wind_gust_kmh": 75.0,
-    "gustiness_kmh": 75.0,
+    "peak_wind_gust_kmh": 60.0,
+    "gustiness_kmh": 60.0,
     "wind": {
       "max_sustained_wind_kmh": 45.0,
-      "peak_wind_gust_kmh": 75.0,
-      "gustiness_kmh": 75.0
+      "peak_wind_gust_kmh": 60.0,
+      "gustiness_kmh": 60.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -91,14 +91,14 @@
       {
         "signal": 1,
         "label": "TCWS 1",
-        "areas_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -",
+        "areas_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -",
         "region2_relevant": true
       }
     ],
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 19 issued at 11:00 AM today for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon."
+      "advisory_text": "Refer to Weather Advisory No. 20 issued at 05:00 PM today for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 19 issued at 11:00 AM today for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 20 issued at 05:00 PM today for the heavy rainfall outlook due to TC MAYMAY and the Southwest Monsoon.",
     "region2_affected": true,
     "affected_provinces": [
       "Cagayan",
@@ -111,12 +111,12 @@
         "psgc": "023101000",
         "municipality": "City of Tuguegarao",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023102000",
@@ -127,18 +127,18 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023103000",
         "municipality": "Alcala",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023104000",
@@ -149,18 +149,18 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023105000",
         "municipality": "Amulung",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023106000",
@@ -171,18 +171,18 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023107000",
         "municipality": "Baggao",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023108000",
@@ -193,7 +193,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023109000",
@@ -204,7 +204,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023110000",
@@ -215,7 +215,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023111000",
@@ -226,7 +226,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023112000",
@@ -237,29 +237,29 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023113000",
         "municipality": "Enrile",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023114000",
         "municipality": "Gattaran",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023115000",
@@ -270,18 +270,18 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023116000",
         "municipality": "Iguig",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023117000",
@@ -292,7 +292,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023118000",
@@ -303,7 +303,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023119000",
@@ -314,40 +314,40 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023120000",
         "municipality": "Peñablanca",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023121000",
         "municipality": "Piat",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023122000",
         "municipality": "Rizal",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023123000",
@@ -358,7 +358,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023124000",
@@ -369,7 +369,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023125000",
@@ -380,7 +380,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023126000",
@@ -391,7 +391,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023127000",
@@ -402,29 +402,29 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023128000",
         "municipality": "Solana",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "023129000",
         "municipality": "Tuao",
         "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031401000",
@@ -435,7 +435,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031402000",
@@ -446,7 +446,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031403000",
@@ -457,7 +457,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031404000",
@@ -468,7 +468,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031405000",
@@ -479,7 +479,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031406000",
@@ -490,7 +490,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031407000",
@@ -501,7 +501,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031408000",
@@ -512,7 +512,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031409000",
@@ -523,7 +523,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031410000",
@@ -534,7 +534,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031411000",
@@ -545,7 +545,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031412000",
@@ -556,7 +556,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031413000",
@@ -567,7 +567,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031414000",
@@ -578,7 +578,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031415000",
@@ -589,7 +589,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031416000",
@@ -600,7 +600,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031417000",
@@ -611,7 +611,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031418000",
@@ -622,7 +622,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031419000",
@@ -633,7 +633,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031420000",
@@ -644,7 +644,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031421000",
@@ -655,18 +655,18 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031422000",
         "municipality": "Quezon",
         "province": "Isabela",
-        "match": "province_full",
-        "coverage_scope": "province_full",
+        "match": "municipality",
+        "coverage_scope": "municipality",
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031423000",
@@ -677,7 +677,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031424000",
@@ -688,7 +688,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031425000",
@@ -699,7 +699,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031426000",
@@ -710,7 +710,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031427000",
@@ -721,7 +721,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031428000",
@@ -732,7 +732,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031429000",
@@ -743,7 +743,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031430000",
@@ -754,7 +754,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031431000",
@@ -765,7 +765,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031432000",
@@ -776,7 +776,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031433000",
@@ -787,7 +787,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031434000",
@@ -798,7 +798,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031435000",
@@ -809,7 +809,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031436000",
@@ -820,7 +820,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "031437000",
@@ -831,172 +831,128 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035601000",
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035602000",
         "municipality": "Ambaguio",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "035603000",
-        "municipality": "Aritao",
-        "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035604000",
         "municipality": "Bagabag",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035605000",
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035606000",
         "municipality": "Diadi",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035607000",
         "municipality": "Dupax del Norte",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035608000",
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035609000",
         "municipality": "Kasibu",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "035610000",
-        "municipality": "Kayapa",
-        "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035611000",
         "municipality": "Quezon",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "035612000",
-        "municipality": "Santa Fe",
-        "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035613000",
         "municipality": "Solano",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "035614000",
         "municipality": "Villaverde",
         "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": true,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "035615000",
-        "municipality": "Alfonso Castaneda",
-        "province": "Nueva Vizcaya",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "067001000",
@@ -1007,7 +963,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "067002000",
@@ -1018,7 +974,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "067003000",
@@ -1029,7 +985,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "067004000",
@@ -1040,7 +996,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "067005000",
@@ -1051,7 +1007,7 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       },
       {
         "psgc": "067006000",
@@ -1062,22 +1018,22 @@
         "province_partial": false,
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon Ilocos Norte, Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), Apayao, Abra, Kalinga, Mountain Province, Ifugao, Benguet, mainland Cagayan, Isabela, Quirino, Nueva Vizcaya and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The southeastern portion of mainland Cagayan (Tuao, Piat, Enrile, Alcala, Amulung, Baggao, Solana, Tuguegarao City, Gattaran, Peñablanca, Iguig), Isabela, Quirino, the northeastern portion of Nueva Vizcaya (Dupax del Norte, Kasibu, Quezon, Bagabag, Diadi, Bayombong, Ambaguio, Villaverde, Bambang, Solano, Alfonso Castañeda, Dupax del Sur), the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao), the eastern portion of Kalinga (City of Tabuk, Pinukpuk, Tanudan, Lubuagan, Rizal), the eastern portion of Mountain Province (Paracelis, Natonin, Barlig) and the eastern portion of Ifugao (Lagawe, Aguinaldo, Asipulo, Hingyon, Kiangan, Lamut, Alfonso Lista, Mayoyao, Banaue) Visayas - Mindanao -"
       }
     ],
     "municipality_validation": {
       "enabled": true,
       "coverage_scope": "mixed",
-      "affected_municipality_count": 87,
-      "full_province_match_count": 85,
-      "explicit_municipality_match_count": 2,
+      "affected_municipality_count": 83,
+      "full_province_match_count": 57,
+      "explicit_municipality_match_count": 26,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Tropical Depression Maymay Bulletin #14",
+    "summary": "Tropical Depression Maymay Bulletin #15",
     "as_of": "2026-08-06",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-06T07:20:33.033280+00:00",
-    "fetched_at_utc": "2026-08-06T07:20:33.033280+00:00",
+    "fetched_at": "2026-08-06T10:13:11.079592+00:00",
+    "fetched_at_utc": "2026-08-06T10:13:11.079592+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -1086,7 +1042,7 @@
       "as_of": "2026-08-06",
       "active": true,
       "region2_relevant": true,
-      "summary": "PAGASA agriculture warning for La Union, Benguet, Ifugao, Cagayan, Isabela, Nueva Vizcaya, Quirino, at Aurora: Maulan na may pagbugso ng hangin",
+      "summary": "PAGASA agriculture warning for Mainland Cagayan, Isabela, Nueva Vizcaya, Quirino, at Aurora: Maulan na may pagbugso ng hangin",
       "agri_weather": [
         {
           "forecast_area": "BABALA NG BAGYO POSIBLENG MARANASAN LAKAS NG HANGIN (km/h) ORAS NA INAASAHAN (mula sa unang paglabas ng babala) 5 Lubhang mapanganib sa buhay at mga ari-arian >185 12 na oras 4 Malaki hanggang sa matinding pinsala 118 - 184 12 na oras 3 Katamtaman hanggang sa malaking pinsala 89 - 117 18 na oras 2 Bahagya hanggang sa katamtamang pinsala 62 - 88 24 na oras 1 Maliit hanggang sa bahagyang pinsala 39 - 61 36 na oras",
@@ -1097,50 +1053,42 @@
           "leaf_wetness_hours": "ORAS NA INAASAHAN (mula sa unang paglabas ng babala)"
         },
         {
-          "forecast_area": "Ilocos Norte, Ilocos Sur, Mountain Province, Abra, Kalinga, at Apayao",
-          "agri_weather": "Masungit na panahon",
-          "lowland_temp_c": "23 – 29",
-          "upland_temp_c": "18 – 28",
-          "relative_humidity_pct": "75 – 100",
-          "leaf_wetness_hours": "> 12"
-        },
-        {
-          "forecast_area": "La Union, Benguet, Ifugao, Cagayan, Isabela, Nueva Vizcaya, Quirino, at Aurora",
-          "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "24 – 28",
-          "upland_temp_c": "16 – 26",
-          "relative_humidity_pct": "70 – 100",
-          "leaf_wetness_hours": ">12"
-        },
-        {
-          "forecast_area": "Metro Manila, Rizal, Cavite, Batangas, Laguna, at Occidental Mindoro",
+          "forecast_area": "Mainland Cagayan, Isabela, Nueva Vizcaya, Quirino, at Aurora",
           "agri_weather": "Maulan na may pagbugso ng hangin",
           "lowland_temp_c": "23 – 30",
-          "upland_temp_c": "21 – 26",
-          "relative_humidity_pct": "65 – 98",
+          "upland_temp_c": "21 – 28",
+          "relative_humidity_pct": "75 – 98",
           "leaf_wetness_hours": "8 – 12"
         },
         {
-          "forecast_area": "Natitirang bahagi ng Gitnang Luzon at Pangasinan",
+          "forecast_area": "Metro Manila, Zambales, Bataan, Tarlac, Pampanga, Bulacan, Rizal, Cavite, Batangas, Laguna, at Occidental Mindoro",
+          "agri_weather": "Paminsan-minsang pag-ulan",
+          "lowland_temp_c": "24 – 29",
+          "upland_temp_c": "21 – 27",
+          "relative_humidity_pct": "70 – 98",
+          "leaf_wetness_hours": "8 – 12"
+        },
+        {
+          "forecast_area": "Rehiyon ng Ilocos, Cordillera Administrative Region, Nueva Ecija, at Babuyan Islands",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 32",
-          "upland_temp_c": "21 – 30",
-          "relative_humidity_pct": "60 – 98",
+          "lowland_temp_c": "23 – 30",
+          "upland_temp_c": "16 – 29",
+          "relative_humidity_pct": "65 – 98",
           "leaf_wetness_hours": "6 – 10"
         },
         {
-          "forecast_area": "Natitirang bahagi ng MIMAROPA, Quezon, at Antique",
+          "forecast_area": "Natitirang bahagi ng MIMAROPA, Tarlac, Quezon, Camarines Norte, Camarines Sur, Albay, at Antique",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 34",
+          "lowland_temp_c": "24 – 32",
           "upland_temp_c": "21 – 30",
-          "relative_humidity_pct": "55 – 98",
-          "leaf_wetness_hours": "4 – 8"
+          "relative_humidity_pct": "65 – 98",
+          "leaf_wetness_hours": "6 – 10"
         },
         {
           "forecast_area": "Natitirang bahagi ng bansa",
           "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 35",
-          "upland_temp_c": "20 – 32",
+          "lowland_temp_c": "23 – 33",
+          "upland_temp_c": "22 – 30",
           "relative_humidity_pct": "45 – 96",
           "leaf_wetness_hours": "0 – 4"
         }
@@ -1149,15 +1097,15 @@
         "PAYONG PANGSAKAHAN SA MGA POSIBLENG MAAPEKTUHAN NG BAGYO",
         "Putulin and mga labis na sanga at pati na rin ang malalaking sanga ng punong-kahoy na maaring magdulot ng panganib sa tinitirhan o sa alin mang estraktura at iyong malapit sa poste ng elektrisidad.",
         "Anihin at ipagbili ang mga halamang madaling mabulok tulad ng gulay at bungang kahoy.",
-        "Posibleng magkaroon ng maraming pagbaha, lalo na sa mga urbanisadong lugar, mabababang lugar, o malapit sa mga ilog.",
-        "May posibilidad ng pagguho ng lupa sa mga lugar na may katamtaman hanggang sa mataas ang panganib.",
         "Posibleng magkaroon ng mga localized na pagbaha, lalo na sa mga urbanisadong lugar, mabababang lugar, o malapit sa mga ilog.",
         "May posibilidad ang pagguho ng lupa sa mga lugar na may mataas na panganib.",
         "PAALALA: Inaasahan ang mas malakas na mga pag-ulan sa mga matataas ang mabundok na lugar. Sa ganitong kalagayan, posible ang pagbaha at pagguho ng lupa dulot ng mga pag-ulan, lalo na sa mga lugar na madalas na nakakaranas nito ayun sa mga hazard maps at sa mga lugar na nakaranas ng malalakas na pag-ulan noong mga nakalipas na mga araw.",
-        "Para sa karagdagang impormasyon, tingnan ang Weather Advisory #19 na inilabas ng PAGASA kaninang 11:00 AM para sa Heavy Rainfall Outlook dulot ng bagyong “MAYMAY” at ng Habagat.",
+        "Para sa karagdagang impormasyon, tingnan ang Weather Advisory #20 na inilabas ng PAGASA kaninang 5:00 PM para sa Heavy Rainfall Outlook dulot ng bagyong “MAYMAY” at ng Habagat.",
         "MALAKAS NA HANGIN",
         "Malaking bahagi ng bansa",
-        "Ang mga babala ng bagyo ay upang mabigyan ng babala ang lahat sa panganib na dulot ng hangin dahil sa bagyo. Ang mga lokal na hangin ay posibleng bahagyang mas malakas sa mga lugar malapit sa tabing-dagat o matataas at mabubundok na lugar. Mas mahina ang hangin sa mga lugar na hindi direktang tinatamaan nito."
+        "Ang mga babala ng bagyo ay upang mabigyan ng babala ang lahat sa panganib na dulot ng hangin dahil sa bagyo. Ang mga lokal na hangin ay posibleng bahagyang mas malakas sa mga lugar malapit sa tabing-dagat o matataas at mabubundok na lugar. Mas mahina ang hangin sa mga lugar na hindi direktang tinatamaan nito.",
+        "Mapanganib maglayag ang anumang uri ng sasakyang pandagat. Pinapayuhan ang mga maglalayag na manatili muna sa port o pumunta sa pinakamalapit na daungan.",
+        "Pinapayuhan ang mga mandaragat na gumagamit ng maliliit na sasakyang pandagat, kasama na ang mga bangkang de motor, na huwag munang maglayag lalo na ang mga walang karanasan sa ganitong kondisyon o mga gumagamit ng mga sasakyan na may sira."
       ],
       "unaffected_area_advisories": [
         "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
@@ -1176,12 +1124,12 @@
       "parse_method": "pagasa_public_html_static",
       "region2_agri_weather": [
         {
-          "forecast_area": "La Union, Benguet, Ifugao, Cagayan, Isabela, Nueva Vizcaya, Quirino, at Aurora",
+          "forecast_area": "Mainland Cagayan, Isabela, Nueva Vizcaya, Quirino, at Aurora",
           "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "24 – 28",
-          "upland_temp_c": "16 – 26",
-          "relative_humidity_pct": "70 – 100",
-          "leaf_wetness_hours": ">12"
+          "lowland_temp_c": "23 – 30",
+          "upland_temp_c": "21 – 28",
+          "relative_humidity_pct": "75 – 98",
+          "leaf_wetness_hours": "8 – 12"
         }
       ]
     }
@@ -1195,6 +1143,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-06T07:20:33.033280+00:00"
+    "last_checked_utc": "2026-08-06T10:13:11.079592+00:00"
   }
 }
