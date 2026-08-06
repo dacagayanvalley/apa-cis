@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-06",
-  "fetched_at": "2026-08-05T23:10:38.387478+00:00",
-  "fetched_at_utc": "2026-08-05T23:10:38.387478+00:00",
+  "fetched_at": "2026-08-06T00:55:10.401139+00:00",
+  "fetched_at_utc": "2026-08-06T00:55:10.401139+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -38,9 +38,9 @@
     "bulletin_status": "active",
     "name": "Maymay",
     "disturbance_type": "Tropical Storm",
-    "bulletin_number": "11",
-    "issued_at": "05:00 am, 06 August 2026",
-    "valid_until": "the next advisory to be issued at 8:00 AM today)",
+    "bulletin_number": "12",
+    "issued_at": "08:00 am, 06 August 2026",
+    "valid_until": "the next advisory to be issued at 11:00 AM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 2,
     "signal_levels": {
@@ -89,13 +89,13 @@
       {
         "signal": 2,
         "label": "TCWS 2",
-        "areas_text": "Luzon Ilocos Norte, the northern and central portions of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan), and the western portion of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga) Visayas - Mindanao -",
+        "areas_text": "Luzon Ilocos Norte, the northern and central portion of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western and central portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan, Pinukpuk, City of Tabuk, Tanudan), and the western and central portions of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga, Barlig, Natonin) Visayas - Mindanao -",
         "region2_relevant": true
       },
       {
         "signal": 1,
         "label": "TCWS 1",
-        "areas_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -",
+        "areas_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -",
         "region2_relevant": true
       }
     ],
@@ -118,7 +118,7 @@
         "match": "province",
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Ilocos Norte, the northern and central portions of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan), and the western portion of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga) Visayas - Mindanao -"
+        "official_area_text": "Luzon Ilocos Norte, the northern and central portion of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western and central portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan, Pinukpuk, City of Tabuk, Tanudan), and the western and central portions of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga, Barlig, Natonin) Visayas - Mindanao -"
       },
       {
         "psgc": "067002000",
@@ -127,7 +127,7 @@
         "match": "province",
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Ilocos Norte, the northern and central portions of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan), and the western portion of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga) Visayas - Mindanao -"
+        "official_area_text": "Luzon Ilocos Norte, the northern and central portion of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western and central portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan, Pinukpuk, City of Tabuk, Tanudan), and the western and central portions of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga, Barlig, Natonin) Visayas - Mindanao -"
       },
       {
         "psgc": "067003000",
@@ -136,7 +136,7 @@
         "match": "province",
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Ilocos Norte, the northern and central portions of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan), and the western portion of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga) Visayas - Mindanao -"
+        "official_area_text": "Luzon Ilocos Norte, the northern and central portion of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western and central portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan, Pinukpuk, City of Tabuk, Tanudan), and the western and central portions of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga, Barlig, Natonin) Visayas - Mindanao -"
       },
       {
         "psgc": "067004000",
@@ -145,7 +145,7 @@
         "match": "province",
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Ilocos Norte, the northern and central portions of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan), and the western portion of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga) Visayas - Mindanao -"
+        "official_area_text": "Luzon Ilocos Norte, the northern and central portion of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western and central portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan, Pinukpuk, City of Tabuk, Tanudan), and the western and central portions of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga, Barlig, Natonin) Visayas - Mindanao -"
       },
       {
         "psgc": "067005000",
@@ -154,7 +154,7 @@
         "match": "province",
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Ilocos Norte, the northern and central portions of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan), and the western portion of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga) Visayas - Mindanao -"
+        "official_area_text": "Luzon Ilocos Norte, the northern and central portion of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western and central portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan, Pinukpuk, City of Tabuk, Tanudan), and the western and central portions of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga, Barlig, Natonin) Visayas - Mindanao -"
       },
       {
         "psgc": "067006000",
@@ -163,7 +163,7 @@
         "match": "province",
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Ilocos Norte, the northern and central portions of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan), and the western portion of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga) Visayas - Mindanao -"
+        "official_area_text": "Luzon Ilocos Norte, the northern and central portion of Ilocos Sur (Gregorio del Pilar, Magsingal, San Esteban, Banayoyo, Cervantes, Burgos, City of Candon, Santa Lucia, Santiago, San Vicente, Santa Catalina, Lidlidda, Nagbukel, Sinait, Suyo, Sigay, San Ildefonso, Galimuyod, Quirino, City of Vigan, San Emilio, Cabugao, Caoayan, San Juan, Santa, Bantay, Santo Domingo, Tagudin, Santa Cruz, Santa Maria, Narvacan, Salcedo), the western portion of Apayao (Conner, Kabugao, Calanasan), Abra, the western and central portion of Kalinga (Pasil, Tinglayan, Balbalan, Lubuagan, Pinukpuk, City of Tabuk, Tanudan), and the western and central portions of Mountain Province (Besao, Tadian, Bauko, Sagada, Sabangan, Bontoc, Sadanga, Barlig, Natonin) Visayas - Mindanao -"
       },
       {
         "psgc": "023101000",
@@ -172,7 +172,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023102000",
@@ -181,7 +181,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023103000",
@@ -190,7 +190,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023104000",
@@ -199,7 +199,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023105000",
@@ -208,7 +208,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023106000",
@@ -217,7 +217,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023107000",
@@ -226,7 +226,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023108000",
@@ -235,7 +235,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023109000",
@@ -244,7 +244,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023110000",
@@ -253,7 +253,7 @@
         "match": "municipality",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023111000",
@@ -262,7 +262,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023112000",
@@ -271,7 +271,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023113000",
@@ -280,7 +280,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023114000",
@@ -289,7 +289,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023115000",
@@ -298,7 +298,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023116000",
@@ -307,7 +307,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023117000",
@@ -316,7 +316,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023118000",
@@ -325,7 +325,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023119000",
@@ -334,7 +334,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023120000",
@@ -343,7 +343,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023121000",
@@ -352,7 +352,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023122000",
@@ -361,7 +361,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023123000",
@@ -370,7 +370,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023124000",
@@ -379,7 +379,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023125000",
@@ -388,7 +388,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023126000",
@@ -397,7 +397,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023127000",
@@ -406,7 +406,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023128000",
@@ -415,7 +415,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "023129000",
@@ -424,7 +424,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031401000",
@@ -433,7 +433,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031402000",
@@ -442,7 +442,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031403000",
@@ -451,7 +451,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031404000",
@@ -460,7 +460,7 @@
         "match": "municipality",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031405000",
@@ -469,7 +469,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031406000",
@@ -478,7 +478,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031407000",
@@ -487,7 +487,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031408000",
@@ -496,7 +496,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031409000",
@@ -505,7 +505,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031410000",
@@ -514,7 +514,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031411000",
@@ -523,7 +523,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031412000",
@@ -532,7 +532,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031413000",
@@ -541,7 +541,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031414000",
@@ -550,7 +550,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031415000",
@@ -559,7 +559,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031416000",
@@ -568,7 +568,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031417000",
@@ -577,7 +577,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031418000",
@@ -586,7 +586,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031419000",
@@ -595,7 +595,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031420000",
@@ -604,7 +604,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031421000",
@@ -613,7 +613,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031422000",
@@ -622,7 +622,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031423000",
@@ -631,7 +631,7 @@
         "match": "municipality",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031424000",
@@ -640,7 +640,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031425000",
@@ -649,7 +649,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031426000",
@@ -658,7 +658,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031427000",
@@ -667,7 +667,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031428000",
@@ -676,7 +676,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031429000",
@@ -685,7 +685,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031430000",
@@ -694,7 +694,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031431000",
@@ -703,7 +703,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031432000",
@@ -712,7 +712,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031433000",
@@ -721,7 +721,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031434000",
@@ -730,7 +730,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031435000",
@@ -739,7 +739,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031436000",
@@ -748,7 +748,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "031437000",
@@ -757,7 +757,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035601000",
@@ -766,7 +766,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035602000",
@@ -775,7 +775,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035603000",
@@ -784,7 +784,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035604000",
@@ -793,7 +793,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035605000",
@@ -802,7 +802,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035606000",
@@ -811,7 +811,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035607000",
@@ -820,7 +820,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035608000",
@@ -829,7 +829,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035609000",
@@ -838,7 +838,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035610000",
@@ -847,7 +847,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035611000",
@@ -856,7 +856,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035612000",
@@ -865,7 +865,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035613000",
@@ -874,7 +874,7 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       },
       {
         "psgc": "035614000",
@@ -883,14 +883,14 @@
         "match": "province",
         "signal": 1,
         "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portions of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
+        "official_area_text": "Luzon The rest of Ilocos Sur, La Union, the northwestern portion of Pangasinan (Bolinao, Anda, Bani), the rest of Apayao, the rest of Kalinga, the rest of Mountain Province, Ifugao, Benguet, the southern portion of Babuyan Islands (Calayan Is., Dalupiri Is, Fuga Is., Camiguin Isl.), mainland Cagayan, Isabela, Quirino, Nueva Vizcaya, and the northern and central portion of Aurora (Dilasag, Casiguran, Dinalungan, Dipaculao) Visayas - Mindanao -"
       }
     ],
-    "summary": "Tropical Storm Maymay Bulletin #11",
+    "summary": "Tropical Storm Maymay Bulletin #12",
     "as_of": "2026-08-06",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-05T23:10:38.387478+00:00",
-    "fetched_at_utc": "2026-08-05T23:10:38.387478+00:00",
+    "fetched_at": "2026-08-06T00:55:10.401139+00:00",
+    "fetched_at_utc": "2026-08-06T00:55:10.401139+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -898,105 +898,13 @@
       "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
       "as_of": "2026-08-06",
       "active": true,
-      "region2_relevant": true,
-      "summary": "PAGASA agriculture warning for Cagayan, Isabela, Nueva Vizcaya, Quirino, Pangasinan, Apayao, Zambales, Tarlac, Nueva Ecija, at Aurora: Maulan na may pagbugso ng hangin",
-      "agri_weather": [
-        {
-          "forecast_area": "BABALA NG BAGYO POSIBLENG MARANASAN LAKAS NG HANGIN (km/h) ORAS NA INAASAHAN (mula sa unang paglabas ng babala) 5 Lubhang mapanganib sa buhay at mga ari-arian >185 12 na oras 4 Malaki hanggang sa matinding pinsala 118 - 184 12 na oras 3 Katamtaman hanggang sa malaking pinsala 89 - 117 18 na oras 2 Bahagya hanggang sa katamtamang pinsala 62 - 88 24 na oras 1 Maliit hanggang sa bahagyang pinsala 39 - 61 36 na oras",
-          "agri_weather": "BABALA NG BAGYO",
-          "lowland_temp_c": "",
-          "upland_temp_c": "POSIBLENG MARANASAN",
-          "relative_humidity_pct": "LAKAS NG HANGIN (km/h)",
-          "leaf_wetness_hours": "ORAS NA INAASAHAN (mula sa unang paglabas ng babala)"
-        },
-        {
-          "forecast_area": "Ilocos Norte, Ilocos Sur, La Union, Benguet, Mountain Province, Abra, Kalinga, at Ifugao",
-          "agri_weather": "Masungit na panahon",
-          "lowland_temp_c": "24 – 29",
-          "upland_temp_c": "17 – 28",
-          "relative_humidity_pct": "75 – 100",
-          "leaf_wetness_hours": "> 12"
-        },
-        {
-          "forecast_area": "Cagayan, Isabela, Nueva Vizcaya, Quirino, Pangasinan, Apayao, Zambales, Tarlac, Nueva Ecija, at Aurora",
-          "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "24 – 30",
-          "upland_temp_c": "21 – 27",
-          "relative_humidity_pct": "70 – 100",
-          "leaf_wetness_hours": "> 12"
-        },
-        {
-          "forecast_area": "Metro Manila, Rizal, Cavite, Batangas, Laguna, at Occidental Mindoro",
-          "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "24 – 29",
-          "upland_temp_c": "21 – 27",
-          "relative_humidity_pct": "65 – 100",
-          "leaf_wetness_hours": "8 – 12"
-        },
-        {
-          "forecast_area": "Natitirang bahagi ng Gitnang Luzon",
-          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "24 – 29",
-          "upland_temp_c": "21– 27",
-          "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": "8 – 12"
-        },
-        {
-          "forecast_area": "Quezon, Palawan, Oriental Mindoro, Marinduque, Antique, Iloilo, at Guimaras",
-          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "24 – 31",
-          "upland_temp_c": "21 – 30",
-          "relative_humidity_pct": "55 – 98",
-          "leaf_wetness_hours": "4 – 8"
-        },
-        {
-          "forecast_area": "Natitirang bahagi ng bansa",
-          "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 34",
-          "upland_temp_c": "21 – 30",
-          "relative_humidity_pct": "45 – 96",
-          "leaf_wetness_hours": "0 – 4"
-        }
-      ],
-      "affected_area_advisories": [
-        "PAYONG PANGSAKAHAN SA MGA POSIBLENG MAAPEKTUHAN NG BAGYO",
-        "Putulin and mga labis na sanga at pati na rin ang malalaking sanga ng punong-kahoy na maaring magdulot ng panganib sa tinitirhan o sa alin mang estraktura at iyong malapit sa poste ng elektrisidad.",
-        "Anihin at ipagbili ang mga halamang madaling mabulok tulad ng gulay at bungang kahoy.",
-        "Inaasahan ang malawakang pagbaha at pagguho ng lupa",
-        "Posibleng magkaroon ng maraming pagbaha, lalo na sa mga urbanisadong lugar, mabababang lugar, o malapit sa mga ilog.",
-        "May posibilidad ng pagguho ng lupa sa mga lugar na may katamtaman hanggang sa mataas ang panganib.",
-        "Posibleng magkaroon ng mga localized na pagbaha, lalo na sa mga urbanisadong lugar, mabababang lugar, o malapit sa mga ilog.",
-        "May posibilidad ang pagguho ng lupa sa mga lugar na may mataas na panganib.",
-        "PAALALA: Inaasahan ang mas malakas na mga pag-ulan sa mga matataas ang mabundok na lugar. Sa ganitong kalagayan, posible ang pagbaha at pagguho ng lupa dulot ng mga pag-ulan, lalo na sa mga lugar na madalas na nakakaranas nito ayun sa mga hazard maps at sa mga lugar na nakaranas ng malalakas na pag-ulan noong mga nakalipas na mga araw.",
-        "Para sa karagdagang impormasyon, tingnan ang Weather Advisory #16 na inilabas ng PAGASA kaninang 5:00 PM para sa Heavy Rainfall Outlook dulot ng bagyong “MAYMAY” at ng Habagat.",
-        "MALAKAS NA HANGIN",
-        "Malaking bahagi ng bansa"
-      ],
-      "unaffected_area_advisories": [
-        "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
-        "Regular na linisin at ayusin ang mga kanal, pilapil, at daluyan ng tubig upang matiyak ang maayos na agos ng tubig at maiwasan ang pagbaha sa mabababang lugar.",
-        "Magtanim sa raised beds o gumamit ng plastic mulch upang makaiwas sa root rot at erosion.",
-        "Maglagay ng rain shelters o simpleng bubong sa mga maselan na pananim.",
-        "Agapan ang pagkalat ng fungal diseases tulad ng leaf blight at mildew.",
-        "Putulin ang sobrang sanga at bigyan ng suporta ang mga batang puno upang hindi mapinsala ng hangin.",
-        "I-monitor ang lagay ng panahon bago bumiyahe ng ani o produkto upang maiwasan ang abala at panganib sa daan.",
-        "Gumamit ng covered vans o waterproof na tolda upang maprotektahan ang ani laban sa ulan at pagkabasa.",
-        "Iwasan ang paglilinis o pagsasaayos ng mga kanal, pilapil, at daluyan ng tubig habang may banta ng pagguho ng lupa upang maiwasan ang aksidente. Gawin lamang ang mga ito kapag ligtas na ang panahon at ang lugar ay kumpirmadong walang panganib.",
-        "Patuloy na mag-antabay sa mga updates at pagbabago ukol sa sama ng panahon.",
-        "na maaaring maapektuhan ay pinapayuhan na gumawa ng mga kaukulang hakbang para maprotektahan ang buhay at mga ari-arian. Ang mga nakatira sa mga lugar na maaaring maapektuhan ay pinapayuhang sumunod sa mga tagubilin ng mga namumuno sa inyong lugar. Para sa heavy rainfall warnings, thunderstorm/rainfall advisories, at iba pang severe weather information na para sa inyong lugar, palaging magbantay sa mga produktong ilalabas ng inyong lokal"
-      ],
+      "region2_relevant": false,
+      "summary": "No active PAGASA agriculture warning parsed.",
+      "agri_weather": [],
+      "affected_area_advisories": [],
+      "unaffected_area_advisories": [],
       "raw_text_excerpt": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling CliMap Statistical Downscaling Climate Data Agri-Weather Climate Information for Agriculture Farm Weather Forecast Weekend/Special Farm Weather Forecast Ten-Day Regional Agri-Weather Information Monthly Philippine Agro-Climatic Review and Outlook Impact Assessment for Agriculture Astronomy Telescoping and Stargazing Astronomy in the Philippines Planetarium Astronomical Observatory Time Service Philippine Standard Time Astronomical Diary Regional Forecast Northern Luzon National Capital Region Southern Luzon Visayas Mindanao Products and Services Engineering Services Calibration Services Numerical Prediction Model Satellites Flood Monitoring for Metro Manila Risk Analysis Map Flood Hazard Map Regional Severe Wind Hazard Maps High Frequency Doppler Radar Vacancy GAD Corner Learnings Publication FAQs and Trivias Learning Tools Research and Development Information Rainfall and Thunderstorm Warning System Weather Terminologies Flood Forecasting and Warning System for River Basins Climate of the Philippines Climate Change in the Philippines Astronomy in the Philippines Field Station Categories Basic Cloud Seeding Operations Storm Surge Information Legend About Us Contact Us National Meteorological and Hydrological Services Related Linkages Transparency Seal About Us Mandate and Functions ",
-      "parse_method": "pagasa_public_html_static",
-      "region2_agri_weather": [
-        {
-          "forecast_area": "Cagayan, Isabela, Nueva Vizcaya, Quirino, Pangasinan, Apayao, Zambales, Tarlac, Nueva Ecija, at Aurora",
-          "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "24 – 30",
-          "upland_temp_c": "21 – 27",
-          "relative_humidity_pct": "70 – 100",
-          "leaf_wetness_hours": "> 12"
-        }
-      ]
+      "parse_method": "pagasa_public_html_static"
     }
   },
   "scrape_status": {
@@ -1008,6 +916,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-05T23:10:38.387478+00:00"
+    "last_checked_utc": "2026-08-06T00:55:10.401139+00:00"
   }
 }
