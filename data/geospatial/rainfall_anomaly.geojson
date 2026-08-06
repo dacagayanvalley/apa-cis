@@ -1526,6 +1526,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.3005,
+          15.7951
+        ]
+      },
+      "properties": {
+        "psgc": "035615000",
+        "municipality": "Alfonso Castaneda",
+        "province": "Nueva Vizcaya",
+        "anomaly_mm": null,
+        "pct_of_normal": null,
+        "anomaly_class": null,
+        "color": "#BDBDBD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           121.5088,
           16.5113
         ]

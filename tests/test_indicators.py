@@ -424,3 +424,33 @@ class TestUtils:
         assert len(r) == 3
         assert r[0].isoformat() == "2026-06-01"
         assert r[-1].isoformat() == "2026-06-03"
+
+
+class TestMunicipalityLevelTcws:
+    def test_partial_tcws_does_not_fall_back_to_whole_province(self):
+        from scripts.indicators.compute_indicators import _official_hazards_for_municipality
+
+        pagasa = {
+            "as_of": "2026-08-05",
+            "typhoon": {
+                "active": True,
+                "name": "TEST",
+                "signal_levels": {"Isabela": 2},
+                "municipality_validation": {"coverage_scope": "municipality"},
+                "affected_municipalities": [
+                    {"psgc": "031423000", "municipality": "Quirino", "province": "Isabela", "tcws_signal": 2}
+                ],
+            },
+        }
+
+        matched = _official_hazards_for_municipality(
+            {"psgc": "031423000", "name": "Quirino", "province": "Isabela"}, pagasa
+        )
+        unmatched = _official_hazards_for_municipality(
+            {"psgc": "031426000", "name": "Roxas", "province": "Isabela"}, pagasa
+        )
+
+        assert matched["tcws_signal"] == 2
+        assert matched["tcws_municipality_validated"] is True
+        assert unmatched["tcws_signal"] == 0
+        assert unmatched["tcws_municipality_validated"] is False

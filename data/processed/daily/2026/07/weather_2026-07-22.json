@@ -4,7 +4,7 @@
     "date": "2026-07-22",
     "source": "NASA POWER (Community: AG)",
     "parameters": "PRECTOTCORR,T2M_MAX,T2M_MIN,T2M,RH2M,WS2M,ALLSKY_SFC_SW_DWN,GWETROOT,WD2M",
-    "municipality_count": 92,
+    "municipality_count": 93,
     "lag_note": "NASA POWER data has approximately 5-day lag"
   },
   "data": [
@@ -1387,6 +1387,21 @@
       "wind_dir_deg": null,
       "solar_mj": null,
       "soil_moisture": 0.51
+    },
+    {
+      "psgc": "035615000",
+      "date": "2026-07-22",
+      "source": "nasa_power",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR%2CT2M_MAX%2CT2M_MIN%2CT2M%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETROOT%2CWD2M&community=AG&longitude=121.3005&latitude=15.7951&start=20260722&end=20260722&format=JSON",
+      "rainfall_mm": 3.93,
+      "tmax_c": 29.88,
+      "tmin_c": 22.43,
+      "tmean_c": 25.79,
+      "humidity_pct": 81.91,
+      "wind_speed_ms": 0.47,
+      "wind_dir_deg": null,
+      "solar_mj": 24.46,
+      "soil_moisture": 0.91
     }
   ]
 }

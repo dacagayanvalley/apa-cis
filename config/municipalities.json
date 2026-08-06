@@ -79,6 +79,7 @@
   {"psgc":"035612000","name":"Santa Fe","province":"Nueva Vizcaya","province_code":"0356","lat":16.1720,"lon":120.9430,"climate_type":"Type III","elevation_m":1600,"irrigation_status":"rainfed"},
   {"psgc":"035613000","name":"Solano","province":"Nueva Vizcaya","province_code":"0356","lat":16.5230,"lon":121.1890,"climate_type":"Type III","elevation_m":380,"irrigation_status":"irrigated"},
   {"psgc":"035614000","name":"Villaverde","province":"Nueva Vizcaya","province_code":"0356","lat":16.5900,"lon":121.1200,"climate_type":"Type III","elevation_m":350,"irrigation_status":"partial"},
+  {"psgc":"035615000","name":"Alfonso Castaneda","province":"Nueva Vizcaya","province_code":"0356","lat":15.7951,"lon":121.3005,"climate_type":"Type III","elevation_m":311,"irrigation_status":"rainfed"},
   {"psgc":"067001000","name":"Cabarroguis","province":"Quirino","province_code":"0670","lat":16.5113,"lon":121.5088,"climate_type":"Type II","elevation_m":240,"irrigation_status":"partial"},
   {"psgc":"067002000","name":"Aglipay","province":"Quirino","province_code":"0670","lat":16.4890,"lon":121.5820,"climate_type":"Type II","elevation_m":270,"irrigation_status":"rainfed"},
   {"psgc":"067003000","name":"Diffun","province":"Quirino","province_code":"0670","lat":16.5950,"lon":121.5010,"climate_type":"Type II","elevation_m":230,"irrigation_status":"partial"},

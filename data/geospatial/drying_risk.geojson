@@ -1836,6 +1836,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.3005,
+          15.7951
+        ]
+      },
+      "properties": {
+        "psgc": "035615000",
+        "municipality": "Alfonso Castaneda",
+        "province": "Nueva Vizcaya",
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
+        ],
+        "color": "#B71C1C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           121.5088,
           16.5113
         ]

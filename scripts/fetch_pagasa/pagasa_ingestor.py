@@ -237,49 +237,91 @@ def _norm_place(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
-def _municipality_name_hit(name: str, text: str) -> bool:
-    lower_text = (text or "").lower()
-    if (name or "").lower() in lower_text:
-        return True
+NON_REGION2_CONTEXT_TERMS = [
+    "ilocos region", "region i", "region 1", "ilocos norte", "ilocos sur",
+    "la union", "pangasinan", "cagayan de oro", "calabarzon", "mimaropa",
+    "central luzon", "central visayas", "western visayas", "eastern visayas",
+    "zamboanga", "davao", "caraga", "bicol",
+]
+
+
+def _non_region2_context_near(name: str, text: str) -> bool:
+    """Return True when a place-name hit is qualified by another region/province."""
+    if not name or not text:
+        return False
+    lower_text = text.lower()
+    for match in re.finditer(rf"\b{re.escape(name.lower())}\b", lower_text):
+        start = max(0, match.start() - 80)
+        end = min(len(lower_text), match.end() + 80)
+        window = lower_text[start:end]
+        if any(term in window for term in NON_REGION2_CONTEXT_TERMS):
+            return True
+    return False
+
+
+def _place_name_hit(name: str, text: str) -> bool:
     norm_name = _norm_place(name)
     norm_text = _norm_place(text)
     return bool(norm_name and re.search(rf"\b{re.escape(norm_name)}\b", norm_text))
 
 
+def _municipality_name_hit(name: str, text: str) -> bool:
+    return _place_name_hit(name, text) and not _non_region2_context_near(name, text)
+
+
+def _inside_another_province_partial_list(name: str, province: str, text: str) -> bool:
+    if not name or not province or not text:
+        return False
+    pattern = re.compile(r"\b(?:portion|portions)\s+of\s+([^()]+)\(([^)]*)\)", re.IGNORECASE)
+    for match in pattern.finditer(text):
+        listed_province = _norm_place(match.group(1))
+        listed_places = match.group(2)
+        if listed_province != _norm_place(province) and _place_name_hit(name, listed_places):
+            return True
+    return False
+
+
+def _province_name_hit(province: str, text: str) -> bool:
+    return (
+        _place_name_hit(province, text)
+        and not _non_region2_context_near(province, text)
+        and not _inside_another_province_partial_list(province, province, text)
+    )
+
+
 def _province_is_partial(province: str, text: str) -> bool:
     return bool(re.search(rf"\b(?:portion|portions)\s+of\s+{re.escape(province)}\s*\(", text or "", re.IGNORECASE))
+
 
 def _region2_affected_municipalities(text: str, signal_level: Optional[int] = None) -> List[Dict]:
     """Match PAGASA affected-area text to Cagayan Valley municipalities."""
     municipalities = load_municipalities()
-    lower_text = (text or "").lower()
     affected = []
 
     for mun in municipalities:
         province = mun.get("province", "")
         name = mun.get("name") or mun.get("municipality", "")
-        name_hit = _municipality_name_hit(name, text)
-        province_hit = (
-            bool(province and province.lower() in lower_text)
-            and not _province_is_partial(province, text)
-        )
+        province_named = _province_name_hit(province, text)
+        name_hit = _municipality_name_hit(name, text) and province_named
+        province_hit = province_named and not _province_is_partial(province, text)
+        partial_province_hit = province_named and _province_is_partial(province, text)
         # Municipality names are reused across provinces. Only accept a name hit
-        # when the same affected-area text also names its Region 2 province.
-        name_hit = name_hit and bool(province and province.lower() in lower_text)
+        # when the same affected-area text also names its Region 2 province,
+        # so places like "Quirino, Ilocos Sur" are not assigned to Region 2.
         if province_hit or name_hit:
             affected.append({
                 "psgc": mun.get("psgc"),
                 "municipality": name,
                 "province": province,
-                "match": "municipality" if name_hit else "province",
+                "match": "municipality" if name_hit else "province_full",
+                "coverage_scope": "municipality" if name_hit else "province_full",
+                "province_partial": bool(partial_province_hit),
                 "signal": signal_level or 0,
                 "tcws_signal": signal_level or 0,
                 "official_area_text": _clean_text(text)[:1200],
             })
 
     return affected
-
-
 
 def _extract_tcws_signal_groups(html_text: str, text: str) -> List[Dict]:
     """Capture PAGASA TCWS affected-area groups by signal number."""
@@ -540,6 +582,15 @@ def parse_severe_weather_bulletin(html_text: str) -> Dict:
         for province in ["Batanes", "Cagayan", "Isabela", "Nueva Vizcaya", "Quirino"]
     }
     highest_signal = max(province_signal_levels.values() or [0])
+    municipality_matches = [item for item in affected if item.get("coverage_scope") == "municipality"]
+    full_province_matches = [item for item in affected if item.get("coverage_scope") == "province_full"]
+    coverage_scope = "none"
+    if municipality_matches and full_province_matches:
+        coverage_scope = "mixed"
+    elif municipality_matches:
+        coverage_scope = "municipality"
+    elif full_province_matches:
+        coverage_scope = "province_full"
 
     return {
         "active": active,
@@ -564,6 +615,14 @@ def parse_severe_weather_bulletin(html_text: str) -> Dict:
         "region2_affected": bool(affected),
         "affected_provinces": affected_provinces,
         "affected_municipalities": affected,
+        "municipality_validation": {
+            "enabled": True,
+            "coverage_scope": coverage_scope,
+            "affected_municipality_count": len(affected),
+            "full_province_match_count": len(full_province_matches),
+            "explicit_municipality_match_count": len(municipality_matches),
+            "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream.",
+        },
         "summary": (
             f"{disturbance_type} {disturbance_name} Bulletin #{bulletin_match.group(1) if bulletin_match else ''}".strip()
             if active else "No active PAGASA tropical cyclone bulletin detected."

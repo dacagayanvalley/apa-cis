@@ -1152,20 +1152,30 @@ def _official_hazards_for_municipality(
 
     signal_levels = typhoon.get("signal_levels", {}) if isinstance(typhoon, dict) else {}
     affected_municipalities = typhoon.get("affected_municipalities", []) if isinstance(typhoon, dict) else []
+    validation = typhoon.get("municipality_validation", {}) if isinstance(typhoon, dict) else {}
+    coverage_scope = validation.get("coverage_scope") or "province_full"
     official_municipality_signal = 0
+    official_municipality_match = None
     if isinstance(affected_municipalities, list):
+        target_name = _norm_name(mun.get("name") or mun.get("municipality", ""))
         for affected in affected_municipalities:
             if not isinstance(affected, dict):
                 continue
             same_psgc = affected.get("psgc") and affected.get("psgc") == mun.get("psgc")
             same_name = (
-                affected.get("municipality") == mun.get("municipality")
+                _norm_name(affected.get("municipality", "")) == target_name
                 and affected.get("province") == province
             )
             if same_psgc or same_name:
                 official_municipality_signal = int(affected.get("tcws_signal") or affected.get("signal") or affected.get("signal_level") or 0)
+                official_municipality_match = affected
                 break
-    tcws_signal = official_municipality_signal if affected_municipalities else signal_levels.get(province, 0)
+    if coverage_scope in ("municipality", "mixed"):
+        tcws_signal = official_municipality_signal
+    elif affected_municipalities:
+        tcws_signal = official_municipality_signal or signal_levels.get(province, 0)
+    else:
+        tcws_signal = signal_levels.get(province, 0)
     ten_day_province = ten_day.get(province_key, {}) if isinstance(ten_day, dict) else {}
     acap_ten_day = _acap_province_ten_day(province, acap_data)
 
@@ -1176,6 +1186,9 @@ def _official_hazards_for_municipality(
         "typhoon_active": bool(typhoon.get("active")),
         "typhoon_name": typhoon.get("name"),
         "tcws_signal": tcws_signal,
+        "tcws_coverage_scope": coverage_scope,
+        "tcws_municipality_validated": bool(official_municipality_match),
+        "tcws_match": official_municipality_match,
         "ten_day_outlook": ten_day_province.get("outlook"),
         "ten_day_rainfall_range_mm": ten_day_province.get("rainfall_range_mm"),
         "ten_day_agri_advisory": ten_day_province.get("agri_advisory"),
