@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-13",
-  "fetched_at": "2026-08-12T22:20:16.041758+00:00",
-  "fetched_at_utc": "2026-08-12T22:20:16.041758+00:00",
+  "fetched_at": "2026-08-12T23:19:15.316196+00:00",
+  "fetched_at_utc": "2026-08-12T23:19:15.316196+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,28 +11,24 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "11 August 2026 : A weak to moderate El Niño is present in the tropical Pacific. Climate models suggest that El Niño will likely intensify over the next few seasons and persist until the first half of 2027 (~97%). A strong El Niño is likely to emerge by the July-Aug-Sep season (~57%), and a very strong El Niño is favored during the Oct-Nov-Dec and Nov-Dec-Jan seasons (~81%).    (updated: 22 July 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "13 August 2026 : Moderate El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026. (updated: 06 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-08-11"
+    "as_of": "2026-08-13"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-08-11",
+    "as_of": "2026-08-13",
     "region2_forecast": [
-      "11 August 2026",
-      "Issued at: 7:00 AM Monday, August 10, 2026",
-      "Valid until: 7:00 AM Tuesday, August 11, 2026",
-      "Metro Manila, Ilocos Region, the rest of Cordillera Administrative Region, Nueva Vizcaya, Tarlac, Nueva Ecija, Pampanga, Bulacan, Rizal, Cavite, Batangas, Oriental Mindoro, and Occidental Mindoro",
-      "Metro Manila, Ilocos Region, the rest of Cordillera Administrative Region, Nueva Vizcaya, Tarlac, Rizal, Cavite, Batangas, Oriental Mindoro, and Occidental Mindoro",
-      "Western Visayas, the rest of Cagayan Valley, the rest of CALABARZON, the rest of MIMAROPA, Camarines Norte, and Camarines Sur",
-      "Rest of Cagayan Valley and the rest of MIMAROPA",
-      "Ilocos Norte, Ilocos Sur, Pangasinan, Isabela, Zambales, Bataan, Pampanga, Nueva Ecija, Bulacan, Tarlac, Cordillera Administrative Region, northern part of National Capital Region, Quezon, Rizal, some portions of Cavite, northern parts of Palawan, Romblon, Occidental Mindoro, Oriental Mindoro, West Panay, Samar, Southern Leyte,  Negros Occidental, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, South Cotabato, Surigao del Norte, Surigao del Sur,  and some parts of BARMM",
-      "Cagayan, Aurora, Batangas, some parts of Palawan, Albay, Catanduanes, East Panay, Eastern Samar, Negros Oriental, and Zamboanga del Sur",
-      "(Updated as of 22 July 2026)",
-      "A weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
-      "(Batanes and Babuyan Islands {Babuyan Is., Calayan Is., Dalupiri Is.})."
+      "13 August 2026",
+      "Issued at: 7:00 AM Thursday, August 13, 2026",
+      "Valid until: 7:00 AM Friday, August 14, 2026",
+      "Metro Manila, Ilocos Region, Cordillera Administrative Region, Cagayan Valley, CALABARZON, MIMAROPA, the rest of Central Luzon, Camarines Norte, Aklan, Antique, and Capiz",
+      "Ilocos Region, Cordillera Administrative Region, Cagayan Valley, Palawan, Occidental Mindoro, and Oriental Mindoro",
+      "Ilocos Region, Cagayan, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, MIMAROPA except Puerto Princesa, Western part of Panay, Negros Occidental, Southern Leyte, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, Surigao del Norte, Surigao del Sur, and Lanao del Sur",
+      "Rest of Cagayan Valley, Alabat, Mulanay, most of Bicol Region, Eastern part of Panay, Samar, Eastern Samar, General Santos City, rest of Caraga, and rest of BARMM",
+      "A weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability."
     ],
-    "raw_text_extracted": "11 August 2026\nIssued at: 7:00 AM Monday, August 10, 2026\nValid until: 7:00 AM Tuesday, August 11, 2026\nMetro Manila, Ilocos Region, the rest of Cordillera Administrative Region, Nueva Vizcaya, Tarlac, Nueva Ecija, Pampanga, Bulacan, Rizal, Cavite, Batangas, Oriental Mindoro, and Occidental Mindoro\nMetro Manila, Ilocos Region, the rest of Cordillera Administrative Region, Nueva Vizcaya, Tarlac, Rizal, Cavite, Batangas, Oriental Mindoro, and Occidental Mindoro\nWestern Visayas, the rest of Cagayan Valley, the rest of CALABARZON, the rest of MIMAROPA, Camarines Norte, and Camarines Sur\nRest of Cagayan Valley and the rest of MIMAROPA\nIlocos Norte, Ilocos Sur, Pangasinan, Isabela, Zambales, Bataan, Pampanga, Nueva Ecija, Bulacan, Tarlac, Cordillera Administrative Region, northern part of National Capital Region, Quezon, Rizal, some portions of Cavite, northern parts of Palawan, Romblon, Occidental Mindoro, Oriental Mindoro, West Panay, Samar, Southern Leyte,  Negros Occidental, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, South Cotabato, Surigao del Norte, Surigao del Sur,  and some parts of BARMM\nCagayan, Aurora, Batangas, some parts of Palawan, Albay, Catanduanes, East Panay, Eastern Samar, Negros Oriental, and Zamboanga del Sur\n(Updated as of 22 July 2026)\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.\n(Batanes and Babuyan Islands {Babuyan Is., Calayan Is., Dalupiri Is.}).",
+    "raw_text_extracted": "13 August 2026\nIssued at: 7:00 AM Thursday, August 13, 2026\nValid until: 7:00 AM Friday, August 14, 2026\nMetro Manila, Ilocos Region, Cordillera Administrative Region, Cagayan Valley, CALABARZON, MIMAROPA, the rest of Central Luzon, Camarines Norte, Aklan, Antique, and Capiz\nIlocos Region, Cordillera Administrative Region, Cagayan Valley, Palawan, Occidental Mindoro, and Oriental Mindoro\nIlocos Region, Cagayan, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, MIMAROPA except Puerto Princesa, Western part of Panay, Negros Occidental, Southern Leyte, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, Surigao del Norte, Surigao del Sur, and Lanao del Sur\nRest of Cagayan Valley, Alabat, Mulanay, most of Bicol Region, Eastern part of Panay, Samar, Eastern Samar, General Santos City, rest of Caraga, and rest of BARMM\nA weak to moderate El Niño is currently present in the tropical Pacific. Climate models indicate that it is likely to intensify and persist through the first half of 2027 (97% probability). There is a 57% probability of El Niño strengthening to a strong event during the July–August–September (JAS) 2026 season, while a very strong El Niño is favored during the October–November–December (OND) 2026 and November–December–January (NDJ) 2026–2027 seasons, with an estimated 81% probability.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -106,8 +102,8 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-08-13",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-12T22:20:16.041758+00:00",
-    "fetched_at_utc": "2026-08-12T22:20:16.041758+00:00",
+    "fetched_at": "2026-08-12T23:19:15.316196+00:00",
+    "fetched_at_utc": "2026-08-12T23:19:15.316196+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -120,6 +116,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-12T22:20:16.041758+00:00"
+    "last_checked_utc": "2026-08-12T23:19:15.316196+00:00"
   }
 }
