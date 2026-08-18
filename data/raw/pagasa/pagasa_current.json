@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-19",
-  "fetched_at": "2026-08-18T16:40:26.522643+00:00",
-  "fetched_at_utc": "2026-08-18T16:40:26.522643+00:00",
+  "fetched_at": "2026-08-18T17:35:04.525498+00:00",
+  "fetched_at_utc": "2026-08-18T17:35:04.525498+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -515,8 +515,8 @@
     "summary": "Tropical Depression Neneng Bulletin #2",
     "as_of": "2026-08-19",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-18T16:40:26.522643+00:00",
-    "fetched_at_utc": "2026-08-18T16:40:26.522643+00:00",
+    "fetched_at": "2026-08-18T17:35:04.525498+00:00",
+    "fetched_at_utc": "2026-08-18T17:35:04.525498+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -608,6 +608,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-18T16:40:26.522643+00:00"
+    "last_checked_utc": "2026-08-18T17:35:04.525498+00:00"
   }
 }
