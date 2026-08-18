@@ -14,7 +14,7 @@
   "data_as_of": "2026-08-14",
   "forecast_as_of": "2026-08-14",
   "fallback_observation_as_of": "2026-08-09",
-  "severe_weather_last_checked": "2026-08-18T20:33:12.711820+00:00",
+  "severe_weather_last_checked": "2026-08-18T20:53:17.182070+00:00",
   "severe_weather_as_of": "2026-08-19",
   "severe_weather_active": true,
   "severe_weather_region2_affected": true,
@@ -23,7 +23,7 @@
   "severe_weather_agriculture_advisory_status": "success",
   "severe_weather_agriculture_advisory_active": true,
   "severe_weather_system": "Tropical Depression Neneng",
-  "severe_weather_bulletin_number": "2",
+  "severe_weather_bulletin_number": "3",
   "severe_weather_auto_fetch_interval_minutes": 30,
   "severe_weather_auto_fetch_mode": "scheduled_only"
 }
