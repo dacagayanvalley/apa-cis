@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-19",
-  "fetched_at": "2026-08-19T03:05:36.401578+00:00",
-  "fetched_at_utc": "2026-08-19T03:05:36.401578+00:00",
+  "fetched_at": "2026-08-19T03:54:15.625081+00:00",
+  "fetched_at_utc": "2026-08-19T03:54:15.625081+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -835,8 +835,8 @@
     "summary": "Tropical Depression Neneng Bulletin #4",
     "as_of": "2026-08-19",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-19T03:05:36.401578+00:00",
-    "fetched_at_utc": "2026-08-19T03:05:36.401578+00:00",
+    "fetched_at": "2026-08-19T03:54:15.625081+00:00",
+    "fetched_at_utc": "2026-08-19T03:54:15.625081+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -848,49 +848,40 @@
       "summary": "PAGASA agriculture warning contains Cagayan Valley / Region 2 references.",
       "agri_weather": [
         {
-          "forecast_area": "Zambales, Bataan, Cavite, Batangas, Occidental Mindoro, at Oriental Mindoro",
+          "forecast_area": "Zambales, Bataan, at Occidental Mindoro",
           "agri_weather": "Pag-ulan dulot ng Habagat",
           "lowland_temp_c": "23 – 29",
-          "upland_temp_c": "21 – 28",
-          "relative_humidity_pct": "80 – 100",
+          "upland_temp_c": "21 – 27",
+          "relative_humidity_pct": "70 – 99",
           "leaf_wetness_hours": ">12"
         },
         {
-          "forecast_area": "Metro Manila, Ilocos Sur, La Union, Pangasinan, Abra, Benguet, Pangasinan, Tarlac, Pampanga, Bulacan, Nueva Ecija, Laguna, Rizal, at Antique",
+          "forecast_area": "Metro Manila, Ilocos Sur, La Union, Pangasinan, Abra, Benguet, Tarlac, Pampanga, Bulacan, Nueva Ecija, Laguna, Rizal, Cavite, Batangas, at Oriental Mindoro",
           "agri_weather": "Paminsan-minsang pag-ulan",
-          "lowland_temp_c": "24 – 31",
-          "upland_temp_c": "21 – 30",
-          "relative_humidity_pct": "70 – 100",
+          "lowland_temp_c": "23 – 32",
+          "upland_temp_c": "17 – 29",
+          "relative_humidity_pct": "65 – 98",
           "leaf_wetness_hours": ">12"
         },
         {
-          "forecast_area": "Negros Island Region, natitirang bahagi ng Luzon, at natitirang bahagi ng Western Visayas",
+          "forecast_area": "Natitirang bahagi ng Luzon, Antique, at Aklan",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 33",
-          "upland_temp_c": "17 – 31",
+          "lowland_temp_c": "24 – 33",
+          "upland_temp_c": "20 – 31",
           "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": "6 – 12"
+          "leaf_wetness_hours": "4 – 8"
         },
         {
-          "forecast_area": "Natitirang bahagi ng Kabisayaan",
+          "forecast_area": "Mindanao, at natitirang bahagi ng Kabisayaan",
           "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
-          "lowland_temp_c": "24 – 35",
-          "upland_temp_c": "22 – 33",
-          "relative_humidity_pct": "50 – 96",
-          "leaf_wetness_hours": "0 – 4"
-        },
-        {
-          "forecast_area": "Mindanao",
-          "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 34",
-          "upland_temp_c": "19 – 32",
-          "relative_humidity_pct": "50 – 96",
-          "leaf_wetness_hours": "0 – 4"
+          "lowland_temp_c": "25 – 35",
+          "upland_temp_c": "23 – 33",
+          "relative_humidity_pct": "50– 97",
+          "leaf_wetness_hours": "0 – 6"
         }
       ],
       "affected_area_advisories": [
         "PAYONG PANGSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
-        "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
         "Regular na linisin at ayusin ang mga kanal, pilapil, at daluyan ng tubig upang matiyak ang maayos na agos ng tubig at maiwasan ang pagbaha sa mabababang lugar.",
         "Magtanim sa raised beds o gumamit ng plastic mulch upang makaiwas sa root rot at erosion.",
         "Maglagay ng rain shelters o simpleng bubong sa mga maselan na pananim.",
@@ -903,7 +894,6 @@
         "na maaaring maapektuhan ay pinapayuhan na gumawa ng mga kaukulang hakbang para maprotektahan ang buhay at mga ari-arian. Ang mga nakatira sa mga lugar na maaaring maapektuhan ay pinapayuhang sumunod sa mga tagubilin ng mga namumuno sa inyong lugar. Para sa heavy rainfall warnings, thunderstorm/rainfall advisories, at iba pang severe weather information na para sa inyong lugar, palaging magbantay sa mga produktong ilalabas ng inyong lokal"
       ],
       "unaffected_area_advisories": [
-        "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
         "Regular na linisin at ayusin ang mga kanal, pilapil, at daluyan ng tubig upang matiyak ang maayos na agos ng tubig at maiwasan ang pagbaha sa mabababang lugar.",
         "Magtanim sa raised beds o gumamit ng plastic mulch upang makaiwas sa root rot at erosion.",
         "Maglagay ng rain shelters o simpleng bubong sa mga maselan na pananim.",
@@ -928,6 +918,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-19T03:05:36.401578+00:00"
+    "last_checked_utc": "2026-08-19T03:54:15.625081+00:00"
   }
 }
