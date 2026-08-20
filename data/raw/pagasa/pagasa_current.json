@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-20",
-  "fetched_at": "2026-08-20T07:48:58.484022+00:00",
-  "fetched_at_utc": "2026-08-20T07:48:58.484022+00:00",
+  "fetched_at": "2026-08-20T08:50:09.065787+00:00",
+  "fetched_at_utc": "2026-08-20T08:50:09.065787+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -37,11 +37,11 @@
     "active": true,
     "is_final": false,
     "bulletin_status": "active",
-    "name": "Neneng",
+    "name": "within the coming days is not ruled out. Location of Eye/center The center of the Low Pressure Area (formerly “NENENG”) was estimated based on all available data at 480 km North of Itbayat, Batanes (OUTSIDE PAR) (25.1 °N, 122.3 °E ) Movement Moving Almost Stationary Strength Maximum sustained winds of km/h near the center and gustiness of up to km/h Forecast Position Wind Signal No Tropical Cyclone Wind Signal Considering these developments, the public and disaster risk reduction and management offices concerned are advised to take all necessary measures to protect life and property. Persons living in areas identified to be highly or very highly susceptible to these hazards are advised to follow evacuation and other instructions from local officials. For heavy rainfall warnings, thunderstorm/rainfall advisories, and other severe weather information specific to your area, please monitor products issued by your local PAGASA Regional Services Division. Tropical Cyclone Bulletin Archive TCB",
     "disturbance_type": "Tropical Depression",
-    "bulletin_number": "8",
-    "issued_at": "11:00 am, 20 August 2026",
-    "valid_until": "the next advisory to be issued at 5:00 PM today)",
+    "bulletin_number": "9",
+    "issued_at": "05:00 pm, 20 August 2026",
+    "valid_until": "the next advisory to be issued at 5:00 AM tomorrow)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 0,
     "signal_levels": {
@@ -51,13 +51,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": 45.0,
-    "peak_wind_gust_kmh": 55.0,
-    "gustiness_kmh": 55.0,
+    "max_sustained_wind_kmh": null,
+    "peak_wind_gust_kmh": null,
+    "gustiness_kmh": null,
     "wind": {
-      "max_sustained_wind_kmh": 45.0,
-      "peak_wind_gust_kmh": 55.0,
-      "gustiness_kmh": 55.0
+      "max_sustained_wind_kmh": null,
+      "peak_wind_gust_kmh": null,
+      "gustiness_kmh": null
     },
     "tcws_wind_ranges": {
       "1": {
@@ -100,11 +100,11 @@
       "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Tropical Depression Neneng Bulletin #8",
+    "summary": "Tropical Depression within the coming days is not ruled out. Location of Eye/center The center of the Low Pressure Area (formerly “NENENG”) was estimated based on all available data at 480 km North of Itbayat, Batanes (OUTSIDE PAR) (25.1 °N, 122.3 °E ) Movement Moving Almost Stationary Strength Maximum sustained winds of km/h near the center and gustiness of up to km/h Forecast Position Wind Signal No Tropical Cyclone Wind Signal Considering these developments, the public and disaster risk reduction and management offices concerned are advised to take all necessary measures to protect life and property. Persons living in areas identified to be highly or very highly susceptible to these hazards are advised to follow evacuation and other instructions from local officials. For heavy rainfall warnings, thunderstorm/rainfall advisories, and other severe weather information specific to your area, please monitor products issued by your local PAGASA Regional Services Division. Tropical Cyclone Bulletin Archive TCB Bulletin #9",
     "as_of": "2026-08-20",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-20T07:48:58.484022+00:00",
-    "fetched_at_utc": "2026-08-20T07:48:58.484022+00:00",
+    "fetched_at": "2026-08-20T08:50:09.065787+00:00",
+    "fetched_at_utc": "2026-08-20T08:50:09.065787+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -117,6 +117,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-20T07:48:58.484022+00:00"
+    "last_checked_utc": "2026-08-20T08:50:09.065787+00:00"
   }
 }
