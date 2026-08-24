@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-24",
-  "fetched_at": "2026-08-24T08:22:10.973659+00:00",
-  "fetched_at_utc": "2026-08-24T08:22:10.973659+00:00",
+  "fetched_at": "2026-08-24T09:25:51.105895+00:00",
+  "fetched_at_utc": "2026-08-24T09:25:51.105895+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -34,14 +34,14 @@
     "needs_review": true
   },
   "typhoon": {
-    "active": false,
+    "active": true,
     "is_final": false,
     "bulletin_status": "active",
-    "name": "",
-    "disturbance_type": "",
-    "bulletin_number": "",
-    "issued_at": "",
-    "valid_until": "",
+    "name": "Obet",
+    "disturbance_type": "Typhoon",
+    "bulletin_number": "1",
+    "issued_at": "05:00 pm, 24 August 2026",
+    "valid_until": "the next advisory to be issued at 11:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 0,
     "signal_levels": {
@@ -51,13 +51,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": null,
-    "peak_wind_gust_kmh": null,
-    "gustiness_kmh": null,
+    "max_sustained_wind_kmh": 165.0,
+    "peak_wind_gust_kmh": 205.0,
+    "gustiness_kmh": 205.0,
     "wind": {
-      "max_sustained_wind_kmh": null,
-      "peak_wind_gust_kmh": null,
-      "gustiness_kmh": null
+      "max_sustained_wind_kmh": 165.0,
+      "peak_wind_gust_kmh": 205.0,
+      "gustiness_kmh": 205.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -89,34 +89,116 @@
     "tcws_signal_groups": [],
     "rainfall": {},
     "rainfall_advisory_text": "",
-    "region2_affected": false,
-    "affected_provinces": [],
-    "affected_municipalities": [],
+    "region2_affected": true,
+    "affected_provinces": [
+      "Batanes"
+    ],
+    "affected_municipalities": [
+      {
+        "psgc": "020100000",
+        "municipality": "Basco",
+        "province": "Batanes",
+        "match": "province_full",
+        "coverage_scope": "province_full",
+        "province_partial": false,
+        "signal": 0,
+        "tcws_signal": 0,
+        "official_area_text": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling Cli"
+      },
+      {
+        "psgc": "020101000",
+        "municipality": "Itbayat",
+        "province": "Batanes",
+        "match": "municipality",
+        "coverage_scope": "municipality",
+        "province_partial": false,
+        "signal": 0,
+        "tcws_signal": 0,
+        "official_area_text": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling Cli"
+      },
+      {
+        "psgc": "020102000",
+        "municipality": "Ivana",
+        "province": "Batanes",
+        "match": "province_full",
+        "coverage_scope": "province_full",
+        "province_partial": false,
+        "signal": 0,
+        "tcws_signal": 0,
+        "official_area_text": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling Cli"
+      },
+      {
+        "psgc": "020103000",
+        "municipality": "Mahatao",
+        "province": "Batanes",
+        "match": "province_full",
+        "coverage_scope": "province_full",
+        "province_partial": false,
+        "signal": 0,
+        "tcws_signal": 0,
+        "official_area_text": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling Cli"
+      },
+      {
+        "psgc": "020104000",
+        "municipality": "Sabtang",
+        "province": "Batanes",
+        "match": "province_full",
+        "coverage_scope": "province_full",
+        "province_partial": false,
+        "signal": 0,
+        "tcws_signal": 0,
+        "official_area_text": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling Cli"
+      },
+      {
+        "psgc": "020105000",
+        "municipality": "Uyugan",
+        "province": "Batanes",
+        "match": "province_full",
+        "coverage_scope": "province_full",
+        "province_partial": false,
+        "signal": 0,
+        "tcws_signal": 0,
+        "official_area_text": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling Cli"
+      }
+    ],
     "municipality_validation": {
       "enabled": true,
-      "coverage_scope": "none",
-      "affected_municipality_count": 0,
-      "full_province_match_count": 0,
-      "explicit_municipality_match_count": 0,
+      "coverage_scope": "mixed",
+      "affected_municipality_count": 6,
+      "full_province_match_count": 5,
+      "explicit_municipality_match_count": 1,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "No active PAGASA tropical cyclone bulletin detected.",
+    "summary": "Typhoon Obet Bulletin #1",
     "as_of": "2026-08-24",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-24T08:22:10.973659+00:00",
-    "fetched_at_utc": "2026-08-24T08:22:10.973659+00:00",
+    "fetched_at": "2026-08-24T09:25:51.105895+00:00",
+    "fetched_at_utc": "2026-08-24T09:25:51.105895+00:00",
     "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "agriculture_advisory_fetch_status": "success",
+    "agriculture_advisory": {
+      "source": "pagasa_tropical_cyclone_warning_for_agriculture",
+      "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
+      "as_of": "2026-08-24",
+      "active": true,
+      "region2_relevant": false,
+      "summary": "No active PAGASA agriculture warning parsed.",
+      "agri_weather": [],
+      "affected_area_advisories": [],
+      "unaffected_area_advisories": [],
+      "raw_text_excerpt": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling CliMap Statistical Downscaling Climate Data Agri-Weather Climate Information for Agriculture Farm Weather Forecast Weekend/Special Farm Weather Forecast Ten-Day Regional Agri-Weather Information Monthly Philippine Agro-Climatic Review and Outlook Impact Assessment for Agriculture Astronomy Telescoping and Stargazing Astronomy in the Philippines Planetarium Astronomical Observatory Time Service Philippine Standard Time Astronomical Diary Regional Forecast Northern Luzon National Capital Region Southern Luzon Visayas Mindanao Products and Services Engineering Services Calibration Services Numerical Prediction Model Satellites Flood Monitoring for Metro Manila Risk Analysis Map Flood Hazard Map Regional Severe Wind Hazard Maps High Frequency Doppler Radar Vacancy GAD Corner Learnings Publication FAQs and Trivias Learning Tools Research and Development Information Rainfall and Thunderstorm Warning System Weather Terminologies Flood Forecasting and Warning System for River Basins Climate of the Philippines Climate Change in the Philippines Astronomy in the Philippines Field Station Categories Basic Cloud Seeding Operations Storm Surge Information Legend About Us Contact Us National Meteorological and Hydrological Services Related Linkages Transparency Seal About Us Mandate and Functions ",
+      "parse_method": "pagasa_public_html_static"
+    }
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
     "typhoon": "success",
-    "typhoon_agriculture": "skipped"
+    "typhoon_agriculture": "success"
   },
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-24T08:22:10.973659+00:00"
+    "last_checked_utc": "2026-08-24T09:25:51.105895+00:00"
   }
 }
