@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-24",
-  "fetched_at": "2026-08-24T10:19:14.151791+00:00",
-  "fetched_at_utc": "2026-08-24T10:19:14.151791+00:00",
+  "fetched_at": "2026-08-24T11:04:04.325819+00:00",
+  "fetched_at_utc": "2026-08-24T11:04:04.325819+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -172,8 +172,8 @@
     "summary": "Typhoon Obet Bulletin #1",
     "as_of": "2026-08-24",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-24T10:19:14.151791+00:00",
-    "fetched_at_utc": "2026-08-24T10:19:14.151791+00:00",
+    "fetched_at": "2026-08-24T11:04:04.325819+00:00",
+    "fetched_at_utc": "2026-08-24T11:04:04.325819+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -181,13 +181,69 @@
       "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
       "as_of": "2026-08-24",
       "active": true,
-      "region2_relevant": false,
-      "summary": "No active PAGASA agriculture warning parsed.",
-      "agri_weather": [],
-      "affected_area_advisories": [],
-      "unaffected_area_advisories": [],
+      "region2_relevant": true,
+      "summary": "PAGASA agriculture warning for Metro Manila, Rehiyon ng Ilocos, Cordillera Administrative Region, Lambak ng Cagayan, Gitnang Luzon, Cavite, Batangas, at Rizal: Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
+      "agri_weather": [
+        {
+          "forecast_area": "Metro Manila, Rehiyon ng Ilocos, Cordillera Administrative Region, Lambak ng Cagayan, Gitnang Luzon, Cavite, Batangas, at Rizal",
+          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
+          "lowland_temp_c": "24 – 32",
+          "upland_temp_c": "17 – 29",
+          "relative_humidity_pct": "70 – 98",
+          "leaf_wetness_hours": "4 – 8"
+        },
+        {
+          "forecast_area": "Western Visayas, Negros Island Region, at natitirang bahagi ng Luzon",
+          "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
+          "lowland_temp_c": "25 – 33",
+          "upland_temp_c": "22 – 31",
+          "relative_humidity_pct": "60 – 97",
+          "leaf_wetness_hours": "0 – 4"
+        },
+        {
+          "forecast_area": "Natitirang bahagi ng bansa",
+          "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
+          "lowland_temp_c": "23 – 35",
+          "upland_temp_c": "21 – 33",
+          "relative_humidity_pct": "50 – 97",
+          "leaf_wetness_hours": "0 – 6"
+        }
+      ],
+      "affected_area_advisories": [
+        "PAYONG PANGSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
+        "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
+        "Regular na linisin at ayusin ang mga kanal, pilapil, at daluyan ng tubig upang matiyak ang maayos na agos ng tubig at maiwasan ang pagbaha sa mabababang lugar.",
+        "Magtanim sa raised beds o gumamit ng plastic mulch upang makaiwas sa root rot at erosion.",
+        "Maglagay ng rain shelters o simpleng bubong sa mga maselan na pananim.",
+        "Agapan ang pagkalat ng fungal diseases tulad ng leaf blight at mildew.",
+        "Putulin ang sobrang sanga at bigyan ng suporta ang mga batang puno upang hindi mapinsala ng hangin.",
+        "I-monitor ang lagay ng panahon bago bumiyahe ng ani o produkto upang maiwasan ang abala at panganib sa daan.",
+        "Gumamit ng covered vans o waterproof na tolda upang maprotektahan ang ani laban sa ulan at pagkabasa.",
+        "Iwasan ang paglilinis o pagsasaayos ng mga kanal, pilapil, at daluyan ng tubig habang may banta ng pagguho ng lupa upang maiwasan ang aksidente. Gawin lamang ang mga ito kapag ligtas na ang panahon at ang lugar ay kumpirmadong walang panganib."
+      ],
+      "unaffected_area_advisories": [
+        "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
+        "Regular na linisin at ayusin ang mga kanal, pilapil, at daluyan ng tubig upang matiyak ang maayos na agos ng tubig at maiwasan ang pagbaha sa mabababang lugar.",
+        "Magtanim sa raised beds o gumamit ng plastic mulch upang makaiwas sa root rot at erosion.",
+        "Maglagay ng rain shelters o simpleng bubong sa mga maselan na pananim.",
+        "Agapan ang pagkalat ng fungal diseases tulad ng leaf blight at mildew.",
+        "Putulin ang sobrang sanga at bigyan ng suporta ang mga batang puno upang hindi mapinsala ng hangin.",
+        "I-monitor ang lagay ng panahon bago bumiyahe ng ani o produkto upang maiwasan ang abala at panganib sa daan.",
+        "Gumamit ng covered vans o waterproof na tolda upang maprotektahan ang ani laban sa ulan at pagkabasa.",
+        "Iwasan ang paglilinis o pagsasaayos ng mga kanal, pilapil, at daluyan ng tubig habang may banta ng pagguho ng lupa upang maiwasan ang aksidente. Gawin lamang ang mga ito kapag ligtas na ang panahon at ang lugar ay kumpirmadong walang panganib."
+      ],
       "raw_text_excerpt": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling CliMap Statistical Downscaling Climate Data Agri-Weather Climate Information for Agriculture Farm Weather Forecast Weekend/Special Farm Weather Forecast Ten-Day Regional Agri-Weather Information Monthly Philippine Agro-Climatic Review and Outlook Impact Assessment for Agriculture Astronomy Telescoping and Stargazing Astronomy in the Philippines Planetarium Astronomical Observatory Time Service Philippine Standard Time Astronomical Diary Regional Forecast Northern Luzon National Capital Region Southern Luzon Visayas Mindanao Products and Services Engineering Services Calibration Services Numerical Prediction Model Satellites Flood Monitoring for Metro Manila Risk Analysis Map Flood Hazard Map Regional Severe Wind Hazard Maps High Frequency Doppler Radar Vacancy GAD Corner Learnings Publication FAQs and Trivias Learning Tools Research and Development Information Rainfall and Thunderstorm Warning System Weather Terminologies Flood Forecasting and Warning System for River Basins Climate of the Philippines Climate Change in the Philippines Astronomy in the Philippines Field Station Categories Basic Cloud Seeding Operations Storm Surge Information Legend About Us Contact Us National Meteorological and Hydrological Services Related Linkages Transparency Seal About Us Mandate and Functions ",
-      "parse_method": "pagasa_public_html_static"
+      "parse_method": "pagasa_public_html_static",
+      "region2_agri_weather": [
+        {
+          "forecast_area": "Metro Manila, Rehiyon ng Ilocos, Cordillera Administrative Region, Lambak ng Cagayan, Gitnang Luzon, Cavite, Batangas, at Rizal",
+          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
+          "lowland_temp_c": "24 – 32",
+          "upland_temp_c": "17 – 29",
+          "relative_humidity_pct": "70 – 98",
+          "leaf_wetness_hours": "4 – 8"
+        }
+      ]
     }
   },
   "scrape_status": {
@@ -199,6 +255,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-24T10:19:14.151791+00:00"
+    "last_checked_utc": "2026-08-24T11:04:04.325819+00:00"
   }
 }
