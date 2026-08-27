@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-27",
-  "fetched_at": "2026-08-26T22:26:29.739764+00:00",
-  "fetched_at_utc": "2026-08-26T22:26:29.739764+00:00",
+  "fetched_at": "2026-08-27T03:06:25.563992+00:00",
+  "fetched_at_utc": "2026-08-27T03:06:25.563992+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,25 +11,22 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "14 August 2026 : Moderate El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026. (updated: 06 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "27 August 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-08-14"
+    "as_of": "2026-08-27"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-08-14",
+    "as_of": "2026-08-27",
     "region2_forecast": [
-      "14 August 2026",
-      "Issued at: 7:00 AM Friday, August 14, 2026",
-      "Valid until: 7:00 AM Saturday, August 15, 2026",
-      "Metro Manila, Ilocos Region, Cordillera Administrative Region, Cagayan Valley, CALABARZON, MIMAROPA, the rest of Central Luzon, and Antique",
-      "Metro Manila, Ilocos Region, Cordillera Administrative Region, Cagayan Valley, western section of CALABARZON, and western section of MIMAROPA",
-      "Ilocos Region, Cagayan, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, MIMAROPA except Puerto Princesa, Western part of Panay, Negros Occidental, Southern Leyte, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, Surigao del Norte, Surigao del Sur, and Lanao del Sur",
-      "Rest of Cagayan Valley, Alabat, Mulanay, most of Bicol Region, Eastern part of Panay, Samar, Eastern Samar, General Santos City, rest of Caraga, and rest of BARMM",
-      "(Updated as of 06 August 2026)",
-      "Moderate El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026. El Niño increases the likelihood of below-normal rainfall, which may lead to adverse impacts, including dry spells and droughts in some areas of the country. However, over the western part of the country, above-normal rainfall conditions during the Southwest monsoon season (i.e., Habagat) may also occur."
+      "27 August 2026",
+      "Issued at: 7:00 AM Thursday, August 27, 2026",
+      "Valid until: 7:00 AM Friday, August 28, 2026",
+      "Metro Manila, Ilocos Region, Cordillera Administrative Region, the rest of Central Luzon, Batanes, Cavite, Batangas, Rizal, Oriental Mindoro, Palawan, Antique, Iloilo, Guimaras, and Negros Occidental",
+      "Ilocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA,",
+      "Moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026."
     ],
-    "raw_text_extracted": "14 August 2026\nIssued at: 7:00 AM Friday, August 14, 2026\nValid until: 7:00 AM Saturday, August 15, 2026\nMetro Manila, Ilocos Region, Cordillera Administrative Region, Cagayan Valley, CALABARZON, MIMAROPA, the rest of Central Luzon, and Antique\nMetro Manila, Ilocos Region, Cordillera Administrative Region, Cagayan Valley, western section of CALABARZON, and western section of MIMAROPA\nIlocos Region, Cagayan, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, MIMAROPA except Puerto Princesa, Western part of Panay, Negros Occidental, Southern Leyte, Zamboanga del Norte, Bukidnon, Davao del Norte, Davao del Sur, Surigao del Norte, Surigao del Sur, and Lanao del Sur\nRest of Cagayan Valley, Alabat, Mulanay, most of Bicol Region, Eastern part of Panay, Samar, Eastern Samar, General Santos City, rest of Caraga, and rest of BARMM\n(Updated as of 06 August 2026)\nModerate El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026. El Niño increases the likelihood of below-normal rainfall, which may lead to adverse impacts, including dry spells and droughts in some areas of the country. However, over the western part of the country, above-normal rainfall conditions during the Southwest monsoon season (i.e., Habagat) may also occur.",
+    "raw_text_extracted": "27 August 2026\nIssued at: 7:00 AM Thursday, August 27, 2026\nValid until: 7:00 AM Friday, August 28, 2026\nMetro Manila, Ilocos Region, Cordillera Administrative Region, the rest of Central Luzon, Batanes, Cavite, Batangas, Rizal, Oriental Mindoro, Palawan, Antique, Iloilo, Guimaras, and Negros Occidental\nIlocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA,\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -103,20 +100,12 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-08-27",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-26T22:26:29.739764+00:00",
-    "fetched_at_utc": "2026-08-26T22:26:29.739764+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "fetched_at": "2026-08-27T03:06:25.563992+00:00",
+    "fetched_at_utc": "2026-08-27T03:06:25.563992+00:00"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success",
-    "typhoon_agriculture": "skipped"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-08-26T22:26:29.739764+00:00"
+    "typhoon": "success"
   }
 }
