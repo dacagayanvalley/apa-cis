@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-30",
-  "fetched_at": "2026-08-30T00:06:12.628062+00:00",
-  "fetched_at_utc": "2026-08-30T00:06:12.628062+00:00",
+  "fetched_at": "2026-08-30T05:16:46.574182+00:00",
+  "fetched_at_utc": "2026-08-30T05:16:46.574182+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -32,14 +32,14 @@
     "needs_review": true
   },
   "typhoon": {
-    "active": false,
+    "active": true,
     "is_final": false,
     "bulletin_status": "active",
-    "name": "",
-    "disturbance_type": "",
-    "bulletin_number": "",
-    "issued_at": "",
-    "valid_until": "",
+    "name": "Pilandok",
+    "disturbance_type": "Tropical Depression",
+    "bulletin_number": "1",
+    "issued_at": "11:00 am, 30 August 2026",
+    "valid_until": "the next advisory to be issued at 5:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 0,
     "signal_levels": {
@@ -49,13 +49,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": null,
-    "peak_wind_gust_kmh": null,
-    "gustiness_kmh": null,
+    "max_sustained_wind_kmh": 45.0,
+    "peak_wind_gust_kmh": 55.0,
+    "gustiness_kmh": 55.0,
     "wind": {
-      "max_sustained_wind_kmh": null,
-      "peak_wind_gust_kmh": null,
-      "gustiness_kmh": null
+      "max_sustained_wind_kmh": 45.0,
+      "peak_wind_gust_kmh": 55.0,
+      "gustiness_kmh": 55.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -85,8 +85,10 @@
       }
     },
     "tcws_signal_groups": [],
-    "rainfall": {},
-    "rainfall_advisory_text": "",
+    "rainfall": {
+      "advisory_text": "Refer to Weather Advisory No. 31 issued at 11:00 AM today for the heavy rainfall outlook due to the Southwest Monsoon."
+    },
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 31 issued at 11:00 AM today for the heavy rainfall outlook due to the Southwest Monsoon.",
     "region2_affected": false,
     "affected_provinces": [],
     "affected_municipalities": [],
@@ -98,11 +100,11 @@
       "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "No active PAGASA tropical cyclone bulletin detected.",
+    "summary": "Tropical Depression Pilandok Bulletin #1",
     "as_of": "2026-08-30",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-30T00:06:12.628062+00:00",
-    "fetched_at_utc": "2026-08-30T00:06:12.628062+00:00",
+    "fetched_at": "2026-08-30T05:16:46.574182+00:00",
+    "fetched_at_utc": "2026-08-30T05:16:46.574182+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -115,6 +117,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-08-30T00:06:12.628062+00:00"
+    "last_checked_utc": "2026-08-30T05:16:46.574182+00:00"
   }
 }
