@@ -55,6 +55,7 @@ def _patch_paths(monkeypatch, tmp_path):
     monkeypatch.setattr(noah, "MUNICIPALITIES_PATH", tmp_path / "config" / "municipalities.json")
     monkeypatch.setattr(noah, "MUNICIPAL_BOUNDARIES_PATH", tmp_path / "data" / "boundaries" / "municipalities_simplified.geojson")
     monkeypatch.setattr(noah, "NOAH_DIR", tmp_path / "data" / "geospatial" / "noah")
+    monkeypatch.setattr(noah, "RAW_NOAH_DOWNLOADS", tmp_path / "data" / "raw" / "noah" / "downloads")
     monkeypatch.setattr(noah, "CATALOG_PATH", tmp_path / "data" / "reference" / "noah_hazard_overlays.json")
     monkeypatch.setattr(noah, "SOURCE_INDEX_PATH", tmp_path / "data" / "reference" / "noah_region2_source_files.json")
 

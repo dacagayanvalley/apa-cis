@@ -14,10 +14,14 @@ import argparse
 import json
 import math
 import re
+import zipfile
+from io import BytesIO
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import unquote
 
+import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 MUNICIPALITIES_PATH = ROOT / "config" / "municipalities.json"
@@ -26,6 +30,7 @@ NOAH_DIR = ROOT / "data" / "geospatial" / "noah"
 CATALOG_PATH = ROOT / "data" / "reference" / "noah_hazard_overlays.json"
 SOURCE_INDEX_PATH = ROOT / "data" / "reference" / "noah_region2_source_files.json"
 OUTPUT_PATH = ROOT / "data" / "processed" / "noah" / "municipal_hazard_exposure.json"
+RAW_NOAH_DOWNLOADS = ROOT / "data" / "raw" / "noah" / "downloads"
 
 LEVELS = ("1", "2", "3")
 LEVEL_NAMES = {"1": "low", "2": "medium", "3": "high"}
@@ -35,6 +40,17 @@ DEBRIS_FLOW_DIRECT_URLS = [
     "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Landslide/DebrisFlowAlluvialFan/Philippines_AlluvialFan.zip",
     "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Landslide/DebrisFlowAlluvialFan/Philippines_DebrisFlow.zip",
 ]
+SCENARIO_SOURCE_FOLDERS = {
+    "flood_5yr": ["Flood/5yr"],
+    "flood_25yr": ["Flood/25yr"],
+    "flood_100yr": ["Flood/100yr"],
+    "landslide": ["Landslide/LandslideHazards"],
+    "debris_flow": ["Landslide/DebrisFlowAlluvialFan"],
+    "storm_surge_ssa1": ["Storm Surge/StormSurgeAdvisory1"],
+    "storm_surge_ssa2": ["Storm Surge/StormSurgeAdvisory2"],
+    "storm_surge_ssa3": ["Storm Surge/StormSurgeAdvisory3"],
+    "storm_surge_ssa4": ["Storm Surge/StormSurgeAdvisory4"],
+}
 
 
 def _load_json(path: Path, default: Any = None) -> Any:
@@ -190,7 +206,7 @@ def _compute_exact(records: dict[str, dict[str, Any]], specs: dict[str, dict[str
 
     municipality_geometries = {}
     for psgc, record in records.items():
-        feature = record.pop("boundary_feature", None)
+        feature = record.get("boundary_feature")
         if feature and feature.get("geometry"):
             geom = shape(feature["geometry"])
             if not geom.is_empty:
@@ -254,6 +270,238 @@ def _compute_exact(records: dict[str, dict[str, Any]], specs: dict[str, dict[str
                 "max_hazard_label": LEVEL_NAMES.get(str(max_level), "none"),
             }
     return ready, None
+
+
+def _load_direct_geometry_tools():
+    try:
+        import shapefile
+        from pyproj import CRS, Transformer
+        from shapely.geometry import Polygon, shape
+        from shapely.validation import make_valid
+        from shapely.strtree import STRtree
+    except Exception:
+        return None
+    return {
+        "shapefile": shapefile,
+        "CRS": CRS,
+        "Transformer": Transformer,
+        "Polygon": Polygon,
+        "shape": shape,
+        "make_valid": make_valid,
+        "STRtree": STRtree,
+    }
+
+
+def _download_zip(url: str, path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with requests.get(url, stream=True, timeout=180) as response:
+        response.raise_for_status()
+        with path.open("wb") as handle:
+            for chunk in response.iter_content(chunk_size=1024 * 1024):
+                if chunk:
+                    handle.write(chunk)
+
+
+def _local_source_zips(source_index: dict[str, Any] | None, scenario_id: str, download_missing: bool = False) -> list[Path]:
+    folders = {item["folder"]: item.get("files", []) for item in (source_index or {}).get("folders", [])}
+    paths: list[Path] = []
+    for folder in SCENARIO_SOURCE_FOLDERS.get(scenario_id, []):
+        for item in folders.get(folder, []):
+            rel_path = item.get("path")
+            if not rel_path:
+                continue
+            local_path = RAW_NOAH_DOWNLOADS / rel_path
+            if download_missing and (not local_path.exists() or local_path.stat().st_size <= 0):
+                url = item.get("download_url")
+                if url:
+                    print(f"Downloading {rel_path}", flush=True)
+                    _download_zip(url, local_path)
+            if local_path.exists() and local_path.stat().st_size > 0:
+                paths.append(local_path)
+    if scenario_id == "debris_flow":
+        for url in DEBRIS_FLOW_DIRECT_URLS:
+            rel_path = unquote(url.split("/resolve/main/", 1)[-1])
+            local_path = RAW_NOAH_DOWNLOADS / rel_path
+            if download_missing and (not local_path.exists() or local_path.stat().st_size <= 0):
+                print(f"Downloading {rel_path}", flush=True)
+                _download_zip(url, local_path)
+            if local_path.exists() and local_path.stat().st_size > 0:
+                paths.append(local_path)
+    return paths
+
+
+def _zip_shapefile_members(path: Path) -> tuple[bytes, bytes, bytes, str | None]:
+    with zipfile.ZipFile(path) as archive:
+        names = archive.namelist()
+        shp_name = next((name for name in names if name.lower().endswith(".shp")), None)
+        shx_name = next((name for name in names if name.lower().endswith(".shx")), None)
+        dbf_name = next((name for name in names if name.lower().endswith(".dbf")), None)
+        prj_name = next((name for name in names if name.lower().endswith(".prj")), None)
+        if not shp_name or not shx_name or not dbf_name:
+            raise ValueError(f"{path} does not contain a complete shapefile")
+        prj = archive.read(prj_name).decode("utf-8", errors="ignore") if prj_name else None
+        return archive.read(shp_name), archive.read(shx_name), archive.read(dbf_name), prj
+
+
+def _direct_transformer(prj: str | None, tools: dict[str, Any]):
+    if not prj:
+        return None
+    try:
+        crs = tools["CRS"].from_wkt(prj)
+    except Exception:
+        return None
+    if crs.to_epsg() == 4326:
+        return None
+    return tools["Transformer"].from_crs(crs, tools["CRS"].from_epsg(4326), always_xy=True)
+
+
+def _shape_part_polygons(shape_obj: Any, transformer: Any, polygon_cls: Any):
+    points = shape_obj.points
+    starts = list(shape_obj.parts) + [len(points)]
+    for idx in range(len(starts) - 1):
+        raw_ring = points[starts[idx]:starts[idx + 1]]
+        if len(raw_ring) < 4:
+            continue
+        if transformer:
+            ring = [transformer.transform(x, y) for x, y in raw_ring]
+        else:
+            ring = raw_ring
+        if ring[0] != ring[-1]:
+            ring.append(ring[0])
+        try:
+            geom = polygon_cls(ring)
+            if not geom.is_valid:
+                geom = geom.buffer(0)
+            if not geom.is_empty and geom.area > 0:
+                yield geom
+        except Exception:
+            continue
+
+
+def _compute_from_local_zips(
+    records: dict[str, dict[str, Any]],
+    specs: dict[str, dict[str, Any]],
+    source_index: dict[str, Any] | None,
+    already_ready: set[str],
+    download_missing: bool = False,
+) -> tuple[set[str], str | None]:
+    tools = _load_direct_geometry_tools()
+    if not tools:
+        return set(), "Install shapely, pyshp, and pyproj to compute direct ZIP intersections."
+
+    municipality_items = []
+    for record in records.values():
+        feature = record.get("boundary_feature")
+        if not feature or not feature.get("geometry"):
+            continue
+        geom = tools["shape"](feature["geometry"])
+        if not geom.is_valid:
+            geom = tools["make_valid"](geom)
+        if geom.is_empty:
+            continue
+        municipality_items.append((record["psgc"], geom))
+    if not municipality_items:
+        return set(), "Municipal boundary geometries are missing."
+
+    municipality_geoms = [item[1] for item in municipality_items]
+    municipality_tree = tools["STRtree"](municipality_geoms)
+    direct_ready: set[str] = set()
+    note_parts = []
+
+    for scenario_id, spec in specs.items():
+        if scenario_id in already_ready:
+            continue
+        zip_paths = _local_source_zips(source_index, scenario_id, download_missing=download_missing)
+        if not zip_paths:
+            continue
+        covered_provinces = {_province_from_path(path.name) for path in zip_paths}
+
+        area_by_psgc_level = {
+            record["psgc"]: {level: 0.0 for level in LEVELS}
+            for record in records.values()
+        }
+        processed_parts = 0
+        for zip_path in zip_paths:
+            try:
+                shp, shx, dbf, prj = _zip_shapefile_members(zip_path)
+                transformer = _direct_transformer(prj, tools)
+                reader = tools["shapefile"].Reader(shp=BytesIO(shp), shx=BytesIO(shx), dbf=BytesIO(dbf))
+            except Exception as exc:
+                note_parts.append(f"{scenario_id}: could not read {zip_path.name}: {exc}")
+                continue
+
+            for shape_record in reader.iterShapeRecords():
+                props = shape_record.record.as_dict()
+                raw_level = (
+                    props.get("hazard_level")
+                    or props.get(spec["attribute"])
+                    or props.get("Var")
+                    or props.get("VAR")
+                    or props.get("HAZ")
+                    or props.get("LH")
+                    or props.get("SS")
+                    or props.get("ALLUVIAL")
+                    or props.get("GRIDCODE")
+                )
+                try:
+                    level = str(int(float(raw_level)))
+                except (TypeError, ValueError):
+                    continue
+                if scenario_id == "debris_flow" and level == "4":
+                    level = "3"
+                if level not in LEVELS:
+                    continue
+
+                for hazard_part in _shape_part_polygons(shape_record.shape, transformer, tools["Polygon"]):
+                    processed_parts += 1
+                    for idx in municipality_tree.query(hazard_part):
+                        psgc, mun_geom = municipality_items[int(idx)]
+                        if not _bbox_intersects(mun_geom.bounds, hazard_part.bounds):
+                            continue
+                        try:
+                            exposed = mun_geom.intersection(hazard_part)
+                        except Exception:
+                            try:
+                                exposed = tools["make_valid"](mun_geom).intersection(tools["make_valid"](hazard_part))
+                            except Exception:
+                                continue
+                        if not exposed.is_empty:
+                            area_by_psgc_level[psgc][level] += exposed.area
+
+        if not processed_parts:
+            continue
+        direct_ready.add(scenario_id)
+
+        for record in records.values():
+            if record["province"] not in covered_provinces:
+                continue
+            mun_geom = next((geom for psgc, geom in municipality_items if psgc == record["psgc"]), None)
+            stats = _blank_level_stats()
+            max_level = None
+            if mun_geom and record.get("area_sqkm") and mun_geom.area > 0:
+                for level in LEVELS:
+                    pct = max(0.0, min(100.0, (area_by_psgc_level[record["psgc"]][level] / mun_geom.area) * 100.0))
+                    area_ha = float(record["area_sqkm"]) * 100.0 * pct / 100.0
+                    name = LEVEL_NAMES[level]
+                    stats[name] = {"area_ha": round(area_ha, 2), "pct": round(pct, 2)}
+                    if pct > 0:
+                        max_level = max(int(level), int(max_level or 0))
+            score = _scenario_score(stats)
+            record["scenarios"][scenario_id] = {
+                "status": "computed",
+                "family": spec["family"],
+                "label": spec["label"],
+                "pmtiles_layer": spec.get("pmtiles_layer"),
+                "hazard_area": stats,
+                "risk_score": score,
+                "risk_class": _risk_class(score),
+                "max_hazard_level": max_level,
+                "max_hazard_label": LEVEL_NAMES.get(str(max_level), "none"),
+                "method": "direct_noah_zip_part_intersection",
+                "source_zips": [str(path.relative_to(RAW_NOAH_DOWNLOADS)).replace("\\", "/") for path in zip_paths],
+            }
+
+    return direct_ready, "; ".join(note_parts) if note_parts else None
 
 
 def _scenario_score(stats: dict[str, dict[str, float]]) -> float:
@@ -372,6 +620,8 @@ def _summarize_records(records: dict[str, dict[str, Any]]) -> dict[str, Any]:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Compute Project NOAH municipal exposure analytics.")
     parser.add_argument("--output", type=Path, default=OUTPUT_PATH)
+    parser.add_argument("--scenario", action="append", help="Limit computation to one or more scenario IDs.")
+    parser.add_argument("--download-missing", action="store_true", help="Download missing source ZIPs before computing.")
     args = parser.parse_args(argv)
 
     municipalities = _load_json(MUNICIPALITIES_PATH, [])
@@ -380,9 +630,24 @@ def main(argv: list[str] | None = None) -> int:
     source_index = _load_json(SOURCE_INDEX_PATH, None)
 
     specs = _scenario_specs(catalog)
+    if args.scenario:
+        requested = set(args.scenario)
+        unknown = requested - set(specs)
+        if unknown:
+            raise ValueError(f"Unknown NOAH scenario(s): {', '.join(sorted(unknown))}")
+        specs = {key: value for key, value in specs.items() if key in requested}
     source_status = _source_lookup(source_index)
     records = _build_municipal_records(municipalities, boundaries)
     ready, exact_note = _compute_exact(records, specs)
+    direct_ready, direct_note = _compute_from_local_zips(
+        records,
+        specs,
+        source_index,
+        ready,
+        download_missing=args.download_missing,
+    )
+    ready = ready | direct_ready
+    notes = [note for note in (exact_note, direct_note) if note]
     _apply_source_status(records, specs, source_status, ready)
     summary = _summarize_records(records)
 
@@ -392,7 +657,7 @@ def main(argv: list[str] | None = None) -> int:
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "status": "computed" if ready else "pending_local_geometry",
             "method": "municipality_polygon_intersection" if ready else "source_readiness_only",
-            "exact_note": exact_note,
+            "exact_note": "; ".join(notes) if notes else None,
             "source": "Project NOAH hazard maps via BetterGov PMTiles/source mirror",
             "source_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps",
             "license": "ODC-ODbL",
