@@ -1,7 +1,7 @@
 {
   "as_of": "2026-08-31",
-  "fetched_at": "2026-08-31T04:34:53.671326+00:00",
-  "fetched_at_utc": "2026-08-31T04:34:53.671326+00:00",
+  "fetched_at": "2026-08-31T05:11:01.120267+00:00",
+  "fetched_at_utc": "2026-08-31T05:11:01.120267+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -19,6 +19,7 @@
     "source": "pagasa_farm_weather",
     "as_of": "2026-08-31",
     "region2_forecast": [
+      "01:11:02 PM",
       "31 August 2026",
       "Issued at: 7:00 AM Friday, August 28, 2026",
       "Valid until: 7:00 AM Saturday, August 29, 2026",
@@ -27,7 +28,7 @@
       "as of 26 August 2026)",
       "Moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026."
     ],
-    "raw_text_extracted": "31 August 2026\nIssued at: 7:00 AM Friday, August 28, 2026\nValid until: 7:00 AM Saturday, August 29, 2026\nAt 3:00 AM today, the Low Pressure Area (LPA) was estimated based on all available data at 720 km East of Itbayat, Batanes (21.9°N, 128.7°E). Southwest Monsoon affecting Luzon and Visayas.\nIlocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA,\nas of 26 August 2026)\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
+    "raw_text_extracted": "01:11:02 PM\n31 August 2026\nIssued at: 7:00 AM Friday, August 28, 2026\nValid until: 7:00 AM Saturday, August 29, 2026\nAt 3:00 AM today, the Low Pressure Area (LPA) was estimated based on all available data at 720 km East of Itbayat, Batanes (21.9°N, 128.7°E). Southwest Monsoon affecting Luzon and Visayas.\nIlocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA,\nas of 26 August 2026)\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -103,8 +104,8 @@
     "summary": "Tropical Depression Pilandok Bulletin #5",
     "as_of": "2026-08-31",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-31T04:34:53.671326+00:00",
-    "fetched_at_utc": "2026-08-31T04:34:53.671326+00:00"
+    "fetched_at": "2026-08-31T05:11:01.120267+00:00",
+    "fetched_at_utc": "2026-08-31T05:11:01.120267+00:00"
   },
   "scrape_status": {
     "enso": "success",

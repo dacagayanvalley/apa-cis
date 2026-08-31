@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-31T04:35:01.081098",
+    "generated_at": "2026-08-31T05:11:12.301284",
     "as_of_date": "2026-08-31",
     "municipality_count": 93
   },
@@ -19,6 +19,16 @@
         "apa_cis_tmax_c": 26.03,
         "apa_cis_wind_speed_ms": 1.3,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -26,6 +36,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 26.03,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -433,7 +444,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023102000": {
@@ -450,6 +461,16 @@
         "apa_cis_tmax_c": 25.76,
         "apa_cis_wind_speed_ms": 4.18,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.4,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -457,6 +478,7 @@
         "rainfall_7d_mm": 50.53,
         "rainfall_30d_mm": 72.62,
         "tmax_c": 25.76,
+        "heat_index_c": null,
         "tmin_c": 26.27,
         "tmean_c": 27.7,
         "humidity_pct": 83.27,
@@ -864,7 +886,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023103000": {
@@ -881,6 +903,16 @@
         "apa_cis_tmax_c": 25.42,
         "apa_cis_wind_speed_ms": 0.8,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.89,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -888,6 +920,7 @@
         "rainfall_7d_mm": 41.11,
         "rainfall_30d_mm": 64.87,
         "tmax_c": 25.42,
+        "heat_index_c": null,
         "tmin_c": 25.24,
         "tmean_c": 28.13,
         "humidity_pct": 84.68,
@@ -1296,7 +1329,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023104000": {
@@ -1313,6 +1346,16 @@
         "apa_cis_tmax_c": 24.64,
         "apa_cis_wind_speed_ms": 2.42,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.01,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -1320,6 +1363,7 @@
         "rainfall_7d_mm": 73.87,
         "rainfall_30d_mm": 101.62,
         "tmax_c": 24.64,
+        "heat_index_c": null,
         "tmin_c": 22.76,
         "tmean_c": 25.45,
         "humidity_pct": 88.89,
@@ -1689,7 +1733,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023105000": {
@@ -1706,6 +1750,16 @@
         "apa_cis_tmax_c": 25.89,
         "apa_cis_wind_speed_ms": 0.83,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.89,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -1713,6 +1767,7 @@
         "rainfall_7d_mm": 41.11,
         "rainfall_30d_mm": 64.87,
         "tmax_c": 25.89,
+        "heat_index_c": null,
         "tmin_c": 25.24,
         "tmean_c": 28.13,
         "humidity_pct": 84.68,
@@ -2121,7 +2176,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023106000": {
@@ -2138,6 +2193,16 @@
         "apa_cis_tmax_c": 27.61,
         "apa_cis_wind_speed_ms": 3.89,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.18,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -2145,6 +2210,7 @@
         "rainfall_7d_mm": 43.67,
         "rainfall_30d_mm": 66.32,
         "tmax_c": 27.61,
+        "heat_index_c": null,
         "tmin_c": 27.75,
         "tmean_c": 29.06,
         "humidity_pct": 80.27,
@@ -2552,7 +2618,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023107000": {
@@ -2569,6 +2635,16 @@
         "apa_cis_tmax_c": 26.11,
         "apa_cis_wind_speed_ms": 1.26,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -2576,6 +2652,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 26.11,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -2984,7 +3061,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023108000": {
@@ -3001,6 +3078,16 @@
         "apa_cis_tmax_c": 25.46,
         "apa_cis_wind_speed_ms": 3.93,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.4,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -3008,6 +3095,7 @@
         "rainfall_7d_mm": 50.53,
         "rainfall_30d_mm": 72.62,
         "tmax_c": 25.46,
+        "heat_index_c": null,
         "tmin_c": 26.27,
         "tmean_c": 27.7,
         "humidity_pct": 83.27,
@@ -3376,7 +3464,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023109000": {
@@ -3393,6 +3481,16 @@
         "apa_cis_tmax_c": 24.4,
         "apa_cis_wind_speed_ms": 1.96,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.18,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -3400,6 +3498,7 @@
         "rainfall_7d_mm": 43.67,
         "rainfall_30d_mm": 66.32,
         "tmax_c": 24.4,
+        "heat_index_c": null,
         "tmin_c": 27.75,
         "tmean_c": 29.06,
         "humidity_pct": 80.27,
@@ -3807,7 +3906,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023110000": {
@@ -3824,6 +3923,16 @@
         "apa_cis_tmax_c": 27.71,
         "apa_cis_wind_speed_ms": 9.41,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.6,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -3831,6 +3940,7 @@
         "rainfall_7d_mm": 80.68,
         "rainfall_30d_mm": 92.48,
         "tmax_c": 27.71,
+        "heat_index_c": null,
         "tmin_c": 28.52,
         "tmean_c": 28.94,
         "humidity_pct": 85.2,
@@ -4239,7 +4349,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023111000": {
@@ -4256,6 +4366,16 @@
         "apa_cis_tmax_c": 24.53,
         "apa_cis_wind_speed_ms": 2.34,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.18,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -4263,6 +4383,7 @@
         "rainfall_7d_mm": 43.67,
         "rainfall_30d_mm": 66.32,
         "tmax_c": 24.53,
+        "heat_index_c": null,
         "tmin_c": 27.75,
         "tmean_c": 29.06,
         "humidity_pct": 80.27,
@@ -4670,7 +4791,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023112000": {
@@ -4687,6 +4808,16 @@
         "apa_cis_tmax_c": 25.55,
         "apa_cis_wind_speed_ms": 1.9,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.4,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -4694,6 +4825,7 @@
         "rainfall_7d_mm": 50.53,
         "rainfall_30d_mm": 72.62,
         "tmax_c": 25.55,
+        "heat_index_c": null,
         "tmin_c": 26.27,
         "tmean_c": 27.7,
         "humidity_pct": 83.27,
@@ -5062,7 +5194,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023113000": {
@@ -5079,6 +5211,16 @@
         "apa_cis_tmax_c": 27.03,
         "apa_cis_wind_speed_ms": 1.52,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -5086,6 +5228,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 27.03,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -5493,7 +5636,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023114000": {
@@ -5510,6 +5653,16 @@
         "apa_cis_tmax_c": 25.34,
         "apa_cis_wind_speed_ms": 0.89,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.89,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -5517,6 +5670,7 @@
         "rainfall_7d_mm": 41.11,
         "rainfall_30d_mm": 64.87,
         "tmax_c": 25.34,
+        "heat_index_c": null,
         "tmin_c": 25.24,
         "tmean_c": 28.13,
         "humidity_pct": 84.68,
@@ -5925,7 +6079,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023115000": {
@@ -5942,6 +6096,16 @@
         "apa_cis_tmax_c": 25.56,
         "apa_cis_wind_speed_ms": 1.17,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.18,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -5949,6 +6113,7 @@
         "rainfall_7d_mm": 43.67,
         "rainfall_30d_mm": 66.32,
         "tmax_c": 25.56,
+        "heat_index_c": null,
         "tmin_c": 27.75,
         "tmean_c": 29.06,
         "humidity_pct": 80.27,
@@ -6356,7 +6521,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023116000": {
@@ -6373,6 +6538,16 @@
         "apa_cis_tmax_c": 25.06,
         "apa_cis_wind_speed_ms": 1.08,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.89,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -6380,6 +6555,7 @@
         "rainfall_7d_mm": 41.11,
         "rainfall_30d_mm": 64.87,
         "tmax_c": 25.06,
+        "heat_index_c": null,
         "tmin_c": 25.24,
         "tmean_c": 28.13,
         "humidity_pct": 84.68,
@@ -6787,7 +6963,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023117000": {
@@ -6804,6 +6980,16 @@
         "apa_cis_tmax_c": 25.03,
         "apa_cis_wind_speed_ms": 1.36,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.89,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -6811,6 +6997,7 @@
         "rainfall_7d_mm": 41.11,
         "rainfall_30d_mm": 64.87,
         "tmax_c": 25.03,
+        "heat_index_c": null,
         "tmin_c": 25.24,
         "tmean_c": 28.13,
         "humidity_pct": 84.68,
@@ -7218,7 +7405,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023118000": {
@@ -7235,6 +7422,16 @@
         "apa_cis_tmax_c": 24.83,
         "apa_cis_wind_speed_ms": 1.59,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.89,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -7242,6 +7439,7 @@
         "rainfall_7d_mm": 41.11,
         "rainfall_30d_mm": 64.87,
         "tmax_c": 24.83,
+        "heat_index_c": null,
         "tmin_c": 25.24,
         "tmean_c": 28.13,
         "humidity_pct": 84.68,
@@ -7649,7 +7847,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023119000": {
@@ -7666,6 +7864,16 @@
         "apa_cis_tmax_c": 25.85,
         "apa_cis_wind_speed_ms": 3.58,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.01,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -7673,6 +7881,7 @@
         "rainfall_7d_mm": 73.87,
         "rainfall_30d_mm": 101.62,
         "tmax_c": 25.85,
+        "heat_index_c": null,
         "tmin_c": 22.76,
         "tmean_c": 25.45,
         "humidity_pct": 88.89,
@@ -8081,7 +8290,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023120000": {
@@ -8098,6 +8307,16 @@
         "apa_cis_tmax_c": 26.28,
         "apa_cis_wind_speed_ms": 1.43,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -8105,6 +8324,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 26.28,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -8513,7 +8733,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023121000": {
@@ -8530,6 +8750,16 @@
         "apa_cis_tmax_c": 26.0,
         "apa_cis_wind_speed_ms": 0.79,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.01,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -8537,6 +8767,7 @@
         "rainfall_7d_mm": 73.87,
         "rainfall_30d_mm": 101.62,
         "tmax_c": 26.0,
+        "heat_index_c": null,
         "tmin_c": 22.76,
         "tmean_c": 25.45,
         "humidity_pct": 88.89,
@@ -8945,7 +9176,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023122000": {
@@ -8962,6 +9193,16 @@
         "apa_cis_tmax_c": 25.96,
         "apa_cis_wind_speed_ms": 1.42,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.01,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -8969,6 +9210,7 @@
         "rainfall_7d_mm": 73.87,
         "rainfall_30d_mm": 101.62,
         "tmax_c": 25.96,
+        "heat_index_c": null,
         "tmin_c": 22.76,
         "tmean_c": 25.45,
         "humidity_pct": 88.89,
@@ -9377,7 +9619,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023123000": {
@@ -9394,6 +9636,16 @@
         "apa_cis_tmax_c": 25.64,
         "apa_cis_wind_speed_ms": 2.41,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.4,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -9401,6 +9653,7 @@
         "rainfall_7d_mm": 50.53,
         "rainfall_30d_mm": 72.62,
         "tmax_c": 25.64,
+        "heat_index_c": null,
         "tmin_c": 26.27,
         "tmean_c": 27.7,
         "humidity_pct": 83.27,
@@ -9808,7 +10061,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023124000": {
@@ -9825,6 +10078,16 @@
         "apa_cis_tmax_c": 26.45,
         "apa_cis_wind_speed_ms": 1.93,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.18,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -9832,6 +10095,7 @@
         "rainfall_7d_mm": 43.67,
         "rainfall_30d_mm": 66.32,
         "tmax_c": 26.45,
+        "heat_index_c": null,
         "tmin_c": 27.75,
         "tmean_c": 29.06,
         "humidity_pct": 80.27,
@@ -10239,7 +10503,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023125000": {
@@ -10256,6 +10520,16 @@
         "apa_cis_tmax_c": 25.13,
         "apa_cis_wind_speed_ms": 2.26,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.4,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -10263,6 +10537,7 @@
         "rainfall_7d_mm": 50.53,
         "rainfall_30d_mm": 72.62,
         "tmax_c": 25.13,
+        "heat_index_c": null,
         "tmin_c": 26.27,
         "tmean_c": 27.7,
         "humidity_pct": 83.27,
@@ -10631,7 +10906,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023126000": {
@@ -10648,6 +10923,16 @@
         "apa_cis_tmax_c": 24.17,
         "apa_cis_wind_speed_ms": 1.55,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.18,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -10655,6 +10940,7 @@
         "rainfall_7d_mm": 43.67,
         "rainfall_30d_mm": 66.32,
         "tmax_c": 24.17,
+        "heat_index_c": null,
         "tmin_c": 27.75,
         "tmean_c": 29.06,
         "humidity_pct": 80.27,
@@ -11062,7 +11348,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023127000": {
@@ -11079,6 +11365,16 @@
         "apa_cis_tmax_c": 25.69,
         "apa_cis_wind_speed_ms": 1.05,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.89,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -11086,6 +11382,7 @@
         "rainfall_7d_mm": 41.11,
         "rainfall_30d_mm": 64.87,
         "tmax_c": 25.69,
+        "heat_index_c": null,
         "tmin_c": 25.24,
         "tmean_c": 28.13,
         "humidity_pct": 84.68,
@@ -11493,7 +11790,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023128000": {
@@ -11510,6 +11807,16 @@
         "apa_cis_tmax_c": 26.73,
         "apa_cis_wind_speed_ms": 1.14,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -11517,6 +11824,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 26.73,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -11924,7 +12232,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "023129000": {
@@ -11941,6 +12249,16 @@
         "apa_cis_tmax_c": 26.34,
         "apa_cis_wind_speed_ms": 0.93,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.01,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -11948,6 +12266,7 @@
         "rainfall_7d_mm": 73.87,
         "rainfall_30d_mm": 101.62,
         "tmax_c": 26.34,
+        "heat_index_c": null,
         "tmin_c": 22.76,
         "tmean_c": 25.45,
         "humidity_pct": 88.89,
@@ -12356,7 +12675,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031401000": {
@@ -12373,6 +12692,16 @@
         "apa_cis_tmax_c": 28.11,
         "apa_cis_wind_speed_ms": 2.05,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -12380,6 +12709,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 28.11,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -12785,7 +13115,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031402000": {
@@ -12802,6 +13132,16 @@
         "apa_cis_tmax_c": 27.9,
         "apa_cis_wind_speed_ms": 5.35,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -12809,6 +13149,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.9,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -13214,7 +13555,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031403000": {
@@ -13231,6 +13572,16 @@
         "apa_cis_tmax_c": 27.96,
         "apa_cis_wind_speed_ms": 4.62,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -13238,6 +13589,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.96,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -13643,7 +13995,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031404000": {
@@ -13660,6 +14012,16 @@
         "apa_cis_tmax_c": 27.56,
         "apa_cis_wind_speed_ms": 1.65,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.65,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -13667,6 +14029,7 @@
         "rainfall_7d_mm": 124.53,
         "rainfall_30d_mm": 153.99,
         "tmax_c": 27.56,
+        "heat_index_c": null,
         "tmin_c": 20.82,
         "tmean_c": 24.05,
         "humidity_pct": 88.01,
@@ -14074,7 +14437,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031405000": {
@@ -14091,6 +14454,16 @@
         "apa_cis_tmax_c": 27.73,
         "apa_cis_wind_speed_ms": 2.81,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -14098,6 +14471,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.73,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -14503,7 +14877,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031406000": {
@@ -14520,6 +14894,16 @@
         "apa_cis_tmax_c": 27.65,
         "apa_cis_wind_speed_ms": 0.46,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.27,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -14527,6 +14911,7 @@
         "rainfall_7d_mm": 56.74,
         "rainfall_30d_mm": 83.94,
         "tmax_c": 27.65,
+        "heat_index_c": null,
         "tmin_c": 28.11,
         "tmean_c": 28.96,
         "humidity_pct": 78.96,
@@ -14934,7 +15319,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031407000": {
@@ -14951,6 +15336,16 @@
         "apa_cis_tmax_c": 27.28,
         "apa_cis_wind_speed_ms": 1.79,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -14958,6 +15353,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 27.28,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -15365,7 +15761,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031408000": {
@@ -15382,6 +15778,16 @@
         "apa_cis_tmax_c": 27.69,
         "apa_cis_wind_speed_ms": 2.9,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -15389,6 +15795,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.69,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -15794,7 +16201,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031409000": {
@@ -15811,6 +16218,16 @@
         "apa_cis_tmax_c": 27.95,
         "apa_cis_wind_speed_ms": 3.53,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -15818,6 +16235,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.95,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -16223,7 +16641,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031410000": {
@@ -16240,6 +16658,16 @@
         "apa_cis_tmax_c": 27.57,
         "apa_cis_wind_speed_ms": 3.72,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -16247,6 +16675,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 27.57,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -16654,7 +17083,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031411000": {
@@ -16671,6 +17100,16 @@
         "apa_cis_tmax_c": 27.14,
         "apa_cis_wind_speed_ms": 1.69,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -16678,6 +17117,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 27.14,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -17085,7 +17525,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031412000": {
@@ -17102,6 +17542,16 @@
         "apa_cis_tmax_c": 28.99,
         "apa_cis_wind_speed_ms": 6.97,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.4,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -17109,6 +17559,7 @@
         "rainfall_7d_mm": 60.75,
         "rainfall_30d_mm": 90.13,
         "tmax_c": 28.99,
+        "heat_index_c": null,
         "tmin_c": 27.44,
         "tmean_c": 28.6,
         "humidity_pct": 81.83,
@@ -17514,7 +17965,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031413000": {
@@ -17531,6 +17982,16 @@
         "apa_cis_tmax_c": 29.65,
         "apa_cis_wind_speed_ms": 3.59,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.0,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -17538,6 +17999,7 @@
         "rainfall_7d_mm": 59.65,
         "rainfall_30d_mm": 88.92,
         "tmax_c": 29.65,
+        "heat_index_c": null,
         "tmin_c": 27.11,
         "tmean_c": 28.57,
         "humidity_pct": 81.65,
@@ -17943,7 +18405,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031414000": {
@@ -17960,6 +18422,16 @@
         "apa_cis_tmax_c": 28.2,
         "apa_cis_wind_speed_ms": 3.69,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.47,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -17967,6 +18439,7 @@
         "rainfall_7d_mm": 69.93,
         "rainfall_30d_mm": 107.83,
         "tmax_c": 28.2,
+        "heat_index_c": null,
         "tmin_c": 23.78,
         "tmean_c": 27.11,
         "humidity_pct": 84.52,
@@ -18372,7 +18845,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031415000": {
@@ -18389,6 +18862,16 @@
         "apa_cis_tmax_c": 27.78,
         "apa_cis_wind_speed_ms": 0.65,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -18396,6 +18879,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.78,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -18803,7 +19287,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031416000": {
@@ -18820,6 +19304,16 @@
         "apa_cis_tmax_c": 28.24,
         "apa_cis_wind_speed_ms": 2.29,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.47,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -18827,6 +19321,7 @@
         "rainfall_7d_mm": 69.93,
         "rainfall_30d_mm": 107.83,
         "tmax_c": 28.24,
+        "heat_index_c": null,
         "tmin_c": 23.78,
         "tmean_c": 27.11,
         "humidity_pct": 84.52,
@@ -19232,7 +19727,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031417000": {
@@ -19249,6 +19744,16 @@
         "apa_cis_tmax_c": 27.71,
         "apa_cis_wind_speed_ms": 2.1,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -19256,6 +19761,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 27.71,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -19663,7 +20169,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031418000": {
@@ -19680,6 +20186,16 @@
         "apa_cis_tmax_c": 27.12,
         "apa_cis_wind_speed_ms": 1.74,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.27,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -19687,6 +20203,7 @@
         "rainfall_7d_mm": 56.74,
         "rainfall_30d_mm": 83.94,
         "tmax_c": 27.12,
+        "heat_index_c": null,
         "tmin_c": 28.11,
         "tmean_c": 28.96,
         "humidity_pct": 78.96,
@@ -20092,7 +20609,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031419000": {
@@ -20109,6 +20626,16 @@
         "apa_cis_tmax_c": 27.42,
         "apa_cis_wind_speed_ms": 1.12,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -20116,6 +20643,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.42,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -20521,7 +21049,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031420000": {
@@ -20538,6 +21066,16 @@
         "apa_cis_tmax_c": 27.91,
         "apa_cis_wind_speed_ms": 1.77,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -20545,6 +21083,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.91,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -20950,7 +21489,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031421000": {
@@ -20967,6 +21506,16 @@
         "apa_cis_tmax_c": 29.5,
         "apa_cis_wind_speed_ms": 5.87,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.0,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -20974,6 +21523,7 @@
         "rainfall_7d_mm": 59.65,
         "rainfall_30d_mm": 88.92,
         "tmax_c": 29.5,
+        "heat_index_c": null,
         "tmin_c": 27.11,
         "tmean_c": 28.57,
         "humidity_pct": 81.65,
@@ -21379,7 +21929,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031422000": {
@@ -21396,6 +21946,16 @@
         "apa_cis_tmax_c": 27.44,
         "apa_cis_wind_speed_ms": 1.56,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -21403,6 +21963,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 27.44,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -21810,7 +22371,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031423000": {
@@ -21827,6 +22388,16 @@
         "apa_cis_tmax_c": 27.34,
         "apa_cis_wind_speed_ms": 1.0,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -21834,6 +22405,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.34,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -22239,7 +22811,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031424000": {
@@ -22256,6 +22828,16 @@
         "apa_cis_tmax_c": 27.78,
         "apa_cis_wind_speed_ms": 4.32,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.65,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -22263,6 +22845,7 @@
         "rainfall_7d_mm": 124.53,
         "rainfall_30d_mm": 153.99,
         "tmax_c": 27.78,
+        "heat_index_c": null,
         "tmin_c": 20.82,
         "tmean_c": 24.05,
         "humidity_pct": 88.01,
@@ -22670,7 +23253,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031425000": {
@@ -22687,6 +23270,16 @@
         "apa_cis_tmax_c": 27.79,
         "apa_cis_wind_speed_ms": 1.47,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -22694,6 +23287,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.79,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -23099,7 +23693,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031426000": {
@@ -23116,6 +23710,16 @@
         "apa_cis_tmax_c": 27.4,
         "apa_cis_wind_speed_ms": 0.61,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -23123,6 +23727,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.4,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -23530,7 +24135,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031427000": {
@@ -23547,6 +24152,16 @@
         "apa_cis_tmax_c": 27.04,
         "apa_cis_wind_speed_ms": 2.36,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.65,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -23554,6 +24169,7 @@
         "rainfall_7d_mm": 124.53,
         "rainfall_30d_mm": 153.99,
         "tmax_c": 27.04,
+        "heat_index_c": null,
         "tmin_c": 20.82,
         "tmean_c": 24.05,
         "humidity_pct": 88.01,
@@ -23961,7 +24577,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031428000": {
@@ -23978,6 +24594,16 @@
         "apa_cis_tmax_c": 27.54,
         "apa_cis_wind_speed_ms": 3.19,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.65,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -23985,6 +24611,7 @@
         "rainfall_7d_mm": 124.53,
         "rainfall_30d_mm": 153.99,
         "tmax_c": 27.54,
+        "heat_index_c": null,
         "tmin_c": 20.82,
         "tmean_c": 24.05,
         "humidity_pct": 88.01,
@@ -24392,7 +25019,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031429000": {
@@ -24409,6 +25036,16 @@
         "apa_cis_tmax_c": 27.96,
         "apa_cis_wind_speed_ms": 5.24,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -24416,6 +25053,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 27.96,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -24823,7 +25461,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031430000": {
@@ -24840,6 +25478,16 @@
         "apa_cis_tmax_c": 27.42,
         "apa_cis_wind_speed_ms": 0.71,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.47,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -24847,6 +25495,7 @@
         "rainfall_7d_mm": 69.93,
         "rainfall_30d_mm": 107.83,
         "tmax_c": 27.42,
+        "heat_index_c": null,
         "tmin_c": 23.78,
         "tmean_c": 27.11,
         "humidity_pct": 84.52,
@@ -25254,7 +25903,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031431000": {
@@ -25271,6 +25920,16 @@
         "apa_cis_tmax_c": 29.2,
         "apa_cis_wind_speed_ms": 3.38,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -25278,6 +25937,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 29.2,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -25683,7 +26343,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031432000": {
@@ -25700,6 +26360,16 @@
         "apa_cis_tmax_c": 27.72,
         "apa_cis_wind_speed_ms": 3.86,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -25707,6 +26377,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 27.72,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -26112,7 +26783,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031433000": {
@@ -26129,6 +26800,16 @@
         "apa_cis_tmax_c": 25.4,
         "apa_cis_wind_speed_ms": 1.39,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.84,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -26136,6 +26817,7 @@
         "rainfall_7d_mm": 58.45,
         "rainfall_30d_mm": 79.73,
         "tmax_c": 25.4,
+        "heat_index_c": null,
         "tmin_c": 23.62,
         "tmean_c": 27.64,
         "humidity_pct": 83.7,
@@ -26543,7 +27225,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031434000": {
@@ -26560,6 +27242,16 @@
         "apa_cis_tmax_c": 27.18,
         "apa_cis_wind_speed_ms": 1.65,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -26567,6 +27259,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 27.18,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -26974,7 +27667,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031435000": {
@@ -26991,6 +27684,16 @@
         "apa_cis_tmax_c": 27.97,
         "apa_cis_wind_speed_ms": 4.52,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -26998,6 +27701,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 27.97,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -27405,7 +28109,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031436000": {
@@ -27422,6 +28126,16 @@
         "apa_cis_tmax_c": 27.02,
         "apa_cis_wind_speed_ms": 1.8,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -27429,6 +28143,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 27.02,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -27836,7 +28551,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "031437000": {
@@ -27853,6 +28568,16 @@
         "apa_cis_tmax_c": 26.3,
         "apa_cis_wind_speed_ms": 1.98,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 2.92,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -27860,6 +28585,7 @@
         "rainfall_7d_mm": 46.95,
         "rainfall_30d_mm": 70.85,
         "tmax_c": 26.3,
+        "heat_index_c": null,
         "tmin_c": 24.3,
         "tmean_c": 27.64,
         "humidity_pct": 85.54,
@@ -28267,7 +28993,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035601000": {
@@ -28284,6 +29010,16 @@
         "apa_cis_tmax_c": 24.83,
         "apa_cis_wind_speed_ms": 3.67,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -28291,6 +29027,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 24.83,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -28660,7 +29397,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035602000": {
@@ -28677,6 +29414,16 @@
         "apa_cis_tmax_c": 24.3,
         "apa_cis_wind_speed_ms": 3.28,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -28684,6 +29431,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 24.3,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -29053,7 +29801,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035603000": {
@@ -29070,6 +29818,16 @@
         "apa_cis_tmax_c": 21.87,
         "apa_cis_wind_speed_ms": 3.57,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -29077,6 +29835,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 21.87,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -29446,7 +30205,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035604000": {
@@ -29463,6 +30222,16 @@
         "apa_cis_tmax_c": 26.47,
         "apa_cis_wind_speed_ms": 4.05,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -29470,6 +30239,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 26.47,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -29788,7 +30558,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035605000": {
@@ -29805,6 +30575,16 @@
         "apa_cis_tmax_c": 23.87,
         "apa_cis_wind_speed_ms": 3.69,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -29812,6 +30592,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 23.87,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -30181,7 +30962,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035606000": {
@@ -30198,6 +30979,16 @@
         "apa_cis_tmax_c": 27.23,
         "apa_cis_wind_speed_ms": 4.08,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -30205,6 +30996,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 27.23,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -30612,7 +31404,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035607000": {
@@ -30629,6 +31421,16 @@
         "apa_cis_tmax_c": 22.64,
         "apa_cis_wind_speed_ms": 3.36,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -30636,6 +31438,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 22.64,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -31044,7 +31847,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035608000": {
@@ -31061,6 +31864,16 @@
         "apa_cis_tmax_c": 22.6,
         "apa_cis_wind_speed_ms": 3.68,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -31068,6 +31881,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 22.6,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -31437,7 +32251,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035609000": {
@@ -31454,6 +32268,16 @@
         "apa_cis_tmax_c": 25.45,
         "apa_cis_wind_speed_ms": 2.72,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -31461,6 +32285,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 25.45,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -31869,7 +32694,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035610000": {
@@ -31886,6 +32711,16 @@
         "apa_cis_tmax_c": 22.35,
         "apa_cis_wind_speed_ms": 3.54,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 25.0,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -31893,6 +32728,7 @@
         "rainfall_7d_mm": 678.22,
         "rainfall_30d_mm": 786.67,
         "tmax_c": 22.35,
+        "heat_index_c": null,
         "tmin_c": 22.1,
         "tmean_c": 23.58,
         "humidity_pct": 92.93,
@@ -32301,7 +33137,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035611000": {
@@ -32318,6 +33154,16 @@
         "apa_cis_tmax_c": 26.35,
         "apa_cis_wind_speed_ms": 4.0,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -32325,6 +33171,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 26.35,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -32693,7 +33540,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035612000": {
@@ -32710,6 +33557,16 @@
         "apa_cis_tmax_c": 22.27,
         "apa_cis_wind_speed_ms": 2.96,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 11.16,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -32717,6 +33574,7 @@
         "rainfall_7d_mm": 227.59,
         "rainfall_30d_mm": 357.06,
         "tmax_c": 22.27,
+        "heat_index_c": null,
         "tmin_c": 22.42,
         "tmean_c": 24.03,
         "humidity_pct": 92.98,
@@ -33086,7 +33944,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035613000": {
@@ -33103,6 +33961,16 @@
         "apa_cis_tmax_c": 25.62,
         "apa_cis_wind_speed_ms": 3.81,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -33110,6 +33978,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 25.62,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -33517,7 +34386,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035614000": {
@@ -33534,6 +34403,16 @@
         "apa_cis_tmax_c": 25.72,
         "apa_cis_wind_speed_ms": 3.35,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -33541,6 +34420,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 25.72,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -33909,7 +34789,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "035615000": {
@@ -33926,6 +34806,16 @@
         "apa_cis_tmax_c": 25.17,
         "apa_cis_wind_speed_ms": 4.97,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 11.16,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -33933,6 +34823,7 @@
         "rainfall_7d_mm": 227.59,
         "rainfall_30d_mm": 357.06,
         "tmax_c": 25.17,
+        "heat_index_c": null,
         "tmin_c": 22.42,
         "tmean_c": 24.03,
         "humidity_pct": 92.98,
@@ -34302,7 +35193,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "067001000": {
@@ -34319,6 +35210,16 @@
         "apa_cis_tmax_c": 27.33,
         "apa_cis_wind_speed_ms": 3.23,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -34326,6 +35227,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 27.33,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -34733,7 +35635,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "067002000": {
@@ -34750,6 +35652,16 @@
         "apa_cis_tmax_c": 27.85,
         "apa_cis_wind_speed_ms": 2.57,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.47,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -34757,6 +35669,7 @@
         "rainfall_7d_mm": 69.93,
         "rainfall_30d_mm": 107.83,
         "tmax_c": 27.85,
+        "heat_index_c": null,
         "tmin_c": 23.78,
         "tmean_c": 27.11,
         "humidity_pct": 84.52,
@@ -35162,7 +36075,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "067003000": {
@@ -35179,6 +36092,16 @@
         "apa_cis_tmax_c": 27.75,
         "apa_cis_wind_speed_ms": 4.48,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -35186,6 +36109,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 27.75,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -35593,7 +36517,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "067004000": {
@@ -35610,6 +36534,16 @@
         "apa_cis_tmax_c": 26.36,
         "apa_cis_wind_speed_ms": 2.66,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.47,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -35617,6 +36551,7 @@
         "rainfall_7d_mm": 69.93,
         "rainfall_30d_mm": 107.83,
         "tmax_c": 26.36,
+        "heat_index_c": null,
         "tmin_c": 23.78,
         "tmean_c": 27.11,
         "humidity_pct": 84.52,
@@ -36022,7 +36957,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "067005000": {
@@ -36039,6 +36974,16 @@
         "apa_cis_tmax_c": 27.0,
         "apa_cis_wind_speed_ms": 4.44,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 1.96,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -36046,6 +36991,7 @@
         "rainfall_7d_mm": 42.03,
         "rainfall_30d_mm": 88.85,
         "tmax_c": 27.0,
+        "heat_index_c": null,
         "tmin_c": 26.76,
         "tmean_c": 28.24,
         "humidity_pct": 80.88,
@@ -36414,7 +37360,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "067006000": {
@@ -36431,6 +37377,16 @@
         "apa_cis_tmax_c": 28.02,
         "apa_cis_wind_speed_ms": 3.96,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.08,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -36438,6 +37394,7 @@
         "rainfall_7d_mm": 140.31,
         "rainfall_30d_mm": 204.09,
         "tmax_c": 28.02,
+        "heat_index_c": null,
         "tmin_c": 20.44,
         "tmean_c": 23.04,
         "humidity_pct": 90.38,
@@ -36845,7 +37802,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "020100000": {
@@ -36862,6 +37819,16 @@
         "apa_cis_tmax_c": 27.2,
         "apa_cis_wind_speed_ms": 17.52,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.75,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -36869,6 +37836,7 @@
         "rainfall_7d_mm": 177.46,
         "rainfall_30d_mm": 186.87,
         "tmax_c": 27.2,
+        "heat_index_c": null,
         "tmin_c": 28.76,
         "tmean_c": 29.07,
         "humidity_pct": 84.99,
@@ -37238,7 +38206,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "020101000": {
@@ -37255,6 +38223,16 @@
         "apa_cis_tmax_c": 28.3,
         "apa_cis_wind_speed_ms": 19.43,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 3.22,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -37262,6 +38240,7 @@
         "rainfall_7d_mm": 286.63,
         "rainfall_30d_mm": 291.58,
         "tmax_c": 28.3,
+        "heat_index_c": null,
         "tmin_c": 28.85,
         "tmean_c": 29.06,
         "humidity_pct": 85.5,
@@ -37582,7 +38561,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "020102000": {
@@ -37599,6 +38578,16 @@
         "apa_cis_tmax_c": 27.24,
         "apa_cis_wind_speed_ms": 17.32,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.75,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -37606,6 +38595,7 @@
         "rainfall_7d_mm": 177.46,
         "rainfall_30d_mm": 186.87,
         "tmax_c": 27.24,
+        "heat_index_c": null,
         "tmin_c": 28.76,
         "tmean_c": 29.07,
         "humidity_pct": 84.99,
@@ -37925,7 +38915,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "020103000": {
@@ -37942,6 +38932,16 @@
         "apa_cis_tmax_c": 27.22,
         "apa_cis_wind_speed_ms": 17.34,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.75,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -37949,6 +38949,7 @@
         "rainfall_7d_mm": 177.46,
         "rainfall_30d_mm": 186.87,
         "tmax_c": 27.22,
+        "heat_index_c": null,
         "tmin_c": 28.76,
         "tmean_c": 29.07,
         "humidity_pct": 84.99,
@@ -38268,7 +39269,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "020104000": {
@@ -38285,6 +39286,16 @@
         "apa_cis_tmax_c": 27.27,
         "apa_cis_wind_speed_ms": 17.12,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.75,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -38292,6 +39303,7 @@
         "rainfall_7d_mm": 177.46,
         "rainfall_30d_mm": 186.87,
         "tmax_c": 27.27,
+        "heat_index_c": null,
         "tmin_c": 28.76,
         "tmean_c": 29.07,
         "humidity_pct": 84.99,
@@ -38611,7 +39623,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     },
     "020105000": {
@@ -38628,6 +39640,16 @@
         "apa_cis_tmax_c": 27.24,
         "apa_cis_wind_speed_ms": 17.3,
         "apa_cis_record_date": "2026-08-31",
+        "up_noah_rainfall_1h_mm": null,
+        "up_noah_rainfall_3h_mm": null,
+        "up_noah_rainfall_6h_mm": null,
+        "up_noah_rainfall_12h_mm": null,
+        "up_noah_rainfall_24h_mm": null,
+        "up_noah_rainfall_tomorrow_mm": null,
+        "up_noah_heat_index_c": null,
+        "up_noah_tmax_c": null,
+        "up_noah_record_date": null,
+        "up_noah_method": null,
         "nasa_power_rainfall_24h_mm": 4.75,
         "chirps_rainfall_24h_mm": null,
         "chirps_record_date": null,
@@ -38635,6 +39657,7 @@
         "rainfall_7d_mm": 177.46,
         "rainfall_30d_mm": 186.87,
         "tmax_c": 27.24,
+        "heat_index_c": null,
         "tmin_c": 28.76,
         "tmean_c": 29.07,
         "humidity_pct": 84.99,
@@ -39004,7 +40027,7 @@
         "weather": "apa_cis",
         "rainfall_used": "apa_cis",
         "rainfall_fallback": null,
-        "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER"
+        "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
       }
     }
   }

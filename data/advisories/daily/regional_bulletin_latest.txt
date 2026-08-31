@@ -13,6 +13,7 @@ SITUATION OVERVIEW:
 
 SOURCE TIMESTAMPS AND QA:
   APA CIS rainfall municipalities: 93
+  UP NOAH rainfall municipalities: 0
   CHIRPS rainfall municipalities: 0
   NASA POWER fallback municipalities: 0
   PAGASA source date(s): 2026-08-31
@@ -22,7 +23,7 @@ SOURCE TIMESTAMPS AND QA:
 PAGASA / ACAP / CIS SUMMARY:
   PAGASA warnings are integrated where TCWS, ENSO, seasonal outlook, or farm-weather context is available.
   ACAP 10-day provincial forecast and crop-calendar references are used as planning context.
-  APA CIS is prioritized for same-day municipal rainfall, maximum temperature, and wind when available.
+  APA CIS is prioritized first; UP NOAH sampled weather overlays are second; CHIRPS/NASA remain fallbacks.
 
 PROVINCIAL STATUS:
   Batanes: 6 municipalities with advisories (highest: DANGER)
