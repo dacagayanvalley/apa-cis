@@ -43,6 +43,15 @@ const CISPlanning = (() => {
     _setEl('pc-warning', warningCount);
     _setEl('pc-drought', droughtCount);
     _setEl('pc-heat', heatCount);
+
+    const exposure = CISData.getNOAHExposure?.();
+    const exposureRows = Object.values(exposure?.data || {});
+    const computedCount = exposureRows.filter(r => r.summary?.status === 'computed').length;
+    const highCount = exposureRows.filter(r =>
+      ['high', 'very_high'].includes(r.summary?.risk_class)
+    ).length;
+    _setEl('pc-noah-ready', computedCount ? `${computedCount}/${exposureRows.length}` : '0');
+    _setEl('pc-noah-high', highCount);
   }
 
   function renderPriorityList() {
@@ -135,17 +144,83 @@ const CISPlanning = (() => {
     `).join('');
   }
 
+  function renderNOAHExposurePanel() {
+    const container = document.getElementById('noah-exposure-panel');
+    if (!container) return;
+
+    const exposure = CISData.getNOAHExposure?.();
+    if (!exposure || !exposure.meta) {
+      container.innerHTML = `
+        <div class="noah-exposure-status pending">
+          <strong>Project NOAH exposure analytics unavailable</strong>
+          <span>Run the NOAH exposure step after boundary and hazard source files are prepared.</span>
+        </div>
+      `;
+      return;
+    }
+
+    const meta = exposure.meta;
+    const provinceCards = Object.entries(meta.province_summary || {})
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([province, item]) => `
+        <div class="noah-province-card">
+          <strong>${_escapeInline(province)}</strong>
+          <span>${item.computed_municipalities}/${item.municipality_count} computed</span>
+          <small>${item.available_source_scenario_count || 0} source scenarios available</small>
+        </div>
+      `).join('');
+
+    const topRows = Object.values(exposure.data || {})
+      .filter(row => row.summary?.status === 'computed')
+      .sort((a, b) => (b.summary?.risk_score || 0) - (a.summary?.risk_score || 0))
+      .slice(0, 8);
+
+    container.innerHTML = `
+      <div class="noah-exposure-status ${meta.status === 'computed' ? 'ready' : 'pending'}">
+        <div>
+          <strong>Project NOAH Municipal Exposure Analytics</strong>
+          <span>${meta.computed_municipalities || 0}/${meta.municipality_count || 0} municipalities computed across ${meta.scenario_count || 0} hazard scenarios.</span>
+        </div>
+        <div class="noah-meta-pill">${_escapeInline(_labelize(meta.method || 'pending'))}</div>
+      </div>
+      <div class="noah-province-grid">${provinceCards}</div>
+      ${topRows.length ? `
+        <div class="noah-top-list">
+          ${topRows.map(row => `
+            <button type="button" onclick="CISMunicipal.selectByPSGC('${row.psgc}'); switchModule('municipal', null);">
+              <span>${_escapeInline(row.municipality)}, ${_escapeInline(row.province)}</span>
+              <strong>${row.summary.risk_score}</strong>
+            </button>
+          `).join('')}
+        </div>
+      ` : `
+        <div class="noah-exposure-empty">
+          Exact municipal exposure percentages are pending local clipped NOAH GeoJSON. The app is already tracking source readiness and will populate hectares/percentages after geometry is prepared.
+        </div>
+      `}
+    `;
+  }
+
   function renderAll() {
     renderPlanningCards();
+    renderNOAHExposurePanel();
     renderPriorityList();
     renderInterventionMatrix();
   }
 
-  return { renderAll, renderPlanningCards, renderPriorityList, renderInterventionMatrix };
+  return { renderAll, renderPlanningCards, renderPriorityList, renderInterventionMatrix, renderNOAHExposurePanel };
 
   function _setEl(id, val) {
     const el = document.getElementById(id);
     if (el) el.textContent = val;
+  }
+
+  function _labelize(value) {
+    return String(value || '').replace(/_/g, ' ');
+  }
+
+  function _escapeInline(str) {
+    return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
 })();
 
@@ -227,6 +302,7 @@ const CISMunicipal = (() => {
     const id = indicators.irrigation_demand || {};
     const anom = indicators.rainfall_anomaly || {};
     const fmt = CISData.fmt;
+    const noahExposure = CISData.getNOAHExposure?.()?.data?.[ind.psgc] || null;
 
     const activeAdvisories = _renderConsolidatedAdvisories(adv, fmt);
     const rainfall7d = obs.rainfall_7d_mm ?? indicators.rainfall_7d_mm;
@@ -295,6 +371,8 @@ const CISMunicipal = (() => {
 
       ${_renderObservationExplainer(ind, obs, indicators, fw)}
 
+      ${_renderNOAHExposureProfile(noahExposure)}
+
       ${_renderCropCalendarComparison(ind)}
 
       <!-- Recommended Adaptations -->
@@ -341,6 +419,82 @@ const CISMunicipal = (() => {
         </div>
       </div>
     `;
+  }
+
+  function _renderNOAHExposureProfile(exposure) {
+    if (!exposure) {
+      return `
+        <div class="mprofile-card noah-profile-card">
+          <div class="mc-header">Project NOAH Static Hazard Exposure</div>
+          <div class="mc-body">
+            <div class="noah-exposure-empty">No Project NOAH exposure record is loaded for this municipality.</div>
+          </div>
+        </div>
+      `;
+    }
+
+    const summary = exposure.summary || {};
+    const computed = Object.entries(exposure.scenarios || {})
+      .filter(([, item]) => item.status === 'computed')
+      .sort((a, b) => (b[1].risk_score || 0) - (a[1].risk_score || 0));
+    const pendingAvailable = Object.values(exposure.scenarios || {})
+      .filter(item => item.status !== 'computed' && item.source_available_for_province).length;
+
+    return `
+      <div class="mprofile-card noah-profile-card">
+        <div class="mc-header">Project NOAH Static Hazard Exposure</div>
+        <div class="mc-body">
+          <div class="noah-profile-summary ${summary.status === 'computed' ? summary.risk_class : 'pending'}">
+            <div>
+              <span>Exposure Status</span>
+              <strong>${_escapeInline(_labelize(summary.status || 'pending'))}</strong>
+            </div>
+            <div>
+              <span>Static Hazard Score</span>
+              <strong>${summary.risk_score ?? 'Pending'}</strong>
+            </div>
+            <div>
+              <span>Source Scenarios</span>
+              <strong>${summary.available_source_scenario_count || 0}/9</strong>
+            </div>
+          </div>
+          ${computed.length ? _renderNOAHComputedScenarios(computed) : `
+            <div class="noah-exposure-empty">
+              ${pendingAvailable} Project NOAH scenario source set(s) cover this province. Exact hectares and percentages will appear after clipped local hazard geometry is processed.
+            </div>
+          `}
+          <div class="noah-profile-note">Planning and preparedness use only; verify locally before engineering, evacuation, or parcel-level decisions.</div>
+        </div>
+      </div>
+    `;
+  }
+
+  function _renderNOAHComputedScenarios(entries) {
+    return `
+      <div class="noah-scenario-list">
+        ${entries.map(([scenarioId, item]) => {
+          const area = item.hazard_area || {};
+          return `
+            <div class="noah-scenario-row">
+              <div>
+                <strong>${_escapeInline(item.label || scenarioId)}</strong>
+                <span>${_escapeInline(_labelize(item.risk_class || 'unknown'))} exposure score ${item.risk_score ?? 0}</span>
+              </div>
+              <div class="noah-area-bars">
+                ${_hazardArea('High', area.high)}
+                ${_hazardArea('Medium', area.medium)}
+                ${_hazardArea('Low', area.low)}
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }
+
+  function _hazardArea(label, stat) {
+    if (!stat) return `<span>${label}: pending</span>`;
+    return `<span>${label}: ${(stat.area_ha || 0).toLocaleString()} ha (${stat.pct || 0}%)</span>`;
   }
 
   function _buildFarmerScenario(ind, obs, indicators, fw, rainfall7d) {

@@ -58,6 +58,7 @@ const CISData = (() => {
   let _pagasaData = null;
   let _acapData = null;
   let _acapCropCalendars = null;
+  let _noahExposure = null;
   let _pipelineStatus = null;
   let _municipalities = null; // Loaded from municipalities.json
 
@@ -69,13 +70,14 @@ const CISData = (() => {
    */
   async function loadAll() {
     try {
-      const [indicatorsResult, advisoriesResult, statusResult, pagasaResult, acapResult, acapCalendarResult] = await Promise.allSettled([
+      const [indicatorsResult, advisoriesResult, statusResult, pagasaResult, acapResult, acapCalendarResult, noahExposureResult] = await Promise.allSettled([
         fetchJSON(PATHS.indicators),
         fetchJSON(PATHS.advisories),
         fetchJSON(PATHS.pipelineStatus),
         fetchJSON(PATHS.pagasaData, { bustCache: true }),
         fetchJSON(PATHS.acapData),
         fetchJSON(PATHS.acapCropCalendars),
+        fetchJSON(PATHS.noahExposure),
       ]);
 
       if (indicatorsResult.status !== 'fulfilled') throw indicatorsResult.reason;
@@ -85,15 +87,17 @@ const CISData = (() => {
       const pagasaData = pagasaResult.status === 'fulfilled' ? pagasaResult.value : null;
       const acapData = acapResult.status === 'fulfilled' ? acapResult.value : null;
       const acapCropCalendars = acapCalendarResult.status === 'fulfilled' ? acapCalendarResult.value : null;
+      const noahExposure = noahExposureResult.status === 'fulfilled' ? noahExposureResult.value : null;
 
       _indicators = indicators;
       _advisories = advisories;
       _pagasaData = pagasaData;
       _acapData = acapData;
       _acapCropCalendars = acapCropCalendars;
+      _noahExposure = noahExposure;
       _pipelineStatus = status;
 
-      return { indicators, advisories, status, pagasaData, acapData, acapCropCalendars };
+      return { indicators, advisories, status, pagasaData, acapData, acapCropCalendars, noahExposure };
     } catch (err) {
       console.warn('CISData.loadAll using demo fallback:', err);
       // Return demo/sample data so the UI doesn't stay blank during dev
@@ -102,6 +106,7 @@ const CISData = (() => {
       _pagasaData = null;
       _acapData = null;
       _acapCropCalendars = null;
+      _noahExposure = null;
       _pipelineStatus = null;
       return { indicators: _indicators, advisories: _advisories, status: _pipelineStatus };
     }
@@ -146,11 +151,8 @@ const CISData = (() => {
     return data;
   }
 
-  async function getNOAHExposure() {
-    if (_cache.noahExposure) return _cache.noahExposure;
-    const data = await fetchJSON(PATHS.noahExposure);
-    _cache.noahExposure = data;
-    return data;
+  function getNOAHExposure() {
+    return _noahExposure;
   }
 
   async function getRegionalBulletin() {

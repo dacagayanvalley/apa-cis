@@ -124,7 +124,13 @@ Then normalize them for the frontend:
 python scripts/prepare_noah_hazard_overlays.py
 ```
 
-The main frontend NOAH mode uses PMTiles from the published mirror. The generated files under `data/geospatial/noah/` are optional lightweight local overlays for offline use and future municipal exposure summaries.
+Generate the municipal exposure analytics:
+
+```bash
+python scripts/compute_noah_municipal_exposure.py
+```
+
+The main frontend NOAH mode uses PMTiles from the published mirror. The generated files under `data/geospatial/noah/` are optional lightweight local overlays for offline use and exact municipal exposure summaries. When local hazard geometry is still missing, the exposure output reports source readiness by municipality/province without inventing percentages.
 
 ---
 
@@ -156,8 +162,9 @@ The pipeline runs automatically every day at **6:00 AM Philippine Standard Time*
 4. `scripts/fetch_chirps/fetch_daily.py` - Downloads/samples CHIRPS rainfall where available
 5. `scripts/fetch_pagasa/pagasa_ingestor.py` - Processes PAGASA PDF inbox and scrapes public pages
 6. `scripts/indicators/compute_indicators.py` - Computes all climate indicators
-7. `scripts/advisories/advisory_engine.py` - Evaluates advisory rules and attaches CRA adaptation measures
-8. Commits updated JSON/GeoJSON files to `main` branch, which triggers GitHub Pages rebuild
+7. `scripts/compute_noah_municipal_exposure.py` - Computes or refreshes Project NOAH municipal exposure readiness/analytics
+8. `scripts/advisories/advisory_engine.py` - Evaluates advisory rules and attaches CRA adaptation measures
+9. Commits updated JSON/GeoJSON files to `main` branch, which triggers GitHub Pages rebuild
 
 **Data output files updated daily:**
 ```
@@ -170,7 +177,7 @@ data/geospatial/*.geojson                    ← 8 Leaflet map layers
 data/boundaries/*.geojson                    ← Region 2 boundary overlays
 data/geospatial/noah/noah_overlay_build_status.json ← NOAH PMTiles/local overlay status
 data/geospatial/noah/*.geojson               ← Optional prepared Project NOAH local overlays
-data/processed/noah/municipal_hazard_exposure.json ← NOAH exposure summary scaffold
+data/processed/noah/municipal_hazard_exposure.json ← NOAH municipal exposure analytics
 data/pipeline_status.json                   ← Pipeline run status
 ```
 
@@ -224,7 +231,7 @@ python scripts/fetch_pagasa/pagasa_ingestor.py --ingest-entry data/raw/pagasa/ma
 - **URL:** https://noah.up.edu.ph/
 - **Use:** Static planning hazard overlays for flood, landslide, debris flow, and storm surge.
 - **License:** Open Data Commons Open Database License (ODC-ODbL).
-- **Integration:** The dashboard loads all 9 NOAH hazard layers through the BetterGov PMTiles mirror. Local clipped GeoJSON remains optional for offline operation and municipal exposure summaries.
+- **Integration:** The dashboard loads all 9 NOAH hazard layers through the BetterGov PMTiles mirror. Municipal exposure analytics are generated from clipped local GeoJSON when available, with source-readiness fallback when exact geometry is not present.
 - **Catalog:** `data/reference/noah_hazard_overlays.json`
 - **Scan:** `docs/noah_hazard_integration_scan.md`
 
@@ -315,7 +322,7 @@ apa-cis/
 │   ├── advisories/weekly/           # weekly_summary_latest.json
 │   ├── geospatial/                  # 8 GeoJSON layers for Leaflet
 │   │   └── noah/                    # NOAH PMTiles status + optional local overlays
-│   └── processed/noah/              # Municipal hazard exposure outputs
+│   └── processed/noah/              # Municipal Project NOAH exposure analytics
 │
 ├── tests/
 │   └── test_indicators.py           # 46 unit tests (pytest)

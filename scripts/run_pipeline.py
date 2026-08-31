@@ -7,9 +7,10 @@ Execution order:
   2. Fetch NASA POWER daily fallback data (all municipalities)
   3. Ingest PAGASA data (PDF inbox + live scrape)
   4. Compute climate indicators (CDD, anomaly, heat stress, ETo, etc.)
-  5. Generate agricultural advisories (rule-based engine)
-  6. Export GeoJSON map layers
-  7. Log all results
+  5. Compute Project NOAH municipal exposure analytics when local overlays exist
+  6. Generate agricultural advisories (rule-based engine)
+  7. Export GeoJSON map layers
+  8. Log all results
 
 Run this script via GitHub Actions or cron daily at 6 AM PHT.
 
@@ -171,7 +172,16 @@ def run_daily_pipeline(
         logger.error(f"Indicator engine error: {exc}")
         report["steps"]["indicators"] = "error"
 
-    # ── Step 4: Advisory generation ───────────────────────────────────────
+    # ── Step 4: Static Project NOAH municipal exposure analytics ──────────
+    try:
+        from scripts.compute_noah_municipal_exposure import main as noah_exposure_run
+        success, _ = run_step("Project NOAH Municipal Exposure Analytics", noah_exposure_run, [])
+        report["steps"]["noah_exposure"] = "success" if success else "warning"
+    except Exception as exc:
+        logger.error(f"Project NOAH exposure analytics error: {exc}")
+        report["steps"]["noah_exposure"] = "warning"
+
+    # ── Step 5: Advisory generation ───────────────────────────────────────
     try:
         from scripts.advisories.advisory_engine import run as adv_run
         success, _ = run_step("Advisory Engine", adv_run)

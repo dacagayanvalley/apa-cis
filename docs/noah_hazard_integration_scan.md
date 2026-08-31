@@ -7,7 +7,8 @@ Implementation status:
 - Done: Region 2 boundary prep script and frontend boundary overlays.
 - Done: NOAH hazard overlay catalog and full PMTiles frontend mode for all 9 Project NOAH hazard layers.
 - Done: NOAH GeoJSON normalization script for optional pre-clipped local hazard files.
-- Pending: generate municipal exposure summaries from clipped Region 2 source data.
+- Done: municipal exposure analytics JSON contract and frontend planning/profile summaries.
+- Pending: generate exact exposure hectares/percentages after clipped Region 2 source geometry is available.
 
 ## Best Integration Shape
 
@@ -175,7 +176,7 @@ Risks:
 4. Added optional ETL outputs for offline/local processing:
    - `data/geospatial/noah/*_r2.geojson`
    - `data/processed/noah/municipal_hazard_exposure.json`
-5. Left exposure fields as the next analytics step after clipped source processing is completed.
+5. Added municipal exposure summaries with a robust source-readiness fallback while exact clipped geometry remains pending.
 
 ## Current Workflow
 
@@ -189,6 +190,12 @@ The frontend loads NOAH from the PMTiles mirror by default. Prepare optional loc
 
 ```bash
 python scripts/prepare_noah_hazard_overlays.py
+```
+
+Compute municipal exposure analytics:
+
+```bash
+python scripts/compute_noah_municipal_exposure.py
 ```
 
 Expected source filenames under `data/raw/noah/r2/`:
@@ -208,6 +215,7 @@ Expected source filenames under `data/raw/noah/r2/`:
 - Use Cagayan Valley bounds roughly covering lon `120.8` to `122.7`, lat `15.6` to `21.2`, then refine with region/province boundaries.
 - Preserve original hazard attributes (`Var`, `HAZ`) and add normalized fields such as `hazard_level`, `hazard_label`, `hazard_family`, `scenario`.
 - For web performance, simplify polygons for zoomed-out display and keep a less simplified version only if municipal exposure calculations need it.
+- The analytics script computes exact polygon intersections only when Shapely and local Region 2 hazard GeoJSON are available. Otherwise it emits source-readiness metadata so the dashboard stays accurate without fabricated exposure percentages.
 - Use separate overlays instead of turning NOAH hazards into the single active radio layer, because staff will need to compare static hazard exposure against live rainfall, drought, and advisory layers.
 
 ## Sources Checked
