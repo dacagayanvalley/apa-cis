@@ -1,7 +1,7 @@
 {
   "last_run": "2026-08-31",
   "status": "success",
-  "elapsed_seconds": 208.0,
+  "elapsed_seconds": 221.1,
   "steps": {
     "apa_cis": "success",
     "acap": "success",
@@ -9,6 +9,7 @@
     "chirps": "success",
     "pagasa": "success",
     "indicators": "success",
+    "noah_exposure": "success",
     "advisories": "success"
   },
   "data_as_of": "2026-08-31",

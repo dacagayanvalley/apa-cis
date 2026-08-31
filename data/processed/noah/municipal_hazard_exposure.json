@@ -1,10 +1,10 @@
 {
   "meta": {
     "generated_by": "scripts/compute_noah_municipal_exposure.py",
-    "generated_at": "2026-08-31T04:26:26.132771+00:00",
+    "generated_at": "2026-08-31T04:35:01.262734+00:00",
     "status": "pending_local_geometry",
     "method": "source_readiness_only",
-    "exact_note": "Install shapely to compute polygon intersections.",
+    "exact_note": null,
     "source": "Project NOAH hazard maps via BetterGov PMTiles/source mirror",
     "source_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps",
     "license": "ODC-ODbL",
