@@ -1,13 +1,14 @@
 {
   "last_run": "2026-08-31",
   "status": "success",
-  "elapsed_seconds": 234.4,
+  "elapsed_seconds": 1.1,
   "steps": {
-    "apa_cis": "success",
-    "acap": "success",
-    "nasa_power": "success",
-    "chirps": "success",
-    "pagasa": "success",
+    "apa_cis": "skipped",
+    "acap": "skipped",
+    "up_noah": "skipped",
+    "nasa_power": "skipped",
+    "chirps": "skipped",
+    "pagasa": "skipped",
     "indicators": "success",
     "noah_exposure": "success",
     "advisories": "success"

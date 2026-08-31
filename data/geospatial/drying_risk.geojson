@@ -14,13 +14,15 @@
         "psgc": "023101000",
         "municipality": "City of Tuguegarao",
         "province": "Cagayan",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -36,13 +38,11 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "drying_class": "high_risk",
-        "risk_score": 3,
-        "recommend_mechanical_drying": true,
-        "reasons": [
-          "rainfall >= 5 mm"
-        ],
-        "color": "#FF5722"
+        "drying_class": "suitable",
+        "risk_score": 0,
+        "recommend_mechanical_drying": false,
+        "reasons": [],
+        "color": "#4CAF50"
       }
     },
     {
@@ -172,13 +172,11 @@
         "psgc": "023108000",
         "municipality": "Ballesteros",
         "province": "Cagayan",
-        "drying_class": "high_risk",
-        "risk_score": 3,
-        "recommend_mechanical_drying": true,
-        "reasons": [
-          "rainfall >= 5 mm"
-        ],
-        "color": "#FF5722"
+        "drying_class": "suitable",
+        "risk_score": 0,
+        "recommend_mechanical_drying": false,
+        "reasons": [],
+        "color": "#4CAF50"
       }
     },
     {
@@ -261,13 +259,11 @@
         "psgc": "023112000",
         "municipality": "Claveria",
         "province": "Cagayan",
-        "drying_class": "high_risk",
-        "risk_score": 3,
-        "recommend_mechanical_drying": true,
-        "reasons": [
-          "rainfall >= 5 mm"
-        ],
-        "color": "#FF5722"
+        "drying_class": "suitable",
+        "risk_score": 0,
+        "recommend_mechanical_drying": false,
+        "reasons": [],
+        "color": "#4CAF50"
       }
     },
     {
@@ -283,13 +279,15 @@
         "psgc": "023113000",
         "municipality": "Enrile",
         "province": "Cagayan",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -306,11 +304,10 @@
         "municipality": "Gattaran",
         "province": "Cagayan",
         "drying_class": "high_risk",
-        "risk_score": 4,
+        "risk_score": 3,
         "recommend_mechanical_drying": true,
         "reasons": [
-          "rainfall >= 5 mm",
-          "low wind"
+          "rainfall >= 5 mm"
         ],
         "color": "#FF5722"
       }
@@ -351,10 +348,11 @@
         "municipality": "Iguig",
         "province": "Cagayan",
         "drying_class": "high_risk",
-        "risk_score": 3,
+        "risk_score": 4,
         "recommend_mechanical_drying": true,
         "reasons": [
-          "rainfall >= 5 mm"
+          "rainfall >= 5 mm",
+          "low wind"
         ],
         "color": "#FF5722"
       }
@@ -416,14 +414,13 @@
         "psgc": "023119000",
         "municipality": "Pamplona",
         "province": "Cagayan",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -462,14 +459,15 @@
         "psgc": "023121000",
         "municipality": "Piat",
         "province": "Cagayan",
-        "drying_class": "high_risk",
-        "risk_score": 3,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
         "recommend_mechanical_drying": true,
         "reasons": [
+          "rainfall >= 5 mm",
           "humidity >= 85%",
           "low wind"
         ],
-        "color": "#FF5722"
+        "color": "#B71C1C"
       }
     },
     {
@@ -485,14 +483,13 @@
         "psgc": "023122000",
         "municipality": "Rizal",
         "province": "Cagayan",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -508,13 +505,11 @@
         "psgc": "023123000",
         "municipality": "Sanchez-Mira",
         "province": "Cagayan",
-        "drying_class": "high_risk",
-        "risk_score": 3,
-        "recommend_mechanical_drying": true,
-        "reasons": [
-          "rainfall >= 5 mm"
-        ],
-        "color": "#FF5722"
+        "drying_class": "suitable",
+        "risk_score": 0,
+        "recommend_mechanical_drying": false,
+        "reasons": [],
+        "color": "#4CAF50"
       }
     },
     {
@@ -552,13 +547,11 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "drying_class": "high_risk",
-        "risk_score": 3,
-        "recommend_mechanical_drying": true,
-        "reasons": [
-          "rainfall >= 5 mm"
-        ],
-        "color": "#FF5722"
+        "drying_class": "suitable",
+        "risk_score": 0,
+        "recommend_mechanical_drying": false,
+        "reasons": [],
+        "color": "#4CAF50"
       }
     },
     {
@@ -597,10 +590,11 @@
         "municipality": "Santo Niño",
         "province": "Cagayan",
         "drying_class": "high_risk",
-        "risk_score": 3,
+        "risk_score": 4,
         "recommend_mechanical_drying": true,
         "reasons": [
-          "rainfall >= 5 mm"
+          "rainfall >= 5 mm",
+          "low wind"
         ],
         "color": "#FF5722"
       }
@@ -618,13 +612,15 @@
         "psgc": "023128000",
         "municipality": "Solana",
         "province": "Cagayan",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -640,14 +636,15 @@
         "psgc": "023129000",
         "municipality": "Tuao",
         "province": "Cagayan",
-        "drying_class": "high_risk",
-        "risk_score": 3,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
         "recommend_mechanical_drying": true,
         "reasons": [
+          "rainfall >= 5 mm",
           "humidity >= 85%",
           "low wind"
         ],
-        "color": "#FF5722"
+        "color": "#B71C1C"
       }
     },
     {
@@ -663,11 +660,13 @@
         "psgc": "031401000",
         "municipality": "City of Ilagan",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -683,11 +682,14 @@
         "psgc": "031402000",
         "municipality": "Alicia",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm",
+          "low wind"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -703,11 +705,13 @@
         "psgc": "031403000",
         "municipality": "Angadanan",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -723,13 +727,15 @@
         "psgc": "031404000",
         "municipality": "Aurora",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -745,11 +751,13 @@
         "psgc": "031405000",
         "municipality": "Benito Soliven",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -765,13 +773,14 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 1,
-        "recommend_mechanical_drying": false,
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
         "reasons": [
+          "rainfall >= 5 mm",
           "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#FF5722"
       }
     },
     {
@@ -787,13 +796,15 @@
         "psgc": "031407000",
         "municipality": "Cabagan",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -809,11 +820,14 @@
         "psgc": "031408000",
         "municipality": "Cabatuan",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm",
+          "low wind"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -829,11 +843,13 @@
         "psgc": "031409000",
         "municipality": "Cauayan City",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -849,13 +865,15 @@
         "psgc": "031410000",
         "municipality": "Cordon",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -871,13 +889,15 @@
         "psgc": "031411000",
         "municipality": "Delfin Albano",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -913,11 +933,13 @@
         "psgc": "031413000",
         "municipality": "Divilacan",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -933,11 +955,14 @@
         "psgc": "031414000",
         "municipality": "Echague",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm",
+          "low wind"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -953,13 +978,13 @@
         "psgc": "031415000",
         "municipality": "Gamu",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 1,
-        "recommend_mechanical_drying": false,
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "low wind"
+          "rainfall >= 5 mm"
         ],
-        "color": "#FFC107"
+        "color": "#FF5722"
       }
     },
     {
@@ -975,11 +1000,14 @@
         "psgc": "031416000",
         "municipality": "Jones",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm",
+          "low wind"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -995,13 +1023,15 @@
         "psgc": "031417000",
         "municipality": "Luna",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1017,11 +1047,13 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -1037,11 +1069,14 @@
         "psgc": "031419000",
         "municipality": "Mallig",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm",
+          "low wind"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -1057,11 +1092,13 @@
         "psgc": "031420000",
         "municipality": "Naguilian",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -1097,13 +1134,15 @@
         "psgc": "031422000",
         "municipality": "Quezon",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1119,11 +1158,14 @@
         "psgc": "031423000",
         "municipality": "Quirino",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm",
+          "low wind"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -1139,13 +1181,15 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1161,11 +1205,13 @@
         "psgc": "031425000",
         "municipality": "Reina Mercedes",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -1181,13 +1227,14 @@
         "psgc": "031426000",
         "municipality": "Roxas",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 1,
-        "recommend_mechanical_drying": false,
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
         "reasons": [
+          "rainfall >= 5 mm",
           "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#FF5722"
       }
     },
     {
@@ -1203,13 +1250,14 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 5,
+        "recommend_mechanical_drying": true,
         "reasons": [
+          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1225,13 +1273,14 @@
         "psgc": "031428000",
         "municipality": "San Guillermo",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 5,
+        "recommend_mechanical_drying": true,
         "reasons": [
+          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1247,13 +1296,15 @@
         "psgc": "031429000",
         "municipality": "San Isidro",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1269,13 +1320,14 @@
         "psgc": "031430000",
         "municipality": "San Manuel",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 1,
-        "recommend_mechanical_drying": false,
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
         "reasons": [
+          "rainfall >= 5 mm",
           "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#FF5722"
       }
     },
     {
@@ -1291,11 +1343,13 @@
         "psgc": "031431000",
         "municipality": "San Mariano",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -1311,11 +1365,14 @@
         "psgc": "031432000",
         "municipality": "San Mateo",
         "province": "Isabela",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 4,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm",
+          "low wind"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -1332,10 +1389,11 @@
         "municipality": "San Pablo",
         "province": "Isabela",
         "drying_class": "high_risk",
-        "risk_score": 3,
+        "risk_score": 4,
         "recommend_mechanical_drying": true,
         "reasons": [
-          "rainfall >= 5 mm"
+          "rainfall >= 5 mm",
+          "low wind"
         ],
         "color": "#FF5722"
       }
@@ -1353,13 +1411,15 @@
         "psgc": "031434000",
         "municipality": "Santa Maria",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1375,13 +1435,15 @@
         "psgc": "031435000",
         "municipality": "Santiago City",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1397,13 +1459,15 @@
         "psgc": "031436000",
         "municipality": "Santo Tomas",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1419,13 +1483,15 @@
         "psgc": "031437000",
         "municipality": "Tumauini",
         "province": "Isabela",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1441,14 +1507,13 @@
         "psgc": "035601000",
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -1464,14 +1529,13 @@
         "psgc": "035602000",
         "municipality": "Ambaguio",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -1487,14 +1551,13 @@
         "psgc": "035603000",
         "municipality": "Aritao",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -1532,14 +1595,13 @@
         "psgc": "035605000",
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -1555,13 +1617,15 @@
         "psgc": "035606000",
         "municipality": "Diadi",
         "province": "Nueva Vizcaya",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "unsuitable",
+        "risk_score": 6,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "rainfall >= 5 mm",
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#B71C1C"
       }
     },
     {
@@ -1577,14 +1641,13 @@
         "psgc": "035607000",
         "municipality": "Dupax del Norte",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -1600,14 +1663,13 @@
         "psgc": "035608000",
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -1623,14 +1685,13 @@
         "psgc": "035609000",
         "municipality": "Kasibu",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -1646,14 +1707,13 @@
         "psgc": "035610000",
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -1691,14 +1751,13 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 5,
-        "recommend_mechanical_drying": true,
+        "drying_class": "caution",
+        "risk_score": 2,
+        "recommend_mechanical_drying": false,
         "reasons": [
-          "rainfall >= 5 mm",
           "humidity >= 85%"
         ],
-        "color": "#B71C1C"
+        "color": "#FFC107"
       }
     },
     {
@@ -1803,11 +1862,13 @@
         "psgc": "067002000",
         "municipality": "Aglipay",
         "province": "Quirino",
-        "drying_class": "suitable",
-        "risk_score": 0,
+        "drying_class": "caution",
+        "risk_score": 1,
         "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "reasons": [
+          "low wind"
+        ],
+        "color": "#FFC107"
       }
     },
     {
@@ -1823,13 +1884,14 @@
         "psgc": "067003000",
         "municipality": "Diffun",
         "province": "Quirino",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#FF5722"
       }
     },
     {
@@ -1865,13 +1927,11 @@
         "psgc": "067005000",
         "municipality": "Nagtipunan",
         "province": "Quirino",
-        "drying_class": "high_risk",
-        "risk_score": 3,
-        "recommend_mechanical_drying": true,
-        "reasons": [
-          "rainfall >= 5 mm"
-        ],
-        "color": "#FF5722"
+        "drying_class": "suitable",
+        "risk_score": 0,
+        "recommend_mechanical_drying": false,
+        "reasons": [],
+        "color": "#4CAF50"
       }
     },
     {
@@ -1887,13 +1947,14 @@
         "psgc": "067006000",
         "municipality": "Saguday",
         "province": "Quirino",
-        "drying_class": "caution",
-        "risk_score": 2,
-        "recommend_mechanical_drying": false,
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
         "reasons": [
-          "humidity >= 85%"
+          "humidity >= 85%",
+          "low wind"
         ],
-        "color": "#FFC107"
+        "color": "#FF5722"
       }
     },
     {
