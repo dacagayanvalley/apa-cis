@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import pytest
 
+import scripts.indicators.compute_indicators as indicator_module
 from scripts.indicators.compute_indicators import (
     compute_cdd,
     compute_cwd,
@@ -304,6 +305,72 @@ class TestMunicipalRiskScore:
                 mun
             )
             assert 0 <= score <= 100
+
+
+# ── Source Priority Tests ─────────────────────────────────────────────────────
+
+class TestWeatherSourcePriority:
+    def test_up_noah_used_between_apa_cis_and_chirps(self, monkeypatch):
+        municipality = {
+            "psgc": "0201500000",
+            "name": "Tuguegarao City",
+            "province": "Cagayan",
+            "lat": 17.6132,
+            "lon": 121.7270,
+            "irrigation_status": "rainfed",
+            "elevation_m": 50,
+        }
+        daily = [
+            {
+                "date": f"2026-08-{day:02d}",
+                "psgc": "0201500000",
+                "rainfall_mm": 1.0,
+                "tmax_c": 31.0,
+                "tmin_c": 24.0,
+                "tmean_c": 27.5,
+                "humidity_pct": 75.0,
+                "wind_speed_ms": 2.0,
+                "solar_mj": 18.0,
+                "source": "nasa_power",
+            }
+            for day in range(1, 31)
+        ]
+
+        monkeypatch.setattr(indicator_module, "load_municipalities", lambda: [municipality])
+        monkeypatch.setattr(indicator_module, "load_recent_daily", lambda _psgc, n_days=30: daily)
+        monkeypatch.setattr(indicator_module, "load_climatology", lambda: {})
+        monkeypatch.setattr(indicator_module, "load_pagasa_current", lambda: {})
+        monkeypatch.setattr(indicator_module, "load_latest_apa_cis", lambda: {})
+        monkeypatch.setattr(indicator_module, "load_latest_chirps_rainfall", lambda: {
+            "0201500000": {"date": "2026-08-30", "rainfall_mm": 12.0}
+        })
+        monkeypatch.setattr(indicator_module, "load_latest_up_noah", lambda: {
+            "0201500000": {
+                "date": "2026-08-31",
+                "rainfall_24h_mm": 44.0,
+                "rainfall_1h_mm": 4.0,
+                "rainfall_3h_mm": 11.0,
+                "rainfall_6h_mm": 18.0,
+                "rainfall_12h_mm": 31.0,
+                "rainfall_tomorrow_mm": 25.0,
+                "heat_index_c": 39.0,
+                "tmax_c": 35.0,
+                "method": "raster_overlay_sampling",
+            }
+        })
+        monkeypatch.setattr(indicator_module, "load_acap_current", lambda: {})
+        monkeypatch.setattr(indicator_module, "load_acap_cropping_calendars", lambda: {})
+        monkeypatch.setattr(indicator_module, "today_pht", lambda: __import__("datetime").date(2026, 8, 31))
+
+        result = indicator_module.compute_all_indicators()["0201500000"]
+
+        obs = result["observations"]
+        assert obs["rainfall_24h_mm"] == 44.0
+        assert obs["rainfall_source"] == "up_noah"
+        assert obs["chirps_rainfall_24h_mm"] == 12.0
+        assert obs["tmax_c"] == 35.0
+        assert obs["heat_index_c"] == 39.0
+        assert result["data_sources"]["priority_order"] == "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER"
 
     def test_critical_higher_than_none(self):
         mun = {"irrigation_status": "rainfed"}

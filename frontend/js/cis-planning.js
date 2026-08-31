@@ -324,6 +324,7 @@ const CISMunicipal = (() => {
             <div class="mc-row"><span class="mc-key">Rainfall (24h)</span><span class="mc-val">${fmt.formatRainfall(obs.rainfall_24h_mm)}</span></div>
             <div class="mc-row"><span class="mc-key">Rainfall (7-day)</span><span class="mc-val">${fmt.formatRainfall(rainfall7d)}</span></div>
             <div class="mc-row"><span class="mc-key">T-max</span><span class="mc-val">${fmt.formatTemp(obs.tmax_c)}</span></div>
+            ${obs.heat_index_c !== null && obs.heat_index_c !== undefined ? `<div class="mc-row"><span class="mc-key">Heat index</span><span class="mc-val">${fmt.formatTemp(obs.heat_index_c)}</span></div>` : ''}
             <div class="mc-row"><span class="mc-key">T-min</span><span class="mc-val">${fmt.formatTemp(obs.tmin_c)}</span></div>
             <div class="mc-row"><span class="mc-key">T-mean</span><span class="mc-val">${fmt.formatTemp(obs.tmean_c)}</span></div>
             <div class="mc-row"><span class="mc-key">Humidity</span><span class="mc-val">${fmt.formatPercent(obs.humidity_pct)}</span></div>
@@ -662,6 +663,7 @@ const CISMunicipal = (() => {
   function _sourceSummary(obs) {
     const source = obs.rainfall_source || 'nasa_power';
     if (source === 'apa_cis') return `Adapting Philippine Agriculture to Climate Change Climate Information Service (APA-CIS) (${obs.apa_cis_record_date || 'current'})`;
+    if (source === 'up_noah') return `UP NOAH sampled overlay (${obs.up_noah_record_date || 'latest'})`;
     if (source === 'chirps') return `Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) (${obs.chirps_record_date || 'latest'})`;
     return 'National Aeronautics and Space Administration POWER (NASA POWER) fallback';
   }

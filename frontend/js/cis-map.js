@@ -565,13 +565,14 @@ const CISMap = (() => {
     if (layerName === 'rainfall_24h') {
       const rows = CISData.getMunicipalRows('all');
       const apaCount = rows.filter(r => r.observations?.rainfall_source === 'apa_cis').length;
+      const noahCount = rows.filter(r => r.observations?.rainfall_source === 'up_noah').length;
       const chirpsCount = rows.filter(r => r.observations?.rainfall_source === 'chirps').length;
-      const nasaCount = Math.max(0, rows.length - apaCount - chirpsCount);
-      return `APA CIS ${apaCount}; CHIRPS ${chirpsCount}; NASA ${nasaCount}`;
+      const nasaCount = Math.max(0, rows.length - apaCount - noahCount - chirpsCount);
+      return `APA CIS ${apaCount}; UP NOAH ${noahCount}; CHIRPS ${chirpsCount}; NASA ${nasaCount}`;
     }
     if (layerName === 'advisory_status') return 'APA-CIS advisory engine';
     if (layerName === 'rainfall_anomaly') return 'Observed rainfall vs 1991-2020 baseline';
-    return 'APA CIS / CHIRPS / NASA-derived indicators';
+    return 'APA CIS / UP NOAH / CHIRPS / NASA-derived indicators';
   }
 
   function _validUntil(asOfDate) {
@@ -594,7 +595,7 @@ const CISMap = (() => {
       const fallbackCount = rows.filter(r => r.observations?.rainfall_source === 'nasa_power').length;
       return fallbackCount
         ? `${fallbackCount} municipalities use NASA fallback; verify for high-impact decisions.`
-        : 'Same-day rainfall source available for all loaded municipalities.';
+        : 'Higher-priority rainfall source available for all loaded municipalities.';
     }
     if (layerName === 'advisory_status') {
       const lowConfidence = CISData.getActiveAdvisories('all', 'all')

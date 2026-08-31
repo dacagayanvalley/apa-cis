@@ -941,6 +941,7 @@ def _days_old(value, ref_date: date) -> Optional[int]:
 def _source_label(source: str) -> str:
     labels = {
         "apa_cis": "APA CIS",
+        "up_noah": "UP NOAH",
         "chirps": "CHIRPS",
         "nasa_power": "NASA POWER",
     }
@@ -953,6 +954,8 @@ def _source_age(indicators: Dict, ref_date: date) -> Dict:
     rainfall_source = obs.get("rainfall_source") or indicators.get("data_sources", {}).get("rainfall_used")
     if rainfall_source == "apa_cis":
         source_date = obs.get("apa_cis_record_date") or indicators.get("as_of_date")
+    elif rainfall_source == "up_noah":
+        source_date = obs.get("up_noah_record_date") or indicators.get("as_of_date")
     elif rainfall_source == "chirps":
         source_date = obs.get("chirps_record_date") or indicators.get("as_of_date")
     else:
@@ -981,7 +984,7 @@ def _source_qa_flags(indicators: Dict, ref_date: date) -> List[str]:
         flags.append("Rainfall is NASA POWER fallback; treat as lower-confidence local observation.")
     if source_age["rainfall_age_days"] is None:
         flags.append("Rainfall source date unavailable.")
-    elif source_age["rainfall_age_days"] > 1 and rainfall_source in ("apa_cis", "chirps"):
+    elif source_age["rainfall_age_days"] > 1 and rainfall_source in ("apa_cis", "up_noah", "chirps"):
         flags.append(f"Rainfall source is {source_age['rainfall_age_days']} days old.")
     if not hazards.get("acap_ten_day_available"):
         flags.append("ACAP 10-day forecast not available for this province.")
@@ -998,7 +1001,7 @@ def _confidence_from_flags(flags: List[str], indicators: Dict) -> str:
     source = (indicators.get("observations", {}).get("rainfall_source") or "").lower()
     blocker_flags = [flag for flag in flags if "missing" in flag.lower() or "unavailable" in flag.lower()]
     review_flags = [flag for flag in flags if "review" in flag.lower() or "fallback" in flag.lower()]
-    if source == "apa_cis" and not blocker_flags and not review_flags:
+    if source in ("apa_cis", "up_noah") and not blocker_flags and not review_flags:
         return "high"
     if blocker_flags or source == "nasa_power":
         return "low"
@@ -1229,6 +1232,7 @@ def generate_regional_bulletin(report: Dict) -> str:
     lines.extend([
         "SOURCE TIMESTAMPS AND QA:",
         f"  APA CIS rainfall municipalities: {source_counts.get('apa_cis', 0)}",
+        f"  UP NOAH rainfall municipalities: {source_counts.get('up_noah', 0)}",
         f"  CHIRPS rainfall municipalities: {source_counts.get('chirps', 0)}",
         f"  NASA POWER fallback municipalities: {source_counts.get('nasa_power', 0)}",
         f"  PAGASA source date(s): {pagasa_dates}",
@@ -1242,7 +1246,7 @@ def generate_regional_bulletin(report: Dict) -> str:
         "PAGASA / ACAP / CIS SUMMARY:",
         "  PAGASA warnings are integrated where TCWS, ENSO, seasonal outlook, or farm-weather context is available.",
         "  ACAP 10-day provincial forecast and crop-calendar references are used as planning context.",
-        "  APA CIS is prioritized for same-day municipal rainfall, maximum temperature, and wind when available.",
+        "  APA CIS is prioritized first; UP NOAH sampled weather overlays are second; CHIRPS/NASA remain fallbacks.",
         "",
     ])
 

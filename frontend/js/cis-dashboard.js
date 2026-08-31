@@ -45,13 +45,14 @@ const CISDashboard = (() => {
 
     if (rainfallEl && rows.length) {
       const cisCount = rows.filter(r => r.observations?.rainfall_source === 'apa_cis').length;
+      const noahCount = rows.filter(r => r.observations?.rainfall_source === 'up_noah').length;
       const chirpsCount = rows.filter(r => r.observations?.rainfall_source === 'chirps').length;
-      const nasaCount = rows.length - cisCount - chirpsCount;
+      const nasaCount = rows.length - cisCount - noahCount - chirpsCount;
       rainfallEl.textContent = cisCount
-        ? `Adapting Philippine Agriculture to Climate Change Climate Information Service (APA-CIS) used in ${cisCount}; Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) in ${chirpsCount}; National Aeronautics and Space Administration POWER (NASA POWER) fallback in ${nasaCount}`
-        : (chirpsCount
-          ? `Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) used in ${chirpsCount} municipalities; National Aeronautics and Space Administration POWER (NASA POWER) fallback in ${nasaCount}`
-          : 'National Aeronautics and Space Administration POWER (NASA POWER) rainfall active; Adapting Philippine Agriculture to Climate Change Climate Information Service (APA-CIS) / Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) fallback not yet sampled');
+        ? `Adapting Philippine Agriculture to Climate Change Climate Information Service (APA-CIS) used in ${cisCount}; UP NOAH in ${noahCount}; Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) in ${chirpsCount}; National Aeronautics and Space Administration POWER (NASA POWER) fallback in ${nasaCount}`
+        : (noahCount || chirpsCount
+          ? `UP NOAH used in ${noahCount}; Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) in ${chirpsCount}; National Aeronautics and Space Administration POWER (NASA POWER) fallback in ${nasaCount}`
+          : 'National Aeronautics and Space Administration POWER (NASA POWER) rainfall active; APA-CIS / UP NOAH / CHIRPS fallback not yet sampled');
     }
 
     if (pagasaEl) {

@@ -119,6 +119,15 @@ def load_latest_apa_cis() -> Dict[str, Dict]:
     return {rec["psgc"]: rec for rec in data.get("data", []) if rec.get("psgc")}
 
 
+def load_latest_up_noah() -> Dict[str, Dict]:
+    """Load latest UP NOAH municipal weather records, keyed by local PSGC."""
+    path = PROJECT_ROOT / cfg["paths"].get("raw_up_noah", "data/raw/up_noah") / "up_noah_current.json"
+    data = load_json(path) or {}
+    if not cfg.get("up_noah", {}).get("enabled", True):
+        return {}
+    return {rec["psgc"]: rec for rec in data.get("data", []) if rec.get("psgc")}
+
+
 def load_acap_current() -> Dict:
     """Load latest ACAP crop-calendar and 10-day weather snapshot."""
     path = PROJECT_ROOT / cfg["paths"].get("raw_acap", "data/raw/acap") / "acap_current.json"
@@ -897,6 +906,7 @@ def compute_all_indicators() -> Dict:
     chirps_rainfall = load_latest_chirps_rainfall()
     pagasa_current = load_pagasa_current()
     apa_cis_current = load_latest_apa_cis()
+    up_noah_current = load_latest_up_noah()
     acap_current = load_acap_current()
     acap_cropping_calendars = load_acap_cropping_calendars()
     ref_date = today_pht()
@@ -916,13 +926,22 @@ def compute_all_indicators() -> Dict:
 
         latest = records[-1]  # Most recent day
         cis_rec = apa_cis_current.get(psgc)
+        noah_rec = up_noah_current.get(psgc)
         chirps_rec = chirps_rainfall.get(psgc) if cfg["chirps"].get("use_for_rainfall_if_available", True) else None
         chirps_is_current = chirps_rec and chirps_rec.get("date") == latest.get("date")
         chirps_rain = chirps_rec.get("rainfall_mm") if chirps_is_current else None
         cis_rain = cis_rec.get("rainfall_mm") if cis_rec else None
-        rain_24h = cis_rain if cis_rain is not None else (chirps_rain if chirps_rain is not None else latest.get("rainfall_mm"))
+        noah_rain = noah_rec.get("rainfall_24h_mm") if noah_rec else None
+        rain_24h = (
+            cis_rain if cis_rain is not None
+            else noah_rain if noah_rain is not None
+            else chirps_rain if chirps_rain is not None
+            else latest.get("rainfall_mm")
+        )
         if cis_rain is not None:
             rainfall_source = "apa_cis"
+        elif noah_rain is not None:
+            rainfall_source = "up_noah"
         elif chirps_rain is not None:
             rainfall_source = "chirps"
         else:
@@ -930,13 +949,23 @@ def compute_all_indicators() -> Dict:
         rain_48h = compute_accumulated_rainfall(records, days=2)
         rain_7d = compute_accumulated_rainfall(records, days=7)
         rain_30d = compute_accumulated_rainfall(records, days=30)
-        tmax = cis_rec.get("tmax_c") if cis_rec and cis_rec.get("tmax_c") is not None else latest.get("tmax_c")
+        noah_tmax = noah_rec.get("tmax_c") if noah_rec else None
+        tmax = (
+            cis_rec.get("tmax_c") if cis_rec and cis_rec.get("tmax_c") is not None
+            else noah_tmax if noah_tmax is not None
+            else latest.get("tmax_c")
+        )
+        noah_heat_index = noah_rec.get("heat_index_c") if noah_rec else None
         tmin = latest.get("tmin_c")
         tmean = latest.get("tmean_c")
         humidity = latest.get("humidity_pct")
-        wind = cis_rec.get("wind_speed_ms") if cis_rec and cis_rec.get("wind_speed_ms") is not None else latest.get("wind_speed_ms")
+        wind = (
+            cis_rec.get("wind_speed_ms") if cis_rec and cis_rec.get("wind_speed_ms") is not None
+            else noah_rec.get("wind_speed_ms") if noah_rec and noah_rec.get("wind_speed_ms") is not None
+            else latest.get("wind_speed_ms")
+        )
         solar = latest.get("solar_mj")
-        weather_source = "apa_cis" if cis_rec else latest.get("source", "nasa_power")
+        weather_source = "apa_cis" if cis_rec else ("up_noah" if noah_rec else latest.get("source", "nasa_power"))
 
         # Consecutive days
         cdd, drought_class = compute_cdd(records)
@@ -1009,7 +1038,11 @@ def compute_all_indicators() -> Dict:
             "province": mun["province"],
             "lat": mun["lat"],
             "lon": mun["lon"],
-            "as_of_date": cis_rec.get("date") if cis_rec else latest.get("date"),
+            "as_of_date": (
+                cis_rec.get("date") if cis_rec
+                else noah_rec.get("date") if noah_rec
+                else latest.get("date")
+            ),
             "observations": {
                 "rainfall_24h_mm": rain_24h,
                 "rainfall_source": rainfall_source,
@@ -1017,6 +1050,16 @@ def compute_all_indicators() -> Dict:
                 "apa_cis_tmax_c": cis_rec.get("tmax_c") if cis_rec else None,
                 "apa_cis_wind_speed_ms": cis_rec.get("wind_speed_ms") if cis_rec else None,
                 "apa_cis_record_date": cis_rec.get("date") if cis_rec else None,
+                "up_noah_rainfall_1h_mm": noah_rec.get("rainfall_1h_mm") if noah_rec else None,
+                "up_noah_rainfall_3h_mm": noah_rec.get("rainfall_3h_mm") if noah_rec else None,
+                "up_noah_rainfall_6h_mm": noah_rec.get("rainfall_6h_mm") if noah_rec else None,
+                "up_noah_rainfall_12h_mm": noah_rec.get("rainfall_12h_mm") if noah_rec else None,
+                "up_noah_rainfall_24h_mm": noah_rain,
+                "up_noah_rainfall_tomorrow_mm": noah_rec.get("rainfall_tomorrow_mm") if noah_rec else None,
+                "up_noah_heat_index_c": noah_heat_index,
+                "up_noah_tmax_c": noah_tmax,
+                "up_noah_record_date": noah_rec.get("date") if noah_rec else None,
+                "up_noah_method": noah_rec.get("method") if noah_rec else None,
                 "nasa_power_rainfall_24h_mm": latest.get("rainfall_mm"),
                 "chirps_rainfall_24h_mm": chirps_rain,
                 "chirps_record_date": chirps_rec.get("date") if chirps_rec else None,
@@ -1024,6 +1067,7 @@ def compute_all_indicators() -> Dict:
                 "rainfall_7d_mm": rain_7d,
                 "rainfall_30d_mm": rain_30d,
                 "tmax_c": tmax,
+                "heat_index_c": noah_heat_index,
                 "tmin_c": tmin,
                 "tmean_c": tmean,
                 "humidity_pct": humidity,
@@ -1050,7 +1094,7 @@ def compute_all_indicators() -> Dict:
                 "weather": weather_source,
                 "rainfall_used": rainfall_source,
                 "rainfall_fallback": _rainfall_fallback_note(rainfall_source),
-                "priority_order": "APA CIS > CHIRPS rainfall > NASA POWER",
+                "priority_order": "APA CIS > UP NOAH > CHIRPS rainfall > NASA POWER",
             },
         }
 
@@ -1060,9 +1104,11 @@ def compute_all_indicators() -> Dict:
 def _rainfall_fallback_note(source: str) -> Optional[str]:
     if source == "apa_cis":
         return None
+    if source == "up_noah":
+        return "APA CIS rainfall unavailable for this municipality; using UP NOAH sampled weather overlay."
     if source == "chirps":
-        return "APA CIS rainfall unavailable for this municipality; using CHIRPS."
-    return "APA CIS/CHIRPS rainfall unavailable or stale; using NASA POWER."
+        return "APA CIS/UP NOAH rainfall unavailable for this municipality; using CHIRPS."
+    return "APA CIS/UP NOAH/CHIRPS rainfall unavailable or stale; using NASA POWER."
 
 
 def _acap_province_ten_day(province: str, acap_data: Dict) -> Dict:

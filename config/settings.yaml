@@ -63,6 +63,28 @@ apa_cis:
   retry_attempts: 3
   request_delay_seconds: 0.5
 
+up_noah:
+  base_url: "https://noah.up.edu.ph"
+  static_api_url: "https://webgis-static.up.edu.ph/api"
+  weather_updates_url: "https://noah.up.edu.ph/weather-updates/rainfall-contour"
+  enabled: true
+  # The current NOAH weather page publishes georeferenced raster overlays.
+  # Municipal records are accepted only after raster sampling/classification
+  # has produced numeric values in data/raw/up_noah/up_noah_current.json.
+  rainfall_layers:
+    rainfall_1h_mm: "contours/1hr_latest_rainfall_contour.png"
+    rainfall_3h_mm: "contours/3hr_latest_rainfall_contour.png"
+    rainfall_6h_mm: "contours/6hr_latest_rainfall_contour.png"
+    rainfall_12h_mm: "contours/12hr_latest_rainfall_contour.png"
+    rainfall_24h_mm: "contours/24hr_latest_rainfall_contour.png"
+    rainfall_tomorrow_mm: "rainfall/rainmap_gtif_day1.png"
+  temperature_layers:
+    heat_index_c: "temperature/HI_1.png"
+    tmax_c: "temperature/t2m_1.png"
+  timeout_seconds: 45
+  retry_attempts: 3
+  request_delay_seconds: 0.5
+
 acap:
   base_url: "https://acap-cagayanvalley.github.io"
   firestore_project_id: "acap-cagayanvalley-prod"
@@ -193,6 +215,7 @@ paths:
   raw_chirps: "data/raw/chirps"
   raw_pagasa: "data/raw/pagasa"
   raw_apa_cis: "data/raw/apa_cis"
+  raw_up_noah: "data/raw/up_noah"
   raw_acap: "data/raw/acap"
   reference: "data/reference"
   processed_daily: "data/processed/daily"
