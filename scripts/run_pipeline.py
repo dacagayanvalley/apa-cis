@@ -4,13 +4,14 @@ Master pipeline orchestrator for APA-CIS daily data update.
 
 Execution order:
   1. Fetch APA CIS and ACAP public regional data
-  2. Fetch NASA POWER daily fallback data (all municipalities)
-  3. Ingest PAGASA data (PDF inbox + live scrape)
-  4. Compute climate indicators (CDD, anomaly, heat stress, ETo, etc.)
-  5. Compute Project NOAH municipal exposure analytics when local overlays exist
-  6. Generate agricultural advisories (rule-based engine)
-  7. Export GeoJSON map layers
-  8. Log all results
+  2. Sample UP NOAH public weather overlays
+  3. Fetch NASA POWER daily fallback data (all municipalities)
+  4. Ingest PAGASA data (PDF inbox + live scrape)
+  5. Compute climate indicators (CDD, anomaly, heat stress, ETo, etc.)
+  6. Compute Project NOAH municipal exposure analytics when local overlays exist
+  7. Generate agricultural advisories (rule-based engine)
+  8. Export GeoJSON map layers
+  9. Log all results
 
 Run this script via GitHub Actions or cron daily at 6 AM PHT.
 
@@ -68,6 +69,7 @@ def run_daily_pipeline(
     skip_chirps: bool = False,
     skip_pagasa: bool = False,
     skip_apa_cis: bool = False,
+    skip_up_noah: bool = False,
     skip_acap: bool = False,
 ) -> dict:
     """
@@ -120,6 +122,18 @@ def run_daily_pipeline(
     else:
         logger.info("--- STEP: ACAP Crop Calendar and 10-Day Scrape --- [SKIPPED]")
         report["steps"]["acap"] = "skipped"
+
+    if not skip_fetch and not skip_up_noah and cfg.get("up_noah", {}).get("enabled", True):
+        try:
+            from scripts.fetch_up_noah.noah_weather_sampler import run as up_noah_run
+            success, _ = run_step("UP NOAH Weather Overlay Sampling", up_noah_run, target_date)
+            report["steps"]["up_noah"] = "success" if success else "warning"
+        except Exception as exc:
+            logger.error(f"UP NOAH step error: {exc}")
+            report["steps"]["up_noah"] = "warning"
+    else:
+        logger.info("--- STEP: UP NOAH Weather Overlay Sampling --- [SKIPPED]")
+        report["steps"]["up_noah"] = "skipped"
 
     if not skip_fetch:
         try:
@@ -252,6 +266,8 @@ if __name__ == "__main__":
                         help="Skip CHIRPS rainfall fetch")
     parser.add_argument("--skip-apa-cis", action="store_true",
                         help="Skip APA CIS public weather scrape")
+    parser.add_argument("--skip-up-noah", action="store_true",
+                        help="Skip UP NOAH weather overlay sampling")
     parser.add_argument("--skip-acap", action="store_true",
                         help="Skip ACAP crop calendar and 10-day scrape")
 
@@ -264,6 +280,7 @@ if __name__ == "__main__":
         skip_chirps=args.skip_chirps,
         skip_pagasa=args.skip_pagasa,
         skip_apa_cis=args.skip_apa_cis,
+        skip_up_noah=args.skip_up_noah,
         skip_acap=args.skip_acap,
     )
 

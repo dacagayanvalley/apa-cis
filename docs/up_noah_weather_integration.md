@@ -80,7 +80,25 @@ Create `data/raw/up_noah/up_noah_current.json` with this shape:
 by the indicator engine. The other rainfall windows are preserved for municipal
 profiles, QA, and future dashboard widgets.
 
-## Step-by-Step Conversion
+## Automated Conversion
+
+Run the sampler:
+
+```text
+python scripts/fetch_up_noah/noah_weather_sampler.py
+```
+
+Then recompute local app outputs:
+
+```text
+python scripts/run_pipeline.py --skip-fetch --skip-pagasa
+```
+
+For the full daily pipeline, omit `--skip-fetch`; UP NOAH sampling runs after
+APA CIS and ACAP and before the fallback sources. Use `--skip-up-noah` only when
+NOAH should be deliberately bypassed.
+
+## Manual Conversion
 
 1. Download the PNG overlay files listed above.
 2. Georeference each overlay using the coordinates embedded in the NOAH map app.
