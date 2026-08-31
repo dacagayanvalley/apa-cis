@@ -6,20 +6,19 @@ Issued by: DA-RFO2 APA
 ============================================================
 
 SITUATION OVERVIEW:
-  Active advisories: 93 municipalities
-  Danger alerts: 0
-  Warnings: 88
+  Active advisories: 92 municipalities
+  Danger alerts: 8
+  Warnings: 66
   Confidence: high 0, medium 93, low 0
 
 SOURCE TIMESTAMPS AND QA:
-  APA CIS rainfall municipalities: 92
-  UP NOAH rainfall municipalities: 1
+  APA CIS rainfall municipalities: 93
+  UP NOAH rainfall municipalities: 0
   CHIRPS rainfall municipalities: 0
   NASA POWER fallback municipalities: 0
   PAGASA source date(s): 2026-08-31
-  ACAP 10-day source date(s): 2026-07-21
+  ACAP 10-day source date(s): 2026-08-28
   QA flag (93 municipalities): PAGASA context needs staff review before official dissemination.
-  QA flag (92 municipalities): Rainfall source is 26 days old.
 
 PAGASA / ACAP / CIS SUMMARY:
   PAGASA warnings are integrated where TCWS, ENSO, seasonal outlook, or farm-weather context is available.
@@ -27,23 +26,23 @@ PAGASA / ACAP / CIS SUMMARY:
   APA CIS is prioritized first; UP NOAH sampled weather overlays are second; CHIRPS/NASA remain fallbacks.
 
 PROVINCIAL STATUS:
-  Batanes: 6 municipalities with advisories (highest: WARNING)
+  Batanes: 6 municipalities with advisories (highest: DANGER)
   Cagayan: 29 municipalities with advisories (highest: WARNING)
-  Isabela: 37 municipalities with advisories (highest: WARNING)
+  Isabela: 36 municipalities with advisories (highest: ADVISORY)
   Nueva Vizcaya: 15 municipalities with advisories (highest: WARNING)
   Quirino: 6 municipalities with advisories (highest: WARNING)
 
 PRIORITY MUNICIPALITIES FOR IMMEDIATE ACTION:
-  1. Aurora, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  2. Quezon, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  3. San Guillermo, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  4. Kayapa, Nueva Vizcaya [WARNING, confidence: medium] - Operations Advisory - Defer Irrigation
-  5. Saguday, Quirino [WARNING, confidence: medium] - Postharvest Drying Risk
-  6. Santa Fe, Nueva Vizcaya [WARNING, confidence: medium] - Operations Advisory - Defer Irrigation
-  7. Alfonso Castaneda, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
-  8. Itbayat, Batanes [WARNING, confidence: medium] - Postharvest Drying Risk
-  9. Piat, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
-  10. Rizal, Cagayan [WARNING, confidence: medium] - High Heat Stress � Restrict Fieldwork
+  1. Itbayat, Batanes [DANGER, confidence: medium] - Extreme Rainfall — All Operations Suspend
+  2. Basco, Batanes [DANGER, confidence: medium] - Extreme Rainfall — All Operations Suspend
+  3. Ivana, Batanes [DANGER, confidence: medium] - Extreme Rainfall — All Operations Suspend
+  4. Mahatao, Batanes [DANGER, confidence: medium] - Extreme Rainfall — All Operations Suspend
+  5. Sabtang, Batanes [DANGER, confidence: medium] - Extreme Rainfall — All Operations Suspend
+  6. Uyugan, Batanes [DANGER, confidence: medium] - Extreme Rainfall — All Operations Suspend
+  7. Claveria, Cagayan [DANGER, confidence: medium] - Extreme Rainfall — All Operations Suspend
+  8. Santa Praxedes, Cagayan [DANGER, confidence: medium] - Extreme Rainfall — All Operations Suspend
+  9. Kayapa, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
+  10. Santa Fe, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
 
 ACTION TIERS:
   Farmers: Follow the municipal advisory SMS/action text; adjust field work, irrigation, spraying, harvest, and drying based on local MAO guidance.
@@ -52,11 +51,11 @@ ACTION TIERS:
   Public: Monitor DA RFO2 APA and PAGASA updates; avoid sharing unofficial advisories without source date and valid-until information.
 
 SMS-READY PRIORITY ADVISORIES:
-  Aurora: DA WARNING: Drying risk in Aurora. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Quezon: DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  San Guillermo: DA WARNING: Drying risk in San Guillermo. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Kayapa: DA OPS: Defer irrigation in Kayapa. Recent rainfall is enough that irrigation can be paused to prevent over-saturation. Check MAO guidance.
-  Saguday: DA WARNING: Drying risk in Saguday. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Itbayat: DA ALERT: Extreme rain in Itbayat. Suspend all farm work. Secure produce. Contact MAO for assistance.
+  Basco: DA ALERT: Extreme rain in Basco. Suspend all farm work. Secure produce. Contact MAO for assistance.
+  Ivana: DA ALERT: Extreme rain in Ivana. Suspend all farm work. Secure produce. Contact MAO for assistance.
+  Mahatao: DA ALERT: Extreme rain in Mahatao. Suspend all farm work. Secure produce. Contact MAO for assistance.
+  Sabtang: DA ALERT: Extreme rain in Sabtang. Suspend all farm work. Secure produce. Contact MAO for assistance.
 
 For full advisory details, visit the APA-CIS portal.
 For assistance, contact DA-RFO2 APA: 0916-708-9707; DA RFO2 APA Facebook page; darfo2apa@gmail.com.
