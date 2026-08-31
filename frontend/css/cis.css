@@ -524,9 +524,26 @@ body {
 }
 .layer-item:hover { background: var(--bg); }
 .layer-item input[type="radio"] { display: none; }
+.layer-item input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--da-green);
+  flex-shrink: 0;
+}
+.overlay-item {
+  padding-left: 10px;
+}
 .layer-dot {
   width: 10px; height: 10px; border-radius: 50%;
   flex-shrink: 0;
+}
+.boundary-dot {
+  border-radius: 2px;
+  background: transparent !important;
+  border: 2px solid currentColor;
+}
+.hazard-dot {
+  border-radius: 2px;
 }
 .active-layer { background: var(--da-green-faint); color: var(--da-green); font-weight: 600; }
 .map-legend {
@@ -553,6 +570,14 @@ body {
 #leaflet-map {
   flex: 1;
   border: 1px solid var(--border);
+}
+#noah-map {
+  flex: 1;
+  border: 1px solid var(--border);
+  min-width: 0;
+}
+#noah-map[hidden] {
+  display: none;
 }
 
 /* ── ADVISORY MODULE ──────────────────────────────────────── */

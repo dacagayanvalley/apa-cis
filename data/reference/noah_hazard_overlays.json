@@ -1,0 +1,114 @@
+{
+  "source": {
+    "name": "Project NOAH hazard maps",
+    "primary_site": "https://noah.up.edu.ph/",
+    "license": "Open Data Commons Open Database License (ODC-ODbL)",
+    "recommended_focus": "Cagayan Valley / Region 2",
+    "notes": [
+      "Use published hazard datasets or services rather than scraping the interactive NOAH app.",
+      "Keep NOAH hazard overlays separate from APA-CIS live climate point layers.",
+      "Show attribution and planning-use disclaimer in the map UI."
+    ]
+  },
+  "hazards": [
+    {
+      "family": "flood",
+      "label": "Flood Hazard",
+      "attribute": "Var",
+      "levels": {
+        "1": { "label": "Low", "color": "#93c5fd" },
+        "2": { "label": "Medium", "color": "#3b82f6" },
+        "3": { "label": "High", "color": "#1d4ed8" }
+      },
+      "scenarios": [
+        {
+          "id": "flood_5yr",
+          "label": "5-year rain return period",
+          "pmtiles_layer": "flood_5yr",
+          "arcgis_feature_server": "https://services1.arcgis.com/IwZZTMxZCmAmFYvF/ArcGIS/rest/services/Flood_Control_5_Year/FeatureServer/0"
+        },
+        {
+          "id": "flood_25yr",
+          "label": "25-year rain return period",
+          "pmtiles_layer": "flood_25yr",
+          "arcgis_feature_server": "https://services1.arcgis.com/IwZZTMxZCmAmFYvF/ArcGIS/rest/services/Flood_Control_25_Year/FeatureServer/6"
+        },
+        {
+          "id": "flood_100yr",
+          "label": "100-year rain return period",
+          "pmtiles_layer": "flood_100yr",
+          "rdac_catalog": "https://ricelytics.philrice.gov.ph/data_catalog/dataset/100-year-rain-return-scenario-flood-hazard-maps-project-noah"
+        }
+      ]
+    },
+    {
+      "family": "landslide",
+      "label": "Landslide Hazard",
+      "attribute": "HAZ",
+      "levels": {
+        "1": { "label": "Low", "color": "#fde68a" },
+        "2": { "label": "Medium", "color": "#f59e0b" },
+        "3": { "label": "High", "color": "#b45309" }
+      },
+      "scenarios": [
+        {
+          "id": "landslide",
+          "label": "Landslide susceptibility",
+          "pmtiles_layer": "landslide",
+          "rdac_catalog": "https://ricelytics.philrice.gov.ph/data_catalog/dataset/landslide-hazard-maps-with-lidar-and-high-resolution-imagery-project-noah"
+        },
+        {
+          "id": "debris_flow",
+          "label": "Debris flow and alluvial fan",
+          "pmtiles_layer": "debris_flow",
+          "rdac_catalog": "https://ricelytics.philrice.gov.ph/data_catalog/dataset/landslide-hazard-maps-with-lidar-and-high-resolution-imagery-project-noah"
+        }
+      ]
+    },
+    {
+      "family": "storm_surge",
+      "label": "Storm Surge Hazard",
+      "attribute": "HAZ",
+      "levels": {
+        "1": { "label": "Low", "color": "#fde047" },
+        "2": { "label": "Medium", "color": "#fb923c" },
+        "3": { "label": "High", "color": "#dc2626" }
+      },
+      "scenarios": [
+        {
+          "id": "storm_surge_ssa1",
+          "label": "SSA 1, 2.01 m to 3 m peak",
+          "pmtiles_layer": "storm_surge_ssa1",
+          "arcgis_feature_server": "https://services1.arcgis.com/IwZZTMxZCmAmFYvF/arcgis/rest/services/Storm_Surge_Hazard_Map/FeatureServer/1"
+        },
+        {
+          "id": "storm_surge_ssa2",
+          "label": "SSA 2, 3.01 m to 4 m peak",
+          "pmtiles_layer": "storm_surge_ssa2",
+          "arcgis_feature_server": "https://services1.arcgis.com/IwZZTMxZCmAmFYvF/arcgis/rest/services/Storm_Surge_Hazard_Map/FeatureServer/2"
+        },
+        {
+          "id": "storm_surge_ssa3",
+          "label": "SSA 3, 4.01 m to 5 m peak",
+          "pmtiles_layer": "storm_surge_ssa3",
+          "arcgis_feature_server": "https://services1.arcgis.com/IwZZTMxZCmAmFYvF/arcgis/rest/services/Storm_Surge_Hazard_Map/FeatureServer/3"
+        },
+        {
+          "id": "storm_surge_ssa4",
+          "label": "SSA 4, above 5 m peak",
+          "pmtiles_layer": "storm_surge_ssa4",
+          "arcgis_feature_server": "https://services1.arcgis.com/IwZZTMxZCmAmFYvF/arcgis/rest/services/Storm_Surge_Hazard_Map/FeatureServer/4"
+        }
+      ]
+    }
+  ],
+  "pmtiles": {
+    "combined_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/PMTiles/noah_hazard_maps.pmtiles",
+    "dataset_page": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps",
+    "frontend_note": "APA-CIS loads the complete NOAH hazard set with MapLibre GL JS and the PMTiles protocol. Clipped GeoJSON remains an optional offline/exposure workflow."
+  },
+  "planned_outputs": {
+    "geojson_dir": "data/geospatial/noah/",
+    "municipal_exposure": "data/processed/noah/municipal_hazard_exposure.json"
+  }
+}

@@ -18,6 +18,25 @@ const CISData = (() => {
     pagasaData:    '../data/raw/pagasa/pagasa_current.json',
     acapData:      '../data/raw/acap/acap_current.json',
     acapCropCalendars:'../data/reference/acap_cropping_calendars.json',
+    noahOverlayCatalog:'../data/reference/noah_hazard_overlays.json',
+    noahExposure:  '../data/processed/noah/municipal_hazard_exposure.json',
+    boundaries: {
+      provinces:      '../data/boundaries/provinces_simplified.geojson',
+      districts:      '../data/boundaries/districts_simplified.geojson',
+      municipalities: '../data/boundaries/municipalities_simplified.geojson',
+      barangays:      '../data/boundaries/barangay_boundaries.geojson',
+    },
+    noahGeojson: {
+      flood_5yr:       '../data/geospatial/noah/flood_5yr_r2.geojson',
+      flood_25yr:      '../data/geospatial/noah/flood_25yr_r2.geojson',
+      flood_100yr:      '../data/geospatial/noah/flood_100yr_r2.geojson',
+      landslide:        '../data/geospatial/noah/landslide_r2.geojson',
+      debris_flow:      '../data/geospatial/noah/debris_flow_r2.geojson',
+      storm_surge_ssa1: '../data/geospatial/noah/storm_surge_ssa1_r2.geojson',
+      storm_surge_ssa2: '../data/geospatial/noah/storm_surge_ssa2_r2.geojson',
+      storm_surge_ssa3: '../data/geospatial/noah/storm_surge_ssa3_r2.geojson',
+      storm_surge_ssa4: '../data/geospatial/noah/storm_surge_ssa4_r2.geojson',
+    },
     geojson: {
       rainfall_24h:     '../data/geospatial/rainfall_24h.geojson',
       drought_watch:    '../data/geospatial/drought_watch.geojson',
@@ -97,6 +116,40 @@ const CISData = (() => {
     if (!path) throw new Error(`Unknown layer: ${layerName}`);
     const data = await fetchJSON(path);
     _cache[layerName] = data;
+    return data;
+  }
+
+  async function getBoundaryGeoJSON(layerName) {
+    const cacheKey = `boundary:${layerName}`;
+    if (_cache[cacheKey]) return _cache[cacheKey];
+    const path = PATHS.boundaries[layerName];
+    if (!path) throw new Error(`Unknown boundary layer: ${layerName}`);
+    const data = await fetchJSON(path);
+    _cache[cacheKey] = data;
+    return data;
+  }
+
+  async function getNOAHGeoJSON(layerName) {
+    const cacheKey = `noah:${layerName}`;
+    if (_cache[cacheKey]) return _cache[cacheKey];
+    const path = PATHS.noahGeojson[layerName];
+    if (!path) throw new Error(`Unknown NOAH layer: ${layerName}`);
+    const data = await fetchJSON(path);
+    _cache[cacheKey] = data;
+    return data;
+  }
+
+  async function getNOAHOverlayCatalog() {
+    if (_cache.noahOverlayCatalog) return _cache.noahOverlayCatalog;
+    const data = await fetchJSON(PATHS.noahOverlayCatalog);
+    _cache.noahOverlayCatalog = data;
+    return data;
+  }
+
+  async function getNOAHExposure() {
+    if (_cache.noahExposure) return _cache.noahExposure;
+    const data = await fetchJSON(PATHS.noahExposure);
+    _cache.noahExposure = data;
     return data;
   }
 
@@ -415,7 +468,8 @@ const CISData = (() => {
 
   // ── Public surface ─────────────────────────────────────────────────────────
   return {
-    loadAll, getGeoJSON, getRegionalBulletin, getMunicipalRows, getAdvisoryForMunicipality,
+    loadAll, getGeoJSON, getBoundaryGeoJSON, getNOAHGeoJSON,
+    getNOAHOverlayCatalog, getNOAHExposure, getRegionalBulletin, getMunicipalRows, getAdvisoryForMunicipality,
     getActiveAdvisories, getIndicatorByPSGC, getSummaryStats,
     getPriorityMunicipalities, getProvinceSummary, getPipelineStatus,
     getPAGASAData, getACAPData, getACAPCropCalendars, setProvince,

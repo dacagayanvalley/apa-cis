@@ -1,0 +1,206 @@
+{
+  "source": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps",
+  "target_provinces": [
+    "Batanes",
+    "Cagayan",
+    "Isabela",
+    "NuevaVizcaya",
+    "Quirino"
+  ],
+  "folders": [
+    {
+      "folder": "Flood/5yr",
+      "files": [
+        {
+          "path": "Flood/5yr/Cagayan.zip",
+          "size": 80978201,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/5yr/Cagayan.zip"
+        },
+        {
+          "path": "Flood/5yr/Isabela.zip",
+          "size": 54289955,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/5yr/Isabela.zip"
+        },
+        {
+          "path": "Flood/5yr/NuevaVizcaya.zip",
+          "size": 899003,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/5yr/NuevaVizcaya.zip"
+        },
+        {
+          "path": "Flood/5yr/Quirino.zip",
+          "size": 4299903,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/5yr/Quirino.zip"
+        }
+      ]
+    },
+    {
+      "folder": "Flood/25yr",
+      "files": [
+        {
+          "path": "Flood/25yr/Cagayan.zip",
+          "size": 89364281,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/25yr/Cagayan.zip"
+        },
+        {
+          "path": "Flood/25yr/Isabela.zip",
+          "size": 58497713,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/25yr/Isabela.zip"
+        },
+        {
+          "path": "Flood/25yr/NuevaVizcaya.zip",
+          "size": 1024361,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/25yr/NuevaVizcaya.zip"
+        },
+        {
+          "path": "Flood/25yr/Quirino.zip",
+          "size": 4703641,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/25yr/Quirino.zip"
+        }
+      ]
+    },
+    {
+      "folder": "Flood/100yr",
+      "files": [
+        {
+          "path": "Flood/100yr/Batanes.zip",
+          "size": 6851466,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/100yr/Batanes.zip"
+        },
+        {
+          "path": "Flood/100yr/Cagayan.zip",
+          "size": 67857501,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/100yr/Cagayan.zip"
+        },
+        {
+          "path": "Flood/100yr/Isabela.zip",
+          "size": 41140396,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/100yr/Isabela.zip"
+        },
+        {
+          "path": "Flood/100yr/NuevaVizcaya.zip",
+          "size": 4061713,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/100yr/NuevaVizcaya.zip"
+        },
+        {
+          "path": "Flood/100yr/Quirino.zip",
+          "size": 12449141,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Flood/100yr/Quirino.zip"
+        }
+      ]
+    },
+    {
+      "folder": "Landslide/LandslideHazards",
+      "files": [
+        {
+          "path": "Landslide/LandslideHazards/Batanes.zip",
+          "size": 11864949,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Landslide/LandslideHazards/Batanes.zip"
+        },
+        {
+          "path": "Landslide/LandslideHazards/Cagayan.zip",
+          "size": 255944323,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Landslide/LandslideHazards/Cagayan.zip"
+        },
+        {
+          "path": "Landslide/LandslideHazards/Isabela.zip",
+          "size": 487734081,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Landslide/LandslideHazards/Isabela.zip"
+        },
+        {
+          "path": "Landslide/LandslideHazards/NuevaVizcaya.zip",
+          "size": 154884105,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Landslide/LandslideHazards/NuevaVizcaya.zip"
+        },
+        {
+          "path": "Landslide/LandslideHazards/Quirino.zip",
+          "size": 111305801,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Landslide/LandslideHazards/Quirino.zip"
+        }
+      ]
+    },
+    {
+      "folder": "Landslide/DebrisFlowAlluvialFan",
+      "files": []
+    },
+    {
+      "folder": "Storm Surge/StormSurgeAdvisory1",
+      "files": [
+        {
+          "path": "Storm Surge/StormSurgeAdvisory1/Batanes.zip",
+          "size": 1069511,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory1/Batanes.zip"
+        },
+        {
+          "path": "Storm Surge/StormSurgeAdvisory1/Cagayan.zip",
+          "size": 7566535,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory1/Cagayan.zip"
+        },
+        {
+          "path": "Storm Surge/StormSurgeAdvisory1/Isabela.zip",
+          "size": 3277895,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory1/Isabela.zip"
+        }
+      ]
+    },
+    {
+      "folder": "Storm Surge/StormSurgeAdvisory2",
+      "files": [
+        {
+          "path": "Storm Surge/StormSurgeAdvisory2/Batanes.zip",
+          "size": 1235099,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory2/Batanes.zip"
+        },
+        {
+          "path": "Storm Surge/StormSurgeAdvisory2/Cagayan.zip",
+          "size": 9115387,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory2/Cagayan.zip"
+        },
+        {
+          "path": "Storm Surge/StormSurgeAdvisory2/Isabela.zip",
+          "size": 3548335,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory2/Isabela.zip"
+        }
+      ]
+    },
+    {
+      "folder": "Storm Surge/StormSurgeAdvisory3",
+      "files": [
+        {
+          "path": "Storm Surge/StormSurgeAdvisory3/Batanes.zip",
+          "size": 1354369,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory3/Batanes.zip"
+        },
+        {
+          "path": "Storm Surge/StormSurgeAdvisory3/Cagayan.zip",
+          "size": 9361857,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory3/Cagayan.zip"
+        },
+        {
+          "path": "Storm Surge/StormSurgeAdvisory3/Isabela.zip",
+          "size": 3512301,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory3/Isabela.zip"
+        }
+      ]
+    },
+    {
+      "folder": "Storm Surge/StormSurgeAdvisory4",
+      "files": [
+        {
+          "path": "Storm Surge/StormSurgeAdvisory4/Batanes.zip",
+          "size": 1449485,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory4/Batanes.zip"
+        },
+        {
+          "path": "Storm Surge/StormSurgeAdvisory4/Cagayan.zip",
+          "size": 9699117,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory4/Cagayan.zip"
+        },
+        {
+          "path": "Storm Surge/StormSurgeAdvisory4/Isabela.zip",
+          "size": 3522149,
+          "download_url": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/Storm%20Surge/StormSurgeAdvisory4/Isabela.zip"
+        }
+      ]
+    }
+  ]
+}

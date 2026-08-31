@@ -1,0 +1,17 @@
+{
+  "status": "pmtiles_integrated",
+  "source": "https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps/resolve/main/PMTiles/noah_hazard_maps.pmtiles",
+  "source_note": "APA-CIS loads the full Project NOAH hazard dataset through PMTiles so multi-GB national source geometry is not committed to Git.",
+  "local_geojson_note": "Optional clipped Region 2 GeoJSON overlays can still be generated later for offline use and municipal exposure analytics.",
+  "layers": [
+    "flood_5yr",
+    "flood_25yr",
+    "flood_100yr",
+    "landslide",
+    "debris_flow",
+    "storm_surge_ssa1",
+    "storm_surge_ssa2",
+    "storm_surge_ssa3",
+    "storm_surge_ssa4"
+  ]
+}

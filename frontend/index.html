@@ -9,6 +9,7 @@
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.css"/>
   <!-- Chart.js for sparklines -->
   <link rel="stylesheet" href="css/cis.css?v=20260805-icons-tiles"/>
 </head>
@@ -239,6 +240,64 @@
           <span class="layer-dot" style="background:#B71C1C"></span> Advisory Status
         </label>
       </div>
+      <div class="layer-group">
+        <div class="lg-label">Boundaries</div>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="boundary" value="provinces" onchange="CISMap.toggleBoundaryLayer('provinces', this.checked)">
+          <span class="layer-dot boundary-dot" style="color:#1B5E20"></span> Provinces
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="boundary" value="districts" onchange="CISMap.toggleBoundaryLayer('districts', this.checked)">
+          <span class="layer-dot boundary-dot" style="color:#6D4C41"></span> Districts
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="boundary" value="municipalities" onchange="CISMap.toggleBoundaryLayer('municipalities', this.checked)">
+          <span class="layer-dot boundary-dot" style="color:#1565C0"></span> Municipalities
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="boundary" value="barangays" onchange="CISMap.toggleBoundaryLayer('barangays', this.checked)">
+          <span class="layer-dot boundary-dot" style="color:#78909C"></span> Barangays
+        </label>
+      </div>
+      <div class="layer-group">
+        <div class="lg-label">NOAH Hazards</div>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="noah" value="flood_5yr" onchange="CISNOAHMap.toggleLayer('flood_5yr', this.checked)">
+          <span class="layer-dot hazard-dot" style="background:#2563eb"></span> Flood 5-Year
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="noah" value="flood_25yr" onchange="CISNOAHMap.toggleLayer('flood_25yr', this.checked)">
+          <span class="layer-dot hazard-dot" style="background:#047857"></span> Flood 25-Year
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="noah" value="flood_100yr" onchange="CISNOAHMap.toggleLayer('flood_100yr', this.checked)">
+          <span class="layer-dot hazard-dot" style="background:#1d4ed8"></span> Flood 100-Year
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="noah" value="landslide" onchange="CISNOAHMap.toggleLayer('landslide', this.checked)">
+          <span class="layer-dot hazard-dot" style="background:#b45309"></span> Landslide
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="noah" value="debris_flow" onchange="CISNOAHMap.toggleLayer('debris_flow', this.checked)">
+          <span class="layer-dot hazard-dot" style="background:#f59e0b"></span> Debris Flow
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="noah" value="storm_surge_ssa1" onchange="CISNOAHMap.toggleLayer('storm_surge_ssa1', this.checked)">
+          <span class="layer-dot hazard-dot" style="background:#fde047"></span> Storm Surge SSA 1
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="noah" value="storm_surge_ssa2" onchange="CISNOAHMap.toggleLayer('storm_surge_ssa2', this.checked)">
+          <span class="layer-dot hazard-dot" style="background:#fb923c"></span> Storm Surge SSA 2
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="noah" value="storm_surge_ssa3" onchange="CISNOAHMap.toggleLayer('storm_surge_ssa3', this.checked)">
+          <span class="layer-dot hazard-dot" style="background:#ef4444"></span> Storm Surge SSA 3
+        </label>
+        <label class="layer-item overlay-item">
+          <input type="checkbox" data-overlay-kind="noah" value="storm_surge_ssa4" onchange="CISNOAHMap.toggleLayer('storm_surge_ssa4', this.checked)">
+          <span class="layer-dot hazard-dot" style="background:#dc2626"></span> Storm Surge SSA 4
+        </label>
+      </div>
 
       <!-- Legend -->
       <div class="map-legend" id="map-legend"></div>
@@ -253,11 +312,16 @@
         <div class="di-value" id="map-valid-label">â€”</div>
         <div class="di-label">Source QA</div>
         <div class="di-value" id="map-qa-label">Checking...</div>
+        <div class="di-label">Overlay Status</div>
+        <div class="di-value" id="map-overlay-status">Optional overlays load only when selected.</div>
+        <div class="di-label">NOAH Hazard Source</div>
+        <div class="di-value">Project NOAH / UP Resilience Institute / PAGASA. ODC-ODbL; for planning and preparedness.</div>
       </div>
     </div>
 
     <!-- Leaflet map -->
     <div id="leaflet-map"></div>
+    <div id="noah-map" hidden></div>
 
     <!-- Municipality hover popup overlay -->
     <div class="map-tooltip" id="map-tooltip" style="display:none"></div>
@@ -598,8 +662,11 @@
 </div>
 <!-- Scripts -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/pmtiles@3.2.1/dist/pmtiles.js"></script>
 <script src="js/cis-data.js?v=20260805-pdf"></script>
 <script src="js/cis-map.js?v=20260804-agri"></script>
+<script src="js/cis-noah-map.js?v=20260831-noah-pmtiles"></script>
 <script src="js/cis-dashboard.js?v=20260804-agri"></script>
 <script src="js/cis-advisory.js?v=20260805-icons-tiles"></script>
 <script src="js/cis-planning.js?v=20260805-icons-tiles"></script>

@@ -20,6 +20,7 @@ This repository now includes the minimum viable municipal agriculture CIS stack:
 - CRA Compendium adaptation-measure matrix attached to every triggered advisory.
 - Added postharvest drying risk, official PAGASA typhoon signal context, irrigation priority, and wet-spell disease watch rules.
 - Added `data/geospatial/drying_risk.geojson` for the Leaflet map.
+- Added Region 2 administrative boundary overlays and a full Project NOAH PMTiles hazard map mode for flood, landslide, debris-flow, and storm-surge layers.
 - Added Supabase/PostGIS schema and OpenAPI starter files under `api/`.
 
 Operational runbook: `docs/mvp_operations_guide.md`
@@ -32,10 +33,10 @@ Architecture and gap assessment: `docs/cis_upgrade_assessment.md`
 
 | Capability | Detail |
 |---|---|
-| **Daily ETL** | Fetches NASA POWER agroclimatic data for all 92 municipalities at 6 AM PHT via GitHub Actions |
+| **Daily ETL** | Fetches NASA POWER agroclimatic data for all 93 municipalities at 6 AM PHT via GitHub Actions |
 | **Climate Indicators** | CDD/CWD, rainfall anomaly vs 1991–2020 normals, WBGT heat stress, FAO-56 ETo, irrigation demand, field workability |
 | **Advisory Engine** | 10 rule-based advisory types with 4 output formats each (bulletin, SMS, LGU, Facebook) |
-| **Map Layers** | 8 GeoJSON layers rendered in Leaflet: rainfall, drought watch, heat, workability, anomaly, crop risk, municipal risk, advisory status |
+| **Map Layers** | 8 operational GeoJSON layers rendered in Leaflet, Region 2 boundary overlays, and 9 Project NOAH PMTiles hazard layers |
 | **Planning Dashboard** | Priority municipality ranking for DA intervention, province summaries, intervention type matrix |
 | **PAGASA Integration** | Semi-automated workflow: PDF inbox processor + public page scraping + manual entry template |
 | **Regional App Integration** | APA CIS same-day weather scrape plus ACAP 10-day/crop-calendar context |
@@ -58,7 +59,7 @@ pip install -r requirements.txt
 python scripts/fetch_nasa_power/build_climatology.py
 ```
 
-This fetches 1991–2020 monthly normals for all 92 municipalities from NASA POWER and saves them to `config/climatology_1991_2020.json` and `config/climatology_flat.json`.
+This fetches 1991–2020 monthly normals for all 93 municipalities from NASA POWER and saves them to `config/climatology_1991_2020.json` and `config/climatology_flat.json`.
 
 ### 3. Run the daily pipeline manually
 
@@ -80,13 +81,68 @@ python scripts/run_pipeline.py --skip-fetch --skip-pagasa
 
 ### 4. View the dashboard
 
-Open `frontend/index.html` in your browser, or serve it with any static server:
+Serve the repository root so `frontend/` can read the sibling `data/` directory:
 
 ```bash
-cd frontend && python -m http.server 8080
-# → http://localhost:8080
+python -m http.server 8080
+# → http://localhost:8080/frontend/
 ```
 
+Opening `frontend/index.html` directly from disk also works in some browsers, but the local server is better for checking map/data fetches.
+
+### 5. Prepare boundaries and NOAH hazard sources
+
+Refresh the Region 2 administrative boundaries from the companion thematic maps repository:
+
+```bash
+python scripts/prepare_boundary_overlays.py
+```
+
+The frontend loads the full Project NOAH hazard set through the BetterGov PMTiles mirror, so multi-GB NOAH shapefiles are not committed to Git. To refresh the source catalog and verify Region 2 source availability:
+
+```bash
+python scripts/list_noah_region2_sources.py
+```
+
+For offline fallback or municipal exposure analytics, place pre-clipped Region 2 GeoJSON files in `data/raw/noah/r2/` using these names:
+
+```text
+flood_5yr.geojson
+flood_25yr.geojson
+flood_100yr.geojson
+landslide.geojson
+debris_flow.geojson
+storm_surge_ssa1.geojson
+storm_surge_ssa2.geojson
+storm_surge_ssa3.geojson
+storm_surge_ssa4.geojson
+```
+
+Then normalize them for the frontend:
+
+```bash
+python scripts/prepare_noah_hazard_overlays.py
+```
+
+The main frontend NOAH mode uses PMTiles from the published mirror. The generated files under `data/geospatial/noah/` are optional lightweight local overlays for offline use and future municipal exposure summaries.
+
+---
+
+
+## Access Monitoring Dashboard
+
+The frontend includes an **Access Monitor** module for data-use monitoring. It records visitor/session IDs, module views, browser/device summary, optional name, verified email when signed in, agency/office, role, and browser location only after the visitor grants permission.
+
+By default, records stay in the visitor's browser `localStorage` so the feature can be tested on GitHub Pages without extra infrastructure. To persist monitoring records centrally and enable email magic-link identity, run `api/supabase_auth_monitoring.sql` in Supabase, enable Supabase Auth email OTP links, add the deployed dashboard URL to the Supabase Auth redirect allow-list, then copy `frontend/js/cis-supabase-config.example.js` to `frontend/js/cis-supabase-config.js` and fill in your project values:
+
+```js
+window.CIS_MONITORING_CONFIG = {
+  supabaseUrl: 'https://your-project-ref.supabase.co',
+  supabaseAnonKey: 'your-public-anon-key',
+};
+```
+
+The starter row-level security policy allows anonymous inserts from the public app, lets authenticated users update their own `user_profiles` row, and limits central log/profile reading to authenticated Supabase users. If public read access is desired for an internal-only deployment, adjust the policies deliberately because names, emails, agencies, and consented coordinates may be personal data.
 ---
 
 ## Automated Daily Pipeline (GitHub Actions)
@@ -96,7 +152,7 @@ The pipeline runs automatically every day at **6:00 AM Philippine Standard Time*
 **Pipeline steps:**
 1. `scripts/fetch_apa_cis/cis_scraper.py` - Scrapes same-day APA CIS Region 2 municipal weather layers
 2. `scripts/fetch_acap/acap_scraper.py` - Scrapes ACAP 10-day forecast, AMIA villages, and crop-calendar metadata
-3. `scripts/fetch_nasa_power/fetch_daily.py` - Fetches NASA POWER fallback data for all 92 municipalities
+3. `scripts/fetch_nasa_power/fetch_daily.py` - Fetches NASA POWER fallback data for all 93 municipalities
 4. `scripts/fetch_chirps/fetch_daily.py` - Downloads/samples CHIRPS rainfall where available
 5. `scripts/fetch_pagasa/pagasa_ingestor.py` - Processes PAGASA PDF inbox and scrapes public pages
 6. `scripts/indicators/compute_indicators.py` - Computes all climate indicators
@@ -108,9 +164,13 @@ The pipeline runs automatically every day at **6:00 AM Philippine Standard Time*
 data/processed/daily/weather_latest.json     ← Latest weather observations
 data/raw/apa_cis/apa_cis_current.json       ← Latest APA CIS public weather scrape
 data/raw/acap/acap_current.json             ← Latest ACAP 10-day/crop-calendar scrape
-data/processed/indicators/indicators_latest.json  ← All indicators (92 muns)
+data/processed/indicators/indicators_latest.json  ← All indicators (93 muns)
 data/advisories/daily/advisories_latest.json ← Advisory report
 data/geospatial/*.geojson                    ← 8 Leaflet map layers
+data/boundaries/*.geojson                    ← Region 2 boundary overlays
+data/geospatial/noah/noah_overlay_build_status.json ← NOAH PMTiles/local overlay status
+data/geospatial/noah/*.geojson               ← Optional prepared Project NOAH local overlays
+data/processed/noah/municipal_hazard_exposure.json ← NOAH exposure summary scaffold
 data/pipeline_status.json                   ← Pipeline run status
 ```
 
@@ -159,6 +219,15 @@ To ingest a completed entry:
 python scripts/fetch_pagasa/pagasa_ingestor.py --ingest-entry data/raw/pagasa/manual_entry_2026-06-10.json
 ```
 
+### Project NOAH Hazard Context
+
+- **URL:** https://noah.up.edu.ph/
+- **Use:** Static planning hazard overlays for flood, landslide, debris flow, and storm surge.
+- **License:** Open Data Commons Open Database License (ODC-ODbL).
+- **Integration:** The dashboard loads all 9 NOAH hazard layers through the BetterGov PMTiles mirror. Local clipped GeoJSON remains optional for offline operation and municipal exposure summaries.
+- **Catalog:** `data/reference/noah_hazard_overlays.json`
+- **Scan:** `docs/noah_hazard_integration_scan.md`
+
 ---
 
 ## Climate Indicators
@@ -205,7 +274,7 @@ Each rule generates four text formats:
 ```
 apa-cis/
 ├── config/
-│   ├── municipalities.json          # 92 municipalities, PSGC codes, lat/lon, climate type
+│   ├── municipalities.json          # 93 municipalities, PSGC codes, lat/lon, climate type
 │   ├── settings.yaml                # All thresholds, API config, paths
 │   ├── climatology_1991_2020.json   # Generated by build_climatology.py
 │   └── climatology_flat.json        # Quick-lookup version
@@ -236,13 +305,17 @@ apa-cis/
 │       └── cis-main.js              # Bootstrap + module switcher
 │
 ├── data/
+│   ├── boundaries/                # Region 2 province/district/municipal/barangay overlays
 │   ├── raw/nasa_power/              # Raw API responses (gitignored for size)
+│   ├── raw/noah/                    # Downloaded/pre-clipped NOAH source files (gitignored)
 │   ├── raw/pagasa/                  # PAGASA PDFs + manual entries
 │   ├── processed/daily/             # weather_YYYY-MM-DD.json per day
 │   ├── processed/indicators/        # indicators_latest.json
 │   ├── advisories/daily/            # advisories_latest.json
 │   ├── advisories/weekly/           # weekly_summary_latest.json
-│   └── geospatial/                  # 8 GeoJSON layers for Leaflet
+│   ├── geospatial/                  # 8 GeoJSON layers for Leaflet
+│   │   └── noah/                    # NOAH PMTiles status + optional local overlays
+│   └── processed/noah/              # Municipal hazard exposure outputs
 │
 ├── tests/
 │   └── test_indicators.py           # 46 unit tests (pytest)

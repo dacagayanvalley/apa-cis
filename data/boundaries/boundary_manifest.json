@@ -1,0 +1,43 @@
+{
+  "generated_by": "scripts/prepare_boundary_overlays.py",
+  "source_note": "Administrative boundary files are treated as data only.",
+  "region": "Region II (Cagayan Valley)",
+  "layers": [
+    {
+      "id": "provinces",
+      "label": "Province Boundaries",
+      "path": "../data/boundaries/provinces_simplified.geojson",
+      "source_file": "C:\\Users\\Jeff Factora\\Downloads\\GitHub\\cagvalagrithematicmaps\\data\\provinces_simplified.geojson",
+      "feature_count": 5,
+      "dropped_null_geometry": 0,
+      "size_bytes": 185614
+    },
+    {
+      "id": "districts",
+      "label": "District Boundaries",
+      "path": "../data/boundaries/districts_simplified.geojson",
+      "source_file": "C:\\Users\\Jeff Factora\\Downloads\\GitHub\\cagvalagrithematicmaps\\data\\districts_simplified.geojson",
+      "feature_count": 12,
+      "dropped_null_geometry": 0,
+      "size_bytes": 240518
+    },
+    {
+      "id": "municipalities",
+      "label": "Municipal Boundaries",
+      "path": "../data/boundaries/municipalities_simplified.geojson",
+      "source_file": "C:\\Users\\Jeff Factora\\Downloads\\GitHub\\cagvalagrithematicmaps\\data\\municipalities_simplified.geojson",
+      "feature_count": 93,
+      "dropped_null_geometry": 1,
+      "size_bytes": 378672
+    },
+    {
+      "id": "barangays",
+      "label": "Barangay Boundaries",
+      "path": "../data/boundaries/barangay_boundaries.geojson",
+      "source_file": "C:\\Users\\Jeff Factora\\Downloads\\GitHub\\cagvalagrithematicmaps\\data\\barangay_boundaries.geojson",
+      "feature_count": 2311,
+      "dropped_null_geometry": 0,
+      "size_bytes": 2921521
+    }
+  ]
+}

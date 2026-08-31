@@ -13,6 +13,69 @@ const CISMap = (() => {
   let _currentLayer = null;
   let _currentLayerName = 'rainfall_24h';
   let _geojsonLayer = null;
+  const _boundaryLayers = {};
+  const _noahLayers = {};
+
+  const BOUNDARY_STYLES = {
+    provinces: { color: '#1B5E20', weight: 1.8, fillOpacity: 0, dashArray: null },
+    districts: { color: '#6D4C41', weight: 1.2, fillOpacity: 0, dashArray: '4 4' },
+    municipalities: { color: '#1565C0', weight: 0.9, fillOpacity: 0, dashArray: '2 3' },
+    barangays: { color: '#78909C', weight: 0.45, fillOpacity: 0, dashArray: '1 3' },
+  };
+
+  const NOAH_STYLES = {
+    flood_5yr: {
+      family: 'Flood',
+      scenario: '5-year rain return period',
+      attribute: 'Var',
+      colors: { 1: '#bfdbfe', 2: '#60a5fa', 3: '#2563eb' },
+      labels: { 1: 'Low', 2: 'Medium', 3: 'High' },
+    },
+    flood_25yr: {
+      family: 'Flood',
+      scenario: '25-year rain return period',
+      attribute: 'Var',
+      colors: { 1: '#a7f3d0', 2: '#34d399', 3: '#047857' },
+      labels: { 1: 'Low', 2: 'Medium', 3: 'High' },
+    },
+    flood_100yr: {
+      family: 'Flood',
+      scenario: '100-year rain return period',
+      attribute: 'Var',
+      colors: { 1: '#93c5fd', 2: '#3b82f6', 3: '#1d4ed8' },
+      labels: { 1: 'Low', 2: 'Medium', 3: 'High' },
+    },
+    landslide: {
+      family: 'Landslide',
+      scenario: 'Landslide susceptibility',
+      attribute: 'HAZ',
+      colors: { 1: '#fde68a', 2: '#f59e0b', 3: '#b45309' },
+      labels: { 1: 'Low', 2: 'Medium', 3: 'High' },
+    },
+    debris_flow: {
+      family: 'Landslide',
+      scenario: 'Debris flow / alluvial fan',
+      attribute: 'HAZ',
+      colors: { 1: '#fde68a', 2: '#f59e0b', 3: '#b45309' },
+      labels: { 1: 'Low', 2: 'Medium', 3: 'High' },
+    },
+    storm_surge_ssa4: {
+      family: 'Storm Surge',
+      scenario: 'SSA 4, above 5 m peak',
+      attribute: 'HAZ',
+      colors: { 1: '#fde047', 2: '#fb923c', 3: '#dc2626' },
+      labels: { 1: 'Low', 2: 'Medium', 3: 'High' },
+    },
+  };
+  ['storm_surge_ssa1', 'storm_surge_ssa2', 'storm_surge_ssa3'].forEach((layerName, index) => {
+    NOAH_STYLES[layerName] = {
+      family: 'Storm Surge',
+      scenario: `SSA ${index + 1}`,
+      attribute: 'HAZ',
+      colors: { 1: '#fde047', 2: '#fb923c', 3: '#dc2626' },
+      labels: { 1: 'Low', 2: 'Medium', 3: 'High' },
+    };
+  });
 
   // ── Legend definitions per layer ───────────────────────────────────────────
   const LEGENDS = {
@@ -223,6 +286,10 @@ const CISMap = (() => {
     );
 
     // Region 2 boundary label
+    _map.createPane('boundaryPane');
+    _map.getPane('boundaryPane').style.zIndex = 350;
+    _map.createPane('noahPane');
+    _map.getPane('noahPane').style.zIndex = 360;
     L.control.scale({ imperial: false }).addTo(_map);
   }
 
@@ -282,6 +349,130 @@ const CISMap = (() => {
         layer.on('mouseover', function() { this.openPopup(); });
       },
     }).addTo(_map);
+  }
+
+  async function toggleBoundaryLayer(layerName, enabled) {
+    if (!_map) return;
+
+    if (!enabled) {
+      _removeOverlay(_boundaryLayers, layerName);
+      _setOverlayStatus('');
+      return;
+    }
+
+    try {
+      const geojson = await CISData.getBoundaryGeoJSON(layerName);
+      const style = BOUNDARY_STYLES[layerName] || BOUNDARY_STYLES.municipalities;
+      _boundaryLayers[layerName] = L.geoJSON(geojson, {
+        pane: 'boundaryPane',
+        interactive: layerName !== 'barangays',
+        style,
+        filter: (feature) => Boolean(feature.geometry),
+        onEachFeature: (feature, layer) => {
+          if (layerName === 'barangays') return;
+          layer.bindPopup(_boundaryPopup(layerName, feature.properties || {}), { maxWidth: 240 });
+        },
+      }).addTo(_map);
+      _setOverlayStatus(`${_overlayLabel(layerName)} boundary loaded (${geojson.features?.length || 0} features).`);
+    } catch (err) {
+      console.warn(`Could not load boundary layer ${layerName}:`, err);
+      _setOverlayStatus(`Boundary layer unavailable: ${_overlayLabel(layerName)}.`);
+      _uncheckOverlayInput('boundary', layerName);
+    }
+  }
+
+  async function toggleNOAHLayer(layerName, enabled) {
+    if (!_map) return;
+
+    if (!enabled) {
+      _removeOverlay(_noahLayers, layerName);
+      _setOverlayStatus('');
+      return;
+    }
+
+    try {
+      const geojson = await CISData.getNOAHGeoJSON(layerName);
+      const styleDef = NOAH_STYLES[layerName] || NOAH_STYLES.flood_100yr;
+      _noahLayers[layerName] = L.geoJSON(geojson, {
+        pane: 'noahPane',
+        filter: (feature) => Boolean(feature.geometry),
+        style: (feature) => _noahFeatureStyle(layerName, feature.properties || {}),
+        onEachFeature: (feature, layer) => {
+          layer.bindPopup(_noahPopup(layerName, feature.properties || {}), { maxWidth: 260 });
+        },
+      }).addTo(_map);
+      _setOverlayStatus(`Project NOAH ${styleDef.family} overlay loaded (${geojson.features?.length || 0} features).`);
+    } catch (err) {
+      console.warn(`Could not load Project NOAH layer ${layerName}:`, err);
+      _setOverlayStatus(`Project NOAH layer pending: ${_overlayLabel(layerName)}. Add the clipped Region 2 GeoJSON to data/geospatial/noah/.`);
+      _uncheckOverlayInput('noah', layerName);
+    }
+  }
+
+  function _removeOverlay(collection, layerName) {
+    if (!collection[layerName]) return;
+    _map.removeLayer(collection[layerName]);
+    delete collection[layerName];
+  }
+
+  function _boundaryPopup(layerName, props) {
+    const name = props.ADM4_EN || props.municipality || props.ADM3_EN || props.ADM2_EN || props.DISTRICT || props.district || _overlayLabel(layerName);
+    const province = props.province || props.ADM2_EN || '';
+    const code = props.ADM4_PCODE || props.ADM3_PCODE || props.ADM2_PCODE || '';
+    const area = props.AREA_SQKM ? `<br>Area: <b>${Number(props.AREA_SQKM).toFixed(1)} sq km</b>` : '';
+    return `
+      <div style="font-size:12px;line-height:1.6">
+        <b>${name}</b><br>
+        ${province ? `<span style="color:#546E7A">${province}</span><br>` : ''}
+        ${code ? `Code: <b>${code}</b>` : ''}
+        ${area}
+      </div>
+    `;
+  }
+
+  function _noahFeatureStyle(layerName, props) {
+    const def = NOAH_STYLES[layerName] || NOAH_STYLES.flood_100yr;
+    const rawLevel = props.hazard_level ?? props[def.attribute] ?? props.Var ?? props.HAZ;
+    const level = String(Number(rawLevel));
+    return {
+      color: 'rgba(26,26,46,0.35)',
+      weight: 0.35,
+      fillColor: def.colors[level] || '#9E9E9E',
+      fillOpacity: 0.42,
+    };
+  }
+
+  function _noahPopup(layerName, props) {
+    const def = NOAH_STYLES[layerName] || NOAH_STYLES.flood_100yr;
+    const rawLevel = props.hazard_level ?? props[def.attribute] ?? props.Var ?? props.HAZ;
+    const level = String(Number(rawLevel));
+    const label = props.hazard_label || def.labels[level] || 'Unknown';
+    return `
+      <div style="font-size:12px;line-height:1.6">
+        <b>Project NOAH ${def.family}</b><br>
+        Scenario: <b>${props.scenario || def.scenario}</b><br>
+        Hazard level: <b>${label}</b><br>
+        <small>For planning and preparedness. Verify before high-impact decisions.</small>
+      </div>
+    `;
+  }
+
+  function _setOverlayStatus(message) {
+    const el = document.getElementById('map-overlay-status');
+    if (!el) return;
+    el.textContent = message || 'Optional overlays load only when selected.';
+  }
+
+  function _uncheckOverlayInput(kind, layerName) {
+    const input = document.querySelector(`input[data-overlay-kind="${kind}"][value="${layerName}"]`);
+    if (input) input.checked = false;
+  }
+
+  function _overlayLabel(layerName) {
+    return layerName
+      .split('_')
+      .map(part => part ? part[0].toUpperCase() + part.slice(1) : part)
+      .join(' ');
   }
 
   // ── Demo circles (no real data) ────────────────────────────────────────────
@@ -420,5 +611,5 @@ const CISMap = (() => {
   }
 
   // ── Expose ─────────────────────────────────────────────────────────────────
-  return { init, switchLayer, flyTo };
+  return { init, switchLayer, flyTo, toggleBoundaryLayer, toggleNOAHLayer };
 })();

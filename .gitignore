@@ -1,6 +1,7 @@
 # Large raw API data (regenerate anytime)
 data/raw/nasa_power/
 data/raw/chirps/
+data/raw/noah/
 
 # PAGASA materials (copyright + sensitive)
 data/raw/pagasa/*.pdf
@@ -25,3 +26,7 @@ pytest-cache-files-*/
 Thumbs.db
 .vscode/
 *.swp
+
+# Local Supabase credentials/config
+frontend/js/cis-supabase-config.js
+
