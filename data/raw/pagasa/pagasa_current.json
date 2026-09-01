@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-01",
-  "fetched_at": "2026-08-31T23:19:51.437599+00:00",
-  "fetched_at_utc": "2026-08-31T23:19:51.437599+00:00",
+  "fetched_at": "2026-09-01T01:14:48.589298+00:00",
+  "fetched_at_utc": "2026-09-01T01:14:48.589298+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,23 +11,25 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "31 August 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "1 September 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-08-31"
+    "as_of": "2026-09-01"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-08-31",
+    "as_of": "2026-09-01",
     "region2_forecast": [
-      "31 August 2026",
-      "Issued at: 7:00 AM Friday, August 28, 2026",
-      "Valid until: 7:00 AM Saturday, August 29, 2026",
-      "At 3:00 AM today, the Low Pressure Area (LPA) was estimated based on all available data at 720 km East of Itbayat, Batanes (21.9°N, 128.7°E). Southwest Monsoon affecting Luzon and Visayas.",
+      "1 September 2026",
+      "Issued at: 7:00 AM Tuesday, September 01, 2026",
+      "Valid until: 7:00 AM Wednesday, September 02, 2026",
+      "LOCATION: 645 KM WEST NORTHWEST OF ITBAYAT, BATANES (22.8°N, 116.0°E)",
+      "Ilocos Region, Abra, Benguet, Batanes, Bataan, and Zambales",
+      "Metro Manila, CALABARZON, Cagayan Valley, the rest of Cordillera Administrative Region, the rest of Central Luzon, Occidental Mindoro, Oriental Mindoro, Marinduque, Romblon, Aklan, and Antique",
+      "Metro Manila, CALABARZON, Cagayan Valley, the rest of Cordillera Administrative Region, the rest of Central Luzon, Occidental Mindoro, Oriental Mindoro, Marinduque, Romblon",
       "Ilocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA,",
-      "as of 26 August 2026)",
       "Moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026."
     ],
-    "raw_text_extracted": "31 August 2026\nIssued at: 7:00 AM Friday, August 28, 2026\nValid until: 7:00 AM Saturday, August 29, 2026\nAt 3:00 AM today, the Low Pressure Area (LPA) was estimated based on all available data at 720 km East of Itbayat, Batanes (21.9°N, 128.7°E). Southwest Monsoon affecting Luzon and Visayas.\nIlocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA,\nas of 26 August 2026)\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
+    "raw_text_extracted": "1 September 2026\nIssued at: 7:00 AM Tuesday, September 01, 2026\nValid until: 7:00 AM Wednesday, September 02, 2026\nLOCATION: 645 KM WEST NORTHWEST OF ITBAYAT, BATANES (22.8°N, 116.0°E)\nIlocos Region, Abra, Benguet, Batanes, Bataan, and Zambales\nMetro Manila, CALABARZON, Cagayan Valley, the rest of Cordillera Administrative Region, the rest of Central Luzon, Occidental Mindoro, Oriental Mindoro, Marinduque, Romblon, Aklan, and Antique\nMetro Manila, CALABARZON, Cagayan Valley, the rest of Cordillera Administrative Region, the rest of Central Luzon, Occidental Mindoro, Oriental Mindoro, Marinduque, Romblon\nIlocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA,\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -103,20 +105,12 @@
     "summary": "Tropical Depression Pilandok Bulletin #8",
     "as_of": "2026-09-01",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-08-31T23:19:51.437599+00:00",
-    "fetched_at_utc": "2026-08-31T23:19:51.437599+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "fetched_at": "2026-09-01T01:14:48.589298+00:00",
+    "fetched_at_utc": "2026-09-01T01:14:48.589298+00:00"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success",
-    "typhoon_agriculture": "skipped"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-08-31T23:19:51.437599+00:00"
+    "typhoon": "success"
   }
 }
