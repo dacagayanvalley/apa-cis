@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-02",
-  "fetched_at": "2026-09-01T17:25:22.831708+00:00",
-  "fetched_at_utc": "2026-09-01T17:25:22.831708+00:00",
+  "fetched_at": "2026-09-01T20:07:38.392623+00:00",
+  "fetched_at_utc": "2026-09-01T20:07:38.392623+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -105,8 +105,8 @@
     "summary": "Tropical Storm Pilandok Bulletin #11",
     "as_of": "2026-09-02",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-09-01T17:25:22.831708+00:00",
-    "fetched_at_utc": "2026-09-01T17:25:22.831708+00:00",
+    "fetched_at": "2026-09-01T20:07:38.392623+00:00",
+    "fetched_at_utc": "2026-09-01T20:07:38.392623+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -119,6 +119,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-09-01T17:25:22.831708+00:00"
+    "last_checked_utc": "2026-09-01T20:07:38.392623+00:00"
   }
 }
