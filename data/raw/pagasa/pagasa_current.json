@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-01",
-  "fetched_at": "2026-09-01T07:40:47.073102+00:00",
-  "fetched_at_utc": "2026-09-01T07:40:47.073102+00:00",
+  "fetched_at": "2026-09-01T13:26:38.661890+00:00",
+  "fetched_at_utc": "2026-09-01T13:26:38.661890+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -39,9 +39,9 @@
     "bulletin_status": "active",
     "name": "Pilandok",
     "disturbance_type": "Tropical Storm",
-    "bulletin_number": "9",
-    "issued_at": "11:00 am, 01 September 2026",
-    "valid_until": "the next advisory to be issued at 5:00 PM today)",
+    "bulletin_number": "10",
+    "issued_at": "05:00 pm, 01 September 2026",
+    "valid_until": "the next advisory to be issued at 11:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 0,
     "signal_levels": {
@@ -88,9 +88,9 @@
     },
     "tcws_signal_groups": [],
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 39 issued at 11:00 AM today for the heavy rainfall outlook due to the Southwest Monsoon."
+      "advisory_text": "Refer to Weather Advisory No. 40 issued at 5:00 PM today for the heavy rainfall outlook due to the Southwest Monsoon."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 39 issued at 11:00 AM today for the heavy rainfall outlook due to the Southwest Monsoon.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 40 issued at 5:00 PM today for the heavy rainfall outlook due to the Southwest Monsoon.",
     "region2_affected": false,
     "affected_provinces": [],
     "affected_municipalities": [],
@@ -102,11 +102,11 @@
       "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Tropical Storm Pilandok Bulletin #9",
+    "summary": "Tropical Storm Pilandok Bulletin #10",
     "as_of": "2026-09-01",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-09-01T07:40:47.073102+00:00",
-    "fetched_at_utc": "2026-09-01T07:40:47.073102+00:00",
+    "fetched_at": "2026-09-01T13:26:38.661890+00:00",
+    "fetched_at_utc": "2026-09-01T13:26:38.661890+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -119,6 +119,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-09-01T07:40:47.073102+00:00"
+    "last_checked_utc": "2026-09-01T13:26:38.661890+00:00"
   }
 }
