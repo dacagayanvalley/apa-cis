@@ -10,7 +10,7 @@
 // ── Module registry ─────────────────────────────────────────────────────────
 const MODULES = ['dashboard', 'map', 'advisory', 'municipal', 'planning', 'severe', 'pdf'];
 let _mapInitialised = false;
-let _activeModule = 'dashboard';
+let _activeModule = 'map';
 
 // ── Global module switcher ──────────────────────────────────────────────────
 function switchModule(name, btnEl) {
@@ -177,16 +177,11 @@ async function initCIS() {
     _updateFreshness(CISData.getPipelineStatus());
     _updateENSOBadge();
 
-    // Render the default module. Severe Weather takes priority only when
-    // PAGASA has an active bulletin affecting Cagayan Valley.
+    // Render the default landing module.
     CISDashboard.renderAll('all');
     if (_activeModule === 'pdf' && window.CISAdvisoryPDF) CISAdvisoryPDF.renderAll();
     _updateSevereWeatherNavState();
-    if (_isSevereWeatherActiveForRegion()) {
-      switchModule('severe', document.querySelector('.mnav-btn[data-module="severe"]'));
-    } else {
-      switchModule('dashboard', document.querySelector('.mnav-btn[data-module="dashboard"]'));
-    }
+    switchModule('map', document.querySelector('.mnav-btn[data-module="map"]'));
 
     console.log(
       `[APA-CIS] Data loaded: ${indicators?.meta?.municipality_count || 0} municipalities, ` +

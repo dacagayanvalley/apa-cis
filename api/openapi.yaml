@@ -180,6 +180,44 @@ paths:
       responses:
         "200":
           description: GeoJSON layer
+  /access/sessions:
+    get:
+      summary: Recent access sessions for monitoring dashboard
+      tags: [Access Monitoring]
+      responses:
+        "200":
+          description: Visitor/session records visible to authorized dashboard users
+    post:
+      summary: Create or update a visitor access session
+      tags: [Access Monitoring]
+      responses:
+        "201":
+          description: Access session recorded
+  /access/profiles:
+    get:
+      summary: Verified visitor profiles linked to Supabase Auth users
+      tags: [Access Monitoring]
+      responses:
+        "200":
+          description: Authenticated user profile records for access monitoring
+    post:
+      summary: Create or update the signed-in user's monitoring profile
+      tags: [Access Monitoring]
+      responses:
+        "201":
+          description: Monitoring profile upserted  /access/events:
+    get:
+      summary: Recent access events for module usage analytics
+      tags: [Access Monitoring]
+      responses:
+        "200":
+          description: Module view and visitor action events visible to authorized dashboard users
+    post:
+      summary: Record a visitor usage event
+      tags: [Access Monitoring]
+      responses:
+        "201":
+          description: Access event recorded
 components:
   parameters:
     Psgc:

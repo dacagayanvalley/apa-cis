@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.css"/>
   <!-- Chart.js for sparklines -->
-  <link rel="stylesheet" href="css/cis.css?v=20260805-icons-tiles"/>
+  <link rel="stylesheet" href="css/cis.css?v=20260901-map-landing"/>
 </head>
 <body>
 
@@ -35,10 +35,10 @@
 
 <!-- â”€â”€ MODULE TABS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <nav class="module-nav">
-  <button class="mnav-btn active" data-module="dashboard" onclick="switchModule('dashboard', this)">
+  <button class="mnav-btn" data-module="dashboard" onclick="switchModule('dashboard', this)">
     <span class="mnav-icon">&#128202;</span> Climate Dashboard
   </button>
-  <button class="mnav-btn" data-module="map" onclick="switchModule('map', this)">
+  <button class="mnav-btn active" data-module="map" onclick="switchModule('map', this)">
     <span class="mnav-icon">&#128506;</span> Map Layers
   </button>
   <button class="mnav-btn" data-module="advisory" onclick="switchModule('advisory', this)">
@@ -61,7 +61,7 @@
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <!-- MODULE: CLIMATE DASHBOARD                                  -->
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<div id="module-dashboard" class="module active">
+<div id="module-dashboard" class="module">
 
   <!-- Province filter bar -->
   <div class="filter-bar">
@@ -190,7 +190,19 @@
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <!-- MODULE: MAP LAYERS                                         -->
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<div id="module-map" class="module">
+<div id="module-map" class="module active">
+  <div class="map-landing-bar">
+    <div>
+      <h1>Climate Information System</h1>
+      <p>Interactive municipal climate and Project NOAH hazard view for DA RFO 02 Cagayan Valley operations.</p>
+    </div>
+    <label class="municipality-picker">
+      <span>Selected Municipality</span>
+      <select id="map-municipality-select" onchange="CISMap.selectMunicipality(this.value, { fly: true })">
+        <option value="">Loading municipalities...</option>
+      </select>
+    </label>
+  </div>
   <div class="map-container">
     <!-- Layer selector sidebar -->
     <div class="layer-sidebar">
@@ -199,8 +211,17 @@
         <div class="lg-label">Weather</div>
         <label class="layer-item active-layer" id="li-rainfall_24h">
           <input type="radio" name="map-layer" value="rainfall_24h" checked onchange="switchLayer('rainfall_24h')">
-          <span class="layer-dot" style="background:#1E88E5"></span> Rainfall 24h
+          <span class="layer-dot" style="background:#1E88E5"></span> Rainfall
         </label>
+        <div class="rainfall-interval-control">
+          <span>Forecast Interval</span>
+          <select id="rainfall-interval-select" onchange="CISMap.switchRainfallInterval(this.value)">
+            <option value="rainfall_24h">Observed 24h</option>
+            <option value="rainfall_1h">UP NOAH 1-hour</option>
+            <option value="rainfall_3h">UP NOAH 3-hour</option>
+            <option value="rainfall_6h">UP NOAH 6-hour</option>
+          </select>
+        </div>
         <label class="layer-item" id="li-drought_watch">
           <input type="radio" name="map-layer" value="drought_watch" onchange="switchLayer('drought_watch')">
           <span class="layer-dot" style="background:#FF7043"></span> Drought Watch (CDD)
@@ -322,6 +343,13 @@
     <!-- Leaflet map -->
     <div id="leaflet-map"></div>
     <div id="noah-map" hidden></div>
+
+    <aside class="map-cis-panel" id="map-cis-panel" aria-live="polite">
+      <div class="map-cis-empty">
+        <strong>Climate Information System</strong>
+        <span>Select a municipality on the map to view rainfall, risk, field workability, and advisory status.</span>
+      </div>
+    </aside>
 
     <!-- Municipality hover popup overlay -->
     <div class="map-tooltip" id="map-tooltip" style="display:none"></div>
@@ -676,13 +704,13 @@
 <script src="https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.js"></script>
 <script src="https://unpkg.com/pmtiles@3.2.1/dist/pmtiles.js"></script>
 <script src="js/cis-data.js?v=20260805-pdf"></script>
-<script src="js/cis-map.js?v=20260804-agri"></script>
-<script src="js/cis-noah-map.js?v=20260831-noah-pmtiles"></script>
+<script src="js/cis-map.js?v=20260901-map-landing"></script>
+<script src="js/cis-noah-map.js?v=20260901-map-landing"></script>
 <script src="js/cis-dashboard.js?v=20260804-agri"></script>
 <script src="js/cis-advisory.js?v=20260805-icons-tiles"></script>
 <script src="js/cis-planning.js?v=20260805-icons-tiles"></script>
 <script src="js/cis-severe-weather.js?v=20260804-agri"></script>
 <script src="js/cis-advisory-pdf.js?v=20260805-amia-template"></script>
-<script src="js/cis-main.js?v=20260805-icons-tiles"></script>
+<script src="js/cis-main.js?v=20260901-map-landing"></script>
 </body>
 </html>

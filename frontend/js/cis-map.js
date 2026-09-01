@@ -13,8 +13,60 @@ const CISMap = (() => {
   let _currentLayer = null;
   let _currentLayerName = 'rainfall_24h';
   let _geojsonLayer = null;
+  let _selectedPSGC = null;
+  let _selectedMarker = null;
   const _boundaryLayers = {};
   const _noahLayers = {};
+  const _activeOverlayLegends = new Set();
+
+  const RAINFALL_LAYER_NAMES = new Set(['rainfall_1h', 'rainfall_3h', 'rainfall_6h']);
+  const RAINFALL_INTERVALS = {
+    rainfall_1h: {
+      title: 'UP NOAH Rainfall Forecast (1-hour)',
+      label: 'UP NOAH 1-hour',
+      field: 'up_noah_rainfall_1h_mm',
+      popupLabel: 'Rainfall forecast (1-hour)',
+      sourceLabel: 'UP NOAH 1-hour sampled rainfall contour',
+      ranges: [2.5, 7.5, 15, 30],
+      items: [
+        { color:'#11C2C3', label:'Light (0-2.5 mm)' },
+        { color:'#0F3EF7', label:'Moderate (2.5-7.5 mm)' },
+        { color:'#0C0A97', label:'Heavy (7.5-15 mm)' },
+        { color:'#FF9708', label:'Intense (15-30 mm)' },
+        { color:'#FF3211', label:'Torrential (> 30 mm)' },
+      ],
+    },
+    rainfall_3h: {
+      title: 'UP NOAH Rainfall Forecast (3-hour)',
+      label: 'UP NOAH 3-hour',
+      field: 'up_noah_rainfall_3h_mm',
+      popupLabel: 'Rainfall forecast (3-hour)',
+      sourceLabel: 'UP NOAH 3-hour sampled rainfall contour',
+      ranges: [20, 40, 60, 70],
+      items: [
+        { color:'#11C2C3', label:'Light (0-20 mm)' },
+        { color:'#0F3EF7', label:'Moderate (20-40 mm)' },
+        { color:'#0C0A97', label:'Heavy (40-60 mm)' },
+        { color:'#FF9708', label:'Intense (60-70 mm)' },
+        { color:'#FF3211', label:'Torrential (> 70 mm)' },
+      ],
+    },
+    rainfall_6h: {
+      title: 'UP NOAH Rainfall Forecast (6-hour)',
+      label: 'UP NOAH 6-hour',
+      field: 'up_noah_rainfall_6h_mm',
+      popupLabel: 'Rainfall forecast (6-hour)',
+      sourceLabel: 'UP NOAH 6-hour sampled rainfall contour',
+      ranges: [40, 80, 120, 160],
+      items: [
+        { color:'#11C2C3', label:'Light (0-40 mm)' },
+        { color:'#0F3EF7', label:'Moderate (40-80 mm)' },
+        { color:'#0C0A97', label:'Heavy (80-120 mm)' },
+        { color:'#FF9708', label:'Intense (120-160 mm)' },
+        { color:'#FF3211', label:'Torrential (> 160 mm)' },
+      ],
+    },
+  };
 
   const BOUNDARY_STYLES = {
     provinces: { color: '#1B5E20', weight: 1.8, fillOpacity: 0, dashArray: null },
@@ -167,7 +219,58 @@ const CISMap = (() => {
         { color:'#B71C1C', label:'Danger' },
       ]
     },
+    boundary: {
+      title: 'Administrative Boundaries',
+      items: [
+        { color:'#1B5E20', label:'Province boundary' },
+        { color:'#6D4C41', label:'District boundary' },
+        { color:'#1565C0', label:'Municipal boundary' },
+        { color:'#78909C', label:'Barangay boundary' },
+      ],
+    },
+    noah_flood: {
+      title: 'Project NOAH Flood Hazard',
+      items: [
+        { color:'#bfdbfe', label:'Low susceptibility' },
+        { color:'#60a5fa', label:'Medium susceptibility' },
+        { color:'#2563eb', label:'High susceptibility' },
+      ],
+    },
+    noah_landslide: {
+      title: 'Project NOAH Landslide / Debris Flow',
+      items: [
+        { color:'#fde68a', label:'Low susceptibility' },
+        { color:'#f59e0b', label:'Medium susceptibility' },
+        { color:'#b45309', label:'High susceptibility' },
+      ],
+    },
+    noah_storm_surge: {
+      title: 'Project NOAH Storm Surge',
+      items: [
+        { color:'#fde047', label:'Low susceptibility' },
+        { color:'#fb923c', label:'Medium susceptibility' },
+        { color:'#dc2626', label:'High susceptibility' },
+      ],
+    },
   };
+  Object.entries(RAINFALL_INTERVALS).forEach(([layerName, def]) => {
+    LEGENDS[layerName] = { title: def.title, items: def.items };
+  });
+  Object.entries(BOUNDARY_STYLES).forEach(([layerName, style]) => {
+    LEGENDS[`boundary:${layerName}`] = {
+      title: `${_overlayLabel(layerName)} Boundary`,
+      items: [{ color: style.color, label: `${_overlayLabel(layerName)} outline` }],
+    };
+  });
+  Object.entries(NOAH_STYLES).forEach(([layerName, def]) => {
+    LEGENDS[`noah:${layerName}`] = {
+      title: `Project NOAH ${_overlayLabel(layerName)}`,
+      items: Object.entries(def.labels).map(([level, label]) => ({
+        color: def.colors[level],
+        label: `${label} susceptibility`,
+      })),
+    };
+  });
 
   // ── Colour functions per layer ─────────────────────────────────────────────
   const COLOUR_FNS = {
@@ -190,6 +293,9 @@ const CISMap = (() => {
     municipal_risk:   (props) => props.color || '#4CAF50',
     advisory_status:  (props) => props.color || '#4CAF50',
   };
+  RAINFALL_LAYER_NAMES.forEach(layerName => {
+    COLOUR_FNS[layerName] = (props) => _rainfallIntervalColor(layerName, props.rainfall_mm);
+  });
 
   // ── Popup content builders ─────────────────────────────────────────────────
   const POPUP_FNS = {
@@ -261,6 +367,19 @@ const CISMap = (() => {
       ${props.primary_advisory ? `<small>${props.primary_advisory}</small>` : ''}
     `,
   };
+  RAINFALL_LAYER_NAMES.forEach(layerName => {
+    POPUP_FNS[layerName] = (props) => {
+      const def = RAINFALL_INTERVALS[layerName];
+      return `
+        <b>${props.municipality}</b><br>
+        <span style="color:#546E7A">${props.province}</span><br>
+        <hr style="margin:4px 0">
+        ${def.popupLabel}: <b>${props.rainfall_mm !== null && props.rainfall_mm !== undefined ? props.rainfall_mm + ' mm' : '—'}</b><br>
+        Source: <b>UP NOAH</b><br>
+        <small>${props.sampling_note || 'Centroid sample from public rainfall contour overlay.'}</small>
+      `;
+    };
+  });
 
   // ── Initialise Leaflet map ─────────────────────────────────────────────────
   function init(containerId = 'leaflet-map') {
@@ -291,6 +410,8 @@ const CISMap = (() => {
     _map.createPane('noahPane');
     _map.getPane('noahPane').style.zIndex = 360;
     L.control.scale({ imperial: false }).addTo(_map);
+    _populateMunicipalitySelect();
+    _selectDefaultMunicipality();
   }
 
   // ── Switch active layer ────────────────────────────────────────────────────
@@ -309,17 +430,21 @@ const CISMap = (() => {
     }
 
     try {
-      const geojson = await CISData.getGeoJSON(layerName);
+      const geojson = RAINFALL_LAYER_NAMES.has(layerName)
+        ? _buildRainfallIntervalGeoJSON(layerName)
+        : await CISData.getGeoJSON(layerName);
       _renderGeoJSONLayer(geojson, layerName);
-      _updateLegend(layerName);
+      _renderLegendPanel();
       _updateLayerSidebarActive(layerName);
+      _syncRainfallIntervalSelect(layerName);
       _updateDataInfo(layerName);
     } catch (err) {
       console.warn(`Could not load layer ${layerName}:`, err);
       // If no real data yet, show demo circles on the map
       _renderDemoLayer(layerName);
-      _updateLegend(layerName);
+      _renderLegendPanel();
       _updateLayerSidebarActive(layerName);
+      _syncRainfallIntervalSelect(layerName);
     }
   }
 
@@ -347,6 +472,12 @@ const CISMap = (() => {
           { maxWidth: 220, offset: [0, -4] }
         );
         layer.on('mouseover', function() { this.openPopup(); });
+        layer.on('click', function() {
+          selectMunicipality(p.psgc, { marker: this });
+        });
+        if (p.psgc && p.psgc === _selectedPSGC) {
+          _highlightMarker(layer);
+        }
       },
     }).addTo(_map);
   }
@@ -356,6 +487,7 @@ const CISMap = (() => {
 
     if (!enabled) {
       _removeOverlay(_boundaryLayers, layerName);
+      _setOverlayLegendActive('boundary', layerName, false);
       _setOverlayStatus('');
       return;
     }
@@ -373,9 +505,11 @@ const CISMap = (() => {
           layer.bindPopup(_boundaryPopup(layerName, feature.properties || {}), { maxWidth: 240 });
         },
       }).addTo(_map);
+      _setOverlayLegendActive('boundary', layerName, true);
       _setOverlayStatus(`${_overlayLabel(layerName)} boundary loaded (${geojson.features?.length || 0} features).`);
     } catch (err) {
       console.warn(`Could not load boundary layer ${layerName}:`, err);
+      _setOverlayLegendActive('boundary', layerName, false);
       _setOverlayStatus(`Boundary layer unavailable: ${_overlayLabel(layerName)}.`);
       _uncheckOverlayInput('boundary', layerName);
     }
@@ -386,6 +520,7 @@ const CISMap = (() => {
 
     if (!enabled) {
       _removeOverlay(_noahLayers, layerName);
+      _setOverlayLegendActive('noah', layerName, false);
       _setOverlayStatus('');
       return;
     }
@@ -401,9 +536,11 @@ const CISMap = (() => {
           layer.bindPopup(_noahPopup(layerName, feature.properties || {}), { maxWidth: 260 });
         },
       }).addTo(_map);
+      _setOverlayLegendActive('noah', layerName, true);
       _setOverlayStatus(`Project NOAH ${styleDef.family} overlay loaded (${geojson.features?.length || 0} features).`);
     } catch (err) {
       console.warn(`Could not load Project NOAH layer ${layerName}:`, err);
+      _setOverlayLegendActive('noah', layerName, false);
       _setOverlayStatus(`Project NOAH layer pending: ${_overlayLabel(layerName)}. Add the clipped Region 2 GeoJSON to data/geospatial/noah/.`);
       _uncheckOverlayInput('noah', layerName);
     }
@@ -517,27 +654,52 @@ const CISMap = (() => {
   }
 
   // ── Legend renderer ────────────────────────────────────────────────────────
-  function _updateLegend(layerName) {
+  function _renderLegendPanel() {
     const el = document.getElementById('map-legend');
     if (!el) return;
-    const def = LEGENDS[layerName];
-    if (!def) { el.innerHTML = ''; return; }
+    const legendKeys = [_currentLayerName, ..._overlayLegendKeys()];
+    const uniqueKeys = Array.from(new Set(legendKeys));
 
-    el.innerHTML = `
-      <div class="legend-title">${def.title}</div>
-      ${def.items.map(item => `
-        <div class="legend-item">
-          <span class="legend-swatch" style="background:${item.color}"></span>
-          ${item.label}
-        </div>
-      `).join('')}
+    el.innerHTML = uniqueKeys
+      .map(key => LEGENDS[key] ? _legendBlock(LEGENDS[key]) : '')
+      .filter(Boolean)
+      .join('');
+  }
+
+  function _legendBlock(def) {
+    return `
+      <div class="legend-block">
+        <div class="legend-title">${def.title}</div>
+        ${def.items.map(item => `
+          <div class="legend-item">
+            <span class="legend-swatch" style="background:${item.color}"></span>
+            ${item.label}
+          </div>
+        `).join('')}
+      </div>
     `;
+  }
+
+  function _overlayLegendKeys() {
+    return Array.from(_activeOverlayLegends).sort((a, b) => a.localeCompare(b));
+  }
+
+  function setOverlayLegendActive(kind, layerName, enabled) {
+    _setOverlayLegendActive(kind, layerName, enabled);
+  }
+
+  function _setOverlayLegendActive(kind, layerName, enabled) {
+    const key = `${kind}:${layerName}`;
+    if (enabled) _activeOverlayLegends.add(key);
+    else _activeOverlayLegends.delete(key);
+    _renderLegendPanel();
   }
 
   function _updateLayerSidebarActive(layerName) {
     document.querySelectorAll('.layer-item').forEach(el => el.classList.remove('active-layer'));
     const active = document.getElementById(`li-${layerName}`);
-    if (active) active.classList.add('active-layer');
+    const rainfallActive = RAINFALL_LAYER_NAMES.has(layerName) ? document.getElementById('li-rainfall_24h') : active;
+    if (rainfallActive) rainfallActive.classList.add('active-layer');
   }
 
   function _updateDataInfo(layerName) {
@@ -562,6 +724,7 @@ const CISMap = (() => {
 
   // ── Fly to a municipality ──────────────────────────────────────────────────
   function _sourceLabelForLayer(layerName) {
+    if (RAINFALL_LAYER_NAMES.has(layerName)) return RAINFALL_INTERVALS[layerName].sourceLabel;
     if (layerName === 'rainfall_24h') {
       const rows = CISData.getMunicipalRows('all');
       const apaCount = rows.filter(r => r.observations?.rainfall_source === 'apa_cis').length;
@@ -591,6 +754,12 @@ const CISMap = (() => {
   function _qaLabelForLayer(layerName) {
     const rows = CISData.getMunicipalRows('all');
     if (!rows.length) return 'No municipal records loaded.';
+    if (RAINFALL_LAYER_NAMES.has(layerName)) {
+      const def = RAINFALL_INTERVALS[layerName];
+      const rows = CISData.getMunicipalRows('all');
+      const availableCount = rows.filter(r => r.observations?.[def.field] !== null && r.observations?.[def.field] !== undefined).length;
+      return `${availableCount}/${rows.length} municipalities have ${def.label} values.`;
+    }
     if (layerName === 'rainfall_24h') {
       const fallbackCount = rows.filter(r => r.observations?.rainfall_source === 'nasa_power').length;
       return fallbackCount
@@ -611,6 +780,221 @@ const CISMap = (() => {
     if (_map) _map.flyTo([lat, lon], zoom, { duration: 1.2 });
   }
 
+  function switchRainfallInterval(layerName) {
+    const rainfallRadio = document.querySelector('input[name="map-layer"][value="rainfall_24h"]');
+    if (rainfallRadio) rainfallRadio.checked = true;
+    switchLayer(layerName);
+  }
+
+  function _buildRainfallIntervalGeoJSON(layerName) {
+    const def = RAINFALL_INTERVALS[layerName];
+    const features = CISData.getMunicipalRows('all')
+      .filter(r => r.lat !== null && r.lat !== undefined && r.lon !== null && r.lon !== undefined)
+      .map(r => ({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [r.lon, r.lat] },
+        properties: {
+          psgc: r.psgc,
+          municipality: r.municipality,
+          province: r.province,
+          rainfall_mm: r.observations?.[def.field] ?? null,
+          sampling_note: 'Values are legend-class estimates from public UP NOAH PNG overlays.',
+        },
+      }));
+    return { type: 'FeatureCollection', features };
+  }
+
+  function _rainfallIntervalColor(layerName, value) {
+    const def = RAINFALL_INTERVALS[layerName];
+    const mm = Number(value);
+    if (!Number.isFinite(mm)) return '#E0E0E0';
+    if (mm < def.ranges[0]) return '#11C2C3';
+    if (mm < def.ranges[1]) return '#0F3EF7';
+    if (mm < def.ranges[2]) return '#0C0A97';
+    if (mm < def.ranges[3]) return '#FF9708';
+    return '#FF3211';
+  }
+
+  function _syncRainfallIntervalSelect(layerName) {
+    const select = document.getElementById('rainfall-interval-select');
+    if (!select) return;
+    if (layerName === 'rainfall_24h' || RAINFALL_LAYER_NAMES.has(layerName)) {
+      select.value = layerName;
+    }
+  }
+
+  function selectMunicipality(psgc, options = {}) {
+    if (!psgc) return;
+    const ind = CISData.getIndicatorByPSGC(psgc);
+    if (!ind) return;
+
+    _selectedPSGC = psgc;
+    _syncMunicipalitySelect(psgc);
+    _renderMunicipalityPanel(ind);
+
+    if (options.marker) {
+      _highlightMarker(options.marker);
+    } else {
+      _highlightMarkerForPSGC(psgc);
+    }
+
+    if (options.fly && ind.lat && ind.lon) {
+      flyTo(ind.lat, ind.lon, 11);
+    }
+  }
+
+  function _populateMunicipalitySelect() {
+    const select = document.getElementById('map-municipality-select');
+    if (!select) return;
+
+    const rows = CISData.getMunicipalRows('all')
+      .sort((a, b) => a.province.localeCompare(b.province) || a.municipality.localeCompare(b.municipality));
+
+    if (!rows.length) {
+      select.innerHTML = '<option value="">No municipalities loaded</option>';
+      return;
+    }
+
+    select.innerHTML = rows.map(row => (
+      `<option value="${_escapeAttr(row.psgc)}">${_escapeHtml(row.municipality)}, ${_escapeHtml(row.province)}</option>`
+    )).join('');
+  }
+
+  function _selectDefaultMunicipality() {
+    if (_selectedPSGC) {
+      selectMunicipality(_selectedPSGC);
+      return;
+    }
+    const priority = CISData.getPriorityMunicipalities?.(1)?.[0];
+    const firstRow = CISData.getMunicipalRows('all')[0];
+    const psgc = priority?.psgc || firstRow?.psgc;
+    if (psgc) selectMunicipality(psgc);
+  }
+
+  function _renderMunicipalityPanel(ind) {
+    const panel = document.getElementById('map-cis-panel');
+    if (!panel) return;
+
+    const obs = ind.observations || {};
+    const indicators = ind.indicators || {};
+    const hs = indicators.heat_stress || {};
+    const fw = indicators.field_workability || {};
+    const anom = indicators.rainfall_anomaly || {};
+    const adv = CISData.getAdvisoryForMunicipality(ind.psgc);
+    const fmt = CISData.fmt;
+    const severity = adv?.highest_severity || 'none';
+    const primary = adv?.advisories?.[0];
+
+    panel.innerHTML = `
+      <div class="map-cis-head">
+        <span class="map-cis-kicker">Climate Information System</span>
+        <h2>${_escapeHtml(ind.municipality)}</h2>
+        <p>${_escapeHtml(ind.province)} &middot; As of ${_escapeHtml(ind.as_of_date || 'latest available')}</p>
+      </div>
+      <div class="map-cis-body">
+        <div class="map-cis-alert ${severity}">
+          ${fmt.severityPill(severity)}
+          <strong>${_escapeHtml(primary?.rule_name || 'No active municipal advisory triggered.')}</strong>
+        </div>
+        <div class="map-cis-metrics">
+          ${_metric(_selectedRainfallMetricLabel(), _selectedRainfallMetricValue(obs, fmt))}
+          ${_metric('Max Temp', fmt.formatTemp(obs.tmax_c))}
+          ${_metric('Dry Days', indicators.cdd ?? '-')}
+          ${_metric('Risk Score', `${indicators.municipal_risk_score ?? '-'}/100`)}
+          ${_metric('Drought', _labelize(indicators.drought_class || 'none'))}
+          ${_metric('Heat Stress', _labelize(hs.heat_class || 'none'))}
+        </div>
+        <div class="map-cis-section">
+          <div class="map-cis-section-title">Operations</div>
+          <div class="map-cis-section-body">
+            <div class="mc-row"><span class="mc-key">Field Work</span><span class="mc-val">${fmt.workabilityPill(fw.overall_class)}</span></div>
+            <div class="mc-row"><span class="mc-key">Rainfall Anomaly</span><span class="mc-val">${anom.pct_of_normal ? `${anom.pct_of_normal}% of normal` : '-'}</span></div>
+            <div class="mc-row"><span class="mc-key">Irrigation Demand</span><span class="mc-val">${indicators.irrigation_demand?.demand_mm ?? '-'} mm/day</span></div>
+          </div>
+        </div>
+        <div class="map-cis-section">
+          <div class="map-cis-section-title">Current Source</div>
+          <div class="map-cis-section-body">
+            <span>${_escapeHtml(_sourceSummary(obs))}</span>
+          </div>
+        </div>
+        <button class="map-cis-action" type="button" onclick="CISMap.openMunicipalProfile()">Open Municipal Profile</button>
+      </div>
+    `;
+  }
+
+  function openMunicipalProfile() {
+    if (!_selectedPSGC) return;
+    switchModule('municipal', null);
+    CISMunicipal.selectByPSGC(_selectedPSGC);
+  }
+
+  function _metric(label, value) {
+    return `
+      <div class="map-cis-metric">
+        <span>${_escapeHtml(label)}</span>
+        <strong>${_escapeHtml(String(value ?? '-'))}</strong>
+      </div>
+    `;
+  }
+
+  function _highlightMarker(marker) {
+    if (_selectedMarker && _selectedMarker.setStyle) {
+      _selectedMarker.setStyle({ radius: 9, weight: 1, color: 'rgba(0,0,0,0.3)', fillOpacity: 0.85 });
+    }
+    _selectedMarker = marker;
+    if (_selectedMarker?.setStyle) {
+      _selectedMarker.setStyle({ radius: 13, weight: 3, color: '#111827', fillOpacity: 0.95 });
+      _selectedMarker.bringToFront?.();
+    }
+  }
+
+  function _highlightMarkerForPSGC(psgc) {
+    if (!_geojsonLayer) return;
+    _geojsonLayer.eachLayer(layer => {
+      if (layer.feature?.properties?.psgc === psgc) {
+        _highlightMarker(layer);
+      }
+    });
+  }
+
+  function _syncMunicipalitySelect(psgc) {
+    const select = document.getElementById('map-municipality-select');
+    if (select && select.value !== psgc) select.value = psgc;
+  }
+
+  function _sourceSummary(obs) {
+    const source = obs.rainfall_source || 'nasa_power';
+    if (source === 'apa_cis') return `APA-CIS rainfall (${obs.apa_cis_record_date || 'current'})`;
+    if (source === 'up_noah') return `UP NOAH sampled rainfall (${obs.up_noah_record_date || 'latest'})`;
+    if (source === 'chirps') return `CHIRPS rainfall (${obs.chirps_record_date || 'latest'})`;
+    return 'NASA POWER rainfall fallback';
+  }
+
+  function _labelize(value) {
+    return String(value || '').replace(/_/g, ' ');
+  }
+
+  function _escapeHtml(str) {
+    return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function _escapeAttr(str) {
+    return _escapeHtml(str).replace(/"/g, '&quot;');
+  }
+
   // ── Expose ─────────────────────────────────────────────────────────────────
-  return { init, switchLayer, flyTo, toggleBoundaryLayer, toggleNOAHLayer };
+  function _selectedRainfallMetricLabel() {
+    return RAINFALL_INTERVALS[_currentLayerName]?.label || 'Rainfall 24h';
+  }
+
+  function _selectedRainfallMetricValue(obs, fmt) {
+    const field = RAINFALL_INTERVALS[_currentLayerName]?.field;
+    return field ? fmt.formatRainfall(obs[field]) : fmt.formatRainfall(obs.rainfall_24h_mm);
+  }
+
+  return {
+    init, switchLayer, switchRainfallInterval, flyTo, selectMunicipality,
+    openMunicipalProfile, toggleBoundaryLayer, toggleNOAHLayer, setOverlayLegendActive
+  };
 })();

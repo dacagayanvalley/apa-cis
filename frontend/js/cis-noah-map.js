@@ -82,10 +82,14 @@ const CISNOAHMap = (() => {
 
     if (enabled) activeLayers.add(layerName);
     else activeLayers.delete(layerName);
+    if (typeof CISMap !== 'undefined' && CISMap.setOverlayLegendActive) {
+      CISMap.setOverlayLegendActive('noah', layerName, enabled);
+    }
 
     if (!activeLayers.size) {
       _showNOAHMode(false);
       _setStatus('Optional overlays load only when selected.');
+      _clearNOAHLegends();
       return;
     }
 
@@ -101,8 +105,19 @@ const CISNOAHMap = (() => {
       })
       .catch((err) => {
         console.warn('Could not initialize Project NOAH PMTiles map:', err);
+        activeLayers.delete(layerName);
+        if (typeof CISMap !== 'undefined' && CISMap.setOverlayLegendActive) {
+          CISMap.setOverlayLegendActive('noah', layerName, false);
+        }
         _setStatus('Project NOAH PMTiles could not load. Check internet access and retry.');
       });
+  }
+
+  function _clearNOAHLegends() {
+    if (typeof CISMap === 'undefined' || !CISMap.setOverlayLegendActive) return;
+    Object.keys(LAYERS).forEach(layerName => {
+      CISMap.setOverlayLegendActive('noah', layerName, false);
+    });
   }
 
   function _loadMap() {
