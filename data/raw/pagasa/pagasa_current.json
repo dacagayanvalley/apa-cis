@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-02",
-  "fetched_at": "2026-09-02T11:08:25.035665+00:00",
-  "fetched_at_utc": "2026-09-02T11:08:25.035665+00:00",
+  "fetched_at": "2026-09-02T15:15:08.114896+00:00",
+  "fetched_at_utc": "2026-09-02T15:15:08.114896+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -38,9 +38,9 @@
     "bulletin_status": "active",
     "name": "Pilandok",
     "disturbance_type": "Tropical Storm",
-    "bulletin_number": "14",
-    "issued_at": "05:00 pm, 02 September 2026",
-    "valid_until": "the next advisory to be issued at 11:00 PM today)",
+    "bulletin_number": "15",
+    "issued_at": "11:00 pm, 02 September 2026",
+    "valid_until": "the next advisory to be issued at 5:00 AM tomorrow)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 0,
     "signal_levels": {
@@ -50,13 +50,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": 65.0,
-    "peak_wind_gust_kmh": 80.0,
-    "gustiness_kmh": 80.0,
+    "max_sustained_wind_kmh": 75.0,
+    "peak_wind_gust_kmh": 90.0,
+    "gustiness_kmh": 90.0,
     "wind": {
-      "max_sustained_wind_kmh": 65.0,
-      "peak_wind_gust_kmh": 80.0,
-      "gustiness_kmh": 80.0
+      "max_sustained_wind_kmh": 75.0,
+      "peak_wind_gust_kmh": 90.0,
+      "gustiness_kmh": 90.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -87,9 +87,9 @@
     },
     "tcws_signal_groups": [],
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 44 issued at 5:00 PM today for the heavy rainfall outlook due to the Southwest Monsoon."
+      "advisory_text": "Refer to Weather Advisory No. 45 issued at 11:00 PM today for the heavy rainfall outlook due to the Southwest Monsoon."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 44 issued at 5:00 PM today for the heavy rainfall outlook due to the Southwest Monsoon.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 45 issued at 11:00 PM today for the heavy rainfall outlook due to the Southwest Monsoon.",
     "region2_affected": true,
     "affected_provinces": [
       "Batanes",
@@ -578,11 +578,11 @@
       "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Tropical Storm Pilandok Bulletin #14",
+    "summary": "Tropical Storm Pilandok Bulletin #15",
     "as_of": "2026-09-02",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-09-02T11:08:25.035665+00:00",
-    "fetched_at_utc": "2026-09-02T11:08:25.035665+00:00",
+    "fetched_at": "2026-09-02T15:15:08.114896+00:00",
+    "fetched_at_utc": "2026-09-02T15:15:08.114896+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -676,6 +676,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-09-02T11:08:25.035665+00:00"
+    "last_checked_utc": "2026-09-02T15:15:08.114896+00:00"
   }
 }
