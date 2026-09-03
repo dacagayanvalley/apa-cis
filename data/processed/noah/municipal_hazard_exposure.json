@@ -1,7 +1,7 @@
 {
   "meta": {
     "generated_by": "scripts/compute_noah_municipal_exposure.py",
-    "generated_at": "2026-09-02T00:01:05.398920+00:00",
+    "generated_at": "2026-09-03T23:58:50.735702+00:00",
     "status": "pending_local_geometry",
     "method": "source_readiness_only",
     "exact_note": "Install shapely, pyshp, and pyproj to compute direct ZIP intersections.",
