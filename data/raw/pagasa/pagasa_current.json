@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-07",
-  "fetched_at": "2026-09-06T23:04:06.312381+00:00",
-  "fetched_at_utc": "2026-09-06T23:04:06.312381+00:00",
+  "fetched_at": "2026-09-06T23:46:59.301686+00:00",
+  "fetched_at_utc": "2026-09-06T23:46:59.301686+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,23 +11,22 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "6 September 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "7 September 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-09-06"
+    "as_of": "2026-09-07"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-09-06",
+    "as_of": "2026-09-07",
     "region2_forecast": [
-      "6 September 2026",
-      "Issued at: 7:00 AM Friday, September 04, 2026",
-      "Valid until: 7:00 AM Saturday, September 05, 2026",
-      "Cagayan Valley, Cordillera Administrative Region, the rest of Ilocos Region, the rest of Central Luzon, the rest of CALABARZON, the rest of MIMAROPA, Antique, Iloilo, and Guimaras",
-      "Cagayan Valley, Cordillera Administrative Region, the rest of Ilocos Region, the rest of Central Luzon, the rest of CALABARZON, the rest of MIMAROPA –",
-      "Ilocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA,",
+      "7 September 2026",
+      "Issued at: 7:00 AM Monday, September 07, 2026",
+      "Valid until: 7:00 AM Tuesday, September 08, 2026",
+      "Ilocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA",
+      "as of 26 August 2026)",
       "Moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026."
     ],
-    "raw_text_extracted": "6 September 2026\nIssued at: 7:00 AM Friday, September 04, 2026\nValid until: 7:00 AM Saturday, September 05, 2026\nCagayan Valley, Cordillera Administrative Region, the rest of Ilocos Region, the rest of Central Luzon, the rest of CALABARZON, the rest of MIMAROPA, Antique, Iloilo, and Guimaras\nCagayan Valley, Cordillera Administrative Region, the rest of Ilocos Region, the rest of Central Luzon, the rest of CALABARZON, the rest of MIMAROPA –\nIlocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA,\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
+    "raw_text_extracted": "7 September 2026\nIssued at: 7:00 AM Monday, September 07, 2026\nValid until: 7:00 AM Tuesday, September 08, 2026\nIlocos Region, Itbayat, Aparri, Tuguegarao, Isabela, Cordillera Administrative Region, Central Luzon, National Capital Region, most areas of CALABARZON, and most areas of MIMAROPA\nas of 26 August 2026)\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -101,20 +100,12 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-09-07",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-09-06T23:04:06.312381+00:00",
-    "fetched_at_utc": "2026-09-06T23:04:06.312381+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "fetched_at": "2026-09-06T23:46:59.301686+00:00",
+    "fetched_at_utc": "2026-09-06T23:46:59.301686+00:00"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success",
-    "typhoon_agriculture": "skipped"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-09-06T23:04:06.312381+00:00"
+    "typhoon": "success"
   }
 }

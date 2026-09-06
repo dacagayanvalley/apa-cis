@@ -558,7 +558,7 @@
         "psgc": "031404000",
         "municipality": "Aurora",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -898,8 +898,8 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "risk_score": 16.0,
-        "color": "#FFC107"
+        "risk_score": 8.0,
+        "color": "#4CAF50"
       }
     },
     {
@@ -949,7 +949,7 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -966,7 +966,7 @@
         "psgc": "031428000",
         "municipality": "San Guillermo",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -1493,8 +1493,8 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 23.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -1510,8 +1510,8 @@
         "psgc": "020101000",
         "municipality": "Itbayat",
         "province": "Batanes",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 23.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -1527,8 +1527,8 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 23.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -1544,8 +1544,8 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 23.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -1561,8 +1561,8 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 23.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -1578,8 +1578,8 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 23.0,
+        "color": "#FFC107"
       }
     }
   ]
