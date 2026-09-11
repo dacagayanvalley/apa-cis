@@ -1289,7 +1289,7 @@
         "psgc": "035610000",
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
-        "risk_score": 40.0,
+        "risk_score": 30.0,
         "color": "#FF9800"
       }
     },
@@ -1323,8 +1323,8 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 23.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -1374,8 +1374,8 @@
         "psgc": "035615000",
         "municipality": "Alfonso Castaneda",
         "province": "Nueva Vizcaya",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 23.0,
+        "color": "#FFC107"
       }
     },
     {
