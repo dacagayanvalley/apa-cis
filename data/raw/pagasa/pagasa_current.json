@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-16",
-  "fetched_at": "2026-09-15T23:07:26.603090+00:00",
-  "fetched_at_utc": "2026-09-15T23:07:26.603090+00:00",
+  "fetched_at": "2026-09-16T00:09:57.319741+00:00",
+  "fetched_at_utc": "2026-09-16T00:09:57.319741+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,23 +11,24 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "15 September 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "16 September 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-09-15"
+    "as_of": "2026-09-16"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-09-15",
+    "as_of": "2026-09-16",
     "region2_forecast": [
-      "15 September 2026",
-      "Issued at: 7:00 AM Tuesday, September 15, 2026",
-      "Valid until: 7:00 AM Sunday, September 06, 2026",
-      "Batanes and Babuyan Islands",
+      "16 September 2026",
+      "Issued at: 7:00 AM Wednesday, September 16, 2026",
+      "Valid until: 7:00 AM Thursday, September 17, 2026",
       "Ilocos Region, Aparri, Itbayat, most of Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, most part of CALABARZON and MIMAROPA, Iloilo, and Catarman",
       "Basco, Cagayan, some parts of Cavite, Mulanay, Romblon, Albay, Catanduanes, Southern Leyte, Negros Occidental, Davao, and South Cotabato",
-      "Moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026."
+      "as of 07 September 2026)",
+      "Moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
+      "37.4 ºC (Cagayan de Oro, 1976)"
     ],
-    "raw_text_extracted": "15 September 2026\nIssued at: 7:00 AM Tuesday, September 15, 2026\nValid until: 7:00 AM Sunday, September 06, 2026\nBatanes and Babuyan Islands\nIlocos Region, Aparri, Itbayat, most of Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, most part of CALABARZON and MIMAROPA, Iloilo, and Catarman\nBasco, Cagayan, some parts of Cavite, Mulanay, Romblon, Albay, Catanduanes, Southern Leyte, Negros Occidental, Davao, and South Cotabato\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
+    "raw_text_extracted": "16 September 2026\nIssued at: 7:00 AM Wednesday, September 16, 2026\nValid until: 7:00 AM Thursday, September 17, 2026\nIlocos Region, Aparri, Itbayat, most of Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, most part of CALABARZON and MIMAROPA, Iloilo, and Catarman\nBasco, Cagayan, some parts of Cavite, Mulanay, Romblon, Albay, Catanduanes, Southern Leyte, Negros Occidental, Davao, and South Cotabato\nas of 07 September 2026)\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.\n37.4 ºC (Cagayan de Oro, 1976)",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -101,20 +102,12 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-09-16",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-09-15T23:07:26.603090+00:00",
-    "fetched_at_utc": "2026-09-15T23:07:26.603090+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "fetched_at": "2026-09-16T00:09:57.319741+00:00",
+    "fetched_at_utc": "2026-09-16T00:09:57.319741+00:00"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success",
-    "typhoon_agriculture": "skipped"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-09-15T23:07:26.603090+00:00"
+    "typhoon": "success"
   }
 }
