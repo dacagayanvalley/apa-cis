@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-18",
-  "fetched_at": "2026-09-17T23:01:38.433048+00:00",
-  "fetched_at_utc": "2026-09-17T23:01:38.433048+00:00",
+  "fetched_at": "2026-09-18T01:12:45.903336+00:00",
+  "fetched_at_utc": "2026-09-18T01:12:45.903336+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,23 +11,22 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "17 September 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "18 September 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-09-17"
+    "as_of": "2026-09-18"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-09-17",
+    "as_of": "2026-09-18",
     "region2_forecast": [
-      "17 September 2026",
-      "Issued at: 7:00 AM Thursday, September 17, 2026",
-      "Valid until: 7:00 AM Friday, September 18, 2026",
+      "18 September 2026",
+      "Issued at: 7:00 AM Friday, September 18, 2026",
+      "Valid until: 7:00 AM Saturday, September 19, 2026",
       "Ilocos Region, Aparri, Itbayat, most of Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, most part of CALABARZON and MIMAROPA, Iloilo, and Catarman",
-      "Basco, Cagayan, some parts of Cavite, Mulanay, Romblon, Albay, Catanduanes, Southern Leyte, Negros Occidental, Davao, and South Cotabato",
-      "as of 07 September 2026)",
+      "Cagayan, some parts of Cavite, Mulanay, Romblon, Albay, Catanduanes, Southern Leyte, Negros Occidental, Davao, and South Cotabato",
       "Moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026."
     ],
-    "raw_text_extracted": "17 September 2026\nIssued at: 7:00 AM Thursday, September 17, 2026\nValid until: 7:00 AM Friday, September 18, 2026\nIlocos Region, Aparri, Itbayat, most of Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, most part of CALABARZON and MIMAROPA, Iloilo, and Catarman\nBasco, Cagayan, some parts of Cavite, Mulanay, Romblon, Albay, Catanduanes, Southern Leyte, Negros Occidental, Davao, and South Cotabato\nas of 07 September 2026)\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
+    "raw_text_extracted": "18 September 2026\nIssued at: 7:00 AM Friday, September 18, 2026\nValid until: 7:00 AM Saturday, September 19, 2026\nIlocos Region, Aparri, Itbayat, most of Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, most part of CALABARZON and MIMAROPA, Iloilo, and Catarman\nCagayan, some parts of Cavite, Mulanay, Romblon, Albay, Catanduanes, Southern Leyte, Negros Occidental, Davao, and South Cotabato\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -101,8 +100,8 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-09-18",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-09-17T23:01:38.433048+00:00",
-    "fetched_at_utc": "2026-09-17T23:01:38.433048+00:00",
+    "fetched_at": "2026-09-18T01:12:45.903336+00:00",
+    "fetched_at_utc": "2026-09-18T01:12:45.903336+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -115,6 +114,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-09-17T23:01:38.433048+00:00"
+    "last_checked_utc": "2026-09-18T01:12:45.903336+00:00"
   }
 }
