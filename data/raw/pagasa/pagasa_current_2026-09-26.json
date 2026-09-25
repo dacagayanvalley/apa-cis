@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-26",
-  "fetched_at": "2026-09-25T18:03:13.918610+00:00",
-  "fetched_at_utc": "2026-09-25T18:03:13.918610+00:00",
+  "fetched_at": "2026-09-25T21:27:33.646738+00:00",
+  "fetched_at_utc": "2026-09-25T21:27:33.646738+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -37,9 +37,9 @@
     "bulletin_status": "active",
     "name": "Queenie",
     "disturbance_type": "Severe Tropical Storm",
-    "bulletin_number": "7",
-    "issued_at": "11:00 pm, 25 September 2026",
-    "valid_until": "the next advisory to be issued at 5:00 AM tomorrow)",
+    "bulletin_number": "8",
+    "issued_at": "05:00 am, 26 September 2026",
+    "valid_until": "the next advisory to be issued at 11:00 AM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 0,
     "signal_levels": {
@@ -96,8 +96,8 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "match": "municipality",
-        "coverage_scope": "municipality",
+        "match": "province_full",
+        "coverage_scope": "province_full",
         "province_partial": false,
         "signal": 0,
         "tcws_signal": 0,
@@ -163,15 +163,15 @@
       "enabled": true,
       "coverage_scope": "mixed",
       "affected_municipality_count": 6,
-      "full_province_match_count": 4,
-      "explicit_municipality_match_count": 2,
+      "full_province_match_count": 5,
+      "explicit_municipality_match_count": 1,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Severe Tropical Storm Queenie Bulletin #7",
+    "summary": "Severe Tropical Storm Queenie Bulletin #8",
     "as_of": "2026-09-26",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-09-25T18:03:13.918610+00:00",
-    "fetched_at_utc": "2026-09-25T18:03:13.918610+00:00",
+    "fetched_at": "2026-09-25T21:27:33.646738+00:00",
+    "fetched_at_utc": "2026-09-25T21:27:33.646738+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -247,6 +247,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-09-25T18:03:13.918610+00:00"
+    "last_checked_utc": "2026-09-25T21:27:33.646738+00:00"
   }
 }
