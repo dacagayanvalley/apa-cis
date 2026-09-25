@@ -65,7 +65,7 @@
         "psgc": "023104000",
         "municipality": "Allacapan",
         "province": "Cagayan",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -320,7 +320,7 @@
         "psgc": "023119000",
         "municipality": "Pamplona",
         "province": "Cagayan",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -354,7 +354,7 @@
         "psgc": "023121000",
         "municipality": "Piat",
         "province": "Cagayan",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -371,8 +371,8 @@
         "psgc": "023122000",
         "municipality": "Rizal",
         "province": "Cagayan",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 28.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -422,7 +422,7 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "risk_score": 20.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -490,7 +490,7 @@
         "psgc": "023129000",
         "municipality": "Tuao",
         "province": "Cagayan",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -694,7 +694,7 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -711,7 +711,7 @@
         "psgc": "031413000",
         "municipality": "Divilacan",
         "province": "Isabela",
-        "risk_score": 28.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -847,7 +847,7 @@
         "psgc": "031421000",
         "municipality": "Palanan",
         "province": "Isabela",
-        "risk_score": 28.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -949,7 +949,7 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "risk_score": 30.0,
+        "risk_score": 35.0,
         "color": "#FF9800"
       }
     },
@@ -1136,8 +1136,8 @@
         "psgc": "035601000",
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
-        "risk_score": 27.0,
-        "color": "#FFC107"
+        "risk_score": 32.0,
+        "color": "#FF9800"
       }
     },
     {
@@ -1153,7 +1153,7 @@
         "psgc": "035602000",
         "municipality": "Ambaguio",
         "province": "Nueva Vizcaya",
-        "risk_score": 40.0,
+        "risk_score": 45.0,
         "color": "#FF9800"
       }
     },
@@ -1204,7 +1204,7 @@
         "psgc": "035605000",
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
-        "risk_score": 33.0,
+        "risk_score": 38.0,
         "color": "#FF9800"
       }
     },
@@ -1255,7 +1255,7 @@
         "psgc": "035608000",
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
-        "risk_score": 45.0,
+        "risk_score": 40.0,
         "color": "#FF9800"
       }
     },
@@ -1272,7 +1272,7 @@
         "psgc": "035609000",
         "municipality": "Kasibu",
         "province": "Nueva Vizcaya",
-        "risk_score": 40.0,
+        "risk_score": 45.0,
         "color": "#FF9800"
       }
     },
@@ -1289,7 +1289,7 @@
         "psgc": "035610000",
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
-        "risk_score": 30.0,
+        "risk_score": 45.0,
         "color": "#FF9800"
       }
     },
@@ -1442,7 +1442,7 @@
         "psgc": "067004000",
         "municipality": "Maddela",
         "province": "Quirino",
-        "risk_score": 30.0,
+        "risk_score": 35.0,
         "color": "#FF9800"
       }
     },
@@ -1493,7 +1493,7 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "risk_score": 15.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     },
@@ -1527,7 +1527,7 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "risk_score": 15.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     },
@@ -1544,7 +1544,7 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "risk_score": 15.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     },
@@ -1561,7 +1561,7 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "risk_score": 15.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     },
@@ -1578,7 +1578,7 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "risk_score": 15.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     }
