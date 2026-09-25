@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-25",
-  "fetched_at": "2026-09-25T07:37:33.868904+00:00",
-  "fetched_at_utc": "2026-09-25T07:37:33.868904+00:00",
+  "fetched_at": "2026-09-25T13:36:49.924033+00:00",
+  "fetched_at_utc": "2026-09-25T13:36:49.924033+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -37,9 +37,9 @@
     "bulletin_status": "active",
     "name": "Queenie",
     "disturbance_type": "Tropical Storm",
-    "bulletin_number": "5",
-    "issued_at": "11:00 am, 25 September 2026",
-    "valid_until": "the next advisory to be issued at 5:00 PM today)",
+    "bulletin_number": "6",
+    "issued_at": "05:00 pm, 25 September 2026",
+    "valid_until": "the next advisory to be issued at 11:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 0,
     "signal_levels": {
@@ -49,13 +49,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": 75.0,
-    "peak_wind_gust_kmh": 90.0,
-    "gustiness_kmh": 90.0,
+    "max_sustained_wind_kmh": 85.0,
+    "peak_wind_gust_kmh": 105.0,
+    "gustiness_kmh": 105.0,
     "wind": {
-      "max_sustained_wind_kmh": 75.0,
-      "peak_wind_gust_kmh": 90.0,
-      "gustiness_kmh": 90.0
+      "max_sustained_wind_kmh": 85.0,
+      "peak_wind_gust_kmh": 105.0,
+      "gustiness_kmh": 105.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -167,11 +167,11 @@
       "explicit_municipality_match_count": 2,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Tropical Storm Queenie Bulletin #5",
+    "summary": "Tropical Storm Queenie Bulletin #6",
     "as_of": "2026-09-25",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-09-25T07:37:33.868904+00:00",
-    "fetched_at_utc": "2026-09-25T07:37:33.868904+00:00",
+    "fetched_at": "2026-09-25T13:36:49.924033+00:00",
+    "fetched_at_utc": "2026-09-25T13:36:49.924033+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -183,17 +183,17 @@
       "summary": "PAGASA agriculture warning contains Cagayan Valley / Region 2 references.",
       "agri_weather": [
         {
-          "forecast_area": "Mindanao, Negros Oriental, Siquijor",
+          "forecast_area": "Negros Island Region, Gitnang Kabisayaan, Zamboanga Peninsula, Hilagang Mindanao, Caraga, Davao Oriental, at Basilan",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 34",
-          "upland_temp_c": "21 – 32",
+          "lowland_temp_c": "23 – 31",
+          "upland_temp_c": "20 – 28",
           "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": "8 – 12"
+          "leaf_wetness_hours": "4 – 8"
         },
         {
-          "forecast_area": "Natitirang bahagi ng Kabisayaan at Palawan",
+          "forecast_area": "Natitirang bahagi ng Kabisayaan, natitirang bahagi ng Mindanao, at Palawan",
           "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
-          "lowland_temp_c": "24 – 35",
+          "lowland_temp_c": "23 – 31",
           "upland_temp_c": "22 – 32",
           "relative_humidity_pct": "50 – 97",
           "leaf_wetness_hours": "0 – 6"
@@ -201,10 +201,10 @@
         {
           "forecast_area": "Metro Manila at natitirang bahagi ng Luzon",
           "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 35",
-          "upland_temp_c": "16 – 33",
+          "lowland_temp_c": "23 – 31",
+          "upland_temp_c": "16 – 29",
           "relative_humidity_pct": "45 – 96",
-          "leaf_wetness_hours": "0 – 4"
+          "leaf_wetness_hours": "0 – 6"
         }
       ],
       "affected_area_advisories": [
@@ -247,6 +247,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-09-25T07:37:33.868904+00:00"
+    "last_checked_utc": "2026-09-25T13:36:49.924033+00:00"
   }
 }
