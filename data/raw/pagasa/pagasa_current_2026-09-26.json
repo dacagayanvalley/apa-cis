@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-26",
-  "fetched_at": "2026-09-26T09:48:11.908641+00:00",
-  "fetched_at_utc": "2026-09-26T09:48:11.908641+00:00",
+  "fetched_at": "2026-09-26T14:19:46.625540+00:00",
+  "fetched_at_utc": "2026-09-26T14:19:46.625540+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -37,9 +37,9 @@
     "bulletin_status": "active",
     "name": "Queenie",
     "disturbance_type": "Severe Tropical Storm",
-    "bulletin_number": "9",
-    "issued_at": "11:00 am, 26 September 2026",
-    "valid_until": "the next advisory to be issued at 5:00 PM today)",
+    "bulletin_number": "10",
+    "issued_at": "05:00 pm, 26 September 2026",
+    "valid_until": "the next advisory to be issued at 11:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 0,
     "signal_levels": {
@@ -98,11 +98,11 @@
       "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Severe Tropical Storm Queenie Bulletin #9",
+    "summary": "Severe Tropical Storm Queenie Bulletin #10",
     "as_of": "2026-09-26",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-09-26T09:48:11.908641+00:00",
-    "fetched_at_utc": "2026-09-26T09:48:11.908641+00:00",
+    "fetched_at": "2026-09-26T14:19:46.625540+00:00",
+    "fetched_at_utc": "2026-09-26T14:19:46.625540+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -115,6 +115,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-09-26T09:48:11.908641+00:00"
+    "last_checked_utc": "2026-09-26T14:19:46.625540+00:00"
   }
 }

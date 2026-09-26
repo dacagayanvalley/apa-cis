@@ -16,7 +16,7 @@
   "data_as_of": "2026-09-26",
   "forecast_as_of": "2026-09-26",
   "fallback_observation_as_of": "2026-09-21",
-  "severe_weather_last_checked": "2026-09-26T09:48:11.908641+00:00",
+  "severe_weather_last_checked": "2026-09-26T14:19:46.625540+00:00",
   "severe_weather_as_of": "2026-09-26",
   "severe_weather_active": true,
   "severe_weather_region2_affected": false,
@@ -25,7 +25,7 @@
   "severe_weather_agriculture_advisory_status": "skipped",
   "severe_weather_agriculture_advisory_active": false,
   "severe_weather_system": "Severe Tropical Storm Queenie",
-  "severe_weather_bulletin_number": "9",
+  "severe_weather_bulletin_number": "10",
   "severe_weather_auto_fetch_interval_minutes": 30,
   "severe_weather_auto_fetch_mode": "scheduled_only"
 }
