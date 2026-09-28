@@ -15,7 +15,7 @@
         "municipality": "City of Tuguegarao",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 14,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -34,8 +34,8 @@
         "municipality": "Abulug",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 5,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -110,7 +110,7 @@
         "municipality": "Aparri",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 5,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -148,8 +148,8 @@
         "municipality": "Ballesteros",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 5,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -167,7 +167,7 @@
         "municipality": "Buguey",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 5,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -205,7 +205,7 @@
         "municipality": "Camalaniugan",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -224,8 +224,8 @@
         "municipality": "Claveria",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 5,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -281,7 +281,7 @@
         "municipality": "Gonzaga",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 5,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -433,7 +433,7 @@
         "municipality": "Sanchez-Mira",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -452,7 +452,7 @@
         "municipality": "Santa Ana",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -471,8 +471,8 @@
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 5,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -490,7 +490,7 @@
         "municipality": "Santa Teresita",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 4,
+        "advisory_count": 5,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -661,7 +661,7 @@
         "municipality": "Burgos",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -775,7 +775,7 @@
         "municipality": "Dinapigue",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -794,7 +794,7 @@
         "municipality": "Divilacan",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -889,8 +889,8 @@
         "municipality": "Maconacon",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 5,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -946,7 +946,7 @@
         "municipality": "Palanan",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
