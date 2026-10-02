@@ -37,11 +37,13 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -170,11 +172,13 @@
         "psgc": "023108000",
         "municipality": "Ballesteros",
         "province": "Cagayan",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -254,11 +258,13 @@
         "psgc": "023112000",
         "municipality": "Claveria",
         "province": "Cagayan",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -548,11 +554,13 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "drying_class": "suitable",
-        "risk_score": 0,
-        "recommend_mechanical_drying": false,
-        "reasons": [],
-        "color": "#4CAF50"
+        "drying_class": "high_risk",
+        "risk_score": 3,
+        "recommend_mechanical_drying": true,
+        "reasons": [
+          "rainfall >= 5 mm"
+        ],
+        "color": "#FF5722"
       }
     },
     {
@@ -1743,15 +1751,14 @@
         "psgc": "035610000",
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 6,
+        "drying_class": "high_risk",
+        "risk_score": 4,
         "recommend_mechanical_drying": true,
         "reasons": [
           "rainfall >= 5 mm",
-          "humidity >= 85%",
           "low wind"
         ],
-        "color": "#B71C1C"
+        "color": "#FF5722"
       }
     },
     {
@@ -1791,15 +1798,14 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 6,
+        "drying_class": "high_risk",
+        "risk_score": 4,
         "recommend_mechanical_drying": true,
         "reasons": [
           "rainfall >= 5 mm",
-          "humidity >= 85%",
           "low wind"
         ],
-        "color": "#B71C1C"
+        "color": "#FF5722"
       }
     },
     {
@@ -1863,15 +1869,14 @@
         "psgc": "035615000",
         "municipality": "Alfonso Castaneda",
         "province": "Nueva Vizcaya",
-        "drying_class": "unsuitable",
-        "risk_score": 6,
+        "drying_class": "high_risk",
+        "risk_score": 4,
         "recommend_mechanical_drying": true,
         "reasons": [
           "rainfall >= 5 mm",
-          "humidity >= 85%",
           "low wind"
         ],
-        "color": "#B71C1C"
+        "color": "#FF5722"
       }
     },
     {

@@ -34,8 +34,8 @@
         "municipality": "Abulug",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 4,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -109,10 +109,10 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -148,8 +148,8 @@
         "municipality": "Ballesteros",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 4,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -166,10 +166,10 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -224,8 +224,8 @@
         "municipality": "Claveria",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 4,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -280,10 +280,10 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -471,8 +471,8 @@
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 4,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
@@ -489,10 +489,10 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -794,7 +794,7 @@
         "municipality": "Divilacan",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -888,10 +888,10 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "severity": "none",
-        "advisory_count": 0,
-        "primary_advisory": "",
-        "color": "#4CAF50"
+        "severity": "warning",
+        "advisory_count": 1,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "color": "#FF5722"
       }
     },
     {
@@ -946,7 +946,7 @@
         "municipality": "Palanan",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
