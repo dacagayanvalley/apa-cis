@@ -337,7 +337,7 @@
         "psgc": "023120000",
         "municipality": "Peñablanca",
         "province": "Cagayan",
-        "risk_score": 21.0,
+        "risk_score": 16.0,
         "color": "#FFC107"
       }
     },
@@ -711,7 +711,7 @@
         "psgc": "031413000",
         "municipality": "Divilacan",
         "province": "Isabela",
-        "risk_score": 20.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -1204,7 +1204,7 @@
         "psgc": "035605000",
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
-        "risk_score": 23.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -1238,7 +1238,7 @@
         "psgc": "035607000",
         "municipality": "Dupax del Norte",
         "province": "Nueva Vizcaya",
-        "risk_score": 23.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -1255,7 +1255,7 @@
         "psgc": "035608000",
         "municipality": "Dupax del Sur",
         "province": "Nueva Vizcaya",
-        "risk_score": 30.0,
+        "risk_score": 35.0,
         "color": "#FF9800"
       }
     },
