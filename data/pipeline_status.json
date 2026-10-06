@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-10-04",
+  "last_run": "2026-10-06",
   "status": "success",
-  "elapsed_seconds": 380.4,
+  "elapsed_seconds": 945.6,
   "steps": {
     "apa_cis": "success",
     "acap": "success",
@@ -13,19 +13,7 @@
     "noah_exposure": "success",
     "advisories": "success"
   },
-  "data_as_of": "2026-10-04",
-  "forecast_as_of": "2026-10-04",
-  "fallback_observation_as_of": "2026-09-29",
-  "severe_weather_last_checked": "2026-10-05T22:31:03.656453+00:00",
-  "severe_weather_as_of": "2026-10-06",
-  "severe_weather_active": false,
-  "severe_weather_region2_affected": false,
-  "severe_weather_bulletin_status": "active",
-  "severe_weather_is_final": false,
-  "severe_weather_agriculture_advisory_status": "skipped",
-  "severe_weather_agriculture_advisory_active": false,
-  "severe_weather_system": "",
-  "severe_weather_bulletin_number": "",
-  "severe_weather_auto_fetch_interval_minutes": 30,
-  "severe_weather_auto_fetch_mode": "scheduled_only"
+  "data_as_of": "2026-10-06",
+  "forecast_as_of": "2026-10-06",
+  "fallback_observation_as_of": "2026-10-01"
 }
