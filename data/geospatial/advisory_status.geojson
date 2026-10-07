@@ -34,8 +34,8 @@
         "municipality": "Abulug",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 5,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
         "color": "#FF5722"
       }
     },
@@ -53,7 +53,7 @@
         "municipality": "Alcala",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 12,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -91,7 +91,7 @@
         "municipality": "Amulung",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 12,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -109,10 +109,10 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
-        "color": "#FF5722"
+        "severity": "none",
+        "advisory_count": 0,
+        "primary_advisory": "",
+        "color": "#4CAF50"
       }
     },
     {
@@ -148,8 +148,8 @@
         "municipality": "Ballesteros",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 5,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
         "color": "#FF5722"
       }
     },
@@ -166,10 +166,10 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
-        "color": "#FF5722"
+        "severity": "none",
+        "advisory_count": 0,
+        "primary_advisory": "",
+        "color": "#4CAF50"
       }
     },
     {
@@ -224,8 +224,8 @@
         "municipality": "Claveria",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 5,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
         "color": "#FF5722"
       }
     },
@@ -262,7 +262,7 @@
         "municipality": "Gattaran",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 12,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -280,10 +280,10 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
-        "color": "#FF5722"
+        "severity": "none",
+        "advisory_count": 0,
+        "primary_advisory": "",
+        "color": "#4CAF50"
       }
     },
     {
@@ -300,7 +300,7 @@
         "municipality": "Iguig",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 12,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -319,7 +319,7 @@
         "municipality": "Lal-lo",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 12,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -338,7 +338,7 @@
         "municipality": "Lasam",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 12,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -471,8 +471,8 @@
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 5,
-        "primary_advisory": "Postharvest Drying Risk",
+        "advisory_count": 2,
+        "primary_advisory": "Operations Advisory - Defer Irrigation",
         "color": "#FF5722"
       }
     },
@@ -489,10 +489,10 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "severity": "warning",
-        "advisory_count": 1,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
-        "color": "#FF5722"
+        "severity": "none",
+        "advisory_count": 0,
+        "primary_advisory": "",
+        "color": "#4CAF50"
       }
     },
     {
@@ -509,7 +509,7 @@
         "municipality": "Santo Niño",
         "province": "Cagayan",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 12,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
