@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-08",
-  "fetched_at": "2026-10-08T00:08:30.550388+00:00",
-  "fetched_at_utc": "2026-10-08T00:08:30.550388+00:00",
+  "fetched_at": "2026-10-08T01:48:24.472299+00:00",
+  "fetched_at_utc": "2026-10-08T01:48:24.472299+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,23 +11,24 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "7 October 2026 : A moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that the ongoing El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.                                                                           (updated: 26 August 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "8 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 September 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-10-07"
+    "as_of": "2026-10-08"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-10-07",
+    "as_of": "2026-10-08",
     "region2_forecast": [
-      "7 October 2026",
-      "Issued at: 7:00 AM Wednesday, October 07, 2026",
-      "Valid until: 7:00 AM Thursday, October 08, 2026",
-      "Batanes and Cagayan",
+      "8 October 2026",
+      "Issued at: 7:00 AM Thursday, October 08, 2026",
+      "Valid until: 7:00 AM Friday, October 09, 2026",
+      "Cagayan Valley, Bicol Region, Apayao, Kalinga, Mountain Province, Ifugao, Aurora, Quezon, and Marinduque",
+      "Cagayan Valley, Bicol Region, Apayao, Kalinga, Mountain Province, Ifugao, Aurora, and Quezon –",
       "Pangasinan, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Tayabas, Ambulong, Rizal, Oriental Mindoro, most parts of Palawan, Camarines Sur, Leyte, Bukidnon, Davao del Norte, and Lanao del Sur",
       "Quirino, rest of the country",
       "Moderate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026."
     ],
-    "raw_text_extracted": "7 October 2026\nIssued at: 7:00 AM Wednesday, October 07, 2026\nValid until: 7:00 AM Thursday, October 08, 2026\nBatanes and Cagayan\nPangasinan, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Tayabas, Ambulong, Rizal, Oriental Mindoro, most parts of Palawan, Camarines Sur, Leyte, Bukidnon, Davao del Norte, and Lanao del Sur\nQuirino, rest of the country\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
+    "raw_text_extracted": "8 October 2026\nIssued at: 7:00 AM Thursday, October 08, 2026\nValid until: 7:00 AM Friday, October 09, 2026\nCagayan Valley, Bicol Region, Apayao, Kalinga, Mountain Province, Ifugao, Aurora, Quezon, and Marinduque\nCagayan Valley, Bicol Region, Apayao, Kalinga, Mountain Province, Ifugao, Aurora, and Quezon –\nPangasinan, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Tayabas, Ambulong, Rizal, Oriental Mindoro, most parts of Palawan, Camarines Sur, Leyte, Bukidnon, Davao del Norte, and Lanao del Sur\nQuirino, rest of the country\nModerate to strong El Niño is present in the Tropical Pacific. Climate models predict that El Niño will continue until the first half of 2027 and may reach a very strong state before the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -101,20 +102,12 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-10-08",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-08T00:08:30.550388+00:00",
-    "fetched_at_utc": "2026-10-08T00:08:30.550388+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "fetched_at": "2026-10-08T01:48:24.472299+00:00",
+    "fetched_at_utc": "2026-10-08T01:48:24.472299+00:00"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success",
-    "typhoon_agriculture": "skipped"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-10-08T00:08:30.550388+00:00"
+    "typhoon": "success"
   }
 }
