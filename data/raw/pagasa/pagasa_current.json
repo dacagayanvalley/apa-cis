@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-13",
-  "fetched_at": "2026-10-13T01:57:49.440475+00:00",
-  "fetched_at_utc": "2026-10-13T01:57:49.440475+00:00",
+  "fetched_at": "2026-10-13T03:01:18.963618+00:00",
+  "fetched_at_utc": "2026-10-13T03:01:18.963618+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,26 +11,25 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "12 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 September 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "13 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-10-12"
+    "as_of": "2026-10-13"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-10-12",
+    "as_of": "2026-10-13",
     "region2_forecast": [
-      "12 October 2026",
-      "Issued at: 7:00 AM Monday, October 12, 2026",
-      "Valid until: 7:00 AM Tuesday, October 13, 2026",
+      "13 October 2026",
+      "Issued at: 7:00 AM Tuesday, October 13, 2026",
+      "Valid until: 7:00 AM Wednesday, October 14, 2026",
       "Batanes and Babuyan Islands",
-      "Metro Manila, CALABARZON, Central Luzon, Isabela, Quirino, Nueva Vizcaya, Benguet, and Pangasinan",
-      "Metro Manila, Central Luzon, Isabela, Quirino, Nueva Vizcaya, Benguet, and Pangasinan",
-      "Pangasinan, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Tayabas, Ambulong, Rizal, Oriental Mindoro, most parts of Palawan, Camarines Sur, Leyte, Bukidnon, Davao del Norte, and Lanao del Sur",
-      "Quirino, rest of the country",
+      "Metro Manila, Ilocos Region, Cordillera Administrative Region, the rest of Cagayan Valley, the rest of Central Luzon, and the rest of CALABARZON",
+      "Ilocos Region, Cordillera Administrative Region, the rest of Cagayan Valley, the rest of Central Luzon",
+      "Pangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur",
       "as of 07 October 2026)",
       "A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026."
     ],
-    "raw_text_extracted": "12 October 2026\nIssued at: 7:00 AM Monday, October 12, 2026\nValid until: 7:00 AM Tuesday, October 13, 2026\nBatanes and Babuyan Islands\nMetro Manila, CALABARZON, Central Luzon, Isabela, Quirino, Nueva Vizcaya, Benguet, and Pangasinan\nMetro Manila, Central Luzon, Isabela, Quirino, Nueva Vizcaya, Benguet, and Pangasinan\nPangasinan, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Tayabas, Ambulong, Rizal, Oriental Mindoro, most parts of Palawan, Camarines Sur, Leyte, Bukidnon, Davao del Norte, and Lanao del Sur\nQuirino, rest of the country\nas of 07 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.",
+    "raw_text_extracted": "13 October 2026\nIssued at: 7:00 AM Tuesday, October 13, 2026\nValid until: 7:00 AM Wednesday, October 14, 2026\nBatanes and Babuyan Islands\nMetro Manila, Ilocos Region, Cordillera Administrative Region, the rest of Cagayan Valley, the rest of Central Luzon, and the rest of CALABARZON\nIlocos Region, Cordillera Administrative Region, the rest of Cagayan Valley, the rest of Central Luzon\nPangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur\nas of 07 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -104,20 +103,12 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-10-13",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-13T01:57:49.440475+00:00",
-    "fetched_at_utc": "2026-10-13T01:57:49.440475+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "fetched_at": "2026-10-13T03:01:18.963618+00:00",
+    "fetched_at_utc": "2026-10-13T03:01:18.963618+00:00"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success",
-    "typhoon_agriculture": "skipped"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-10-13T01:57:49.440475+00:00"
+    "typhoon": "success"
   }
 }

@@ -1,6 +1,6 @@
 DA RFO 02 REGIONAL AGRICULTURAL ADVISORY
-Date: 2026-10-12
-Valid until: 2026-10-13, unless superseded by newer PAGASA/DA-RFO2 APA updates
+Date: 2026-10-13
+Valid until: 2026-10-14, unless superseded by newer PAGASA/DA-RFO2 APA updates
 Coverage: Cagayan Valley (Region 02)
 Issued by: DA-RFO2 APA
 ============================================================
@@ -16,8 +16,8 @@ SOURCE TIMESTAMPS AND QA:
   UP NOAH rainfall municipalities: 0
   CHIRPS rainfall municipalities: 0
   NASA POWER fallback municipalities: 0
-  PAGASA source date(s): 2026-10-12
-  ACAP 10-day source date(s): 2026-10-11
+  PAGASA source date(s): 2026-10-13
+  ACAP 10-day source date(s): 2026-10-12
   QA flag (93 municipalities): PAGASA context needs staff review before official dissemination.
 
 PAGASA / ACAP / CIS SUMMARY:
@@ -33,16 +33,16 @@ PROVINCIAL STATUS:
   Quirino: 6 municipalities with advisories (highest: WARNING)
 
 PRIORITY MUNICIPALITIES FOR IMMEDIATE ACTION:
-  1. Kayapa, Nueva Vizcaya [WARNING, confidence: medium] - Operations Advisory - Defer Fertilizer Application
-  2. Aurora, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  3. Quezon, Isabela [WARNING, confidence: medium] - Operations Advisory - Defer Irrigation
-  4. San Guillermo, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
+  1. Kayapa, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
+  2. Quezon, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
+  3. Kasibu, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
+  4. Saguday, Quirino [WARNING, confidence: medium] - Postharvest Drying Risk
   5. Ambaguio, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
-  6. Kasibu, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
-  7. Saguday, Quirino [WARNING, confidence: medium] - Postharvest Drying Risk
-  8. San Agustin, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  9. Dupax del Sur, Nueva Vizcaya [WARNING, confidence: medium] - Operations Advisory - Defer Irrigation
-  10. Allacapan, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  6. Dupax del Sur, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
+  7. Allacapan, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  8. Baggao, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  9. Lasam, Cagayan [WARNING, confidence: medium] - Operations Advisory - Defer Harvesting
+  10. Pamplona, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
 
 ACTION TIERS:
   Farmers: Follow the municipal advisory SMS/action text; adjust field work, irrigation, spraying, harvest, and drying based on local MAO guidance.
@@ -51,13 +51,13 @@ ACTION TIERS:
   Public: Monitor DA RFO2 APA and PAGASA updates; avoid sharing unofficial advisories without source date and valid-until information.
 
 SMS-READY PRIORITY ADVISORIES:
-  Kayapa: DA OPS: Defer fertilizer application in Kayapa. Rainfall increases runoff, wash-off, grain wetting, or harvest loss risk. Check MAO guidance.
-  Aurora: DA WARNING: Drying risk in Aurora. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Quezon: DA OPS: Defer irrigation in Quezon. Recent rainfall is enough that irrigation can be paused to prevent over-saturation. Check MAO guidance.
-  San Guillermo: DA WARNING: Drying risk in San Guillermo. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Kayapa: DA WARNING: Drying risk in Kayapa. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Quezon: DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Kasibu: DA WARNING: Drying risk in Kasibu. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Saguday: DA WARNING: Drying risk in Saguday. Use mechanical dryer/covered storage; avoid wet grain spoilage.
   Ambaguio: DA WARNING: Drying risk in Ambaguio. Use mechanical dryer/covered storage; avoid wet grain spoilage.
 
 For full advisory details, visit the APA-CIS portal.
 For assistance, contact DA-RFO2 APA: 0916-708-9707; DA RFO2 APA Facebook page; darfo2apa@gmail.com.
 
-End of Advisory - 2026-10-12
+End of Advisory - 2026-10-13

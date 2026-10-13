@@ -184,7 +184,7 @@
         "psgc": "023111000",
         "municipality": "Camalaniugan",
         "province": "Cagayan",
-        "risk_score": 21.0,
+        "risk_score": 16.0,
         "color": "#FFC107"
       }
     },
@@ -201,7 +201,7 @@
         "psgc": "023112000",
         "municipality": "Claveria",
         "province": "Cagayan",
-        "risk_score": 28.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     },
@@ -337,7 +337,7 @@
         "psgc": "023120000",
         "municipality": "Peñablanca",
         "province": "Cagayan",
-        "risk_score": 21.0,
+        "risk_score": 16.0,
         "color": "#FFC107"
       }
     },
@@ -388,7 +388,7 @@
         "psgc": "023123000",
         "municipality": "Sanchez-Mira",
         "province": "Cagayan",
-        "risk_score": 28.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     },
@@ -422,7 +422,7 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "risk_score": 28.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     },
@@ -558,8 +558,8 @@
         "psgc": "031404000",
         "municipality": "Aurora",
         "province": "Isabela",
-        "risk_score": 35.0,
-        "color": "#FF9800"
+        "risk_score": 28.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -728,8 +728,8 @@
         "psgc": "031414000",
         "municipality": "Echague",
         "province": "Isabela",
-        "risk_score": 7.0,
-        "color": "#4CAF50"
+        "risk_score": 15.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -762,8 +762,8 @@
         "psgc": "031416000",
         "municipality": "Jones",
         "province": "Isabela",
-        "risk_score": 13.0,
-        "color": "#4CAF50"
+        "risk_score": 21.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -898,7 +898,7 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "risk_score": 28.0,
+        "risk_score": 21.0,
         "color": "#FFC107"
       }
     },
@@ -949,8 +949,8 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 28.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -966,8 +966,8 @@
         "psgc": "031428000",
         "municipality": "San Guillermo",
         "province": "Isabela",
-        "risk_score": 35.0,
-        "color": "#FF9800"
+        "risk_score": 28.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -1000,7 +1000,7 @@
         "psgc": "031430000",
         "municipality": "San Manuel",
         "province": "Isabela",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -1153,7 +1153,7 @@
         "psgc": "035602000",
         "municipality": "Ambaguio",
         "province": "Nueva Vizcaya",
-        "risk_score": 35.0,
+        "risk_score": 30.0,
         "color": "#FF9800"
       }
     },
@@ -1408,7 +1408,7 @@
         "psgc": "067002000",
         "municipality": "Aglipay",
         "province": "Quirino",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -1442,7 +1442,7 @@
         "psgc": "067004000",
         "municipality": "Maddela",
         "province": "Quirino",
-        "risk_score": 15.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -1459,7 +1459,7 @@
         "psgc": "067005000",
         "municipality": "Nagtipunan",
         "province": "Quirino",
-        "risk_score": 15.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     },
