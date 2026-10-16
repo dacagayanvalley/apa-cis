@@ -1,6 +1,6 @@
 DA RFO 02 REGIONAL AGRICULTURAL ADVISORY
-Date: 2026-10-15
-Valid until: 2026-10-16, unless superseded by newer PAGASA/DA-RFO2 APA updates
+Date: 2026-10-16
+Valid until: 2026-10-17, unless superseded by newer PAGASA/DA-RFO2 APA updates
 Coverage: Cagayan Valley (Region 02)
 Issued by: DA-RFO2 APA
 ============================================================
@@ -8,7 +8,7 @@ Issued by: DA-RFO2 APA
 SITUATION OVERVIEW:
   Active advisories: 93 municipalities
   Danger alerts: 0
-  Warnings: 89
+  Warnings: 93
   Confidence: high 0, medium 84, low 9
 
 SOURCE TIMESTAMPS AND QA:
@@ -16,7 +16,7 @@ SOURCE TIMESTAMPS AND QA:
   UP NOAH rainfall municipalities: 84
   CHIRPS rainfall municipalities: 0
   NASA POWER fallback municipalities: 9
-  PAGASA source date(s): 2026-10-15
+  PAGASA source date(s): 2026-10-16
   ACAP 10-day source date(s): 2026-10-14
   QA flag (93 municipalities): PAGASA context needs staff review before official dissemination.
   QA flag (9 municipalities): Rainfall is NASA POWER fallback; treat as lower-confidence local observation.
@@ -35,15 +35,15 @@ PROVINCIAL STATUS:
 
 PRIORITY MUNICIPALITIES FOR IMMEDIATE ACTION:
   1. Kayapa, Nueva Vizcaya [WARNING, confidence: medium] - Postharvest Drying Risk
-  2. Baggao, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
-  3. Aurora, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  4. Quezon, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  5. San Guillermo, Isabela [WARNING, confidence: medium] - Postharvest Drying Risk
-  6. Saguday, Quirino [WARNING, confidence: medium] - Postharvest Drying Risk
-  7. Allacapan, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
-  8. Lasam, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
-  9. Pamplona, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
-  10. Piat, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  2. Maconacon, Isabela [WARNING, confidence: low] - Postharvest Drying Risk
+  3. Allacapan, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  4. Baggao, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  5. Lasam, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  6. Pamplona, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  7. Piat, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  8. Rizal, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
+  9. Santa Praxedes, Cagayan [WARNING, confidence: low] - Postharvest Drying Risk
+  10. Tuao, Cagayan [WARNING, confidence: medium] - Postharvest Drying Risk
 
 ACTION TIERS:
   Farmers: Follow the municipal advisory SMS/action text; adjust field work, irrigation, spraying, harvest, and drying based on local MAO guidance.
@@ -53,12 +53,12 @@ ACTION TIERS:
 
 SMS-READY PRIORITY ADVISORIES:
   Kayapa: DA WARNING: Drying risk in Kayapa. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Maconacon: DA WARNING: Drying risk in Maconacon. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Allacapan: DA WARNING: Drying risk in Allacapan. Use mechanical dryer/covered storage; avoid wet grain spoilage.
   Baggao: DA WARNING: Drying risk in Baggao. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Aurora: DA WARNING: Drying risk in Aurora. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  Quezon: DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.
-  San Guillermo: DA WARNING: Drying risk in San Guillermo. Use mechanical dryer/covered storage; avoid wet grain spoilage.
+  Lasam: DA WARNING: Drying risk in Lasam. Use mechanical dryer/covered storage; avoid wet grain spoilage.
 
 For full advisory details, visit the APA-CIS portal.
 For assistance, contact DA-RFO2 APA: 0916-708-9707; DA RFO2 APA Facebook page; darfo2apa@gmail.com.
 
-End of Advisory - 2026-10-15
+End of Advisory - 2026-10-16
