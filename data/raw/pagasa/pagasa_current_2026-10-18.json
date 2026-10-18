@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-18",
-  "fetched_at": "2026-10-17T23:20:30.662131+00:00",
-  "fetched_at_utc": "2026-10-17T23:20:30.662131+00:00",
+  "fetched_at": "2026-10-18T01:27:25.361680+00:00",
+  "fetched_at_utc": "2026-10-18T01:27:25.361680+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,15 +11,15 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "17 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "18 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-10-17"
+    "as_of": "2026-10-18"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-10-17",
+    "as_of": "2026-10-18",
     "region2_forecast": [
-      "17 October 2026",
+      "18 October 2026",
       "Issued at: 7:00 AM Friday, October 16, 2026",
       "Valid until: 7:00 AM Saturday, October 17, 2026",
       "Batanes and Babuyan Islands",
@@ -27,7 +27,7 @@
       "as of 07 October 2026)",
       "A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026."
     ],
-    "raw_text_extracted": "17 October 2026\nIssued at: 7:00 AM Friday, October 16, 2026\nValid until: 7:00 AM Saturday, October 17, 2026\nBatanes and Babuyan Islands\nPangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur\nas of 07 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.",
+    "raw_text_extracted": "18 October 2026\nIssued at: 7:00 AM Friday, October 16, 2026\nValid until: 7:00 AM Saturday, October 17, 2026\nBatanes and Babuyan Islands\nPangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur\nas of 07 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -101,8 +101,8 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-10-18",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-17T23:20:30.662131+00:00",
-    "fetched_at_utc": "2026-10-17T23:20:30.662131+00:00",
+    "fetched_at": "2026-10-18T01:27:25.361680+00:00",
+    "fetched_at_utc": "2026-10-18T01:27:25.361680+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -115,6 +115,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-17T23:20:30.662131+00:00"
+    "last_checked_utc": "2026-10-18T01:27:25.361680+00:00"
   }
 }
