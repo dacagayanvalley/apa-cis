@@ -888,10 +888,10 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "severity": "warning",
-        "advisory_count": 4,
-        "primary_advisory": "Postharvest Drying Risk",
-        "color": "#FF5722"
+        "severity": "none",
+        "advisory_count": 0,
+        "primary_advisory": "",
+        "color": "#4CAF50"
       }
     },
     {
