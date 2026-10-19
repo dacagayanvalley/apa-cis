@@ -1,0 +1,120 @@
+{
+  "as_of": "2026-10-20",
+  "fetched_at": "2026-10-19T17:42:28.358333+00:00",
+  "fetched_at_utc": "2026-10-19T17:42:28.358333+00:00",
+  "source_urls": {
+    "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
+    "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
+    "typhoon": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
+    "typhoon_agriculture": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture"
+  },
+  "enso": {
+    "enso_phase": "el_nino",
+    "enso_strength": "strong",
+    "advisory_text": "19 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "source": "pagasa_enso_page",
+    "as_of": "2026-10-19"
+  },
+  "farm_weather": {
+    "source": "pagasa_farm_weather",
+    "as_of": "2026-10-19",
+    "region2_forecast": [
+      "08:09:02 AM",
+      "19 October 2026",
+      "Issued at: 7:00 AM Monday, October 19, 2026",
+      "Valid until: 7:00 AM Tuesday, October 20, 2026",
+      "Pangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur",
+      "as of 07 October 2026)",
+      "A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026."
+    ],
+    "raw_text_extracted": "08:09:02 AM\n19 October 2026\nIssued at: 7:00 AM Monday, October 19, 2026\nValid until: 7:00 AM Tuesday, October 20, 2026\nPangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur\nas of 07 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.",
+    "parse_method": "static_html",
+    "needs_review": true
+  },
+  "typhoon": {
+    "active": false,
+    "is_final": false,
+    "bulletin_status": "active",
+    "name": "",
+    "disturbance_type": "",
+    "bulletin_number": "",
+    "issued_at": "",
+    "valid_until": "",
+    "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
+    "signal_level": 0,
+    "signal_levels": {
+      "Batanes": 0,
+      "Cagayan": 0,
+      "Isabela": 0,
+      "Nueva Vizcaya": 0,
+      "Quirino": 0
+    },
+    "max_sustained_wind_kmh": null,
+    "peak_wind_gust_kmh": null,
+    "gustiness_kmh": null,
+    "wind": {
+      "max_sustained_wind_kmh": null,
+      "peak_wind_gust_kmh": null,
+      "gustiness_kmh": null
+    },
+    "tcws_wind_ranges": {
+      "1": {
+        "min_wind_kmh": 39,
+        "max_wind_kmh": 61,
+        "wind_range_kmh": "39-61"
+      },
+      "2": {
+        "min_wind_kmh": 62,
+        "max_wind_kmh": 88,
+        "wind_range_kmh": "62-88"
+      },
+      "3": {
+        "min_wind_kmh": 89,
+        "max_wind_kmh": 117,
+        "wind_range_kmh": "89-117"
+      },
+      "4": {
+        "min_wind_kmh": 118,
+        "max_wind_kmh": 184,
+        "wind_range_kmh": "118-184"
+      },
+      "5": {
+        "min_wind_kmh": 185,
+        "max_wind_kmh": 220,
+        "wind_range_kmh": "185-220"
+      }
+    },
+    "tcws_signal_groups": [],
+    "rainfall": {},
+    "rainfall_advisory_text": "",
+    "region2_affected": false,
+    "affected_provinces": [],
+    "affected_municipalities": [],
+    "municipality_validation": {
+      "enabled": true,
+      "coverage_scope": "none",
+      "affected_municipality_count": 0,
+      "full_province_match_count": 0,
+      "explicit_municipality_match_count": 0,
+      "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
+    },
+    "summary": "No active PAGASA tropical cyclone bulletin detected.",
+    "as_of": "2026-10-20",
+    "parse_method": "pagasa_public_html_static",
+    "fetched_at": "2026-10-19T17:42:28.358333+00:00",
+    "fetched_at_utc": "2026-10-19T17:42:28.358333+00:00",
+    "auto_fetch_interval_minutes": 30,
+    "agriculture_advisory_fetch_status": "skipped"
+  },
+  "scrape_status": {
+    "enso": "success",
+    "farm_weather": "success",
+    "typhoon": "success",
+    "typhoon_agriculture": "skipped"
+  },
+  "severe_weather_auto_fetch": {
+    "mode": "scheduled_only",
+    "interval_minutes": 30,
+    "last_checked_utc": "2026-10-19T17:42:28.358333+00:00"
+  }
+}
