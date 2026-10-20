@@ -31,7 +31,7 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "rainfall_mm": 0.6,
+        "rainfall_mm": 0.71,
         "class": "dry"
       }
     },
@@ -99,7 +99,7 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "rainfall_mm": 0.62,
+        "rainfall_mm": 0.8,
         "class": "dry"
       }
     },
@@ -133,7 +133,7 @@
         "psgc": "023108000",
         "municipality": "Ballesteros",
         "province": "Cagayan",
-        "rainfall_mm": 0.6,
+        "rainfall_mm": 0.71,
         "class": "dry"
       }
     },
@@ -150,7 +150,7 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "rainfall_mm": 0.62,
+        "rainfall_mm": 0.8,
         "class": "dry"
       }
     },
@@ -201,7 +201,7 @@
         "psgc": "023112000",
         "municipality": "Claveria",
         "province": "Cagayan",
-        "rainfall_mm": 0.6,
+        "rainfall_mm": 0.71,
         "class": "dry"
       }
     },
@@ -252,7 +252,7 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "rainfall_mm": 0.62,
+        "rainfall_mm": 0.8,
         "class": "dry"
       }
     },
@@ -422,7 +422,7 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "rainfall_mm": 0.6,
+        "rainfall_mm": 0.71,
         "class": "dry"
       }
     },
@@ -439,7 +439,7 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "rainfall_mm": 0.62,
+        "rainfall_mm": 0.8,
         "class": "dry"
       }
     },
@@ -796,8 +796,8 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "rainfall_mm": 1.5,
-        "class": "light"
+        "rainfall_mm": 0.99,
+        "class": "dry"
       }
     },
     {
