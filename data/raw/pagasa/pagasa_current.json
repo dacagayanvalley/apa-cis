@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-22",
-  "fetched_at": "2026-10-21T18:13:01.246221+00:00",
-  "fetched_at_utc": "2026-10-21T18:13:01.246221+00:00",
+  "fetched_at": "2026-10-21T21:56:02.337311+00:00",
+  "fetched_at_utc": "2026-10-21T21:56:02.337311+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -40,9 +40,9 @@
     "bulletin_status": "active",
     "name": "Rosal",
     "disturbance_type": "Super Typhoon",
-    "bulletin_number": "7",
-    "issued_at": "11:00 pm, 21 October 2026",
-    "valid_until": "the next advisory to be issued at 5:00 AM tomorrow)",
+    "bulletin_number": "8",
+    "issued_at": "05:00 am, 22 October 2026",
+    "valid_until": "the next advisory to be issued at 11:00 AM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 2,
     "signal_levels": {
@@ -52,13 +52,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": 205.0,
-    "peak_wind_gust_kmh": 250.0,
-    "gustiness_kmh": 250.0,
+    "max_sustained_wind_kmh": 195.0,
+    "peak_wind_gust_kmh": 240.0,
+    "gustiness_kmh": 240.0,
     "wind": {
-      "max_sustained_wind_kmh": 205.0,
-      "peak_wind_gust_kmh": 250.0,
-      "gustiness_kmh": 250.0
+      "max_sustained_wind_kmh": 195.0,
+      "peak_wind_gust_kmh": 240.0,
+      "gustiness_kmh": 240.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -102,9 +102,9 @@
       }
     ],
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 6 issued at 11:00 PM today for the heavy rainfall outlook due to the TC ROSAL."
+      "advisory_text": "Refer to Weather Advisory No. 7 issued at 5:00 AM today for the heavy rainfall outlook due to the TC ROSAL."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 6 issued at 11:00 PM today for the heavy rainfall outlook due to the TC ROSAL.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 7 issued at 5:00 AM today for the heavy rainfall outlook due to the TC ROSAL.",
     "region2_affected": true,
     "affected_provinces": [
       "Batanes",
@@ -583,11 +583,11 @@
       "explicit_municipality_match_count": 7,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Super Typhoon Rosal Bulletin #7",
+    "summary": "Super Typhoon Rosal Bulletin #8",
     "as_of": "2026-10-22",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-21T18:13:01.246221+00:00",
-    "fetched_at_utc": "2026-10-21T18:13:01.246221+00:00",
+    "fetched_at": "2026-10-21T21:56:02.337311+00:00",
+    "fetched_at_utc": "2026-10-21T21:56:02.337311+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -701,6 +701,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-21T18:13:01.246221+00:00"
+    "last_checked_utc": "2026-10-21T21:56:02.337311+00:00"
   }
 }
