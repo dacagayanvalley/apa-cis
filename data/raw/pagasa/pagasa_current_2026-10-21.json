@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-21",
-  "fetched_at": "2026-10-20T23:19:40.801972+00:00",
-  "fetched_at_utc": "2026-10-20T23:19:40.801972+00:00",
+  "fetched_at": "2026-10-21T01:56:08.063072+00:00",
+  "fetched_at_utc": "2026-10-21T01:56:08.063072+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,22 +11,26 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "20 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "21 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-10-20"
+    "as_of": "2026-10-21"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-10-20",
+    "as_of": "2026-10-21",
     "region2_forecast": [
-      "20 October 2026",
-      "Issued at: 7:00 AM Tuesday, October 20, 2026",
-      "Valid until: 7:00 AM Wednesday, October 21, 2026",
-      "Batanes and Babuyan Islands",
+      "21 October 2026",
+      "Issued at: 7:00 AM Wednesday, October 21, 2026",
+      "Valid until: 7:00 AM Thursday, October 22, 2026",
+      "Batanes, Ilocos Norte, Apayao, Cagayan, Isabela, and Catanduanes",
+      "Eastern Visayas, Ilocos Sur, Quezon, and the rest of Cordillera Administrative Region, Cagayan Valley, and Bicol Region",
+      "Ilocos Sur, and the rest of Cordillera Administrative Region and Cagayan Valley",
       "Pangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur",
-      "A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026."
+      "as of 07 October 2026)",
+      "A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.",
+      "(Batanes, Babuyan Islands {Babuyan Is., Camiguin Is., Calayan Is.}, the northern and eastern coasts of mainland Cagayan {Santa Ana, Gonzaga, Lal-Lo, Gattaran, Baggao, Peñablanca}, and Isabela),"
     ],
-    "raw_text_extracted": "20 October 2026\nIssued at: 7:00 AM Tuesday, October 20, 2026\nValid until: 7:00 AM Wednesday, October 21, 2026\nBatanes and Babuyan Islands\nPangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur\nA strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.",
+    "raw_text_extracted": "21 October 2026\nIssued at: 7:00 AM Wednesday, October 21, 2026\nValid until: 7:00 AM Thursday, October 22, 2026\nBatanes, Ilocos Norte, Apayao, Cagayan, Isabela, and Catanduanes\nEastern Visayas, Ilocos Sur, Quezon, and the rest of Cordillera Administrative Region, Cagayan Valley, and Bicol Region\nIlocos Sur, and the rest of Cordillera Administrative Region and Cagayan Valley\nPangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur\nas of 07 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.\n(Batanes, Babuyan Islands {Babuyan Is., Camiguin Is., Calayan Is.}, the northern and eastern coasts of mainland Cagayan {Santa Ana, Gonzaga, Lal-Lo, Gattaran, Baggao, Peñablanca}, and Isabela),",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -642,8 +646,8 @@
     "summary": "Super Typhoon Rosal Bulletin #4",
     "as_of": "2026-10-21",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-20T23:19:40.801972+00:00",
-    "fetched_at_utc": "2026-10-20T23:19:40.801972+00:00",
+    "fetched_at": "2026-10-21T01:56:08.063072+00:00",
+    "fetched_at_utc": "2026-10-21T01:56:08.063072+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -723,6 +727,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-20T23:19:40.801972+00:00"
+    "last_checked_utc": "2026-10-21T01:56:08.063072+00:00"
   }
 }
