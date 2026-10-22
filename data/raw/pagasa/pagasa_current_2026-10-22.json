@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-22",
-  "fetched_at": "2026-10-22T00:34:45.757849+00:00",
-  "fetched_at_utc": "2026-10-22T00:34:45.757849+00:00",
+  "fetched_at": "2026-10-22T05:17:09.694316+00:00",
+  "fetched_at_utc": "2026-10-22T05:17:09.694316+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -40,9 +40,9 @@
     "bulletin_status": "active",
     "name": "Rosal",
     "disturbance_type": "Super Typhoon",
-    "bulletin_number": "8",
-    "issued_at": "05:00 am, 22 October 2026",
-    "valid_until": "the next advisory to be issued at 11:00 AM today)",
+    "bulletin_number": "9",
+    "issued_at": "11:00 am, 22 October 2026",
+    "valid_until": "the next advisory to be issued at 5:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 2,
     "signal_levels": {
@@ -52,13 +52,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": 195.0,
-    "peak_wind_gust_kmh": 240.0,
-    "gustiness_kmh": 240.0,
+    "max_sustained_wind_kmh": 185.0,
+    "peak_wind_gust_kmh": 230.0,
+    "gustiness_kmh": 230.0,
     "wind": {
-      "max_sustained_wind_kmh": 195.0,
-      "peak_wind_gust_kmh": 240.0,
-      "gustiness_kmh": 240.0
+      "max_sustained_wind_kmh": 185.0,
+      "peak_wind_gust_kmh": 230.0,
+      "gustiness_kmh": 230.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -102,9 +102,9 @@
       }
     ],
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 7 issued at 5:00 AM today for the heavy rainfall outlook due to the TC ROSAL."
+      "advisory_text": "Refer to Weather Advisory No. 8 issued at 11:00 AM today for the heavy rainfall outlook due to the TC ROSAL."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 7 issued at 5:00 AM today for the heavy rainfall outlook due to the TC ROSAL.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 8 issued at 11:00 AM today for the heavy rainfall outlook due to the TC ROSAL.",
     "region2_affected": true,
     "affected_provinces": [
       "Batanes",
@@ -583,11 +583,11 @@
       "explicit_municipality_match_count": 7,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Super Typhoon Rosal Bulletin #8",
+    "summary": "Super Typhoon Rosal Bulletin #9",
     "as_of": "2026-10-22",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-22T00:34:45.757849+00:00",
-    "fetched_at_utc": "2026-10-22T00:34:45.757849+00:00",
+    "fetched_at": "2026-10-22T05:17:09.694316+00:00",
+    "fetched_at_utc": "2026-10-22T05:17:09.694316+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -596,54 +596,54 @@
       "as_of": "2026-10-22",
       "active": true,
       "region2_relevant": true,
-      "summary": "PAGASA agriculture warning for Ilocos Norte, Apayao, Cagayan, Isabela, at Catanduanes: Maulan na may pagbugso ng hangin",
+      "summary": "PAGASA agriculture warning for Ilocos Norte, Apayao, Cagayan, at Isabela: Maulan na may pagbugso ng hangin",
       "agri_weather": [
         {
-          "forecast_area": "BABALA NG BAGYO POSIBLENG MARANASAN LAKAS NG HANGIN (km/h) ORAS NA INAASAHAN (mula sa unang paglabas ng babala) 5 Lubhang mapanganib sa buhay at mga ari-arian >185 12 na oras 4 Malaki hanggang sa matinding pinsala 118 - 184 12 na oras 3 Katamtaman hanggang sa malaking pinsala 89 - 117 18 na oras 2 Bahagya hanggang sa katamtamang pinsala 62 - 88 24 na oras 1 Maliit hanggang sa bahagyang pinsala 39 - 61 36 na oras",
-          "agri_weather": "BABALA NG BAGYO",
-          "lowland_temp_c": "",
-          "upland_temp_c": "POSIBLENG MARANASAN",
-          "relative_humidity_pct": "LAKAS NG HANGIN (km/h)",
-          "leaf_wetness_hours": "ORAS NA INAASAHAN (mula sa unang paglabas ng babala)"
+          "forecast_area": "POSIBLENG MARANASAN LAKAS NG HANGIN (km/h) ORAS NA INAASAHAN (mula sa unang paglabas ng babala) 5 Lubhang mapanganib sa buhay at mga ari-arian >185 12 na oras 4 Malaki hanggang sa matinding pinsala 118 - 184 12 na oras 3 Katamtaman hanggang sa malaking pinsala 89 - 117 18 na oras 2 Bahagya hanggang sa katamtamang pinsala 62 - 88 24 na oras 1 Maliit hanggang sa bahagyang pinsala 39 - 61 36 na oras",
+          "agri_weather": "",
+          "lowland_temp_c": "POSIBLENG MARANASAN",
+          "upland_temp_c": "LAKAS NG HANGIN (km/h)",
+          "relative_humidity_pct": "ORAS NA INAASAHAN (mula sa unang paglabas ng babala)",
+          "leaf_wetness_hours": "5"
         },
         {
           "forecast_area": "Batanes",
           "agri_weather": "Masungit na panahon",
-          "lowland_temp_c": "24 – 27",
-          "upland_temp_c": "20 – 26",
-          "relative_humidity_pct": "– 98",
+          "lowland_temp_c": "23 – 28",
+          "upland_temp_c": "20 – 27",
+          "relative_humidity_pct": "70 – 100",
           "leaf_wetness_hours": ">12"
         },
         {
-          "forecast_area": "Ilocos Norte, Apayao, Cagayan, Isabela, at Catanduanes",
+          "forecast_area": "Ilocos Norte, Apayao, Cagayan, at Isabela",
           "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "23 – 32",
-          "upland_temp_c": "20 – 30",
-          "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": "6 – 12"
+          "lowland_temp_c": "24 – 30",
+          "upland_temp_c": "20 – 27",
+          "relative_humidity_pct": "65 – 99",
+          "leaf_wetness_hours": ">12"
         },
         {
-          "forecast_area": "Natitirang bahagi ng Rehiyon ng Bicol, natitirang bahagi ng Rehiton ng Cordillera, natitirang bahagi ng Lambak ng Cagayan, Aurora, Hilagang Samar, at Silangang Samar",
+          "forecast_area": "Rehiyon ng Bicol, natitirang bahagi ng Cordillera Administrative Region, natitirang bahagi ng Lambak ng Cagayan, Ilocos Sur, La Union, Aurora, Northern Samar, at Eastern Samar",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 32",
-          "upland_temp_c": "15 – 32",
+          "lowland_temp_c": "24 – 33",
+          "upland_temp_c": "14 – 31",
           "relative_humidity_pct": "60 – 98",
           "leaf_wetness_hours": "4 – 8"
         },
         {
-          "forecast_area": "Negros Island Region, Antique, Iloilo, Guimaras, at Palawan",
+          "forecast_area": "Zamboanga Peninsula, Kanlurang Kabisayaan, Negros Island Region, Lanao del Norte, Misamis Occidental, at Palawan",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "25 – 33",
-          "upland_temp_c": "22 – 32",
+          "lowland_temp_c": "22 – 35",
+          "upland_temp_c": "20 – 30",
           "relative_humidity_pct": "60 – 98",
           "leaf_wetness_hours": "4 – 8"
         },
         {
           "forecast_area": "Metro Manila at natitirang bahagi ng bansa",
           "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
-          "lowland_temp_c": "22 – 34",
-          "upland_temp_c": "21 – 32",
-          "relative_humidity_pct": "55 – 96",
+          "lowland_temp_c": "23 – 35",
+          "upland_temp_c": "19 – 30",
+          "relative_humidity_pct": "45 – 97",
           "leaf_wetness_hours": "0 – 4"
         }
       ],
@@ -674,18 +674,18 @@
       "parse_method": "pagasa_public_html_static",
       "region2_agri_weather": [
         {
-          "forecast_area": "Ilocos Norte, Apayao, Cagayan, Isabela, at Catanduanes",
+          "forecast_area": "Ilocos Norte, Apayao, Cagayan, at Isabela",
           "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "23 – 32",
-          "upland_temp_c": "20 – 30",
-          "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": "6 – 12"
+          "lowland_temp_c": "24 – 30",
+          "upland_temp_c": "20 – 27",
+          "relative_humidity_pct": "65 – 99",
+          "leaf_wetness_hours": ">12"
         },
         {
-          "forecast_area": "Natitirang bahagi ng Rehiyon ng Bicol, natitirang bahagi ng Rehiton ng Cordillera, natitirang bahagi ng Lambak ng Cagayan, Aurora, Hilagang Samar, at Silangang Samar",
+          "forecast_area": "Rehiyon ng Bicol, natitirang bahagi ng Cordillera Administrative Region, natitirang bahagi ng Lambak ng Cagayan, Ilocos Sur, La Union, Aurora, Northern Samar, at Eastern Samar",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 32",
-          "upland_temp_c": "15 – 32",
+          "lowland_temp_c": "24 – 33",
+          "upland_temp_c": "14 – 31",
           "relative_humidity_pct": "60 – 98",
           "leaf_wetness_hours": "4 – 8"
         }
@@ -701,6 +701,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-22T00:34:45.757849+00:00"
+    "last_checked_utc": "2026-10-22T05:17:09.694316+00:00"
   }
 }
