@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-23",
-  "fetched_at": "2026-10-22T19:23:19.810897+00:00",
-  "fetched_at_utc": "2026-10-22T19:23:19.810897+00:00",
+  "fetched_at": "2026-10-22T22:40:07.125400+00:00",
+  "fetched_at_utc": "2026-10-22T22:40:07.125400+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -40,9 +40,9 @@
     "bulletin_status": "active",
     "name": "Rosal",
     "disturbance_type": "Typhoon",
-    "bulletin_number": "11",
-    "issued_at": "11:00 pm, 22 October 2026",
-    "valid_until": "the next advisory to be issued at 5:00 AM tomorrow)",
+    "bulletin_number": "12",
+    "issued_at": "05:00 am, 23 October 2026",
+    "valid_until": "the next advisory to be issued at 11:00 AM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 2,
     "signal_levels": {
@@ -102,9 +102,9 @@
       }
     ],
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 10 issued at 11:00 PM today for the heavy rainfall outlook due to the TC ROSAL."
+      "advisory_text": "Refer to Weather Advisory No. 11 issued at 5:00 AM today for the heavy rainfall outlook due to the TC ROSAL."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 10 issued at 11:00 PM today for the heavy rainfall outlook due to the TC ROSAL.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 11 issued at 5:00 AM today for the heavy rainfall outlook due to the TC ROSAL.",
     "region2_affected": true,
     "affected_provinces": [
       "Batanes",
@@ -505,11 +505,11 @@
       "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Typhoon Rosal Bulletin #11",
+    "summary": "Typhoon Rosal Bulletin #12",
     "as_of": "2026-10-23",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-22T19:23:19.810897+00:00",
-    "fetched_at_utc": "2026-10-22T19:23:19.810897+00:00",
+    "fetched_at": "2026-10-22T22:40:07.125400+00:00",
+    "fetched_at_utc": "2026-10-22T22:40:07.125400+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -623,6 +623,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-22T19:23:19.810897+00:00"
+    "last_checked_utc": "2026-10-22T22:40:07.125400+00:00"
   }
 }
