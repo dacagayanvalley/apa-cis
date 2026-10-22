@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-10-22",
-  "fetched_at": "2026-10-22T15:32:20.342870+00:00",
-  "fetched_at_utc": "2026-10-22T15:32:20.342870+00:00",
+  "as_of": "2026-10-23",
+  "fetched_at": "2026-10-22T19:23:19.810897+00:00",
+  "fetched_at_utc": "2026-10-22T19:23:19.810897+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -506,16 +506,16 @@
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
     "summary": "Typhoon Rosal Bulletin #11",
-    "as_of": "2026-10-22",
+    "as_of": "2026-10-23",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-22T15:32:20.342870+00:00",
-    "fetched_at_utc": "2026-10-22T15:32:20.342870+00:00",
+    "fetched_at": "2026-10-22T19:23:19.810897+00:00",
+    "fetched_at_utc": "2026-10-22T19:23:19.810897+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
       "source": "pagasa_tropical_cyclone_warning_for_agriculture",
       "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-23",
       "active": true,
       "region2_relevant": true,
       "summary": "PAGASA agriculture warning for Ilocos Norte, Apayao, Cagayan, at Isabela: Maulan na may pagbugso ng hangin",
@@ -623,6 +623,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-22T15:32:20.342870+00:00"
+    "last_checked_utc": "2026-10-22T19:23:19.810897+00:00"
   }
 }
