@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-22",
-  "fetched_at": "2026-10-22T10:32:01.154808+00:00",
-  "fetched_at_utc": "2026-10-22T10:32:01.154808+00:00",
+  "fetched_at": "2026-10-22T15:32:20.342870+00:00",
+  "fetched_at_utc": "2026-10-22T15:32:20.342870+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -40,9 +40,9 @@
     "bulletin_status": "active",
     "name": "Rosal",
     "disturbance_type": "Typhoon",
-    "bulletin_number": "10",
-    "issued_at": "05:00 pm, 22 October 2026",
-    "valid_until": "the next advisory to be issued at 11:00 PM today)",
+    "bulletin_number": "11",
+    "issued_at": "11:00 pm, 22 October 2026",
+    "valid_until": "the next advisory to be issued at 5:00 AM tomorrow)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 2,
     "signal_levels": {
@@ -52,13 +52,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": 165.0,
-    "peak_wind_gust_kmh": 205.0,
-    "gustiness_kmh": 205.0,
+    "max_sustained_wind_kmh": 155.0,
+    "peak_wind_gust_kmh": 190.0,
+    "gustiness_kmh": 190.0,
     "wind": {
-      "max_sustained_wind_kmh": 165.0,
-      "peak_wind_gust_kmh": 205.0,
-      "gustiness_kmh": 205.0
+      "max_sustained_wind_kmh": 155.0,
+      "peak_wind_gust_kmh": 190.0,
+      "gustiness_kmh": 190.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -91,7 +91,7 @@
       {
         "signal": 2,
         "label": "TCWS 2",
-        "areas_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -",
+        "areas_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -",
         "region2_relevant": true
       },
       {
@@ -102,9 +102,9 @@
       }
     ],
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 9 issued at 5:00 PM today for the heavy rainfall outlook due to the TC ROSAL."
+      "advisory_text": "Refer to Weather Advisory No. 10 issued at 11:00 PM today for the heavy rainfall outlook due to the TC ROSAL."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 9 issued at 5:00 PM today for the heavy rainfall outlook due to the TC ROSAL.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 10 issued at 11:00 PM today for the heavy rainfall outlook due to the TC ROSAL.",
     "region2_affected": true,
     "affected_provinces": [
       "Batanes",
@@ -120,7 +120,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020101000",
@@ -131,7 +131,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020102000",
@@ -142,7 +142,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020103000",
@@ -153,7 +153,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020104000",
@@ -164,7 +164,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020105000",
@@ -175,7 +175,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "023101000",
@@ -505,11 +505,11 @@
       "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Typhoon Rosal Bulletin #10",
+    "summary": "Typhoon Rosal Bulletin #11",
     "as_of": "2026-10-22",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-22T10:32:01.154808+00:00",
-    "fetched_at_utc": "2026-10-22T10:32:01.154808+00:00",
+    "fetched_at": "2026-10-22T15:32:20.342870+00:00",
+    "fetched_at_utc": "2026-10-22T15:32:20.342870+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -623,6 +623,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-22T10:32:01.154808+00:00"
+    "last_checked_utc": "2026-10-22T15:32:20.342870+00:00"
   }
 }
