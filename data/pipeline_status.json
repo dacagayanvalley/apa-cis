@@ -16,7 +16,7 @@
   "data_as_of": "2026-10-21",
   "forecast_as_of": "2026-10-21",
   "fallback_observation_as_of": "2026-10-16",
-  "severe_weather_last_checked": "2026-10-22T05:17:09.694316+00:00",
+  "severe_weather_last_checked": "2026-10-22T10:32:01.154808+00:00",
   "severe_weather_as_of": "2026-10-22",
   "severe_weather_active": true,
   "severe_weather_region2_affected": true,
@@ -24,8 +24,8 @@
   "severe_weather_is_final": false,
   "severe_weather_agriculture_advisory_status": "success",
   "severe_weather_agriculture_advisory_active": true,
-  "severe_weather_system": "Super Typhoon Rosal",
-  "severe_weather_bulletin_number": "9",
+  "severe_weather_system": "Typhoon Rosal",
+  "severe_weather_bulletin_number": "10",
   "severe_weather_auto_fetch_interval_minutes": 30,
   "severe_weather_auto_fetch_mode": "scheduled_only"
 }
