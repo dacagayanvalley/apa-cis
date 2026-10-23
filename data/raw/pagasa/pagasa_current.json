@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-10-23",
-  "fetched_at": "2026-10-23T11:58:17.131111+00:00",
-  "fetched_at_utc": "2026-10-23T11:58:17.131111+00:00",
+  "as_of": "2026-10-24",
+  "fetched_at": "2026-10-23T16:55:51.269554+00:00",
+  "fetched_at_utc": "2026-10-23T16:55:51.269554+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -42,14 +42,14 @@
     "bulletin_status": "active",
     "name": "Rosal",
     "disturbance_type": "Typhoon",
-    "bulletin_number": "14",
-    "issued_at": "05:00 pm, 23 October 2026",
-    "valid_until": "the next advisory to be issued at 11:00 PM today)",
+    "bulletin_number": "15",
+    "issued_at": "11:00 pm, 23 October 2026",
+    "valid_until": "the next advisory to be issued at 5:00 AM tomorrow)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
-    "signal_level": 2,
+    "signal_level": 1,
     "signal_levels": {
-      "Batanes": 2,
-      "Cagayan": 1,
+      "Batanes": 1,
+      "Cagayan": 0,
       "Isabela": 0,
       "Nueva Vizcaya": 0,
       "Quirino": 0
@@ -64,14 +64,14 @@
     },
     "tcws_wind_ranges": {
       "1": {
-        "min_wind_kmh": 39,
-        "max_wind_kmh": 61,
-        "wind_range_kmh": "39-61"
-      },
-      "2": {
         "min_wind_kmh": 39.0,
         "max_wind_kmh": 61.0,
         "wind_range_kmh": "39-61"
+      },
+      "2": {
+        "min_wind_kmh": 62,
+        "max_wind_kmh": 88,
+        "wind_range_kmh": "62-88"
       },
       "3": {
         "min_wind_kmh": 89,
@@ -91,15 +91,9 @@
     },
     "tcws_signal_groups": [
       {
-        "signal": 2,
-        "label": "TCWS 2",
-        "areas_text": "Luzon Batanes Visayas - Mindanao -",
-        "region2_relevant": true
-      },
-      {
         "signal": 1,
         "label": "TCWS 1",
-        "areas_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -",
+        "areas_text": "Luzon Batanes Visayas - Mindanao -",
         "region2_relevant": true
       }
     ],
@@ -107,8 +101,7 @@
     "rainfall_advisory_text": "",
     "region2_affected": true,
     "affected_provinces": [
-      "Batanes",
-      "Cagayan"
+      "Batanes"
     ],
     "affected_municipalities": [
       {
@@ -118,8 +111,8 @@
         "match": "province_full",
         "coverage_scope": "province_full",
         "province_partial": false,
-        "signal": 2,
-        "tcws_signal": 2,
+        "signal": 1,
+        "tcws_signal": 1,
         "official_area_text": "Luzon Batanes Visayas - Mindanao -"
       },
       {
@@ -129,8 +122,8 @@
         "match": "province_full",
         "coverage_scope": "province_full",
         "province_partial": false,
-        "signal": 2,
-        "tcws_signal": 2,
+        "signal": 1,
+        "tcws_signal": 1,
         "official_area_text": "Luzon Batanes Visayas - Mindanao -"
       },
       {
@@ -140,8 +133,8 @@
         "match": "province_full",
         "coverage_scope": "province_full",
         "province_partial": false,
-        "signal": 2,
-        "tcws_signal": 2,
+        "signal": 1,
+        "tcws_signal": 1,
         "official_area_text": "Luzon Batanes Visayas - Mindanao -"
       },
       {
@@ -151,8 +144,8 @@
         "match": "province_full",
         "coverage_scope": "province_full",
         "province_partial": false,
-        "signal": 2,
-        "tcws_signal": 2,
+        "signal": 1,
+        "tcws_signal": 1,
         "official_area_text": "Luzon Batanes Visayas - Mindanao -"
       },
       {
@@ -162,8 +155,8 @@
         "match": "province_full",
         "coverage_scope": "province_full",
         "province_partial": false,
-        "signal": 2,
-        "tcws_signal": 2,
+        "signal": 1,
+        "tcws_signal": 1,
         "official_area_text": "Luzon Batanes Visayas - Mindanao -"
       },
       {
@@ -173,195 +166,30 @@
         "match": "province_full",
         "coverage_scope": "province_full",
         "province_partial": false,
-        "signal": 2,
-        "tcws_signal": 2,
+        "signal": 1,
+        "tcws_signal": 1,
         "official_area_text": "Luzon Batanes Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023102000",
-        "municipality": "Abulug",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023106000",
-        "municipality": "Aparri",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023107000",
-        "municipality": "Baggao",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023108000",
-        "municipality": "Ballesteros",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023109000",
-        "municipality": "Buguey",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023111000",
-        "municipality": "Camalaniugan",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023112000",
-        "municipality": "Claveria",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023114000",
-        "municipality": "Gattaran",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023115000",
-        "municipality": "Gonzaga",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023117000",
-        "municipality": "Lal-lo",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023119000",
-        "municipality": "Pamplona",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023123000",
-        "municipality": "Sanchez-Mira",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023124000",
-        "municipality": "Santa Ana",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023125000",
-        "municipality": "Santa Praxedes",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023126000",
-        "municipality": "Santa Teresita",
-        "province": "Cagayan",
-        "match": "municipality",
-        "coverage_scope": "municipality",
-        "province_partial": true,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The northern portion of Cagayan (Santa Ana, Gonzaga, Lal-Lo, Santa Teresita, Camalaniugan, Aparri, Buguey, Gattaran, Baggao, Santa Praxedes, Claveria, Sanchez-Mira, Pamplona, Ballesteros, Abulug, Allacapan, Lasam) including Babuyan Islands, the northern portion of Ilocos Norte (Pagudpud, Adams, Bangui, Vintar, Burgos, Bacarra, Pasuquin, Carasi, Dumalneg) and the northern portion of Apayao (Calanasan, Luna, Santa Marcela, Flora, Pudtol) Visayas - Mindanao -"
       }
     ],
     "municipality_validation": {
       "enabled": true,
-      "coverage_scope": "mixed",
-      "affected_municipality_count": 21,
+      "coverage_scope": "province_full",
+      "affected_municipality_count": 6,
       "full_province_match_count": 6,
-      "explicit_municipality_match_count": 15,
+      "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Typhoon Rosal Bulletin #14",
-    "as_of": "2026-10-23",
+    "summary": "Typhoon Rosal Bulletin #15",
+    "as_of": "2026-10-24",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-23T11:58:17.131111+00:00",
-    "fetched_at_utc": "2026-10-23T11:58:17.131111+00:00",
+    "fetched_at": "2026-10-23T16:55:51.269554+00:00",
+    "fetched_at_utc": "2026-10-23T16:55:51.269554+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
       "source": "pagasa_tropical_cyclone_warning_for_agriculture",
       "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
-      "as_of": "2026-10-23",
+      "as_of": "2026-10-24",
       "active": true,
       "region2_relevant": true,
       "summary": "PAGASA agriculture warning for Ilocos Norte, Apayao at Cagayan: Maulan na may pagbugso ng hangin",
@@ -469,6 +297,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-23T11:58:17.131111+00:00"
+    "last_checked_utc": "2026-10-23T16:55:51.269554+00:00"
   }
 }
