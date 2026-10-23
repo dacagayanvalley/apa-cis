@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-23",
-  "fetched_at": "2026-10-23T01:23:28.625034+00:00",
-  "fetched_at_utc": "2026-10-23T01:23:28.625034+00:00",
+  "fetched_at": "2026-10-23T06:25:57.356426+00:00",
+  "fetched_at_utc": "2026-10-23T06:25:57.356426+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -42,25 +42,25 @@
     "bulletin_status": "active",
     "name": "Rosal",
     "disturbance_type": "Typhoon",
-    "bulletin_number": "12",
-    "issued_at": "05:00 am, 23 October 2026",
-    "valid_until": "the next advisory to be issued at 11:00 AM today)",
+    "bulletin_number": "13",
+    "issued_at": "11:00 am, 23 October 2026",
+    "valid_until": "the next advisory to be issued at 5:00 PM today)",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 2,
     "signal_levels": {
       "Batanes": 2,
-      "Cagayan": 1,
+      "Cagayan": 0,
       "Isabela": 0,
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": 155.0,
-    "peak_wind_gust_kmh": 190.0,
-    "gustiness_kmh": 190.0,
+    "max_sustained_wind_kmh": 150.0,
+    "peak_wind_gust_kmh": 185.0,
+    "gustiness_kmh": 185.0,
     "wind": {
-      "max_sustained_wind_kmh": 155.0,
-      "peak_wind_gust_kmh": 190.0,
-      "gustiness_kmh": 190.0
+      "max_sustained_wind_kmh": 150.0,
+      "peak_wind_gust_kmh": 185.0,
+      "gustiness_kmh": 185.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -93,24 +93,23 @@
       {
         "signal": 2,
         "label": "TCWS 2",
-        "areas_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -",
+        "areas_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -",
         "region2_relevant": true
       },
       {
         "signal": 1,
         "label": "TCWS 1",
-        "areas_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -",
+        "areas_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, Ilocos Norte, and Apayao Visayas - Mindanao -",
         "region2_relevant": true
       }
     ],
     "rainfall": {
-      "advisory_text": "Refer to Weather Advisory No. 11 issued at 5:00 AM today for the heavy rainfall outlook due to the TC ROSAL."
+      "advisory_text": "Refer to Weather Advisory No. 12 issued at 11:00 AM today for the heavy rainfall outlook due to the TC ROSAL."
     },
-    "rainfall_advisory_text": "Refer to Weather Advisory No. 11 issued at 5:00 AM today for the heavy rainfall outlook due to the TC ROSAL.",
+    "rainfall_advisory_text": "Refer to Weather Advisory No. 12 issued at 11:00 AM today for the heavy rainfall outlook due to the TC ROSAL.",
     "region2_affected": true,
     "affected_provinces": [
-      "Batanes",
-      "Cagayan"
+      "Batanes"
     ],
     "affected_municipalities": [
       {
@@ -122,7 +121,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020101000",
@@ -133,7 +132,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020102000",
@@ -144,7 +143,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020103000",
@@ -155,7 +154,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020104000",
@@ -166,7 +165,7 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
       },
       {
         "psgc": "020105000",
@@ -177,341 +176,22 @@
         "province_partial": false,
         "signal": 2,
         "tcws_signal": 2,
-        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is., Panuitan Is., Calayan Is., Camiguin Is.) Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023101000",
-        "municipality": "City of Tuguegarao",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023102000",
-        "municipality": "Abulug",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023103000",
-        "municipality": "Alcala",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023104000",
-        "municipality": "Allacapan",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023105000",
-        "municipality": "Amulung",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023106000",
-        "municipality": "Aparri",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023107000",
-        "municipality": "Baggao",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023108000",
-        "municipality": "Ballesteros",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023109000",
-        "municipality": "Buguey",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023110000",
-        "municipality": "Calayan",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023111000",
-        "municipality": "Camalaniugan",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023112000",
-        "municipality": "Claveria",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023113000",
-        "municipality": "Enrile",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023114000",
-        "municipality": "Gattaran",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023115000",
-        "municipality": "Gonzaga",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023116000",
-        "municipality": "Iguig",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023117000",
-        "municipality": "Lal-lo",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023118000",
-        "municipality": "Lasam",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023119000",
-        "municipality": "Pamplona",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023120000",
-        "municipality": "Peñablanca",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023121000",
-        "municipality": "Piat",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023122000",
-        "municipality": "Rizal",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023123000",
-        "municipality": "Sanchez-Mira",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023124000",
-        "municipality": "Santa Ana",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023125000",
-        "municipality": "Santa Praxedes",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023126000",
-        "municipality": "Santa Teresita",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023127000",
-        "municipality": "Santo Niño",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023128000",
-        "municipality": "Solana",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
-      },
-      {
-        "psgc": "023129000",
-        "municipality": "Tuao",
-        "province": "Cagayan",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon The rest of Babuyan Islands, mainland Cagayan, the northeastern portion of Isabela (Maconacon, Divilacan, Santa Maria, Cabagan, San Pablo, Palanan), Ilocos Norte, and Apayao Visayas - Mindanao -"
+        "official_area_text": "Luzon Batanes and the northeastern portion of Babuyan Islands (Babuyan Is.) Visayas - Mindanao -"
       }
     ],
     "municipality_validation": {
       "enabled": true,
       "coverage_scope": "province_full",
-      "affected_municipality_count": 35,
-      "full_province_match_count": 35,
+      "affected_municipality_count": 6,
+      "full_province_match_count": 6,
       "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Typhoon Rosal Bulletin #12",
+    "summary": "Typhoon Rosal Bulletin #13",
     "as_of": "2026-10-23",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-23T01:23:28.625034+00:00",
-    "fetched_at_utc": "2026-10-23T01:23:28.625034+00:00",
+    "fetched_at": "2026-10-23T06:25:57.356426+00:00",
+    "fetched_at_utc": "2026-10-23T06:25:57.356426+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -523,50 +203,42 @@
       "summary": "PAGASA agriculture warning for Ilocos Norte, Apayao, Cagayan, at Isabela: Maulan na may pagbugso ng hangin",
       "agri_weather": [
         {
-          "forecast_area": "BABALA NG BAGYO POSIBLENG MARANASAN LAKAS NG HANGIN (km/h) ORAS NA INAASAHAN (mula sa unang paglabas ng babala) 5 Lubhang mapanganib sa buhay at mga ari-arian >185 12 na oras 4 Malaki hanggang sa matinding pinsala 118 - 184 12 na oras 3 Katamtaman hanggang sa malaking pinsala 89 - 117 18 na oras 2 Bahagya hanggang sa katamtamang pinsala 62 - 88 24 na oras 1 Maliit hanggang sa bahagyang pinsala 39 - 61 36 na oras",
-          "agri_weather": "BABALA NG BAGYO",
-          "lowland_temp_c": "",
-          "upland_temp_c": "POSIBLENG MARANASAN",
-          "relative_humidity_pct": "LAKAS NG HANGIN (km/h)",
-          "leaf_wetness_hours": "ORAS NA INAASAHAN (mula sa unang paglabas ng babala)"
-        },
-        {
           "forecast_area": "Batanes",
           "agri_weather": "Masungit na panahon",
-          "lowland_temp_c": "23 – 28",
-          "upland_temp_c": "22 – 27",
+          "lowland_temp_c": "24 – 28",
+          "upland_temp_c": "21 – 27",
           "relative_humidity_pct": "60 – 98",
           "leaf_wetness_hours": ">12"
         },
         {
           "forecast_area": "Ilocos Norte, Apayao, Cagayan, at Isabela",
           "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "23 – 30",
-          "upland_temp_c": "23 – 29",
+          "lowland_temp_c": "23 – 33",
+          "upland_temp_c": "20 – 31",
           "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": "4 – 8"
+          "leaf_wetness_hours": ">12"
         },
         {
-          "forecast_area": "Natitirang bahagi ng Cordillera Administrative Region, natitirang bahagi ng Lambak ng Cagayan, Ilocos Sur, La Union, at Aurora",
+          "forecast_area": "Natitirang bahagi ng Rehiyon ng Cordillera, ang natitirang bahagi ng Cagayan Valley, Ilocos Sur, La Union, at Aurora",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
           "lowland_temp_c": "23 – 33",
-          "upland_temp_c": "21 – 32",
+          "upland_temp_c": "15 – 31",
           "relative_humidity_pct": "60 – 98",
           "leaf_wetness_hours": "4 – 8"
         },
         {
-          "forecast_area": "Rehiyon ng Bicol, Zamboanga Peninsula, Kanlurang Kabisayaan, Rehiyon ng Negros, Lanao del Norte, Misamis Occidental, at Palawan",
+          "forecast_area": "Kabisayaan, Zamboanga Peninsula, Masbate, Palawan, Lanao del Norte, Misamis Occidental, Basilan, at Tawi-Tawi",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "24 – 33",
-          "upland_temp_c": "22 – 32",
-          "relative_humidity_pct": "60 – 98",
+          "lowland_temp_c": "23 – 34",
+          "upland_temp_c": "20 – 32",
+          "relative_humidity_pct": "55 – 96",
           "leaf_wetness_hours": "4 – 8"
         },
         {
           "forecast_area": "Metro Manila at natitirang bahagi ng bansa",
           "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 34",
-          "upland_temp_c": "22 – 32",
+          "lowland_temp_c": "23 – 35",
+          "upland_temp_c": "20 – 33",
           "relative_humidity_pct": "45 – 96",
           "leaf_wetness_hours": "0 – 4"
         }
@@ -583,7 +255,7 @@
         "May posibilidad ng pagguho ng lupa sa mga lugar na may katamtaman hanggang sa mataas ang panganib.",
         "Posibleng magkaroon ng mga localized na pagbaha, lalo na sa mga urbanisadong lugar, mabababang lugar, o malapit sa mga ilog.",
         "May posibilidad ng pagguho ng lupa sa mga lugar na may mataas na panganib.",
-        "PAALALA: Inaasahan ang mas malakas na mga pag-ulan sa mga matataas ang mabundok na lugar. Sa ganitong kalagayan, posible ang pagbaha at pagguho ng lupa dulot ng mga pag-ulan, lalo na sa mga lugar na madalas na nakakaranas nito ayun sa mga hazard maps at sa mga lugar na nakaranas ng malalakas na pag-ulan noong mga nakalipas na mga araw."
+        "Inaasahan ang mas malakas na mga pag-ulan sa mga matataas ang mabundok na lugar. Sa ganitong kalagayan, posible ang pagbaha at pagguho ng lupa dulot ng mga pag-ulan, lalo na sa mga lugar na madalas na nakakaranas nito ayun sa mga hazard maps at sa mga lugar na nakaranas ng malalakas na pag-ulan noong mga nakalipas na mga araw."
       ],
       "unaffected_area_advisories": [
         "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
@@ -600,16 +272,16 @@
         {
           "forecast_area": "Ilocos Norte, Apayao, Cagayan, at Isabela",
           "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "23 – 30",
-          "upland_temp_c": "23 – 29",
+          "lowland_temp_c": "23 – 33",
+          "upland_temp_c": "20 – 31",
           "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": "4 – 8"
+          "leaf_wetness_hours": ">12"
         },
         {
-          "forecast_area": "Natitirang bahagi ng Cordillera Administrative Region, natitirang bahagi ng Lambak ng Cagayan, Ilocos Sur, La Union, at Aurora",
+          "forecast_area": "Natitirang bahagi ng Rehiyon ng Cordillera, ang natitirang bahagi ng Cagayan Valley, Ilocos Sur, La Union, at Aurora",
           "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
           "lowland_temp_c": "23 – 33",
-          "upland_temp_c": "21 – 32",
+          "upland_temp_c": "15 – 31",
           "relative_humidity_pct": "60 – 98",
           "leaf_wetness_hours": "4 – 8"
         }
@@ -625,6 +297,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-23T01:23:28.625034+00:00"
+    "last_checked_utc": "2026-10-23T06:25:57.356426+00:00"
   }
 }
