@@ -31,8 +31,8 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "rainfall_mm": 26.16,
-        "class": "heavy"
+        "rainfall_mm": 69.84,
+        "class": "very_heavy"
       }
     },
     {
@@ -99,7 +99,7 @@
         "psgc": "023106000",
         "municipality": "Aparri",
         "province": "Cagayan",
-        "rainfall_mm": 62.4,
+        "rainfall_mm": 89.28,
         "class": "very_heavy"
       }
     },
@@ -133,8 +133,8 @@
         "psgc": "023108000",
         "municipality": "Ballesteros",
         "province": "Cagayan",
-        "rainfall_mm": 26.16,
-        "class": "heavy"
+        "rainfall_mm": 69.84,
+        "class": "very_heavy"
       }
     },
     {
@@ -150,7 +150,7 @@
         "psgc": "023109000",
         "municipality": "Buguey",
         "province": "Cagayan",
-        "rainfall_mm": 62.4,
+        "rainfall_mm": 89.28,
         "class": "very_heavy"
       }
     },
@@ -201,8 +201,8 @@
         "psgc": "023112000",
         "municipality": "Claveria",
         "province": "Cagayan",
-        "rainfall_mm": 26.16,
-        "class": "heavy"
+        "rainfall_mm": 69.84,
+        "class": "very_heavy"
       }
     },
     {
@@ -252,7 +252,7 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "rainfall_mm": 62.4,
+        "rainfall_mm": 89.28,
         "class": "very_heavy"
       }
     },
@@ -422,8 +422,8 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "rainfall_mm": 26.16,
-        "class": "heavy"
+        "rainfall_mm": 69.84,
+        "class": "very_heavy"
       }
     },
     {
@@ -439,7 +439,7 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "rainfall_mm": 62.4,
+        "rainfall_mm": 89.28,
         "class": "very_heavy"
       }
     },
@@ -796,7 +796,7 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "rainfall_mm": 125.52,
+        "rainfall_mm": 153.12,
         "class": "extreme"
       }
     },

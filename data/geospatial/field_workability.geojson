@@ -42,9 +42,9 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "workability_class": "high_risk",
-        "workability_label": "High Risk — Defer heavy operations",
-        "color": "#FF5722",
+        "workability_class": "not_workable",
+        "workability_label": "Not Workable — Heavy rain, waterlogged fields",
+        "color": "#B71C1C",
         "operations": {
           "land_preparation": "defer",
           "transplanting": "defer",
@@ -53,7 +53,7 @@
           "irrigation": "defer",
           "harvesting": "defer",
           "drying": "defer",
-          "pest_monitoring": "safe"
+          "pest_monitoring": "defer"
         }
       }
     },
@@ -210,9 +210,9 @@
         "psgc": "023108000",
         "municipality": "Ballesteros",
         "province": "Cagayan",
-        "workability_class": "high_risk",
-        "workability_label": "High Risk — Defer heavy operations",
-        "color": "#FF5722",
+        "workability_class": "not_workable",
+        "workability_label": "Not Workable — Heavy rain, waterlogged fields",
+        "color": "#B71C1C",
         "operations": {
           "land_preparation": "defer",
           "transplanting": "defer",
@@ -221,7 +221,7 @@
           "irrigation": "defer",
           "harvesting": "defer",
           "drying": "defer",
-          "pest_monitoring": "safe"
+          "pest_monitoring": "defer"
         }
       }
     },
@@ -322,9 +322,9 @@
         "psgc": "023112000",
         "municipality": "Claveria",
         "province": "Cagayan",
-        "workability_class": "high_risk",
-        "workability_label": "High Risk — Defer heavy operations",
-        "color": "#FF5722",
+        "workability_class": "not_workable",
+        "workability_label": "Not Workable — Heavy rain, waterlogged fields",
+        "color": "#B71C1C",
         "operations": {
           "land_preparation": "defer",
           "transplanting": "defer",
@@ -333,7 +333,7 @@
           "irrigation": "defer",
           "harvesting": "defer",
           "drying": "defer",
-          "pest_monitoring": "safe"
+          "pest_monitoring": "defer"
         }
       }
     },
@@ -686,9 +686,9 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "workability_class": "high_risk",
-        "workability_label": "High Risk — Defer heavy operations",
-        "color": "#FF5722",
+        "workability_class": "not_workable",
+        "workability_label": "Not Workable — Heavy rain, waterlogged fields",
+        "color": "#B71C1C",
         "operations": {
           "land_preparation": "defer",
           "transplanting": "defer",
@@ -697,7 +697,7 @@
           "irrigation": "defer",
           "harvesting": "defer",
           "drying": "defer",
-          "pest_monitoring": "safe"
+          "pest_monitoring": "defer"
         }
       }
     },

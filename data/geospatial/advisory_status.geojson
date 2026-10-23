@@ -34,7 +34,7 @@
         "municipality": "Abulug",
         "province": "Cagayan",
         "severity": "danger",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
@@ -148,7 +148,7 @@
         "municipality": "Ballesteros",
         "province": "Cagayan",
         "severity": "danger",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
@@ -186,7 +186,7 @@
         "municipality": "Calayan",
         "province": "Cagayan",
         "severity": "danger",
-        "advisory_count": 13,
+        "advisory_count": 14,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
@@ -224,7 +224,7 @@
         "municipality": "Claveria",
         "province": "Cagayan",
         "severity": "danger",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
@@ -471,7 +471,7 @@
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
         "severity": "danger",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
@@ -565,10 +565,10 @@
         "psgc": "031401000",
         "municipality": "City of Ilagan",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -679,10 +679,10 @@
         "psgc": "031407000",
         "municipality": "Cabagan",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -755,10 +755,10 @@
         "psgc": "031411000",
         "municipality": "Delfin Albano",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -774,10 +774,10 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "severity": "danger",
+        "severity": "warning",
         "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -793,10 +793,10 @@
         "psgc": "031413000",
         "municipality": "Divilacan",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -869,10 +869,10 @@
         "psgc": "031417000",
         "municipality": "Luna",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -889,8 +889,8 @@
         "municipality": "Maconacon",
         "province": "Isabela",
         "severity": "danger",
-        "advisory_count": 14,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
+        "advisory_count": 13,
+        "primary_advisory": "Extreme Rainfall — All Operations Suspend",
         "color": "#B71C1C"
       }
     },
@@ -945,10 +945,10 @@
         "psgc": "031421000",
         "municipality": "Palanan",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1135,10 +1135,10 @@
         "psgc": "031431000",
         "municipality": "San Mariano",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1173,10 +1173,10 @@
         "psgc": "031433000",
         "municipality": "San Pablo",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1192,10 +1192,10 @@
         "psgc": "031434000",
         "municipality": "Santa Maria",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1230,10 +1230,10 @@
         "psgc": "031436000",
         "municipality": "Santo Tomas",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1249,10 +1249,10 @@
         "psgc": "031437000",
         "municipality": "Tumauini",
         "province": "Isabela",
-        "severity": "danger",
-        "advisory_count": 13,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 12,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1630,7 +1630,7 @@
         "municipality": "Nagtipunan",
         "province": "Quirino",
         "severity": "warning",
-        "advisory_count": 12,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1668,7 +1668,7 @@
         "municipality": "Basco",
         "province": "Batanes",
         "severity": "danger",
-        "advisory_count": 13,
+        "advisory_count": 14,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
@@ -1706,7 +1706,7 @@
         "municipality": "Ivana",
         "province": "Batanes",
         "severity": "danger",
-        "advisory_count": 13,
+        "advisory_count": 14,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
@@ -1725,7 +1725,7 @@
         "municipality": "Mahatao",
         "province": "Batanes",
         "severity": "danger",
-        "advisory_count": 13,
+        "advisory_count": 14,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
@@ -1744,7 +1744,7 @@
         "municipality": "Sabtang",
         "province": "Batanes",
         "severity": "danger",
-        "advisory_count": 13,
+        "advisory_count": 14,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
@@ -1763,7 +1763,7 @@
         "municipality": "Uyugan",
         "province": "Batanes",
         "severity": "danger",
-        "advisory_count": 13,
+        "advisory_count": 14,
         "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
         "color": "#B71C1C"
       }
