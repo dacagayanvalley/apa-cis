@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-23",
-  "fetched_at": "2026-10-23T00:35:03.195248+00:00",
-  "fetched_at_utc": "2026-10-23T00:35:03.195248+00:00",
+  "fetched_at": "2026-10-23T01:23:28.625034+00:00",
+  "fetched_at_utc": "2026-10-23T01:23:28.625034+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -510,8 +510,10 @@
     "summary": "Typhoon Rosal Bulletin #12",
     "as_of": "2026-10-23",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-23T00:35:03.195248+00:00",
-    "fetched_at_utc": "2026-10-23T00:35:03.195248+00:00",
+    "fetched_at": "2026-10-23T01:23:28.625034+00:00",
+    "fetched_at_utc": "2026-10-23T01:23:28.625034+00:00",
+    "auto_fetch_interval_minutes": 30,
+    "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
       "source": "pagasa_tropical_cyclone_warning_for_agriculture",
       "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
@@ -619,5 +621,10 @@
     "farm_weather": "success",
     "typhoon": "success",
     "typhoon_agriculture": "success"
+  },
+  "severe_weather_auto_fetch": {
+    "mode": "scheduled_only",
+    "interval_minutes": 30,
+    "last_checked_utc": "2026-10-23T01:23:28.625034+00:00"
   }
 }

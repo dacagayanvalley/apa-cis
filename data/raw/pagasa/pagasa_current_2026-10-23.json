@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-23",
-  "fetched_at": "2026-10-22T22:40:07.125400+00:00",
-  "fetched_at_utc": "2026-10-22T22:40:07.125400+00:00",
+  "fetched_at": "2026-10-23T01:23:28.625034+00:00",
+  "fetched_at_utc": "2026-10-23T01:23:28.625034+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,26 +11,28 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "21 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "23 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-10-21"
+    "as_of": "2026-10-23"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-10-21",
+    "as_of": "2026-10-23",
     "region2_forecast": [
-      "21 October 2026",
-      "Issued at: 7:00 AM Wednesday, October 21, 2026",
-      "Valid until: 7:00 AM Thursday, October 22, 2026",
-      "Batanes, Ilocos Norte, Apayao, Cagayan, Isabela, and Catanduanes",
-      "Eastern Visayas, Ilocos Sur, Quezon, and the rest of Cordillera Administrative Region, Cagayan Valley, and Bicol Region",
-      "Ilocos Sur, and the rest of Cordillera Administrative Region and Cagayan Valley",
-      "Pangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur",
-      "as of 07 October 2026)",
-      "A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.",
-      "(Batanes, Babuyan Islands {Babuyan Is., Camiguin Is., Calayan Is.}, the northern and eastern coasts of mainland Cagayan {Santa Ana, Gonzaga, Lal-Lo, Gattaran, Baggao, Peñablanca}, and Isabela),"
+      "23 October 2026",
+      "Issued at: 7:00 AM Friday, October 23, 2026",
+      "Valid until: 7:00 AM Saturday, October 24, 2026",
+      "At 3:00 AM today, the center of the eye of Typhoon \"ROSAL\" {CHAMPI} was estimated based on all available data at 280 km East Northeast of Itbayat, Batanes (22.0°N, 124.2°E) with maximum sustained winds of 155 km/h near the center and gustiness of up to 190 km/h. It is moving Northwestward at 15 km/h.",
+      "Ilocos Norte, Apayao, Cagayan, and Isabela",
+      "The rest of Cordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union, and Aurora",
+      "The rest of Cordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union –",
+      "Nueva Vizcaya, Quirino, Most areas in Central Luzon, Cordillera Administrative Region, Quezon City, Rizal, Quezon, Palawan, Romblon, Camarines Norte, Catanduanes, Most areas in Western Visayas, Samar, Bukidnon, Davao del Norte, Davao del Sur, and Lanao del Sur",
+      "– Ilocos Region, Batanes, Isabela, Zambales, Nueva Ecija, Cavite, Batangas, Pasay, Occidental Mindoro, Oriental Mindoro, Camarines Sur, Albay, Northern Samar, Surigao del Norte, Surigao del Sur, and Maguindanao",
+      "(Updated as of 21 October 2026)",
+      "A strong to very strong El Niño is present in the Tropical Pacific. Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027.",
+      "the the seaboards of Extreme Northern Luzon (Batanes), the seaboards of Extreme Northern Luzon (Babuyan Islands), the northern and eastern seaboards of Northern Luzon (Mainland Cagayan), the seaboards of Northern Luzon (Ilocos Norte and Isabela), the western seaboard of Northern Luzon and the eastern seaboards of Central and Southern Luzon ("
     ],
-    "raw_text_extracted": "21 October 2026\nIssued at: 7:00 AM Wednesday, October 21, 2026\nValid until: 7:00 AM Thursday, October 22, 2026\nBatanes, Ilocos Norte, Apayao, Cagayan, Isabela, and Catanduanes\nEastern Visayas, Ilocos Sur, Quezon, and the rest of Cordillera Administrative Region, Cagayan Valley, and Bicol Region\nIlocos Sur, and the rest of Cordillera Administrative Region and Cagayan Valley\nPangasinan, La Union, Cagayan Valley, Cordillera Administrative Region, Central Luzon, National Capital Region, Cavite, Batangas, Rizal, most parts of Quezon, Occidental Mindoro, Oriental Mindoro, northern part of Palawan, most parts of Bicol Region, most parts of Western Visayas, Eastern Samar, Leyte, Bukidnon, Davao del Norte, Surigao del Sur, and Lanao del Sur\nas of 07 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.\n(Batanes, Babuyan Islands {Babuyan Is., Camiguin Is., Calayan Is.}, the northern and eastern coasts of mainland Cagayan {Santa Ana, Gonzaga, Lal-Lo, Gattaran, Baggao, Peñablanca}, and Isabela),",
+    "raw_text_extracted": "23 October 2026\nIssued at: 7:00 AM Friday, October 23, 2026\nValid until: 7:00 AM Saturday, October 24, 2026\nAt 3:00 AM today, the center of the eye of Typhoon \"ROSAL\" {CHAMPI} was estimated based on all available data at 280 km East Northeast of Itbayat, Batanes (22.0°N, 124.2°E) with maximum sustained winds of 155 km/h near the center and gustiness of up to 190 km/h. It is moving Northwestward at 15 km/h.\nIlocos Norte, Apayao, Cagayan, and Isabela\nThe rest of Cordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union, and Aurora\nThe rest of Cordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union –\nNueva Vizcaya, Quirino, Most areas in Central Luzon, Cordillera Administrative Region, Quezon City, Rizal, Quezon, Palawan, Romblon, Camarines Norte, Catanduanes, Most areas in Western Visayas, Samar, Bukidnon, Davao del Norte, Davao del Sur, and Lanao del Sur\n– Ilocos Region, Batanes, Isabela, Zambales, Nueva Ecija, Cavite, Batangas, Pasay, Occidental Mindoro, Oriental Mindoro, Camarines Sur, Albay, Northern Samar, Surigao del Norte, Surigao del Sur, and Maguindanao\n(Updated as of 21 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027.\nthe the seaboards of Extreme Northern Luzon (Batanes), the seaboards of Extreme Northern Luzon (Babuyan Islands), the northern and eastern seaboards of Northern Luzon (Mainland Cagayan), the seaboards of Northern Luzon (Ilocos Norte and Isabela), the western seaboard of Northern Luzon and the eastern seaboards of Central and Southern Luzon (",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -508,8 +510,8 @@
     "summary": "Typhoon Rosal Bulletin #12",
     "as_of": "2026-10-23",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-22T22:40:07.125400+00:00",
-    "fetched_at_utc": "2026-10-22T22:40:07.125400+00:00",
+    "fetched_at": "2026-10-23T01:23:28.625034+00:00",
+    "fetched_at_utc": "2026-10-23T01:23:28.625034+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "success",
     "agriculture_advisory": {
@@ -623,6 +625,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-22T22:40:07.125400+00:00"
+    "last_checked_utc": "2026-10-23T01:23:28.625034+00:00"
   }
 }
