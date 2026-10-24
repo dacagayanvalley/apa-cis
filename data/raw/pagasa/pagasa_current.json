@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-24",
-  "fetched_at": "2026-10-24T01:54:35.462450+00:00",
-  "fetched_at_utc": "2026-10-24T01:54:35.462450+00:00",
+  "fetched_at": "2026-10-24T07:09:35.138809+00:00",
+  "fetched_at_utc": "2026-10-24T07:09:35.138809+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -37,35 +37,35 @@
     "needs_review": true
   },
   "typhoon": {
-    "active": true,
-    "is_final": false,
-    "bulletin_status": "active",
+    "active": false,
+    "is_final": true,
+    "bulletin_status": "final",
     "name": "Rosal",
     "disturbance_type": "Typhoon",
-    "bulletin_number": "16",
-    "issued_at": "05:00 am, 24 October 2026",
-    "valid_until": "the next advisory to be issued at 11:00 AM today)",
+    "bulletin_number": "17",
+    "issued_at": "11:00 am, 24 October 2026",
+    "valid_until": "",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
-    "signal_level": 1,
+    "signal_level": 0,
     "signal_levels": {
-      "Batanes": 1,
+      "Batanes": 0,
       "Cagayan": 0,
       "Isabela": 0,
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": 150.0,
-    "peak_wind_gust_kmh": 185.0,
-    "gustiness_kmh": 185.0,
+    "max_sustained_wind_kmh": 120.0,
+    "peak_wind_gust_kmh": 150.0,
+    "gustiness_kmh": 150.0,
     "wind": {
-      "max_sustained_wind_kmh": 150.0,
-      "peak_wind_gust_kmh": 185.0,
-      "gustiness_kmh": 185.0
+      "max_sustained_wind_kmh": 120.0,
+      "peak_wind_gust_kmh": 150.0,
+      "gustiness_kmh": 150.0
     },
     "tcws_wind_ranges": {
       "1": {
-        "min_wind_kmh": 39.0,
-        "max_wind_kmh": 61.0,
+        "min_wind_kmh": 39,
+        "max_wind_kmh": 61,
         "wind_range_kmh": "39-61"
       },
       "2": {
@@ -89,214 +89,37 @@
         "wind_range_kmh": "185-220"
       }
     },
-    "tcws_signal_groups": [
-      {
-        "signal": 1,
-        "label": "TCWS 1",
-        "areas_text": "Luzon Batanes Visayas - Mindanao -",
-        "region2_relevant": true
-      }
-    ],
+    "tcws_signal_groups": [],
     "rainfall": {},
     "rainfall_advisory_text": "",
-    "region2_affected": true,
-    "affected_provinces": [
-      "Batanes"
-    ],
-    "affected_municipalities": [
-      {
-        "psgc": "020100000",
-        "municipality": "Basco",
-        "province": "Batanes",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Batanes Visayas - Mindanao -"
-      },
-      {
-        "psgc": "020101000",
-        "municipality": "Itbayat",
-        "province": "Batanes",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Batanes Visayas - Mindanao -"
-      },
-      {
-        "psgc": "020102000",
-        "municipality": "Ivana",
-        "province": "Batanes",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Batanes Visayas - Mindanao -"
-      },
-      {
-        "psgc": "020103000",
-        "municipality": "Mahatao",
-        "province": "Batanes",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Batanes Visayas - Mindanao -"
-      },
-      {
-        "psgc": "020104000",
-        "municipality": "Sabtang",
-        "province": "Batanes",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Batanes Visayas - Mindanao -"
-      },
-      {
-        "psgc": "020105000",
-        "municipality": "Uyugan",
-        "province": "Batanes",
-        "match": "province_full",
-        "coverage_scope": "province_full",
-        "province_partial": false,
-        "signal": 1,
-        "tcws_signal": 1,
-        "official_area_text": "Luzon Batanes Visayas - Mindanao -"
-      }
-    ],
+    "region2_affected": false,
+    "affected_provinces": [],
+    "affected_municipalities": [],
     "municipality_validation": {
       "enabled": true,
-      "coverage_scope": "province_full",
-      "affected_municipality_count": 6,
-      "full_province_match_count": 6,
+      "coverage_scope": "none",
+      "affected_municipality_count": 0,
+      "full_province_match_count": 0,
       "explicit_municipality_match_count": 0,
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
-    "summary": "Typhoon Rosal Bulletin #16",
+    "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-10-24",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-24T01:54:35.462450+00:00",
-    "fetched_at_utc": "2026-10-24T01:54:35.462450+00:00",
+    "fetched_at": "2026-10-24T07:09:35.138809+00:00",
+    "fetched_at_utc": "2026-10-24T07:09:35.138809+00:00",
     "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "success",
-    "agriculture_advisory": {
-      "source": "pagasa_tropical_cyclone_warning_for_agriculture",
-      "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture",
-      "as_of": "2026-10-24",
-      "active": true,
-      "region2_relevant": true,
-      "summary": "PAGASA agriculture warning for Ilocos Norte, Apayao at Cagayan: Maulan na may pagbugso ng hangin",
-      "agri_weather": [
-        {
-          "forecast_area": "BABALA NG BAGYO POSIBLENG MARANASAN LAKAS NG HANGIN (km/h) ORAS NA INAASAHAN (mula sa unang paglabas ng babala) 5 Lubhang mapanganib sa buhay at mga ari-arian >185 12 na oras 4 Malaki hanggang sa matinding pinsala 118 - 184 12 na oras 3 Katamtaman hanggang sa malaking pinsala 89 - 117 18 na oras 2 Bahagya hanggang sa katamtamang pinsala 62 - 88 24 na oras 1 Maliit hanggang sa bahagyang pinsala 39 - 61 36 na oras",
-          "agri_weather": "BABALA NG BAGYO",
-          "lowland_temp_c": "",
-          "upland_temp_c": "POSIBLENG MARANASAN",
-          "relative_humidity_pct": "LAKAS NG HANGIN (km/h)",
-          "leaf_wetness_hours": "ORAS NA INAASAHAN (mula sa unang paglabas ng babala)"
-        },
-        {
-          "forecast_area": "Batanes",
-          "agri_weather": "Masungit na panahon",
-          "lowland_temp_c": "24 – 28",
-          "upland_temp_c": "20 – 26",
-          "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": ">12"
-        },
-        {
-          "forecast_area": "Ilocos Norte, Apayao at Cagayan",
-          "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "23 – 32",
-          "upland_temp_c": "20 – 31",
-          "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": ">12"
-        },
-        {
-          "forecast_area": "Natitirang bahagi ng Rehiyon ng Cordillera, Ilocos Sur, La Union, at Isabela",
-          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 32",
-          "upland_temp_c": "15 – 30",
-          "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": "4 – 8"
-        },
-        {
-          "forecast_area": "Kabisayaan, Zamboanga Peninsula, Masbate, Palawan, Misamis Occidental, Camiguin, Surigao del Norte, Dinagat Islands, Basilan, atTawi-Tawi",
-          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 33",
-          "upland_temp_c": "20 – 32",
-          "relative_humidity_pct": "55 – 96",
-          "leaf_wetness_hours": "4 – 8"
-        },
-        {
-          "forecast_area": "Metro Manila at natitirang bahagi ng bansa",
-          "agri_weather": "Bahagyang maulap hanggang sa maulap na kalangitan na may pulu-pulong pag-ulan o pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 34",
-          "upland_temp_c": "20 – 32",
-          "relative_humidity_pct": "45 – 96",
-          "leaf_wetness_hours": "0 – 4"
-        }
-      ],
-      "affected_area_advisories": [
-        "PAYONG PANGSAKAHAN SA MGA POSIBLENG MAAPEKTUHAN NG BAGYO",
-        "Putulin ang mga labis at mahihinang sanga ng puno na maaaring mabali at makapinsala sa mga bahay, gusali, at iba pang estruktura. Ipagawa ito nang ligtas at sa tulong ng mga kwalipikadong tauhan kung kinakailangan.",
-        "Suriin at linisin ang mga kanal, estero, at daluyan ng tubig upang maiwasan ang pagbabara at makatulong sa maayos na pag-agos ng tubig-ulan.",
-        "Siyasatin at patibayin ang mga kulungan at silungan ng mga alagang hayop upang hindi masira ng malakas na hangin.",
-        "Itali o lagyan ng suporta ang mga matataas na halaman at mga pananim na madaling matumba dahil sa malakas na hangin.",
-        "Anihin ang mga gulay at hinog na bungang-kahoy na maaari nang anihin upang mabawasan ang posibleng pagkalugi.",
-        "MALAKAS NA HANGIN",
-        "Ang periphery ng bagyo ay magdadala ng malakas hanggang sa napakalakas na pagbugso ng hangin sa mga sumusunod na mga lugar (lalo na sa mga lugar malapit sa dagat at matataas at mabubundok na lugar):",
-        "Ang mga babala ng bagyo ay upang mabigyan ng babala ang lahat sa panganib na dulot ng hangin dahil sa bagyo. Ang mga lokal na hangin ay posibleng bahagyang mas malakas sa mga lugar malapit sa tabing-dagat o matataas at mabubundok na lugar. Mas mahina ang hangin sa mga lugar na hindi direktang tinatamaan nito",
-        "(mula sa Gale Warning #7 na inilabas kaninang 5:00 PM)",
-        "Mapanganib maglayag ang anumang uri ng sasakyang pandagat. Pinapayuhan ang mga maglalayag na manatili muna sa port o pumunta sa pinakamalapit na daungan.",
-        "Pinapayuhan ang mga mandaragat na gumagamit ng maliliit na sasakyang pandagat, kasama na ang mga bangkang de motor, na huwag munang maglayag lalo na ang mga walang karanasan sa ganitong kondisyon o mga gumagamit ng mga sasakyan na may sira."
-      ],
-      "unaffected_area_advisories": [
-        "PAYONG PANSAKAHAN SA MGA LUGAR NA HINDI APEKTADO NG BAGYO",
-        "Patuloy na subaybayan ang mga abiso ng DOST-PAGASA at iangkop ang mga gawaing pansakahan sa inaasahang lagay ng panahon.",
-        "Samantalahin ang magandang panahon sa pagtatanim, pag-aalis ng damo, at pag-aayos ng mga pasilidad sa bukid.",
-        "Regular na suriin ang mga pananim para sa mga peste at sakit, lalo na kapag pabago-bago ang panahon.",
-        "Ayusin ang mga kanal at daluyan ng tubig upang maiwasan ang pagbaha kapag biglang lumakas ang ulan.",
-        "Patuloy na mag-antabay sa mga updates at pagbabago ukol sa sama ng panahon.",
-        "na maaaring maapektuhan ay pinapayuhan na gumawa ng mga kaukulang hakbang para maprotektahan ang buhay at mga ari-arian. Ang mga nakatira sa mga lugar na maaaring maapektuhan ay pinapayuhang sumunod sa mga tagubilin ng mga namumuno sa inyong lugar. Para sa heavy rainfall warnings, thunderstorm/rainfall advisories, at iba pang severe weather information na para sa inyong lugar, palaging magbantay sa mga produktong ilalabas ng inyong lokal"
-      ],
-      "raw_text_excerpt": "PAGASA Toggle navigation GOVPH Home Weather General Weather Daily Weather Forecast Weather Outlook Selected Philippine Cities Asian Cities Weather Forecast Weather Outlook Selected Tourist Areas Weekly Weather Outlook Weather Advisory Aviation SIGMET METAR Terminal Aerodome Forecast Airways and Terminal Forecast Marine High Seas and Offshore Waters Forecast Gale Warning Heat Index Daily Temperature Flood Flood Information Dam Information Projects Hydromet Data Tropical Cyclone Tropical Cyclone Advisory Tropical Cyclone Bulletin Severe Wind Impact Based Forecast Tropical Cyclone Warning for Shipping Forecast Storm Surge Tropical Cyclone Warning for Agriculture TC-Threat Potential Forecast Tropical Cyclone Associated Rainfall Tropical Cyclone Publications Annual Report on Philippine Tropical Cyclones Tropical Cyclone Preliminary Report About Tropical Cyclone Climate Climate Monitoring Daily Rainfall and Temperature Monthly Monitoring Products Southeast Asia Climate Monitoring Climate Forum Climate Prediction TenDay: Weather Forecast Sub Seasonal Seasonal Forecast Specialized Forecast Climate Advisories El Niño / La Niña Monitoring Advisories Climate Projection Dynamic Downscaling CliMap Statistical Downscaling Climate Data Agri-Weather Climate Information for Agriculture Farm Weather Forecast Weekend/Special Farm Weather Forecast Ten-Day Regional Agri-Weather Information Monthly Philippine Agro-Climatic Review and Outlook Impact Assessment for Agriculture Astronomy Telescoping and Stargazing Astronomy in the Philippines Planetarium Astronomical Observatory Time Service Philippine Standard Time Astronomical Diary Regional Forecast Northern Luzon National Capital Region Southern Luzon Visayas Mindanao Products and Services Engineering Services Calibration Services Numerical Prediction Model Satellites Flood Monitoring for Metro Manila Risk Analysis Map Flood Hazard Map Regional Severe Wind Hazard Maps High Frequency Doppler Radar Vacancy GAD Corner Learnings Publication FAQs and Trivias Learning Tools Research and Development Information Rainfall and Thunderstorm Warning System Weather Terminologies Flood Forecasting and Warning System for River Basins Climate of the Philippines Climate Change in the Philippines Astronomy in the Philippines Field Station Categories Basic Cloud Seeding Operations Storm Surge Information Legend About Us Contact Us National Meteorological and Hydrological Services Related Linkages Transparency Seal About Us Mandate and Functions ",
-      "parse_method": "pagasa_public_html_static",
-      "region2_agri_weather": [
-        {
-          "forecast_area": "Ilocos Norte, Apayao at Cagayan",
-          "agri_weather": "Maulan na may pagbugso ng hangin",
-          "lowland_temp_c": "23 – 32",
-          "upland_temp_c": "20 – 31",
-          "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": ">12"
-        },
-        {
-          "forecast_area": "Natitirang bahagi ng Rehiyon ng Cordillera, Ilocos Sur, La Union, at Isabela",
-          "agri_weather": "Maulap na kalangitan na may kalat-kalat na pag-ulan at pagkidlat-pagkulog",
-          "lowland_temp_c": "23 – 32",
-          "upland_temp_c": "15 – 30",
-          "relative_humidity_pct": "60 – 98",
-          "leaf_wetness_hours": "4 – 8"
-        }
-      ]
-    }
+    "agriculture_advisory_fetch_status": "skipped"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
     "typhoon": "success",
-    "typhoon_agriculture": "success"
+    "typhoon_agriculture": "skipped"
   },
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-24T01:54:35.462450+00:00"
+    "last_checked_utc": "2026-10-24T07:09:35.138809+00:00"
   }
 }
