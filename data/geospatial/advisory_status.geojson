@@ -71,10 +71,10 @@
         "psgc": "023104000",
         "municipality": "Allacapan",
         "province": "Cagayan",
-        "severity": "danger",
-        "advisory_count": 14,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 13,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -413,10 +413,10 @@
         "psgc": "023122000",
         "municipality": "Rizal",
         "province": "Cagayan",
-        "severity": "danger",
-        "advisory_count": 14,
-        "primary_advisory": "Dangerous Heat — WBGT Critical",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 13,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -623,7 +623,7 @@
         "municipality": "Aurora",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -680,7 +680,7 @@
         "municipality": "Cabagan",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 14,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -737,7 +737,7 @@
         "municipality": "Cordon",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -965,7 +965,7 @@
         "municipality": "Quezon",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1003,7 +1003,7 @@
         "municipality": "Ramon",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1079,7 +1079,7 @@
         "municipality": "San Guillermo",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1117,7 +1117,7 @@
         "municipality": "San Manuel",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1174,7 +1174,7 @@
         "municipality": "San Pablo",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1212,7 +1212,7 @@
         "municipality": "Santiago City",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1250,7 +1250,7 @@
         "municipality": "Tumauini",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 13,
+        "advisory_count": 14,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1269,7 +1269,7 @@
         "municipality": "Bayombong",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1326,7 +1326,7 @@
         "municipality": "Bagabag",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1459,7 +1459,7 @@
         "municipality": "Quezon",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1497,7 +1497,7 @@
         "municipality": "Solano",
         "province": "Nueva Vizcaya",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1554,7 +1554,7 @@
         "municipality": "Cabarroguis",
         "province": "Quirino",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1573,7 +1573,7 @@
         "municipality": "Aglipay",
         "province": "Quirino",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1592,7 +1592,7 @@
         "municipality": "Diffun",
         "province": "Quirino",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1649,7 +1649,7 @@
         "municipality": "Saguday",
         "province": "Quirino",
         "severity": "warning",
-        "advisory_count": 14,
+        "advisory_count": 13,
         "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
@@ -1667,10 +1667,10 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "severity": "danger",
-        "advisory_count": 14,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 13,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1686,10 +1686,10 @@
         "psgc": "020101000",
         "municipality": "Itbayat",
         "province": "Batanes",
-        "severity": "danger",
-        "advisory_count": 14,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 13,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1705,10 +1705,10 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "severity": "danger",
-        "advisory_count": 14,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 13,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1724,10 +1724,10 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "severity": "danger",
-        "advisory_count": 14,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 13,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1743,10 +1743,10 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "severity": "danger",
-        "advisory_count": 14,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 13,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     },
     {
@@ -1762,10 +1762,10 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "severity": "danger",
-        "advisory_count": 14,
-        "primary_advisory": "PAGASA Tropical Cyclone Wind Signal Active",
-        "color": "#B71C1C"
+        "severity": "warning",
+        "advisory_count": 13,
+        "primary_advisory": "Postharvest Drying Risk",
+        "color": "#FF5722"
       }
     }
   ]
