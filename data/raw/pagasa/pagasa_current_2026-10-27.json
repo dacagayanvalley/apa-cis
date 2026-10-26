@@ -1,0 +1,125 @@
+{
+  "as_of": "2026-10-27",
+  "fetched_at": "2026-10-26T16:55:13.333700+00:00",
+  "fetched_at_utc": "2026-10-26T16:55:13.333700+00:00",
+  "source_urls": {
+    "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
+    "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
+    "typhoon": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
+    "typhoon_agriculture": "https://www.pagasa.dost.gov.ph/tropical-cyclone/tropical-cyclone-warning-for-agriculture"
+  },
+  "enso": {
+    "enso_phase": "el_nino",
+    "enso_strength": "strong",
+    "advisory_text": "25 October 2026 : A strong to very strong El Niño is present in the Tropical Pacific. Forecasts predict that El Niño will continue until the first half of 2027 and may reach its peak before the end of 2026.                                                                                                                                                           (updated: 07 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "source": "pagasa_enso_page",
+    "as_of": "2026-10-25"
+  },
+  "farm_weather": {
+    "source": "pagasa_farm_weather",
+    "as_of": "2026-10-25",
+    "region2_forecast": [
+      "25 October 2026",
+      "Issued at: 7:00 AM Friday, October 23, 2026",
+      "Valid until: 7:00 AM Saturday, October 24, 2026",
+      "At 3:00 AM today, the center of the eye of Typhoon \"ROSAL\" {CHAMPI} was estimated based on all available data at 280 km East Northeast of Itbayat, Batanes (22.0°N, 124.2°E) with maximum sustained winds of 155 km/h near the center and gustiness of up to 190 km/h. It is moving Northwestward at 15 km/h.",
+      "Ilocos Norte, Apayao, Cagayan, and Isabela",
+      "The rest of Cordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union, and Aurora",
+      "The rest of Cordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union –",
+      "Nueva Vizcaya, Quirino, Most areas in Central Luzon, Cordillera Administrative Region, Quezon City, Rizal, Quezon, Palawan, Romblon, Camarines Norte, Catanduanes, Most areas in Western Visayas, Samar, Bukidnon, Davao del Norte, Davao del Sur, and Lanao del Sur",
+      "– Ilocos Region, Batanes, Isabela, Zambales, Nueva Ecija, Cavite, Batangas, Pasay, Occidental Mindoro, Oriental Mindoro, Camarines Sur, Albay, Northern Samar, Surigao del Norte, Surigao del Sur, and Maguindanao",
+      "(Updated as of 21 October 2026)",
+      "A strong to very strong El Niño is present in the Tropical Pacific. Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027.",
+      "the the seaboards of Extreme Northern Luzon (Batanes), the seaboards of Extreme Northern Luzon (Babuyan Islands), the northern and eastern seaboards of Northern Luzon (Mainland Cagayan), the seaboards of Northern Luzon (Ilocos Norte and Isabela), the western seaboard of Northern Luzon and the eastern seaboards of Central and Southern Luzon ("
+    ],
+    "raw_text_extracted": "25 October 2026\nIssued at: 7:00 AM Friday, October 23, 2026\nValid until: 7:00 AM Saturday, October 24, 2026\nAt 3:00 AM today, the center of the eye of Typhoon \"ROSAL\" {CHAMPI} was estimated based on all available data at 280 km East Northeast of Itbayat, Batanes (22.0°N, 124.2°E) with maximum sustained winds of 155 km/h near the center and gustiness of up to 190 km/h. It is moving Northwestward at 15 km/h.\nIlocos Norte, Apayao, Cagayan, and Isabela\nThe rest of Cordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union, and Aurora\nThe rest of Cordillera Administrative Region, the rest of Cagayan Valley, Ilocos Sur, La Union –\nNueva Vizcaya, Quirino, Most areas in Central Luzon, Cordillera Administrative Region, Quezon City, Rizal, Quezon, Palawan, Romblon, Camarines Norte, Catanduanes, Most areas in Western Visayas, Samar, Bukidnon, Davao del Norte, Davao del Sur, and Lanao del Sur\n– Ilocos Region, Batanes, Isabela, Zambales, Nueva Ecija, Cavite, Batangas, Pasay, Occidental Mindoro, Oriental Mindoro, Camarines Sur, Albay, Northern Samar, Surigao del Norte, Surigao del Sur, and Maguindanao\n(Updated as of 21 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027.\nthe the seaboards of Extreme Northern Luzon (Batanes), the seaboards of Extreme Northern Luzon (Babuyan Islands), the northern and eastern seaboards of Northern Luzon (Mainland Cagayan), the seaboards of Northern Luzon (Ilocos Norte and Isabela), the western seaboard of Northern Luzon and the eastern seaboards of Central and Southern Luzon (",
+    "parse_method": "static_html",
+    "needs_review": true
+  },
+  "typhoon": {
+    "active": false,
+    "is_final": false,
+    "bulletin_status": "active",
+    "name": "",
+    "disturbance_type": "",
+    "bulletin_number": "",
+    "issued_at": "",
+    "valid_until": "",
+    "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
+    "signal_level": 0,
+    "signal_levels": {
+      "Batanes": 0,
+      "Cagayan": 0,
+      "Isabela": 0,
+      "Nueva Vizcaya": 0,
+      "Quirino": 0
+    },
+    "max_sustained_wind_kmh": null,
+    "peak_wind_gust_kmh": null,
+    "gustiness_kmh": null,
+    "wind": {
+      "max_sustained_wind_kmh": null,
+      "peak_wind_gust_kmh": null,
+      "gustiness_kmh": null
+    },
+    "tcws_wind_ranges": {
+      "1": {
+        "min_wind_kmh": 39,
+        "max_wind_kmh": 61,
+        "wind_range_kmh": "39-61"
+      },
+      "2": {
+        "min_wind_kmh": 62,
+        "max_wind_kmh": 88,
+        "wind_range_kmh": "62-88"
+      },
+      "3": {
+        "min_wind_kmh": 89,
+        "max_wind_kmh": 117,
+        "wind_range_kmh": "89-117"
+      },
+      "4": {
+        "min_wind_kmh": 118,
+        "max_wind_kmh": 184,
+        "wind_range_kmh": "118-184"
+      },
+      "5": {
+        "min_wind_kmh": 185,
+        "max_wind_kmh": 220,
+        "wind_range_kmh": "185-220"
+      }
+    },
+    "tcws_signal_groups": [],
+    "rainfall": {},
+    "rainfall_advisory_text": "",
+    "region2_affected": false,
+    "affected_provinces": [],
+    "affected_municipalities": [],
+    "municipality_validation": {
+      "enabled": true,
+      "coverage_scope": "none",
+      "affected_municipality_count": 0,
+      "full_province_match_count": 0,
+      "explicit_municipality_match_count": 0,
+      "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
+    },
+    "summary": "No active PAGASA tropical cyclone bulletin detected.",
+    "as_of": "2026-10-27",
+    "parse_method": "pagasa_public_html_static",
+    "fetched_at": "2026-10-26T16:55:13.333700+00:00",
+    "fetched_at_utc": "2026-10-26T16:55:13.333700+00:00",
+    "auto_fetch_interval_minutes": 30,
+    "agriculture_advisory_fetch_status": "skipped"
+  },
+  "scrape_status": {
+    "enso": "success",
+    "farm_weather": "success",
+    "typhoon": "success",
+    "typhoon_agriculture": "skipped"
+  },
+  "severe_weather_auto_fetch": {
+    "mode": "scheduled_only",
+    "interval_minutes": 30,
+    "last_checked_utc": "2026-10-26T16:55:13.333700+00:00"
+  }
+}
