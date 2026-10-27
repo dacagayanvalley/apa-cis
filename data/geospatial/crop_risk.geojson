@@ -470,7 +470,7 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "risk_score": 4.4,
+        "risk_score": 4.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "rice_rainfed"
@@ -489,7 +489,7 @@
         "psgc": "023126000",
         "municipality": "Santa Teresita",
         "province": "Cagayan",
-        "risk_score": 4.4,
+        "risk_score": 4.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -1667,7 +1667,7 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "risk_score": 3.4,
+        "risk_score": 3.0,
         "risk_class": "high",
         "color": "#FF5722",
         "crop": "rice_rainfed"
@@ -1686,7 +1686,7 @@
         "psgc": "020101000",
         "municipality": "Itbayat",
         "province": "Batanes",
-        "risk_score": 1.9,
+        "risk_score": 1.5,
         "risk_class": "low",
         "color": "#FFC107",
         "crop": "rice_rainfed"
@@ -1705,7 +1705,7 @@
         "psgc": "020102000",
         "municipality": "Ivana",
         "province": "Batanes",
-        "risk_score": 1.9,
+        "risk_score": 1.5,
         "risk_class": "low",
         "color": "#FFC107",
         "crop": "corn_yellow"
@@ -1724,7 +1724,7 @@
         "psgc": "020103000",
         "municipality": "Mahatao",
         "province": "Batanes",
-        "risk_score": 1.9,
+        "risk_score": 1.5,
         "risk_class": "low",
         "color": "#FFC107",
         "crop": "corn_yellow"
@@ -1743,7 +1743,7 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "risk_score": 3.4,
+        "risk_score": 3.0,
         "risk_class": "high",
         "color": "#FF5722",
         "crop": "rice_rainfed"
@@ -1762,7 +1762,7 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "risk_score": 3.4,
+        "risk_score": 3.0,
         "risk_class": "high",
         "color": "#FF5722",
         "crop": "rice_rainfed"
