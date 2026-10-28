@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-10-28",
-  "fetched_at": "2026-10-28T14:23:13.145774+00:00",
-  "fetched_at_utc": "2026-10-28T14:23:13.145774+00:00",
+  "as_of": "2026-10-29",
+  "fetched_at": "2026-10-28T19:48:07.688274+00:00",
+  "fetched_at_utc": "2026-10-28T19:48:07.688274+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -102,10 +102,10 @@
       "note": "Region 2 PSGC municipality validation is applied before TCWS signals are attached downstream."
     },
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
-    "as_of": "2026-10-28",
+    "as_of": "2026-10-29",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-28T14:23:13.145774+00:00",
-    "fetched_at_utc": "2026-10-28T14:23:13.145774+00:00",
+    "fetched_at": "2026-10-28T19:48:07.688274+00:00",
+    "fetched_at_utc": "2026-10-28T19:48:07.688274+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -118,6 +118,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-10-28T14:23:13.145774+00:00"
+    "last_checked_utc": "2026-10-28T19:48:07.688274+00:00"
   }
 }
