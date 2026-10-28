@@ -717,7 +717,7 @@
         "psgc": "031409000",
         "municipality": "Cauayan City",
         "province": "Isabela",
-        "risk_score": 5.0,
+        "risk_score": 4.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "rice_irrigated"
@@ -831,7 +831,7 @@
         "psgc": "031415000",
         "municipality": "Gamu",
         "province": "Isabela",
-        "risk_score": 5.0,
+        "risk_score": 4.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "rice_rainfed"
@@ -926,7 +926,7 @@
         "psgc": "031420000",
         "municipality": "Naguilian",
         "province": "Isabela",
-        "risk_score": 5.0,
+        "risk_score": 4.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "rice_rainfed"
@@ -1040,7 +1040,7 @@
         "psgc": "031426000",
         "municipality": "Roxas",
         "province": "Isabela",
-        "risk_score": 5.0,
+        "risk_score": 4.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "corn_yellow"
@@ -1154,7 +1154,7 @@
         "psgc": "031432000",
         "municipality": "San Mateo",
         "province": "Isabela",
-        "risk_score": 5.0,
+        "risk_score": 4.0,
         "risk_class": "critical",
         "color": "#B71C1C",
         "crop": "rice_rainfed"
