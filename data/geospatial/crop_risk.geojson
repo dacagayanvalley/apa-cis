@@ -1667,9 +1667,9 @@
         "psgc": "020100000",
         "municipality": "Basco",
         "province": "Batanes",
-        "risk_score": 3.0,
-        "risk_class": "high",
-        "color": "#FF5722",
+        "risk_score": 1.5,
+        "risk_class": "low",
+        "color": "#FFC107",
         "crop": "rice_rainfed"
       }
     },
@@ -1743,9 +1743,9 @@
         "psgc": "020104000",
         "municipality": "Sabtang",
         "province": "Batanes",
-        "risk_score": 3.0,
-        "risk_class": "high",
-        "color": "#FF5722",
+        "risk_score": 1.5,
+        "risk_class": "low",
+        "color": "#FFC107",
         "crop": "rice_rainfed"
       }
     },
@@ -1762,9 +1762,9 @@
         "psgc": "020105000",
         "municipality": "Uyugan",
         "province": "Batanes",
-        "risk_score": 3.0,
-        "risk_class": "high",
-        "color": "#FF5722",
+        "risk_score": 1.5,
+        "risk_class": "low",
+        "color": "#FFC107",
         "crop": "rice_rainfed"
       }
     }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-10-28T01:11:10.772564",
-    "advisory_date": "2026-10-28",
+    "generated_at": "2026-10-29T01:46:30.573272",
+    "advisory_date": "2026-10-29",
     "total_municipalities": 93,
     "municipalities_with_advisories": 84,
     "danger_count": 0,
@@ -645,12 +645,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -659,7 +659,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -712,7 +712,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - City of Tuguegarao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in City of Tuguegarao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023103000": {
@@ -1383,12 +1383,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -1397,7 +1397,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -1461,7 +1461,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Alcala: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Alcala. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023104000": {
@@ -2072,12 +2072,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -2086,7 +2086,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -2140,7 +2140,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Allacapan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Allacapan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023105000": {
@@ -2780,12 +2780,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -2794,7 +2794,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -2847,7 +2847,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Amulung: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Amulung. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023107000": {
@@ -3499,12 +3499,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -3513,7 +3513,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -3577,7 +3577,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Baggao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Baggao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023110000": {
@@ -4188,12 +4188,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -4202,7 +4202,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -4256,7 +4256,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Calayan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Calayan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023111000": {
@@ -5027,12 +5027,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -5041,7 +5041,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -5125,7 +5125,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Camalaniugan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Camalaniugan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023113000": {
@@ -5736,12 +5736,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -5750,7 +5750,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -5804,7 +5804,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Enrile: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Enrile. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023114000": {
@@ -6483,12 +6483,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -6497,7 +6497,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -6550,7 +6550,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Gattaran: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Gattaran. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023116000": {
@@ -7221,12 +7221,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -7235,7 +7235,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -7299,7 +7299,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Iguig: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Iguig. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023117000": {
@@ -7970,12 +7970,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -7984,7 +7984,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -8048,7 +8048,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Lal-lo: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Lal-lo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023118000": {
@@ -8659,12 +8659,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -8673,7 +8673,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -8727,7 +8727,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Lasam: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Lasam. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023119000": {
@@ -9379,12 +9379,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -9393,7 +9393,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -9457,7 +9457,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Pamplona: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Pamplona. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023120000": {
@@ -10128,12 +10128,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -10142,7 +10142,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -10206,7 +10206,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Peñablanca: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Peñablanca. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023121000": {
@@ -10858,12 +10858,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -10872,7 +10872,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -10936,7 +10936,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Piat: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Piat. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023122000": {
@@ -11547,12 +11547,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -11561,7 +11561,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -11615,7 +11615,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Rizal: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Rizal. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023123000": {
@@ -12226,12 +12226,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -12240,7 +12240,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -12294,7 +12294,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Sanchez-Mira: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Sanchez-Mira. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023124000": {
@@ -12905,12 +12905,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -12919,7 +12919,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -12973,7 +12973,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Santa Ana: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Santa Ana. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023127000": {
@@ -13573,12 +13573,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -13587,7 +13587,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -13630,7 +13630,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Santo Niño: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Santo Niño. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023128000": {
@@ -14301,12 +14301,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -14315,7 +14315,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -14379,7 +14379,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Solana: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Solana. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "023129000": {
@@ -15031,12 +15031,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.659Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -15045,7 +15045,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -15109,7 +15109,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Tuao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Tuao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031401000": {
@@ -15720,12 +15720,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -15734,7 +15734,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -15788,7 +15788,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - City of Ilagan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in City of Ilagan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031402000": {
@@ -16459,12 +16459,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -16473,7 +16473,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -16537,7 +16537,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Alicia: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Alicia. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031403000": {
@@ -17208,12 +17208,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -17222,7 +17222,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -17286,7 +17286,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Angadanan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Angadanan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031404000": {
@@ -17875,12 +17875,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -17889,7 +17889,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -17932,7 +17932,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Aurora: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Aurora. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031405000": {
@@ -18603,12 +18603,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -18617,7 +18617,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -18681,7 +18681,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Benito Soliven: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Benito Soliven. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031406000": {
@@ -19270,12 +19270,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -19284,7 +19284,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -19327,7 +19327,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Burgos: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Burgos. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031407000": {
@@ -19967,12 +19967,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -19981,7 +19981,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -20034,7 +20034,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Cabagan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Cabagan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031408000": {
@@ -20705,12 +20705,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -20719,7 +20719,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -20783,7 +20783,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Cabatuan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Cabatuan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031409000": {
@@ -21462,12 +21462,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -21476,7 +21476,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -21529,7 +21529,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Cauayan City: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Cauayan City. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031410000": {
@@ -22019,12 +22019,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -22033,7 +22033,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -22065,7 +22065,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Cordon: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Cordon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031411000": {
@@ -22736,12 +22736,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -22750,7 +22750,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -22814,7 +22814,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Delfin Albano: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Delfin Albano. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031412000": {
@@ -23403,12 +23403,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -23417,7 +23417,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -23460,7 +23460,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Dinapigue: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Dinapigue. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031413000": {
@@ -24071,12 +24071,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -24085,7 +24085,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -24139,7 +24139,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Divilacan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Divilacan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031414000": {
@@ -24779,12 +24779,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -24793,7 +24793,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -24846,7 +24846,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Echague: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Echague. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031415000": {
@@ -25525,12 +25525,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -25539,7 +25539,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -25592,7 +25592,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Gamu: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Gamu. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031416000": {
@@ -26263,12 +26263,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -26277,7 +26277,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -26341,7 +26341,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Jones: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Jones. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031417000": {
@@ -27012,12 +27012,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -27026,7 +27026,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -27090,7 +27090,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Luna: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Luna. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031419000": {
@@ -27580,12 +27580,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -27594,7 +27594,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -27626,7 +27626,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Mallig: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Mallig. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031420000": {
@@ -28305,12 +28305,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -28319,7 +28319,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -28372,7 +28372,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Naguilian: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Naguilian. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031421000": {
@@ -28862,12 +28862,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -28876,7 +28876,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -28908,7 +28908,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Palanan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Palanan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031422000": {
@@ -29508,12 +29508,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -29522,7 +29522,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -29565,7 +29565,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Quezon: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031423000": {
@@ -30055,12 +30055,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -30069,7 +30069,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -30101,7 +30101,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Quirino: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Quirino. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031424000": {
@@ -30712,12 +30712,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -30726,7 +30726,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -30780,7 +30780,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Ramon: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Ramon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031425000": {
@@ -31451,12 +31451,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -31465,7 +31465,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -31529,7 +31529,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Reina Mercedes: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Reina Mercedes. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031426000": {
@@ -32118,12 +32118,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -32132,7 +32132,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -32175,7 +32175,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Roxas: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Roxas. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031427000": {
@@ -32815,12 +32815,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -32829,7 +32829,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -32882,7 +32882,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - San Agustin: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in San Agustin. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031428000": {
@@ -33522,12 +33522,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -33536,7 +33536,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -33589,7 +33589,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - San Guillermo: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in San Guillermo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031429000": {
@@ -34178,12 +34178,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -34192,7 +34192,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -34235,7 +34235,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - San Isidro: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in San Isidro. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031430000": {
@@ -34725,12 +34725,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -34739,7 +34739,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -34771,7 +34771,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - San Manuel: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in San Manuel. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031431000": {
@@ -35442,12 +35442,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -35456,7 +35456,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -35520,7 +35520,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - San Mariano: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in San Mariano. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031432000": {
@@ -36199,12 +36199,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -36213,7 +36213,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -36266,7 +36266,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - San Mateo: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in San Mateo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031433000": {
@@ -36756,12 +36756,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -36770,7 +36770,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -36802,7 +36802,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - San Pablo: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in San Pablo. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031434000": {
@@ -37481,12 +37481,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -37495,7 +37495,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -37548,7 +37548,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Santa Maria: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Santa Maria. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031435000": {
@@ -38038,12 +38038,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -38052,7 +38052,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -38084,7 +38084,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Santiago City: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Santiago City. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031436000": {
@@ -38755,12 +38755,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -38769,7 +38769,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -38833,7 +38833,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Santo Tomas: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Santo Tomas. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "031437000": {
@@ -39495,12 +39495,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.681Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -39509,7 +39509,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -39583,7 +39583,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Tumauini: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Tumauini. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035601000": {
@@ -40073,12 +40073,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -40087,7 +40087,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -40119,7 +40119,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Bayombong: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Bayombong. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035602000": {
@@ -40730,12 +40730,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -40744,7 +40744,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -40798,7 +40798,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Ambaguio: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Ambaguio. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035603000": {
@@ -41409,12 +41409,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -41423,7 +41423,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -41477,7 +41477,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Aritao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Aritao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035604000": {
@@ -42107,12 +42107,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -42121,7 +42121,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -42174,7 +42174,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Bagabag: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Bagabag. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035605000": {
@@ -42664,12 +42664,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -42678,7 +42678,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -42710,7 +42710,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Bambang: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Bambang. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035606000": {
@@ -43310,12 +43310,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -43324,7 +43324,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -43367,7 +43367,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Diadi: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Diadi. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035607000": {
@@ -43978,12 +43978,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -43992,7 +43992,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -44046,7 +44046,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Dupax del Norte: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Dupax del Norte. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035608000": {
@@ -44657,12 +44657,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -44671,7 +44671,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -44725,7 +44725,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Dupax del Sur: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Dupax del Sur. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035609000": {
@@ -45377,12 +45377,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -45391,7 +45391,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -45455,7 +45455,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Kasibu: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Kasibu. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035610000": {
@@ -46103,26 +46103,25 @@
       "decision_support": {
         "hazard": "Postharvest Drying Risk",
         "severity": "warning",
-        "confidence": "low",
+        "confidence": "medium",
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
-          "PAGASA context needs staff review before official dissemination.",
-          "Maximum temperature missing."
+          "PAGASA context needs staff review before official dissemination."
         ],
         "official_pagasa_warning": {
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -46186,7 +46185,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Kayapa: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Kayapa. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035611000": {
@@ -46797,12 +46796,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -46811,7 +46810,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -46865,7 +46864,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Quezon: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Quezon. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035612000": {
@@ -47465,12 +47464,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -47479,7 +47478,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -47522,7 +47521,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Santa Fe: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Santa Fe. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035613000": {
@@ -48122,12 +48121,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -48136,7 +48135,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -48179,7 +48178,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Solano: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Solano. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035614000": {
@@ -48858,12 +48857,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -48872,7 +48871,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -48925,7 +48924,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Villaverde: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Villaverde. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "035615000": {
@@ -49536,12 +49535,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.694Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -49550,7 +49549,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -49604,7 +49603,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Alfonso Castaneda: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Alfonso Castaneda. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "067001000": {
@@ -50215,12 +50214,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.653Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -50229,7 +50228,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -50283,7 +50282,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Cabarroguis: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Cabarroguis. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "067002000": {
@@ -50883,12 +50882,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.653Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -50897,7 +50896,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -50940,7 +50939,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Aglipay: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Aglipay. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "067003000": {
@@ -51529,12 +51528,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.653Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -51543,7 +51542,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -51586,7 +51585,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Diffun: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Diffun. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "067004000": {
@@ -52175,12 +52174,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.653Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -52189,7 +52188,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -52232,7 +52231,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Maddela: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Maddela. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "067005000": {
@@ -52911,12 +52910,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.653Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -52925,7 +52924,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -52978,7 +52977,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Nagtipunan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Nagtipunan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "067006000": {
@@ -53567,12 +53566,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.653Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination."
@@ -53581,7 +53580,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -53624,7 +53623,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Saguday: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Saguday. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "020100000": {
@@ -54114,12 +54113,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.645Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination.",
@@ -54129,14 +54128,14 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "high",
-          "risk_score": 3.0,
+          "risk_class": "low",
+          "risk_score": 1.5,
           "calendar_anchored": false,
           "calendar_crop": null,
           "calendar_stage": null,
@@ -54161,7 +54160,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Basco: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Basco. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "020101000": {
@@ -54651,12 +54650,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.645Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination.",
@@ -54666,7 +54665,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -54698,7 +54697,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Itbayat: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Itbayat. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "020102000": {
@@ -55287,12 +55286,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.645Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination.",
@@ -55302,7 +55301,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -55345,7 +55344,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Ivana: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Ivana. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "020103000": {
@@ -55934,12 +55933,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.645Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination.",
@@ -55949,7 +55948,7 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
@@ -55992,7 +55991,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Mahatao: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Mahatao. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "020104000": {
@@ -56482,12 +56481,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.645Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination.",
@@ -56497,14 +56496,14 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "high",
-          "risk_score": 3.0,
+          "risk_class": "low",
+          "risk_score": 1.5,
           "calendar_anchored": false,
           "calendar_crop": null,
           "calendar_stage": null,
@@ -56529,7 +56528,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Sabtang: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Sabtang. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     },
     "020105000": {
@@ -57019,12 +57018,12 @@
         "source_age": {
           "weather_source": "UP NOAH",
           "rainfall_source": "UP NOAH",
-          "rainfall_source_date": "2026-10-28",
+          "rainfall_source_date": "2026-10-29",
           "rainfall_age_days": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "pagasa_age_days": 0,
           "acap_source_date": "2026-10-14T05:43:52.645Z",
-          "acap_age_days": 14
+          "acap_age_days": 15
         },
         "source_qa_flags": [
           "PAGASA context needs staff review before official dissemination.",
@@ -57034,14 +57033,14 @@
           "typhoon_active": false,
           "typhoon_name": "",
           "tcws_signal": 0,
-          "pagasa_source_date": "2026-10-28",
+          "pagasa_source_date": "2026-10-29",
           "review_status": "unreviewed"
         },
         "affected_crop_stage": {
           "crop": "rice_rainfed",
           "stage": "vegetative",
-          "risk_class": "high",
-          "risk_score": 3.0,
+          "risk_class": "low",
+          "risk_score": 1.5,
           "calendar_anchored": false,
           "calendar_crop": null,
           "calendar_stage": null,
@@ -57066,7 +57065,7 @@
         "public_advisory": "POSTHARVEST ADVISORY - Uyugan: High drying risk. Use mechanical dryers or covered storage to protect palay/mais quality.",
         "sms_ready": "DA WARNING: Drying risk in Uyugan. Use mechanical dryer/covered storage; avoid wet grain spoilage.",
         "when_to_recheck": "Re-check after the next 6:00 AM PHT pipeline run, and immediately when PAGASA issues or updates warnings.",
-        "valid_until": "2026-10-29"
+        "valid_until": "2026-10-30"
       }
     }
   },
@@ -57324,7 +57323,7 @@
       "municipality": "Kayapa",
       "province": "Nueva Vizcaya",
       "severity": "warning",
-      "confidence": "low",
+      "confidence": "medium",
       "advisory_count": 12,
       "risk_score": 40.0,
       "primary_advisory": "Postharvest Drying Risk",
@@ -57351,11 +57350,11 @@
     },
     "confidence_counts": {
       "high": 0,
-      "medium": 77,
-      "low": 16
+      "medium": 78,
+      "low": 15
     },
     "pagasa_source_dates": [
-      "2026-10-28"
+      "2026-10-29"
     ],
     "acap_source_dates": [
       "2026-10-14"
@@ -57367,7 +57366,7 @@
       ],
       [
         "Maximum temperature missing.",
-        13
+        12
       ],
       [
         "Rainfall is NASA POWER fallback; treat as lower-confidence local observation.",
