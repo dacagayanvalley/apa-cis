@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-30",
-  "fetched_at": "2026-10-29T22:55:50.960059+00:00",
-  "fetched_at_utc": "2026-10-29T22:55:50.960059+00:00",
+  "fetched_at": "2026-10-30T01:53:12.124240+00:00",
+  "fetched_at_utc": "2026-10-30T01:53:12.124240+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,24 +11,25 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "29 October 2026 Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027. (Updated: 21 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "30 October 2026 Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027. (Updated: 21 October 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-10-29"
+    "as_of": "2026-10-30"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-10-29",
+    "as_of": "2026-10-30",
     "region2_forecast": [
-      "29 October 2026",
-      "Issued at: 7:00 AM Thursday, October 29, 2026",
-      "Valid until: 7:00 AM Friday, October 30, 2026",
-      "Cagayan Valley, Cordillera Administrative Region, and Nueva Ecija",
-      "Cagayan Valley and Cordillera Administrative Region",
-      "– Nueva Vizcaya, Quirino, Most areas in Central Luzon, Cordillera Administrative Region, Quezon City, Rizal, Quezon, Palawan, Romblon, Camarines Norte, Catanduanes, Most areas in Western Visayas, Samar, Bukidnon, Davao del Norte, Davao del Sur, and Lanao del Sur",
-      "– Ilocos Region, Batanes, Isabela, Zambales, Nueva Ecija, Cavite, Batangas, Pasay, Occidental Mindoro, Oriental Mindoro, Camarines Sur, Albay, Northern Samar, Surigao del Norte, Surigao del Sur, and Maguindanao",
+      "30 October 2026",
+      "Issued at: 7:00 AM Friday, October 30, 2026",
+      "Valid until: 7:00 AM Saturday, October 31, 2026",
+      "Cagayan, Isabela, Quirino, Nueva Vizcaya, Aurora, and Quezon",
+      "Ilocos Region, Cordillera Administrative Region, and Batanes",
+      "Nueva Vizcaya, Quirino, Most areas in Central Luzon, Cordillera Administrative Region, Quezon City, Rizal, Quezon, Palawan, Romblon, Camarines Norte, Catanduanes, Most areas in Western Visayas, Samar, Bukidnon, Davao del Norte, Davao del Sur, and Lanao del Sur",
+      "Ilocos Region, Batanes, Isabela, Zambales, Nueva Ecija, Cavite, Batangas, Pasay, Occidental Mindoro, Oriental Mindoro, Camarines Sur, Albay, Northern Samar, Surigao del Norte, Surigao del Sur, and Maguindanao",
+      "(Updated as of 21 October 2026)",
       "A strong to very strong El Niño is present in the Tropical Pacific. Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027."
     ],
-    "raw_text_extracted": "29 October 2026\nIssued at: 7:00 AM Thursday, October 29, 2026\nValid until: 7:00 AM Friday, October 30, 2026\nCagayan Valley, Cordillera Administrative Region, and Nueva Ecija\nCagayan Valley and Cordillera Administrative Region\n– Nueva Vizcaya, Quirino, Most areas in Central Luzon, Cordillera Administrative Region, Quezon City, Rizal, Quezon, Palawan, Romblon, Camarines Norte, Catanduanes, Most areas in Western Visayas, Samar, Bukidnon, Davao del Norte, Davao del Sur, and Lanao del Sur\n– Ilocos Region, Batanes, Isabela, Zambales, Nueva Ecija, Cavite, Batangas, Pasay, Occidental Mindoro, Oriental Mindoro, Camarines Sur, Albay, Northern Samar, Surigao del Norte, Surigao del Sur, and Maguindanao\nA strong to very strong El Niño is present in the Tropical Pacific. Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027.",
+    "raw_text_extracted": "30 October 2026\nIssued at: 7:00 AM Friday, October 30, 2026\nValid until: 7:00 AM Saturday, October 31, 2026\nCagayan, Isabela, Quirino, Nueva Vizcaya, Aurora, and Quezon\nIlocos Region, Cordillera Administrative Region, and Batanes\nNueva Vizcaya, Quirino, Most areas in Central Luzon, Cordillera Administrative Region, Quezon City, Rizal, Quezon, Palawan, Romblon, Camarines Norte, Catanduanes, Most areas in Western Visayas, Samar, Bukidnon, Davao del Norte, Davao del Sur, and Lanao del Sur\nIlocos Region, Batanes, Isabela, Zambales, Nueva Ecija, Cavite, Batangas, Pasay, Occidental Mindoro, Oriental Mindoro, Camarines Sur, Albay, Northern Samar, Surigao del Norte, Surigao del Sur, and Maguindanao\n(Updated as of 21 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -102,20 +103,12 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-10-30",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-10-29T22:55:50.960059+00:00",
-    "fetched_at_utc": "2026-10-29T22:55:50.960059+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "fetched_at": "2026-10-30T01:53:12.124240+00:00",
+    "fetched_at_utc": "2026-10-30T01:53:12.124240+00:00"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success",
-    "typhoon_agriculture": "skipped"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-10-29T22:55:50.960059+00:00"
+    "typhoon": "success"
   }
 }
