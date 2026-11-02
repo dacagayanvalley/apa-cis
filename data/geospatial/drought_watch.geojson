@@ -1364,7 +1364,7 @@
         "psgc": "035610000",
         "municipality": "Kayapa",
         "province": "Nueva Vizcaya",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1400,7 +1400,7 @@
         "psgc": "035612000",
         "municipality": "Santa Fe",
         "province": "Nueva Vizcaya",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
@@ -1454,7 +1454,7 @@
         "psgc": "035615000",
         "municipality": "Alfonso Castaneda",
         "province": "Nueva Vizcaya",
-        "cdd": 0,
+        "cdd": 1,
         "drought_class": "none",
         "color": "#E8F5E9"
       }
