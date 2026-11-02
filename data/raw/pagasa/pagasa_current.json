@@ -1,7 +1,7 @@
 {
   "as_of": "2026-11-02",
-  "fetched_at": "2026-11-02T02:18:55.483071+00:00",
-  "fetched_at_utc": "2026-11-02T02:18:55.483071+00:00",
+  "fetched_at": "2026-11-02T09:52:37.427407+00:00",
+  "fetched_at_utc": "2026-11-02T09:52:37.427407+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -103,8 +103,8 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-11-02",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-11-02T02:18:55.483071+00:00",
-    "fetched_at_utc": "2026-11-02T02:18:55.483071+00:00",
+    "fetched_at": "2026-11-02T09:52:37.427407+00:00",
+    "fetched_at_utc": "2026-11-02T09:52:37.427407+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -117,6 +117,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-11-02T02:18:55.483071+00:00"
+    "last_checked_utc": "2026-11-02T09:52:37.427407+00:00"
   }
 }
