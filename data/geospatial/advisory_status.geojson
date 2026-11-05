@@ -33,10 +33,10 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "severity": "warning",
-        "advisory_count": 2,
-        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
-        "color": "#FF5722"
+        "severity": "advisory",
+        "advisory_count": 1,
+        "primary_advisory": "Wet Spell Disease Watch",
+        "color": "#FF9800"
       }
     },
     {
@@ -147,10 +147,10 @@
         "psgc": "023108000",
         "municipality": "Ballesteros",
         "province": "Cagayan",
-        "severity": "warning",
-        "advisory_count": 2,
-        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
-        "color": "#FF5722"
+        "severity": "advisory",
+        "advisory_count": 1,
+        "primary_advisory": "Wet Spell Disease Watch",
+        "color": "#FF9800"
       }
     },
     {
@@ -223,10 +223,10 @@
         "psgc": "023112000",
         "municipality": "Claveria",
         "province": "Cagayan",
-        "severity": "warning",
-        "advisory_count": 2,
-        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
-        "color": "#FF5722"
+        "severity": "advisory",
+        "advisory_count": 1,
+        "primary_advisory": "Wet Spell Disease Watch",
+        "color": "#FF9800"
       }
     },
     {
@@ -470,10 +470,10 @@
         "psgc": "023125000",
         "municipality": "Santa Praxedes",
         "province": "Cagayan",
-        "severity": "warning",
-        "advisory_count": 2,
-        "primary_advisory": "Operations Advisory - Defer Open-Air Grain Drying",
-        "color": "#FF5722"
+        "severity": "advisory",
+        "advisory_count": 1,
+        "primary_advisory": "Wet Spell Disease Watch",
+        "color": "#FF9800"
       }
     },
     {
@@ -889,8 +889,8 @@
         "municipality": "Maconacon",
         "province": "Isabela",
         "severity": "warning",
-        "advisory_count": 2,
-        "primary_advisory": "Operations Advisory - Defer Irrigation",
+        "advisory_count": 9,
+        "primary_advisory": "Postharvest Drying Risk",
         "color": "#FF5722"
       }
     },
