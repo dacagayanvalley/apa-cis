@@ -1,7 +1,7 @@
 {
   "as_of": "2026-11-09",
-  "fetched_at": "2026-11-09T01:53:52.392727+00:00",
-  "fetched_at_utc": "2026-11-09T01:53:52.392727+00:00",
+  "fetched_at": "2026-11-09T09:36:27.700791+00:00",
+  "fetched_at_utc": "2026-11-09T09:36:27.700791+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -35,12 +35,12 @@
   },
   "typhoon": {
     "active": false,
-    "is_final": false,
-    "bulletin_status": "active",
-    "name": "",
-    "disturbance_type": "",
-    "bulletin_number": "",
-    "issued_at": "",
+    "is_final": true,
+    "bulletin_status": "final",
+    "name": "Samuel",
+    "disturbance_type": "Typhoon",
+    "bulletin_number": "2",
+    "issued_at": "05:00 pm, 09 November 2026",
     "valid_until": "",
     "source_url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin",
     "signal_level": 0,
@@ -51,13 +51,13 @@
       "Nueva Vizcaya": 0,
       "Quirino": 0
     },
-    "max_sustained_wind_kmh": null,
-    "peak_wind_gust_kmh": null,
-    "gustiness_kmh": null,
+    "max_sustained_wind_kmh": 130.0,
+    "peak_wind_gust_kmh": 160.0,
+    "gustiness_kmh": 160.0,
     "wind": {
-      "max_sustained_wind_kmh": null,
-      "peak_wind_gust_kmh": null,
-      "gustiness_kmh": null
+      "max_sustained_wind_kmh": 130.0,
+      "peak_wind_gust_kmh": 160.0,
+      "gustiness_kmh": 160.0
     },
     "tcws_wind_ranges": {
       "1": {
@@ -87,8 +87,10 @@
       }
     },
     "tcws_signal_groups": [],
-    "rainfall": {},
-    "rainfall_advisory_text": "",
+    "rainfall": {
+      "advisory_text": "SAMUEL is less likely to directly affect the weather condition of the country throughout the forecast period."
+    },
+    "rainfall_advisory_text": "SAMUEL is less likely to directly affect the weather condition of the country throughout the forecast period.",
     "region2_affected": false,
     "affected_provinces": [],
     "affected_municipalities": [],
@@ -103,8 +105,8 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-11-09",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-11-09T01:53:52.392727+00:00",
-    "fetched_at_utc": "2026-11-09T01:53:52.392727+00:00",
+    "fetched_at": "2026-11-09T09:36:27.700791+00:00",
+    "fetched_at_utc": "2026-11-09T09:36:27.700791+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -117,6 +119,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-11-09T01:53:52.392727+00:00"
+    "last_checked_utc": "2026-11-09T09:36:27.700791+00:00"
   }
 }
