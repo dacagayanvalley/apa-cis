@@ -1310,7 +1310,7 @@
           "transplanting": "safe",
           "fertilizer_application": "safe",
           "spraying": "safe",
-          "irrigation": "defer",
+          "irrigation": "safe",
           "harvesting": "safe",
           "drying": "safe",
           "pest_monitoring": "safe"

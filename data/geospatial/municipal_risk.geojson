@@ -558,7 +558,7 @@
         "psgc": "031404000",
         "municipality": "Aurora",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -592,8 +592,8 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "risk_score": 16.0,
-        "color": "#FFC107"
+        "risk_score": 8.0,
+        "color": "#4CAF50"
       }
     },
     {
@@ -711,7 +711,7 @@
         "psgc": "031413000",
         "municipality": "Divilacan",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -796,7 +796,7 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -847,7 +847,7 @@
         "psgc": "031421000",
         "municipality": "Palanan",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -898,8 +898,8 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "risk_score": 16.0,
-        "color": "#FFC107"
+        "risk_score": 8.0,
+        "color": "#4CAF50"
       }
     },
     {
@@ -949,7 +949,7 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -966,7 +966,7 @@
         "psgc": "031428000",
         "municipality": "San Guillermo",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },

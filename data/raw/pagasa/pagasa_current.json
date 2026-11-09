@@ -1,7 +1,7 @@
 {
   "as_of": "2026-11-09",
-  "fetched_at": "2026-11-08T22:23:48.449182+00:00",
-  "fetched_at_utc": "2026-11-08T22:23:48.449182+00:00",
+  "fetched_at": "2026-11-09T01:40:15.709170+00:00",
+  "fetched_at_utc": "2026-11-09T01:40:15.709170+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,24 +11,25 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "8 November 2026 : A Very Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026. (Updated: 04 November 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "9 November 2026 : A Very Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026. (Updated: 04 November 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-11-08"
+    "as_of": "2026-11-09"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-11-08",
+    "as_of": "2026-11-09",
     "region2_forecast": [
-      "8 November 2026",
-      "Issued at: 7:00 AM Friday, November 06, 2026",
-      "Valid until: 7:00 AM Saturday, November 07, 2026",
-      "Ilocos Region, Cordillera Administrative Region, and Cagayan Valley",
-      "Ilocos Region, Cordillera Administrative Region, and rest of Cagayan Valley",
+      "9 November 2026",
+      "Issued at: 7:00 AM Monday, November 09, 2026",
+      "Valid until: 7:00 AM Tuesday, November 10, 2026",
+      "Cagayan, Isabela, Quirino, Apayao, Kalinga, Mountain Province, Ifugao, Aurora, and Quezon",
+      "Metro Manila, Ilocos Region, the rest of Cordillera Administrative Region, the rest of Cagayan Valley, the rest of Central Luzon, and the rest of CALABARZON",
+      "Ilocos Region, the rest of Cordillera Administrative Region, the rest of Cagayan Valley",
       "Pangasinan, La Union, most parts of Cagayan Valley, Cordillera Administrative Region, most parts of Central Luzon, National Capital Region, Cavite, Rizal, rest of MIMAROPA, Sorsogon, Bohol, Cebu, Northern Samar, Davao del Sur, North Cotabato, and rest of BARMM",
-      "(Updated as of 21 October 2026)",
-      "A strong to very strong El Niño is present in the Tropical Pacific. Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027."
+      "(Updated as of 04 November 2026)",
+      "Very Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026."
     ],
-    "raw_text_extracted": "8 November 2026\nIssued at: 7:00 AM Friday, November 06, 2026\nValid until: 7:00 AM Saturday, November 07, 2026\nIlocos Region, Cordillera Administrative Region, and Cagayan Valley\nIlocos Region, Cordillera Administrative Region, and rest of Cagayan Valley\nPangasinan, La Union, most parts of Cagayan Valley, Cordillera Administrative Region, most parts of Central Luzon, National Capital Region, Cavite, Rizal, rest of MIMAROPA, Sorsogon, Bohol, Cebu, Northern Samar, Davao del Sur, North Cotabato, and rest of BARMM\n(Updated as of 21 October 2026)\nA strong to very strong El Niño is present in the Tropical Pacific. Most climate models predict that the ongoing El Niño will persist until the first quarter of 2027, with its peak expected before the end of 2026. Its associated impacts may continue through the first half of 2027.",
+    "raw_text_extracted": "9 November 2026\nIssued at: 7:00 AM Monday, November 09, 2026\nValid until: 7:00 AM Tuesday, November 10, 2026\nCagayan, Isabela, Quirino, Apayao, Kalinga, Mountain Province, Ifugao, Aurora, and Quezon\nMetro Manila, Ilocos Region, the rest of Cordillera Administrative Region, the rest of Cagayan Valley, the rest of Central Luzon, and the rest of CALABARZON\nIlocos Region, the rest of Cordillera Administrative Region, the rest of Cagayan Valley\nPangasinan, La Union, most parts of Cagayan Valley, Cordillera Administrative Region, most parts of Central Luzon, National Capital Region, Cavite, Rizal, rest of MIMAROPA, Sorsogon, Bohol, Cebu, Northern Samar, Davao del Sur, North Cotabato, and rest of BARMM\n(Updated as of 04 November 2026)\nVery Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -102,20 +103,12 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-11-09",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-11-08T22:23:48.449182+00:00",
-    "fetched_at_utc": "2026-11-08T22:23:48.449182+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "fetched_at": "2026-11-09T01:40:15.709170+00:00",
+    "fetched_at_utc": "2026-11-09T01:40:15.709170+00:00"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success",
-    "typhoon_agriculture": "skipped"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-11-08T22:23:48.449182+00:00"
+    "typhoon": "success"
   }
 }
