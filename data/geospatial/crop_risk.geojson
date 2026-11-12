@@ -660,9 +660,9 @@
         "psgc": "031406000",
         "municipality": "Burgos",
         "province": "Isabela",
-        "risk_score": 0.2,
-        "risk_class": "minimal",
-        "color": "#4CAF50",
+        "risk_score": 1.7,
+        "risk_class": "low",
+        "color": "#FFC107",
         "crop": "corn_yellow"
       }
     },
@@ -774,9 +774,9 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "risk_score": 0.2,
-        "risk_class": "minimal",
-        "color": "#4CAF50",
+        "risk_score": 1.7,
+        "risk_class": "low",
+        "color": "#FFC107",
         "crop": "corn_yellow"
       }
     },
@@ -888,9 +888,9 @@
         "psgc": "031418000",
         "municipality": "Maconacon",
         "province": "Isabela",
-        "risk_score": 0.2,
-        "risk_class": "minimal",
-        "color": "#4CAF50",
+        "risk_score": 1.7,
+        "risk_class": "low",
+        "color": "#FFC107",
         "crop": "corn_yellow"
       }
     },
