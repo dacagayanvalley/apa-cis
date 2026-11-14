@@ -1307,13 +1307,13 @@
         "color": "#FF5722",
         "operations": {
           "land_preparation": "defer",
-          "transplanting": "defer",
+          "transplanting": "safe",
           "fertilizer_application": "defer",
           "spraying": "defer",
           "irrigation": "defer",
           "harvesting": "defer",
           "drying": "defer",
-          "pest_monitoring": "defer"
+          "pest_monitoring": "safe"
         }
       }
     },

@@ -1,7 +1,7 @@
 {
   "as_of": "2026-11-14",
-  "fetched_at": "2026-11-14T01:40:31.309783+00:00",
-  "fetched_at_utc": "2026-11-14T01:40:31.309783+00:00",
+  "fetched_at": "2026-11-14T02:14:55.650539+00:00",
+  "fetched_at_utc": "2026-11-14T02:14:55.650539+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,15 +11,15 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "13 November 2026 : A Very Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026. (Updated: 04 November 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "14 November 2026 : A Very Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026. (Updated: 04 November 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-11-13"
+    "as_of": "2026-11-14"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-14",
     "region2_forecast": [
-      "13 November 2026",
+      "14 November 2026",
       "Issued at: 7:00 AM Friday, November 13, 2026",
       "Valid until: 7:00 AM Saturday, November 14, 2026",
       "Cagayan, Isabela, Apayao, and Kalinga",
@@ -31,7 +31,7 @@
       "Very Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026.",
       "36.4 ºC (Borongan and Zamboanga City, 1968 and 2022)"
     ],
-    "raw_text_extracted": "13 November 2026\nIssued at: 7:00 AM Friday, November 13, 2026\nValid until: 7:00 AM Saturday, November 14, 2026\nCagayan, Isabela, Apayao, and Kalinga\nCagayan and Isabela\nIlocos Region, the rest of Cordillera Administrative Region, and the rest of Cagayan Valley\nRest of Cagayan Valley\nmost parts of Cagayan Valley, La Trinidad, Science Garden, Bataan, Rizal, Oriental Mindoro, Northern Palawan, Camarines Sur, Albay, Iloilo, Bohol, Northern Samar, Samar, Eastern Samar, Davao del Norte, Davao del Sur, North Cotabato, and rest of BARMM\n(Updated as of 04 November 2026)\nVery Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026.\n36.4 ºC (Borongan and Zamboanga City, 1968 and 2022)",
+    "raw_text_extracted": "14 November 2026\nIssued at: 7:00 AM Friday, November 13, 2026\nValid until: 7:00 AM Saturday, November 14, 2026\nCagayan, Isabela, Apayao, and Kalinga\nCagayan and Isabela\nIlocos Region, the rest of Cordillera Administrative Region, and the rest of Cagayan Valley\nRest of Cagayan Valley\nmost parts of Cagayan Valley, La Trinidad, Science Garden, Bataan, Rizal, Oriental Mindoro, Northern Palawan, Camarines Sur, Albay, Iloilo, Bohol, Northern Samar, Samar, Eastern Samar, Davao del Norte, Davao del Sur, North Cotabato, and rest of BARMM\n(Updated as of 04 November 2026)\nVery Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026.\n36.4 ºC (Borongan and Zamboanga City, 1968 and 2022)",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -105,20 +105,12 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-11-14",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-11-14T01:40:31.309783+00:00",
-    "fetched_at_utc": "2026-11-14T01:40:31.309783+00:00",
-    "auto_fetch_interval_minutes": 30,
-    "agriculture_advisory_fetch_status": "skipped"
+    "fetched_at": "2026-11-14T02:14:55.650539+00:00",
+    "fetched_at_utc": "2026-11-14T02:14:55.650539+00:00"
   },
   "scrape_status": {
     "enso": "success",
     "farm_weather": "success",
-    "typhoon": "success",
-    "typhoon_agriculture": "skipped"
-  },
-  "severe_weather_auto_fetch": {
-    "mode": "scheduled_only",
-    "interval_minutes": 30,
-    "last_checked_utc": "2026-11-14T01:40:31.309783+00:00"
+    "typhoon": "success"
   }
 }
