@@ -14,8 +14,8 @@
         "psgc": "023101000",
         "municipality": "City of Tuguegarao",
         "province": "Cagayan",
-        "risk_score": 17.0,
-        "color": "#FFC107"
+        "risk_score": 7.0,
+        "color": "#4CAF50"
       }
     },
     {
@@ -31,7 +31,7 @@
         "psgc": "023102000",
         "municipality": "Abulug",
         "province": "Cagayan",
-        "risk_score": 13.0,
+        "risk_score": 8.0,
         "color": "#4CAF50"
       }
     },
@@ -116,8 +116,8 @@
         "psgc": "023107000",
         "municipality": "Baggao",
         "province": "Cagayan",
-        "risk_score": 30.0,
-        "color": "#FF9800"
+        "risk_score": 20.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -184,7 +184,7 @@
         "psgc": "023111000",
         "municipality": "Camalaniugan",
         "province": "Cagayan",
-        "risk_score": 21.0,
+        "risk_score": 16.0,
         "color": "#FFC107"
       }
     },
@@ -201,7 +201,7 @@
         "psgc": "023112000",
         "municipality": "Claveria",
         "province": "Cagayan",
-        "risk_score": 20.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -218,8 +218,8 @@
         "psgc": "023113000",
         "municipality": "Enrile",
         "province": "Cagayan",
-        "risk_score": 23.0,
-        "color": "#FFC107"
+        "risk_score": 13.0,
+        "color": "#4CAF50"
       }
     },
     {
@@ -456,7 +456,7 @@
         "psgc": "023127000",
         "municipality": "Santo Niño",
         "province": "Cagayan",
-        "risk_score": 13.0,
+        "risk_score": 8.0,
         "color": "#4CAF50"
       }
     },
@@ -473,8 +473,8 @@
         "psgc": "023128000",
         "municipality": "Solana",
         "province": "Cagayan",
-        "risk_score": 17.0,
-        "color": "#FFC107"
+        "risk_score": 7.0,
+        "color": "#4CAF50"
       }
     },
     {
@@ -558,7 +558,7 @@
         "psgc": "031404000",
         "municipality": "Aurora",
         "province": "Isabela",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -609,8 +609,8 @@
         "psgc": "031407000",
         "municipality": "Cabagan",
         "province": "Isabela",
-        "risk_score": 17.0,
-        "color": "#FFC107"
+        "risk_score": 7.0,
+        "color": "#4CAF50"
       }
     },
     {
@@ -694,7 +694,7 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "risk_score": 23.0,
+        "risk_score": 15.0,
         "color": "#FFC107"
       }
     },
@@ -898,8 +898,8 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "risk_score": 13.0,
-        "color": "#4CAF50"
+        "risk_score": 21.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -949,7 +949,7 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -966,7 +966,7 @@
         "psgc": "031428000",
         "municipality": "San Guillermo",
         "province": "Isabela",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -1085,8 +1085,8 @@
         "psgc": "031435000",
         "municipality": "Santiago City",
         "province": "Isabela",
-        "risk_score": 7.0,
-        "color": "#4CAF50"
+        "risk_score": 17.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -1187,7 +1187,7 @@
         "psgc": "035604000",
         "municipality": "Bagabag",
         "province": "Nueva Vizcaya",
-        "risk_score": 2.0,
+        "risk_score": 7.0,
         "color": "#4CAF50"
       }
     },
@@ -1204,7 +1204,7 @@
         "psgc": "035605000",
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
-        "risk_score": 8.0,
+        "risk_score": 13.0,
         "color": "#4CAF50"
       }
     },
@@ -1221,7 +1221,7 @@
         "psgc": "035606000",
         "municipality": "Diadi",
         "province": "Nueva Vizcaya",
-        "risk_score": 8.0,
+        "risk_score": 13.0,
         "color": "#4CAF50"
       }
     },
