@@ -48,8 +48,8 @@
         "psgc": "023103000",
         "municipality": "Alcala",
         "province": "Cagayan",
-        "risk_score": 13.0,
-        "color": "#4CAF50"
+        "risk_score": 21.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -82,8 +82,8 @@
         "psgc": "023105000",
         "municipality": "Amulung",
         "province": "Cagayan",
-        "risk_score": 13.0,
-        "color": "#4CAF50"
+        "risk_score": 21.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -235,8 +235,8 @@
         "psgc": "023114000",
         "municipality": "Gattaran",
         "province": "Cagayan",
-        "risk_score": 13.0,
-        "color": "#4CAF50"
+        "risk_score": 21.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -269,8 +269,8 @@
         "psgc": "023116000",
         "municipality": "Iguig",
         "province": "Cagayan",
-        "risk_score": 7.0,
-        "color": "#4CAF50"
+        "risk_score": 15.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -286,8 +286,8 @@
         "psgc": "023117000",
         "municipality": "Lal-lo",
         "province": "Cagayan",
-        "risk_score": 13.0,
-        "color": "#4CAF50"
+        "risk_score": 21.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -303,7 +303,7 @@
         "psgc": "023118000",
         "municipality": "Lasam",
         "province": "Cagayan",
-        "risk_score": 20.0,
+        "risk_score": 28.0,
         "color": "#FFC107"
       }
     },
@@ -456,8 +456,8 @@
         "psgc": "023127000",
         "municipality": "Santo Niño",
         "province": "Cagayan",
-        "risk_score": 8.0,
-        "color": "#4CAF50"
+        "risk_score": 21.0,
+        "color": "#FFC107"
       }
     },
     {
@@ -694,7 +694,7 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "risk_score": 15.0,
+        "risk_score": 23.0,
         "color": "#FFC107"
       }
     },
@@ -1204,7 +1204,7 @@
         "psgc": "035605000",
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
-        "risk_score": 13.0,
+        "risk_score": 8.0,
         "color": "#4CAF50"
       }
     },
@@ -1221,7 +1221,7 @@
         "psgc": "035606000",
         "municipality": "Diadi",
         "province": "Nueva Vizcaya",
-        "risk_score": 13.0,
+        "risk_score": 8.0,
         "color": "#4CAF50"
       }
     },
