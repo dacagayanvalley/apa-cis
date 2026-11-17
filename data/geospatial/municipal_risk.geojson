@@ -252,7 +252,7 @@
         "psgc": "023115000",
         "municipality": "Gonzaga",
         "province": "Cagayan",
-        "risk_score": 16.0,
+        "risk_score": 21.0,
         "color": "#FFC107"
       }
     },
@@ -575,7 +575,7 @@
         "psgc": "031405000",
         "municipality": "Benito Soliven",
         "province": "Isabela",
-        "risk_score": 8.0,
+        "risk_score": 13.0,
         "color": "#4CAF50"
       }
     },
@@ -864,8 +864,8 @@
         "psgc": "031422000",
         "municipality": "Quezon",
         "province": "Isabela",
-        "risk_score": 20.0,
-        "color": "#FFC107"
+        "risk_score": 30.0,
+        "color": "#FF9800"
       }
     },
     {
@@ -898,8 +898,8 @@
         "psgc": "031424000",
         "municipality": "Ramon",
         "province": "Isabela",
-        "risk_score": 21.0,
-        "color": "#FFC107"
+        "risk_score": 31.0,
+        "color": "#FF9800"
       }
     },
     {
@@ -1204,7 +1204,7 @@
         "psgc": "035605000",
         "municipality": "Bambang",
         "province": "Nueva Vizcaya",
-        "risk_score": 8.0,
+        "risk_score": 13.0,
         "color": "#4CAF50"
       }
     },
@@ -1221,7 +1221,7 @@
         "psgc": "035606000",
         "municipality": "Diadi",
         "province": "Nueva Vizcaya",
-        "risk_score": 8.0,
+        "risk_score": 13.0,
         "color": "#4CAF50"
       }
     },
