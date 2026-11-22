@@ -185,9 +185,9 @@
         "psgc": "023110000",
         "municipality": "Calayan",
         "province": "Cagayan",
-        "risk_score": 0.2,
-        "risk_class": "minimal",
-        "color": "#4CAF50",
+        "risk_score": 1.7,
+        "risk_class": "low",
+        "color": "#FFC107",
         "crop": "corn_yellow"
       }
     },
@@ -774,7 +774,7 @@
         "psgc": "031412000",
         "municipality": "Dinapigue",
         "province": "Isabela",
-        "risk_score": 0.2,
+        "risk_score": 0.0,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"
@@ -1059,9 +1059,9 @@
         "psgc": "031427000",
         "municipality": "San Agustin",
         "province": "Isabela",
-        "risk_score": 1.7,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.2,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_rainfed"
       }
     },
@@ -1078,9 +1078,9 @@
         "psgc": "031428000",
         "municipality": "San Guillermo",
         "province": "Isabela",
-        "risk_score": 1.7,
-        "risk_class": "low",
-        "color": "#FFC107",
+        "risk_score": 0.2,
+        "risk_class": "minimal",
+        "color": "#4CAF50",
         "crop": "rice_rainfed"
       }
     },
@@ -1629,7 +1629,7 @@
         "psgc": "067005000",
         "municipality": "Nagtipunan",
         "province": "Quirino",
-        "risk_score": 0.2,
+        "risk_score": 0.0,
         "risk_class": "minimal",
         "color": "#4CAF50",
         "crop": "rice_rainfed"

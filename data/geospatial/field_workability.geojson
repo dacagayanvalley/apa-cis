@@ -2178,7 +2178,7 @@
           "transplanting": "defer",
           "fertilizer_application": "defer",
           "spraying": "defer",
-          "irrigation": "defer",
+          "irrigation": "safe",
           "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "defer"
@@ -2262,7 +2262,7 @@
           "transplanting": "defer",
           "fertilizer_application": "defer",
           "spraying": "defer",
-          "irrigation": "defer",
+          "irrigation": "safe",
           "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "defer"
@@ -2486,7 +2486,7 @@
           "transplanting": "defer",
           "fertilizer_application": "defer",
           "spraying": "defer",
-          "irrigation": "defer",
+          "irrigation": "safe",
           "harvesting": "defer",
           "drying": "defer",
           "pest_monitoring": "defer"
