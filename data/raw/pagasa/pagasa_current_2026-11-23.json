@@ -1,7 +1,7 @@
 {
   "as_of": "2026-11-23",
-  "fetched_at": "2026-11-23T01:31:43.204382+00:00",
-  "fetched_at_utc": "2026-11-23T01:31:43.204382+00:00",
+  "fetched_at": "2026-11-23T09:41:00.662141+00:00",
+  "fetched_at_utc": "2026-11-23T09:41:00.662141+00:00",
   "source_urls": {
     "enso": "https://www.pagasa.dost.gov.ph/climate/el-nino-la-nina/monitoring",
     "farm_weather": "https://www.pagasa.dost.gov.ph/agri-weather",
@@ -11,24 +11,25 @@
   "enso": {
     "enso_phase": "el_nino",
     "enso_strength": "strong",
-    "advisory_text": "22 November 2026 : A Very Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026. (Updated: 04 November 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
+    "advisory_text": "23 November 2026 : A Very Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026. (Updated: 04 November 2026) Trunkline No.: (02)8284-0800  local 4920 and 4921",
     "source": "pagasa_enso_page",
-    "as_of": "2026-11-22"
+    "as_of": "2026-11-23"
   },
   "farm_weather": {
     "source": "pagasa_farm_weather",
-    "as_of": "2026-11-22",
+    "as_of": "2026-11-23",
     "region2_forecast": [
-      "22 November 2026",
-      "Issued at: 7:00 AM Friday, November 20, 2026",
-      "Valid until: 7:00 AM Saturday, November 21, 2026",
-      "Mainland Cagayan, Isabela, Nueva Vizcaya, and Quirino",
-      "Batanes, Babuyan Islands, and Apayao",
+      "23 November 2026",
+      "Issued at: 7:00 AM Monday, November 23, 2026",
+      "Valid until: 7:00 AM Tuesday, November 24, 2026",
+      "Mainland Cagayan, Isabela, Nueva Vizcaya, Quirino, and Aurora",
+      "Mainland Cagayan, Isabela, Nueva Vizcaya, and Quirino –",
+      "Batanes and Babuyan Islands",
       "most parts of Cagayan Valley, La Trinidad, Science Garden, Bataan, Rizal, Oriental Mindoro, Northern Palawan, Camarines Sur, Albay, Iloilo, Bohol, Northern Samar, Samar, Eastern Samar, Davao del Norte, Davao del Sur, North Cotabato, and rest of BARMM",
       "(Updated as of 04 November 2026)",
       "Very Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026."
     ],
-    "raw_text_extracted": "22 November 2026\nIssued at: 7:00 AM Friday, November 20, 2026\nValid until: 7:00 AM Saturday, November 21, 2026\nMainland Cagayan, Isabela, Nueva Vizcaya, and Quirino\nBatanes, Babuyan Islands, and Apayao\nmost parts of Cagayan Valley, La Trinidad, Science Garden, Bataan, Rizal, Oriental Mindoro, Northern Palawan, Camarines Sur, Albay, Iloilo, Bohol, Northern Samar, Samar, Eastern Samar, Davao del Norte, Davao del Sur, North Cotabato, and rest of BARMM\n(Updated as of 04 November 2026)\nVery Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026.",
+    "raw_text_extracted": "23 November 2026\nIssued at: 7:00 AM Monday, November 23, 2026\nValid until: 7:00 AM Tuesday, November 24, 2026\nMainland Cagayan, Isabela, Nueva Vizcaya, Quirino, and Aurora\nMainland Cagayan, Isabela, Nueva Vizcaya, and Quirino –\nBatanes and Babuyan Islands\nmost parts of Cagayan Valley, La Trinidad, Science Garden, Bataan, Rizal, Oriental Mindoro, Northern Palawan, Camarines Sur, Albay, Iloilo, Bohol, Northern Samar, Samar, Eastern Samar, Davao del Norte, Davao del Sur, North Cotabato, and rest of BARMM\n(Updated as of 04 November 2026)\nVery Strong El Niño is currently present in the tropical Pacific and is expected to persist until the first half of 2027, potentially reaching its peak by the end of 2026.",
     "parse_method": "static_html",
     "needs_review": true
   },
@@ -102,8 +103,8 @@
     "summary": "No active PAGASA tropical cyclone bulletin detected.",
     "as_of": "2026-11-23",
     "parse_method": "pagasa_public_html_static",
-    "fetched_at": "2026-11-23T01:31:43.204382+00:00",
-    "fetched_at_utc": "2026-11-23T01:31:43.204382+00:00",
+    "fetched_at": "2026-11-23T09:41:00.662141+00:00",
+    "fetched_at_utc": "2026-11-23T09:41:00.662141+00:00",
     "auto_fetch_interval_minutes": 30,
     "agriculture_advisory_fetch_status": "skipped"
   },
@@ -116,6 +117,6 @@
   "severe_weather_auto_fetch": {
     "mode": "scheduled_only",
     "interval_minutes": 30,
-    "last_checked_utc": "2026-11-23T01:31:43.204382+00:00"
+    "last_checked_utc": "2026-11-23T09:41:00.662141+00:00"
   }
 }
