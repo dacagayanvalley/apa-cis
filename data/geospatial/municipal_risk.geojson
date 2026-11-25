@@ -864,7 +864,7 @@
         "psgc": "031422000",
         "municipality": "Quezon",
         "province": "Isabela",
-        "risk_score": 15.0,
+        "risk_score": 20.0,
         "color": "#FFC107"
       }
     },
@@ -932,7 +932,7 @@
         "psgc": "031426000",
         "municipality": "Roxas",
         "province": "Isabela",
-        "risk_score": 8.0,
+        "risk_score": 13.0,
         "color": "#4CAF50"
       }
     },
@@ -1051,7 +1051,7 @@
         "psgc": "031433000",
         "municipality": "San Pablo",
         "province": "Isabela",
-        "risk_score": 8.0,
+        "risk_score": 13.0,
         "color": "#4CAF50"
       }
     },
@@ -1085,7 +1085,7 @@
         "psgc": "031435000",
         "municipality": "Santiago City",
         "province": "Isabela",
-        "risk_score": 2.0,
+        "risk_score": 7.0,
         "color": "#4CAF50"
       }
     },
@@ -1340,7 +1340,7 @@
         "psgc": "035613000",
         "municipality": "Solano",
         "province": "Nueva Vizcaya",
-        "risk_score": 2.0,
+        "risk_score": 7.0,
         "color": "#4CAF50"
       }
     },
